@@ -10,7 +10,8 @@ function filenamedate($epapercode)
     //     $finddaterow = mysqli_fetch_array($finddaters);
     //     $filedate = date('Y-m-d', strtotime($finddaterow['Paperdate']) + (24 * 3600));
     // } else
-    $filedate = date('Y-m-d', time());
+    // $filedate = date('Y-m-d', time() - (16 * 24 * 3600));
+    $filedate = date("Y-m-d", strtotime("10-05-2023"));
 
     return $filedate;
 }
@@ -36,7 +37,6 @@ function dateForLinks($epapercode, $filenamedate)
         case "KM":
             if (date("d", strtotime($filenamedate)) == date("d", time())) {
                 $dateForLinks = date('Ymd', strtotime($filenamedate) - (24 * 3600));
-                $filenamedate = date("Y-m-d", strtotime($dateForLinks));
             } else
                 $dateForLinks = date("Ymd", strtotime($filenamedate));
 
@@ -48,35 +48,44 @@ function dateForLinks($epapercode, $filenamedate)
             break;
 
         case "MC":
-            $ch = curl_init();
-            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-            curl_setopt($ch, CURLOPT_URL, "https://www.mumbaichoufer.com/");
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-            curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.A.B.C Safari/525.13");
-            $data = curl_exec($ch);
-            curl_close($ch);
+            $data = file_get_contents("https://www.mumbaichoufer.com/");
             $datecodearray =  explode('data-cat_ids="" href="/view/', $data);
+            $datecode = explode('/mc"', $datecodearray[1])[0];
 
-            if (date("d", time()) - date("d", strtotime($filenamedate)) > 3) {
-                $index = 4;
-                $filenamedate = date('Y-m-d', time() - (3 * 24 * 3600));
-            } else $index = date("d", time()) - date("d", strtotime($filenamedate)) + 1;
+            $reqiredDay = date("d", strtotime($filenamedate));
+            $datecode -= (date("d", time()) - $reqiredDay);
 
-            $datecode = explode('/mc"', $datecodearray[$index])[0];
-            return $datecode;
+            $content = file_get_contents("https://www.mumbaichoufer.com/view/" . $datecode . "/mc");
+            $day = date("d", strtotime(trim(explode("- Page 1", explode("Mumbaichoufer -", $content)[1])[0])));
+
+            $difference = 0;
+            if ($day >= $reqiredDay)
+                $difference = $day - $reqiredDay;
+            return ($datecode - $difference);
             break;
 
         case "MM":
             $data = file_get_contents("https://epaper.mysurumithra.com/");
             $datecodearray = explode('class="epost-title"><a href="/epaper/edition/', $data);
-            if (date("d", time()) - date("d", strtotime($filenamedate)) > 15) {
-                $index = count($datecodearray) - 1;
-                $filenamedate = date('Y-m-d', time() - (15 * 24 * 3600));
-            } else
-                $index = date("d", time()) - date("d", strtotime($filenamedate)) + 1;
+            $datecode = explode('/mysuru-mithra"', $datecodearray[1])[0];
 
-            $datecode = explode('/mysuru-mithra"', $datecodearray[$index])[0];
-            return $datecode;
+            $reqiredDay = date("d", strtotime($filenamedate));
+            $datecode -= (date("d", time()) - $reqiredDay);
+
+            $content = file_get_contents("https://epaper.mysurumithra.com/epaper/edition/" . $datecode . "/mysuru-mithra");
+            $day = date("d", strtotime(explode('"', explode('value="', $content)[1])[0]));
+            // if (date("d", time()) - date("d", strtotime($filenamedate)) > 15) {
+            //     $index = count($datecodearray) - 1;
+            //     $filenamedate = date('Y-m-d', time() - (15 * 24 * 3600));
+            // } else
+            //     $index = date("d", time()) - date("d", strtotime($filenamedate)) + 1;
+
+
+            echo "day = " . $day  . " reqday = " . $reqiredDay;
+            $difference = 0;
+            if ($day >= $reqiredDay)
+                $difference = $day - $reqiredDay;
+            return ($datecode - $difference);
             break;
 
         case "NB":
@@ -104,7 +113,10 @@ function dateForLinks($epapercode, $filenamedate)
             break;
 
         case "POD":
-            return;
+            $data = file_get_contents("https://e2india.com/pratidin/");
+            $datecode = explode('/pratidin-odia-daily', explode('class="first disabled"><a href="/pratidin/epaper/edition/', $data)[1])[0];
+
+            return $datecode - (date("d", time()) - date("d", strtotime($filenamedate)));
             break;
 
         case "PUD":
