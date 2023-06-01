@@ -11,7 +11,7 @@ function filenamedate($epapercode)
     //     $filedate = date('Y-m-d', strtotime($finddaterow['Paperdate']) + (24 * 3600));
     // } else
     // $filedate = date('Y-m-d', time() - (16 * 24 * 3600));
-    $filedate = date("Y-m-d", strtotime("10-05-2023"));
+    $filedate = date("Y-m-d", strtotime("1-02-2023"));
 
     return $filedate;
 }
@@ -50,50 +50,63 @@ function dateForLinks($epapercode, $filenamedate)
         case "MC":
             $data = file_get_contents("https://www.mumbaichoufer.com/");
             $datecodearray =  explode('data-cat_ids="" href="/view/', $data);
+            $originaldatecode = explode('/mc"', $datecodearray[1])[0];
             $datecode = explode('/mc"', $datecodearray[1])[0];
 
-            $reqiredDay = date("d", strtotime($filenamedate));
-            $datecode -= (date("d", time()) - $reqiredDay);
+            $reqiredDate = date("Y-m-d", strtotime($filenamedate));
+            $datecode -= intval((time() - strtotime($filenamedate)) / (24 * 3600));
 
             $content = file_get_contents("https://www.mumbaichoufer.com/view/" . $datecode . "/mc");
-            $day = date("d", strtotime(trim(explode("- Page 1", explode("Mumbaichoufer -", $content)[1])[0])));
+            $date = date("Y-m-d", strtotime(trim(explode("- Page 1", explode("Mumbaichoufer -", $content)[1])[0])));
 
-            $difference = 0;
-            if ($day >= $reqiredDay)
-                $difference = $day - $reqiredDay;
-            return ($datecode - $difference);
+            if ($date > $reqiredDate)
+                $difference = -1;
+            else if ($date < $reqiredDate)
+                $difference = 1;
+
+            while ($date != $reqiredDate && $datecode >= 0 && $datecode <= $originaldatecode) {
+                $datecode += $difference;
+                $date = date("Y-m-d", strtotime($date) + ($difference * 24 * 3600));
+                $content = file_get_contents("https://www.mumbaichoufer.com/view/" . $datecode . "/mc");
+                if ($date  == $reqiredDate && !$content) {
+                    $reqiredDate =  date("Y-m-d", strtotime($reqiredDate) + (24 * 3600));
+                    $difference = 1;
+                }
+            }
+            return $datecode;
             break;
 
         case "MM":
             $data = file_get_contents("https://epaper.mysurumithra.com/");
             $datecodearray = explode('class="epost-title"><a href="/epaper/edition/', $data);
+            $originaldatecode = explode('/mysuru-mithra"', $datecodearray[1])[0];
             $datecode = explode('/mysuru-mithra"', $datecodearray[1])[0];
 
-            $reqiredDay = date("d", strtotime($filenamedate));
-            $datecode -= (date("d", time()) - $reqiredDay);
+            $reqiredDate = date("Y-m-d", strtotime($filenamedate));
+            $datecode -= intval((time() - strtotime($filenamedate)) / (24 * 3600));
 
             $content = file_get_contents("https://epaper.mysurumithra.com/epaper/edition/" . $datecode . "/mysuru-mithra");
-            $day = date("d", strtotime(explode('"', explode('value="', $content)[1])[0]));
-            // if (date("d", time()) - date("d", strtotime($filenamedate)) > 15) {
-            //     $index = count($datecodearray) - 1;
-            //     $filenamedate = date('Y-m-d', time() - (15 * 24 * 3600));
-            // } else
-            //     $index = date("d", time()) - date("d", strtotime($filenamedate)) + 1;
+            $date = date("Y-m-d", strtotime(explode('"', explode('value="', $content)[1])[0]));
 
+            if ($date > $reqiredDate)
+                $difference = -1;
+            else if ($date < $reqiredDate)
+                $difference = 1;
 
-            echo "day = " . $day  . " reqday = " . $reqiredDay;
-            $difference = 0;
-            if ($day >= $reqiredDay)
-                $difference = $day - $reqiredDay;
-            return ($datecode - $difference);
+            while ($date != $reqiredDate && $datecode >= 0 && $datecode <= $originaldatecode) {
+                $datecode += $difference;
+                $date =  date("Y-m-d", strtotime($date) + ($difference * 24 * 3600));
+                $content = file_get_contents("https://epaper.mysurumithra.com/epaper/edition/" . $datecode . "/mysuru-mithra");
+                if ($date  == $reqiredDate && !$content) {
+                    $reqiredDate =  date("Y-m-d", strtotime($reqiredDate) + (24 * 3600));
+                    $difference = 1;
+                }
+            }
+            return $datecode;
             break;
 
         case "NB":
             return date('d-M-Y', strtotime($filenamedate));
-            break;
-
-        case "NBT":
-            return;
             break;
 
         case "ND":
@@ -114,41 +127,78 @@ function dateForLinks($epapercode, $filenamedate)
 
         case "POD":
             $data = file_get_contents("https://e2india.com/pratidin/");
-            $datecode = explode('/pratidin-odia-daily', explode('class="first disabled"><a href="/pratidin/epaper/edition/', $data)[1])[0];
+            $originaldatecode = explode('/', explode('href="/pratidin/epaper/edition/', $data)[1])[0];
+            $datecode = $originaldatecode;
+            $reqiredDate = date("Y-m-d", strtotime($filenamedate));
 
-            return $datecode - (date("d", time()) - date("d", strtotime($filenamedate)));
-            break;
+            $datecode -= intval((time() - strtotime($filenamedate)) / (24 * 3600));
+            $content = file_get_contents("https://e2india.com/pratidin/epaper/edition/" . $datecode . "/pratidin-odia-daily");
+            $date = date("Y-m-d", strtotime(explode('"', explode('currentText: "', $content)[1])[0]));
 
-        case "PUD":
-            return;
+
+            if ($date > $reqiredDate)
+                $difference = -1;
+            else if ($date < $reqiredDate)
+                $difference = 1;
+
+            while ($date != $reqiredDate && $datecode >= 0 && $datecode <= $originaldatecode) {
+                $datecode += $difference;
+                $content = file_get_contents("https://e2india.com/pratidin/epaper/edition/" . $datecode . "/pratidin-odia-daily");
+                if ($date  == $reqiredDate && !$content) {
+                    $reqiredDate =  date("Y-m-d", strtotime($reqiredDate) + (24 * 3600));
+                    $difference = 1;
+                }
+            }
+
+            return $datecode;
             break;
 
         case "RS":
-            return;
+            return date('dmY', strtotime($filenamedate));
             break;
 
         case "SAM":
-            return;
+            return date("dmY", strtotime($filenamedate));
             break;
 
         case "SBP":
-            return;
+            $data = file_get_contents("https://epaper.sangbadpratidin.in/");
+            $datecode = explode('/', explode('href="/epaper/edition/', $data)[1])[0];
+            $reqiredDate = date("d", strtotime($filenamedate));
+
+            $datecode -= intval((time() - strtotime($filenamedate)) / (24 * 3600));
+            $content = file_get_contents("https://epaper.sangbadpratidin.in/epaper/edition/" . $datecode . "/sangbad-pratidin");
+            $day = date("d", strtotime(explode('"', explode('currentText: "', $content)[1])[0]));
+
+
+            if ($day > $reqiredDate)
+                $difference = -1;
+            else if ($day < $reqiredDate)
+                $difference = 1;
+
+            while ($day != $reqiredDate) {
+                $datecode += $difference;
+                $content = file_get_contents("https://e2india.com/pratidin/epaper/edition/" . $datecode . "/pratidin-odia-daily");
+                $day = date("d", strtotime(explode('"', explode('currentText: "', $content)[1])[0]));
+            }
+
+            return $datecode;
             break;
 
         case "SMJ":
-            return;
+            return date('dmY', strtotime($filenamedate));
             break;
 
         case "SY":
-            return;
+            return date('Ymd', strtotime($filenamedate));
             break;
 
         case "VV":
-            return;
+            return date('Ymd', strtotime($filenamedate));
             break;
 
         case "YB":
-            return;
+            return date('Ymd', strtotime($filenamedate));
             break;
     }
 }
@@ -218,11 +268,11 @@ function cityArray($epapercode)
             break;
 
         case "RS":
-            return;
+            return array("Delhi", "Lucknow", "Patna", "Dehradun", "Kanpur", "Gorakhpur", "Varanasi");
             break;
 
         case "SAM":
-            return;
+            return array("Bhubaneswar", "Cuttack", "Rourkela", "Berhampur");
             break;
 
         case "SBP":
@@ -234,11 +284,11 @@ function cityArray($epapercode)
             break;
 
         case "SY":
-            return;
+            return array("Mangalore", "Davangere", "Kalaburgi", "Hubli", "Bangalore");
             break;
 
         case "VV":
-            return;
+            return array("Bengaluru", "Hubli");
             break;
 
         case "YB":
@@ -288,7 +338,7 @@ function cityCodeArray($epapercode)
             break;
 
         case "NBT":
-            return array("delhi/d/13", "mumbai/d/16", "lucknow-kanpur/d/9", "noida/d/19", "ghaziabad/d/20", "faridabad/d/24", "gurugram/d/25");
+            return array("delhi/dateForLinks/13", "mumbai/dateForLinks/16", "lucknow-kanpur/dateForLinks/9", "noida/dateForLinks/19", "ghaziabad/dateForLinks/20", "faridabad/dateForLinks/24", "gurugram/dateForLinks/25");
             break;
 
         case "ND":
@@ -316,11 +366,14 @@ function cityCodeArray($epapercode)
             break;
 
         case "RS":
-            return;
+            return array("http://sahara.4cplus.net/epaperimages//dateForLinks//dateForLinks-hr-md-1ll.png", "http://sahara.4cplus.net/epaperimages//dateForLinks//dateForLinks-lu-md-1ll.png", "http://sahara.4cplus.net/epaperimages//dateForLinks//dateForLinks-pt-md-1ll.png", "http://sahara.4cplus.net/epaperimages//dateForLinks//dateForLinks-dd-md-1ll.png", "http://sahara.4cplus.net/epaperimages//dateForLinks//dateForLinks-kn-md-1ll.png", "http://sahara.4cplus.net/epaperimages//dateForLinks//dateForLinks-gp-md-1ll.png", "http://sahara.4cplus.net/epaperimages//dateForLinks//29052023-vn-md-1ll.png");
             break;
 
-        case "SAM":
-            return;
+        case "SAM1":
+            return array("71", "72", "79", "77");
+            break;
+        case "SAM2":
+            return array("hr", "km", "ro", "be");
             break;
 
         case "SBP":
@@ -332,11 +385,11 @@ function cityCodeArray($epapercode)
             break;
 
         case "SY":
-            return;
+            return array("MANG", "DAVN", "KALB", "HUB",  "BANG",);
             break;
 
         case "VV":
-            return;
+            return array("BEN", "HUB");
             break;
 
         case "YB":
