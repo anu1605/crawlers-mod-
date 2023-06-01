@@ -1,8 +1,0 @@
-array("delhi/" . $filenamedate
- . "/13", "mumbai/" . $filenamedate
- . "/16", "lucknow-kanpur/" . $filenamedate
- . "/9", "noida/" . $filenamedate
- . "/19", "ghaziabad/" . $filenamedate
- . "/20", "faridabad/" . $filenamedate
- . "/24", "gurugram/" . $filenamedate
- . "/25")

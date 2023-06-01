@@ -9,7 +9,7 @@ function filenamedate($epapercode)
     //     $filedate = date('Y-m-d', strtotime($finddaterow['Paperdate']) + (24 * 3600));
     // } else
     // $filedate = date('Y-m-d', time() - (16 * 24 * 3600));
-    $filedate = date("Y-m-d", strtotime("30-02-2023"));
+    $filedate = date("Y-m-d", strtotime("17-03-2023"));
     return $filedate;
 }
 
@@ -304,9 +304,43 @@ function cityCodeArray($epapercode)
 
 function makefilepath($epapercode, $city, $date, $number, $lang)
 {
-    $filepath = "/nvme/" . $epapercode . "_" . $city . "_" . $date . "_" . $number . "_admin_" . $lang . ".jpg";
+    $filepath = "./nvme/" . $epapercode . "_" . $city . "_" . $date . "_" . $number . "_admin_" . $lang . ".jpg";
     $temp_txtfile = str_replace(".jpg", "", $filepath);
     $txtfile = "./imagestext/" . $epapercode . "_" . $city . "_" . $date . "_" . $number . "_admin_" . $lang . ".txt";
 
     return $filepath . "&" . $temp_txtfile . "&" . $txtfile;
+}
+function writeImage($url, $path)
+{
+    echo $path . PHP_EOL;
+    $image = file_get_contents($url);
+    $handle = fopen($path, "w");
+    fwrite($handle, $image);
+    fclose($handle);
+}
+
+function runTesseract($patharray, $lang)
+{
+    $filepath = $patharray[0];
+    $temp_txtfile = $patharray[1];
+    $txtfile = $patharray[2];
+    try {
+        $command = "tesseract " . $filepath . " " . $temp_txtfile . " -l " . $lang . " > /dev/null 2>&1";
+        exec($command);
+        $text = file_get_contents($temp_txtfile . ".txt");
+        $matches = array();
+        preg_match_all('/\+91[0-9]{10}|[0]?[6-9][0-9]{4}[\s]?[-]?[0-9]{5}/', $text, $matches);
+        $matches = str_replace("+91", "", str_replace("\n", "", str_replace("-", "", str_replace(" ", "", $matches[0]))));
+        foreach ($matches as $match => $val) $matches[$match] = ltrim($val, "0");
+        $n = count($matches);
+
+        if ($n == 0) {
+            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. No new numbers found\n";
+        } else {
+            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. " . $n . " new numbers found. File Saved\n";
+            rename($temp_txtfile . ".txt", $txtfile);
+        }
+    } catch (Exception $e) {
+        echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Falied to run\n";
+    }
 }
