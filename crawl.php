@@ -11,63 +11,64 @@ foreach ($epapers as $epapercode) {
 
     $filenamedate = filenamedate($epapercode);
 
-    // if ($epapercode == "AU") {
-    //     $dateForLinks = dateForLinks($epapercode, $filenamedate);
-    //     $cityarray = cityArray($epapercode);
+    if ($epapercode == "AU") {
+        $dateForLinks = dateForLinks($epapercode, $filenamedate);
+        $cityarray = cityArray($epapercode);
 
-    //     for ($edition = 0; $edition < count($cityarray); $edition++) {
-    //         $response = file_get_contents("https://epaper.amarujala.com/" . $cityarray[$edition] . "/" . $dateForLinks . "/01.html?format=img&ed_code=" . $cityarray[$edition]);
+        for ($edition = 0; $edition < count($cityarray); $edition++) {
+            $response = file_get_contents("https://epaper.amarujala.com/" . $cityarray[$edition] . "/" . $dateForLinks . "/01.html?format=img&ed_code=" . $cityarray[$edition]);
 
-    //         $a = explode('/hdimage.jpg"', $response);
-    //         $b = explode('<link rel="preload" href="', $a[0]);
-    //         $imageLinkPage1 = $b[1] . "/hdimage.jpg";
+            $a = explode('/hdimage.jpg"', $response);
+            $b = explode('<link rel="preload" href="', $a[0]);
+            $imageLinkPage1 = $b[1] . "/hdimage.jpg";
 
-    //         for ($i = 1; $i <= 50; $i++) {
+            for ($i = 1; $i <= 50; $i++) {
 
-    //             $pgImageURL = str_replace("/01/hdimage.jpg", "/" . sprintf('%02d', $i) . "/hdimage.jpg", $imageLinkPage1);
+                $pgImageURL = str_replace("/01/hdimage.jpg", "/" . sprintf('%02d', $i) . "/hdimage.jpg", $imageLinkPage1);
 
-    //             if (!getimagesize($pgImageURL)) {
-    //                 break;
-    //             }
+                if (!getimagesize($pgImageURL)) {
+                    break;
+                }
 
-    //             $filepath = "/nvme/AU_" . ucwords(explode("-", $cityarray[$edition])[0]) . "_" . $filenamedate . "_" . $i . "_admin_hin.jpg";
-    //             $temp_txtfile = str_replace(".jpg", "", $filepath);
-    //             $txtfile = "./imagestext/AU_" . ucwords(explode("-", $cityarray[$edition])[0]) . "_" . $filenamedate . "_" . $i . "_admin_hin.txt";
+                $getpath = makefilepath($epapercode, ucwords(explode("-", $cityarray[$edition])[0]), $filenamedate, $i, "hin");
+                $filepath = "/nvme/AU_" . ucwords(explode("-", $cityarray[$edition])[0]) . "_" . $filenamedate . "_" . $i . "_admin_hin.jpg";
+                $temp_txtfile = str_replace(".jpg", "", $filepath);
+                $txtfile = "./imagestext/AU_" . ucwords(explode("-", $cityarray[$edition])[0]) . "_" . $filenamedate . "_" . $i . "_admin_hin.txt";
 
-    //             $image = file_get_contents($pgImageURL);
-    //             $handle = fopen($filepath, "w");
-    //             fwrite($handle, $image);
-    //             fclose($handle);
+                $image = file_get_contents($pgImageURL);
+                $handle = fopen($getpath[0], "w");
+                fwrite($handle, $image);
+                fclose($handle);
 
-    //             echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $filepath . " Saved\n";
+                echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved\n";
 
-    //             try {
-    //                 $command = "tesseract " . $filepath . " " . $temp_txtfile . " -l hin > /dev/null 2>&1";
-    //                 exec($command);
-    //                 $text = file_get_contents($temp_txtfile . ".txt");
-    //                 $matches = array();
-    //                 preg_match_all('/\+91[0-9]{10}|[0]?[6-9][0-9]{4}[\s]?[-]?[0-9]{5}/', $text, $matches);
-    //                 $matches = str_replace("+91", "", str_replace("\n", "", str_replace("-", "", str_replace(" ", "", $matches[0]))));
-    //                 foreach ($matches as $match => $val) $matches[$match] = ltrim($val, "0");
-    //                 $n = count($matches);
+                try {
+                    $command = "tesseract " . $getpath[0] . " " . $temp_txtfile . " -l hin > /dev/null 2>&1";
+                    exec($command);
+                    $text = file_get_contents($temp_txtfile . ".txt");
+                    $matches = array();
+                    preg_match_all('/\+91[0-9]{10}|[0]?[6-9][0-9]{4}[\s]?[-]?[0-9]{5}/', $text, $matches);
+                    $matches = str_replace("+91", "", str_replace("\n", "", str_replace("-", "", str_replace(" ", "", $matches[0]))));
+                    foreach ($matches as $match => $val) $matches[$match] = ltrim($val, "0");
+                    $n = count($matches);
 
-    //                 if ($n == 0) {
-    //                     echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. No new numbers found\n";
-    //                 } else {
-    //                     echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. " . $n . " new numbers found. File Saved\n";
-    //                     rename($temp_txtfile . ".txt", $txtfile);
-    //                 }
-    //             } catch (Exception $e) {
-    //                 echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Falied to run\n";
-    //             }
-    //             echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $cityarray[$edition] . " Page " . $i . " Completed\n";
-    //         }
-    //         echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $cityarray[$edition] . " Completed\n";
-    //     }
+                    if ($n == 0) {
+                        echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. No new numbers found\n";
+                    } else {
+                        echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. " . $n . " new numbers found. File Saved\n";
+                        rename($temp_txtfile . ".txt", $txtfile);
+                    }
+                } catch (Exception $e) {
+                    echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Falied to run\n";
+                }
+                echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $cityarray[$edition] . " Page " . $i . " Completed\n";
+            }
+            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $cityarray[$edition] . " Completed\n";
+        }
 
-    //     exec("rm -f /nvme/*");
-    //     mysqli_query($conn, "INSERT INTO Crawl_Record (Papername,Papershortname,Paperdate) VALUES ('Amar Ujala','AU','" . $filenamedate . "')");
-    // }
+        exec("rm -f /nvme/*");
+        mysqli_query($conn, "INSERT INTO Crawl_Record (Papername,Papershortname,Paperdate) VALUES ('Amar Ujala','AU','" . $filenamedate . "')");
+    }
     // if ($epapercode == "DC") {
     //     $cityarray = cityArray($epapercode);
     //     $citycode = cityCodeArray($epapercode);
@@ -947,62 +948,61 @@ foreach ($epapers as $epapercode) {
     //     mysqli_query($conn, "INSERT INTO Crawl_Record (Papername,Papershortname,Paperdate) VALUES ('Purvanchal Prahari','PAP','" . $filenamedate . "')");
     // }
 
-    if ($epapercode == "POD") {
-        $datecode = dateForLinks($epapercode, $filenamedate);
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-        curl_setopt($ch, CURLOPT_URL, "https://e2india.com/pratidin/epaper/edition/" . $datecode . "/pratidin-odia-daily");
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.A.B.C Safari/525.13");
-        $data = curl_exec($ch);
-        curl_close($ch);
+    // if ($epapercode == "POD") {
+    //     $datecode = dateForLinks($epapercode, $filenamedate);
+    //     $ch = curl_init();
+    //     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    //     curl_setopt($ch, CURLOPT_URL, "https://e2india.com/pratidin/epaper/edition/" . $datecode . "/pratidin-odia-daily");
+    //     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    //     curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.A.B.C Safari/525.13");
+    //     $data = curl_exec($ch);
+    //     curl_close($ch);
 
-        $filenamedate = date("Y-m-d", strtotime(explode('"', explode('value="', $data)[1])[0]));
-        $contentArray = explode('</div><img class="" src="', $data);
-        for ($i = 1; $i < count($contentArray); $i++) {
-            $imagelink =  str_replace("&", "&amp;", explode('"',  $contentArray[$i])[0]);
+    //     $filenamedate = date("Y-m-d", strtotime(explode('"', explode('value="', $data)[1])[0]));
+    //     $contentArray = explode('</div><img class="" src="', $data);
+    //     for ($i = 1; $i < count($contentArray); $i++) {
+    //         $imagelink =  str_replace("&", "&amp;", explode('"',  $contentArray[$i])[0]);
 
-            $filepath = "/nvme/POD_Bhubaneswar" . "_" . $filenamedate . "_" . $i . "_ori.jpg";
-            $temp_txtfile = str_replace(".jpg", "", $filepath);
-            $txtfile = "./imagestext/POD_Bhubaneswar" . "_" . $filenamedate . "_" . $i . "_ori.txt";
+    //         $filepath = "/nvme/POD_Bhubaneswar" . "_" . $filenamedate . "_" . $i . "_ori.jpg";
+    //         $temp_txtfile = str_replace(".jpg", "", $filepath);
+    //         $txtfile = "./imagestext/POD_Bhubaneswar" . "_" . $filenamedate . "_" . $i . "_ori.txt";
 
-            echo PHP_EOL . $imagelink . PHP_EOL;
-            // $image = file_get_contents($imagelink);
-            // $handle = fopen($filepath, "w");
-            // fwrite($handle, $image);
-            // fclose($handle);
+    //         $image = file_get_contents($imagelink);
+    //         $handle = fopen($filepath, "w");
+    //         fwrite($handle, $image);
+    //         fclose($handle);
 
-            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $filepath . " Saved\n";
-
-
-            // try {
-            //     $command = "tesseract " . $filepath . " " . $temp_txtfile . " -l ori > /dev/null 2>&1";
-            //     exec($command);
-            //     $text = file_get_contents($temp_txtfile . ".txt");
+    //         echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $filepath . " Saved\n";
 
 
-            //     $matches = array();
-            //     preg_match_all('/\+91[0-9]{10}|[0]?[6-9][0-9]{4}[\s]?[-]?[0-9]{5}/', $text, $matches);
-            //     $matches = str_replace("+91", "", str_replace("\n", "", str_replace("-", "", str_replace(" ", "", $matches[0]))));
-            //     foreach ($matches as $match => $val) $matches[$match] = ltrim($val, "0");
-            //     $n = count($matches);
+    //         try {
+    //             $command = "tesseract " . $filepath . " " . $temp_txtfile . " -l ori > /dev/null 2>&1";
+    //             exec($command);
+    //             $text = file_get_contents($temp_txtfile . ".txt");
 
-            //     if ($n == 0) {
-            //         echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. No new numbers found\n";
-            //     } else {
-            //         echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. " . $n . " new numbers found. File Saved\n";
-            //         rename($temp_txtfile . ".txt", $txtfile);
-            //     }
-            // } catch (Exception $e) {
-            //     echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Falied to run\n";
-            // }
 
-            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Page " . $i . " Completed\n";
-        }
-        exec("rm -f /nvme/*");
+    //             $matches = array();
+    //             preg_match_all('/\+91[0-9]{10}|[0]?[6-9][0-9]{4}[\s]?[-]?[0-9]{5}/', $text, $matches);
+    //             $matches = str_replace("+91", "", str_replace("\n", "", str_replace("-", "", str_replace(" ", "", $matches[0]))));
+    //             foreach ($matches as $match => $val) $matches[$match] = ltrim($val, "0");
+    //             $n = count($matches);
 
-        // mysqli_query($conn, "INSERT INTO Crawl_Record (Papername,Papershortname,Paperdate) VALUES ('Pratidin Odia Daily','POD','" . $filenamedate . "')");
-    }
+    //             if ($n == 0) {
+    //                 echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. No new numbers found\n";
+    //             } else {
+    //                 echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. " . $n . " new numbers found. File Saved\n";
+    //                 rename($temp_txtfile . ".txt", $txtfile);
+    //             }
+    //         } catch (Exception $e) {
+    //             echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Falied to run\n";
+    //         }
+
+    //         echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Page " . $i . " Completed\n";
+    //     }
+    //     exec("rm -f /nvme/*");
+
+    //     mysqli_query($conn, "INSERT INTO Crawl_Record (Papername,Papershortname,Paperdate) VALUES ('Pratidin Odia Daily','POD','" . $filenamedate . "')");
+    // }
 
     // if ($epapercode == "RS") {
     //     $dateForLinks = dateForLinks($epapercode, $filenamedate);
@@ -1122,15 +1122,12 @@ foreach ($epapers as $epapercode) {
     // }
 
     // if ($epapercode == "SBP") {
-    //     $dateForLinks = 
-    //     $ch = curl_init();
-    //     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-    //     curl_setopt($ch, CURLOPT_URL, "https://epaper.sangbadpratidin.in/");
-    //     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    //     curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.A.B.C Safari/525.13");
-    //     $data = curl_exec($ch);
-    //     curl_close($ch);
+    //     $datecode = dateForLinks($epapercode, $filenamedate);
+    //     $data = file_get_contents("https://epaper.sangbadpratidin.in/epaper/edition/" . $datecode . "/sangbad-pratidin");
+
     //     $contentArray = explode('<div class="item">', $data);
+
+    //     $filenamedate = date("Y-m-d", strtotime(trim(explode('<', explode('p">', $data)[1])[0])));
 
     //     for ($i = 1; $i < count($contentArray); $i++) {
 
@@ -1139,7 +1136,6 @@ foreach ($epapers as $epapercode) {
     //         $filepath = "/nvme/SBP_Kolkata" . "_" . $filenamedate . "_" . $i . "_admin_ben.jpg";
     //         $temp_txtfile = str_replace(".jpg", "", $filepath);
     //         $txtfile = "./imagestext/SBP_Kolkata" . "_" . $filenamedate . "_" . $i . "_admin_ben.txt";
-
 
     //         $image = file_get_contents($imagelink);
 
