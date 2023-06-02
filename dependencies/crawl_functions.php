@@ -9,7 +9,7 @@ function filenamedate($epapercode)
     //     $filedate = date('Y-m-d', strtotime($finddaterow['Paperdate']) + (24 * 3600));
     // } else
     // $filedate = date('Y-m-d', time() - (16 * 24 * 3600));
-    $filedate = date("Y-m-d", strtotime("17-03-2023"));
+    $filedate = date("Y-m-d", time());
     return $filedate;
 }
 
@@ -343,4 +343,16 @@ function runTesseract($patharray, $lang)
     } catch (Exception $e) {
         echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Falied to run\n";
     }
+}
+
+function getHBeditionlink($city, $citylinkcode, $dateforlink, $code)
+{
+    $link = "https://www.haribhoomi.com/full-page-pdf/epaper/pdf/" . $city . "-full-edition/" . $dateforlink . "/" . $citylinkcode . "/";
+    if ($city == "raipur") {
+        $link2 = "https://www.haribhoomi.com/full-page-pdf/epaper/pdf/" . $city . "-full-edition/" . $dateforlink . "/" . $city . "-main/";
+        if (file_get_contents($link2 . $code)) {
+            $link = $link2;
+        }
+    }
+    return $link;
 }
