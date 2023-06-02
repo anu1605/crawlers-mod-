@@ -8,8 +8,8 @@ function filenamedate($epapercode)
     //     $finddaterow = mysqli_fetch_array($finddaters);
     //     $filedate = date('Y-m-d', strtotime($finddaterow['Paperdate']) + (24 * 3600));
     // } else
-    // $filedate = date('Y-m-d', time() - (16 * 24 * 3600));
-    $filedate = date("Y-m-d", time());
+    $filedate = date('Y-m-d', time());
+
     return $filedate;
 }
 
@@ -345,11 +345,11 @@ function runTesseract($patharray, $lang)
     }
 }
 
-function getHBeditionlink($city, $citylinkcode, $dateforlink, $code)
+function getHBeditionlink($city, $dateforlinks, $citylink, $code)
 {
-    $link = "https://www.haribhoomi.com/full-page-pdf/epaper/pdf/" . $city . "-full-edition/" . $dateforlink . "/" . $citylinkcode . "/";
+    $link = "https://www.haribhoomi.com/full-page-pdf/epaper/pdf/" . $city . "-full-edition/" . $dateforlinks . "/" . $citylink . "/";
     if ($city == "raipur") {
-        $link2 = "https://www.haribhoomi.com/full-page-pdf/epaper/pdf/" . $city . "-full-edition/" . $dateforlink . "/" . $city . "-main/";
+        $link2 = "https://www.haribhoomi.com/full-page-pdf/epaper/pdf/" . $city . "-full-edition/" . $dateforlinks . "/" . $city . "-main/";
         if (file_get_contents($link2 . $code)) {
             $link = $link2;
         }
