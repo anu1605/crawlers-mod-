@@ -1,14 +1,14 @@
 <?php
-// include "../../includes/connect.php";
+include "../../includes/connect.php";
 function filenamedate($epapercode)
 {
-    // $finddateq = "Select * from Crawl_Record WHERE Papershortname='" . $epapercode . "' ORDER BY Paperdate DESC LIMIT 1";
-    // $finddaters = mysqli_query($conn, $finddateq);
-    // if (mysqli_num_rows($finddaters)) {
-    //     $finddaterow = mysqli_fetch_array($finddaters);
-    //     $filedate = date('Y-m-d', strtotime($finddaterow['Paperdate']) + (24 * 3600));
-    // } else
-    $filedate = date('Y-m-d', time());
+    $finddateq = "Select * from Crawl_Record WHERE Papershortname='" . $epapercode . "' ORDER BY Paperdate DESC LIMIT 1";
+    $finddaters = mysqli_query($conn, $finddateq);
+    if (mysqli_num_rows($finddaters)) {
+        $finddaterow = mysqli_fetch_array($finddaters);
+        $filedate = date('Y-m-d', strtotime($finddaterow['Paperdate']) + (24 * 3600));
+    } else
+        $filedate = date('Y-m-d', time());
 
     return $filedate;
 }
