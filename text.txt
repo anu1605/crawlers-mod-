@@ -1,25 +1,37 @@
-  if ($epapercode == "YB") {
-        $lang = "hin";
-        $dateForLinks = dateForLinks($epapercode, $filenamedate);
+  if ($epapercode == "SY") {
 
-        for ($page = 1; $page < 50; $page++) {
-            for ($section = 1; $section < 100; $section++) {
-                $content = file_get_contents("http://yeshobhumi.com/articlepage.php?articleid=YBHUMI_MAI_" . $dateForLinks . "_" .  $page . "_" . $section);
-                
-                if ($content) {
-                    $imagelink = explode('"', explode('id="artimg"  src="', $content)[1])[0];
+        for ($edition = 0; $edition < count($cityarray); $edition++) {
+            for ($page = 1; $page <= $no_of_pages_to_run_on_each_edition; $page++) {
+                $testcontent  = file_get_contents("http://epaper.samyukthakarnataka.com/articlepage.php?articleid=SMYK_" . $citycode[$edition] . "_" . $dateForLinks . "_" . sprintf("%02d", $page) . "_1");
+                $testimagelink = explode('"', explode('id="artimg" src="', $testcontent)[1])[0];
+                $testimageInfo = getimagesize($testimagelink);
+
+                if (!$testimageInfo)
+                    break;
+
+                for ($section = 1; $section <= $no_of_sections_to_run_on_each_page; $section++) {
+                    $link =   "http://epaper.samyukthakarnataka.com/articlepage.php?articleid=SMYK_" . $citycode[$edition] . "_" . $dateForLinks . "_" . sprintf("%02d", $page) . "_" . $section;
+                    $content = file_get_contents($link);
+                    $imagelink = explode('"', explode('id="artimg" src="', $content)[1])[0];
                     $imageInfo = getimagesize($imagelink);
-                
+
                     if (!$imageInfo)
                         break;
-                    $getpath = explode("&", makefilepath($epapercode, "Mumbai", $filenamedate, $page . "00" . $section, $lang));
-                    writeImage($imagelink, $getpath[0]);
-                
-                    echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved\n";
-                    runTesseract($getpath, $lang);
-                echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . " Page " . $page . " Section " . $section . " Completed\n";
+                    echo $imagelink;
+                    // $getpath = explode("&", makefilepath($epapercode, $cityarray[$edition], $filenamedate, $page . "00" . $section, $lang));
+
+                    // if (alreadyDone($getpath[0], $conn) == "Yes") continue;
+
+                    // writeImage($imagelink, $getpath[0]);
+
+                    // echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved" . $eol;
+                    // runTesseract($cityarray[$edition], $page, $section, $conn, $getpath, $lang);
+                    echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $cityarray[$edition] . " Page " . $page . " Section " . $section . " Completed" . $eol;
+                    ob_flush();
+                    flush();
                 }
+                echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $cityarray[$edition] . " Page " . $page . " Completed" . $eol;
             }
-            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>"  . " Page " . $page . " Completed\n";
+            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $cityarray[$edition] . " Completed" . $eol;
         }
     }
