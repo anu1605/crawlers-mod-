@@ -4,9 +4,9 @@
 //use thiagoalessio\TesseractOCR\TesseractOCR;
 
 $eol = "\n";
-if($_REQUEST['browser']=="Yes") $eol = "<br>";
+if ($_REQUEST['browser'] == "Yes") $eol = "<br>";
 
-function filenamedate($epapercode,$conn)
+function filenamedate($epapercode, $conn)
 {
     $finddateq = "Select * from Crawl_Record WHERE Papershortname='" . $epapercode . "' ORDER BY Paperdate DESC LIMIT 1";
     $finddaters = mysqli_query($conn, $finddateq);
@@ -21,21 +21,19 @@ function filenamedate($epapercode,$conn)
 
 function dateForLinks($epapercode, $filenamedate)
 {
-    if($epapercode == "AU" OR $epapercode == "LM" OR $epapercode == "SY" OR $epapercode == "VV" OR $epapercode == "YB") return date('Ymd', strtotime($filenamedate));
-    else if ($epapercode == "HB")return date('Y/m/d', strtotime($filenamedate));
-    else if ($epapercode == "DJ" OR $epapercode == "NB" OR $epapercode == "ND" OR $epapercode == "NVR" OR $epapercode == "PAP") return date('d-M-Y', strtotime($filenamedate));
+    if ($epapercode == "AU" or $epapercode == "LM" or $epapercode == "SY" or $epapercode == "VV" or $epapercode == "YB") return date('Ymd', strtotime($filenamedate));
+    else if ($epapercode == "HB") return date('Y/m/d', strtotime($filenamedate));
+    else if ($epapercode == "DJ" or $epapercode == "NB" or $epapercode == "ND" or $epapercode == "NVR" or $epapercode == "PAP") return date('d-M-Y', strtotime($filenamedate));
     else if ($epapercode == "JPS") return date('dmy', strtotime($filenamedate));
-    else if ($epapercode == "NYB" OR $epapercode == "RS" OR $epapercode == "SAM" OR $epapercode == "SMJ") return date('dmY', strtotime($filenamedate));
-    else if ($epapercode == "KM"){        
+    else if ($epapercode == "NYB" or $epapercode == "RS" or $epapercode == "SAM" or $epapercode == "SMJ") return date('dmY', strtotime($filenamedate));
+    else if ($epapercode == "KM") {
 
         if (date("d", strtotime($filenamedate)) == date("d", time())) {
             $dateForLinks = date('Ymd', strtotime($filenamedate) - (24 * 3600));
         } else
             $dateForLinks = date("Ymd", strtotime($filenamedate));
         return $dateForLinks;
-
-    }
-    else if ($epapercode == "MC"){
+    } else if ($epapercode == "MC") {
 
         $data = file_get_contents("https://www.mumbaichoufer.com/");
         $datecodearray =  explode('data-cat_ids="" href="/view/', $data);
@@ -59,9 +57,7 @@ function dateForLinks($epapercode, $filenamedate)
             }
         }
         return $datecode;
-
-    }
-    else if ($epapercode == "MM"){
+    } else if ($epapercode == "MM") {
 
         $data = file_get_contents("https://epaper.mysurumithra.com/");
         $datecodearray = explode('class="epost-title"><a href="/epaper/edition/', $data);
@@ -85,9 +81,7 @@ function dateForLinks($epapercode, $filenamedate)
             }
         }
         return $datecode;
-
-    }
-    else if ($epapercode == "POD"){
+    } else if ($epapercode == "POD") {
 
         $data = file_get_contents("https://e2india.com/pratidin/");
         $originaldatecode = explode('/', explode('href="/pratidin/epaper/edition/', $data)[1])[0];
@@ -110,9 +104,7 @@ function dateForLinks($epapercode, $filenamedate)
             }
         }
         return $datecode;
-
-    }
-    else if ($epapercode == "SBP"){
+    } else if ($epapercode == "SBP") {
 
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
@@ -141,9 +133,7 @@ function dateForLinks($epapercode, $filenamedate)
             }
         }
         return $datecode;
-
     }
-
 }
 
 function cityArray($epapercode)
@@ -273,23 +263,23 @@ function makefilepath($epapercode, $city, $date, $number, $lang)
 
     return $filepath . "&" . $temp_txtfile . "&" . $txtfile . "&" . $newspaper_name . "&" . $newspaper_region . "&" . $newspaper_date . "&" . $newspaper_lang . "&" . $newspaper_full_name . "&" . $newspaper_operator_name;
 }
-function alreadyDone($filepath,$conn){
-    $a = explode("/",$filepath)[2];
-    $b = explode("_",$a);
+function alreadyDone($filepath, $conn)
+{
+    $a = explode("/", $filepath)[2];
+    $b = explode("_", $a);
     $newspaper_name = $b[0];
     $edition = $b[1];
     $date = $b[2];
-    if($b[3]>=1001){
-        $page = explode("00",$b[3])[0];
-        $section = explode("00",$b[3])[1];
-    }
-    else{
+    if ($b[3] >= 1001) {
+        $page = explode("00", $b[3])[0];
+        $section = explode("00", $b[3])[1];
+    } else {
         $page = $b[3];
         $section = '0';
     }
-    $q = "select * from Crawled_Pages WHERE Papershortname = '".$newspaper_name."' AND Paperdate = '".$date."' AND Edition = '".$edition."' AND Page = '".$page."' AND Section = '".$section."'";
-    $rs = mysqli_query($conn,$q);
-    if(mysqli_num_rows($rs)>0) return "Yes";
+    $q = "select * from Crawled_Pages WHERE Papershortname = '" . $newspaper_name . "' AND Paperdate = '" . $date . "' AND Edition = '" . $edition . "' AND Page = '" . $page . "' AND Section = '" . $section . "'";
+    $rs = mysqli_query($conn, $q);
+    if (mysqli_num_rows($rs) > 0) return "Yes";
     else return "No";
 }
 function writeImage($url, $path)
@@ -300,8 +290,9 @@ function writeImage($url, $path)
     fclose($handle);
 }
 
-function runTesseract($edition,$page,$section,$conn, $patharray, $lang)
-{    
+function runTesseract($edition, $page, $section, $conn, $patharray, $lang)
+{
+    global $eol;
     $filepath = $patharray[0];
     $temp_txtfile = $patharray[1];
     $txtfile = $patharray[2];
@@ -311,7 +302,7 @@ function runTesseract($edition,$page,$section,$conn, $patharray, $lang)
     $newspaper_lang = $patharray[6];
     $newspaper_full_name = $patharray[7];
     $newspaper_operator_name = $patharray[8];
-    $starttime = date('Y-m-d H:i:s',time());
+    $starttime = date('Y-m-d H:i:s', time());
 
     try {
 
@@ -323,15 +314,15 @@ function runTesseract($edition,$page,$section,$conn, $patharray, $lang)
 
         $matches = array();
         preg_match_all('/\+91[0-9]{10}|[0]?[6-9][0-9]{4}[\s]?[-]?[0-9]{5}/', $text, $matches);
-        $matches = str_replace("+91", "", str_replace("".$eol, "", str_replace("-", "", str_replace(" ", "", $matches[0]))));
+        $matches = str_replace("+91", "", str_replace("" . $eol, "", str_replace("-", "", str_replace(" ", "", $matches[0]))));
         foreach ($matches as $match => $val) $matches[$match] = ltrim($val, "0");
         $n = count($matches);
 
         if ($n == 0) {
-            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. No new numbers found".$eol;
+            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. No new numbers found" . $eol;
         } else {
 
-            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. " . $n . " new numbers found. File Saved".$eol;
+            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. " . $n . " new numbers found. File Saved" . $eol;
 
             // $handle = fopen($txtfile,"w");
             // fwrite($handle,$text);
@@ -339,46 +330,41 @@ function runTesseract($edition,$page,$section,$conn, $patharray, $lang)
 
             rename($temp_txtfile . ".txt", $txtfile);
 
-            echo "".$eol.date('Y-m-d H:i:s',(time()+(5.5*3600)))."==> "."Starting to add in the database...";
+            echo "" . $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Starting to add in the database...";
 
             $values = "";
 
-            for($i = 0; $i < $n; $i++) {
+            for ($i = 0; $i < $n; $i++) {
 
-                $blockcheck = "select * from Blocked_Numbers where Mobile_No = '".$matches[$i]."'";
-                $bcrs = mysqli_query($conn,$blockcheck);
-                if(!mysqli_num_rows($bcrs)){
-                    $values .= "('".$matches[$i]."','".$newspaper_name."','".$newspaper_region."','".$newspaper_date."','".$newspaper_lang."','".$newspaper_full_name."','".$newspaper_operator_name."'),";
-                }
-                else echo "".$eol.date('Y-m-d H:i:s',(time()+(5.5*3600)))."==> "."Skipping ".$matches[$i]." found in blocked numbers";
-
+                $blockcheck = "select * from Blocked_Numbers where Mobile_No = '" . $matches[$i] . "'";
+                $bcrs = mysqli_query($conn, $blockcheck);
+                if (!mysqli_num_rows($bcrs)) {
+                    $values .= "('" . $matches[$i] . "','" . $newspaper_name . "','" . $newspaper_region . "','" . $newspaper_date . "','" . $newspaper_lang . "','" . $newspaper_full_name . "','" . $newspaper_operator_name . "'),";
+                } else echo "" . $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Skipping " . $matches[$i] . " found in blocked numbers";
             }
 
-            if(strlen($values)>0){
-        
-            $values = substr($values,0,strlen($values)-1)." ON DUPLICATE KEY UPDATE Newspaper_Name = concat(Newspaper_Name,' | ',VALUES(Newspaper_Name)), Newspaper_Region = concat(Newspaper_Region,' | ',VALUES(Newspaper_Region)), Newspaper_Date = concat(Newspaper_Date,' | ',VALUES(Newspaper_Date)), Newspaper_Lang = Newspaper_Lang;";
+            if (strlen($values) > 0) {
 
-                $q = "insert into Mobile_Lists (Mobile_Number,Newspaper_Name,Newspaper_Region,Newspaper_Date,Newspaper_Lang,Image_File_Name,Image_Operator) values ".$values;
+                $values = substr($values, 0, strlen($values) - 1) . " ON DUPLICATE KEY UPDATE Newspaper_Name = concat(Newspaper_Name,' | ',VALUES(Newspaper_Name)), Newspaper_Region = concat(Newspaper_Region,' | ',VALUES(Newspaper_Region)), Newspaper_Date = concat(Newspaper_Date,' | ',VALUES(Newspaper_Date)), Newspaper_Lang = Newspaper_Lang;";
 
-                if(!mysqli_query($conn,$q)) {
-                    echo "".$eol.date('Y-m-d H:i:s',(time()+(5.5*3600)))."==> "."Error in insert query... ABORTING!".$eol.$q."".$eol;
+                $q = "insert into Mobile_Lists (Mobile_Number,Newspaper_Name,Newspaper_Region,Newspaper_Date,Newspaper_Lang,Image_File_Name,Image_Operator) values " . $values;
+
+                if (!mysqli_query($conn, $q)) {
+                    echo "" . $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Error in insert query... ABORTING!" . $eol . $q . "" . $eol;
                     die();
                 }
 
-                echo "".$eol.date('Y-m-d H:i:s',(time()+(5.5*3600)))."==> "."Insert query executed successfully......".$eol;
-
-            }
-            else echo "".$eol.date('Y-m-d H:i:s',(time()+(5.5*3600)))."==> "."No numbers left to insert";
+                echo "" . $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Insert query executed successfully......" . $eol;
+            } else echo "" . $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "No numbers left to insert";
         }
 
-        $iq = "INSERT INTO Crawled_Pages (Papername,Papershortname,Paperdate,Edition,Page,Section,No_Of_Mobiles_Found,Start_Time) VALUES ('" . $newspaper_full_name . "','" . $newspaper_name . "','" . $newspaper_date . "','".$edition."','".$page."','".$section."','".count($matches)."','".$starttime."')";
+        $iq = "INSERT INTO Crawled_Pages (Papername,Papershortname,Paperdate,Edition,Page,Section,No_Of_Mobiles_Found,Start_Time) VALUES ('" . $newspaper_full_name . "','" . $newspaper_name . "','" . $newspaper_date . "','" . $edition . "','" . $page . "','" . $section . "','" . count($matches) . "','" . $starttime . "')";
 
-        echo "".$eol.$iq."".$eol;
+        echo "" . $eol . $iq . "" . $eol;
 
         mysqli_query($conn, $iq);
-
     } catch (Exception $e) {
-        echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Falied to run".$eol;
+        echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Falied to run" . $eol;
     }
 }
 
