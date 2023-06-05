@@ -50,7 +50,6 @@ foreach ($epapers as $epapercode => $epaperArray) {
     if ($epapercode == "AU") {
 
         for ($edition = 0; $edition < count($cityarray); $edition++) {
-
             $response = file_get_contents("https://epaper.amarujala.com/" . $cityarray[$edition] . "/" . $dateForLinks . "/01.html?format=img&ed_code=" . $cityarray[$edition]);
             $a = explode('/hdimage.jpg"', $response);
             $b = explode('<link rel="preload" href="', $a[0]);
@@ -330,20 +329,20 @@ foreach ($epapers as $epapercode => $epaperArray) {
         if ($no_of_sections_to_run_on_each_page < 100 and $no_of_sections_to_run_on_each_page < count($sectionArray)) $sectionArray = array_slice($sectionArray, 0, $no_of_sections_to_run_on_each_page);
 
         for ($section = 1; $section < count($sectionArray) - 1; $section++) {
-            $imageId = explode('"', $sectionArray[$section])[0];
-            $imagelink = "https://www.mumbaichoufer.com/map-image/" . $imageId . ".jpg";
+            // $imageId = explode('"', $sectionArray[$section])[0];
+            // $imagelink = "https://www.mumbaichoufer.com/map-image/" . $imageId . ".jpg";
 
-            $getpath = explode("&", makefilepath($epapercode, "Mumbai", $filenamedate, $section, $lang));
+            // $getpath = explode("&", makefilepath($epapercode, "Mumbai", $filenamedate, $section, $lang));
 
-            if (alreadyDone($getpath[0], $conn) == "Yes") continue;
+            // if (alreadyDone($getpath[0], $conn) == "Yes") continue;
 
-            writeImage($imagelink, $getpath[0]);
+            // writeImage($imagelink, $getpath[0]);
 
-            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved" . $eol;
-            runTesseract("Mumbai", $page, $section, $conn, $getpath, $lang);
-            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Page " . $section . " Completed" . $eol;
-            ob_flush();
-            flush();
+            // echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved" . $eol;
+            // runTesseract("Mumbai", $page, $section, $conn, $getpath, $lang);
+            // echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Page " . $section . " Completed" . $eol;
+            // ob_flush();
+            // flush();
         }
     }
 
@@ -831,5 +830,5 @@ foreach ($epapers as $epapercode => $epaperArray) {
         }
     }
     //exec("rm -f /nvme/*");
-    mysqli_query($conn, "INSERT INTO Crawl_Record (Papername,Papershortname,Paperdate) VALUES ('" . $epapername . "','" . $epapercode . "','" . $filenamedate . "')");
+    // mysqli_query($conn, "INSERT INTO Crawl_Record (Papername,Papershortname,Paperdate) VALUES ('" . $epapername . "','" . $epapercode . "','" . $filenamedate . "')");
 }

@@ -3,155 +3,136 @@
 //require  '/var/www/d78236gbe27823/vendor/autoload.php';
 //use thiagoalessio\TesseractOCR\TesseractOCR;
 
+$eol = "\n";
+if ($_REQUEST['browser'] == "Yes") $eol = "<br>";
+
 function filenamedate($epapercode, $conn)
 {
-    // $finddateq = "Select * from Crawl_Record WHERE Papershortname='" . $epapercode . "' ORDER BY Paperdate DESC LIMIT 1";
-    // $finddaters = mysqli_query($conn, $finddateq);
-    // if (mysqli_num_rows($finddaters)) {
-    //     $finddaterow = mysqli_fetch_array($finddaters);
-    //     $filedate = date('Y-m-d', strtotime($finddaterow['Paperdate']) + (24 * 3600));
-    // } else
-    $filedate = date('Y-m-d', strtotime("2023-06-04"));
+    $finddateq = "Select * from Crawl_Record WHERE Papershortname='" . $epapercode . "' ORDER BY Paperdate DESC LIMIT 1";
+    $finddaters = mysqli_query($conn, $finddateq);
+    if (mysqli_num_rows($finddaters)) {
+        $finddaterow = mysqli_fetch_array($finddaters);
+        $filedate = date('Y-m-d', strtotime($finddaterow['Paperdate']) + (24 * 3600));
+    } else
+        $filedate = date('Y-m-d', time());
 
     return $filedate;
 }
 
 function dateForLinks($epapercode, $filenamedate)
 {
-    switch ($epapercode) {
+    if ($epapercode == "AU" or $epapercode == "LM" or $epapercode == "SY" or $epapercode == "VV" or $epapercode == "YB") return date('Ymd', strtotime($filenamedate));
+    else if ($epapercode == "HB") return date('Y/m/d', strtotime($filenamedate));
+    else if ($epapercode == "DJ" or $epapercode == "NB" or $epapercode == "ND" or $epapercode == "NVR" or $epapercode == "PAP") return date('d-M-Y', strtotime($filenamedate));
+    else if ($epapercode == "JPS") return date('dmy', strtotime($filenamedate));
+    else if ($epapercode == "NYB" or $epapercode == "RS" or $epapercode == "SAM" or $epapercode == "SMJ") return date('dmY', strtotime($filenamedate));
+    else if ($epapercode == "KM") {
 
-        case "AU" or "LM" or "SY" or "VV" or "YB" or "OHO":
-            return date('Ymd', strtotime($filenamedate));
-            break;
+        if (date("d", strtotime($filenamedate)) == date("d", time())) {
+            $dateForLinks = date('Ymd', strtotime($filenamedate) - (24 * 3600));
+        } else
+            $dateForLinks = date("Ymd", strtotime($filenamedate));
+        return $dateForLinks;
+    } else if ($epapercode == "MC") {
 
-        case "HB":
-            return date('Y/m/d', strtotime($filenamedate));
-            break;
-
-        case "DJ" or "NB" or "ND" or "NVR" or "PAP":
-            return date('d-M-Y', strtotime($filenamedate));
-            break;
-
-        case "JPS":
-            return date('dmy', strtotime($filenamedate));
-            break;
-
-        case "NYB" or "RS" or "SAM" or "SMJ":
-            return date('dmY', strtotime($filenamedate));
-            break;
-
-        case "KM":
-            if (date("d", strtotime($filenamedate)) == date("d", time())) {
-                $dateForLinks = date('Ymd', strtotime($filenamedate) - (24 * 3600));
-            } else
-                $dateForLinks = date("Ymd", strtotime($filenamedate));
-            return $dateForLinks;
-            break;
-
-        case "MC":
-            $data = file_get_contents("https://www.mumbaichoufer.com/");
-            $datecodearray =  explode('data-cat_ids="" href="/view/', $data);
-            $originaldatecode = explode('/mc"', $datecodearray[1])[0];
-            $datecode = explode('/mc"', $datecodearray[1])[0];
-            $reqiredDate = date("Y-m-d", strtotime($filenamedate));
-            $datecode -= intval((time() - strtotime($filenamedate)) / (24 * 3600));
+        $data = file_get_contents("https://www.mumbaichoufer.com/");
+        $datecodearray =  explode('data-cat_ids="" href="/view/', $data);
+        $originaldatecode = explode('/mc"', $datecodearray[1])[0];
+        $datecode = explode('/mc"', $datecodearray[1])[0];
+        $reqiredDate = date("Y-m-d", strtotime($filenamedate));
+        $datecode -= intval((time() - strtotime($filenamedate)) / (24 * 3600));
+        $content = file_get_contents("https://www.mumbaichoufer.com/view/" . $datecode . "/mc");
+        $date = date("Y-m-d", strtotime(trim(explode("- Page 1", explode("Mumbaichoufer -", $content)[1])[0])));
+        if ($date > $reqiredDate)
+            $difference = -1;
+        else if ($date < $reqiredDate)
+            $difference = 1;
+        while ($date != $reqiredDate && $datecode >= 0 && $datecode <= $originaldatecode) {
+            $datecode += $difference;
+            $date = date("Y-m-d", strtotime($date) + ($difference * 24 * 3600));
             $content = file_get_contents("https://www.mumbaichoufer.com/view/" . $datecode . "/mc");
-            $date = date("Y-m-d", strtotime(trim(explode("- Page 1", explode("Mumbaichoufer -", $content)[1])[0])));
-            if ($date > $reqiredDate)
-                $difference = -1;
-            else if ($date < $reqiredDate)
+            if ($date  == $reqiredDate && !$content) {
+                $reqiredDate =  date("Y-m-d", strtotime($reqiredDate) + (24 * 3600));
                 $difference = 1;
-            while ($date != $reqiredDate && $datecode >= 0 && $datecode <= $originaldatecode) {
-                $datecode += $difference;
-                $date = date("Y-m-d", strtotime($date) + ($difference * 24 * 3600));
-                $content = file_get_contents("https://www.mumbaichoufer.com/view/" . $datecode . "/mc");
-                if ($date  == $reqiredDate && !$content) {
-                    $reqiredDate =  date("Y-m-d", strtotime($reqiredDate) + (24 * 3600));
-                    $difference = 1;
-                }
             }
-            return $datecode;
-            break;
+        }
+        return $datecode;
+    } else if ($epapercode == "MM") {
 
-        case "MM":
-            $data = file_get_contents("https://epaper.mysurumithra.com/");
-            $datecodearray = explode('class="epost-title"><a href="/epaper/edition/', $data);
-            $originaldatecode = explode('/mysuru-mithra"', $datecodearray[1])[0];
-            $datecode = explode('/mysuru-mithra"', $datecodearray[1])[0];
-            $reqiredDate = date("Y-m-d", strtotime($filenamedate));
-            $datecode -= intval((time() - strtotime($filenamedate)) / (24 * 3600));
+        $data = file_get_contents("https://epaper.mysurumithra.com/");
+        $datecodearray = explode('class="epost-title"><a href="/epaper/edition/', $data);
+        $originaldatecode = explode('/mysuru-mithra"', $datecodearray[1])[0];
+        $datecode = explode('/mysuru-mithra"', $datecodearray[1])[0];
+        $reqiredDate = date("Y-m-d", strtotime($filenamedate));
+        $datecode -= intval((time() - strtotime($filenamedate)) / (24 * 3600));
+        $content = file_get_contents("https://epaper.mysurumithra.com/epaper/edition/" . $datecode . "/mysuru-mithra");
+        $date = date("Y-m-d", strtotime(explode('"', explode('value="', $content)[1])[0]));
+        if ($date > $reqiredDate)
+            $difference = -1;
+        else if ($date < $reqiredDate)
+            $difference = 1;
+        while ($date != $reqiredDate && $datecode >= 0 && $datecode <= $originaldatecode) {
+            $datecode += $difference;
+            $date =  date("Y-m-d", strtotime($date) + ($difference * 24 * 3600));
             $content = file_get_contents("https://epaper.mysurumithra.com/epaper/edition/" . $datecode . "/mysuru-mithra");
-            $date = date("Y-m-d", strtotime(explode('"', explode('value="', $content)[1])[0]));
-            if ($date > $reqiredDate)
-                $difference = -1;
-            else if ($date < $reqiredDate)
+            if ($date  == $reqiredDate && !$content) {
+                $reqiredDate =  date("Y-m-d", strtotime($reqiredDate) + (24 * 3600));
                 $difference = 1;
-            while ($date != $reqiredDate && $datecode >= 0 && $datecode <= $originaldatecode) {
-                $datecode += $difference;
-                $date =  date("Y-m-d", strtotime($date) + ($difference * 24 * 3600));
-                $content = file_get_contents("https://epaper.mysurumithra.com/epaper/edition/" . $datecode . "/mysuru-mithra");
-                if ($date  == $reqiredDate && !$content) {
-                    $reqiredDate =  date("Y-m-d", strtotime($reqiredDate) + (24 * 3600));
-                    $difference = 1;
-                }
             }
-            return $datecode;
-            break;
+        }
+        return $datecode;
+    } else if ($epapercode == "POD") {
 
-        case "POD":
-            $data = file_get_contents("https://e2india.com/pratidin/");
-            $originaldatecode = explode('/', explode('href="/pratidin/epaper/edition/', $data)[1])[0];
-            $datecode = $originaldatecode;
-            $reqiredDate = date("Y-m-d", strtotime($filenamedate));
-            $datecode -= intval((time() - strtotime($filenamedate)) / (24 * 3600));
+        $data = file_get_contents("https://e2india.com/pratidin/");
+        $originaldatecode = explode('/', explode('href="/pratidin/epaper/edition/', $data)[1])[0];
+        $datecode = $originaldatecode;
+        $reqiredDate = date("Y-m-d", strtotime($filenamedate));
+        $datecode -= intval((time() - strtotime($filenamedate)) / (24 * 3600));
+        $content = file_get_contents("https://e2india.com/pratidin/epaper/edition/" . $datecode . "/pratidin-odia-daily");
+        $date = date("Y-m-d", strtotime(explode('"', explode('currentText: "', $content)[1])[0]));
+        if ($date > $reqiredDate)
+            $difference = -1;
+        else if ($date < $reqiredDate)
+            $difference = 1;
+        while ($date != $reqiredDate && $datecode >= 0 && $datecode <= $originaldatecode) {
+            $datecode += $difference;
+            $date = date("Y-m-d", strtotime($date) + ($difference * 24 * 3600));
             $content = file_get_contents("https://e2india.com/pratidin/epaper/edition/" . $datecode . "/pratidin-odia-daily");
-            $date = date("Y-m-d", strtotime(explode('"', explode('currentText: "', $content)[1])[0]));
-            if ($date > $reqiredDate)
-                $difference = -1;
-            else if ($date < $reqiredDate)
+            if ($date  == $reqiredDate && !$content) {
+                $reqiredDate =  date("Y-m-d", strtotime($reqiredDate) + (24 * 3600));
                 $difference = 1;
-            while ($date != $reqiredDate && $datecode >= 0 && $datecode <= $originaldatecode) {
-                $datecode += $difference;
-                $date = date("Y-m-d", strtotime($date) + ($difference * 24 * 3600));
-                $content = file_get_contents("https://e2india.com/pratidin/epaper/edition/" . $datecode . "/pratidin-odia-daily");
-                if ($date  == $reqiredDate && !$content) {
-                    $reqiredDate =  date("Y-m-d", strtotime($reqiredDate) + (24 * 3600));
-                    $difference = 1;
-                }
             }
-            return $datecode;
-            break;
+        }
+        return $datecode;
+    } else if ($epapercode == "SBP") {
 
-        case "SBP":
-
-            $ch = curl_init();
-            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-            curl_setopt($ch, CURLOPT_URL, "https://epaper.sangbadpratidin.in/");
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-            curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.A.B.C Safari/525.13");
-            $data = curl_exec($ch);
-            curl_close($ch);
-            $originaldatecode = explode('/', explode('href="/epaper/edition/', $data)[1])[0];
-            $datecode = $originaldatecode;
-            $reqiredDate = date("Y-m-d", strtotime($filenamedate));
-            $datecode -= intval((time() - strtotime($filenamedate)) / (24 * 3600));
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($ch, CURLOPT_URL, "https://epaper.sangbadpratidin.in/");
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.A.B.C Safari/525.13");
+        $data = curl_exec($ch);
+        curl_close($ch);
+        $originaldatecode = explode('/', explode('href="/epaper/edition/', $data)[1])[0];
+        $datecode = $originaldatecode;
+        $reqiredDate = date("Y-m-d", strtotime($filenamedate));
+        $datecode -= intval((time() - strtotime($filenamedate)) / (24 * 3600));
+        $content = file_get_contents("https://epaper.sangbadpratidin.in/epaper/edition/" . $datecode . "/sangbad-pratidin");
+        $date = date("Y-m-d", strtotime(trim(explode('<', explode('p">', $content)[1])[0])));
+        if ($date > $reqiredDate)
+            $difference = -1;
+        else if ($date < $reqiredDate)
+            $difference = 1;
+        while ($date != $reqiredDate && $datecode >= 0 && $datecode <= $originaldatecode) {
+            $datecode += $difference;
+            $date =  date("Y-m-d", strtotime($date) + ($difference * 24 * 3600));
             $content = file_get_contents("https://epaper.sangbadpratidin.in/epaper/edition/" . $datecode . "/sangbad-pratidin");
-            $date = date("Y-m-d", strtotime(trim(explode('<', explode('p">', $content)[1])[0])));
-            if ($date > $reqiredDate)
-                $difference = -1;
-            else if ($date < $reqiredDate)
+            if ($date  == $reqiredDate && !$content) {
+                $reqiredDate =  date("Y-m-d", strtotime($reqiredDate) + (24 * 3600));
                 $difference = 1;
-            while ($date != $reqiredDate && $datecode >= 0 && $datecode <= $originaldatecode) {
-                $datecode += $difference;
-                $date =  date("Y-m-d", strtotime($date) + ($difference * 24 * 3600));
-                $content = file_get_contents("https://epaper.sangbadpratidin.in/epaper/edition/" . $datecode . "/sangbad-pratidin");
-                if ($date  == $reqiredDate && !$content) {
-                    $reqiredDate =  date("Y-m-d", strtotime($reqiredDate) + (24 * 3600));
-                    $difference = 1;
-                }
             }
-            return $datecode;
-            break;
+        }
+        return $datecode;
     }
 }
 
@@ -176,6 +157,10 @@ function cityArray($epapercode)
 
         case "LM":
             return array("Mumbai", "Ahmednagar", "Akola", "Aurangabad", "Goa", "Jalgaon", "Kolhapur", "Nagpur", "Nashik", "Pune", "solapur");
+            break;
+
+        case "MC":
+            return array("Mumbai");
             break;
 
         case "NB":
@@ -266,10 +251,9 @@ function cityCodeArray($epapercode)
 
 function makefilepath($epapercode, $city, $date, $number, $lang)
 {
-
-    $filepath = "./nvme/" . $epapercode . "_" . $city . "_" . $date . "_" . $number . "_admin_" . $lang . ".jpg";
+    $filepath = "/nvme/" . $epapercode . "_" . $city . "_" . $date . "_" . $number . "_admin_" . $lang . ".jpg";
     $temp_txtfile = str_replace(".jpg", "", $filepath);
-    $txtfile = "./ocrtexts/" . $epapercode . "_" . $city . "_" . $date . "_" . $number . "_admin_" . $lang . ".txt";
+    $txtfile = "/var/www/d78236gbe27823/marketing/Whatsapp/images/ocrtexts/" . $epapercode . "_" . $city . "_" . $date . "_" . $number . "_admin_" . $lang . ".txt";
     $newspaper_name = $epapercode;
     $newspaper_region = $city;
     $newspaper_date = $date;
@@ -279,25 +263,25 @@ function makefilepath($epapercode, $city, $date, $number, $lang)
 
     return $filepath . "&" . $temp_txtfile . "&" . $txtfile . "&" . $newspaper_name . "&" . $newspaper_region . "&" . $newspaper_date . "&" . $newspaper_lang . "&" . $newspaper_full_name . "&" . $newspaper_operator_name;
 }
-// function alreadyDone($filepath, $conn)
-// {
-//     $a = explode("/", $filepath)[2];
-//     $b = explode("_", $a);
-//     $newspaper_name = $b[0];
-//     $edition = $b[1];
-//     $date = $b[2];
-//     if ($b[3] >= 1001) {
-//         $page = explode("00", $b[3])[0];
-//         $section = explode("00", $b[3])[1];
-//     } else {
-//         $page = $b[3];
-//         $section = '0';
-//     }
-//     $q = "select * from Crawled_Pages WHERE Papershortname = '" . $newspaper_name . "' AND Paperdate = '" . $date . "' AND Edition = '" . $edition . "' AND Page = '" . $page . "' AND Section = '" . $section . "'";
-//     $rs = mysqli_query($conn, $q);
-//     if (mysqli_num_rows($rs) > 0) return "Yes";
-//     else return "No";
-// }
+function alreadyDone($filepath, $conn)
+{
+    $a = explode("/", $filepath)[2];
+    $b = explode("_", $a);
+    $newspaper_name = $b[0];
+    $edition = $b[1];
+    $date = $b[2];
+    if ($b[3] >= 1001) {
+        $page = explode("00", $b[3])[0];
+        $section = explode("00", $b[3])[1];
+    } else {
+        $page = $b[3];
+        $section = '0';
+    }
+    $q = "select * from Crawled_Pages WHERE Papershortname = '" . $newspaper_name . "' AND Paperdate = '" . $date . "' AND Edition = '" . $edition . "' AND Page = '" . $page . "' AND Section = '" . $section . "'";
+    $rs = mysqli_query($conn, $q);
+    if (mysqli_num_rows($rs) > 0) return "Yes";
+    else return "No";
+}
 function writeImage($url, $path)
 {
     $image = file_get_contents($url);
@@ -308,6 +292,7 @@ function writeImage($url, $path)
 
 function runTesseract($edition, $page, $section, $conn, $patharray, $lang)
 {
+    global $eol;
     $filepath = $patharray[0];
     $temp_txtfile = $patharray[1];
     $txtfile = $patharray[2];
@@ -334,10 +319,10 @@ function runTesseract($edition, $page, $section, $conn, $patharray, $lang)
         $n = count($matches);
 
         if ($n == 0) {
-            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. No new numbers found\n";
+            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. No new numbers found" .  $eol;
         } else {
 
-            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. " . $n . " new numbers found. File Saved\n";
+            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. " . $n . " new numbers found. File Saved" . $eol;
 
             // $handle = fopen($txtfile,"w");
             // fwrite($handle,$text);
@@ -345,42 +330,41 @@ function runTesseract($edition, $page, $section, $conn, $patharray, $lang)
 
             rename($temp_txtfile . ".txt", $txtfile);
 
-            echo "\n" . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Starting to add in the database...";
+            echo $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Starting to add in the database...";
 
             $values = "";
 
             for ($i = 0; $i < $n; $i++) {
 
-                // $blockcheck = "select * from Blocked_Numbers where Mobile_No = '" . $matches[$i] . "'";
-                // $bcrs = mysqli_query($conn, $blockcheck);
-                // if (!mysqli_num_rows($bcrs)) {
-                //     $values .= "('" . $matches[$i] . "','" . $newspaper_name . "','" . $newspaper_region . "','" . $newspaper_date . "','" . $newspaper_lang . "','" . $newspaper_full_name . "','" . $newspaper_operator_name . "'),";
-                $_GLOBAL['numbersArray'] .= $matches[$i] . ",";
-                // } else echo "\n" . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Skipping " . $matches[$i] . " found in blocked numbers";
+                $blockcheck = "select * from Blocked_Numbers where Mobile_No = '" . $matches[$i] . "'";
+                $bcrs = mysqli_query($conn, $blockcheck);
+                if (!mysqli_num_rows($bcrs)) {
+                    $values .= "('" . $matches[$i] . "','" . $newspaper_name . "','" . $newspaper_region . "','" . $newspaper_date . "','" . $newspaper_lang . "','" . $newspaper_full_name . "','" . $newspaper_operator_name . "'),";
+                } else echo "" . $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Skipping " . $matches[$i] . " found in blocked numbers";
             }
 
-            // if (strlen($values) > 0) {
+            if (strlen($values) > 0) {
 
-            //     $values = substr($values, 0, strlen($values) - 1) . " ON DUPLICATE KEY UPDATE Newspaper_Name = concat(Newspaper_Name,' | ',VALUES(Newspaper_Name)), Newspaper_Region = concat(Newspaper_Region,' | ',VALUES(Newspaper_Region)), Newspaper_Date = concat(Newspaper_Date,' | ',VALUES(Newspaper_Date)), Newspaper_Lang = Newspaper_Lang;";
+                $values = substr($values, 0, strlen($values) - 1) . " ON DUPLICATE KEY UPDATE Newspaper_Name = concat(Newspaper_Name,' | ',VALUES(Newspaper_Name)), Newspaper_Region = concat(Newspaper_Region,' | ',VALUES(Newspaper_Region)), Newspaper_Date = concat(Newspaper_Date,' | ',VALUES(Newspaper_Date)), Newspaper_Lang = Newspaper_Lang;";
 
-            //     $q = "insert into Mobile_Lists (Mobile_Number,Newspaper_Name,Newspaper_Region,Newspaper_Date,Newspaper_Lang,Image_File_Name,Image_Operator) values " . $values;
+                $q = "insert into Mobile_Lists (Mobile_Number,Newspaper_Name,Newspaper_Region,Newspaper_Date,Newspaper_Lang,Image_File_Name,Image_Operator) values " . $values;
 
-            //     if (!mysqli_query($conn, $q)) {
-            //         echo "\n" . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Error in insert query... ABORTING!\n\n" . $q . "\n\n";
-            //         die();
-            //     }
+                if (!mysqli_query($conn, $q)) {
+                    echo  $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Error in insert query... ABORTING!" . $eol . $q . "" . $eol;
+                    die();
+                }
 
-            //     echo "\n" . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Insert query executed successfully......\n\n";
-            // } else echo "\n" . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "No numbers left to insert";
+                echo  $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Insert query executed successfully......" . $eol;
+            } else echo  $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "No numbers left to insert";
         }
 
-        // $iq = "INSERT INTO Crawled_Pages (Papername,Papershortname,Paperdate,Edition,Page,Section,No_Of_Mobiles_Found,Start_Time) VALUES ('" . $newspaper_full_name . "','" . $newspaper_name . "','" . $newspaper_date . "','" . $edition . "','" . $page . "','" . $section . "','" . count($matches) . "','" . $starttime . "')";
+        $iq = "INSERT INTO Crawled_Pages (Papername,Papershortname,Paperdate,Edition,Page,Section,No_Of_Mobiles_Found,Start_Time) VALUES ('" . $newspaper_full_name . "','" . $newspaper_name . "','" . $newspaper_date . "','" . $edition . "','" . $page . "','" . $section . "','" . count($matches) . "','" . $starttime . "')";
 
-        // echo "\n" . $iq . "\n";
+        echo $eol . $iq . "" . $eol;
 
-        // mysqli_query($conn, $iq);
+        mysqli_query($conn, $iq);
     } catch (Exception $e) {
-        echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Falied to run\n";
+        echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Falied to run" . $eol;
     }
 }
 
