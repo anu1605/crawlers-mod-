@@ -1,36 +1,28 @@
-  if ($epapercode == "SMJ") {
+ if ($epapercode == "PAP") {
 
-        $content = file_get_contents("https://samajaepaper.in/epaper/1/73/" . $filenamedate . "/1");
-        $pageArray = explode("class='map", $content);
+        $data = file_get_contents("https://www.glpublications.in/PurvanchalPrahari/Guwahati/" . $dateForLinks . "/Page-2");
+        $sectionarray = explode('<div class="clip-container"', $data);
 
-        if ($no_of_pages_to_run_on_each_edition > 0 and $no_of_pages_to_run_on_each_edition < count($pageArray)) $pageArray = array_slice($pageArray, 0, $no_of_pages_to_run_on_each_edition);
+        if ($no_of_sections_to_run_on_each_page > 0 and $no_of_sections_to_run_on_each_page < count($sectionarray)) $sectionarray = array_slice($sectionarray, 0, $no_of_sections_to_run_on_each_page);
 
-        for ($page = 1; $page < count($pageArray); $page++) {
-            $sectionArray = explode("show_pop('", $pageArray[$page]);
+        for ($section = 1; $section <= count($sectionarray); $section++) {
+            $imagelink = explode("'", explode("<img src='", $sectionarray[$section])[1])[0];
 
-            $maxlength = count($sectionArray);
-            if ($no_of_sections_to_run_on_each_page > 0 and $no_of_sections_to_run_on_each_page < count($sectionArray)) $sectionArray = array_slice($sectionArray, 1, $no_of_sections_to_run_on_each_page + 1);
+            if (trim($imagelink) == '')
+                break;
 
-            for ($section = 1; $section <= count($sectionArray); $section++) {
-                $name = explode("','", $sectionArray[$section])[1];
+            echo $imagelink . "<br>";
 
-                if (trim($name) == '')
-                    break;
+            // $getpath = explode("&", makefilepath($epapercode, "Bhubaneswar", $filenamedate, $section, $lang));
 
-                $imagelink = "https://samajaepaper.in/epaperimages/" . $dateForLinks . "/" . $dateForLinks . "-md-bh-" . $page . "/" . $name . ".jpg";
-                echo $imagelink . "<br>";
-                // $getpath = explode("&", makefilepath($epapercode, "Bhubaneswar", $filenamedate, $page . "00" . $section, $lang));
+            // if (alreadyDone($getpath[0], $conn) == "Yes") continue;
 
-                // if (alreadyDone($getpath[0], $conn) == "Yes") continue;
+            // writeImage($imagelink, $getpath[0]);
 
-                // writeImage($imagelink, $getpath[0]);
-
-                // echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved" . $eol;
-                // runTesseract("Bhubaneswar", $page, $section, $conn, $getpath, $lang);
-                echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . " Page " . $page . " Section " . $section . " Completed" . $eol;
-                ob_flush();
-                flush();
-            }
-            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>"  . " Page " . $page . " Completed" . $eol;
+            // echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved" . $eol;
+            // runTesseract("Bhubaneswar", $section, 0, $conn, $getpath, $lang);
+            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>"  . " Page " . $section . " Completed" . $eol;
+            ob_flush();
+            flush();
         }
     }

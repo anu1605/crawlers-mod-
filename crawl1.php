@@ -13,8 +13,8 @@ $eol = "<br>";
 $static_date = ''; // Production Value is ''
 $no_of_papers_to_run = 0; // Production Value is 0
 $no_of_editions_to_run = 1; // Production Value is 0
-$no_of_pages_to_run_on_each_edition = 0; // Production Value is 50
-$no_of_sections_to_run_on_each_page = 0; // Production Value is 100
+$no_of_pages_to_run_on_each_edition = 1; // Production Value is 50
+$no_of_sections_to_run_on_each_page = 1; // Production Value is 100
 
 //// code starts below ///
 
@@ -28,7 +28,10 @@ $epapers = array("AU" => "Amar Ujala,hin", "DC" => "Deccan Chronicle,eng", "HB" 
 
 if ($no_of_papers_to_run > 0 and $no_of_papers_to_run < count($epapers)) $epapers = array_slice($epapers, 0, $no_of_papers_to_run);
 
+$counter = 0;
 foreach ($epapers as $epapercode => $epaperArray) {
+
+    echo "<br>" . $epapercode . "=" . ++$counter . "<br>";
 
     if ($static_date <> '') $filenamedate = $static_date;
     else {
@@ -42,12 +45,15 @@ foreach ($epapers as $epapercode => $epaperArray) {
     $cityarray = cityArray($epapercode);
     $citycode = cityCodeArray($epapercode);
 
-    if ($no_of_editions_to_run > 0 and $no_of_editions_to_run < count($cityarray)) $cityarray = array_slice($cityarray, 0, $no_of_editions_to_run);
+    if ($cityarray != null)
+        if ($no_of_editions_to_run > 0 and $no_of_editions_to_run < count($cityarray)) $cityarray = array_slice($cityarray, 0, $no_of_editions_to_run);
+
 
     $citylinkcode = cityCodeArray($epapercode);
     $linkarray = cityCodeArray($epapercode);
 
     $datecode = dateForLinks($epapercode, $filenamedate);
+
 
     if ($epapercode == "AU") {
 
@@ -57,8 +63,10 @@ foreach ($epapers as $epapercode => $epaperArray) {
             $b = explode('<link rel="preload" href="', $a[0]);
             $imageLinkPage1 = $b[1] . "/hdimage.jpg";
 
+
             for ($page = 1; $page <= $no_of_pages_to_run_on_each_edition; $page++) {
                 $imagelink = str_replace("/01/hdimage.jpg", "/" . sprintf('%02d', $page) . "/hdimage.jpg", $imageLinkPage1);
+
 
                 if (!getimagesize($imagelink)) {
                     break;
@@ -93,11 +101,12 @@ foreach ($epapers as $epapercode => $epaperArray) {
                 if (!file_get_contents($testlink))
                     break;
 
-                for ($section = 1; $section < $no_of_sections_to_run_on_each_page; $section++) {
+                for ($section = 1; $section <= $no_of_sections_to_run_on_each_page; $section++) {
                     $imagelink = "http://103.241.136.50/epaper/DC/" . $code . "/510X798/" . $filenamedate . "/b_images/" . $code . "_" . $filenamedate . "_maip" . $page . "_" . $section . ".jpg";
 
                     if (!file_get_contents($imagelink))
                         break;
+
 
                     $getpath = explode("&", makefilepath($epapercode, $city, $filenamedate, $page . "00" . $section, $lang));
 
@@ -157,10 +166,13 @@ foreach ($epapers as $epapercode => $epaperArray) {
             $section2 = explode('class="page-toolbar"><div id="page-level-nav"', $section1)[0];
             $linkArray = explode('data-big="', trim($section2));
 
-            if ($no_of_pages_to_run_on_each_edition > 0 and $no_of_pages_to_run_on_each_edition < count($linkArray)) $linkArray = array_slice($linkArray, 0, $no_of_pages_to_run_on_each_edition);
+            if ($no_of_pages_to_run_on_each_edition > 0 and $no_of_pages_to_run_on_each_edition < count($linkArray)) $linkArray = array_slice($linkArray, 1, $no_of_pages_to_run_on_each_edition + 1);
 
-            for ($page = 1; $page < count($linkArray); $page++) {
+            for ($page = 1; $page <= count($linkArray); $page++) {
                 $imagelink =  explode('"', $linkArray[$page])[0];
+
+                if (trim($imagelink) == '')
+                    break;
 
                 $getpath = explode("&", makefilepath($epapercode, ucwords($cityarray[$edition]), $filenamedate, $page, $lang));
 
@@ -194,7 +206,8 @@ foreach ($epapers as $epapercode => $epaperArray) {
             $pagesHTML = $b[0];
             $a = explode('ss.png">', $pagesHTML);
 
-            for ($page = 0; $page < count($a) - 1; $page++) {
+            if ($no_of_pages_to_run_on_each_edition > 0 and  $no_of_pages_to_run_on_each_edition < count($a) - 1) $a = array_slice($a, 0, $no_of_pages_to_run_on_each_edition);
+            for ($page = 0; $page <= count($a) - 1; $page++) {
                 $b = explode('data-src="', $a[$page]);
                 $url = $b[1];
                 $url_parts = explode('/', $url);
@@ -202,6 +215,10 @@ foreach ($epapers as $epapercode => $epaperArray) {
                 $modified_last_part = 'M-' . $last_part . '.png';
                 $url_parts[count($url_parts) - 1] = $modified_last_part;
                 $imagelink = implode('/', $url_parts);
+
+                if (!getimagesize($imagelink))
+                    break;
+
 
                 $getpath = explode("&", makefilepath($epapercode, $cityarray[$edition], $filenamedate, $page + 1, $lang));
 
@@ -225,6 +242,8 @@ foreach ($epapers as $epapercode => $epaperArray) {
             $imagelink = "https://www.janpathsamachar.com/epaper/janpath/" . $dateForLinks . "/page" . $page . ".jpg";
 
             if (file_get_contents($imagelink)) {
+
+
                 $getpath = explode("&", makefilepath($epapercode, "Siliguri", $filenamedate, $page, $lang));
 
                 if (alreadyDone($getpath[0], $conn) == "Yes") continue;
@@ -254,7 +273,7 @@ foreach ($epapers as $epapercode => $epaperArray) {
             if (!$testimageInfo)
                 break;
 
-            for ($section = 1; $section < $no_of_sections_to_run_on_each_page; $section++) {
+            for ($section = 1; $section <= $no_of_sections_to_run_on_each_page; $section++) {
                 $content = file_get_contents("http://karnatakamalla.com/articlepage.php?articleid=KARMAL_MAI_" . $dateForLinks . "_" .  $page . "_" . $section);
 
                 if ($content) {
@@ -263,6 +282,7 @@ foreach ($epapers as $epapercode => $epaperArray) {
 
                     if (!$imageInfo)
                         break;
+
 
                     $getpath = explode("&", makefilepath($epapercode, "Karnataka", $filenamedate, $page . "00" . $section, $lang));
 
@@ -292,13 +312,15 @@ foreach ($epapers as $epapercode => $epaperArray) {
                 if (!strpos($testcontent, "ArticleImages"))
                     break;
 
-                for ($section = 1; $section < $no_of_sections_to_run_on_each_page; $section++) {
+                for ($section = 1; $section <= $no_of_sections_to_run_on_each_page; $section++) {
                     $content = file_get_contents("http://epaper.lokmat.com/articlepage.php?articleid=LOK_" . $citycode[$edition] . "_" . $dateForLinks . "_" . $page . "_" . $section);
 
                     if (!strpos($content, "ArticleImages"))
                         break;
 
                     $imagelink = explode("'", explode("src='", $content)[1])[0];
+
+
                     $getpath = explode("&", makefilepath($epapercode, $cityarray[$edition], $filenamedate, $page . "00" . $section, $lang));
 
                     if (alreadyDone($getpath[0], $conn) == "Yes") continue;
@@ -320,7 +342,6 @@ foreach ($epapers as $epapercode => $epaperArray) {
     }
 
     if ($epapercode == "MC") {
-
         $firsturl = "https://www.mumbaichoufer.com/view/" . $datecode . "/mc";
         $content =   file_get_contents($firsturl);
         $firstId = explode('"', explode('{"mp_id":"', $content)[1])[0];
@@ -329,7 +350,7 @@ foreach ($epapers as $epapercode => $epaperArray) {
         $filenamedate = date("Y-m-d", strtotime(trim(explode("- Page 1", explode("Mumbaichoufer -", $content)[1])[0])));
 
         if ($no_of_sections_to_run_on_each_page > 0 and $no_of_sections_to_run_on_each_page < count($sectionArray)) {
-            $sectionArray = array_slice($sectionArray, 0, $no_of_sections_to_run_on_each_page + 1);
+            $sectionArray = array_slice($sectionArray, 1, $no_of_sections_to_run_on_each_page + 1);
         }
 
         for ($section = 1; $section <= count($sectionArray); $section++) {
@@ -338,7 +359,7 @@ foreach ($epapers as $epapercode => $epaperArray) {
                 break;
             $imagelink = "https://www.mumbaichoufer.com/map-image/" . $imageId . ".jpg";
 
-            echo $imagelink . "<br>";
+
             $getpath = explode("&", makefilepath($epapercode, "Mumbai", $filenamedate, $section, $lang));
 
             if (alreadyDone($getpath[0], $conn) == "Yes") continue;
@@ -353,30 +374,31 @@ foreach ($epapers as $epapercode => $epaperArray) {
         }
     }
 
-    if ($epapercode == "MM") {
+    // if ($epapercode == "MM") {
 
-        $content = file_get_contents("https://epaper.mysurumithra.com/epaper/edition/" . $datecode . "/mysuru-mithra/page/1");
-        $filenamedate = date("Y-m-d", strtotime(explode('"', explode('value="', $content)[1])[0]));
-        $imagelinks =   explode('"><img src="', $content);
+    //     $content = file_get_contents("https://epaper.mysurumithra.com/epaper/edition/" . $datecode . "/mysuru-mithra/page/1");
+    //     $filenamedate = date("Y-m-d", strtotime(explode('"', explode('value="', $content)[1])[0]));
+    //     $imagelinks =   explode('"><img src="', $content);
 
-        if ($no_of_pages_to_run_on_each_edition > 0 and $no_of_pages_to_run_on_each_edition < count($imagelinks)) $imagelinks = array_slice($imagelinks, 0, $no_of_pages_to_run_on_each_edition + 1);
+    //     if ($no_of_pages_to_run_on_each_edition > 0 and $no_of_pages_to_run_on_each_edition < count($imagelinks)) $imagelinks = array_slice($imagelinks, 0, $no_of_pages_to_run_on_each_edition + 1);
 
-        for ($page = 1; $page <= count($imagelinks); $page++) {
-            $imagelink = explode('"', explode('"><img src="', $content)[$page])[0];
+    //     for ($page = 1; $page <= count($imagelinks); $page++) {
+    //         $imagelink = explode('"', explode('"><img src="', $content)[$page])[0];
 
-            $getpath = explode("&", makefilepath($epapercode, "Mysore", $filenamedate, $page, $lang));
+    //         $getpath = explode("&", makefilepath($epapercode, "Mysore", $filenamedate, $page, $lang));
 
-            if (alreadyDone($getpath[0], $conn) == "Yes") continue;
+    //         if (alreadyDone($getpath[0], $conn) == "Yes") continue;
 
-            writeImage($imagelink, $getpath[0]);
+    //         writeImage($imagelink, $getpath[0]);
 
-            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved" . $eol;
-            runTesseract("Mysore", $page, 0, $conn, $getpath, $lang);
-            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Page " . $page . " Completed" . $eol;
-            ob_flush();
-            flush();
-        }
-    }
+    //         echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved" . $eol;
+    //         runTesseract("Mysore", $page, 0, $conn, $getpath, $lang);
+    //         echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Page " . $page . " Completed" . $eol;
+    //         ob_flush();
+    //         flush();
+    //     }
+    // }
+
     if ($epapercode == "NB") {
 
         for ($edition = 0; $edition < count($cityarray); $edition++) {
@@ -396,6 +418,7 @@ foreach ($epapers as $epapercode => $epaperArray) {
 
                     if (!$imageInfo)
                         break;
+
 
                     $getpath = explode("&", makefilepath($epapercode, ucwords($cityarray[$edition]), $filenamedate, $page . "00" . $section, $lang));
 
@@ -427,13 +450,15 @@ foreach ($epapers as $epapercode => $epaperArray) {
             $pageArray = explode("<div class='imgd'><img src='", $section2);
 
             if ($no_of_pages_to_run_on_each_edition > 0 && $no_of_pages_to_run_on_each_edition < count($pageArray))
-                $pageArray = array_slice($pageArray, 0, $no_of_pages_to_run_on_each_edition);
+                $pageArray = array_slice($pageArray, 1, $no_of_pages_to_run_on_each_edition + 1);
 
             for ($page = 1; $page <= count($pageArray); $page++) {
                 $imagelink =  str_replace('ss', '', trim(explode("' class='pagethumb'", $pageArray[$page])[0]));
 
                 if (trim($imagelink) == '')
                     break;
+
+
                 $getpath = explode("&", makefilepath($epapercode, $cityarray[$edition], $filenamedate, $page, $lang));
 
                 if (alreadyDone($getpath[0], $conn) == "Yes") continue;
@@ -465,15 +490,14 @@ foreach ($epapers as $epapercode => $epaperArray) {
             for ($page = 1; $page <= $a; $page++) {
                 $imagelink = trim(explode('" title=', $array[$page])[0]);
 
-                echo $imagelink . "<br>";
-                // $getpath = explode("&", makefilepath($epapercode, $cityarray[$edition], $filenamedate, $page, $lang));
+                $getpath = explode("&", makefilepath($epapercode, $cityarray[$edition], $filenamedate, $page, $lang));
 
-                // if (alreadyDone($getpath[0], $conn) == "Yes") continue;
+                if (alreadyDone($getpath[0], $conn) == "Yes") continue;
 
-                // writeImage($imagelink, $getpath[0]);
+                writeImage($imagelink, $getpath[0]);
 
-                // echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved" . $eol;
-                // runTesseract($cityarray[$edition], $page, 0, $conn, $getpath, $lang);
+                echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved" . $eol;
+                runTesseract($cityarray[$edition], $page, 0, $conn, $getpath, $lang);
                 echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Page " . $page . " Completed" . $eol;
                 ob_flush();
                 flush();
@@ -502,6 +526,7 @@ foreach ($epapers as $epapercode => $epaperArray) {
                     if (!$imageInfo)
                         break;
 
+
                     $getpath = explode("&", makefilepath($epapercode, ucwords($cityarray[$edition]), $filenamedate, $page . "00" . $section, $lang));
 
                     if (alreadyDone($getpath[0], $conn) == "Yes") continue;
@@ -521,7 +546,6 @@ foreach ($epapers as $epapercode => $epaperArray) {
     }
 
     if ($epapercode == "NYB") {
-
         for ($page = 1; $page <= $no_of_pages_to_run_on_each_edition; $page++) {
             if ($page == 1)
                 $pageName = "index.php";
@@ -530,12 +554,11 @@ foreach ($epapers as $epapercode => $epaperArray) {
             $content = file_get_contents("https://niyomiyabarta.com/epaper/" . $dateForLinks . "/" . $pageName);
 
             if ($content) {
-                echo $page . "<br>";
                 $section1 = explode('<map name="Map2"', $content)[1];
                 $section2 = explode('</map>', $section1)[0];
                 $linkArray = explode("redirectme('", $section2);
 
-                if ($no_of_sections_to_run_on_each_page > 0 and $no_of_sections_to_run_on_each_page < count($linkArray)) $linkArray = array_slice($linkArray, 0, $no_of_sections_to_run_on_each_page);
+                if ($no_of_sections_to_run_on_each_page > 0 and $no_of_sections_to_run_on_each_page < count($linkArray)) $linkArray = array_slice($linkArray, 1, $no_of_sections_to_run_on_each_page + 1);
 
                 for ($section = 1; $section <= count($linkArray); $section++) {
                     $pageName = explode("',", $linkArray[$section])[0];
@@ -543,6 +566,8 @@ foreach ($epapers as $epapercode => $epaperArray) {
 
                     if (trim($pageName) == '')
                         break;
+
+
                     $getpath = explode("&", makefilepath($epapercode, "Guwahati", $filenamedate, $page . "00" . $section, $lang));
 
                     if (alreadyDone($getpath[0], $conn) == "Yes") continue;
@@ -565,18 +590,20 @@ foreach ($epapers as $epapercode => $epaperArray) {
         $data = file_get_contents("https://www.glpublications.in/PurvanchalPrahari/Guwahati/" . $dateForLinks . "/Page-2");
         $sectionarray = explode('<div class="clip-container"', $data);
 
-        if ($no_of_sections_to_run_on_each_page > 0 and $no_of_sections_to_run_on_each_page < count($sectionarray)) $sectionarray = array_slice($sectionarray, 0, $no_of_sections_to_run_on_each_page);
+        if ($no_of_sections_to_run_on_each_page > 0 and $no_of_sections_to_run_on_each_page < count($sectionarray)) $sectionarray = array_slice($sectionarray, 1, $no_of_sections_to_run_on_each_page + 1);
 
         for ($section = 1; $section <= count($sectionarray); $section++) {
-            $link = explode("'", explode("<img src='", $sectionarray[$section])[1])[0];
+            $imagelink = explode("'", explode("<img src='", $sectionarray[$section])[1])[0];
 
-            if (trim($link) == '')
+            if (trim($imagelink) == '')
                 break;
+
+
             $getpath = explode("&", makefilepath($epapercode, "Bhubaneswar", $filenamedate, $section, $lang));
 
             if (alreadyDone($getpath[0], $conn) == "Yes") continue;
 
-            writeImage($link, $getpath[0]);
+            writeImage($imagelink, $getpath[0]);
 
             echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved" . $eol;
             runTesseract("Bhubaneswar", $section, 0, $conn, $getpath, $lang);
@@ -606,6 +633,7 @@ foreach ($epapers as $epapercode => $epaperArray) {
             if (trim($imagelink) == '')
                 break;
 
+
             $getpath = explode("&", makefilepath($epapercode, "Bhubaneswar", $filenamedate, $page, $lang));
 
             if (alreadyDone($getpath[0], $conn) == "Yes") continue;
@@ -627,15 +655,16 @@ foreach ($epapers as $epapercode => $epaperArray) {
                 $imagelink = str_replace("md-1", "md-" . $page, str_replace("dateForLinks", $dateForLinks, $linkarray[$edition]));
 
                 if (file_get_contents($imagelink)) {
-                    echo $imagelink . "<br>";
-                    // $getpath = explode("&", makefilepath($epapercode, $cityarray[$edition], $filenamedate, $page, $lang));
 
-                    // if (alreadyDone($getpath[0], $conn) == "Yes") continue;
 
-                    // writeImage($imagelink, $getpath[0]);
+                    $getpath = explode("&", makefilepath($epapercode, $cityarray[$edition], $filenamedate, $page, $lang));
 
-                    // echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved" . $eol;
-                    // runTesseract($cityarray[$edition], $page, 0, $conn, $getpath, $lang);
+                    if (alreadyDone($getpath[0], $conn) == "Yes") continue;
+
+                    writeImage($imagelink, $getpath[0]);
+
+                    echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved" . $eol;
+                    runTesseract($cityarray[$edition], $page, 0, $conn, $getpath, $lang);
                     echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $cityarray[$edition] . " Page " . $page . " Completed" . $eol;
                     ob_flush();
                     flush();
@@ -673,6 +702,7 @@ foreach ($epapers as $epapercode => $epaperArray) {
                     if (trim($imagelinkid) == '')
                         break;
 
+
                     $getpath = explode("&", makefilepath($epapercode, $cityarray[$edition], $filenamedate, $page . "00" . $section, $lang));
 
                     if (alreadyDone($getpath[0], $conn) == "Yes") continue;
@@ -704,6 +734,7 @@ foreach ($epapers as $epapercode => $epaperArray) {
 
             if (trim($imagelink) == '')
                 break;
+
 
             $getpath = explode("&", makefilepath($epapercode, "Kolkata", $filenamedate, $page, $lang));
 
@@ -740,6 +771,7 @@ foreach ($epapers as $epapercode => $epaperArray) {
                 $pageno = explode("'", $pageArray[$page])[0];
                 $imagelink = "https://samajaepaper.in/epaperimages/" . $dateForLinks . "/" . $dateForLinks . "-md-bh-" . $pageno . "/" . $name . ".jpg";
 
+
                 $getpath = explode("&", makefilepath($epapercode, "Bhubaneswar", $filenamedate, $pageno . "00" . $section, $lang));
 
                 if (alreadyDone($getpath[0], $conn) == "Yes") continue;
@@ -775,6 +807,8 @@ foreach ($epapers as $epapercode => $epaperArray) {
 
                     if (!$imageInfo)
                         break;
+
+
                     $getpath = explode("&", makefilepath($epapercode, $cityarray[$edition], $filenamedate, $page . "00" . $section, $lang));
 
                     if (alreadyDone($getpath[0], $conn) == "Yes") continue;
@@ -815,6 +849,8 @@ foreach ($epapers as $epapercode => $epaperArray) {
 
                         if (!$imageInfo && $section > 3)
                             break;
+
+
                         $getpath = explode("&", makefilepath($epapercode, str_replace($cityarray[0], "Bangalore", $cityarray[$edition]), $filenamedate, $page . "00" . $section, $lang));
 
                         if (alreadyDone($getpath[0], $conn) == "Yes") continue;
@@ -836,6 +872,8 @@ foreach ($epapers as $epapercode => $epaperArray) {
 
 
     if ($epapercode == "YB") {
+        echo $dateForLinks . "<br>";
+        die();
         for ($page = 1; $page <= $no_of_pages_to_run_on_each_edition; $page++) {
             $testcontent = file_get_contents("http://yeshobhumi.com/articlepage.php?articleid=YBHUMI_MAI_" . $dateForLinks . "_" .  $page . "_1");
             $testimagelink = explode('"', explode('id="artimg"  src="', $testcontent)[1])[0];
@@ -853,6 +891,7 @@ foreach ($epapers as $epapercode => $epaperArray) {
 
                     if (!$imageInfo)
                         break;
+
 
                     $getpath = explode("&", makefilepath($epapercode, "Mumbai", $filenamedate, $page . "00" . $section, $lang));
 

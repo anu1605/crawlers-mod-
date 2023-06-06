@@ -195,17 +195,23 @@ function cityArray($epapercode)
         case "VV":
             return array("Bengaluru", "Hubli");
             break;
-        case "SMJ":
-            return array("Bhubaneswar");
-            break;
-        case "YB":
-            return array("Mumbai");
-            break;
-        case "SBP":
-            return array("Kolkata");
-            break;
-        case "POD":
-            return array("Bhubaneswar");
+            // case "SMJ":
+            //     return array("Bhubaneswar");
+            //     break;
+            // case "YB":
+            //     return array("Mumbai");
+            //     break;
+            // case "SBP":
+            //     return array("Kolkata");
+            //     break;
+            // case "POD":
+            //     return array("Bhubaneswar");
+            //     break;
+            // case "JPS":
+            //     return array("Siliguri");
+            //     break;
+        default:
+            return null;
             break;
     }
 }
