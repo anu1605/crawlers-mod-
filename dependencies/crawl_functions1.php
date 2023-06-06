@@ -24,6 +24,8 @@ function dateForLinks($epapercode, $filenamedate)
 {
     if ($epapercode == "AU" or $epapercode == "LM" or $epapercode == "SY" or $epapercode == "VV" or $epapercode == "YB") return date('Ymd', strtotime($filenamedate));
     else if ($epapercode == "HB") return date('Y/m/d', strtotime($filenamedate));
+    else if ($epapercode == "GSM") return date("d-m-Y", strtotime($filenamedate));
+
     else if ($epapercode == "DJ" or $epapercode == "NB" or $epapercode == "ND" or $epapercode == "NVR" or $epapercode == "PAP") return date('d-M-Y', strtotime($filenamedate));
     else if ($epapercode == "JPS") return date('dmy', strtotime($filenamedate));
     else if ($epapercode == "NYB" or $epapercode == "RS" or $epapercode == "SAM" or $epapercode == "SMJ") return date('dmY', strtotime($filenamedate));
@@ -195,24 +197,11 @@ function cityArray($epapercode)
         case "VV":
             return array("Bengaluru", "Hubli");
             break;
-            // case "SMJ":
-            //     return array("Bhubaneswar");
-            //     break;
-            // case "YB":
-            //     return array("Mumbai");
-            //     break;
-            // case "SBP":
-            //     return array("Kolkata");
-            //     break;
-            // case "POD":
-            //     return array("Bhubaneswar");
-            //     break;
-            // case "JPS":
-            //     return array("Siliguri");
-            //     break;
+        case "PN":
+            return  array("Mumbai", "Pune", "Nashik", "Nagpur", "Kolhapur", "Satara", "Solapur", "Jalgaon", "Dhule", "Nanded", "Thane", "Latur", "Ahmednagar");
+            break;
         default:
             return null;
-            break;
     }
 }
 function cityCodeArray($epapercode)
@@ -264,6 +253,10 @@ function cityCodeArray($epapercode)
 
         case "VV":
             return array("BEN", "HUB");
+            break;
+        case "PN":
+            return array("PM", "PU", "NS", "NAG", "KOL", "STR", "SOL", "JAL", "DHU", "NDD", "PT", "LTR", "AH");
+
             break;
     }
 }
