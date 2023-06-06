@@ -385,14 +385,14 @@ foreach ($epapers as $epapercode => $epaperArray) {
     //     for ($page = 1; $page <= count($imagelinks); $page++) {
     //         $imagelink = explode('"', explode('"><img src="', $content)[$page])[0];
 
-    //         $getpath = explode("&", makefilepath($epapercode, "Mysore", $filenamedate, $page, $lang));
+    // $getpath = explode("&", makefilepath($epapercode, "Mysore", $filenamedate, $page, $lang));
 
-    //         if (alreadyDone($getpath[0], $conn) == "Yes") continue;
+    // if (alreadyDone($getpath[0], $conn) == "Yes") continue;
 
-    //         writeImage($imagelink, $getpath[0]);
+    // writeImage($imagelink, $getpath[0]);
 
-    //         echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved" . $eol;
-    //         runTesseract("Mysore", $page, 0, $conn, $getpath, $lang);
+    // echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved" . $eol;
+    // runTesseract("Mysore", $page, 0, $conn, $getpath, $lang);
     //         echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Page " . $page . " Completed" . $eol;
     //         ob_flush();
     //         flush();
@@ -872,8 +872,6 @@ foreach ($epapers as $epapercode => $epaperArray) {
 
 
     if ($epapercode == "YB") {
-        echo $dateForLinks . "<br>";
-        die();
         for ($page = 1; $page <= $no_of_pages_to_run_on_each_edition; $page++) {
             $testcontent = file_get_contents("http://yeshobhumi.com/articlepage.php?articleid=YBHUMI_MAI_" . $dateForLinks . "_" .  $page . "_1");
             $testimagelink = explode('"', explode('id="artimg"  src="', $testcontent)[1])[0];
@@ -910,5 +908,5 @@ foreach ($epapers as $epapercode => $epaperArray) {
         }
     }
     //exec("rm -f /nvme/*");
-    // mysqli_query($conn, "INSERT INTO Crawl_Record1 (Papername,Papershortname,Paperdate) VALUES ('" . $epapername . "','" . $epapercode . "','" . $filenamedate . "')");
+    mysqli_query($conn, "INSERT INTO Crawl_Record1 (Papername,Papershortname,Paperdate) VALUES ('" . $epapername . "','" . $epapercode . "','" . $filenamedate . "')");
 }
