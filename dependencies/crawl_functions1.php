@@ -201,6 +201,12 @@ function cityArray($epapercode)
         case "YB":
             return array("Mumbai");
             break;
+        case "SBP":
+            return array("Kolkata");
+            break;
+        case "POD":
+            return array("Bhubaneswar");
+            break;
     }
 }
 function cityCodeArray($epapercode)
