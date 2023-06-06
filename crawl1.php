@@ -64,7 +64,6 @@ foreach ($epapers as $epapercode => $epaperArray) {
                     break;
                 }
 
-                echo $imagelink . "<br>";
                 $getpath = explode("&", makefilepath($epapercode, ucwords(explode("-", $cityarray[$edition])[0]), $filenamedate, $page, $lang));
 
                 if (alreadyDone($getpath[0], $conn) == "Yes") continue;
