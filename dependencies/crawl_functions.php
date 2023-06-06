@@ -3,8 +3,9 @@
 //require  '/var/www/d78236gbe27823/vendor/autoload.php';
 //use thiagoalessio\TesseractOCR\TesseractOCR;
 
-$eol = "\n";
-if ($_REQUEST['browser'] == "Yes") $eol = "<br>";
+// $eol = "\n";
+// if ($_REQUEST['browser'] == "Yes")
+$eol = "<br>";
 
 function filenamedate($epapercode, $conn)
 {
@@ -194,6 +195,10 @@ function cityArray($epapercode)
         case "VV":
             return array("Bengaluru", "Hubli");
             break;
+
+        default:
+            return null;
+            
     }
 }
 function cityCodeArray($epapercode)
@@ -314,12 +319,12 @@ function runTesseract($edition, $page, $section, $conn, $patharray, $lang)
 
         $matches = array();
         preg_match_all('/\+91[0-9]{10}|[0]?[6-9][0-9]{4}[\s]?[-]?[0-9]{5}/', $text, $matches);
-        $matches = str_replace("+91", "", str_replace("" . $eol, "", str_replace("-", "", str_replace(" ", "", $matches[0]))));
+        $matches = str_replace("+91", "", str_replace("\n", "", str_replace("-", "", str_replace(" ", "", $matches[0]))));
         foreach ($matches as $match => $val) $matches[$match] = ltrim($val, "0");
         $n = count($matches);
 
         if ($n == 0) {
-            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. No new numbers found" . $eol;
+            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. No new numbers found" .  $eol;
         } else {
 
             echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. " . $n . " new numbers found. File Saved" . $eol;
@@ -330,7 +335,7 @@ function runTesseract($edition, $page, $section, $conn, $patharray, $lang)
 
             rename($temp_txtfile . ".txt", $txtfile);
 
-            echo "" . $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Starting to add in the database...";
+            echo $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Starting to add in the database...";
 
             $values = "";
 
@@ -350,17 +355,17 @@ function runTesseract($edition, $page, $section, $conn, $patharray, $lang)
                 $q = "insert into Mobile_Lists (Mobile_Number,Newspaper_Name,Newspaper_Region,Newspaper_Date,Newspaper_Lang,Image_File_Name,Image_Operator) values " . $values;
 
                 if (!mysqli_query($conn, $q)) {
-                    echo "" . $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Error in insert query... ABORTING!" . $eol . $q . "" . $eol;
+                    echo  $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Error in insert query... ABORTING!" . $eol . $q . "" . $eol;
                     die();
                 }
 
-                echo "" . $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Insert query executed successfully......" . $eol;
-            } else echo "" . $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "No numbers left to insert";
+                echo  $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Insert query executed successfully......" . $eol;
+            } else echo  $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "No numbers left to insert";
         }
 
         $iq = "INSERT INTO Crawled_Pages (Papername,Papershortname,Paperdate,Edition,Page,Section,No_Of_Mobiles_Found,Start_Time) VALUES ('" . $newspaper_full_name . "','" . $newspaper_name . "','" . $newspaper_date . "','" . $edition . "','" . $page . "','" . $section . "','" . count($matches) . "','" . $starttime . "')";
 
-        echo "" . $eol . $iq . "" . $eol;
+        echo $eol . $iq . "" . $eol;
 
         mysqli_query($conn, $iq);
     } catch (Exception $e) {
