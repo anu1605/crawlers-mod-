@@ -3,9 +3,8 @@
 //require  '/var/www/d78236gbe27823/vendor/autoload.php';
 //use thiagoalessio\TesseractOCR\TesseractOCR;
 
-// $eol = "\n";
-// if ($_REQUEST['browser'] == "Yes")
-$eol = "<br>";
+if (php_sapi_name() == "cli") $eol = "\n";
+else  $eol = "<br>";
 
 function filenamedate($epapercode, $conn)
 {
@@ -263,10 +262,10 @@ function makefilepath($epapercode, $city, $date, $number, $lang)
     $newspaper_region = $city;
     $newspaper_date = $date;
     $newspaper_lang = $lang;
-    $newspaper_full_name = $epapercode . "_" . $city . "_" . $date . "_" . $number . "_admin_" . $lang . ".jpg";
+    $Image_file_name = $epapercode . "_" . $city . "_" . $date . "_" . $number . "_admin_" . $lang . ".jpg";
     $newspaper_operator_name = 'admin';
 
-    return $filepath . "&" . $temp_txtfile . "&" . $txtfile . "&" . $newspaper_name . "&" . $newspaper_region . "&" . $newspaper_date . "&" . $newspaper_lang . "&" . $newspaper_full_name . "&" . $newspaper_operator_name;
+    return $filepath . "&" . $temp_txtfile . "&" . $txtfile . "&" . $newspaper_name . "&" . $newspaper_region . "&" . $newspaper_date . "&" . $newspaper_lang . "&" . $Image_file_name . "&" . $newspaper_operator_name;
 }
 function alreadyDone($filepath, $conn)
 {
@@ -289,13 +288,19 @@ function alreadyDone($filepath, $conn)
 }
 function writeImage($url, $path)
 {
-    $image = file_get_contents($url);
+    $arrContextOptions=array(
+        "ssl"=>array(
+            "verify_peer"=>false,
+            "verify_peer_name"=>false,
+        ),
+    ); 
+    $image = file_get_contents($url, false, stream_context_create($arrContextOptions));
     $handle = fopen($path, "w");
     fwrite($handle, $image);
     fclose($handle);
 }
 
-function runTesseract($edition, $page, $section, $conn, $patharray, $lang)
+function runTesseract($epapername,$edition, $page, $section, $conn, $patharray, $lang)
 {
     global $eol;
     $filepath = $patharray[0];
@@ -305,13 +310,15 @@ function runTesseract($edition, $page, $section, $conn, $patharray, $lang)
     $newspaper_region = $patharray[4];
     $newspaper_date = $patharray[5];
     $newspaper_lang = $patharray[6];
-    $newspaper_full_name = $patharray[7];
+    $Image_file_name = $patharray[7];
     $newspaper_operator_name = $patharray[8];
     $starttime = date('Y-m-d H:i:s', time());
 
     try {
 
-        $command = "tesseract " . $filepath . " " . $temp_txtfile . " -l " . $lang . " > /dev/null 2>&1";
+        if($lang!='eng') $command = "tesseract " . $filepath . " " . $temp_txtfile . " -l " . $lang . "+eng > /dev/null 2>&1";
+        else $command = "tesseract " . $filepath . " " . $temp_txtfile . " -l eng > /dev/null 2>&1";
+        
         exec($command);
         $text = file_get_contents($temp_txtfile . ".txt");
 
@@ -344,7 +351,7 @@ function runTesseract($edition, $page, $section, $conn, $patharray, $lang)
                 $blockcheck = "select * from Blocked_Numbers where Mobile_No = '" . $matches[$i] . "'";
                 $bcrs = mysqli_query($conn, $blockcheck);
                 if (!mysqli_num_rows($bcrs)) {
-                    $values .= "('" . $matches[$i] . "','" . $newspaper_name . "','" . $newspaper_region . "','" . $newspaper_date . "','" . $newspaper_lang . "','" . $newspaper_full_name . "','" . $newspaper_operator_name . "'),";
+                    $values .= "('" . $matches[$i] . "','" . $newspaper_name . "','" . $newspaper_region . "','" . $newspaper_date . "','" . $newspaper_lang . "','" . $Image_file_name . "','" . $newspaper_operator_name . "'),";
                 } else echo "" . $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Skipping " . $matches[$i] . " found in blocked numbers";
             }
 
@@ -363,7 +370,7 @@ function runTesseract($edition, $page, $section, $conn, $patharray, $lang)
             } else echo  $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "No numbers left to insert";
         }
 
-        $iq = "INSERT INTO Crawled_Pages (Papername,Papershortname,Paperdate,Edition,Page,Section,No_Of_Mobiles_Found,Start_Time) VALUES ('" . $newspaper_full_name . "','" . $newspaper_name . "','" . $newspaper_date . "','" . $edition . "','" . $page . "','" . $section . "','" . count($matches) . "','" . $starttime . "')";
+        $iq = "INSERT INTO Crawled_Pages (Papername,Papershortname,Paperdate,Edition,Page,Section,No_Of_Mobiles_Found,Start_Time) VALUES ('" . $epapername . "','" . $newspaper_name . "','" . $newspaper_date . "','" . $newspaper_region . "','" . $page . "','" . $section . "','" . count($matches) . "','" . $starttime . "')";
 
         echo $eol . $iq . "" . $eol;
 
@@ -371,6 +378,19 @@ function runTesseract($edition, $page, $section, $conn, $patharray, $lang)
     } catch (Exception $e) {
         echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Falied to run" . $eol;
     }
+
+    $emergencyStopQ = "SELECT Emergency_STOP FROM Emergency";
+    $emergencyStopRS = mysqli_query($conn,$emergencyStopQ);
+    $emergencyStopRow = mysqli_fetch_array($emergencyStopRS);
+
+    if($emergencyStopRow['Emergency_STOP'] == "STOP"){
+        
+        echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $newspaper_region . " Page " . $page . " Section " . $section . " Completed" . $eol;
+        mysqli_query($conn,"UPDATE Emergency SET Emergency_STOP = 'Keep Going'");
+        die($eol.$eol.date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . "EMERGENCY STOP CALLED".$eol.$eol);
+
+    }
+
 }
 
 function getHBeditionlink($city, $dateforlinks, $citylink, $code)
@@ -384,3 +404,5 @@ function getHBeditionlink($city, $dateforlinks, $citylink, $code)
     }
     return $link;
 }
+
+?>

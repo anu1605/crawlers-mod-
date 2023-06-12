@@ -12,7 +12,7 @@ $eol = PHP_EOL;
 
 $static_date = ''; // Production Value is ''
 $no_of_papers_to_run = 0; // Production Value is 0
-$no_of_editions_to_run = 1; // Production Value is 0
+$no_of_editions_to_run = 0; // Production Value is 0
 $no_of_pages_to_run_on_each_edition = 50; // Production Value is 50
 $no_of_sections_to_run_on_each_page = 100; // Production Value is 100
 
@@ -25,7 +25,7 @@ include "dependencies/crawl_functions1.php";
 // Already passed the test: "AU" => "Amar Ujala,hin", "DC" => "Deccan Chronicle,eng", "HB" => "Hari Bhumi,hin", "DJ" => "Danik Jagran,hin", "JPS" => "Janpath Samachar,hin", "KM" => "Karnataka Malla,kan", "LM" => "Lokmat,mar", "MC" => "Mumbai Chaufer,mar", "NB" => "Navbharat,hin", "NBT" => "Navbharat Times,hin","ND" => "Nai Dunia,hin","NVR" => "Navrasthra,mar","NYB" => "Niyomiya Barta,asm","PAP" => "Purvanchal Prahari,ori","RS" => "Rashtriya Sahara,hin","SAM" => "Sambad,ori","SMJ" => "Samaja,ori","SY" => "Samyukta Karnataka,kan","VV" => "Vijayavani,kan","YB" => "yashobhumi,hin","SBP" => "Sangbad Pratidin,ben","POD" => "Pratidin Odia Daily,ori"
 
 
-$epapers = array("TOI" => "Times of India,eng");
+$epapers = array("GSM" => "Gujarat Samachar,guj");
 // $epapers = array("AU" => "Amar Ujala,hin", "DC" => "Deccan Chronicle,eng", "HB" => "Hari Bhumi,hin", "DJ" => "Danik Jagran,hin", "JPS" => "Janpath Samachar,hin", "KM" => "Karnataka Malla,kan", "LM" => "Lokmat,mar", "MC" => "Mumbai Chaufer,mar", "NB" => "Navbharat,hin", "NBT" => "Navbharat Times,hin", "ND" => "Nai Dunia,hin", "NVR" => "Navrasthra,mar", "NYB" => "Niyomiya Barta,asm", "PAP" => "Purvanchal Prahari,ori", "RS" => "Rashtriya Sahara,hin", "SAM" => "Sambad,ori", "SMJ" => "Samaja,ori", "SY" => "Samyukta Karnataka,kan", "VV" => "Vijayavani,kan", "YB" => "yashobhumi,hin", "SBP" => "Sangbad Pratidin,ben", "POD" => "Pratidin Odia Daily,ori");
 //    "MM" => "Mysore Mithra,kan" , "GSM" => "Gujarat Samachar,guj" ,   
 
@@ -923,13 +923,13 @@ foreach ($epapers as $epapercode => $epaperArray) {
                 $imagelink = str_replace("thumbnail/", "", explode('"', $linkArray[$page])[0]);
 
             $getpath = explode("&", makefilepath($epapercode, "Gujrat", $filenamedate, $page, $lang));
+            echo PHP_EOL . $imagelink . PHP_EOL;
+            // if (alreadyDone($getpath[0], $conn) == "Yes") continue;
 
-            if (alreadyDone($getpath[0], $conn) == "Yes") continue;
+            // writeImage($imagelink, $getpath[0]);
 
-            writeImage($imagelink, $getpath[0]);
-
-            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved" . $eol;
-            runTesseract("Gujrat", $page, 0, $conn, $getpath, $lang);
+            // echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved" . $eol;
+            // runTesseract("Gujrat", $page, 0, $conn, $getpath, $lang);
             echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . " Page " . $page . " Completed" . $eol;
             ob_flush();
             flush();
@@ -976,7 +976,7 @@ foreach ($epapers as $epapercode => $epaperArray) {
     }
     if ($epapercode == "TOI") {
         $date_array = explode("/", $dateForLinks);
-        for(£edition)
+
         for ($page = 1; $page <= 40; $page++) {
             for ($section = 1; $section <= 50; $section++) {
 
