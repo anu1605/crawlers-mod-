@@ -86,13 +86,6 @@ foreach ($epapers as $epapercode => $epaperArray) {
 
             }
 
-            if(!in_array(ucfirst(explode("-",$cityarray[$edition])[0]),$cities_of_interest)){
-
-                echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Skipping " . $cityarray[$edition] . " Edition. Doesn't fall in cities of interest" . $eol;
-                continue;
-
-            }
-
             $response = file_get_contents("https://epaper.amarujala.com/" . $cityarray[$edition] . "/" . $dateForLinks . "/01.html?format=img&ed_code=" . $cityarray[$edition], false, stream_context_create($arrContextOptions));
             $a = explode('/hdimage.jpg"', $response);
             $b = explode('<link rel="preload" href="', $a[0]);
@@ -606,6 +599,8 @@ foreach ($epapers as $epapercode => $epaperArray) {
 
         for ($edition = 0; $edition < count($cityarray); $edition++) {
 
+            echo "Edition: ".$edition.", ".$cityarray[$edition].$eol.$eol;
+
             if(!in_array(ucfirst(explode("-",$cityarray[$edition])[0]),$cities_of_interest)){
 
                 echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Skipping " . $cityarray[$edition] . " Edition. Doesn't fall in cities of interest" . $eol;
@@ -615,9 +610,11 @@ foreach ($epapers as $epapercode => $epaperArray) {
 
             for ($page = 1; $page <= $no_of_pages_to_run_on_each_edition; $page++) {
 
-                $testurl = "https://epaper.navarashtra.com/article-" . $dateForLinks . "-" . $cityarray[$edition] . "-edition/" . $page . "-1/";
+                echo "Page: ".$page.$eol.$eol;
 
-                $testcontent = file_get_contents($testurl, false, stream_context_create($arrContextOptions), false, stream_context_create($arrContextOptions));
+                echo $testurl = "https://epaper.navarashtra.com/article-" . $dateForLinks . "-" . $cityarray[$edition] . "-edition/" . $page . "-1/";
+
+                $testcontent = file_get_contents($testurl, false, stream_context_create($arrContextOptions));
 
                 $testimagelink = explode('"', explode("id='ImageArticle'  src=", $testcontent)[1])[1];
                 $imageInfo = getimagesize($testimagelink);
@@ -626,8 +623,11 @@ foreach ($epapers as $epapercode => $epaperArray) {
                     break;
 
                 for ($section = 1; $section <= $no_of_sections_to_run_on_each_page; $section++) {
-                    $link =   "https://epaper.navarashtra.com/article-" . $dateForLinks . "-" . $cityarray[$edition] . "-edition/" . $page . "-" . $section . "/";
-                    $content = file_get_contents($link, false, stream_context_create($arrContextOptions), false, stream_context_create($arrContextOptions));
+
+                    echo "Section: ".$section.$eol.$eol;
+
+                    echo $link =   "https://epaper.navarashtra.com/article-" . $dateForLinks . "-" . $cityarray[$edition] . "-edition/" . $page . "-" . $section . "/";
+                    $content = file_get_contents($link, false, stream_context_create($arrContextOptions));
                     $imagelink = explode('"', explode("id='ImageArticle'  src=", $content)[1])[1];
                     $imageInfo = getimagesize($imagelink);
 

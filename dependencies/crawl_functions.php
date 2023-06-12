@@ -379,14 +379,14 @@ function runTesseract($epapername,$edition, $page, $section, $conn, $patharray, 
         echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Falied to run" . $eol;
     }
 
-    $emergencyStopQ = "SELECT Emergency_STOP FROM Emergency";
+    $emergencyStopQ = "SELECT Emergency_STOP FROM Emergency WHERE Instruction_For = 'crawl.php'";
     $emergencyStopRS = mysqli_query($conn,$emergencyStopQ);
     $emergencyStopRow = mysqli_fetch_array($emergencyStopRS);
 
     if($emergencyStopRow['Emergency_STOP'] == "STOP"){
         
         echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $newspaper_region . " Page " . $page . " Section " . $section . " Completed" . $eol;
-        mysqli_query($conn,"UPDATE Emergency SET Emergency_STOP = 'Keep Going'");
+        mysqli_query($conn,"UPDATE Emergency SET Emergency_STOP = 'Keep Going' WHERE Instruction_For = 'crawl.php'");
         die($eol.$eol.date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . "EMERGENCY STOP CALLED".$eol.$eol);
 
     }

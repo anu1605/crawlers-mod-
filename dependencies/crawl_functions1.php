@@ -24,7 +24,7 @@ function dateForLinks($epapercode, $filenamedate)
 {
     if ($epapercode == "PN" or $epapercode == "AU" or $epapercode == "LM" or $epapercode == "SY" or $epapercode == "VV" or $epapercode == "YB") return date('Ymd', strtotime($filenamedate));
     else if ($epapercode == "HB") return date('Y/m/d', strtotime($filenamedate));
-    else if ($epapercode == "TOI") return  date('d/m/Y', strtotime($filenamedate));
+    else if ($epapercode == "TOI" or $epapercode == "ET" or $epapercode == "MT" or $epapercode == "Mirror") return  date('d/m/Y', strtotime($filenamedate));
     else if ($epapercode == "GSM") return date("d-m-Y", strtotime($filenamedate));
 
     else if ($epapercode == "DJ" or $epapercode == "NB" or $epapercode == "ND" or $epapercode == "NVR" or $epapercode == "PAP") return date('d-M-Y', strtotime($filenamedate));
@@ -195,14 +195,29 @@ function cityArray($epapercode)
             return array("Mangalore", "Davangere", "Kalaburgi", "Hubli", "Bangalore");
             break;
 
+        case "GSM":
+            return array("ahmedabad", "baroda", "bhavnagar", "bhuj", "mumbai", "rajkot", "surat");
+            break;
+
         case "VV":
             return array("Bengaluru", "Hubli");
             break;
+
         case "PN":
             return  array("Mumbai", "Pune", "Nashik", "Nagpur", "Kolhapur", "Satara", "Solapur", "Jalgaon", "Dhule", "Nanded", "Thane", "Latur", "Ahmednagar");
             break;
+
         case "TOI":
             return  array("Ahmedabad", "Bangalore", "Bhopal", "Chandigarh", "Chennai", "Delhi", "Goa", "Hyderabad", "Jaipur", "Kochi", "Kolkata", "Lucknow", "Mumbai");
+            break;
+        case "ET":
+            return  array("Bangalore", "Mumbai", "Delhi", "Kolkata");
+            break;
+        case "MT":
+            return  array("Nagpur", "Mumbai", "Pune", "Sambhaji", "Nashik");
+            break;
+        case "Mirror":
+            return  array("Bangalore", "Mumbai", "Pune");
             break;
         default:
             return null;
@@ -263,7 +278,14 @@ function cityCodeArray($epapercode)
             break;
         case "TOI":
             return array("toiac", "toibgc", "toibhoc", "toicgct", "toich", "cap", "toigo", "toih", "toijc", "toikrko", "toikc", "toilc", "toim");
-
+        case "ET":
+            return array("etbg", "etmc", "etdc", "etkc");
+            break;
+        case "MT":
+            return array("mtnag", "mtm", "mtpe", "mtag", "mtnk");
+            break;
+        case "Mirror":
+            return array("vkbgmr", "vkmmir", "pcmir");
             break;
     }
 }
@@ -399,4 +421,69 @@ function getHBeditionlink($city, $dateforlinks, $citylink, $code)
         }
     }
     return $link;
+}
+
+function crawltoi($cityarray, $dateForLinks, $epapercode, $citycode, $filenamedate, $eol, $conn, $lang)
+{
+    for ($edition = 0; $edition < count($cityarray); $edition++) {
+
+        $failedPageCount = 0;
+        $date_formatted = date("Y/d/m", strtotime($dateForLinks));
+
+        if ($epapercode == "Mirror" and $cityarray[$edition] == "Mumbai") {
+
+            $date_array = explode("/", $dateForLinks);
+            $processdate = $date_formatted = $date_array[2] . "-" . $date_array[1] . "-" . $date_array[0];
+            $dayofweek = date('l', strtotime($processdate));
+            if ($dayofweek <> 'Sunday') {
+                echo "There is no Mirror published from Mumbai on " . $dayofweek . ", " . $dateForLinks . ". It publishes only on Sundays";
+                continue;
+            }
+        }
+
+        for ($page = 1; $page <= 40; $page++) {
+            $imageFound = "No";
+
+            if ($failedPageCount > 3) {
+                echo "Seems Pages over. Skipping... " . $page . "\n";
+                continue;
+            }
+            for ($section = 1; $section <= 50; $section++) {
+                $imagelink = "https://asset.harnscloud.com/PublicationData/" . $epapercode . "/" . $citycode[$edition] . "/" . $date_formatted . "/Advertisement/" . str_pad($page, 3, "0", STR_PAD_LEFT) . "/" . str_replace("/", "_", $dateForLinks) . "_" . str_pad($page, 3, "0", STR_PAD_LEFT) . "_" . str_pad($section, 3, "0", STR_PAD_LEFT) . "_" . $citycode[$edition] . ".jpg";
+
+                // if (strlen(file_get_contents($url) <= 0)) continue;
+
+                $section_size_array = getimagesize($imagelink);
+                $width = $section_size_array[0];
+
+                if ($width > 0) {
+                    $imageFound = "Yes";
+                    $failedPageCount = 0;
+
+                    if ($width > 200 and $width < 250) {
+                        $getpath = explode("&", makefilepath($epapercode,  $cityarray[$edition], $filenamedate, $page . "00" . $section, $lang));
+
+                        // if (alreadyDone($getpath[0], $conn) == "Yes") continue;
+
+                        writeImage($imagelink, $getpath[0]);
+
+                        echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved" . $eol;
+                        runTesseract($cityarray[$edition], $page, $section, $conn, $getpath, $lang);
+                        echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $cityarray[$edition] . " Page " . $page . " Section " . $section . " Completed" . $eol;
+                        ob_flush();
+                        flush();
+                    }
+                } else {
+                    continue;
+                }
+                ob_flush();
+                flush();
+            }
+
+            if ($imageFound == "No") $failedPageCount++;
+
+            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $cityarray[$edition] . " Page " . $page . " Completed" . $eol;
+        }
+        echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $cityarray[$edition] . " Completed" . $eol;
+    }
 }
