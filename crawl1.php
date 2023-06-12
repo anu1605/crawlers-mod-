@@ -8,24 +8,26 @@ set_time_limit(0);
 
 // $eol = "\n";
 // if ($_REQUEST['browser'] == "Yes")
-$eol = "<br>";
+$eol = PHP_EOL;
 
 $static_date = ''; // Production Value is ''
 $no_of_papers_to_run = 0; // Production Value is 0
 $no_of_editions_to_run = 1; // Production Value is 0
-$no_of_pages_to_run_on_each_edition = 5; // Production Value is 50
-$no_of_sections_to_run_on_each_page = 1; // Production Value is 100
+$no_of_pages_to_run_on_each_edition = 50; // Production Value is 50
+$no_of_sections_to_run_on_each_page = 100; // Production Value is 100
 
 //// code starts below ///
 
-include "/var/www/d78236gbe27823/includes/connect.php";
-include "/var/www/d78236gbe27823/marketing/Whatsapp/Crawlers/dependencies/crawl_functions1.php";
+// include "/var/www/d78236gbe27823/includes/connect.php";
+// include "/var/www/d78236gbe27823/marketing/Whatsapp/Crawlers/dependencies/crawl_functions1.php";
+include "dependencies/crawl_functions1.php";
 
 // Already passed the test: "AU" => "Amar Ujala,hin", "DC" => "Deccan Chronicle,eng", "HB" => "Hari Bhumi,hin", "DJ" => "Danik Jagran,hin", "JPS" => "Janpath Samachar,hin", "KM" => "Karnataka Malla,kan", "LM" => "Lokmat,mar", "MC" => "Mumbai Chaufer,mar", "NB" => "Navbharat,hin", "NBT" => "Navbharat Times,hin","ND" => "Nai Dunia,hin","NVR" => "Navrasthra,mar","NYB" => "Niyomiya Barta,asm","PAP" => "Purvanchal Prahari,ori","RS" => "Rashtriya Sahara,hin","SAM" => "Sambad,ori","SMJ" => "Samaja,ori","SY" => "Samyukta Karnataka,kan","VV" => "Vijayavani,kan","YB" => "yashobhumi,hin","SBP" => "Sangbad Pratidin,ben","POD" => "Pratidin Odia Daily,ori"
 
-$epapers = array("GSM" => "Gujarat Samachar,guj");
+
+$epapers = array("TOI" => "Times of India,eng");
 // $epapers = array("AU" => "Amar Ujala,hin", "DC" => "Deccan Chronicle,eng", "HB" => "Hari Bhumi,hin", "DJ" => "Danik Jagran,hin", "JPS" => "Janpath Samachar,hin", "KM" => "Karnataka Malla,kan", "LM" => "Lokmat,mar", "MC" => "Mumbai Chaufer,mar", "NB" => "Navbharat,hin", "NBT" => "Navbharat Times,hin", "ND" => "Nai Dunia,hin", "NVR" => "Navrasthra,mar", "NYB" => "Niyomiya Barta,asm", "PAP" => "Purvanchal Prahari,ori", "RS" => "Rashtriya Sahara,hin", "SAM" => "Sambad,ori", "SMJ" => "Samaja,ori", "SY" => "Samyukta Karnataka,kan", "VV" => "Vijayavani,kan", "YB" => "yashobhumi,hin", "SBP" => "Sangbad Pratidin,ben", "POD" => "Pratidin Odia Daily,ori");
-//    "MM" => "Mysore Mithra,kan"  
+//    "MM" => "Mysore Mithra,kan" , "GSM" => "Gujarat Samachar,guj" ,   
 
 if ($no_of_papers_to_run > 0 and $no_of_papers_to_run < count($epapers)) $epapers = array_slice($epapers, 0, $no_of_papers_to_run);
 
@@ -916,12 +918,10 @@ foreach ($epapers as $epapercode => $epaperArray) {
 
         if ($no_of_pages_to_run_on_each_edition < 0 and $no_of_pages_to_run_on_each_edition > count($linkArray)) $linkArray = array_slice($linkArray, 1, $no_of_pages_to_run_on_each_edition + 1);
 
-        for ($page = 1; $page <= $no_of_pages_to_run_on_each_edition; $page++) {
-            $imagelink = str_replace("/01/hdimage.jpg", "/" . sprintf('%02d', $page) . "/hdimage.jpg", $imageLinkPage1);
+        for ($page = 1; $page <= count($linkArray); $page++) {
+            if ($linkArray[$page])
+                $imagelink = str_replace("thumbnail/", "", explode('"', $linkArray[$page])[0]);
 
-            $imagelink = str_replace("thumbnail/", "", explode('"', $linkArray[$page])[0]);
-
-            // echo $imagelink . "<br>";
             $getpath = explode("&", makefilepath($epapercode, "Gujrat", $filenamedate, $page, $lang));
 
             if (alreadyDone($getpath[0], $conn) == "Yes") continue;
@@ -939,45 +939,83 @@ foreach ($epapers as $epapercode => $epaperArray) {
 
         for ($edition = 0; $edition < count($cityarray); $edition++) {
             for ($page = 1; $page <= $no_of_pages_to_run_on_each_edition; $page++) {
+                $testcontent = file_get_contents("http://epunyanagari.com/articlepage.php?articleid=PNAGARI_" . $citycode[$edition] . "_" . $dateForLinks . "_" . sprintf('%02d', $page) . "_1");
 
-                $testcontent = file_get_contents("http://epunyanagari.com/articlepage.php?articleid=PNAGARI_" . $paperCode[$edition] . "_" . $filenamedate . "_" . sprintf('%02d', $page) . "_1");
-
-                $testimagelink = explode('"', explode('<link rel="image_src" href="', $testcontent)[1])[0];
+                $testimagelink = explode('"', explode('id="artimg" src="', $testcontent)[1])[0];
 
                 if (!getimagesize($testimagelink))
                     break;
 
                 for ($section = 1; $section <= $no_of_sections_to_run_on_each_page; $section++) {
-                    $response = file_get_contents("http://epunyanagari.com/articlepage.php?articleid=PNAGARI_" . $paperCode[$edition] . "_" . $filenamedate . "_" . sprintf('%02d', $page) . "_" . $articleno);
+                    $response = file_get_contents("http://epunyanagari.com/articlepage.php?articleid=PNAGARI_" . $citycode[$edition] . "_" . $dateForLinks . "_" . sprintf('%02d', $page) . "_" . $section);
 
-                    echo $$imagelink = explode('"', explode('<link rel="image_src" href="', $articleResponse)[1])[0];
+                    $imagelink = explode('"', explode('id="artimg" src="', $response)[1])[0];
 
-                    if ($content) {
-                        $imagelink = explode('"', explode('id="artimg" src="', $content)[1])[0];
-                        $imageInfo = getimagesize($imagelink);
+                    $imageInfo = getimagesize($imagelink);
 
-                        if (!$imageInfo)
-                            break;
+                    if (!$imageInfo)
+                        break;
 
 
-                        // $getpath = explode("&", makefilepath($epapercode,  $cityarray[$edition], $filenamedate, $page . "00" . $section, $lang));
+                    $getpath = explode("&", makefilepath($epapercode,  $cityarray[$edition], $filenamedate, $page . "00" . $section, $lang));
 
-                        // if (alreadyDone($getpath[0], $conn) == "Yes") continue;
+                    if (alreadyDone($getpath[0], $conn) == "Yes") continue;
 
-                        // writeImage($imagelink, $getpath[0]);
+                    writeImage($imagelink, $getpath[0]);
 
-                        // echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved" . $eol;
-                        // runTesseract($cityarray[$edition], $page, $section, $conn, $getpath, $lang);
-                        echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $cityarray[$edition] . " Page " . $page . " Section " . $section . " Completed" . $eol;
-                        ob_flush();
-                        flush();
-                    }
+                    echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved" . $eol;
+                    runTesseract($cityarray[$edition], $page, $section, $conn, $getpath, $lang);
+                    echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $cityarray[$edition] . " Page " . $page . " Section " . $section . " Completed" . $eol;
+                    ob_flush();
+                    flush();
                 }
                 echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $cityarray[$edition] . " Page " . $page . " Completed" . $eol;
             }
             echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $cityarray[$edition] . " Completed" . $eol;
         }
     }
+    if ($epapercode == "TOI") {
+        $date_array = explode("/", $dateForLinks);
+        for(£edition)
+        for ($page = 1; $page <= 40; $page++) {
+            for ($section = 1; $section <= 50; $section++) {
+
+                $url = "https://asset.harnscloud.com/PublicationData/" . $epapercode . "/" . $citycode[$i] . "/" . $date_formatted . "/Advertisement/" . str_pad($page, 3, "0", STR_PAD_LEFT) . "/" . str_replace("/", "_", $dateForLinks) . "_" . str_pad($page, 3, "0", STR_PAD_LEFT) . "_" . str_pad($section, 3, "0", STR_PAD_LEFT) . "_" . $citycode[$i] . ".jpg";
+
+                echo PHP_EOL . $url . PHP_EOL;
+                if (strlen(file_get_contents($url) <= 0)) continue;
+
+                $section_size_array = getimagesize($url);
+                $width = $section_size_array[0];
+
+                if ($width > 0) {
+
+                    $imageFound = "Yes";
+                    $failedPageCount = 0;
+
+                    if ($width > 200 and $width < 250) {
+                        "https://asset.harnscloud.com/PublicationData/TOI/toiac/2023/06/06/Advertisement/001/06_06_2023_001_001_toiac.jpg";
+
+                        $response = file_get_contents($url);
+                        file_put_contents("/var/www/d78236gbe27823/marketing/Whatsapp/images/" . $file_name, $response);
+                        echo $papername . " => A new file of width " . $width . " is saved as " . $file_name . "\n";
+                        $number++;
+                    } else {
+
+                        echo $papername . " => The image at position " . $section . " On Page No. " . $page . " of " . $cityname[$i] . " (" . $citycode[$i] . ") is of width " . $width . " and is not a classified image\n";
+                    }
+                } else {
+
+                    echo $papername . " => There is no image at position " . $section . " On Page No. " . $page . " of Edition " . $cityname[$i] . " (" . $citycode[$i] . ")\n";
+                }
+                ob_flush();
+                flush();
+            }
+
+            if ($imageFound == "No") $failedPageCount++;
+        }
+    }
     //exec("rm -f /nvme/*");
+    exec("rm -f ./nvme/*");
     // mysqli_query($conn, "INSERT INTO Crawl_Record1 (Papername,Papershortname,Paperdate) VALUES ('" . $epapername . "','" . $epapercode . "','" . $filenamedate . "')");
 }

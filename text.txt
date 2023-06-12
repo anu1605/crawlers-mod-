@@ -1,43 +1,596 @@
-    if ($epapercode == "PN") {
 
-        for ($edition = 0; $edition < count($cityarray); $edition++) {
-            for ($page = 1; $page <= $no_of_pages_to_run_on_each_edition; $page++) {
+<html>    
+<head>
 
-                    $testcontent = file_get_contents("http://epunyanagari.com/articlepage.php?articleid=PNAGARI_" . $paperCode[$edition] . "_" . $dateForLinks . "_" . sprintf('%02d', $page) . "_1");
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<title>punyanagari ePaper</title>
+<meta name="description" content="punyanagari ePaper">
+<meta name="keywords" content="punyanagari ePaper">
+<meta property="og:title" content="punyanagari ePaper" /> 
+<meta property="og:description" content="punyanagari ePaper" /> 
+<meta property="og:image" content="http://www.enewspapr.com/" />
+<meta property="og:type" content="product"/>
+<meta property="og:url" content="punyanagari.com" />
+<meta property="og:site_name" content="punyanagari ePaper"/>      
+<meta property="fb:admins" content="punyanagari ePaper"/>
+<meta name="title" content="punyanagari ePaper"/>
+<meta name="description" content="punyanagari ePaper" />
+<link rel="image_src" href="http://www.enewspapr.com/" />  
+<meta name="keywords" content="punyanagari ePaper">
+<meta name="robots" content="noarchive">
 
-                    $testimagelink = explode('"', explode('<link rel="image_src" href="', $testcontent)[1])[0];
-
-                    if (!getimagesize($testimagelink))
-                    break;
-
-                for ($section = 1; $section <= $no_of_sections_to_run_on_each_page; $section++) {
-                        $response = file_get_contents("http://epunyanagari.com/articlepage.php?articleid=PNAGARI_" . $paperCode[$edition] . "_" . $dateForLinks . "_" . sprintf('%02d', $page) . "_" . $articleno);
-
-                        echo $$imagelink = explode('"', explode('<link rel="image_src" href="', $articleResponse)[1])[0];
-
-                    if ($content) {
-                        $imagelink = explode('"', explode('id="artimg" src="', $content)[1])[0];
-                        $imageInfo = getimagesize($imagelink);
-
-                        if (!$imageInfo)
-                            break;
 
 
-                        $getpath = explode("&", makefilepath($epapercode,  $cityarray[$edition], $filenamedate, $page . "00" . $section, $lang));
 
-                        if (alreadyDone($getpath[0], $conn) == "Yes") continue;
 
-                        writeImage($imagelink, $getpath[0]);
 
-                        echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved" . $eol;
-                        runTesseract($cityarray[$edition], $page, $section, $conn, $getpath, $lang);
-                        echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $cityarray[$edition] . " Page " . $page . " Section " . $section . " Completed" . $eol;
-                        ob_flush();
-                        flush();
-                    }
-                }
-                echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $cityarray[$edition] . " Page " . $page . " Completed" . $eol;
-            }
-            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $cityarray[$edition] . " Completed" . $eol;
-        }
-    }
+
+
+
+<link rel="stylesheet" type="text/css" href="http://cjss.enewspapr.com/karavaliale/includes/css/style-home_article.css?v=1.2" />
+<link rel="stylesheet" type="text/css" href="http://cjss.enewspapr.com/common/css/jquery.mThumbnailScroller.css" />
+<link rel="stylesheet" type="text/css" href="http://cjss.enewspapr.com/common/css/jquery-ui.min.css" />
+<script type="text/javascript" src="http://cjss.enewspapr.com/karavaliale/includes/js/main.js?v=1.5.37"></script> 
+<!-- <script type="text/javascript" src="includes/js/bootstrap.min.js"></script>   
+<script type="text/javascript" src="includes/js/jquery-ui.min.js"></script> -->
+<script type="text/javascript" src="http://cjss.enewspapr.com/common/js/jssor.js?v=1.1"></script>
+<script type="text/javascript" src="http://cjss.enewspapr.com/common/js/jssor.slider.js?v=1.1"></script>
+
+<!--<script type="text/javascript" src="http://cjss.enewspapr.com/karavaliale/includes/js/jquery.mThumbnailScroller.js"></script> 
+<script type="text/javascript" src="http://cjss.enewspapr.com/karavaliale/includes/js/dom-to-image.min.js"></script>  -->
+<script type="text/javascript" src="http://cjss.enewspapr.com/common/js/dom-to-image.min.js"></script>
+<link type="text/css" rel="stylesheet" href="http://cjss.enewspapr.com/common/css/bootstrap.min.css">
+<link type="text/css" rel="stylesheet" href="http://cjss.enewspapr.com/karavaliale/includes/css/font-awesome.min.css">
+<script type="text/javascript" src="http://cjss.enewspapr.com/common/js/jquery.js"></script>  
+<script type="text/javascript" src="http://cjss.enewspapr.com/common/js/sharelinks.js?v=1.23"></script>     
+   
+
+<style>   
+	.box { cursor: pointer; }    
+	  
+</style>    
+ 
+<!-- Adsolute -->
+ <!-- <script src='https://app.playstream.media/domain/floater/5b9fdf35-3e74-48c3-87e4-50a8130ec8b0.js'></script> -->
+ 
+<script type="text/javascript">
+	var width = window.innerWidth || document.documentElement.clientWidth;
+</script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8618678329245343"
+     crossorigin="anonymous"></script>
+	 
+	 	 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VGC499N84L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VGC499N84L');
+</script>
+
+	 
+
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+
+<script type="text/javascript" src="//cjss.enewspapr.com/prebid/prebid4.20.4.js"></script>          
+
+
+
+<script>
+ if(typeof colombia == 'undefined')
+		{
+			var colombia = colombia || {};
+			colombia.fns = colombia.fns || [];
+			(function() {
+				  var cads = document.createElement("script");
+				  cads.async = true;
+				  cads.type = "text/javascript";
+				  cads.src = "//static.clmbtech.com/ctn/commons/js/colombia_v2.js";
+				  var node = document.getElementsByTagName("script")[0];
+				  node.parentNode.insertBefore(cads, node);
+			})();
+		}
+  
+           
+</script>
+
+
+
+<script>
+var CurrentEdition = '';
+var basepath = 'http://www.enewspapr.com/';
+
+var WindowWidth = $(window).width();
+		var artid = 'PNAGARI_PM_20230606_01_';
+		var baseUrl = 'http://www.enewspapr.com/';
+		var Edn = '';
+		var papername = 'punyanagari';
+		var selfUrl = 'http://epunyanagari.com/';  
+		var selfUrl1 = 'http://epunyanagari.com/';    
+		var Nwidth = ''; 
+		var Nheight = '';
+		var sharelogo = 'http://epunyanagari.com/includes/images/punyanagari.jpg';  
+		var newdate = 'Jun 6, 2023';
+		var EdnName = '';
+		var articleImage = 'http://www.enewspapr.com/';
+		var pageNow = '01';
+		var edition = '';
+		var articleTime = '1686054514'; 
+
+      
+</script>  
+
+</head>  
+<body>
+
+<style>
+@media screen and (min-width:467px){  
+.mobile-bottom-popup-ad {
+	display:none;
+}
+}
+</style>
+<style>
+@media screen and (min-width:467px){  
+.mobile-bottom-popup-ad {
+	display:none;
+}
+}
+</style>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8618678329245343"
+     crossorigin="anonymous"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GXBKH44DG2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GXBKH44DG2');
+</script>
+
+<body>
+<div id="result" style="display:inline-block;" >
+	</div>
+<!--<input type="hidden" id="PgNo" value="">-->
+
+<!--<div class="blocker1" ></div>-->
+
+<input id="article-id" name="artid" type="hidden" value="PNAGARI_PM_20230606_01_" />
+<input id="article-width" name="width" type="hidden" value="" />
+<input id="continue-id" name="artid" type="hidden" value="" />
+<input id="cont-width" name="artid" type="hidden" value="" />
+<input id="joint-id" name="width" type="hidden" value="" />
+<input id="cx1" name="width" type="hidden" value="" />
+<input id="cx2" name="width" type="hidden" value="" />
+<input id="realwidth" name="width" type="hidden" value="" />
+
+
+
+
+<div class="article-popup-view articlePopupView"  id="Article_Main" style="cursor:pointer;z-index:999;">
+<!--<div class="close_button"></div> -->
+
+	<!--<div id="previous-article" class="replica_arrow arrow_left"></div>
+
+	<div id="next-article" class="replica_arrow arrow_right"></div>-->
+
+	<div class="article-main-container" style="overflow:auto;padding-top:15px;">
+		<div class="article-header navbar-fixed-header-popup" style="background-color:white;border-bottom: 2px dashed rgb(221, 221, 221);">
+
+	   <div class="btn-group btn-group-justified" style="display:inline-block;">
+	       
+		   
+		   
+		 
+		   
+			 <div class="btn-group fbshrlike">
+                <button style="background:white;" type="button" class="btn btn-nav" onclick="shareFacebook_sprabhat();">
+                    <span class="fa fa-facebook fa-btn-size" style="color:#3b599b;font-size:20px!important;"></span>   			   
+                </button>      
+            </div>
+			<div class="btn-group" onclick="shareWhatsApp_sprabhat();">
+                <button style="background:white;" type="button" class="btn btn-nav whatsapp">
+                    <span class="fa fa-whatsapp fa-btn-size" style="color:#43d854;font-size:20px!important;"></span>   			   
+                </button>     
+            </div>    
+			  <div class="btn-group">
+                <button style="background:white;" type="button" class="btn btn-nav" onclick="shareTwitter_sprabhat();">
+                    <span class="fa fa-twitter fa-btn-size" style="color:#4099ff;font-size:20px!important;"></span>   			   
+                </button>
+            </div>
+			   <div class="btn-group">
+                <button style="background:white;" type="button" class="btn btn-nav" onclick="shareEmail_sprabhat();">
+                    <span class="fa fa-envelope fa-btn-size" style="color:#d34836;font-size:20px!important;"></span>   			   
+                </button>
+            </div>  
+			<div class="btn-group" id="PrintImg"> 
+                <button style="background:white;" type="button" class="btn btn-nav" onclick="printImageSprabha();">
+                    <span class="fa fa-print fa-btn-size" style="color:#3b599b;font-size:20px!important;"></span>   			   
+                </button>
+            </div>  
+			   
+			
+			
+			      
+			  
+			  <div class="btn-group">
+					<button style="background:white;" type="button" onclick="downloaddvaarthe()" class="btn btn-nav">
+						<a><span class="fa fa-download fa-btn-size" style="color:#3b599b;font-size:20px!important;"></span></a>	   
+					</button>
+		    </div>  
+			  
+			  		
+         <!--    <div class="btn-group">
+                <button style="background:white;" type="button" class="btn btn-nav" onclick="downloadImage()">
+				<a>
+                    <span class="fa fa-download fa-btn-size" style="color:#3b599b;"></span></a>	   
+                </button>
+            </div> -->
+    
+			  
+			 
+			<div class="btn-group" onclick="shareLink();"  id="share_link" data-clipboard-demo  data-clipboard-action="copy" data-clipboard-text="http://erelego.in//articlepage.php?articleid=PNAGARI_PM_20230606_01_">
+                <button style="background:white;" type="button" class="btn btn-nav link" >
+                    <span class="fa fa-link fa-btn-size" style="color:#3b599b;font-size:20px!important;"></span>    			   
+                </button>
+            </div>
+			
+			
+			
+		
+			
+			
+			
+			<div class="btn-group">
+                <button onclick="window.close();"  style="background:white;" type="button" class="btn btn-nav popupcls">
+                    <span class="fa fa-close  fa-btn-size" style="color:#3b599b;font-size:20px!important;"></span>	   
+                </button>
+            </div>   
+			<script src="http://cjss.enewspapr.com/common/js/clipboard.min.js"></script>		
+         
+        </div>   
+	
+	</div>
+	
+	
+        
+	   		
+		
+		
+		
+		
+		
+		
+		   		
+		<div class="article-content" style="width:69%;text-align:center;float:left;margin: 10px;margin-top:30px;">
+        <div id="status"></div>
+		
+		<div style="text-align: center;margin:20px;">
+		
+
+
+
+        </div>     
+	
+		
+		
+		
+		<div id="mydata1" style="min-height:300px;margin-right: -15px;">
+	
+		  	 <div id='img'><div class='LogoDiv' id="watermark" class="watermark" style="text-align:center;background:#ffffff;padding:10px;margin:auto;">
+			<img  src='http://epunyanagari.com/includes/images/punyanagari.jpg' style="max-width:40%;" />
+		</div>
+		<div class='col-xs-12 col-sm-12 col-md-12 col-lg-12' style="text-align:center;">
+			<img class="artimg" id="artimg" src="http://www.enewspapr.com/"   onclick="callmebox();" style="max-width:100%;" />
+		</div>
+		<div id="FooterWaterMark" class="FooterWaterMark" style='color:#000;background:#ffffff; font-family: monospace;padding:5px;font-size:12px;line-height:1.1;margin:auto;text-align:center;width:100%px'>
+			<p style='color: #000!important;margin:0;'> Edition</p><p style='color: #000!important;margin:0;'>Jun 6, 2023  Page No. </p>
+			<p style='margin:0;'><a style='color:#000;' href='http://erelego.com' target="_blank">Powered by :  eReleGo.com</a></p>
+		</div>  
+		</div>
+		   
+	
+		
+	</div>
+	
+	
+	  
+	
+	<div class="bottom-popup-ad" style="text-align: center;margin:20px;">
+          
+
+ 
+   </div>     
+
+
+     
+
+     
+
+	
+	</div>   
+	
+	
+	
+	<div class="sidebar-ads" style="width:28%;margin-top:30px;float:right;text-align:center;border-left: 2px dashed rgb(221, 221, 221);background-color:#fff;margin-right:6px;">	
+		  
+		
+
+						
+						
+						<div  style="width:100%;float: left;text-align: center;margin-top:20px;margin-bottom:5px;">
+						
+
+		              </div>
+		
+		
+		   
+	</div>
+	
+	
+	
+	       			
+				<style>
+
+.Footer {
+    background-color: black;
+    color: #999;
+	font-size: 11px;
+    font-family: 'Raleway', Arial, sans-serif;
+    padding: 5px 0;
+    text-align: center;
+    width: 100%;
+    float: left;
+}
+.Footer p {
+    font-weight: bold;
+    margin-bottom: 0;
+    padding: 0;
+}
+.panel{
+	border:none;	
+}
+.panel-heading {
+    padding: 0px 0px; 
+}
+.nav>li>a {
+    padding: 9px 11px;
+}
+.panel-body {
+	background-color:black;
+    padding: 6px;
+}
+.panel.with-nav-tabs .nav-tabs{
+	border-bottom: none;
+}
+.panel.with-nav-tabs .nav-justified{
+	margin-bottom: -1px;
+}
+.panel-default>.panel-heading {
+    color: #aaa;
+    background-color: black;
+    border-color: #ddd;
+}
+/********************************************************************/
+/*** PANEL DEFAULT ***/
+.with-nav-tabs.panel-default .nav-tabs > li > a,
+.with-nav-tabs.panel-default .nav-tabs > li > a:hover,
+.with-nav-tabs.panel-default .nav-tabs > li > a:focus {
+    color: #777;
+}
+.with-nav-tabs.panel-default .nav-tabs > .open > a,
+.with-nav-tabs.panel-default .nav-tabs > .open > a:hover,
+.with-nav-tabs.panel-default .nav-tabs > .open > a:focus,
+.with-nav-tabs.panel-default .nav-tabs > li > a:hover,
+.with-nav-tabs.panel-default .nav-tabs > li > a:focus {
+    color: #777;
+	background-color: #ddd;
+	border-color: transparent;
+}
+.with-nav-tabs.panel-default .nav-tabs > li.active > a,
+.with-nav-tabs.panel-default .nav-tabs > li.active > a:hover,
+.with-nav-tabs.panel-default .nav-tabs > li.active > a:focus {
+	color: #555;
+	background-color: #fff;
+	border-color: #ddd;
+	border-bottom-color: transparent;
+}
+.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu {
+    background-color: #f5f5f5;
+    border-color: #ddd;
+}
+.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > li > a {
+    color: #777;   
+}
+.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > li > a:hover,
+.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > li > a:focus {
+    background-color: #ddd;
+}
+.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > .active > a,
+.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > .active > a:hover,
+.with-nav-tabs.panel-default .nav-tabs > li.dropdown .dropdown-menu > .active > a:focus {
+    color: #fff;
+    background-color: #555;
+}
+	</style>
+	<style>
+button.accordion {
+    background-color: transparent;
+    color: #aaa;
+    cursor: pointer;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+}
+
+
+div.panels {
+    
+    background-color: black;
+	color:#aaa;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.tab-content>.active {
+    text-align: left;
+    
+}
+.with-nav-tabs.panel-default .nav-tabs > li > a, .with-nav-tabs.panel-default .nav-tabs > li > a:hover, .with-nav-tabs.panel-default .nav-tabs > li > a:focus {
+    font-size: 11px;
+}
+@media screen and (min-width:320px) and (max-width:768px){
+.mobile_ad_responsive{
+	display:block;
+}
+}
+@media (min-width: 992px)
+.col-md-offset-3 {
+    margin-left: 25%;
+}
+
+/* Red */
+.danger {
+  color: red;
+}
+
+.danger:hover {
+  background: #f44336;
+  color: white;
+}
+
+
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: -5px;
+  margin-left: -8px;
+}
+
+
+</style>
+	   <footer class="Footer">
+	  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	 <script type="text/javascript" src="http://cjss.enewspapr.com/footercontect/footer.js?v=1.3"></script>
+		             <p style="padding-top:5px;"> <script>document.write(footer1)</script> </p> 
+	        <p style="padding-top:5px;"><script>document.write(footer2)</script></p>
+         <p> &#9400; Copyrights <script language="JavaScript" type="text/javascript">
+    now = new Date
+    theYear=now.getYear()
+    if (theYear < 1900)
+    theYear=theYear+1900
+    document.write(theYear)
+</script> All rights reserved.  <a href="http://www.erelego.com/" target="_blank">    </a></p>
+    
+<div class="row">
+		<div class="col-md-offset-3 col-md-6 hidden-xs">
+            <div class="panel with-nav-tabs panel-default">
+                <div class="panel-heading">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#tab1default" data-toggle="tab">About us</a></li>
+							<li class="dropdown"><a href="#tab4default" data-toggle="tab">Privacy</a></li>
+							<li class="dropdown"><a href="#tab5default" data-toggle="tab">Terms and Conditions</a></li>		
+							<li><button class="btn danger" onclick="window.location.href ='http://www.epunyanagari.com/';"> Marathi Epaper </button> </li> 
+							
+                        </ul>
+                </div> 
+                 <div class="panel-body">
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="tab1default">epaper epunyanagari  daily newspaper published.							
+						</div>
+						
+					
+						<div class="tab-pane fade" id="tab4default">This Privacy Policy discloses the privacy practices for all publications of the epaper epunyanagari Group 
+							<button class="accordion">Read more....</button>
+                            <div class="panels">
+							  <div class="field-item even"><p><span style="line-height: 1.6;"> (including epaper epunyanagari newspaper, <a href="http://epunyanagari.net/">epunyanagari.net</a>) and other applications owned and operated by Chitra Publication Private Limited, and to any services that display this notice. For the purposes of this Privacy Policy, unless otherwise noted, all references to ‘Karavali Ale’ include epaper.epunyanagari.in and epunyanagari newspaper.<br/>
+								epunyanagari  may contain links to other websites for your convenience and information. We are not responsible for the privacy practices or the content of those sites.<br/>As we update, improve and expand the epunyanagari Group Services, this policy may change, so please refer back to it periodically. By accessing the Company website or this Application or otherwise using the Services, you consent to collection, storage, and use of the personal information you provide (including any changes thereto as provided by you) for any of the Services that we offer.<br/>
+								<p style="text-align: center;"><strong>What information is gathered?</strong></p><br/>
+								The information gathered when you interact with the epunyanagari Group Services falls into two categories:
+								<ul>
+								<li>Personal information, which includes personal information you supply when you subscribe and register for one of our sites by providing your email address</li>
+								<li>Non-personal information collected through technology</li>
+								</ul><p style="text-align: center;"><strong>Registration Information</strong></p>Registration for the epunyanagari Group Services may require that you supply certain personal information, including a unique email address and demographic information (age, sex, job industry and job title) to register.</div>
+                            </div>
+						</div>
+						<div class="tab-pane fade" id="tab5default">This page describes the terms and conditions that govern your use of Chitra
+							<button class="accordion">Read more....</button>
+							<div class="panels">
+								Publication Private Limited products, including <a href="http://epunyanagari.net/">epunyanagari.net</a>, as well as mobile applications offered by The epunyanagari Ale Group.
+								If you choose to use epunyanagari.net, any of the features of this site, including but not limited to software and other downloads (collectively, the “Services”), you will be agreeing to abide by all of the terms and conditions of these Terms of Service between you and The epunyanagari Ale Group ("epunyanagari.net”, “us” or “we”).
+								We may add or remove portions of these Terms of Service at any time, which shall become effective immediately upon posting. It is your responsibility to review these Terms of Service prior to each use of the Site and by continuing to use this Site, you agree to any changes.
+								We may suspend, discontinue or change any aspect of the Services at any time, including the availability of any Services feature, database, or content. We may also impose limits on certain features and services or restrict your access to parts or all of the Services without notice or liability.
+								<p style="text-align: center;"><strong>Terms of Service</strong></p>
+								The contents of the Services, including the Site, are intended for your personal, non-commercial use. All materials published on the Services (including, but not limited to news articles, photographs, images, illustrations, audio clips and video clips, also known as the “Content”) are protected by copyright, and owned or controlled by The epunyanagari Group or the party credited as the provider of the Content. You shall abide by all additional copyright notices, information, or restrictions contained in any Content accessed through the Service.
+								The Services contain links to other related World Wide Web Internet sites, resources, and advertisers. Since we are not responsible for the availability of these outside resources, or their contents, you should direct any concerns regarding any external link to such site.
+								<p style="text-align: center;"><strong>Correspondence</strong></p>
+								Notwithstanding any of the foregoing, nothing in these Terms of Service will serve to pre-empt the promises made in&nbsp;<a href="http://epunyanagari.net/privacy/">The epunyanagari  Group Privacy Policy</a>.Correspondence should be sent to contactus@epunyanagari.net.
+								You agree to report any copyright violations of the Terms of Service to The epunyanagari Group as soon as you become aware of them. In the event you have a claim of copyright infringement with respect to material that is contained in the epunyanagari.net service, please notify info@epunyanagari.net.You may send requests, in writing, for permission to reproduce or distribute materials from The Karavali Ale Group websites to:<br/>
+							 
+                            </div>
+						</div>
+                    </div>
+                </div>   
+		</div>
+	</div>
+	
+		
+
+	
+	</footer>
+	
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+		  acc[i].onclick = function() {
+			this.classList.toggle("active");
+			var panel = this.nextElementSibling;
+			if (panel.style.maxHeight){
+			  panel.style.maxHeight = null;
+			} else {
+			  panel.style.maxHeight = panel.scrollHeight + "px";
+			} 
+		  }
+		}
+	</script>  
+	
+	
+	
+	
+	
+
+
+	
+	
+	
+	
+		
+	
+					  
+		
+
+</div>  
+
+ 
+
+
+    
+
+</body>
+</html>
