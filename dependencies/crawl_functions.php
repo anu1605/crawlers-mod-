@@ -197,7 +197,6 @@ function cityArray($epapercode)
 
         default:
             return null;
-            
     }
 }
 function cityCodeArray($epapercode)
@@ -288,19 +287,19 @@ function alreadyDone($filepath, $conn)
 }
 function writeImage($url, $path)
 {
-    $arrContextOptions=array(
-        "ssl"=>array(
-            "verify_peer"=>false,
-            "verify_peer_name"=>false,
+    $arrContextOptions = array(
+        "ssl" => array(
+            "verify_peer" => false,
+            "verify_peer_name" => false,
         ),
-    ); 
+    );
     $image = file_get_contents($url, false, stream_context_create($arrContextOptions));
     $handle = fopen($path, "w");
     fwrite($handle, $image);
     fclose($handle);
 }
 
-function runTesseract($epapername,$edition, $page, $section, $conn, $patharray, $lang)
+function runTesseract($epapername, $edition, $page, $section, $conn, $patharray, $lang)
 {
     global $eol;
     $filepath = $patharray[0];
@@ -316,9 +315,9 @@ function runTesseract($epapername,$edition, $page, $section, $conn, $patharray, 
 
     try {
 
-        if($lang!='eng') $command = "tesseract " . $filepath . " " . $temp_txtfile . " -l " . $lang . "+eng > /dev/null 2>&1";
+        if ($lang != 'eng') $command = "tesseract " . $filepath . " " . $temp_txtfile . " -l " . $lang . "+eng > /dev/null 2>&1";
         else $command = "tesseract " . $filepath . " " . $temp_txtfile . " -l eng > /dev/null 2>&1";
-        
+
         exec($command);
         $text = file_get_contents($temp_txtfile . ".txt");
 
@@ -380,17 +379,15 @@ function runTesseract($epapername,$edition, $page, $section, $conn, $patharray, 
     }
 
     $emergencyStopQ = "SELECT Emergency_STOP FROM Emergency WHERE Instruction_For = 'crawl.php'";
-    $emergencyStopRS = mysqli_query($conn,$emergencyStopQ);
+    $emergencyStopRS = mysqli_query($conn, $emergencyStopQ);
     $emergencyStopRow = mysqli_fetch_array($emergencyStopRS);
 
-    if($emergencyStopRow['Emergency_STOP'] == "STOP"){
-        
+    if ($emergencyStopRow['Emergency_STOP'] == "STOP") {
+
         echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $newspaper_region . " Page " . $page . " Section " . $section . " Completed" . $eol;
-        mysqli_query($conn,"UPDATE Emergency SET Emergency_STOP = 'Keep Going' WHERE Instruction_For = 'crawl.php'");
-        die($eol.$eol.date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . "EMERGENCY STOP CALLED".$eol.$eol);
-
+        mysqli_query($conn, "UPDATE Emergency SET Emergency_STOP = 'Keep Going' WHERE Instruction_For = 'crawl.php'");
+        die($eol . $eol . date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . "EMERGENCY STOP CALLED" . $eol . $eol);
     }
-
 }
 
 function getHBeditionlink($city, $dateforlinks, $citylink, $code)
@@ -405,4 +402,70 @@ function getHBeditionlink($city, $dateforlinks, $citylink, $code)
     return $link;
 }
 
-?>
+function crawltoi($cityarray, $dateForLinks, $epapercode, $citycode, $filenamedate, $eol, $conn, $lang, $cities_of_interest, $epapername)
+{
+    for ($edition = 0; $edition < count($cityarray); $edition++) {
+
+        if (!in_array(ucfirst(explode("-", $cityarray[$edition])[0]), $cities_of_interest)) {
+
+            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Skipping " . $cityarray[$edition] . " Edition. Doesn't fall in cities of interest" . $eol;
+            continue;
+        }
+
+        $failedPageCount = 0;
+        $date_formatted = date("Y/d/m", strtotime($dateForLinks));
+
+        if ($epapercode == "Mirror" and $cityarray[$edition] == "Mumbai") {
+
+            $date_array = explode("/", $dateForLinks);
+            $processdate = $date_formatted = $date_array[2] . "-" . $date_array[1] . "-" . $date_array[0];
+            $dayofweek = date('l', strtotime($processdate));
+            if ($dayofweek <> 'Sunday') {
+                echo "There is no Mirror published from Mumbai on " . $dayofweek . ", " . $dateForLinks . ". It publishes only on Sundays";
+                continue;
+            }
+        }
+
+        for ($page = 1; $page <= 40; $page++) {
+            $imageFound = "No";
+
+            if ($failedPageCount > 3) {
+                echo "Seems Pages over. Skipping... " . $page . "\n";
+                continue;
+            }
+            for ($section = 1; $section <= 50; $section++) {
+                $imagelink = "https://asset.harnscloud.com/PublicationData/" . $epapercode . "/" . $citycode[$edition] . "/" . $date_formatted . "/Advertisement/" . str_pad($page, 3, "0", STR_PAD_LEFT) . "/" . str_replace("/", "_", $dateForLinks) . "_" . str_pad($page, 3, "0", STR_PAD_LEFT) . "_" . str_pad($section, 3, "0", STR_PAD_LEFT) . "_" . $citycode[$edition] . ".jpg";
+
+                // if (strlen(file_get_contents($url) <= 0)) continue;
+
+                $section_size_array = getimagesize($imagelink);
+                $width = $section_size_array[0];
+
+
+                if ($width > 0) {
+                    $imageFound = "Yes";
+                    $failedPageCount = 0;
+
+                    if ($width > 200 and $width < 250) {
+                        $getpath = explode("&", makefilepath($epapercode,  $cityarray[$edition], $filenamedate, $page . "00" . $section, $lang));
+                        if (alreadyDone($getpath[0], $conn) == "Yes") continue;
+                        writeImage($imagelink, $getpath[0]);
+
+                        echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved" . $eol;
+                        runTesseract($epapername, $cityarray[$edition], $page, $section, $conn, $getpath, $lang);
+                        echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $cityarray[$edition] . " Page " . $page . " Section " . $section . " Completed" . $eol;
+                        ob_flush();
+                        flush();
+                    } else continue;
+                } else {
+                    continue;
+                }
+            }
+
+            if ($imageFound == "No") $failedPageCount++;
+
+            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $cityarray[$edition] . " Page " . $page . " Completed" . $eol;
+        }
+        echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $cityarray[$edition] . " Completed" . $eol;
+    }
+}
