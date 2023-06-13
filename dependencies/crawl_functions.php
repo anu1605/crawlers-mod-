@@ -21,8 +21,10 @@ function filenamedate($epapercode, $conn)
 
 function dateForLinks($epapercode, $filenamedate)
 {
-    if ($epapercode == "AU" or $epapercode == "LM" or $epapercode == "SY" or $epapercode == "VV" or $epapercode == "YB") return date('Ymd', strtotime($filenamedate));
+    if ($epapercode == "PN" or $epapercode == "AU" or $epapercode == "LM" or $epapercode == "SY" or $epapercode == "VV" or $epapercode == "YB") return date('Ymd', strtotime($filenamedate));
     else if ($epapercode == "HB") return date('Y/m/d', strtotime($filenamedate));
+    else if ($epapercode == "TOI" or $epapercode == "ET" or $epapercode == "MT" or $epapercode == "Mirror") return  date('d/m/Y', strtotime($filenamedate));
+    else if ($epapercode == "GSM") return date("d-m-Y", strtotime($filenamedate));
     else if ($epapercode == "DJ" or $epapercode == "NB" or $epapercode == "ND" or $epapercode == "NVR" or $epapercode == "PAP") return date('d-M-Y', strtotime($filenamedate));
     else if ($epapercode == "JPS") return date('dmy', strtotime($filenamedate));
     else if ($epapercode == "NYB" or $epapercode == "RS" or $epapercode == "SAM" or $epapercode == "SMJ") return date('dmY', strtotime($filenamedate));
@@ -195,6 +197,30 @@ function cityArray($epapercode)
             return array("Bengaluru", "Hubli");
             break;
 
+        case "GSM":
+            return array("ahmedabad", "baroda", "bhavnagar", "bhuj", "mumbai", "rajkot", "surat");
+            break;
+
+        case "PN":
+            return  array("Mumbai", "Pune", "Nashik", "Nagpur", "Kolhapur", "Satara", "Solapur", "Jalgaon", "Dhule", "Nanded", "Thane", "Latur", "Ahmednagar");
+            break;
+
+        case "TOI":
+            return  array("Ahmedabad", "Bangalore", "Bhopal", "Chandigarh", "Chennai", "Delhi", "Goa", "Hyderabad", "Jaipur", "Kochi", "Kolkata", "Lucknow", "Mumbai");
+            break;
+
+        case "ET":
+            return  array("Bangalore", "Mumbai", "Delhi", "Kolkata");
+            break;
+
+        case "MT":
+            return  array("Nagpur", "Mumbai", "Pune", "Sambhaji", "Nashik");
+            break;
+
+        case "Mirror":
+            return  array("Bangalore", "Mumbai", "Pune");
+            break;
+
         default:
             return null;
     }
@@ -249,6 +275,26 @@ function cityCodeArray($epapercode)
         case "VV":
             return array("BEN", "HUB");
             break;
+
+        case "PN":
+            return array("PM", "PU", "NS", "NAG", "KOL", "STR", "SOL", "JAL", "DHU", "NDD", "PT", "LTR", "AH");
+            break;
+
+        case "TOI":
+            return array("toiac", "toibgc", "toibhoc", "toicgct", "toich", "cap", "toigo", "toih", "toijc", "toikrko", "toikc", "toilc", "toim");
+
+        case "ET":
+            return array("etbg", "etmc", "etdc", "etkc");
+            break;
+
+        case "MT":
+            return array("mtnag", "mtm", "mtpe", "mtag", "mtnk");
+            break;
+
+        case "Mirror":
+            return array("vkbgmr", "vkmmir", "pcmir");
+            break;
+
     }
 }
 

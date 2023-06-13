@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+ 
+<html lang="hi">
+    <head>
+        <meta charset="UTF-8" />
+
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+        
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-param" content="_csrf">
+<meta name="csrf-token" content="MaQAJgdAZ5Hq8-OzRFQxOnR3qOwfp91RfUm_6wU0DohuzlJScxII6YWC0t92NnB8JR73qifkrwkXPtSORAZvvA==">
+        <title> - Dainik Navajyoti epaper Rajasthan news</title>
+        
+        <!-- <link href="/resources//3rdparty/fontawesome-free-5.2.0-web/css/all.min.css" rel="Stylesheet" /> -->
+        <link href="/resources//3rdparty/fontawesome-free-5.15.4-web/css/all.min.css" rel="Stylesheet" />
+        
+                
+        <meta name="og:image" property="og:image" content="1566">
+<meta name="twitter:image" content="1566">
+<link href="https://epaper.navajyoti.net/media/2020-04/logo_nav-sun-only.jpg" rel="icon">
+<link type="application/rss+xml" href="https://epaper.navajyoti.net/rss" title="RSS Feed" rel="alternate">
+<link href="https://fonts.googleapis.com/css?display=swap&amp;family=Playfair+Display:regular,italic,700|Noto+Sans:regular,italic,700" rel="stylesheet">
+<link href="/assets/epaper.navajyoti.net-b.1.5.stylesheet.1686221247.css" rel="stylesheet">
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"></script>
+<script src="/assets/epaper.navajyoti.net-b.1.5.script.1686218575.js"></script>
+<script>            
+                window.OneSignal = window.OneSignal || [];
+                OneSignal.push(function() {
+                  OneSignal.init({
+                    appId: 'eaa08ef3-4136-4f14-ad59-805eaaf0df00',
+                    safari_web_id: "",
+                    notifyButton: {
+                      enable: true,
+                    },
+                  });
+                });        
+            </script>        
+ 
+                <script>
+             
+            
+         $(document).ready(function () {
+            $(".datepicker").datepicker({
+                dateFormat: "dd M yy",
+                changeYear: true,
+                changeMonth: true,
+                yearRange: '2010:2030'
+            });
+             
+            $(".timepicker").timepicker({
+                'timeFormat': 'H:m'
+            });    
+            
+            $(document).ajaxStart(function () {                    
+                $("#progress").show();
+            });
+            $(document).ajaxStop(function () {                     
+                $("#progress").hide();
+            }); 
+            
+
+            $(".ie-alert").hide();
+            if (isIE()){
+                $(".ie-alert").show();
+                $(".site-content, .site-header, .site-footer").css("opacity","0.4");
+            } 
+    
+        });
+        
+        
+        function isIE() {
+            ua = navigator.userAgent;
+            /* MSIE used to detect old browsers and Trident used to newer ones*/
+            var is_ie = ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
+
+            return is_ie; 
+          }
+        
+            function generatePlaceholder(parent){
+                $(parent+" input, "+parent+" textarea, "+parent+" select").each(function(){
+
+                    var id = $(this).attr("id");
+                    var label = $("label[for="+id+"]").html();
+                    $(this).prop("placeholder",label);
+                    $("label[for="+id+"]").hide();
+
+                });
+            }
+            $.ajaxSetup({
+                type: "post",
+                dataType: "json",
+                data: {"_csrf": yii.getCsrfToken()},
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    showError(textStatus, errorThrown);
+                } 
+                
+            });
+  
+        </script>
+        <style media="print">
+            .hide_on_print{
+                display:none;
+            }
+        </style>
+        
+        
+        
+                
+        
+        <script data-ad-client="ca-pub-3387136004596632" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>            </head>
+    
+        
+    
+    <body class="pg-view user-guest   ">
+        
+
+                            <style>
+                        body {
+                            -webkit-user-select: none;
+                            -webkit-touch-callout: none;
+                            -moz-user-select: none;
+                            -ms-user-select: none;
+                            user-select: none;
+
+                        }
+                    </style> 
+                    <script>
+                        $(document).ready(function () {
+                            $('body').bind('cut copy', function (e) {
+                                e.preventDefault();
+                            });
+                            $("body").on("contextmenu", function (e) {
+                                return false;
+                            });
+                            $("body").on("onmousedown", function (e) {
+                                return false;
+                            });
+                            $("body").on("onselectstart", function (e) {
+                                return false;
+                            });
+                        });
+                    </script> 
+                    
+        <div id="alertbox2" style="display: none"  class="alertmsg-dialog">
+            
+            <div class="p-2 alertmsg-message text-center">
+                You need to login in order to view it            </div>
+            
+                            <a href="/login" class="btn btn-primary mb-1 btnLogin">Login</a>
+                                <a href="/register" class="btn btn-primary mb-1 btnRegister" type="button">Register</a>
+                            
+            
+                        
+             
+            
+                                        <div class="p-2 text-center social-login">
+                <a href="/social-login/facebook">
+                    <img style="width:200px" src="/resources/fblogin.svg" alt="Login With Facebook" />
+                </a>
+            </div> 
+            
+                                        <div class="p-2 text-center social-login">
+                <a href="/social-login/google">
+                    <img style="width:200px" src="/resources/googlelogin.svg" alt="Login With Facebook" />
+                </a>
+            </div> 
+                        
+                        <a href="#" class="btnClose btn btn-secondary"><i class="fas fa-times"></i></a>
+        </div>
+        <script>
+            let alertbox2 = {
+                init:function(){
+                    $(document).ready(function(){
+                        $("#alertbox2").hide();
+                    });
+                    $("#alertbox2 .btnClose").on("click",function(e){
+                       e.preventDefault();
+                       $("#alertbox2").hide("medium");
+                    });  
+                },
+                openDialog:function(msg){                    
+                    $("#alertbox2 .alertmsg-message").html(msg);
+                    $("#alertbox2").show("medium"); 
+                    
+                   // $("#alertbox2 .alertmsg-actionbtn").html("Subscribe");
+                   // $("#alertbox2 .btnRegister, #alertbox2 .social-login").hide();
+                   // $("#alertbox2 .alertmsg-actionbtn").prop("href","/packages");
+                    
+                },
+                closeDialog:function(){
+                    $("#alertbox2").close("medium"); 
+                }
+            };
+            alertbox2.init();
+        </script>
+
+
+
+        <style>
+.bg-primary, .btn-primary, .btn-pdfdownload{
+  background-color:#636e72 !important;
+  background:#636e72 !important;  
+}
+
+.btn-primary, .btn-pdfdownload, .page-item.active a{
+  background-color:#636e72 !important;
+  background:#636e72 !important;  
+  border-color:#636e72 !important;
+}
+
+.bg-primary-lighten-5{
+  background-color:#dfe6e9 !important;
+}
+
+.site-footer .pbwidget-title{
+  background-color:transparent !important;
+}
+a, a:active, a:focus{
+    outline: none; /* Works in Firefox, Chrome, IE8 and above */ 
+}
+.navbar  a:focus{
+  background-color:rgba(0,0,0,0.2);
+}
+
+.edition-thumb-box{
+ box-shadow:0px 0px 4px rgba(0,0,0,0.2) ;
+  border:transparent !important;
+  border-bottom:2px solid #e56d00 !important;
+  border-top:2px solid #e56d00 !important;
+}
+</style>        
+        
+                 
+        
+        
+        <div id="progress" style=" display:none;
+             background-color:white; width:150px; padding:10px;
+              text-align:center; position:fixed;
+             left:45%; top:45%; box-shadow: 0px 0px 5px rgba(0,0,0,0.5); z-index:3333333
+             ">
+            <i class="fa fa-spin fa-cog"></i><br />
+            
+        </div>
+        
+        <section class="site-outer">
+            <header class="site-header">
+            <div class=' r-mdmp bg-light' style=''><div class='container'><div class='row'><div class='d-md-block col-md-12'><div class='' style=''><div data-wid='w-869t' data-params='eyJ0aXRsZSI6IiIsImZvcm1hdCI6ImZvcm1hdDEiLCJjc3NfY2xhc3MiOiJ0ZXh0LWNlbnRlciB0ZXh0LW1kLXJpZ2h0IGZsb2F0LW5vbmUgZmxvYXQtbWQtcmlnaHQiLCJjdXN0b21fc3R5bGUiOiIiLCJjb2xfaWQiOiJjLW96M2YiLCJ3aWRfaWQiOiJ3LTg2OXQiLCJ3dHlwZSI6ImFwcF9ucGx1Z2luc19wYndpZGdldHNfVXNlclN0YXR1cyJ9' data-type='YXBwX25wbHVnaW5zX3Bid2lkZ2V0c19Vc2VyU3RhdHVz' data-widget-alias='userstatus' class='pbwidget w-869t userstatus text-center text-md-right float-none float-md-right' style=''><div class='pbwidget-body'><div class="user-status">
+            
+            <div class="btn-group">
+                <a class="btn btn-sm btn-primary btn-login" href="/login"><i class="fas fa-sign-in-alt"></i> Login</a> 
+                                <a class="btn btn-sm btn-secondary btn-register" href="/register"><i class="fas fa-user-plus"></i> Register</a>
+                            </div>
+    
+        </div>
+        </div></div></div></div></div></div></div><div class=' r-5yzl p-3 d-none d-md-block' style=''><div class='container'><div class='row'><div class='d-none d-sm-none d-md-block col-md-4'><div class='' style=''></div></div><div class='d-none d-sm-none d-md-block col-md-4'><div class='' style=''><div data-wid='w-sasx' data-params='eyJ0aXRsZSI6IiIsIm1jZWNvZGUiOiI8aDEgY2xhc3M9XCJoMVwiIHN0eWxlPVwidGV4dC1hbGlnbjogY2VudGVyO1wiPjxpbWcgc3JjPVwiaHR0cHM6XC9cL2VwYXBlci5uYXZhanlvdGkubmV0XC9tZWRpYVwvMjAyMC0wNFwvbG9nb19uYXYuanBnXCIgXC8+XHUwMGEwPFwvaDE+IiwiY3NzX2NsYXNzIjoidGV4dC1jZW50ZXIiLCJjdXN0b21fc3R5bGUiOiIiLCJjb2xfaWQiOiJjLWM4d2UiLCJ3aWRfaWQiOiJ3LXNhc3giLCJ3dHlwZSI6ImFwcF9tb2R1bGVzX3BhZ2VidWlsZGVyX25wbHVnaW5zX3Bid2lkZ2V0c19UaW55TWNlV2lkZ2V0In0=' data-type='YXBwX21vZHVsZXNfcGFnZWJ1aWxkZXJfbnBsdWdpbnNfcGJ3aWRnZXRzX1RpbnlNY2VXaWRnZXQ=' data-widget-alias='tinymcewidget' class='pbwidget w-sasx tinymcewidget text-center' style=''><div class='pbwidget-body'><h1 class="h1" style="text-align: center;"><img src="https://epaper.navajyoti.net/media/2020-04/logo_nav.jpg" /> </h1></div></div></div></div></div></div></div><div class=' r-7v17 bg-primary' style=' '><div class='container'><div class='row'><div class='d-md-block col-md-12'><div class='' style=''><div data-wid='w-nv6u' data-params='eyJ0aXRsZSI6IiIsImxvZ28iOiJEYWluaWsgTmF2YWp5b3RpIiwibG9nby1kaXNwbGF5IjoiaGlkZS1vbi1kZXNrdG9wIiwiYmctY29sb3IiOiIjMmMyYzJjIiwiZmctY29sb3IiOiJmZmZmZmYiLCJtZW51IjoiMzM5IiwiY3NzX2NsYXNzIjoiYmctcHJpbWFyeSIsImN1c3RvbV9zdHlsZSI6IiIsImNvbF9pZCI6ImMteDJ3NiIsIndpZF9pZCI6InctbnY2dSIsInd0eXBlIjoiYXBwX25wbHVnaW5zX3Bid2lkZ2V0c19OYXZpZ2F0aW9uQmFyIn0=' data-type='YXBwX25wbHVnaW5zX3Bid2lkZ2V0c19OYXZpZ2F0aW9uQmFy' data-widget-alias='navigationbar' class='pbwidget w-nv6u navigationbar bg-primary' style=''><div class='pbwidget-body'><style>
+    #navbar64881fc8486ed{        
+        background-color:##2c2c2c ;
+    }
+    #navbar64881fc8486ed .nav-link, #navbar64881fc8486ed .navbar-brand{
+        color:#ffffff ;
+    }
+</style>
+ 
+<nav id="navbar64881fc8486ed" class="navbar navbar-expand-md   navbar-light">
+        <a class="navbar-brand
+       d-md-none       
+       " href="https://epaper.navajyoti.net/">
+        Dainik Navajyoti    </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menunavbar64881fc8486ed" aria-controls="menunavbar64881fc8486ed" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menunavbar64881fc8486ed">
+      <ul class="navbar-nav mr-auto">        
+         <li class='nav-item  ml-3'><a class="nav-link dropdown-toggle  " id="navbarDropdown0" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  target='_self'  href='/epaper/default/open?id=14'>Jaipur<span class='caret'></span></a><ul class="dropdown-menu" aria-labelledby="navbarDropdown0"><li><a class="dropdown-item" href="/epaper/default/open?id=14">City</a></li><li><a class="dropdown-item" href="/epaper/default/open?id=20">Anchal</a></li><li><a class="dropdown-item" href="/epaper/default/open?id=15">Tonk</a></li><li><a class="dropdown-item" href="/epaper/default/open?id=16">Dausa</a></li><li><a class="dropdown-item" href="/epaper/default/open?id=17">Bikaner</a></li><li><a class="dropdown-item" href="/epaper/default/open?id=18">Shekhawati</a></li><li><a class="dropdown-item" href="/epaper/default/open?id=19">Matsyanchal</a></li></ul></li><li class='nav-item  ml-3'><a class="nav-link dropdown-toggle  " id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  target='_self'  href='/category/11/ajmer'>Ajmer<span class='caret'></span></a><ul class="dropdown-menu" aria-labelledby="navbarDropdown1"><li><a class="dropdown-item" href="/epaper/default/open?id=11">City</a></li><li><a class="dropdown-item" href="/epaper/default/open?id=22">Anchal</a></li><li><a class="dropdown-item" href="/epaper/default/open?id=23">Bhilwara</a></li><li><a class="dropdown-item" href="/epaper/default/open?id=24">Nagaur</a></li></ul></li><li class='nav-item  ml-3'><a class="nav-link dropdown-toggle  " id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  target='_self'  href='/category/9/kota'>Kota<span class='caret'></span></a><ul class="dropdown-menu" aria-labelledby="navbarDropdown2"><li><a class="dropdown-item" href="/epaper/default/open?id=9">City</a></li><li><a class="dropdown-item" href="/epaper/default/open?id=33">Hadoti</a></li></ul></li><li class='nav-item  ml-3'><a class="nav-link dropdown-toggle  " id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  target='_self'  href='/epaper/default/open?id=10'>Jodhpur<span class='caret'></span></a><ul class="dropdown-menu" aria-labelledby="navbarDropdown3"><li><a class="dropdown-item" href="/epaper/default/open?id=10">City</a></li><li><a class="dropdown-item" href="/epaper/default/open?id=28">Anchal</a></li><li><a class="dropdown-item" href="/epaper/default/open?id=25">Pali</a></li><li><a class="dropdown-item" href="/epaper/default/open?id=26">Jalore-Sirohi</a></li><li><a class="dropdown-item" href="/epaper/default/open?id=27">Barmer-Jaisalmer</a></li></ul></li><li class='nav-item  ml-3'><a class="nav-link dropdown-toggle  " id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  target='_self'  href='/epaper/default/open?id=8'>Udaipur<span class='caret'></span></a><ul class="dropdown-menu" aria-labelledby="navbarDropdown4"><li><a class="dropdown-item" href="/epaper/default/open?id=8">City</a></li><li><a class="dropdown-item" href="/epaper/default/open?id=30">AasPaas</a></li><li><a class="dropdown-item" href="/epaper/default/open?id=31">Banswara-Dungarpur</a></li><li><a class="dropdown-item" href="/epaper/default/open?id=32">Chittorgarh-Pratapgarh</a></li><li><a class="dropdown-item" href="/category/35/rajsamand">Rajsamand</a></li></ul></li>      </ul>    
+    </div>
+</nav> 
+  
+        </div></div></div></div></div></div></div>            </header>
+            <main class="site-content">                
+                <div class="container fixed-page" style="min-height:600px">
+<div class='main-alert alert alert-info '>Please set any one edition as featured.</div>    
+</div>
+            </main>
+            <footer class="site-footer">
+            <div class=' r-agbv bg-primary p-3 text-light' style=''><div class='container'><div class='row'><div class='d-md-block col-md-12'><div class='' style=''><div data-wid='w-ilwi' data-params='eyJ0aXRsZSI6IiIsImh0bWxjb2RlIjoiPGg2IHN0eWxlPVwidGV4dC1hbGlnbjpjZW50ZXI7XCI+PGEgaHJlZj1cImh0dHBzOlwvXC9kYWluaWtuYXZhanlvdGkuY29tXCI+PGZvbnQgY29sb3I9XCJ3aGl0ZVwiPnZpc2l0IDxiPmRhaW5pa25hdmFqeW90aS5jb208XC9iPiBmb3IgbGF0ZXN0IG5ld3MgZnJvbSBSYWphc3RoYW48XC9hPjxcL2g2PjxcL2ZvbnQ+PGJyPiIsImNzc19jbGFzcyI6IiIsImN1c3RvbV9zdHlsZSI6IiIsImNvbF9pZCI6ImMtOWJqbyIsIndpZF9pZCI6InctaWx3aSIsInd0eXBlIjoiYXBwX21vZHVsZXNfcGFnZWJ1aWxkZXJfbnBsdWdpbnNfcGJ3aWRnZXRzX0hUTUxXaWRnZXQifQ==' data-type='YXBwX21vZHVsZXNfcGFnZWJ1aWxkZXJfbnBsdWdpbnNfcGJ3aWRnZXRzX0hUTUxXaWRnZXQ=' data-widget-alias='htmlwidget' class='pbwidget w-ilwi htmlwidget ' style=''><div class='pbwidget-body'><h6 style="text-align:center;"><a href="https://dainiknavajyoti.com"><font color="white">visit <b>dainiknavajyoti.com</b> for latest news from Rajasthan</a></h6></font><br></div></div><div data-wid='w-b4dw' data-params='eyJ0aXRsZSI6IiIsIm1jZWNvZGUiOiI8cCBzdHlsZT1cInRleHQtYWxpZ246IGNlbnRlcjsgZm9udC1zaXplOiBtZWRpdW07IGZvbnQtZmFtaWx5OiAtd2Via2l0LXN0YW5kYXJkOyBjYXJldC1jb2xvcjogIzAwMDAwMDsgY29sb3I6ICNkZmU2ZTk7XCI+Q29weXJpZ2h0IEAgRGFpbmlrIE5hdmFqeW90aTxiciBcLz48c3BhbiBzdHlsZT1cImNhcmV0LWNvbG9yOiAjMDAwMDAwOyBjb2xvcjogI2RmZTZlOTsgZm9udC1mYW1pbHk6IC13ZWJraXQtc3RhbmRhcmQ7IGZvbnQtc2l6ZTogbWVkaXVtOyB0ZXh0LWFsaWduOiBzdGFydDtcIj5OYXZhanlvdGkgUHJpbnRpbmcgUHJlc3MgUHZ0IEx0ZC48XC9zcGFuPjxcL3A+XHJcbjxwIHN0eWxlPVwidGV4dC1hbGlnbjogY2VudGVyOyBmb250LXNpemU6IG1lZGl1bTsgZm9udC1mYW1pbHk6IC13ZWJraXQtc3RhbmRhcmQ7IGNhcmV0LWNvbG9yOiAjMDAwMDAwOyBjb2xvcjogI2RmZTZlOTtcIj48YSBzdHlsZT1cImNhcmV0LWNvbG9yOiAjMDAwMDAwOyBjb2xvcjogI2RmZTZlOTsgdGV4dC1hbGlnbjogc3RhcnQ7XCIgaHJlZj1cImh0dHBzOlwvXC9lcGFwZXIubmF2YWp5b3RpLm5ldFwvcHJpdmFjeS1wb2xpY3lcIj5Qcml2YWN5IFBvbGljeTxcL2E+PFwvcD4iLCJjc3NfY2xhc3MiOiIiLCJjdXN0b21fc3R5bGUiOiIiLCJjb2xfaWQiOiJjLTliam8iLCJ3aWRfaWQiOiJ3LWI0ZHciLCJ3dHlwZSI6ImFwcF9tb2R1bGVzX3BhZ2VidWlsZGVyX25wbHVnaW5zX3Bid2lkZ2V0c19UaW55TWNlV2lkZ2V0In0=' data-type='YXBwX21vZHVsZXNfcGFnZWJ1aWxkZXJfbnBsdWdpbnNfcGJ3aWRnZXRzX1RpbnlNY2VXaWRnZXQ=' data-widget-alias='tinymcewidget' class='pbwidget w-b4dw tinymcewidget ' style=''><div class='pbwidget-body'><p style="text-align: center; font-size: medium; font-family: -webkit-standard; caret-color: #000000; color: #dfe6e9;">Copyright @ Dainik Navajyoti<br /><span style="caret-color: #000000; color: #dfe6e9; font-family: -webkit-standard; font-size: medium; text-align: start;">Navajyoti Printing Press Pvt Ltd.</span></p>
+<p style="text-align: center; font-size: medium; font-family: -webkit-standard; caret-color: #000000; color: #dfe6e9;"><a style="caret-color: #000000; color: #dfe6e9; text-align: start;" href="https://epaper.navajyoti.net/privacy-policy">Privacy Policy</a></p></div></div></div></div></div></div></div>            </footer>
+        </section>
+        
+         
+        
+                        <!-- Google tag (gtag.js) for Google Analytics 4 -->
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-S0FT88PEYZ"></script>                
+                <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-S0FT88PEYZ');
+                document.addEventListener('afterPageChange', function () {   
+                        gtag('config', 'G-S0FT88PEYZ',  {'page_path': document.location.pathname}); 
+                }, false);
+                </script>
+                <!-- End -->
+                                <!-- Global site tag (gtag.js) - Google Analytics -->
+                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145091492-22"></script>
+                <script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'UA-145091492-22');
+                    document.addEventListener('afterPageChange', function () {   
+                         gtag('config', 'UA-145091492-22',  {'page_path': document.location.pathname}); 
+                    }, false);
+                </script>
+                            <!-- Google tag (gtag.js) for Google Analytics 4 -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-K3SMJY0Q74"></script>                
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-K3SMJY0Q74');
+            document.addEventListener('afterPageChange', function () {   
+                gtag('config', 'G-K3SMJY0Q74',  {'page_path': document.location.pathname}); 
+            }, false);
+            </script>
+            <!-- End -->
+                    
+
+        <div class="ie-alert" style="width:100%; padding:30px; z-index:1000000; box-shadow:0px 0px 60px black;  position:fixed; top:0px; left:0px; font-size:18px; text-align:center; background-color:#fdf7e3; font-weight:bold; display:none;">
+             
+            <img src="/resources/browser-support.png" alt="Your Browser is not supported" />
+             
+</div>
+        
+        
+        
+<script>
+                
+// Prevent closing from click inside dropdown
+$(document).on('click', '.dropdown-menu', function (e) {
+  e.stopPropagation();
+});
+
+// make it as accordion for smaller screens
+/*window.onresize = function() {
+    if ($(window).width() < 992) {
+        $('.dropdown-menu a').off('click','openSubmenu');
+        $('.dropdown-menu a').on('click','openSubmenu');        
+    }
+}; */
+$('.dropdown-item.dropdown-toggle').on('click',function(e){
+    e.preventDefault();
+    if($(this).next('.submenu').length){
+        $(this).next('.submenu').toggle();
+    }
+    $('.dropdown').on('hide.bs.dropdown', function () {
+        $(this).find('.submenu').hide();
+    })
+});        
+
+        
+</script>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </body>
+    
+    
+    
+</html>
+

@@ -14,7 +14,7 @@ $check_if_crawl_running = shell_exec("ps aux | grep crawl.php");
 $crawl_runtimes = explode("crawl.php", $check_if_crawl_running);
 $howmanyruns_of_crawl = count($crawl_runtimes);
 
-if ($extract_howmanyruns > 3 or $howmanyruns_of_crawl > 4) die("Other related programmes are running");
+if ($extract_howmanyruns > 3 or $howmanyruns_of_crawl > 5) die("Other related programmes are running");
 
 if (php_sapi_name() == "cli") $eol = "\n";
 else  $eol = "<br>";
@@ -160,7 +160,7 @@ foreach ($epapers as $epapercode => $epaperArray) {
 
     if ($epapercode == "HB") {
 
-        $array = explode(',',  file_get_contents("./dependencies/hb.txt"), false, stream_context_create($arrContextOptions));
+        $array = explode(',',  file_get_contents("./dependencies/hb.txt", false, stream_context_create($arrContextOptions)));
 
         $datecode = array();
         $newdatecode = array();
