@@ -10,17 +10,30 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-param" content="_csrf">
-<meta name="csrf-token" content="MaQAJgdAZ5Hq8-OzRFQxOnR3qOwfp91RfUm_6wU0DohuzlJScxII6YWC0t92NnB8JR73qifkrwkXPtSORAZvvA==">
-        <title> - Dainik Navajyoti epaper Rajasthan news</title>
+<meta name="csrf-token" content="d5BgWdh5L6eIA49bCtlAuC35UYxZfuLB1i11R73Odg8C3VU960t5zNxm2gRtjweIaM4VxBA50o2xQTg0x4QXdQ==">
+        <title>Archive - 14 Jun 2023 - Dainik Navajyoti epaper Rajasthan news</title>
         
         <!-- <link href="/resources//3rdparty/fontawesome-free-5.2.0-web/css/all.min.css" rel="Stylesheet" /> -->
         <link href="/resources//3rdparty/fontawesome-free-5.15.4-web/css/all.min.css" rel="Stylesheet" />
         
                 
-        <meta name="og:image" property="og:image" content="1566">
-<meta name="twitter:image" content="1566">
+        <meta property="og:image" content="https://epaper.navajyoti.net/media/c600x315/2020-04/logo_nav-larger-canvas.jpg">
+<meta name="twitter:image" content="https://epaper.navajyoti.net/media/c876x438/2020-04/logo_nav-larger-canvas.jpg">
+<meta property="og:locale" content="hi_IN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="keywords" content="epaper navjyoti hindi Rajasthan Ajmer jaipur kota Udaipur Bhilwara jodhpur India news Dainik Dainik Bhaskar Patrika newspaper popular Alwar Kishangarh nasirabad daily Dainik Navajyoti Bikaner">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Archive - 14 Jun 2023">
+<meta property="og:image:alt" content="Archive - 14 Jun 2023">
+<meta name="twitter:title" content="Archive - 14 Jun 2023">
+<meta property="og:image" content="https://epaper.navajyoti.net/media/c400x400/2020-04/logo_nav-larger-canvas.jpg">
+<meta property="og:image:width" content="300">
+<meta property="og:image:height" content="118">
+<meta property="og:image:type" content="image/jpg">
+<meta property="og:url" content="https://epaper.navajyoti.net/archive/date/14-Jun-2023/1?forcesingle=yes">
 <link href="https://epaper.navajyoti.net/media/2020-04/logo_nav-sun-only.jpg" rel="icon">
 <link type="application/rss+xml" href="https://epaper.navajyoti.net/rss" title="RSS Feed" rel="alternate">
+<link href="https://epaper.navajyoti.net/archive/date/14-Jun-2023" rel="canonical">
 <link href="https://fonts.googleapis.com/css?display=swap&amp;family=Playfair+Display:regular,italic,700|Noto+Sans:regular,italic,700" rel="stylesheet">
 <link href="/assets/epaper.navajyoti.net-b.1.5.stylesheet.1686221247.css" rel="stylesheet">
 <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"></script>
@@ -113,7 +126,7 @@
     
         
     
-    <body class="pg-view user-guest   ">
+    <body class="pg-archive user-guest   ">
         
 
                             <style>
@@ -255,23 +268,23 @@ a, a:active, a:focus{
     
         </div>
         </div></div></div></div></div></div></div><div class=' r-5yzl p-3 d-none d-md-block' style=''><div class='container'><div class='row'><div class='d-none d-sm-none d-md-block col-md-4'><div class='' style=''></div></div><div class='d-none d-sm-none d-md-block col-md-4'><div class='' style=''><div data-wid='w-sasx' data-params='eyJ0aXRsZSI6IiIsIm1jZWNvZGUiOiI8aDEgY2xhc3M9XCJoMVwiIHN0eWxlPVwidGV4dC1hbGlnbjogY2VudGVyO1wiPjxpbWcgc3JjPVwiaHR0cHM6XC9cL2VwYXBlci5uYXZhanlvdGkubmV0XC9tZWRpYVwvMjAyMC0wNFwvbG9nb19uYXYuanBnXCIgXC8+XHUwMGEwPFwvaDE+IiwiY3NzX2NsYXNzIjoidGV4dC1jZW50ZXIiLCJjdXN0b21fc3R5bGUiOiIiLCJjb2xfaWQiOiJjLWM4d2UiLCJ3aWRfaWQiOiJ3LXNhc3giLCJ3dHlwZSI6ImFwcF9tb2R1bGVzX3BhZ2VidWlsZGVyX25wbHVnaW5zX3Bid2lkZ2V0c19UaW55TWNlV2lkZ2V0In0=' data-type='YXBwX21vZHVsZXNfcGFnZWJ1aWxkZXJfbnBsdWdpbnNfcGJ3aWRnZXRzX1RpbnlNY2VXaWRnZXQ=' data-widget-alias='tinymcewidget' class='pbwidget w-sasx tinymcewidget text-center' style=''><div class='pbwidget-body'><h1 class="h1" style="text-align: center;"><img src="https://epaper.navajyoti.net/media/2020-04/logo_nav.jpg" /> </h1></div></div></div></div></div></div></div><div class=' r-7v17 bg-primary' style=' '><div class='container'><div class='row'><div class='d-md-block col-md-12'><div class='' style=''><div data-wid='w-nv6u' data-params='eyJ0aXRsZSI6IiIsImxvZ28iOiJEYWluaWsgTmF2YWp5b3RpIiwibG9nby1kaXNwbGF5IjoiaGlkZS1vbi1kZXNrdG9wIiwiYmctY29sb3IiOiIjMmMyYzJjIiwiZmctY29sb3IiOiJmZmZmZmYiLCJtZW51IjoiMzM5IiwiY3NzX2NsYXNzIjoiYmctcHJpbWFyeSIsImN1c3RvbV9zdHlsZSI6IiIsImNvbF9pZCI6ImMteDJ3NiIsIndpZF9pZCI6InctbnY2dSIsInd0eXBlIjoiYXBwX25wbHVnaW5zX3Bid2lkZ2V0c19OYXZpZ2F0aW9uQmFyIn0=' data-type='YXBwX25wbHVnaW5zX3Bid2lkZ2V0c19OYXZpZ2F0aW9uQmFy' data-widget-alias='navigationbar' class='pbwidget w-nv6u navigationbar bg-primary' style=''><div class='pbwidget-body'><style>
-    #navbar64881fc8486ed{        
+    #navbar648952cbcec02{        
         background-color:##2c2c2c ;
     }
-    #navbar64881fc8486ed .nav-link, #navbar64881fc8486ed .navbar-brand{
+    #navbar648952cbcec02 .nav-link, #navbar648952cbcec02 .navbar-brand{
         color:#ffffff ;
     }
 </style>
  
-<nav id="navbar64881fc8486ed" class="navbar navbar-expand-md   navbar-light">
+<nav id="navbar648952cbcec02" class="navbar navbar-expand-md   navbar-light">
         <a class="navbar-brand
        d-md-none       
        " href="https://epaper.navajyoti.net/">
         Dainik Navajyoti    </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menunavbar64881fc8486ed" aria-controls="menunavbar64881fc8486ed" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menunavbar648952cbcec02" aria-controls="menunavbar648952cbcec02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="menunavbar64881fc8486ed">
+    <div class="collapse navbar-collapse" id="menunavbar648952cbcec02">
       <ul class="navbar-nav mr-auto">        
          <li class='nav-item  ml-3'><a class="nav-link dropdown-toggle  " id="navbarDropdown0" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  target='_self'  href='/epaper/default/open?id=14'>Jaipur<span class='caret'></span></a><ul class="dropdown-menu" aria-labelledby="navbarDropdown0"><li><a class="dropdown-item" href="/epaper/default/open?id=14">City</a></li><li><a class="dropdown-item" href="/epaper/default/open?id=20">Anchal</a></li><li><a class="dropdown-item" href="/epaper/default/open?id=15">Tonk</a></li><li><a class="dropdown-item" href="/epaper/default/open?id=16">Dausa</a></li><li><a class="dropdown-item" href="/epaper/default/open?id=17">Bikaner</a></li><li><a class="dropdown-item" href="/epaper/default/open?id=18">Shekhawati</a></li><li><a class="dropdown-item" href="/epaper/default/open?id=19">Matsyanchal</a></li></ul></li><li class='nav-item  ml-3'><a class="nav-link dropdown-toggle  " id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  target='_self'  href='/category/11/ajmer'>Ajmer<span class='caret'></span></a><ul class="dropdown-menu" aria-labelledby="navbarDropdown1"><li><a class="dropdown-item" href="/epaper/default/open?id=11">City</a></li><li><a class="dropdown-item" href="/epaper/default/open?id=22">Anchal</a></li><li><a class="dropdown-item" href="/epaper/default/open?id=23">Bhilwara</a></li><li><a class="dropdown-item" href="/epaper/default/open?id=24">Nagaur</a></li></ul></li><li class='nav-item  ml-3'><a class="nav-link dropdown-toggle  " id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  target='_self'  href='/category/9/kota'>Kota<span class='caret'></span></a><ul class="dropdown-menu" aria-labelledby="navbarDropdown2"><li><a class="dropdown-item" href="/epaper/default/open?id=9">City</a></li><li><a class="dropdown-item" href="/epaper/default/open?id=33">Hadoti</a></li></ul></li><li class='nav-item  ml-3'><a class="nav-link dropdown-toggle  " id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  target='_self'  href='/epaper/default/open?id=10'>Jodhpur<span class='caret'></span></a><ul class="dropdown-menu" aria-labelledby="navbarDropdown3"><li><a class="dropdown-item" href="/epaper/default/open?id=10">City</a></li><li><a class="dropdown-item" href="/epaper/default/open?id=28">Anchal</a></li><li><a class="dropdown-item" href="/epaper/default/open?id=25">Pali</a></li><li><a class="dropdown-item" href="/epaper/default/open?id=26">Jalore-Sirohi</a></li><li><a class="dropdown-item" href="/epaper/default/open?id=27">Barmer-Jaisalmer</a></li></ul></li><li class='nav-item  ml-3'><a class="nav-link dropdown-toggle  " id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  target='_self'  href='/epaper/default/open?id=8'>Udaipur<span class='caret'></span></a><ul class="dropdown-menu" aria-labelledby="navbarDropdown4"><li><a class="dropdown-item" href="/epaper/default/open?id=8">City</a></li><li><a class="dropdown-item" href="/epaper/default/open?id=30">AasPaas</a></li><li><a class="dropdown-item" href="/epaper/default/open?id=31">Banswara-Dungarpur</a></li><li><a class="dropdown-item" href="/epaper/default/open?id=32">Chittorgarh-Pratapgarh</a></li><li><a class="dropdown-item" href="/category/35/rajsamand">Rajsamand</a></li></ul></li>      </ul>    
     </div>
@@ -279,10 +292,270 @@ a, a:active, a:focus{
   
         </div></div></div></div></div></div></div>            </header>
             <main class="site-content">                
-                <div class="container fixed-page" style="min-height:600px">
-<div class='main-alert alert alert-info '>Please set any one edition as featured.</div>    
+                
+<div class='container r-jh2v ' style=''><div class=''><div class='row'><div class='d-md-block col-md-12'><div class='' style=''><div data-wid='w-i68z' data-params='eyJ0aXRsZSI6IiIsImhlYWRpbmdfdGV4dCI6IkRhaW5payBOYXZhanlvdGkiLCJoZWFkaW5nX2Zvcm1hdCI6Img0IiwiY3NzX2NsYXNzIjoiIiwiY3VzdG9tX3N0eWxlIjoiIiwiY29sX2lkIjoiYy1tY3luIiwid2lkX2lkIjoidy1pNjh6Iiwid3R5cGUiOiJhcHBfbW9kdWxlc19wYWdlYnVpbGRlcl9ucGx1Z2luc19wYndpZGdldHNfSGVhZGluZ1dpZGdldCJ9' data-type='YXBwX21vZHVsZXNfcGFnZWJ1aWxkZXJfbnBsdWdpbnNfcGJ3aWRnZXRzX0hlYWRpbmdXaWRnZXQ=' data-widget-alias='headingwidget' class='pbwidget w-i68z headingwidget ' style=''><div class='pbwidget-body'><div class='heading heading-h4 h4'><span>Dainik Navajyoti</span></div></div></div></div></div></div></div></div><div class='container r-6tsb ' style=''><div class=''><div class='row'><div class='d-md-block col-md-8'><div class='' style=''><div data-wid='w-0b7z' data-params='eyJ0aXRsZSI6IiIsInBlcl9yb3ciOiIzIiwidGh1bWJfd2lkdGgiOiIyMDAiLCJ0aHVtYl9oZWlnaHQiOiIyMDAiLCJjc3NfY2xhc3MiOiIiLCJjdXN0b21fc3R5bGUiOiIiLCJjb2xfaWQiOiJjLWZuMTUiLCJ3aWRfaWQiOiJ3LTBiN3oiLCJ3dHlwZSI6ImFwcF9tb2R1bGVzX2VwYXBlcl9ucGx1Z2luc19wYndpZGdldHNfQXJjaGl2ZVdpZGdldCJ9' data-type='YXBwX21vZHVsZXNfZXBhcGVyX25wbHVnaW5zX3Bid2lkZ2V0c19BcmNoaXZlV2lkZ2V0' data-widget-alias='archivewidget' class='pbwidget w-0b7z archivewidget ' style=''><div class='pbwidget-body'>            <div class='row'>            
+                <div class="col-md-4">
+                    <div class="edition-thumb-box">
+                        
+                        
+<div class="edition-thumb">
+                            <a data-linktype="edition-link" data-cat_ids="20" href="/view/25789/anchal">                                
+                    <img src="https://epaper.navajyoti.net/media/200x200/2023-06/13224530-page-01.jpg" />
+                </a>
+                    </div>
+
+
+
+        
+                                
+                        <div class="edition-info">
+                            <div class="edition-title">            
+                                                                    <a 
+                                       data-linktype="edition-link"
+                                       data-cat_ids="20" 
+                                       href="/view/25789/anchal">Anchal</a>
+                                                            </div>
+                            <div class="edition-date">14 Jun 2023</div>
+                            <div class="edition-categories">
+                                <a href='/category/20/anchal'>Anchal</a>                            </div>
+                        </div>
+                    </div>
+                </div>
+                        
+                <div class="col-md-4">
+                    <div class="edition-thumb-box">
+                        
+                        
+<div class="edition-thumb">
+                            <a data-linktype="edition-link" data-cat_ids="19" href="/view/25788/matsyanchal">                                
+                    <img src="https://epaper.navajyoti.net/media/200x200/2023-06/13224449-page-01.jpg" />
+                </a>
+                    </div>
+
+
+
+        
+                                
+                        <div class="edition-info">
+                            <div class="edition-title">            
+                                                                    <a 
+                                       data-linktype="edition-link"
+                                       data-cat_ids="19" 
+                                       href="/view/25788/matsyanchal">Matsyanchal</a>
+                                                            </div>
+                            <div class="edition-date">14 Jun 2023</div>
+                            <div class="edition-categories">
+                                <a href='/category/19/matsyanchal'>Matsyanchal</a>                            </div>
+                        </div>
+                    </div>
+                </div>
+                        
+                <div class="col-md-4">
+                    <div class="edition-thumb-box">
+                        
+                        
+<div class="edition-thumb">
+                            <a data-linktype="edition-link" data-cat_ids="18" href="/view/25787/shekhawati">                                
+                    <img src="https://epaper.navajyoti.net/media/200x200/2023-06/13224615-page-01.jpg" />
+                </a>
+                    </div>
+
+
+
+        
+                                
+                        <div class="edition-info">
+                            <div class="edition-title">            
+                                                                    <a 
+                                       data-linktype="edition-link"
+                                       data-cat_ids="18" 
+                                       href="/view/25787/shekhawati">Shekhawati </a>
+                                                            </div>
+                            <div class="edition-date">14 Jun 2023</div>
+                            <div class="edition-categories">
+                                <a href='/category/18/shekhawati'>Shekhawati</a>                            </div>
+                        </div>
+                    </div>
+                </div>
+</div>            <div class='row'>            
+                <div class="col-md-4">
+                    <div class="edition-thumb-box">
+                        
+                        
+<div class="edition-thumb">
+                            <a data-linktype="edition-link" data-cat_ids="17" href="/view/25786/bikaner">                                
+                    <img src="https://epaper.navajyoti.net/media/200x200/2023-06/13224651-page-01.jpg" />
+                </a>
+                    </div>
+
+
+
+        
+                                
+                        <div class="edition-info">
+                            <div class="edition-title">            
+                                                                    <a 
+                                       data-linktype="edition-link"
+                                       data-cat_ids="17" 
+                                       href="/view/25786/bikaner">Bikaner </a>
+                                                            </div>
+                            <div class="edition-date">14 Jun 2023</div>
+                            <div class="edition-categories">
+                                <a href='/category/17/bikaner'>Bikaner</a>                            </div>
+                        </div>
+                    </div>
+                </div>
+                        
+                <div class="col-md-4">
+                    <div class="edition-thumb-box">
+                        
+                        
+<div class="edition-thumb">
+                            <a data-linktype="edition-link" data-cat_ids="15" href="/view/25785/tonk">                                
+                    <img src="https://epaper.navajyoti.net/media/200x200/2023-06/13224732-page-01.jpg" />
+                </a>
+                    </div>
+
+
+
+        
+                                
+                        <div class="edition-info">
+                            <div class="edition-title">            
+                                                                    <a 
+                                       data-linktype="edition-link"
+                                       data-cat_ids="15" 
+                                       href="/view/25785/tonk">Tonk </a>
+                                                            </div>
+                            <div class="edition-date">14 Jun 2023</div>
+                            <div class="edition-categories">
+                                <a href='/category/15/tonk'>Tonk</a>                            </div>
+                        </div>
+                    </div>
+                </div>
+                        
+                <div class="col-md-4">
+                    <div class="edition-thumb-box">
+                        
+                        
+<div class="edition-thumb">
+                            <a data-linktype="edition-link" data-cat_ids="16" href="/view/25784/dausa">                                
+                    <img src="https://epaper.navajyoti.net/media/200x200/2023-06/13224814-page-01.jpg" />
+                </a>
+                    </div>
+
+
+
+        
+                                
+                        <div class="edition-info">
+                            <div class="edition-title">            
+                                                                    <a 
+                                       data-linktype="edition-link"
+                                       data-cat_ids="16" 
+                                       href="/view/25784/dausa">Dausa </a>
+                                                            </div>
+                            <div class="edition-date">14 Jun 2023</div>
+                            <div class="edition-categories">
+                                <a href='/category/16/dausa'>Dausa</a>                            </div>
+                        </div>
+                    </div>
+                </div>
+</div>            <div class='row'>            
+                <div class="col-md-4">
+                    <div class="edition-thumb-box">
+                        
+                        
+<div class="edition-thumb">
+                            <a data-linktype="edition-link" data-cat_ids="14" href="/view/25783/jaipur-city">                                
+                    <img src="https://epaper.navajyoti.net/media/200x200/2023-06/14012630-page-01.jpg" />
+                </a>
+                    </div>
+
+
+
+        
+                                
+                        <div class="edition-info">
+                            <div class="edition-title">            
+                                                                    <a 
+                                       data-linktype="edition-link"
+                                       data-cat_ids="14" 
+                                       href="/view/25783/jaipur-city">Jaipur City </a>
+                                                            </div>
+                            <div class="edition-date">14 Jun 2023</div>
+                            <div class="edition-categories">
+                                <a href='/category/14/jaipur'>Jaipur</a>                            </div>
+                        </div>
+                    </div>
+                </div>
+                        
+                <div class="col-md-4">
+                    <div class="edition-thumb-box">
+                        
+                        
+<div class="edition-thumb">
+                            <a data-linktype="edition-link" data-cat_ids="24" href="/view/25782/nagaur">                                
+                    <img src="https://epaper.navajyoti.net/media/200x200/2023-06/14011850-page-01.jpg" />
+                </a>
+                    </div>
+
+
+
+        
+                                
+                        <div class="edition-info">
+                            <div class="edition-title">            
+                                                                    <a 
+                                       data-linktype="edition-link"
+                                       data-cat_ids="24" 
+                                       href="/view/25782/nagaur">Nagaur</a>
+                                                            </div>
+                            <div class="edition-date">14 Jun 2023</div>
+                            <div class="edition-categories">
+                                <a href='/category/24/nagaur'>Nagaur</a>                            </div>
+                        </div>
+                    </div>
+                </div>
+                        
+                <div class="col-md-4">
+                    <div class="edition-thumb-box">
+                        
+                        
+<div class="edition-thumb">
+                            <a data-linktype="edition-link" data-cat_ids="23" href="/view/25781/bhilwara">                                
+                    <img src="https://epaper.navajyoti.net/media/200x200/2023-06/14011912-page-01.jpg" />
+                </a>
+                    </div>
+
+
+
+        
+                                
+                        <div class="edition-info">
+                            <div class="edition-title">            
+                                                                    <a 
+                                       data-linktype="edition-link"
+                                       data-cat_ids="23" 
+                                       href="/view/25781/bhilwara">Bhilwara </a>
+                                                            </div>
+                            <div class="edition-date">14 Jun 2023</div>
+                            <div class="edition-categories">
+                                <a href='/category/23/bhilwara'>Bhilwara</a>                            </div>
+                        </div>
+                    </div>
+                </div>
 </div>
-            </main>
+
+            <div class="pagination-outer">
+                <ul class="pagination"><li class="first page-item disabled"><span class="page-link" 0="a">First</span></li>
+<li class="prev page-item disabled"><span class="page-link" 0="a">&laquo;</span></li>
+<li class="page-item active"><a class="page-link" href="/archive/date/14-Jun-2023/1?forcesingle=yes" data-page="0">1</a></li>
+<li class="page-item"><a class="page-link" href="/archive/date/14-Jun-2023/2?forcesingle=yes" data-page="1">2</a></li>
+<li class="page-item"><a class="page-link" href="/archive/date/14-Jun-2023/3?forcesingle=yes" data-page="2">3</a></li>
+<li class="next"><a class="page-link" href="/archive/date/14-Jun-2023/2?forcesingle=yes" data-page="1">&raquo;</a></li>
+<li class="last"><a class="page-link" href="/archive/date/14-Jun-2023/3?forcesingle=yes" data-page="2">Last</a></li></ul>            </div>   
+</div></div></div></div><div class='d-md-block col-md-4'><div class='' style=''></div></div></div></div></div>            </main>
             <footer class="site-footer">
             <div class=' r-agbv bg-primary p-3 text-light' style=''><div class='container'><div class='row'><div class='d-md-block col-md-12'><div class='' style=''><div data-wid='w-ilwi' data-params='eyJ0aXRsZSI6IiIsImh0bWxjb2RlIjoiPGg2IHN0eWxlPVwidGV4dC1hbGlnbjpjZW50ZXI7XCI+PGEgaHJlZj1cImh0dHBzOlwvXC9kYWluaWtuYXZhanlvdGkuY29tXCI+PGZvbnQgY29sb3I9XCJ3aGl0ZVwiPnZpc2l0IDxiPmRhaW5pa25hdmFqeW90aS5jb208XC9iPiBmb3IgbGF0ZXN0IG5ld3MgZnJvbSBSYWphc3RoYW48XC9hPjxcL2g2PjxcL2ZvbnQ+PGJyPiIsImNzc19jbGFzcyI6IiIsImN1c3RvbV9zdHlsZSI6IiIsImNvbF9pZCI6ImMtOWJqbyIsIndpZF9pZCI6InctaWx3aSIsInd0eXBlIjoiYXBwX21vZHVsZXNfcGFnZWJ1aWxkZXJfbnBsdWdpbnNfcGJ3aWRnZXRzX0hUTUxXaWRnZXQifQ==' data-type='YXBwX21vZHVsZXNfcGFnZWJ1aWxkZXJfbnBsdWdpbnNfcGJ3aWRnZXRzX0hUTUxXaWRnZXQ=' data-widget-alias='htmlwidget' class='pbwidget w-ilwi htmlwidget ' style=''><div class='pbwidget-body'><h6 style="text-align:center;"><a href="https://dainiknavajyoti.com"><font color="white">visit <b>dainiknavajyoti.com</b> for latest news from Rajasthan</a></h6></font><br></div></div><div data-wid='w-b4dw' data-params='eyJ0aXRsZSI6IiIsIm1jZWNvZGUiOiI8cCBzdHlsZT1cInRleHQtYWxpZ246IGNlbnRlcjsgZm9udC1zaXplOiBtZWRpdW07IGZvbnQtZmFtaWx5OiAtd2Via2l0LXN0YW5kYXJkOyBjYXJldC1jb2xvcjogIzAwMDAwMDsgY29sb3I6ICNkZmU2ZTk7XCI+Q29weXJpZ2h0IEAgRGFpbmlrIE5hdmFqeW90aTxiciBcLz48c3BhbiBzdHlsZT1cImNhcmV0LWNvbG9yOiAjMDAwMDAwOyBjb2xvcjogI2RmZTZlOTsgZm9udC1mYW1pbHk6IC13ZWJraXQtc3RhbmRhcmQ7IGZvbnQtc2l6ZTogbWVkaXVtOyB0ZXh0LWFsaWduOiBzdGFydDtcIj5OYXZhanlvdGkgUHJpbnRpbmcgUHJlc3MgUHZ0IEx0ZC48XC9zcGFuPjxcL3A+XHJcbjxwIHN0eWxlPVwidGV4dC1hbGlnbjogY2VudGVyOyBmb250LXNpemU6IG1lZGl1bTsgZm9udC1mYW1pbHk6IC13ZWJraXQtc3RhbmRhcmQ7IGNhcmV0LWNvbG9yOiAjMDAwMDAwOyBjb2xvcjogI2RmZTZlOTtcIj48YSBzdHlsZT1cImNhcmV0LWNvbG9yOiAjMDAwMDAwOyBjb2xvcjogI2RmZTZlOTsgdGV4dC1hbGlnbjogc3RhcnQ7XCIgaHJlZj1cImh0dHBzOlwvXC9lcGFwZXIubmF2YWp5b3RpLm5ldFwvcHJpdmFjeS1wb2xpY3lcIj5Qcml2YWN5IFBvbGljeTxcL2E+PFwvcD4iLCJjc3NfY2xhc3MiOiIiLCJjdXN0b21fc3R5bGUiOiIiLCJjb2xfaWQiOiJjLTliam8iLCJ3aWRfaWQiOiJ3LWI0ZHciLCJ3dHlwZSI6ImFwcF9tb2R1bGVzX3BhZ2VidWlsZGVyX25wbHVnaW5zX3Bid2lkZ2V0c19UaW55TWNlV2lkZ2V0In0=' data-type='YXBwX21vZHVsZXNfcGFnZWJ1aWxkZXJfbnBsdWdpbnNfcGJ3aWRnZXRzX1RpbnlNY2VXaWRnZXQ=' data-widget-alias='tinymcewidget' class='pbwidget w-b4dw tinymcewidget ' style=''><div class='pbwidget-body'><p style="text-align: center; font-size: medium; font-family: -webkit-standard; caret-color: #000000; color: #dfe6e9;">Copyright @ Dainik Navajyoti<br /><span style="caret-color: #000000; color: #dfe6e9; font-family: -webkit-standard; font-size: medium; text-align: start;">Navajyoti Printing Press Pvt Ltd.</span></p>
 <p style="text-align: center; font-size: medium; font-family: -webkit-standard; caret-color: #000000; color: #dfe6e9;"><a style="caret-color: #000000; color: #dfe6e9; text-align: start;" href="https://epaper.navajyoti.net/privacy-policy">Privacy Policy</a></p></div></div></div></div></div></div></div>            </footer>
@@ -290,7 +563,90 @@ a, a:active, a:focus{
         
          
         
-                        <!-- Google tag (gtag.js) for Google Analytics 4 -->
+        
+        <div id="alertbox" style="display: none"  class="alertmsg-dialog">
+            
+            <div class="p-2 alertmsg-message text-center">
+                You need to login in order to view it            </div>
+            
+                            <a href="/login" class="btn btn-primary mb-1 btnLogin">Login</a>
+                                <a href="/register" class="btn btn-primary mb-1 btnRegister" type="button">Register</a>
+                            
+            
+                        
+             
+            
+                                        <div class="p-2 text-center social-login">
+                <a href="/social-login/facebook">
+                    <img style="width:200px" src="/resources/fblogin.svg" alt="Login With Facebook" />
+                </a>
+            </div> 
+            
+                                        <div class="p-2 text-center social-login">
+                <a href="/social-login/google">
+                    <img style="width:200px" src="/resources/googlelogin.svg" alt="Login With Facebook" />
+                </a>
+            </div> 
+                        
+                        <a href="#" class="btnClose btn btn-secondary"><i class="fas fa-times"></i></a>
+        </div>
+        <script>
+            let alertbox = {
+                init:function(){
+                    $(document).ready(function(){
+                        $("#alertbox").hide();
+                    });
+                    $("#alertbox .btnClose").on("click",function(e){
+                       e.preventDefault();
+                       $("#alertbox").hide("medium");
+                    });  
+                },
+                openDialog:function(msg){                    
+                    $("#alertbox .alertmsg-message").html(msg);
+                    $("#alertbox").show("medium"); 
+                    
+                   // $("#alertbox .alertmsg-actionbtn").html("Subscribe");
+                   // $("#alertbox .btnRegister, #alertbox .social-login").hide();
+                   // $("#alertbox .alertmsg-actionbtn").prop("href","/packages");
+                    
+                },
+                closeDialog:function(){
+                    $("#alertbox").close("medium"); 
+                }
+            };
+            alertbox.init();
+        </script>
+
+
+
+                     
+
+            <script>
+                let pkgCats = [8,9,10,11,12,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34];
+                let subCats = [];
+                
+                $("[data-linktype=edition-link]").on("click",function(e){
+                    e.preventDefault();        
+                    let link = $(this).prop("href");
+                    
+                    let edCats = ($(this).data("cat_ids")+" ").split(",").map((e)=> parseInt(e));        
+                    let intersection = edCats.filter(value => pkgCats.includes(value));
+
+                    if(intersection.length > 0){
+                        //This is a premium category
+                                                    
+                             
+                                   window.location = link;
+                                   return;
+                               
+                            alertbox.openDialog(); 
+                         
+                    } else {
+                        window.location = link;
+                    } 
+                });
+            </script>
+                            <!-- Google tag (gtag.js) for Google Analytics 4 -->
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-S0FT88PEYZ"></script>                
                 <script>
                 window.dataLayer = window.dataLayer || [];

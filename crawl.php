@@ -41,7 +41,7 @@ include "/var/www/d78236gbe27823/marketing/Whatsapp/Crawlers/dependencies/crawl_
 
 //$epapers = array("AU" => "Amar Ujala,hin", "DC" => "Deccan Chronicle,eng", "HB" => "Hari Bhumi,hin", "DJ" => "Danik Jagran,hin", "JPS" => "Janpath Samachar,hin", "KM" => "Karnataka Malla,kan", "LM" => "Lokmat,mar", "MC" => "Mumbai Chaufer,mar", "NB" => "Navbharat,hin", "NBT" => "Navbharat Times,hin", "ND" => "Nai Dunia,hin", "NVR" => "Navrasthra,mar", "NYB" => "Niyomiya Barta,asm", "PAP" => "Purvanchal Prahari,ori", "RS" => "Rashtriya Sahara,hin", "SAM" => "Sambad,ori", "SMJ" => "Samaja,ori", "SY" => "Samyukta Karnataka,kan", "VV" => "Vijayavani,kan", "YB" => "yashobhumi,hin", "SBP" => "Sangbad Pratidin,ben", "POD" => "Pratidin Odia Daily,ori");  
 
-$epapers = array("AU" => "Amar Ujala,hin", "DC" => "Deccan Chronicle,eng", "HB" => "Hari Bhumi,hin", "DJ" => "Danik Jagran,hin", "LM" => "Lokmat,mar", "MC" => "Mumbai Chaufer,mar", "NB" => "Navbharat,hin", "NBT" => "Navbharat Times,hin", "ND" => "Nai Dunia,hin", "RS" => "Rashtriya Sahara,hin", "YB" => "yashobhumi,hin", "NVR" => "Navrasthra,mar", "GSM" => "Gujarat Samachar,guj", "PN" => "Punayanagri,mar", "TOI" => "Times of India,eng", "ET" => "Economic Times,eng", "MT" => "Maharashtra Times,eng", "Mirror" => "Mirror,eng");
+$epapers = array("AU" => "Amar Ujala,hin", "DC" => "Deccan Chronicle,eng", "HB" => "Hari Bhumi,hin", "DJ" => "Danik Jagran,hin", "LM" => "Lokmat,mar", "MC" => "Mumbai Chaufer,mar", "NB" => "Navbharat,hin", "NBT" => "Navbharat Times,hin", "ND" => "Nai Dunia,hin", "RS" => "Rashtriya Sahara,hin", "YB" => "yashobhumi,hin", "NVR" => "Navrasthra,mar", "GSM" => "Gujarat Samachar,guj", "PN" => "Punayanagri,mar", "TOI" => "Times of India,eng", "ET" => "Economic Times,eng", "MT" => "Maharashtra Times,eng", "Mirror" => "Mirror,eng","DN" => "Dainik Navjyoti,hin");
 
 $cities_of_interest = array("Delhi", "Jaipur", "Jodhpur", "Udaipur", "Ahmedabad", "Surat", "Vadodara", "Bhavnagar", "Mumbai", "Pune", "Thane");
 
@@ -1115,6 +1115,65 @@ foreach ($epapers as $epapercode => $epaperArray) {
     }
     if ($epapercode == "TOI" or $epapercode == "ET" or $epapercode == "MT" or $epapercode == "Mirror") {
         crawltoi($cityarray, $dateForLinks, $epapercode, $citycode, $filenamedate, $eol, $conn, $lang, $cities_of_interest, $epapername);
+    }
+    if ($epapercode == "DN") {
+
+        $citycode = array();
+        $cityarray = array();
+        $citycovered = array();
+
+        for ($pagination = 1; $pagination <= 3; $pagination++) {
+            $response = file_get_contents("https://epaper.navajyoti.net/archive/date/" . $dateForLinks . "/" . $pagination . "?forcesingle=yes");
+            $contentarray = explode('<a data-linktype="edition-link" data-cat_ids="', $response);
+            for ($i = 1; $i < count($contentarray); $i++) {
+                $codecityarray = explode('"', $contentarray[$i]);
+
+                array_push($citycode, str_replace("200x200/", "", $codecityarray[4]));
+                array_push($cityarray, end(explode("/", $codecityarray[2])));
+            }
+        }
+        for ($edition = 0; $edition < count($cityarray); $edition++) {
+            $city = ucwords(explode("-", $cityarray[$edition])[0]);
+
+            if (!cityofinterest($city, $cities_of_interest, $eol)) {
+                continue;
+            }
+
+            $content = file_get_contents("https://epaper.navajyoti.net/view/" . $citycode[$edition] . "/" . $cityarray[$edition] . "");
+
+            $link = $citycode[$edition];
+
+
+            for ($page = 1; $page <= $no_of_pages_to_run_on_each_edition; $page++) {
+                $pageforfile = $page;
+
+                if ($citycovered[$city]) {
+                    $citycovered[$city] += 1;
+                    $pageforfile = $citycovered[$city];
+                }
+                $imagelink = str_replace("01.", sprintf("%02d", $page) . ".", $link);
+
+                if (!getimagesize($imagelink))
+                    break;
+
+                echo $imagelink . $eol;
+                $getpath = explode("&", makefilepath($epapercode,  $city, $filenamedate, $pageforfile, $lang));
+
+                if (alreadyDone($getpath[0], $conn) == "Yes") continue;
+
+                writeImage($imagelink, $getpath[0]);
+
+                echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved" . $eol;
+                runTesseract($epapername, $city, $pageforfile, 0, $conn, $getpath, $lang);
+                echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $city . " Page " . $pageforfile . " Completed" . $eol;
+                ob_flush();
+                flush();
+
+                $pageforfile++;
+            }
+            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $city . " Completed" . $eol;
+            $citycovered[$city] = $pageforfile - 1;
+        }
     }
     //exec("rm -f /nvme/*");
     mysqli_query($conn, "INSERT INTO Crawl_Record (Papername,Papershortname,Paperdate) VALUES ('" . $epapername . "','" . $epapercode . "','" . $filenamedate . "')");

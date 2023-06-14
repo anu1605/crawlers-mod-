@@ -25,7 +25,7 @@ function dateForLinks($epapercode, $filenamedate)
     else if ($epapercode == "HB") return date('Y/m/d', strtotime($filenamedate));
     else if ($epapercode == "TOI" or $epapercode == "ET" or $epapercode == "MT" or $epapercode == "Mirror") return  date('d/m/Y', strtotime($filenamedate));
     else if ($epapercode == "GSM") return date("d-m-Y", strtotime($filenamedate));
-    else if ($epapercode == "DJ" or $epapercode == "NB" or $epapercode == "ND" or $epapercode == "NVR" or $epapercode == "PAP") return date('d-M-Y', strtotime($filenamedate));
+    else if ($epapercode == "DN" or $epapercode == "DJ" or $epapercode == "NB" or $epapercode == "ND" or $epapercode == "NVR" or $epapercode == "PAP") return date('d-M-Y', strtotime($filenamedate));
     else if ($epapercode == "JPS") return date('dmy', strtotime($filenamedate));
     else if ($epapercode == "NYB" or $epapercode == "RS" or $epapercode == "SAM" or $epapercode == "SMJ") return date('dmY', strtotime($filenamedate));
     else if ($epapercode == "KM") {
@@ -294,7 +294,6 @@ function cityCodeArray($epapercode)
         case "Mirror":
             return array("vkbgmr", "vkmmir", "pcmir");
             break;
-
     }
 }
 
@@ -402,15 +401,23 @@ function runTesseract($epapername, $edition, $page, $section, $conn, $patharray,
 
             if (strlen($values) > 0) {
 
-                $values = substr($values, 0, strlen($values) - 1) . " ON DUPLICATE KEY UPDATE Newspaper_Name = concat(Newspaper_Name,' | ',VALUES(Newspaper_Name)), Newspaper_Region = concat(Newspaper_Region,' | ',VALUES(Newspaper_Region)), Newspaper_Date = concat(Newspaper_Date,' | ',VALUES(Newspaper_Date)), Newspaper_Lang = Newspaper_Lang;";
+               $values = substr($values,0,strlen($values)-1)." ON DUPLICATE KEY UPDATE Newspaper_Name = concat(Newspaper_Name,' | ',VALUES(Newspaper_Name)), Newspaper_Region = concat(Newspaper_Region,' | ',VALUES(Newspaper_Region)), Newspaper_Date = concat(Newspaper_Date,' | ',VALUES(Newspaper_Date)), Newspaper_Lang = Newspaper_Lang;";
 
-                $q = "insert into Mobile_Lists (Mobile_Number,Newspaper_Name,Newspaper_Region,Newspaper_Date,Newspaper_Lang,Image_File_Name,Image_Operator) values " . $values;
+                $values_non_unique = substr($values,0,strlen($values)-1);
+
+                echo $q_non_unqiue = "insert into Mobile_Lists_NON_Unique (Mobile_Number,Newspaper_Name,Newspaper_Region,Newspaper_Date,Newspaper_Lang,Image_File_Name,Image_Operator) values ".$values_non_unique;
+
+                $q = "insert into Mobile_Lists (Mobile_Number,Newspaper_Name,Newspaper_Region,Newspaper_Date,Newspaper_Lang,Image_File_Name,Image_Operator) values ".$values;
 
                 if (!mysqli_query($conn, $q)) {
                     echo  $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Error in insert query... ABORTING!" . $eol . $q . "" . $eol;
                     die();
                 }
 
+                if(!mysqli_query($conn,$q_non_unqiue)){
+                    echo  $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Error in insert query... ABORTING!" . $eol . $q_non_unqiue . "" . $eol.$eol.mysqli_error($conn);
+                    die();
+                }
                 echo  $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Insert query executed successfully......" . $eol;
             } else echo  $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "No numbers left to insert";
         }
@@ -514,4 +521,14 @@ function crawltoi($cityarray, $dateForLinks, $epapercode, $citycode, $filenameda
         }
         echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $cityarray[$edition] . " Completed" . $eol;
     }
+}
+
+function cityofinterest($city, $cities_of_interest, $eol)
+{
+    if (!in_array(ucfirst(explode("-", $city)[0]), $cities_of_interest)) {
+
+        echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Skipping " . $city . " Edition. Doesn't fall in cities of interest" . $eol;
+        return false;
+    }
+    return true;
 }
