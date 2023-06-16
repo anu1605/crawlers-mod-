@@ -389,6 +389,7 @@ function runTesseract($epapername, $edition, $page, $section, $conn, $patharray,
             echo $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Starting to add in the database...";
 
             $values = "";
+            $values_non_unique = "";
 
             for ($i = 0; $i < $n; $i++) {
 
@@ -396,18 +397,21 @@ function runTesseract($epapername, $edition, $page, $section, $conn, $patharray,
                 $bcrs = mysqli_query($conn, $blockcheck);
                 if (!mysqli_num_rows($bcrs)) {
                     $values .= "('" . $matches[$i] . "','" . $newspaper_name . "','" . $newspaper_region . "','" . $newspaper_date . "','" . $newspaper_lang . "','" . $Image_file_name . "','" . $newspaper_operator_name . "'),";
+                    $values_non_unique .= "('" . $matches[$i] . "','" . $newspaper_name . "','" . $newspaper_region . "','" . $newspaper_date . "','" . $newspaper_lang . "','" . $Image_file_name . "','" . $newspaper_operator_name . "'),";
                 } else echo "" . $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Skipping " . $matches[$i] . " found in blocked numbers";
             }
 
             if (strlen($values) > 0) {
 
-               $values = substr($values,0,strlen($values)-1)." ON DUPLICATE KEY UPDATE Newspaper_Name = concat(Newspaper_Name,' | ',VALUES(Newspaper_Name)), Newspaper_Region = concat(Newspaper_Region,' | ',VALUES(Newspaper_Region)), Newspaper_Date = concat(Newspaper_Date,' | ',VALUES(Newspaper_Date)), Newspaper_Lang = Newspaper_Lang;";
+               $values = substr($values,0,strlen($values)-1)." ON DUPLICATE KEY UPDATE Newspaper_Name = VALUES(Newspaper_Name), Newspaper_Region = VALUES(Newspaper_Region), Newspaper_Date = VALUES(Newspaper_Date), Newspaper_Lang = VALUES(Newspaper_Lang);";
 
-                $values_non_unique = substr($values,0,strlen($values)-1);
+                $values_non_unique = substr($values_non_unique,0,strlen($values_non_unique)-1);
 
+                echo $eol."=================================".$eol;
                 echo $q_non_unqiue = "insert into Mobile_Lists_NON_Unique (Mobile_Number,Newspaper_Name,Newspaper_Region,Newspaper_Date,Newspaper_Lang,Image_File_Name,Image_Operator) values ".$values_non_unique;
-
-                $q = "insert into Mobile_Lists (Mobile_Number,Newspaper_Name,Newspaper_Region,Newspaper_Date,Newspaper_Lang,Image_File_Name,Image_Operator) values ".$values;
+                echo $eol;
+                echo $q = "insert into Mobile_Lists (Mobile_Number,Newspaper_Name,Newspaper_Region,Newspaper_Date,Newspaper_Lang,Image_File_Name,Image_Operator) values ".$values;
+                echo $eol."=================================".$eol;
 
                 if (!mysqli_query($conn, $q)) {
                     echo  $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Error in insert query... ABORTING!" . $eol . $q . "" . $eol;
