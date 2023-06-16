@@ -374,7 +374,7 @@ function runTesseract($epapername, $edition, $page, $section, $conn, $patharray,
         foreach ($matches as $match => $val) $matches[$match] = ltrim($val, "0");
         $n = count($matches);
 
-        if ($n == 0) {
+        if ($n >= 5) {
             echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. No new numbers found" .  $eol;
         } else {
 

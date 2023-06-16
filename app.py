@@ -1,17 +1,22 @@
 # this needs to run only once to load the model into memory
 
 import sys
-import cv2
-import numpy as np
-from PIL import Image
-from matplotlib import pyplot as pltd
+# import cv2
+# import numpy as np
+# from PIL import Image
+# from matplotlib import pyplot as pltd
 import easyocr
 import time
+from googletrans import Translator
+
+translator = Translator()
+
 starttime = time.time()
-large_image = cv2.imread("YB_Mumbai_2023-05-03_hin.jpg",)
-reader = easyocr.Reader(['hi', 'en'])
-result = reader.readtext(large_image)
-print(result)
+# large_image = cv2.imread("SKL_Mumbai_2023-06-16_1_mar.jpg",)
+reader = easyocr.Reader(['mr', 'en'])
+result = reader.readtext("pud.jpg")
+for content_tuple in result:
+    print(translator.translate(content_tuple[1], src='mr', dest='en').text)
 print((time.time() - starttime)/60)
 # filepath = ""+sys.argv[1]
 # imaging_gray = cv2.cvtColor(large_image, cv2.COLOR_BGR2GRAY)
