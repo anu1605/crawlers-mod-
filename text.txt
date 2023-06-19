@@ -1,6 +1,5 @@
-Dainik Navajyoti
-Financial Express
-Maharashtra Times
-Pudhari
-Gujarati Midday
-Hindustan Times
+BMS_Mumbai_2023-06-16_1_guj.jpg
+SAN_Ahmedabad_2023-06-16_1_guj.jpg
+SAN_Bhavnagar_2023-06-16_1_guj.jpg
+SAN_Surat_2023-06-16_1_guj.jpg
+SAN_Vadodara_2023-06-16_1_guj.jpg

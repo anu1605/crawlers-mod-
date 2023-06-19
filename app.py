@@ -1,23 +1,32 @@
 # this needs to run only once to load the model into memory
 
 import sys
-# import cv2
-# import numpy as np
-# from PIL import Image
+import cv2
+import numpy as np
+from PIL import Image
 # from matplotlib import pyplot as pltd
 import easyocr
 import time
 from googletrans import Translator
+import re
 
 translator = Translator()
 
 starttime = time.time()
 # large_image = cv2.imread("SKL_Mumbai_2023-06-16_1_mar.jpg",)
-reader = easyocr.Reader(['mr', 'en'])
-result = reader.readtext("pud.jpg")
-for content_tuple in result:
-    print(translator.translate(content_tuple[1], src='mr', dest='en').text)
-print((time.time() - starttime)/60)
+# img = cv2.imread("pud.jpg", 0)
+
+
+# image = cv2.imread("gsm.jpeg", 0)  # Read as grayscale
+# _, binary_image = cv2.threshold(image, 127, 255, cv2.THRESH_BINARY)
+# denoised_image = cv2.fastNlMeansDenoising(binary_image, None, 10, 7, 21)
+# cv2.imwrite('processed.jpg', denoised_image)
+
+# reader = easyocr.Reader(['gu', 'en'])
+# result = reader.readtext()
+# for content_tuple in result:
+#     print(translator.translate(content_tuple[1], src='gu', dest='en').text)
+# print((time.time() - starttime)/60)
 # filepath = ""+sys.argv[1]
 # imaging_gray = cv2.cvtColor(large_image, cv2.COLOR_BGR2GRAY)
 

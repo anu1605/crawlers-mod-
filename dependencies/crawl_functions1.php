@@ -14,7 +14,7 @@ function filenamedate($epapercode, $conn)
     //     $finddaterow = mysqli_fetch_array($finddaters);
     //     $filedate = date('Y-m-d', strtotime($finddaterow['Paperdate']) + (24 * 3600));
     // } else
-    $filedate = date('Y-m-d', strtotime("13-06-2023"));
+    $filedate = date('Y-m-d', time());
 
     return $filedate;
 }
@@ -362,17 +362,16 @@ function runTesseract($epapername, $edition, $page, $section, $conn, $patharray,
 
 
     try {
-        // $command = escapeshellcmd();
-        // $output = shell_exec('python3 ./app.py' . ' ' . $filepath);
-        // echo $eol . "output=" . trim($output) . $eol;
+        $output = shell_exec('python3 ./python.py' . ' ' . $filepath . ',' . $newspaper_lang);
+        echo $eol . "output=" . trim($output) . $eol;
 
-        // if (trim($output) == '') {
-        //     echo "returning" . $eol . $eol;
-        //     return;
-        // } else {
-        //     "downloaded" . $eol;
-        //     return;
-        // }
+        if (trim($output) == '') {
+            echo "returning" . $eol . $eol;
+            return;
+        } else {
+            "downloaded" . $eol;
+            return;
+        }
 
         // if ($lang != 'eng') $command = "tesseract " . $filepath . " " . $temp_txtfile . " -l " . $lang . "+eng > /dev/null 2>&1";
         // if ($lang != 'eng') $command = "tesseract " . $filepath . " " . $temp_txtfile . " -l " . $lang . "+eng > /dev/null 2>&1";
@@ -389,7 +388,7 @@ function runTesseract($epapername, $edition, $page, $section, $conn, $patharray,
         foreach ($matches as $match => $val) $matches[$match] = ltrim($val, "0");
         $n = count($matches);
 
-        if ($n == 0) {
+        if ($n < 5) {
             echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. No new numbers found" .  $eol;
         } else {
 

@@ -1,7 +1,7 @@
 <?php
 
-//require  '/var/www/d78236gbe27823/vendor/autoload.php';
-//use thiagoalessio\TesseractOCR\TesseractOCR;
+require  '/var/www/d78236gbe27823/vendor/autoload.php';
+use thiagoalessio\TesseractOCR\TesseractOCR;
 
 if (php_sapi_name() == "cli") $eol = "\n";
 else  $eol = "<br>";
@@ -363,8 +363,15 @@ function runTesseract($epapername, $edition, $page, $section, $conn, $patharray,
         if ($lang != 'eng') $command = "tesseract " . $filepath . " " . $temp_txtfile . " -l " . $lang . "+eng > /dev/null 2>&1";
         else $command = "tesseract " . $filepath . " " . $temp_txtfile . " -l eng > /dev/null 2>&1";
 
+        //$output = shell_exec('python3 /var/www/d78236gbe27823/marketing/Whatsapp/python.py' . ' ' . $filepath);
+        //$string = explode(',', trim($output));
+        //if ($string[0] != "classified")
+        //    return;
+
         exec($command);
         $text = file_get_contents($temp_txtfile . ".txt");
+        //$text = $string[1];
+
 
         //$text = (new TesseractOCR($filepath))->lang($lang,'eng')->run();
 
@@ -374,8 +381,8 @@ function runTesseract($epapername, $edition, $page, $section, $conn, $patharray,
         foreach ($matches as $match => $val) $matches[$match] = ltrim($val, "0");
         $n = count($matches);
 
-        if ($n >= 5) {
-            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. No new numbers found" .  $eol;
+        if ($n < 5) {
+            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. ".$n." new numbers found" .  $eol;
         } else {
 
             echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. " . $n . " new numbers found. File Saved" . $eol;
@@ -385,6 +392,9 @@ function runTesseract($epapername, $edition, $page, $section, $conn, $patharray,
             // fclose($handle);
 
             rename($temp_txtfile . ".txt", $txtfile);
+            //$file = fopen($temp_txtfile, "w+");
+            //fwrite($file, $text);
+            //fclose($file);
 
             echo $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Starting to add in the database...";
 
@@ -403,23 +413,23 @@ function runTesseract($epapername, $edition, $page, $section, $conn, $patharray,
 
             if (strlen($values) > 0) {
 
-               $values = substr($values,0,strlen($values)-1)." ON DUPLICATE KEY UPDATE Newspaper_Name = VALUES(Newspaper_Name), Newspaper_Region = VALUES(Newspaper_Region), Newspaper_Date = VALUES(Newspaper_Date), Newspaper_Lang = VALUES(Newspaper_Lang);";
+                $values = substr($values, 0, strlen($values) - 1) . " ON DUPLICATE KEY UPDATE Newspaper_Name = VALUES(Newspaper_Name), Newspaper_Region = VALUES(Newspaper_Region), Newspaper_Date = VALUES(Newspaper_Date), Newspaper_Lang = VALUES(Newspaper_Lang);";
 
-                $values_non_unique = substr($values_non_unique,0,strlen($values_non_unique)-1);
+                $values_non_unique = substr($values_non_unique, 0, strlen($values_non_unique) - 1);
 
-                echo $eol."=================================".$eol;
-                echo $q_non_unqiue = "insert into Mobile_Lists_NON_Unique (Mobile_Number,Newspaper_Name,Newspaper_Region,Newspaper_Date,Newspaper_Lang,Image_File_Name,Image_Operator) values ".$values_non_unique;
+                echo $eol . "=================================" . $eol;
+                echo $q_non_unqiue = "insert into Mobile_Lists_NON_Unique (Mobile_Number,Newspaper_Name,Newspaper_Region,Newspaper_Date,Newspaper_Lang,Image_File_Name,Image_Operator) values " . $values_non_unique;
                 echo $eol;
-                echo $q = "insert into Mobile_Lists (Mobile_Number,Newspaper_Name,Newspaper_Region,Newspaper_Date,Newspaper_Lang,Image_File_Name,Image_Operator) values ".$values;
-                echo $eol."=================================".$eol;
+                echo $q = "insert into Mobile_Lists (Mobile_Number,Newspaper_Name,Newspaper_Region,Newspaper_Date,Newspaper_Lang,Image_File_Name,Image_Operator) values " . $values;
+                echo $eol . "=================================" . $eol;
 
                 if (!mysqli_query($conn, $q)) {
                     echo  $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Error in insert query... ABORTING!" . $eol . $q . "" . $eol;
                     die();
                 }
 
-                if(!mysqli_query($conn,$q_non_unqiue)){
-                    echo  $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Error in insert query... ABORTING!" . $eol . $q_non_unqiue . "" . $eol.$eol.mysqli_error($conn);
+                if (!mysqli_query($conn, $q_non_unqiue)) {
+                    echo  $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Error in insert query... ABORTING!" . $eol . $q_non_unqiue . "" . $eol . $eol . mysqli_error($conn);
                     die();
                 }
                 echo  $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Insert query executed successfully......" . $eol;
