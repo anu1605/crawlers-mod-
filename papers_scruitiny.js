@@ -1,40 +1,41 @@
-$(document).ready(function() {
-    $(".imageModalTrigger").click(function() {
+$(document).ready(function () {
+    $(".imageModalTrigger").click(function () {
         var imageUrl = $(this).attr('src');
         $("#modalImage").attr('src', imageUrl);
         $('#imageModal').modal('show');
     });
-    $(".deleteBtn").click(function() {
-        if(confirm("Are you sure you want to delete this record?")) {
+
+    $(".deleteBtn").click(function () {
+        if (confirm("Are you sure you want to delete this record?")) {
             var card = $(this).closest('.card');
             var filename = card.data('filename');
 
             $.ajax({
                 type: "POST",
                 url: "ajax_for_papers_scruitiny.php",
-                data: {filename: filename, action: 'delete'},
-                success: function() {
+                data: { filename: filename, action: 'delete' },
+                success: function () {
                     card.css("display", "none");
                 },
-                error: function() {
+                error: function () {
                     alert("An error occurred while deleting the record.");
                 }
             });
         }
     });
 
-    $(".approveBtn").click(function() {
+    $(".approveBtn").click(function () {
         var card = $(this).closest('.card');
         var filename = card.data('filename');
 
         $.ajax({
             type: "POST",
             url: "ajax_for_papers_scruitiny.php",
-            data: {filename: filename, action: 'approve'},
-            success: function() {
+            data: { filename: filename, action: 'approve' },
+            success: function () {
                 card.css("display", "none");
             },
-            error: function() {
+            error: function () {
                 alert("An error occurred while approving the record.");
             }
         });
@@ -42,16 +43,19 @@ $(document).ready(function() {
 
     let cropper;
 
-    $("#crop_and_save").click(function() {
-        var card = $(".imageModalTrigger").closest('.card');
+    $("#crop_and_save").click(function () {
+        var card = $(".newclass").closest('.card');
         var filename = card.data('filename');
         if (cropper) {
             cropper.getCroppedCanvas().toBlob((blob) => {
                 const formData = new FormData();
 
-                formData.append('croppedImage', blob);
-                formData.append('filename',filename);
+                formData.append('croppedImage', blob, filename);
+                formData.append('filename', filename);
                 formData.append('action', 'crop');
+
+                // formData.append('croppedImage', blob);
+                // formData.append('action', 'crop');
 
                 $.ajax('ajax_for_papers_scruitiny.php', {
                     method: "POST",
@@ -92,3 +96,10 @@ $(document).ready(function() {
         cropper = null;
     });
 });
+
+function addclass(img) {
+    img.classList.add("newclass");
+    $('#imageModal').on('hidden.bs.modal', function () {
+        img.classList.remove("newclass");
+    });
+}
