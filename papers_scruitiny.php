@@ -55,6 +55,7 @@ $smallImageBaseDir = '/var/www/d78236gbe27823/nvme';
                         $output = exec("iii " . $largeImagePath . " " . $smallImagePath);
 
                         if (trim($output) == 'Image found.') {
+                            $selected_small_image = $smallImagePath;
                             $found = true;
                             break;
                         }
@@ -69,6 +70,7 @@ $smallImageBaseDir = '/var/www/d78236gbe27823/nvme';
                         echo '<button class="btn btn-success approveBtn" style="height: 62px !important;">Approve</button>';
                     }
                     echo '</div>';
+                    //if($found) echo '<div>'.$selected_small_image.'</div>';
                     echo '</div>';
                     echo '</div>';
                 }
@@ -77,7 +79,6 @@ $smallImageBaseDir = '/var/www/d78236gbe27823/nvme';
             }
             ?>
             <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-            <script src="papers_scruitiny.js"></script>
 
         </div>
     </div>
