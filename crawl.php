@@ -39,9 +39,9 @@ include "/var/www/d78236gbe27823/marketing/Whatsapp/Crawlers/dependencies/crawl_
 
 //$epapers = array("AU" => "Amar Ujala,hin", "DC" => "Deccan Chronicle,eng", "HB" => "Hari Bhumi,hin", "DJ" => "Danik Jagran,hin", "JPS" => "Janpath Samachar,hin", "KM" => "Karnataka Malla,kan", "LM" => "Lokmat,mar", "MC" => "Mumbai Chaufer,mar", "NB" => "Navbharat,hin", "NBT" => "Navbharat Times,hin", "ND" => "Nai Dunia,hin", "NVR" => "Navrasthra,mar", "NYB" => "Niyomiya Barta,asm", "PAP" => "Purvanchal Prahari,ori", "RS" => "Rashtriya Sahara,hin", "SAM" => "Sambad,ori", "SMJ" => "Samaja,ori", "SY" => "Samyukta Karnataka,kan", "VV" => "Vijayavani,kan", "YB" => "yashobhumi,hin", "SBP" => "Sangbad Pratidin,ben", "POD" => "Pratidin Odia Daily,ori","MM" => "Mysore Mithra,kan");  
 
-$epapers = array("AU" => "Amar Ujala,hin", "DC" => "Deccan Chronicle,eng", "HB" => "Hari Bhumi,hin", "DJ" => "Danik Jagran,hin", "LM" => "Lokmat,mar", "MC" => "Mumbai Chaufer,mar", "NB" => "Navbharat,hin", "NBT" => "Navbharat Times,hin", "ND" => "Nai Dunia,hin", "RS" => "Rashtriya Sahara,hin", "YB" => "yashobhumi,hin", "NVR" => "Navrasthra,mar", "GSM" => "Gujarat Samachar,guj", "PN" => "Punayanagri,mar", "TOI" => "Times of India,eng", "ET" => "Economic Times,eng", "MT" => "Maharashtra Times,eng", "Mirror" => "Mirror,eng", "DN" => "Dainik Navjyoti,hin");
+$epapers = array("AU" => "Amar Ujala,hin", "DC" => "Deccan Chronicle,eng", "HB" => "Hari Bhumi,hin", "DJ" => "Danik Jagran,hin", "LM" => "Lokmat,mar", "MC" => "Mumbai Chaufer,mar", "NB" => "Navbharat,hin", "NBT" => "Navbharat Times,hin", "ND" => "Nai Dunia,hin", "RS" => "Rashtriya Sahara,hin", "YB" => "yashobhumi,hin", "NVR" => "Navrasthra,mar", "GSM" => "Gujarat Samachar,guj", "PN" => "Punayanagri,mar", "TOI" => "Times of India,eng", "ET" => "Economic Times,eng", "MT" => "Maharashtra Times,eng", "Mirror" => "Mirror,eng","DN" => "Dainik Navjyoti,hin");
 
-$cities_of_interest = array("Delhi", "Jaipur", "Jodhpur", "Udaipur", "Kota", "Bhopal", "Ahmedabad", "Surat", "Vadodara", "Bhavnagar", "Rajkot", "Mumbai", "Pune", "Thane", "Nashik");
+$cities_of_interest = array("Delhi","Jaipur","Jodhpur","Udaipur","Kota","Bhopal","Ahmedabad","Surat","Vadodara","Bhavnagar","Rajkot","Mumbai","Pune","Thane","Nashik");
 
 if ($no_of_papers_to_run > 0 and $no_of_papers_to_run < count($epapers)) $epapers = array_slice($epapers, 0, $no_of_papers_to_run);
 
@@ -328,10 +328,10 @@ foreach ($epapers as $epapercode => $epaperArray) {
     if ($epapercode == "MC") {
         $firsturl = "https://www.mumbaichoufer.com/view/" . $datecode . "/mc";
         $content =   file_get_contents($firsturl, false, stream_context_create($arrContextOptions));
-        if (strlen($content) == 0) {
+        if(strlen($content)==0){
             echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=> Looks like the paper is not yet available for this date. Try later" . $eol;
             continue;
-        }
+        } 
         $firstId = explode('"', explode('{"mp_id":"', $content)[1])[0];
         $section1 = explode($firstId, $content)[1];
         $sectionArray = explode('{"mp_id":"', $section1);
@@ -763,62 +763,6 @@ foreach ($epapers as $epapercode => $epaperArray) {
         }
     }
 
-    if ($epapercode == "DST") {
-        for ($edition = 0; $edition < count($cityarray); $edition++) {
-
-            echo "Edition: " . $edition . ", " . $cityarray[$edition] . $eol . $eol;
-
-            // if (!in_array(ucfirst(explode("-", $cityarray[$edition])[0]), $cities_of_interest)) {
-
-            //     echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Skipping " . $cityarray[$edition] . " Edition. Doesn't fall in cities of interest" . $eol;
-            //     continue;
-            // }
-
-            for ($page = 1; $page <= $no_of_pages_to_run_on_each_edition; $page++) {
-
-                echo "Page: " . $page . $eol . $eol;
-
-
-                echo $testurl = "https://epaper.dainiksaveratimes.in/articlepage.php?articleid=DSTIME_CHAND_" . $dateForLinks . "_" . $page . "_1";
-
-                $testcontent = file_get_contents($testurl, false, stream_context_create($arrContextOptions));
-
-                $testimagelink = explode('"', explode('id="artimg" src="', $testcontent)[1])[1];
-                $imageInfo = getimagesize($testimagelink);
-
-                if (!$imageInfo)
-                    break;
-
-                for ($section = 1; $section <= $no_of_sections_to_run_on_each_page; $section++) {
-
-                    echo "Section: " . $section . $eol . $eol;
-
-                    echo $link =   "https://epaper.dainiksaveratimes.in/articlepage.php?articleid=DSTIME_CHAND_" . $dateForLinks . "_" . $page . "_" . $section;
-                    $content = file_get_contents($link, false, stream_context_create($arrContextOptions));
-                    $imagelink = explode('"', explode('id="artimg" src="', $content)[1])[1];
-                    $imageInfo = getimagesize($imagelink);
-
-                    if (!$imageInfo)
-                        break;
-
-
-                    $getpath = explode("&", makefilepath($epapercode, ucwords($cityarray[$edition]), $filenamedate, $page . "00" . $section, $lang));
-
-                    if (alreadyDone($getpath[0], $conn) == "Yes") continue;
-
-                    writeImage($imagelink, $getpath[0]);
-
-                    echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved" . $eol;
-                    runTesseract($epapername, $cityarray[$edition], $page, $section, $conn, $getpath, $lang);
-                    echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $cityarray[$edition] . " Page " . $page . " Section " . $section . " Completed" . $eol;
-                    ob_flush();
-                    flush();
-                }
-                echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $cityarray[$edition] . " Page " . $page . " Completed" . $eol;
-            }
-            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $cityarray[$edition] . " Completed" . $eol;
-        }
-    }
     //exec("rm -f /nvme/*");
 
     mysqli_query($conn, "INSERT INTO Crawl_Record (Papername,Papershortname,Paperdate) VALUES ('" . $epapername . "','" . $epapercode . "','" . $filenamedate . "')");
