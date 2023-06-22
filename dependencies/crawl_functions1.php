@@ -1,14 +1,17 @@
+
+
 <?php
 
-//require  '/var/www/d78236gbe27823/vendor/autoload.php';
-//use thiagoalessio\TesseractOCR\TesseractOCR;
+// require  '/var/www/d78236gbe27823/vendor/autoload.php';
+
+// use thiagoalessio\TesseractOCR\TesseractOCR;
 
 if (php_sapi_name() == "cli") $eol = "\n";
 else  $eol = "<br>";
 
 function filenamedate($epapercode, $conn)
 {
-    // $finddateq = "Select * from Crawl_Record WHERE Papershortname='" . $epapercode . "' ORDER BY Paperdate DESC LIMIT 1";
+    // $finddateq = "Select * from Crawl_Record1 WHERE Papershortname='" . $epapercode . "' ORDER BY Paperdate DESC LIMIT 1";
     // $finddaters = mysqli_query($conn, $finddateq);
     // if (mysqli_num_rows($finddaters)) {
     //     $finddaterow = mysqli_fetch_array($finddaters);
@@ -21,7 +24,7 @@ function filenamedate($epapercode, $conn)
 
 function dateForLinks($epapercode, $filenamedate)
 {
-    if ($epapercode == "PN" or $epapercode == "AU" or $epapercode == "LM" or $epapercode == "SY" or $epapercode == "VV" or $epapercode == "YB") return date('Ymd', strtotime($filenamedate));
+    if ($epapercode == "DST" or $epapercode == "PN" or $epapercode == "AU" or $epapercode == "LM" or $epapercode == "SY" or $epapercode == "VV" or $epapercode == "YB") return date('Ymd', strtotime($filenamedate));
     else if ($epapercode == "HB") return date('Y/m/d', strtotime($filenamedate));
     else if ($epapercode == "TOI" or $epapercode == "ET" or $epapercode == "MT" or $epapercode == "Mirror") return  date('d/m/Y', strtotime($filenamedate));
     else if ($epapercode == "GSM") return date("d-m-Y", strtotime($filenamedate));
@@ -135,6 +138,29 @@ function dateForLinks($epapercode, $filenamedate)
             }
         }
         return $datecode;
+    } else if ($epapercode == "SOM") {
+        $data = file_get_contents("https://epaper.starofmysore.com/");
+        $datecodearray = explode('class="epost-title"><a href="/epaper/edition/', $data);
+        $originaldatecode = explode('/mysuru-mithra"', $datecodearray[1])[0];
+        $datecode = explode('/mysuru-mithra"', $datecodearray[1])[0];
+        $reqiredDate = date("Y-m-d", strtotime($filenamedate));
+        $datecode -= intval((time() - strtotime($filenamedate)) / (24 * 3600));
+        $content = file_get_contents("https://epaper.mysurumithra.com/epaper/edition/" . $datecode . "/mysuru-mithra");
+        $date = date("Y-m-d", strtotime(explode('"', explode('value="', $content)[1])[0]));
+        if ($date > $reqiredDate)
+            $difference = -1;
+        else if ($date < $reqiredDate)
+            $difference = 1;
+        while ($date != $reqiredDate && $datecode >= 0 && $datecode <= $originaldatecode) {
+            $datecode += $difference;
+            $date =  date("Y-m-d", strtotime($date) + ($difference * 24 * 3600));
+            $content = file_get_contents("https://epaper.mysurumithra.com/epaper/edition/" . $datecode . "/mysuru-mithra");
+            if ($date  == $reqiredDate && !$content) {
+                $reqiredDate =  date("Y-m-d", strtotime($reqiredDate) + (24 * 3600));
+                $difference = 1;
+            }
+        }
+        return $datecode;
     }
 }
 
@@ -220,7 +246,9 @@ function cityArray($epapercode)
         case "Mirror":
             return  array("Bangalore", "Mumbai", "Pune");
             break;
-
+        case "DST":
+            return array("Delhi", "Chandigarh", "Haryana");
+            break;
         default:
             return null;
     }
@@ -294,16 +322,18 @@ function cityCodeArray($epapercode)
         case "Mirror":
             return array("vkbgmr", "vkmmir", "pcmir");
             break;
+
+        case "DST":
+            return array("DEL", "CHAND", "HAR");
+            break;
     }
 }
 
 function makefilepath($epapercode, $city, $date, $number, $lang)
 {
-    // $filepath = "/nvme/" . $epapercode . "_" . $city . "_" . $date . "_" . $number . "_admin_" . $lang . ".jpg";
-    $filepath = "./nvme/" . $epapercode . "_" . $city . "_" . $date . "_" . $number . "_admin_" . $lang . ".jpg";
+    $filepath = "/nvme/" . $epapercode . "_" . $city . "_" . $date . "_" . $number . "_admin_" . $lang . ".jpg";
     $temp_txtfile = str_replace(".jpg", "", $filepath);
-    // $txtfile = "/var/www/d78236gbe27823/marketing/Whatsapp/images/ocrtexts/" . $epapercode . "_" . $city . "_" . $date . "_" . $number . "_admin_" . $lang . ".txt";
-    $txtfile = "./ocrtexts/" . $epapercode . "_" . $city . "_" . $date . "_" . $number . "_admin_" . $lang . ".txt";
+    $txtfile = "/var/www/d78236gbe27823/marketing/Whatsapp/images/ocrtexts/" . $epapercode . "_" . $city . "_" . $date . "_" . $number . "_admin_" . $lang . ".txt";
     $newspaper_name = $epapercode;
     $newspaper_region = $city;
     $newspaper_date = $date;
@@ -327,7 +357,7 @@ function alreadyDone($filepath, $conn)
         $page = $b[3];
         $section = '0';
     }
-    $q = "select * from Crawled_Pages WHERE Papershortname = '" . $newspaper_name . "' AND Paperdate = '" . $date . "' AND Edition = '" . $edition . "' AND Page = '" . $page . "' AND Section = '" . $section . "'";
+    $q = "select * from Crawled_Pages1 WHERE Papershortname = '" . $newspaper_name . "' AND Paperdate = '" . $date . "' AND Edition = '" . $edition . "' AND Page = '" . $page . "' AND Section = '" . $section . "'";
     $rs = mysqli_query($conn, $q);
     if (mysqli_num_rows($rs) > 0) return "Yes";
     else return "No";
@@ -360,27 +390,22 @@ function runTesseract($epapername, $edition, $page, $section, $conn, $patharray,
     $newspaper_operator_name = $patharray[8];
     $starttime = date('Y-m-d H:i:s', time());
 
-
     try {
-        $output = shell_exec('python3 ./python.py' . ' ' . $filepath . ',' . $newspaper_lang);
-        echo $eol . "output=" . trim($output) . $eol;
 
-        if (trim($output) == '') {
-            echo "returning" . $eol . $eol;
-            return;
-        } else {
-            "downloaded" . $eol;
-            return;
-        }
+        if ($lang != 'eng') $command = "tesseract " . $filepath . " " . $temp_txtfile . " -l " . $lang . "+eng > /dev/null 2>&1";
+        else $command = "tesseract " . $filepath . " " . $temp_txtfile . " -l eng > /dev/null 2>&1";
 
-        // if ($lang != 'eng') $command = "tesseract " . $filepath . " " . $temp_txtfile . " -l " . $lang . "+eng > /dev/null 2>&1";
-        // if ($lang != 'eng') $command = "tesseract " . $filepath . " " . $temp_txtfile . " -l " . $lang . "+eng > /dev/null 2>&1";
-        // else $command = "tesseract " . $filepath . " " . $temp_txtfile . " -l eng > /dev/null 2>&1";
-        echo $command = "tesseract ./YB_Mumbai_2023-05-03_hin.jpg " . $temp_txtfile . " -l hin+eng > /dev/null 2>&1";
+        //$output = shell_exec('python3 /var/www/d78236gbe27823/marketing/Whatsapp/python.py' . ' ' . $filepath);
+        //$string = explode(',', trim($output));
+        //if ($string[0] != "classified")
+        //    return;
 
         exec($command);
         $text = file_get_contents($temp_txtfile . ".txt");
-        // $text = (new TesseractOCR($filepath))->lang($lang, 'eng')->run();
+        //$text = $string[1];
+
+
+        //$text = (new TesseractOCR($filepath))->lang($lang,'eng')->run();
 
         $matches = array();
         preg_match_all('/\+91[0-9]{10}|[0]?[6-9][0-9]{4}[\s]?[-]?[0-9]{5}/', $text, $matches);
@@ -389,7 +414,7 @@ function runTesseract($epapername, $edition, $page, $section, $conn, $patharray,
         $n = count($matches);
 
         if ($n < 5) {
-            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. No new numbers found" .  $eol;
+            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. " . $n . " new numbers found" .  $eol;
         } else {
 
             echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. " . $n . " new numbers found. File Saved" . $eol;
@@ -398,47 +423,52 @@ function runTesseract($epapername, $edition, $page, $section, $conn, $patharray,
             // fwrite($handle,$text);
             // fclose($handle);
 
-            // rename($temp_txtfile . ".txt", $txtfile);
-            rename("./YB_Mumbai_2023-05-03_hin.jpg", "./images/YB_Mumbai_2023-05-03_hin.jpg");
+            rename($temp_txtfile . ".txt", $txtfile);
+            //$file = fopen($temp_txtfile, "w+");
+            //fwrite($file, $text);
+            //fclose($file);
 
-            die();
-            // echo $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Starting to add in the database...";
+            //     echo $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Starting to add in the database...";
 
-            // $values = "";
+            //     $values = "";
+            //     $values_non_unique = "";
 
-            // for ($i = 0; $i < $n; $i++) {
+            //     for ($i = 0; $i < $n; $i++) {
 
-            //     $blockcheck = "select * from Blocked_Numbers where Mobile_No = '" . $matches[$i] . "'";
-            //     $bcrs = mysqli_query($conn, $blockcheck);
-            //     if (!mysqli_num_rows($bcrs)) {
-            //         $values .= "('" . $matches[$i] . "','" . $newspaper_name . "','" . $newspaper_region . "','" . $newspaper_date . "','" . $newspaper_lang . "','" . $Image_file_name . "','" . $newspaper_operator_name . "'),";
-            //     } else echo "" . $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Skipping " . $matches[$i] . " found in blocked numbers";
-            // }
-
-            // if (strlen($values) > 0) {
-
-            //     $values = substr($values, 0, strlen($values) - 1) . " ON DUPLICATE KEY UPDATE Newspaper_Name = concat(Newspaper_Name,' | ',VALUES(Newspaper_Name)), Newspaper_Region = concat(Newspaper_Region,' | ',VALUES(Newspaper_Region)), Newspaper_Date = concat(Newspaper_Date,' | ',VALUES(Newspaper_Date)), Newspaper_Lang = Newspaper_Lang;";
-
-            //     $values_non_unique = substr($values, 0, strlen($values) - 1);
-
-            //     echo $q_non_unqiue = "insert into Mobile_Lists_NON_Unique (Mobile_Number,Newspaper_Name,Newspaper_Region,Newspaper_Date,Newspaper_Lang,Image_File_Name,Image_Operator) values " . $values_non_unique;
-
-            //     $q = "insert into Mobile_Lists (Mobile_Number,Newspaper_Name,Newspaper_Region,Newspaper_Date,Newspaper_Lang,Image_File_Name,Image_Operator) values " . $values;
-
-            //     if (!mysqli_query($conn, $q)) {
-            //         echo  $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Error in insert query... ABORTING!" . $eol . $q . "" . $eol;
-            //         die();
+            //         $blockcheck = "select * from Blocked_Numbers where Mobile_No = '" . $matches[$i] . "'";
+            //         $bcrs = mysqli_query($conn, $blockcheck);
+            //         if (!mysqli_num_rows($bcrs)) {
+            //             $values .= "('" . $matches[$i] . "','" . $newspaper_name . "','" . $newspaper_region . "','" . $newspaper_date . "','" . $newspaper_lang . "','" . $Image_file_name . "','" . $newspaper_operator_name . "'),";
+            //             $values_non_unique .= "('" . $matches[$i] . "','" . $newspaper_name . "','" . $newspaper_region . "','" . $newspaper_date . "','" . $newspaper_lang . "','" . $Image_file_name . "','" . $newspaper_operator_name . "'),";
+            //         } else echo "" . $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Skipping " . $matches[$i] . " found in blocked numbers";
             //     }
 
-            //     if (!mysqli_query($conn, $q_non_unqiue)) {
-            //         echo  $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Error in insert query... ABORTING!" . $eol . $q_non_unqiue . "" . $eol . $eol . mysqli_error($conn);
-            //         die();
-            //     }
-            //     echo  $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Insert query executed successfully......" . $eol;
-            // } else echo  $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "No numbers left to insert";
+            //     if (strlen($values) > 0) {
+
+            //         $values = substr($values, 0, strlen($values) - 1) . " ON DUPLICATE KEY UPDATE Newspaper_Name = VALUES(Newspaper_Name), Newspaper_Region = VALUES(Newspaper_Region), Newspaper_Date = VALUES(Newspaper_Date), Newspaper_Lang = VALUES(Newspaper_Lang);";
+
+            //         $values_non_unique = substr($values_non_unique, 0, strlen($values_non_unique) - 1);
+
+            //         echo $eol . "=================================" . $eol;
+            //         echo $q_non_unqiue = "insert into Mobile_Lists_NON_Unique (Mobile_Number,Newspaper_Name,Newspaper_Region,Newspaper_Date,Newspaper_Lang,Image_File_Name,Image_Operator) values " . $values_non_unique;
+            //         echo $eol;
+            //         echo $q = "insert into Mobile_Lists1 (Mobile_Number,Newspaper_Name,Newspaper_Region,Newspaper_Date,Newspaper_Lang,Image_File_Name,Image_Operator) values " . $values;
+            //         echo $eol . "=================================" . $eol;
+
+            //         if (!mysqli_query($conn, $q)) {
+            //             echo  $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Error in insert query... ABORTING!" . $eol . $q . "" . $eol;
+            //             die();
+            //         }
+
+            //         if (!mysqli_query($conn, $q_non_unqiue)) {
+            //             echo  $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Error in insert query... ABORTING!" . $eol . $q_non_unqiue . "" . $eol . $eol . mysqli_error($conn);
+            //             die();
+            //         }
+            //         echo  $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Insert query executed successfully......" . $eol;
+            //     } else echo  $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "No numbers left to insert";
         }
 
-        // $iq = "INSERT INTO Crawled_Pages (Papername,Papershortname,Paperdate,Edition,Page,Section,No_Of_Mobiles_Found,Start_Time) VALUES ('" . $epapername . "','" . $newspaper_name . "','" . $newspaper_date . "','" . $newspaper_region . "','" . $page . "','" . $section . "','" . count($matches) . "','" . $starttime . "')";
+        // $iq = "INSERT INTO Crawled_Pages1 (Papername,Papershortname,Paperdate,Edition,Page,Section,No_Of_Mobiles_Found,Start_Time) VALUES ('" . $epapername . "','" . $newspaper_name . "','" . $newspaper_date . "','" . $newspaper_region . "','" . $page . "','" . $section . "','" . count($matches) . "','" . $starttime . "')";
 
         // echo $eol . $iq . "" . $eol;
 
@@ -475,11 +505,11 @@ function crawltoi($cityarray, $dateForLinks, $epapercode, $citycode, $filenameda
 {
     for ($edition = 0; $edition < count($cityarray); $edition++) {
 
-        if (!in_array(ucfirst(explode("-", $cityarray[$edition])[0]), $cities_of_interest)) {
+        // if (!in_array(ucfirst(explode("-", $cityarray[$edition])[0]), $cities_of_interest)) {
 
-            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Skipping " . $cityarray[$edition] . " Edition. Doesn't fall in cities of interest" . $eol;
-            continue;
-        }
+        //     echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Skipping " . $cityarray[$edition] . " Edition. Doesn't fall in cities of interest" . $eol;
+        //     continue;
+        // }
 
         $failedPageCount = 0;
         $date_formatted = date("Y/d/m", strtotime($dateForLinks));

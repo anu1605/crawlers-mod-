@@ -1,6 +1,7 @@
 <?php
 
 require  '/var/www/d78236gbe27823/vendor/autoload.php';
+
 use thiagoalessio\TesseractOCR\TesseractOCR;
 
 if (php_sapi_name() == "cli") $eol = "\n";
@@ -21,7 +22,7 @@ function filenamedate($epapercode, $conn)
 
 function dateForLinks($epapercode, $filenamedate)
 {
-    if ($epapercode == "PN" or $epapercode == "AU" or $epapercode == "LM" or $epapercode == "SY" or $epapercode == "VV" or $epapercode == "YB") return date('Ymd', strtotime($filenamedate));
+    if ($epapercode == "DST" or $epapercode == "PN" or $epapercode == "AU" or $epapercode == "LM" or $epapercode == "SY" or $epapercode == "VV" or $epapercode == "YB") return date('Ymd', strtotime($filenamedate));
     else if ($epapercode == "HB") return date('Y/m/d', strtotime($filenamedate));
     else if ($epapercode == "TOI" or $epapercode == "ET" or $epapercode == "MT" or $epapercode == "Mirror") return  date('d/m/Y', strtotime($filenamedate));
     else if ($epapercode == "GSM") return date("d-m-Y", strtotime($filenamedate));
@@ -220,7 +221,9 @@ function cityArray($epapercode)
         case "Mirror":
             return  array("Bangalore", "Mumbai", "Pune");
             break;
-
+        case "DST":
+            return array("Delhi", "Chandigarh", "Haryana");
+            break;
         default:
             return null;
     }
@@ -293,6 +296,10 @@ function cityCodeArray($epapercode)
 
         case "Mirror":
             return array("vkbgmr", "vkmmir", "pcmir");
+            break;
+
+        case "DST":
+            return array("DEL", "CHAND", "HAR");
             break;
     }
 }
@@ -382,7 +389,7 @@ function runTesseract($epapername, $edition, $page, $section, $conn, $patharray,
         $n = count($matches);
 
         if ($n < 5) {
-            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. ".$n." new numbers found" .  $eol;
+            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. " . $n . " new numbers found" .  $eol;
         } else {
 
             echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. " . $n . " new numbers found. File Saved" . $eol;
