@@ -1,9 +1,40 @@
-
-
-Divya Marathi (Pune, Nashik, Ahmednagar, Mumbai)
-Nashik And Ahmednagar are to be uploaded as DM_Mumbai_
-
-Nashik And Ahmednagar are to be uploaded as DM_Mumbai_
-
-Divya Marathi is _mar
-Rajasthan patrika is _hin
+Ajit - (seperate text and graphics page)
+Anandabazar Patrika- (Done) {C}
+Andhra Jyothy - (different pgid seperate text and picture page)
+Arunachal Times - (paid)
+Asomiya Khabar - (link = https://www.assamiyakhabor.com/publishfinal/asset/guwahati/current/pages/ghy1.jpg / png)
+Asomiya Pratidin -  (Done){C}
+Assam Rising,Dainandin Barta - (no ads, paid)
+Bombay Samachar - (full page)
+Business Line - (the hindu)
+Daily Excelsior - (pdf to image conversion){C}
+Daily Hindi Milap - (section images){C}
+Daily Kalom = (code same as mc , section images){C}
+Daily Thanthi = (paid)
+Dainik Agradoot - (inconsistent links)
+Dainik Dabang Dunia - (no ads )
+Dainik Janambhumi - (https://dainikjanambhumi.co.in/21062023/images/p2/main.jpg, small image size){C}
+Dainik Saamana - (section images, minimum ads, numbers in marathi)
+Dainik Sambad - (https://dainiksambad.net//epaperimages//20062023//page-6ll.png){C}
+Dainik Savera Times - (done)
+Dainik Statesman - (text and image are seperate)
+Dainik Vishwamitra - (pdf file) {C}
+Deshabhimani - (seperate text and image)
+Dharitri - (section images , only bhubaneshwar)
+Dinakaran - (paid, seperate text and images)
+Dinamalar - (paid)
+Dinamani - (paid, seperate text and image)
+Echo of India - (incomplete html content)
+Eenadu - (different pagids, incomplete html content)
+Ei Samay - same as times of india(https://asset.harnscloud.com/PublicationData/EiSamay/esamk3/2023/06/22/Advertisement/006/22_06_2023_006_014_esamk3.jpg?v=19000101000000)
+Ekdin - (https://www.ekdin-epaper.com/media/2023-06/22051008-page-3.jpg, dateforlinks same as mc, language different)
+Financial Express - (seperate text and images)
+Gujarat Today - (pdf file link = https://docs.google.com/viewerng/viewer?url=https://www.gujarattoday.in/wp-content/uploads/2023/06/GUJARATTODAY-E-PAPER-20-JUNE-2023.pdf)
+Gujarati Midday- (paid)
+Hindu - Tamil - (paid)
+Hitavada - (pdf, link = https://www.ehitavada.com/index.php?edition=Mpage&date=2023-06-22&page=7)
+I-Next - (show_pop, image id and links)
+Indian Express - (paid)
+Inquilab - (paid)
+Jagbani - (paid, seperate text and pictures)
+Jagmarg - (no ads)

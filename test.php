@@ -1,10 +1,17 @@
 <?php
-$data = file_get_contents("https://epaper.navhindtimes.in/");
-// $ch = curl_init();
-// curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-// curl_setopt($ch, CURLOPT_URL, "https://epaper.navajyoti.net/");
-// curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-// curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows;U;Windows NT 5.1;en-US) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.A.B.C Safari/525.13");
-// $data = curl_exec($ch);
-// curl_close($ch);
-file_put_contents(dirname(__FILE__) . "/test.txt",  $data);
+$url = 'http://s3.ap-south-1.amazonaws.com/erelegos3dec17/News/OHERALDO/GOA/2023/06/11/ArticleImages/1291CD0.jpg';
+
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, $url);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+$response = curl_exec($ch);
+curl_close($ch);
+
+if ($response === false) {
+    echo "Failed to retrieve the content.";
+} else {
+    // Process the response
+    // ...
+}
+
+file_put_contents(dirname(__FILE__) . "/test.txt", $response);

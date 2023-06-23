@@ -1,5 +1,56 @@
-BMS_Mumbai_2023-06-16_1_guj.jpg
-SAN_Ahmedabad_2023-06-16_1_guj.jpg
-SAN_Bhavnagar_2023-06-16_1_guj.jpg
-SAN_Surat_2023-06-16_1_guj.jpg
-SAN_Vadodara_2023-06-16_1_guj.jpg
+DC (eng) - deccan chronicles (Done)
+HB (hin) - hari bhumi (Done)
+HT (eng) - hindustan times(no html content)
+KM (kan) - karnataka malla (Done)
+LH (hin) - live hindustan(incomplete html content)
+MC (mar) - mumbai chaufer (Done)
+MM (kan) - Mysuru Mithra (Done,doesn't work in server but works in localhost)
+NBT (hin) - nav bharat times (Done)
+NGS (guj) - nav gujrat samay(pic and text seperate pic)
+NHT (eng) - nav hind times(done)
+NT (tel) - namaste telangana(incomplete html content)
+OHO (eng) - o herald o(done)
+PAP (hin) - purvanchal prahari(Done)
+PBK (hin) - prabhat khabar(pic and text seperate pic)
+PRM (ori) - Prameya(incomplete html content)
+PRJ (kan) - Prajavani
+PUD (mar) - pudhari(Done)
+SAK (tel) - sakshi(incomplete html content)
+SBP (ben) - sangbad pratidin(Done)
+SKE(eng) - sikkim express
+SKL(mar) - sakal(https://epaper-sakal-application.s3.ap-south-1.amazonaws.com/EpaperData/Sakal/Akola/2023/05/22/Main/Sakal_Akola_2023_05_22_Main_DA_002/S/0.jpg) 403(forbidden)
+SMJ (ori) - Samaja(Done)
+SOM (kan) - Star of Mysore(done)
+SY (kan) - Samyuktha(Done)
+TB (eng) - the tribune
+TH (eng) - the hindu(incomplete html content)
+UV (kan) - Udayavani
+VV (kan) - Vijayavani(Done)
+YB (hin) - yasho bhumi(Done)
+NYB - niyomiya barta(Done)
+nai dunia- (Done)
+Kannada Prabha - (seperate pic and text images) 
+Kerala Kaumudi - (single edition, no ads)
+lokmat - (Done)
+loksatta - (incomplete html content, different text and pic images)
+midday- (no html content)
+Nava Bharat - (Done)
+Nava rashtra - (Done)
+Orissa Bhaskar - (no ads)
+Rajasthan Patrika - ( diff pageid per page and edition)
+sandesh - (incomplete html content)
+sanmarg- (incomplete html content)
+Siasat Daily(urd) - (incomplete html content , blank images)
+Statesman(mostly obituary ads) - seperate pic and text images , incomplete html content
+Suryaa - no ads
+Telangana Today - (incomplete html content)
+Telegraph - single edition
+Tripura Observer - (incomplete html content)
+The Pioneer - pdf epaper
+vaartha - (no ads)
+Janpath Samachar - (Done)
+Jansatta - (different pic and text images)
+Mizoram Post - (pdf)
+Pratidin odia daily - (Done)
+Rashtriya Sahara - (Done)
+sambad = (done)
