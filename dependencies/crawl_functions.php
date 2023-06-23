@@ -22,8 +22,8 @@ function filenamedate($epapercode, $conn)
 
 function dateForLinks($epapercode, $filenamedate)
 {
-    if ($epapercode == "DST" or $epapercode == "PN" or $epapercode == "AU" or $epapercode == "LM" or $epapercode == "SY" or $epapercode == "VV" or $epapercode == "YB") return date('Ymd', strtotime($filenamedate));
-    else if ($epapercode == "HB") return date('Y/m/d', strtotime($filenamedate));
+    if ($epapercode = "OHO" or $epapercode == "DST" or $epapercode == "PN" or $epapercode == "AU" or $epapercode == "LM" or $epapercode == "SY" or $epapercode == "VV" or $epapercode == "YB") return date('Ymd', strtotime($filenamedate));
+    else if ($epapercode == "NHT" or $epapercode == "HB") return date('Y/m/d', strtotime($filenamedate));
     else if ($epapercode == "TOI" or $epapercode == "ET" or $epapercode == "MT" or $epapercode == "Mirror") return  date('d/m/Y', strtotime($filenamedate));
     else if ($epapercode == "GSM") return date("d-m-Y", strtotime($filenamedate));
     else if ($epapercode == "DN" or $epapercode == "DJ" or $epapercode == "NB" or $epapercode == "ND" or $epapercode == "NVR" or $epapercode == "PAP") return date('d-M-Y', strtotime($filenamedate));
@@ -135,6 +135,38 @@ function dateForLinks($epapercode, $filenamedate)
                 $difference = 1;
             }
         }
+        return $datecode;
+    } else if ($epapercode == "SOM") {
+        $data = file_get_contents("https://epaper.starofmysore.com/");
+        $datecodearray = explode('<a href="/epaper/edition/', $data);
+        $originaldatecode = explode('/star-mysore"', $datecodearray[1])[0];
+        $datecode = explode('/star-mysore"', $datecodearray[1])[0];
+        $reqiredDate = date("Y-m-d", strtotime($filenamedate));
+        $content = file_get_contents("https://epaper.starofmysore.com/epaper/edition/" . $datecode . "/star-mysore");
+        $date = date("Y-m-d", strtotime(explode('"', explode('value="', $content)[1])[0]));
+
+        if ($date < $reqiredDate) {
+            $reqiredDate = $date;
+            $filenamedate = $reqiredDate;
+        }
+        $datecode -= intval((time() - strtotime($filenamedate)) / (24 * 3600));
+        $content = file_get_contents("https://epaper.starofmysore.com/epaper/edition/" . $datecode . "/star-mysore");
+        $date = date("Y-m-d", strtotime(explode('"', explode('value="', $content)[1])[0]));
+
+        if ($date > $reqiredDate)
+            $difference = -1;
+        else if ($date < $reqiredDate)
+            $difference = 1;
+        while ($date != $reqiredDate && $datecode >= 0 && $datecode <= $originaldatecode) {
+            $datecode += $difference;
+            $date =  date("Y-m-d", strtotime($date) + ($difference * 24 * 3600));
+            $content = file_get_contents("https://epaper.starofmysore.com/epaper/edition/" . $datecode . "/star-mysore");
+            if ($date  == $reqiredDate && !$content) {
+                $reqiredDate =  date("Y-m-d", strtotime($reqiredDate) + (24 * 3600));
+                $difference = 1;
+            }
+        }
+
         return $datecode;
     }
 }

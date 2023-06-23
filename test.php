@@ -1,5 +1,5 @@
 <?php
-$data = file_get_contents("https://epaper.navajyoti.net/archive/date/14-Jun-2023/2?forcesingle=yes");
+$data = file_get_contents("https://epaper.navhindtimes.in/");
 // $ch = curl_init();
 // curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 // curl_setopt($ch, CURLOPT_URL, "https://epaper.navajyoti.net/");
