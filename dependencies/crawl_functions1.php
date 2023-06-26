@@ -29,7 +29,7 @@ function dateForLinks($epapercode, $filenamedate)
         echo "epapercode=" . $epapercode . PHP_EOL;
         return date('Ymd', strtotime($filenamedate));
     } else if ($epapercode == "NHT" or $epapercode == "HB") return date('Y/m/d', strtotime($filenamedate));
-    else if ($epapercode == "TOI" or $epapercode == "ET" or $epapercode == "MT" or $epapercode == "Mirror") return  date('d/m/Y', strtotime($filenamedate));
+    else if ($epapercode == "EiSamay" or $epapercode == "TOI" or $epapercode == "ET" or $epapercode == "MT" or $epapercode == "Mirror") return  date('d/m/Y', strtotime($filenamedate));
     else if ($epapercode == "GSM") return date("d-m-Y", strtotime($filenamedate));
     else if ($epapercode == "DN" or $epapercode == "DJ" or $epapercode == "NB" or $epapercode == "ND" or $epapercode == "NVR" or $epapercode == "PAP") return date('d-M-Y', strtotime($filenamedate));
     else if ($epapercode == "JPS") return date('dmy', strtotime($filenamedate));
@@ -321,6 +321,9 @@ function cityArray($epapercode)
         case "DST":
             return array("Delhi", "Chandigarh", "Haryana");
             break;
+        case "EiSamay":
+            return array("Kolkata");
+            break;
         default:
             return null;
     }
@@ -398,11 +401,15 @@ function cityCodeArray($epapercode)
         case "DST":
             return array("DEL", "CHAND", "HAR");
             break;
+        case "EiSamay":
+            return array("esamk");
+            break;
     }
 }
 
 function makefilepath($epapercode, $city, $date, $number, $lang)
 {
+    if ($epapercode == "EiSamay") $epapercode = "ESM";
     // $filepath = "/nvme/" . $epapercode . "_" . $city . "_" . $date . "_" . $number . "_admin_" . $lang . ".jpg";
     $filepath = "./nvme/" . $epapercode . "_" . $city . "_" . $date . "_" . $number . "_admin_" . $lang . ".jpg";
     $temp_txtfile = str_replace(".jpg", "", $filepath);
@@ -578,16 +585,20 @@ function getHBeditionlink($city, $dateforlinks, $citylink, $code)
 
 function crawltoi($cityarray, $dateForLinks, $epapercode, $citycode, $filenamedate, $eol, $conn, $lang, $cities_of_interest, $epapername)
 {
-    for ($edition = 0; $edition < count($cityarray); $edition++) {
 
+    for ($edition = 0; $edition < count($cityarray); $edition++) {
         // if (!in_array(ucfirst(explode("-", $cityarray[$edition])[0]), $cities_of_interest)) {
 
         //     echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Skipping " . $cityarray[$edition] . " Edition. Doesn't fall in cities of interest" . $eol;
         //     continue;
         // }
-
         $failedPageCount = 0;
         $date_formatted = date("Y/d/m", strtotime($dateForLinks));
+
+        if ($epapercode == "EiSamay") {
+            $dateTime = DateTime::createFromFormat('d/m/Y', $dateForLinks);
+            $date_formatted = $dateTime->format('Y/m/d');
+        }
 
         if ($epapercode == "Mirror" and $cityarray[$edition] == "Mumbai") {
 

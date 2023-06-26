@@ -15,7 +15,7 @@ Dainik Agradoot - (inconsistent links, not defined classified ad page)
 Dainik Dabang Dunia - (no ads )
 Dainik Janambhumi - (https://dainikjanambhumi.co.in/21062023/images/p2/main.jpg, small image size, Assam){C}
 Dainik Saamana - (section images, minimum ads, numbers in marathi)
-Dainik Sambad - (https://dainiksambad.net//epaperimages//20062023//page-6ll.png){C}
+Dainik Sambad - (Done)
 Dainik Savera Times - (done)
 Dainik Statesman - (text and image are seperate)
 Dainik Vishwamitra - (pdf file) {C}
