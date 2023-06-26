@@ -1,17 +1,11 @@
 <?php
-$url = 'http://webmilap.com/articlepage.php?articleid=HINDIMIL_HIN_20230625_12_1';
-
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, $url);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-$response = curl_exec($ch);
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+curl_setopt($ch, CURLOPT_URL, "https://epaper.loksatta.com/");
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.A.B.C Safari/525.13");
+$data = curl_exec($ch);
 curl_close($ch);
 
-if ($response === false) {
-    echo "Failed to retrieve the content.";
-} else {
-    // Process the response
-    // ...
-}
 
-file_put_contents(dirname(__FILE__) . "/test.txt", $response);
+file_put_contents(dirname(__FILE__) . "/test.txt", $data);
