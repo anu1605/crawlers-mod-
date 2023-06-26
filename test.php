@@ -1,5 +1,5 @@
 <?php
-$url = 'http://s3.ap-south-1.amazonaws.com/erelegos3dec17/News/OHERALDO/GOA/2023/06/11/ArticleImages/1291CD0.jpg';
+$url = 'http://webmilap.com/articlepage.php?articleid=HINDIMIL_HIN_20230625_1_1';
 
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);

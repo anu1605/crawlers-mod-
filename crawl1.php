@@ -1,7 +1,4 @@
 <?php
-header('Content-Type: text/html; charset=utf-8');
-// som - date for links, and main code, name in $epapers
-
 
 // Set run environment first
 
@@ -37,14 +34,12 @@ $no_of_sections_to_run_on_each_page = 100; // Production Value is 100
 
 //// code starts below ///
 
-// include "/var/www/d78236gbe27823/includes/connect.php";
-// include "/var/www/d78236gbe27823/marketing/Whatsapp/Crawlers/dependencies/crawl_functions.php";
-include "./dependencies/crawl_functions1.php";
+include "/var/www/d78236gbe27823/includes/connect.php";
+include "/var/www/d78236gbe27823/marketing/Whatsapp/Crawlers/dependencies/crawl_functions2.php";
 
 //$epapers = array("AU" => "Amar Ujala,hin", "DC" => "Deccan Chronicle,eng", "HB" => "Hari Bhumi,hin", "DJ" => "Danik Jagran,hin", "JPS" => "Janpath Samachar,hin", "KM" => "Karnataka Malla,kan", "LM" => "Lokmat,mar", "MC" => "Mumbai Chaufer,mar", "NB" => "Navbharat,hin", "NBT" => "Navbharat Times,hin", "ND" => "Nai Dunia,hin", "NVR" => "Navrasthra,mar", "NYB" => "Niyomiya Barta,asm", "PAP" => "Purvanchal Prahari,ori", "RS" => "Rashtriya Sahara,hin", "SAM" => "Sambad,ori", "SMJ" => "Samaja,ori", "SY" => "Samyukta Karnataka,kan", "VV" => "Vijayavani,kan", "YB" => "yashobhumi,hin", "SBP" => "Sangbad Pratidin,ben", "POD" => "Pratidin Odia Daily,ori","MM" => "Mysore Mithra,kan");  
 
-$epapers = array("OHO" => "O Heral O,eng");
-// $epapers = array( "AU" => "Amar Ujala,hin", "DC" => "Deccan Chronicle,eng", "HB" => "Hari Bhumi,hin", "DJ" => "Danik Jagran,hin", "LM" => "Lokmat,mar", "MC" => "Mumbai Chaufer,mar", "NB" => "Navbharat,hin", "NBT" => "Navbharat Times,hin", "ND" => "Nai Dunia,hin", "RS" => "Rashtriya Sahara,hin", "YB" => "yashobhumi,hin", "NVR" => "Navrasthra,mar", "GSM" => "Gujarat Samachar,guj", "PN" => "Punayanagri,mar", "TOI" => "Times of India,eng", "ET" => "Economic Times,eng", "MT" => "Maharashtra Times,eng", "Mirror" => "Mirror,eng", "DN" => "Dainik Navjyoti,hin","DST" => "Dainik Savera times,hin","SOM" => "Star of Mysore,kan","NHT" => "Nav Hind Times,eng","OHO" => "O Heral O,eng","AP" => "Anandabazar Patrika,ben","ASP" => "Asomiya Pratidin,asm","BS" => "Bombay Samachar,guj");
+$epapers = array("AU" => "Amar Ujala,hin", "DC" => "Deccan Chronicle,eng", "HB" => "Hari Bhumi,hin", "DJ" => "Danik Jagran,hin", "LM" => "Lokmat,mar", "MC" => "Mumbai Chaufer,mar", "NB" => "Navbharat,hin", "NBT" => "Navbharat Times,hin", "ND" => "Nai Dunia,hin", "RS" => "Rashtriya Sahara,hin", "YB" => "yashobhumi,hin", "NVR" => "Navrasthra,mar", "GSM" => "Gujarat Samachar,guj", "PN" => "Punayanagri,mar", "TOI" => "Times of India,eng", "ET" => "Economic Times,eng", "MT" => "Maharashtra Times,eng", "Mirror" => "Mirror,eng", "DN" => "Dainik Navjyoti,hin", "DST" => "Dainik Savera times,hin", "SOM" => "Star of Mysore,kan", "NHT" => "Nav Hind Times,eng", "OHO" => "O Heral O,eng", "AP" => "Anandabazar Patrika,ben", "ASP" => "Asomiya Pratidin,asm", "BS" => "Bombay Samachar,guj");
 
 $cities_of_interest = array("Delhi", "Jaipur", "Jodhpur", "Udaipur", "Kota", "Bhopal", "Ahmedabad", "Surat", "Vadodara", "Bhavnagar", "Rajkot", "Mumbai", "Pune", "Thane", "Nashik");
 
@@ -73,7 +68,7 @@ foreach ($epapers as $epapercode => $epaperArray) {
     }
 
     $citylinkcode = cityCodeArray($epapercode);
-    $linkArray = cityCodeArray($epapercode);
+    $linkarray = cityCodeArray($epapercode);
 
     $datecode = dateForLinks($epapercode, $filenamedate);
 
@@ -248,7 +243,7 @@ foreach ($epapers as $epapercode => $epaperArray) {
             //     continue;
             // }
 
-            $response = file_get_contents("https://epaper.jagran.com/epaper/" . $dateForLinks . $linkArray[$edition] . ".html", false, stream_context_create($arrContextOptions));
+            $response = file_get_contents("https://epaper.jagran.com/epaper/" . $dateForLinks . $linkarray[$edition] . ".html", false, stream_context_create($arrContextOptions));
             $a = explode('<ul id="menu-toc" class="menu-toc">', $response);
             $b = explode('</ul>', $a[1]);
             $pagesHTML = $b[0];
@@ -570,7 +565,7 @@ foreach ($epapers as $epapercode => $epaperArray) {
             // }
 
             for ($page = 1; $page <= $no_of_pages_to_run_on_each_edition; $page++) {
-                $imagelink = str_replace("md-1", "md-" . $page, str_replace("dateForLinks", $dateForLinks, $linkArray[$edition]));
+                $imagelink = str_replace("md-1", "md-" . $page, str_replace("dateForLinks", $dateForLinks, $linkarray[$edition]));
 
                 if (file_get_contents($imagelink, false, stream_context_create($arrContextOptions))) {
 
@@ -767,7 +762,6 @@ foreach ($epapers as $epapercode => $epaperArray) {
             $citycovered[$city] = $pageforfile - 1;
         }
     }
-
     if ($epapercode == "DST") {
         for ($edition = 0; $edition < count($cityarray); $edition++) {
 
@@ -835,10 +829,9 @@ foreach ($epapers as $epapercode => $epaperArray) {
         for ($page = 1; $page <= count($linkArray); $page++) {
 
             $imagelink = explode('"', explode('"><img src="', $content)[$page])[0];
+
             if (trim($imagelink) == '')
                 break;
-
-            echo $imagelink . PHP_EOL;
 
             $getpath = explode("&", makefilepath($epapercode, "Mysore", $filenamedate, $page, $lang));
 
@@ -887,8 +880,8 @@ foreach ($epapers as $epapercode => $epaperArray) {
 
 
         for ($page = 1; $page <= $no_of_pages_to_run_on_each_edition; $page++) {
-
             $testcontent = file_get_contents("http://epaper.heraldgoa.in/articlepage.php?articleid=OHERALDO_GOA_" . $dateForLinks . "_" . $page . "_1", false, stream_context_create($arrContextOptions));
+
 
             $testimagelink = explode('"', explode('id="artimg" src="', $testcontent)[1])[0];
 
@@ -900,7 +893,6 @@ foreach ($epapers as $epapercode => $epaperArray) {
 
                 $imagelink = explode('"', explode('id="artimg" src="', $response)[1])[0];
 
-                echo $imagelink . PHP_EOL;
                 $imageInfo = getimagesize($imagelink);
 
                 if (!$imageInfo)
@@ -995,8 +987,8 @@ foreach ($epapers as $epapercode => $epaperArray) {
             flush();
         }
     }
-    //exec("rm -f /nvme/*");
-    exec("rm -f ./nvme/*");
 
-    // mysqli_query($conn, "INSERT INTO Crawl_Record1 (Papername,Papershortname,Paperdate) VALUES ('" . $epapername . "','" . $epapercode . "','" . $filenamedate . "')");
+    //exec("rm -f /nvme/*");
+
+    mysqli_query($conn, "INSERT INTO Crawl_Record (Papername,Papershortname,Paperdate) VALUES ('" . $epapername . "','" . $epapercode . "','" . $filenamedate . "')");
 }
