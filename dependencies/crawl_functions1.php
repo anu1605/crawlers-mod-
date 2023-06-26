@@ -29,7 +29,7 @@ function dateForLinks($epapercode, $filenamedate)
         echo "epapercode=" . $epapercode . PHP_EOL;
         return date('Ymd', strtotime($filenamedate));
     } else if ($epapercode == "NHT" or $epapercode == "HB") return date('Y/m/d', strtotime($filenamedate));
-    else if ($epapercode == "EiSamay" or $epapercode == "TOI" or $epapercode == "ET" or $epapercode == "MT" or $epapercode == "Mirror") return  date('d/m/Y', strtotime($filenamedate));
+    else if ($epapercode == "ESM" or $epapercode == "TOI" or $epapercode == "ET" or $epapercode == "MT" or $epapercode == "Mirror") return  date('d/m/Y', strtotime($filenamedate));
     else if ($epapercode == "GSM") return date("d-m-Y", strtotime($filenamedate));
     else if ($epapercode == "DN" or $epapercode == "DJ" or $epapercode == "NB" or $epapercode == "ND" or $epapercode == "NVR" or $epapercode == "PAP") return date('d-M-Y', strtotime($filenamedate));
     else if ($epapercode == "JPS") return date('dmy', strtotime($filenamedate));
@@ -321,7 +321,7 @@ function cityArray($epapercode)
         case "DST":
             return array("Delhi", "Chandigarh", "Haryana");
             break;
-        case "EiSamay":
+        case "ESM":
             return array("Kolkata");
             break;
         default:
@@ -401,7 +401,7 @@ function cityCodeArray($epapercode)
         case "DST":
             return array("DEL", "CHAND", "HAR");
             break;
-        case "EiSamay":
+        case "ESM":
             return array("esamk");
             break;
     }
@@ -409,7 +409,6 @@ function cityCodeArray($epapercode)
 
 function makefilepath($epapercode, $city, $date, $number, $lang)
 {
-    if ($epapercode == "EiSamay") $epapercode = "ESM";
     // $filepath = "/nvme/" . $epapercode . "_" . $city . "_" . $date . "_" . $number . "_admin_" . $lang . ".jpg";
     $filepath = "./nvme/" . $epapercode . "_" . $city . "_" . $date . "_" . $number . "_admin_" . $lang . ".jpg";
     $temp_txtfile = str_replace(".jpg", "", $filepath);
@@ -586,6 +585,7 @@ function getHBeditionlink($city, $dateforlinks, $citylink, $code)
 function crawltoi($cityarray, $dateForLinks, $epapercode, $citycode, $filenamedate, $eol, $conn, $lang, $cities_of_interest, $epapername)
 {
 
+
     for ($edition = 0; $edition < count($cityarray); $edition++) {
         // if (!in_array(ucfirst(explode("-", $cityarray[$edition])[0]), $cities_of_interest)) {
 
@@ -595,7 +595,7 @@ function crawltoi($cityarray, $dateForLinks, $epapercode, $citycode, $filenameda
         $failedPageCount = 0;
         $date_formatted = date("Y/d/m", strtotime($dateForLinks));
 
-        if ($epapercode == "EiSamay") {
+        if ($epapercode == "ESM") {
             $dateTime = DateTime::createFromFormat('d/m/Y', $dateForLinks);
             $date_formatted = $dateTime->format('Y/m/d');
         }
@@ -619,7 +619,7 @@ function crawltoi($cityarray, $dateForLinks, $epapercode, $citycode, $filenameda
                 continue;
             }
             for ($section = 1; $section <= 50; $section++) {
-                $imagelink = "https://asset.harnscloud.com/PublicationData/" . $epapercode . "/" . $citycode[$edition] . "/" . $date_formatted . "/Advertisement/" . str_pad($page, 3, "0", STR_PAD_LEFT) . "/" . str_replace("/", "_", $dateForLinks) . "_" . str_pad($page, 3, "0", STR_PAD_LEFT) . "_" . str_pad($section, 3, "0", STR_PAD_LEFT) . "_" . $citycode[$edition] . ".jpg";
+                $imagelink = "https://asset.harnscloud.com/PublicationData/" . str_replace("ESM", "EiSamay", $epapercode) . "/" . $citycode[$edition] . "/" . $date_formatted . "/Advertisement/" . str_pad($page, 3, "0", STR_PAD_LEFT) . "/" . str_replace("/", "_", $dateForLinks) . "_" . str_pad($page, 3, "0", STR_PAD_LEFT) . "_" . str_pad($section, 3, "0", STR_PAD_LEFT) . "_" . $citycode[$edition] . ".jpg";
 
                 // if (strlen(file_get_contents($url) <= 0)) continue;
 
