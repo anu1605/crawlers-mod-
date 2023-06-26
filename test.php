@@ -1,5 +1,5 @@
 <?php
-$url = 'http://webmilap.com/articlepage.php?articleid=HINDIMIL_HIN_20230625_1_1';
+$url = 'http://webmilap.com/articlepage.php?articleid=HINDIMIL_HIN_20230625_12_1';
 
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);

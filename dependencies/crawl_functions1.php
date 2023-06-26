@@ -1,6 +1,7 @@
 
 
 <?php
+
 header('Content-Type: text/html; charset=utf-8');
 // require  '/var/www/d78236gbe27823/vendor/autoload.php';
 
@@ -24,7 +25,7 @@ function filenamedate($epapercode, $conn)
 
 function dateForLinks($epapercode, $filenamedate)
 {
-    if ($epapercode == "OHO" or $epapercode == "DST" or $epapercode == "PN" or $epapercode == "AU" or $epapercode == "LM" or $epapercode == "SY" or $epapercode == "VV" or $epapercode == "YB") {
+    if ($epapercode == "DHM" or $epapercode == "OHO" or $epapercode == "DST" or $epapercode == "PN" or $epapercode == "AU" or $epapercode == "LM" or $epapercode == "SY" or $epapercode == "VV" or $epapercode == "YB") {
         echo "epapercode=" . $epapercode . PHP_EOL;
         return date('Ymd', strtotime($filenamedate));
     } else if ($epapercode == "NHT" or $epapercode == "HB") return date('Y/m/d', strtotime($filenamedate));
@@ -224,6 +225,14 @@ function dateForLinks($epapercode, $filenamedate)
         }
 
         return $datecode;
+    } else if ($epapercode == "DNS") {
+
+        if (($filenamedate -  date("Y-m-d", time())) == 0) {
+            $dateForLinks = date('dmY', strtotime($filenamedate) - (24 * 3600));
+        } else
+            $dateForLinks = date("dmY", strtotime($filenamedate));
+
+        return $dateForLinks;
     }
 }
 
@@ -429,13 +438,14 @@ function alreadyDone($filepath, $conn)
 }
 function writeImage($url, $path)
 {
-    $arrContextOptions = array(
-        "ssl" => array(
-            "verify_peer" => false,
-            "verify_peer_name" => false,
-        ),
-    );
-    $image = file_get_contents($url, false, stream_context_create($arrContextOptions));
+    // $arrContextOptions = array(
+    //     "ssl" => array(
+    //         "verify_peer" => false,
+    //         "verify_peer_name" => false,
+    //     ),
+    // );
+    $image = getdata($url);
+    // $image = file_get_contents($url, false, stream_context_create($arrContextOptions));
     $handle = fopen($path, "w");
     fwrite($handle, $image);
     fclose($handle);
@@ -654,4 +664,22 @@ function getdata($link)
     $data = curl_exec($ch);
     curl_close($ch);
     return $data;
+}
+
+function writeImageWithCurl($url, $path)
+{
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows;U;Windows NT 5.1;en-US) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.A.B.C Safari/525.13");
+    $data = curl_exec($ch);
+    if (strpos($data, "404 - File or directory not found."))
+        return true;
+
+    $handle = fopen($path, "w");
+    fwrite($handle, $data);
+    fclose($handle);
+    file_put_contents(dirname(__FILE__, 2) . "/test.txt", $data);
+    curl_close($ch);
 }

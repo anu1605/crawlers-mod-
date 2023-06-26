@@ -1,19 +1,19 @@
 Ajit - (seperate text and graphics page)
-Anandabazar Patrika- (Done) {C}
+Anandabazar Patrika- (Done) 
 Andhra Jyothy - (different pgid seperate text and picture page)
 Arunachal Times - (paid)
 Asomiya Khabar - (link = https://www.assamiyakhabor.com/publishfinal/asset/guwahati/current/pages/ghy1.jpg / png)
-Asomiya Pratidin -  (Done){C}
+Asomiya Pratidin -  (Done)
 Assam Rising,Dainandin Barta - (no ads, paid)
-Bombay Samachar - (full page)
+Bombay Samachar - (Done)
 Business Line - (the hindu)
-Daily Excelsior - (pdf to image conversion){C}
-Daily Hindi Milap - (section images){C}
-Daily Kalom = (code same as mc , section images){C}
+Daily Excelsior - (pdf to image conversion, jammu){C}
+Daily Hindi Milap - (Done)
+Daily Kalom = (no ads)
 Daily Thanthi = (paid)
-Dainik Agradoot - (inconsistent links)
+Dainik Agradoot - (inconsistent links, not defined classified ad page)
 Dainik Dabang Dunia - (no ads )
-Dainik Janambhumi - (https://dainikjanambhumi.co.in/21062023/images/p2/main.jpg, small image size){C}
+Dainik Janambhumi - (https://dainikjanambhumi.co.in/21062023/images/p2/main.jpg, small image size, Assam){C}
 Dainik Saamana - (section images, minimum ads, numbers in marathi)
 Dainik Sambad - (https://dainiksambad.net//epaperimages//20062023//page-6ll.png){C}
 Dainik Savera Times - (done)

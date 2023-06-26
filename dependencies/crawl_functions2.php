@@ -22,7 +22,7 @@ function filenamedate($epapercode, $conn)
 
 function dateForLinks($epapercode, $filenamedate)
 {
-    if ($epapercode == "OHO" or $epapercode == "DST" or $epapercode == "PN" or $epapercode == "AU" or $epapercode == "LM" or $epapercode == "SY" or $epapercode == "VV" or $epapercode == "YB") return date('Ymd', strtotime($filenamedate));
+    if ($epapercode == "DHM" or $epapercode == "OHO" or $epapercode == "DST" or $epapercode == "PN" or $epapercode == "AU" or $epapercode == "LM" or $epapercode == "SY" or $epapercode == "VV" or $epapercode == "YB") return date('Ymd', strtotime($filenamedate));
     else if ($epapercode == "NHT" or $epapercode == "HB") return date('Y/m/d', strtotime($filenamedate));
     else if ($epapercode == "TOI" or $epapercode == "ET" or $epapercode == "MT" or $epapercode == "Mirror") return  date('d/m/Y', strtotime($filenamedate));
     else if ($epapercode == "GSM") return date("d-m-Y", strtotime($filenamedate));
@@ -219,6 +219,14 @@ function dateForLinks($epapercode, $filenamedate)
         }
 
         return $datecode;
+    } else if ($epapercode == "DNS") {
+
+        if (($filenamedate -  date("Y-m-d", time())) == 0) {
+            $dateForLinks = date('dmY', strtotime($filenamedate) - (24 * 3600));
+        } else
+            $dateForLinks = date("dmY", strtotime($filenamedate));
+
+        return $dateForLinks;
     }
 }
 
@@ -645,4 +653,22 @@ function getdata($link)
     $data = curl_exec($ch);
     curl_close($ch);
     return $data;
+}
+
+function writeImageWithCurl($url, $path)
+{
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows;U;Windows NT 5.1;en-US) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.A.B.C Safari/525.13");
+    $data = curl_exec($ch);
+    if (strpos($data, "404 - File or directory not found."))
+        return true;
+
+    $handle = fopen($path, "w");
+    fwrite($handle, $data);
+    fclose($handle);
+    file_put_contents(dirname(__FILE__, 2) . "/test.txt", $data);
+    curl_close($ch);
 }
