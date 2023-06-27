@@ -290,11 +290,11 @@ function cityArray($epapercode)
             break;
 
         case "TOI":
-            return  array("Ahmedabad", "Bangalore", "Bhopal", "Chandigarh", "Chennai", "Delhi", "Goa", "Hyderabad", "Jaipur", "Kochi", "Kolkata", "Lucknow", "Mumbai");
+            return  array("Ahmedabad", "Bangalore", "Bhopal", "Chandigarh", "Delhi", "Goa", "Hyderabad", "Jaipur",  "Lucknow", "Mumbai"); //"Kochi", "Kolkata", "Chennai"
             break;
 
         case "ET":
-            return  array("Bangalore", "Mumbai", "Delhi", "Kolkata");
+            return  array("Bangalore", "Mumbai", "Delhi"); //, "Kolkata"
             break;
 
         case "MT":
@@ -367,10 +367,10 @@ function cityCodeArray($epapercode)
             break;
 
         case "TOI":
-            return array("toiac", "toibgc", "toibhoc", "toicgct", "toich", "cap", "toigo", "toih", "toijc", "toikrko", "toikc", "toilc", "toim");
-
+            return array("toiac", "toibgc", "toibhoc", "toicgct", "cap", "toigo", "toih", "toijc",  "toilc", "toim"); //"toikrko", "toikc","toich"
+            break;
         case "ET":
-            return array("etbg", "etmc", "etdc", "etkc");
+            return array("etbg", "etmc", "etdc"); //, "etkc"
             break;
 
         case "MT":

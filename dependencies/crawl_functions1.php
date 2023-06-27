@@ -18,7 +18,7 @@ function filenamedate($epapercode, $conn)
     //     $finddaterow = mysqli_fetch_array($finddaters);
     //     $filedate = date('Y-m-d', strtotime($finddaterow['Paperdate']) + (24 * 3600));
     // } else
-    $filedate = date('Y-m-d', time());
+    $filedate = date('Y-m-d', strtotime("2023-06-04"));
 
     return $filedate;
 }

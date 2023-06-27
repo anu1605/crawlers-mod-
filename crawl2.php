@@ -39,7 +39,7 @@ include "/var/www/d78236gbe27823/marketing/Whatsapp/Crawlers/dependencies/crawl_
 
 //$epapers = array("AU" => "Amar Ujala,hin", "DC" => "Deccan Chronicle,eng", "HB" => "Hari Bhumi,hin", "DJ" => "Danik Jagran,hin", "JPS" => "Janpath Samachar,hin", "KM" => "Karnataka Malla,kan", "LM" => "Lokmat,mar", "MC" => "Mumbai Chaufer,mar", "NB" => "Navbharat,hin", "NBT" => "Navbharat Times,hin", "ND" => "Nai Dunia,hin", "NVR" => "Navrasthra,mar", "NYB" => "Niyomiya Barta,asm", "PAP" => "Purvanchal Prahari,ori", "RS" => "Rashtriya Sahara,hin", "SAM" => "Sambad,ori", "SMJ" => "Samaja,ori", "SY" => "Samyukta Karnataka,kan", "VV" => "Vijayavani,kan", "YB" => "yashobhumi,hin", "SBP" => "Sangbad Pratidin,ben", "POD" => "Pratidin Odia Daily,ori","MM" => "Mysore Mithra,kan");  
 
-$epapers = array("ESM" => "EiSamay,ben", "DNS" => "Danik Sambad,ben", "DHM" => "Daily Hindi Milap,hin", "SOM" => "Star of Mysore,kan", "NHT" => "Nav Hind Times,eng", "OHO" => "O Heral O,eng", "AP" => "Anandabazar Patrika,ben", "ASP" => "Asomiya Pratidin,asm", "BS" => "Bombay Samachar,guj", "AU" => "Amar Ujala,hin", "DC" => "Deccan Chronicle,eng", "HB" => "Hari Bhumi,hin", "DJ" => "Danik Jagran,hin", "LM" => "Lokmat,mar", "MC" => "Mumbai Chaufer,mar", "NB" => "Navbharat,hin", "NBT" => "Navbharat Times,hin", "ND" => "Nai Dunia,hin", "RS" => "Rashtriya Sahara,hin", "YB" => "yashobhumi,hin", "NVR" => "Navrasthra,mar", "GSM" => "Gujarat Samachar,guj", "PN" => "Punayanagri,mar", "TOI" => "Times of India,eng", "ET" => "Economic Times,eng", "MT" => "Maharashtra Times,eng", "Mirror" => "Mirror,eng", "DN" => "Dainik Navjyoti,hin", "DST" => "Dainik Savera times,hin");
+$epapers = array("DHM" => "Daily Hindi Milap,hin", "SOM" => "Star of Mysore,kan", "NHT" => "Nav Hind Times,eng", "OHO" => "O Heral O,eng",   "BS" => "Bombay Samachar,guj", "AU" => "Amar Ujala,hin", "DC" => "Deccan Chronicle,eng", "HB" => "Hari Bhumi,hin", "DJ" => "Danik Jagran,hin", "LM" => "Lokmat,mar", "MC" => "Mumbai Chaufer,mar", "NB" => "Navbharat,hin", "NBT" => "Navbharat Times,hin", "ND" => "Nai Dunia,hin", "RS" => "Rashtriya Sahara,hin", "YB" => "yashobhumi,hin", "NVR" => "Navrasthra,mar", "GSM" => "Gujarat Samachar,guj", "PN" => "Punayanagri,mar", "TOI" => "Times of India,eng", "ET" => "Economic Times,eng", "MT" => "Maharashtra Times,eng", "Mirror" => "Mirror,eng", "DN" => "Dainik Navjyoti,hin", "DST" => "Dainik Savera times,hin"); //,"ESM" => "EiSamay,ben","DNS" => "Danik Sambad,ben","AP" => "Anandabazar Patrika,ben","ASP" => "Asomiya Pratidin,asm"
 
 $cities_of_interest = array("Delhi", "Jaipur", "Jodhpur", "Udaipur", "Kota", "Bhopal", "Ahmedabad", "Surat", "Vadodara", "Bhavnagar", "Rajkot", "Mumbai", "Pune", "Thane", "Nashik");
 
@@ -700,7 +700,10 @@ foreach ($epapers as $epapercode => $epaperArray) {
             echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $cityarray[$edition] . " Completed" . $eol;
         }
     }
-    if ($epapercode == "ESM" or $epapercode == "TOI" or $epapercode == "ET" or $epapercode == "MT" or $epapercode == "Mirror") {
+    // if ($epapercode == "ESM" or $epapercode == "TOI" or $epapercode == "ET" or $epapercode == "MT" or $epapercode == "Mirror") {
+    //     crawltoi($cityarray, $dateForLinks, $epapercode, $citycode, $filenamedate, $eol, $conn, $lang, $cities_of_interest, $epapername);
+    // }
+    if ($epapercode == "TOI" or $epapercode == "ET" or $epapercode == "MT" or $epapercode == "Mirror") {
         crawltoi($cityarray, $dateForLinks, $epapercode, $citycode, $filenamedate, $eol, $conn, $lang, $cities_of_interest, $epapername);
     }
     if ($epapercode == "DN") {
@@ -914,51 +917,51 @@ foreach ($epapers as $epapercode => $epaperArray) {
         }
     }
 
-    if ($epapercode == "AP") {
-        for ($page = 1; $page <= $no_of_pages_to_run_on_each_edition; $page++) {
-            $imagelink = "https://epaper.anandabazar.com/epaperimages////" . $dateForLinks . "////" . $dateForLinks . "-md-hr-" . $page . "ll.png";
-            if (!getimagesize($imagelink))
-                break;
+    // if ($epapercode == "AP") {
+    //     for ($page = 1; $page <= $no_of_pages_to_run_on_each_edition; $page++) {
+    //         $imagelink = "https://epaper.anandabazar.com/epaperimages////" . $dateForLinks . "////" . $dateForLinks . "-md-hr-" . $page . "ll.png";
+    //         if (!getimagesize($imagelink))
+    //             break;
 
-            $getpath = explode("&", makefilepath($epapercode,  "Kolkata", $filenamedate, $page, $lang));
+    //         $getpath = explode("&", makefilepath($epapercode,  "Kolkata", $filenamedate, $page, $lang));
 
-            if (alreadyDone($getpath[0], $conn) == "Yes") continue;
+    //         if (alreadyDone($getpath[0], $conn) == "Yes") continue;
 
-            writeImage($imagelink, $getpath[0]);
+    //         writeImage($imagelink, $getpath[0]);
 
-            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved" . $eol;
-            runTesseract($epapername, "Kolkata", $page, $section, $conn, $getpath, $lang);
-            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . " Page " . $page . " Completed" . $eol;
-            ob_flush();
-            flush();
-        }
-    }
+    //         echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved" . $eol;
+    //         runTesseract($epapername, "Kolkata", $page, $section, $conn, $getpath, $lang);
+    //         echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . " Page " . $page . " Completed" . $eol;
+    //         ob_flush();
+    //         flush();
+    //     }
+    // }
 
-    if ($epapercode == "ASP") {
-        $content = file_get_contents("https://epaper.asomiyapratidin.in/edition/" . $datecode . "/%E0%A6%85%E0%A6%B8%E0%A6%AE%E0%A7%80%E0%A7%9F%E0%A6%BE-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A6%BF%E0%A6%A6%E0%A6%BF%E0%A6%A8", false, stream_context_create($arrContextOptions));
-        $linkArray = explode('"><img src="', $content);
-        $filenamedate = date('Y-m-d', strtotime(trim(explode('|', explode('Asomiya Pratidin ePaper :', $content)[1])[0])));
-        if ($no_of_pages_to_run_on_each_edition > 0 and $no_of_pages_to_run_on_each_edition < count($linkArray)) $linkArray = array_slice($linkArray, 0, $no_of_pages_to_run_on_each_edition + 1);
+    // if ($epapercode == "ASP") {
+    //     $content = file_get_contents("https://epaper.asomiyapratidin.in/edition/" . $datecode . "/%E0%A6%85%E0%A6%B8%E0%A6%AE%E0%A7%80%E0%A7%9F%E0%A6%BE-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A6%BF%E0%A6%A6%E0%A6%BF%E0%A6%A8", false, stream_context_create($arrContextOptions));
+    //     $linkArray = explode('"><img src="', $content);
+    //     $filenamedate = date('Y-m-d', strtotime(trim(explode('|', explode('Asomiya Pratidin ePaper :', $content)[1])[0])));
+    //     if ($no_of_pages_to_run_on_each_edition > 0 and $no_of_pages_to_run_on_each_edition < count($linkArray)) $linkArray = array_slice($linkArray, 0, $no_of_pages_to_run_on_each_edition + 1);
 
-        for ($page = 1; $page <= count($linkArray); $page++) {
-            if ($linkArray[$page] == null)
-                break;
-            $imagelink = str_replace('thumb_150_auto', 'files', explode('"', $linkArray[$page])[0]);
-            if (!getimagesize($imagelink))
-                break;
-            $getpath = explode("&", makefilepath($epapercode, "Guwahati", $filenamedate, $page, $lang));
+    //     for ($page = 1; $page <= count($linkArray); $page++) {
+    //         if ($linkArray[$page] == null)
+    //             break;
+    //         $imagelink = str_replace('thumb_150_auto', 'files', explode('"', $linkArray[$page])[0]);
+    //         if (!getimagesize($imagelink))
+    //             break;
+    //         $getpath = explode("&", makefilepath($epapercode, "Guwahati", $filenamedate, $page, $lang));
 
-            if (alreadyDone($getpath[0], $conn) == "Yes") continue;
+    //         if (alreadyDone($getpath[0], $conn) == "Yes") continue;
 
-            writeImage($imagelink, $getpath[0]);
+    //         writeImage($imagelink, $getpath[0]);
 
-            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved" . $eol;
-            runTesseract($epapername, "Guwahati", $page, 0, $conn, $getpath, $lang);
-            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . " Page " . $page . " Completed" . $eol;
-            ob_flush();
-            flush();
-        }
-    }
+    //         echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved" . $eol;
+    //         runTesseract($epapername, "Guwahati", $page, 0, $conn, $getpath, $lang);
+    //         echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . " Page " . $page . " Completed" . $eol;
+    //         ob_flush();
+    //         flush();
+    //     }
+    // }
 
     if ($epapercode == "BS") {
 
@@ -1021,26 +1024,26 @@ foreach ($epapers as $epapercode => $epaperArray) {
         }
     }
 
-    if ($epapercode == "DNS") {
-        $dateTime = DateTime::createFromFormat('dmY', $dateForLinks);
-        $filenamedate = $dateTime->format('Y-m-d');
+    // if ($epapercode == "DNS") {
+    //     $dateTime = DateTime::createFromFormat('dmY', $dateForLinks);
+    //     $filenamedate = $dateTime->format('Y-m-d');
 
-        for ($page = 1; $page <= $no_of_pages_to_run_on_each_edition; $page++) {
-            $imagelink = "https://www.dainiksambad.net/epaperimages//" . $dateForLinks . "//page-" . $page . "ll.png";
-            $getpath = explode("&", makefilepath($epapercode, "Agartala", $filenamedate, $page, $lang));
-            $islastpage = writeImageWithCurl($imagelink, $getpath[0]);
+    //     for ($page = 1; $page <= $no_of_pages_to_run_on_each_edition; $page++) {
+    //         $imagelink = "https://www.dainiksambad.net/epaperimages//" . $dateForLinks . "//page-" . $page . "ll.png";
+    //         $getpath = explode("&", makefilepath($epapercode, "Agartala", $filenamedate, $page, $lang));
+    //         $islastpage = writeImageWithCurl($imagelink, $getpath[0]);
 
-            if ($islastpage)
-                break;
-            if (alreadyDone($getpath[0], $conn) == "Yes") continue;
+    //         if ($islastpage)
+    //             break;
+    //         if (alreadyDone($getpath[0], $conn) == "Yes") continue;
 
-            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved" . $eol;
-            runTesseract($epapername, "Mumbai", $page, 0, $conn, $getpath, $lang);
-            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>"  . " Page " . $page . " Completed" . $eol;
-            ob_flush();
-            flush();
-        }
-    }
+    //         echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved" . $eol;
+    //         runTesseract($epapername, "Mumbai", $page, 0, $conn, $getpath, $lang);
+    //         echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>"  . " Page " . $page . " Completed" . $eol;
+    //         ob_flush();
+    //         flush();
+    //     }
+    // }
 
     //exec("rm -f /nvme/*");
 
