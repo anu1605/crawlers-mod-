@@ -38,8 +38,8 @@ include "/var/www/d78236gbe27823/includes/connect.php";
 include "/var/www/d78236gbe27823/marketing/Whatsapp/Crawlers/dependencies/crawl_functions.php";
 
 //$epapers = array("AU" => "Amar Ujala,hin", "DC" => "Deccan Chronicle,eng", "HB" => "Hari Bhumi,hin", "DJ" => "Danik Jagran,hin", "JPS" => "Janpath Samachar,hin", "KM" => "Karnataka Malla,kan", "LM" => "Lokmat,mar", "MC" => "Mumbai Chaufer,mar", "NB" => "Navbharat,hin", "NBT" => "Navbharat Times,hin", "ND" => "Nai Dunia,hin", "NVR" => "Navrasthra,mar", "NYB" => "Niyomiya Barta,asm", "PAP" => "Purvanchal Prahari,ori", "RS" => "Rashtriya Sahara,hin", "SAM" => "Sambad,ori", "SMJ" => "Samaja,ori", "SY" => "Samyukta Karnataka,kan", "VV" => "Vijayavani,kan", "YB" => "yashobhumi,hin", "SBP" => "Sangbad Pratidin,ben", "POD" => "Pratidin Odia Daily,ori","MM" => "Mysore Mithra,kan");  
-
-$epapers = array("SOM" => "Star of Mysore,kan", "NHT" => "Nav Hind Times,eng", "OHO" => "O Heral O,eng", "AP" => "Anandabazar Patrika,ben", "ASP" => "Asomiya Pratidin,asm", "BS" => "Bombay Samachar,guj", "AU" => "Amar Ujala,hin", "DC" => "Deccan Chronicle,eng", "HB" => "Hari Bhumi,hin", "DJ" => "Danik Jagran,hin", "LM" => "Lokmat,mar", "MC" => "Mumbai Chaufer,mar", "NB" => "Navbharat,hin", "NBT" => "Navbharat Times,hin", "ND" => "Nai Dunia,hin", "RS" => "Rashtriya Sahara,hin", "YB" => "yashobhumi,hin", "NVR" => "Navrasthra,mar", "GSM" => "Gujarat Samachar,guj", "PN" => "Punayanagri,mar", "TOI" => "Times of India,eng", "ET" => "Economic Times,eng", "MT" => "Maharashtra Times,eng", "Mirror" => "Mirror,eng", "DN" => "Dainik Navjyoti,hin", "DST" => "Dainik Savera times,hin");
+$epapers = array("NVR" => "Navrasthra,mar");
+// $epapers = array("SOM" => "Star of Mysore,kan", "NHT" => "Nav Hind Times,eng", "OHO" => "O Heral O,eng", "AP" => "Anandabazar Patrika,ben", "ASP" => "Asomiya Pratidin,asm", "BS" => "Bombay Samachar,guj", "AU" => "Amar Ujala,hin", "DC" => "Deccan Chronicle,eng", "HB" => "Hari Bhumi,hin", "DJ" => "Danik Jagran,hin", "LM" => "Lokmat,mar", "MC" => "Mumbai Chaufer,mar", "NB" => "Navbharat,hin", "NBT" => "Navbharat Times,hin", "ND" => "Nai Dunia,hin", "RS" => "Rashtriya Sahara,hin", "YB" => "yashobhumi,hin", "NVR" => "Navrasthra,mar", "GSM" => "Gujarat Samachar,guj", "PN" => "Punayanagri,mar", "TOI" => "Times of India,eng", "ET" => "Economic Times,eng", "MT" => "Maharashtra Times,eng", "Mirror" => "Mirror,eng", "DN" => "Dainik Navjyoti,hin", "DST" => "Dainik Savera times,hin");
 
 $cities_of_interest = array("Delhi", "Jaipur", "Jodhpur", "Udaipur", "Kota", "Bhopal", "Ahmedabad", "Surat", "Vadodara", "Bhavnagar", "Rajkot", "Mumbai", "Pune", "Thane", "Nashik");
 
@@ -510,7 +510,6 @@ foreach ($epapers as $epapercode => $epaperArray) {
             // }
 
             for ($page = 1; $page <= $no_of_pages_to_run_on_each_edition; $page++) {
-
                 echo "Page: " . $page . $eol . $eol;
 
                 echo $testurl = "https://epaper.navarashtra.com/article-" . $dateForLinks . "-" . $cityarray[$edition] . "-edition/" . $page . "-1/";
@@ -524,7 +523,8 @@ foreach ($epapers as $epapercode => $epaperArray) {
                     break;
 
                 for ($section = 1; $section <= $no_of_sections_to_run_on_each_page; $section++) {
-
+                    if ($page == 7 and $section == 9 and strtolower($cityarray[$edition]) == "pune")
+                        continue;
                     echo "Section: " . $section . $eol . $eol;
 
                     echo $link =   "https://epaper.navarashtra.com/article-" . $dateForLinks . "-" . $cityarray[$edition] . "-edition/" . $page . "-" . $section . "/";

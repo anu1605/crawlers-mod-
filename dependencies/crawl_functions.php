@@ -415,7 +415,7 @@ function alreadyDone($filepath, $conn)
         $section = '0';
     }
 
-    if(mysqli_num_rows(mysqli_query($conn,"SELECT * FROM Crawl_Record WHERE Papershortname = '" . $newspaper_name . "' AND Paperdate = '" . $date . "'"))) return "Yes";
+    if (mysqli_num_rows(mysqli_query($conn, "SELECT * FROM Crawl_Record WHERE Papershortname = '" . $newspaper_name . "' AND Paperdate = '" . $date . "'"))) return "Yes";
 
     $q = "select * from Crawled_Pages WHERE Papershortname = '" . $newspaper_name . "' AND Paperdate = '" . $date . "' AND Edition = '" . $edition . "' AND Page = '" . $page . "' AND Section = '" . $section . "'";
     $rs = mysqli_query($conn, $q);
@@ -436,19 +436,20 @@ function writeImage($url, $path)
     fclose($handle);
 }
 
-function runOpenCV($filepath,$conn){
+function runOpenCV($filepath, $conn)
+{
 
-    $b = explode("/",$filepath);
-    $filepath = $b[count($b)-1];
+    $b = explode("/", $filepath);
+    $filepath = $b[count($b) - 1];
 
     $a = explode("_", $filepath);
     $papershortname = $a[0];
     $ImagesBaseDir = '/var/www/d78236gbe27823/nvme';
-    $smallImageDir = $ImagesBaseDir."/".$papershortname;
-    $largeImagePath = $ImagesBaseDir."/".$filepath;
+    $smallImageDir = $ImagesBaseDir . "/" . $papershortname;
+    $largeImagePath = $ImagesBaseDir . "/" . $filepath;
 
-    $q = "INSERT INTO opencv (Large_Image) VALUES ('".$filepath."') ON DUPLICATE KEY UPDATE Large_Image = VALUES(Large_Image)";
-    mysqli_query($conn,$q);
+    $q = "INSERT INTO opencv (Large_Image) VALUES ('" . $filepath . "') ON DUPLICATE KEY UPDATE Large_Image = VALUES(Large_Image)";
+    mysqli_query($conn, $q);
 
     $found = false;
 
@@ -466,23 +467,23 @@ function runOpenCV($filepath,$conn){
 
         $outputVars = exec("iii " . $largeImagePath . " " . $smallImagePath);
 
-        $output = explode("~~",$outputVars)[0];
-        $accuracy = explode("~~",$outputVars)[1];
+        $output = explode("~~", $outputVars)[0];
+        $accuracy = explode("~~", $outputVars)[1];
 
-        $b = explode("/",$smallImagePath);
+        $b = explode("/", $smallImagePath);
 
-        $current_small_image = $b[count($b)-1];
+        $current_small_image = $b[count($b) - 1];
 
-        echo $current_small_image." | ".$accuracy."<br>";
+        echo $current_small_image . " | " . $accuracy . "<br>";
 
-        if($accuracy>$prevaccuracy){
-            $updq = "UPDATE opencv SET Small_Image = '".$current_small_image."', Accuracy = '".$accuracy."' WHERE Large_Image = '".$filepath."'";
-            mysqli_query($conn,$updq);
+        if ($accuracy > $prevaccuracy) {
+            $updq = "UPDATE opencv SET Small_Image = '" . $current_small_image . "', Accuracy = '" . $accuracy . "' WHERE Large_Image = '" . $filepath . "'";
+            mysqli_query($conn, $updq);
             $prevaccuracy = $accuracy;
         }
 
         if (trim($output) == 'Image found.') {
-            mysqli_query($conn,"UPDATE opencv SET Small_Image = '".$current_small_image."', AI_Decision = 'Approved' WHERE Large_Image = '".$filepath."'");
+            mysqli_query($conn, "UPDATE opencv SET Small_Image = '" . $current_small_image . "', AI_Decision = 'Approved' WHERE Large_Image = '" . $filepath . "'");
             return true;
         }
     }
@@ -515,20 +516,18 @@ function runTesseract($epapername, $edition, $page, $section, $conn, $patharray,
         die($eol . $eol . date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . "EMERGENCY STOP CALLED" . $eol . $eol);
     }
 
-    $opencvPapers = array("SOM","RS","MC","NVR","OHO","DST","DC","GSM","LM","NBT","DJ","ND","NB","AU","BS","DN","ASP","PN","YB");
+    $opencvPapers = array("SOM", "RS", "MC", "NVR", "OHO", "DST", "DC", "GSM", "LM", "NBT", "DJ", "ND", "NB", "AU", "BS", "DN", "ASP", "PN", "YB");
 
-    if(in_array($newspaper_name,$opencvPapers)){
+    if (in_array($newspaper_name, $opencvPapers)) {
 
-        if(!runOpenCV($filepath,$conn)){
+        if (!runOpenCV($filepath, $conn)) {
 
-            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>OpenCV Completed. ".$filepath." is not a classified page" .  $eol;
+            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>OpenCV Completed. " . $filepath . " is not a classified page" .  $eol;
             $iq = "INSERT IGNORE INTO Crawled_Pages (Papername,Papershortname,Paperdate,Edition,Page,Section,No_Of_Mobiles_Found,Start_Time) VALUES ('" . $epapername . "','" . $newspaper_name . "','" . $newspaper_date . "','" . $newspaper_region . "','" . $page . "','" . $section . "','0','" . $starttime . "')";
             echo $eol . $iq . "" . $eol;
             mysqli_query($conn, $iq);
             return true;
-
         }
-
     }
 
     try {
@@ -557,7 +556,6 @@ function runTesseract($epapername, $edition, $page, $section, $conn, $patharray,
         if ($n == 0) {
 
             echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. No numbers found" .  $eol;
-
         } else {
 
             echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. " . $n . " numbers found. File Saved" . $eol;

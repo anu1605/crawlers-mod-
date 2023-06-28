@@ -18,7 +18,7 @@ function filenamedate($epapercode, $conn)
     //     $finddaterow = mysqli_fetch_array($finddaters);
     //     $filedate = date('Y-m-d', strtotime($finddaterow['Paperdate']) + (24 * 3600));
     // } else
-    $filedate = date('Y-m-d', strtotime("2023-06-04"));
+    $filedate = date('Y-m-d', strtotime("2023-06-27"));
 
     return $filedate;
 }
@@ -233,6 +233,8 @@ function dateForLinks($epapercode, $filenamedate)
             $dateForLinks = date("dmY", strtotime($filenamedate));
 
         return $dateForLinks;
+    } else if ($epapercode == "NGS") {
+        return strtoupper(date("d-F-Y", time()));
     }
 }
 
@@ -444,14 +446,14 @@ function alreadyDone($filepath, $conn)
 }
 function writeImage($url, $path)
 {
-    // $arrContextOptions = array(
-    //     "ssl" => array(
-    //         "verify_peer" => false,
-    //         "verify_peer_name" => false,
-    //     ),
-    // );
-    $image = getdata($url);
-    // $image = file_get_contents($url, false, stream_context_create($arrContextOptions));
+    $arrContextOptions = array(
+        "ssl" => array(
+            "verify_peer" => false,
+            "verify_peer_name" => false,
+        ),
+    );
+    // $image = getdata($url);
+    $image = file_get_contents($url, false, stream_context_create($arrContextOptions));
     $handle = fopen($path, "w");
     fwrite($handle, $image);
     fclose($handle);

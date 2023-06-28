@@ -48,7 +48,7 @@
 
     //$epapers = array("AU" => "Amar Ujala,hin", "DC" => "Deccan Chronicle,eng", "HB" => "Hari Bhumi,hin", "DJ" => "Danik Jagran,hin", "JPS" => "Janpath Samachar,hin", "KM" => "Karnataka Malla,kan", "LM" => "Lokmat,mar", "MC" => "Mumbai Chaufer,mar", "NB" => "Navbharat,hin", "NBT" => "Navbharat Times,hin", "ND" => "Nai Dunia,hin", "NVR" => "Navrasthra,mar", "NYB" => "Niyomiya Barta,asm", "PAP" => "Purvanchal Prahari,ori", "RS" => "Rashtriya Sahara,hin", "SAM" => "Sambad,ori", "SMJ" => "Samaja,ori", "SY" => "Samyukta Karnataka,kan", "VV" => "Vijayavani,kan", "YB" => "yashobhumi,hin", "SBP" => "Sangbad Pratidin,ben", "POD" => "Pratidin Odia Daily,ori","MM" => "Mysore Mithra,kan");  
 
-    $epapers = array("NGS" => "Nav Gujarat Samay");
+    $epapers = array("NGS" => "Nav Gujarat Samay,guj");
     // $epapers = array( "AU" => "Amar Ujala,hin", "DC" => "Deccan Chronicle,eng", "HB" => "Hari Bhumi,hin", "DJ" => "Danik Jagran,hin", "LM" => "Lokmat,mar", "MC" => "Mumbai Chaufer,mar", "NB" => "Navbharat,hin", "NBT" => "Navbharat Times,hin", "ND" => "Nai Dunia,hin", "RS" => "Rashtriya Sahara,hin", "YB" => "yashobhumi,hin", "NVR" => "Navrasthra,mar", "GSM" => "Gujarat Samachar,guj", "PN" => "Punayanagri,mar", "TOI" => "Times of India,eng", "ET" => "Economic Times,eng", "MT" => "Maharashtra Times,eng", "Mirror" => "Mirror,eng", "DN" => "Dainik Navjyoti,hin","DST" => "Dainik Savera times,hin","SOM" => "Star of Mysore,kan","NHT" => "Nav Hind Times,eng","OHO" => "O Heral O,eng","AP" => "Anandabazar Patrika,ben","ASP" => "Asomiya Pratidin,asm","BS" => "Bombay Samachar,guj","DHM" => "Daily Hindi Milap,hin","DNS" => "Danik Sambad,ben","ESM" => "EiSamay,ben","HTV" => "Hitavada,eng");
 
     $cities_of_interest = array("Delhi", "Jaipur", "Jodhpur", "Udaipur", "Kota", "Bhopal", "Ahmedabad", "Surat", "Vadodara", "Bhavnagar", "Rajkot", "Mumbai", "Pune", "Thane", "Nashik");
@@ -1079,9 +1079,7 @@
 
                 try {
                     $client->start();
-
                     $client->request('GET', $url);
-
                     $client->wait(10, 500)->until(
                         WebDriverExpectedCondition::presenceOfElementLocated(WebDriverBy::cssSelector('div.map.maphilighted'))
                     );
@@ -1102,23 +1100,17 @@
                     );
 
                     $client->executeScript("document.getElementById('zoom_btn').click()");
-
                     $client->wait(10, 500)->until(
                         WebDriverExpectedCondition::presenceOfElementLocated(WebDriverBy::cssSelector('.icon_btn.selected'))
                     );
 
                     $client->executeScript('window.scrollTo(0, document.body.scrollHeight);');
-
                     $client->executeScript('window.scrollTo(1000, 0);');
-
                     $scrollWidth = $client->executeScript('return Math.max(document.documentElement.scrollWidth, document.body.scrollWidth);');
                     $scrollHeight = $client->executeScript('return Math.max(document.documentElement.scrollHeight, document.body.scrollHeight);');
-
                     $window = $client->getWebDriver()->manage()->window();
                     $window->setSize(new WebDriverDimension($scrollWidth, $scrollHeight));
-
                     $client->takeScreenshot($outputFile);
-
                     $window->setSize(new WebDriverDimension(1920, 1080));
 
                     echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved" . $eol;
@@ -1134,7 +1126,69 @@
             }
         }
 
-        if()
+        if ($epapercode == "NGS") {
+            $ch = curl_init();
+            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+            curl_setopt($ch, CURLOPT_URL, "https://epaper.navgujaratsamay.com/");
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+            curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.A.B.C Safari/525.13");
+            $data = curl_exec($ch);
+            curl_close($ch);
+
+            $datecode = explode('"', explode('"https://epaper.navgujaratsamay.com/r/', $data)[1])[0];
+            $filenamedate = date("Y-m-d", time());
+            $totalPages = end(explode("of ", explode('<i class="fa fa-caret-down"',  $data)[0]));
+
+            if (!($no_of_pages_to_run_on_each_edition > 0 and $no_of_pages_to_run_on_each_edition < $totalPages)) $no_of_pages_to_run_on_each_edition = $totalPages;
+
+            for ($page = 1; $page <= $no_of_pages_to_run_on_each_edition; $page++) {
+                $url = "https://epaper.navgujaratsamay.com/" . $datecode . "/Ahmedabad/" . $dateForLinks . "#page/" . $page . "/3";
+                $getpath = explode("&", makefilepath($epapercode, "Ahmedabad", $filenamedate, $page, $lang));
+                $outputFile = $getpath[0];
+
+                $client = Client::createChromeClient();
+                try {
+                    $client->start();
+                    $client->request('GET', $url);
+
+                    $client->wait(10, 500)->until(function () use ($client) {
+                        $element = $client->getCrawler()->filter('#top-container')->first();
+                        $style = $element->attr('style');
+                        return strpos($style, 'width: 2250px;') !== false;
+                    });
+
+                    $client->executeScript('window.scrollTo(0, document.body.scrollHeight);');
+                    $client->executeScript('window.scrollTo(1000, 0);');
+                    $window = $client->getWebDriver()->manage()->window();
+                    $scrollWidth = $client->executeScript('return Math.max(document.documentElement.scrollWidth, document.body.scrollWidth);');
+                    $scrollHeight = $client->executeScript('return Math.max(document.documentElement.scrollHeight, document.body.scrollHeight);');
+                    sleep(3);
+                    $window->setSize(new WebDriverDimension($scrollWidth, $scrollHeight));
+
+                    try {
+                        $client->wait(5, 500)->until(function () use ($client) {
+                            $element = $client->getCrawler()->filter('.doesnt_exist')->first();
+                        });
+                    } catch (Exception $e) {
+                        echo PHP_EOL . $e . PHP_EOL;
+                    } finally {
+                        $client->takeScreenshot($outputFile);
+                        $window->setSize(new WebDriverDimension(1920, 1080));
+                        $client->quit();
+                    }
+
+                    if (alreadyDone($getpath[0], $conn) == "Yes") continue;
+                    echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved" . $eol;
+                    // runTesseract($epapername, "Ahmedabad", $page, 0, $conn, $getpath, $lang);
+                    echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>"  . " Page " . $page . " Completed" . $eol;
+                    ob_flush();
+                    flush();
+                } catch (TimeoutException $e) {
+                    $client->quit();
+                    exit;
+                }
+            }
+        }
         //exec("rm -f /nvme/*");
         // exec("rm -f ./nvme/*");
 
