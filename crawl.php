@@ -994,5 +994,5 @@ foreach ($epapers as $epapercode => $epaperArray) {
 
     //exec("rm -f /nvme/*");
 
-    mysqli_query($conn, "INSERT INTO Crawl_Record (Papername,Papershortname,Paperdate) VALUES ('" . $epapername . "','" . $epapercode . "','" . $filenamedate . "')");
+    mysqli_query($conn, "INSERT IGNORE INTO Crawl_Record (Papername,Papershortname,Paperdate) VALUES ('" . $epapername . "','" . $epapercode . "','" . $filenamedate . "')");
 }
