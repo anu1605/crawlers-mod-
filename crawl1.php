@@ -1127,67 +1127,93 @@
         }
 
         if ($epapercode == "NGS") {
-            $ch = curl_init();
-            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-            curl_setopt($ch, CURLOPT_URL, "https://epaper.navgujaratsamay.com/");
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-            curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.A.B.C Safari/525.13");
-            $data = curl_exec($ch);
-            curl_close($ch);
+            $data = getdata("https://epaper.navgujaratsamay.com/");
 
             $datecode = explode('"', explode('"https://epaper.navgujaratsamay.com/r/', $data)[1])[0];
             $filenamedate = date("Y-m-d", time());
-            $totalPages = end(explode("of ", explode('<i class="fa fa-caret-down"',  $data)[0]));
+            $response = getdata("https://epaper.navgujaratsamay.com/" . $datecode . "/Ahmedabad/" . $dateForLinks . "#page/1/3");
+            $totalPages = number_format(end(explode("of ", explode('<i class="fa fa-caret-down"',  $response)[0])));
 
             if (!($no_of_pages_to_run_on_each_edition > 0 and $no_of_pages_to_run_on_each_edition < $totalPages)) $no_of_pages_to_run_on_each_edition = $totalPages;
+
+            $resized = false;
+
+            $client = Client::createChromeClient();
+            $client->start();
+
+            $window = $client->getWebDriver()->manage()->window();
+            $window->maximize(); // Maximize the window to ensure full page capture
 
             for ($page = 1; $page <= $no_of_pages_to_run_on_each_edition; $page++) {
                 $url = "https://epaper.navgujaratsamay.com/" . $datecode . "/Ahmedabad/" . $dateForLinks . "#page/" . $page . "/3";
                 $getpath = explode("&", makefilepath($epapercode, "Ahmedabad", $filenamedate, $page, $lang));
                 $outputFile = $getpath[0];
 
-                $client = Client::createChromeClient();
-                try {
-                    $client->start();
-                    $client->request('GET', $url);
+                $client->request('GET', $url);
 
-                    $client->wait(10, 500)->until(function () use ($client) {
-                        $element = $client->getCrawler()->filter('#top-container')->first();
-                        $style = $element->attr('style');
-                        return strpos($style, 'width: 2250px;') !== false;
-                    });
+                $client->wait(10, 500)->until(function () use ($client) {
+                    $element1 = $client->getCrawler()->filter('#top-container')->first();
+                    $element2 = $client->getCrawler()->filter('#content-container')->first();
+                    return strpos($element1->attr('style'), 'width: 2250px;') !== false
+                        && strpos($element2->attr('style'), 'width: 2220px;') !== false;
+                });
 
-                    $client->executeScript('window.scrollTo(0, document.body.scrollHeight);');
-                    $client->executeScript('window.scrollTo(1000, 0);');
-                    $window = $client->getWebDriver()->manage()->window();
+                $client->executeScript('document.getElementById("top-clips-box").style.display = "block";');
+                sleep(1); // Wait for the top-clips-box to become visible
+                if (!$resized) {
                     $scrollWidth = $client->executeScript('return Math.max(document.documentElement.scrollWidth, document.body.scrollWidth);');
                     $scrollHeight = $client->executeScript('return Math.max(document.documentElement.scrollHeight, document.body.scrollHeight);');
+
+                    $window->setSize(new WebDriverDimension($scrollWidth, $scrollHeight)); // Resize the window to the full page size
+                    $resized = true;
                     sleep(3);
-                    $window->setSize(new WebDriverDimension($scrollWidth, $scrollHeight));
-
-                    try {
-                        $client->wait(5, 500)->until(function () use ($client) {
-                            $element = $client->getCrawler()->filter('.doesnt_exist')->first();
-                        });
-                    } catch (Exception $e) {
-                        echo PHP_EOL . $e . PHP_EOL;
-                    } finally {
-                        $client->takeScreenshot($outputFile);
-                        $window->setSize(new WebDriverDimension(1920, 1080));
-                        $client->quit();
-                    }
-
-                    if (alreadyDone($getpath[0], $conn) == "Yes") continue;
-                    echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved" . $eol;
-                    // runTesseract($epapername, "Ahmedabad", $page, 0, $conn, $getpath, $lang);
-                    echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>"  . " Page " . $page . " Completed" . $eol;
-                    ob_flush();
-                    flush();
-                } catch (TimeoutException $e) {
-                    $client->quit();
-                    exit;
                 }
+
+                $client->takeScreenshot($outputFile);
+
+                if (alreadyDone($getpath[0], $conn) == "Yes") continue;
+                echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved" . $eol;
+                // runTesseract($epapername, "Ahmedabad", $page, 0, $conn, $getpath, $lang);
+                echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>"  . " Page " . $page . " Completed" . $eol;
+                ob_flush();
+                flush();
+
+                ob_flush();
+                flush();
             }
+
+            $client->quit();
+
+
+            // for ($page = 1; $page <= $no_of_pages_to_run_on_each_edition; $page++) {
+            //     usleep(2000000); // Wait for 3 seconds (adjust the sleep time as needed)
+
+            //     $url = "https://epaper.navgujaratsamay.com/" . $datecode . "/Ahmedabad/" . $dateForLinks . "#page/" . $page . "/3";
+
+            //     try {
+            //         $client->request('GET', $url);
+
+            //         $client->wait(10, 500)->until(function () use ($client) {
+            //             $element = $client->getCrawler()->filter('#top-container')->first();
+            //             $style = $element->attr('style');
+            //             return strpos($style, 'width: 2250px;') !== false;
+            //         });
+
+            //         $client->executeScript('window.scrollTo(0, document.body.scrollHeight);');
+            //         $client->executeScript('window.scrollTo(1000, 0);');
+            //         $window = $client->getWebDriver()->manage()->window();
+            //         $scrollWidth = $client->executeScript('return Math.max(document.documentElement.scrollWidth, document.body.scrollWidth);');
+            //         $scrollHeight = $client->executeScript('return Math.max(document.documentElement.scrollHeight, document.body.scrollHeight);');
+            //         $window->setSize(new WebDriverDimension($scrollWidth, $scrollHeight));
+
+            //         usleep(3000000); // Wait for 3 seconds (adjust the sleep time as needed)
+
+            //         $client->takeScreenshot($outputFile);
+            //     } catch (TimeoutException $e) {
+            //         $client->quit();
+            //         exit;
+            //     }
+            // }
         }
         //exec("rm -f /nvme/*");
         // exec("rm -f ./nvme/*");
