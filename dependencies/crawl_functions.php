@@ -492,131 +492,119 @@ function runOpenCV($filepath, $conn)
 
 function runTesseract($epapername, $edition, $page, $section, $conn, $patharray, $lang)
 {
-    global $eol;
+    // global $eol;
 
-    $filepath = $patharray[0];
-    $temp_txtfile = $patharray[1];
-    $txtfile = $patharray[2];
-    $newspaper_name = $patharray[3];
-    $newspaper_region = $patharray[4];
-    $newspaper_date = $patharray[5];
-    $newspaper_lang = $patharray[6];
-    $Image_file_name = $patharray[7];
-    $newspaper_operator_name = $patharray[8];
-    $starttime = date('Y-m-d H:i:s', time());
+    // $opencvPapers = array("SOM", "RS", "MC", "NVR", "OHO", "DST", "DC", "GSM", "LM", "NBT", "DJ", "ND", "NB", "AU", "BS", "DN", "ASP", "PN", "YB");
 
-    $emergencyStopQ = "SELECT Emergency_STOP FROM Emergency WHERE Instruction_For = 'crawl.php'";
-    $emergencyStopRS = mysqli_query($conn, $emergencyStopQ);
-    $emergencyStopRow = mysqli_fetch_array($emergencyStopRS);
+    // $filepath = $patharray[0];
+    // $temp_txtfile = $patharray[1];
+    // $txtfile = $patharray[2];
+    // $newspaper_name = $patharray[3];
+    // $newspaper_region = $patharray[4];
+    // $newspaper_date = $patharray[5];
+    // $newspaper_lang = $patharray[6];
+    // $Image_file_name = $patharray[7];
+    // $newspaper_operator_name = $patharray[8];
+    // $starttime = date('Y-m-d H:i:s', time());
 
-    if ($emergencyStopRow['Emergency_STOP'] == "STOP") {
+    // $emergencyStopQ = "SELECT Emergency_STOP FROM Emergency WHERE Instruction_For = 'crawl.php'";
+    // $emergencyStopRS = mysqli_query($conn, $emergencyStopQ);
+    // $emergencyStopRow = mysqli_fetch_array($emergencyStopRS);
 
-        echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $newspaper_region . " Page " . $page . " Section " . $section . " Completed" . $eol;
-        mysqli_query($conn, "UPDATE Emergency SET Emergency_STOP = 'Keep Going' WHERE Instruction_For = 'crawl.php'");
-        die($eol . $eol . date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . "EMERGENCY STOP CALLED" . $eol . $eol);
-    }
+    // if ($emergencyStopRow['Emergency_STOP'] == "STOP") {
 
-    $opencvPapers = array("SOM", "RS", "MC", "NVR", "OHO", "DST", "DC", "GSM", "LM", "NBT", "DJ", "ND", "NB", "AU", "BS", "DN", "ASP", "PN", "YB");
+    //     echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $newspaper_region . " Page " . $page . " Section " . $section . " Completed" . $eol;
+    //     mysqli_query($conn, "UPDATE Emergency SET Emergency_STOP = 'Keep Going' WHERE Instruction_For = 'crawl.php'");
+    //     die($eol . $eol . date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . "EMERGENCY STOP CALLED" . $eol . $eol);
+    // }
 
-    if (in_array($newspaper_name, $opencvPapers)) {
+    // try {
 
-        if (!runOpenCV($filepath, $conn)) {
+    //     if ($lang != 'eng') $command = "tesseract " . $filepath . " " . $temp_txtfile . " -l " . $lang . "+eng > /dev/null 2>&1";
+    //     else $command = "tesseract " . $filepath . " " . $temp_txtfile . " -l eng > /dev/null 2>&1";
 
-            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>OpenCV Completed. " . $filepath . " is not a classified page" .  $eol;
-            $iq = "INSERT IGNORE INTO Crawled_Pages (Papername,Papershortname,Paperdate,Edition,Page,Section,No_Of_Mobiles_Found,Start_Time) VALUES ('" . $epapername . "','" . $newspaper_name . "','" . $newspaper_date . "','" . $newspaper_region . "','" . $page . "','" . $section . "','0','" . $starttime . "')";
-            echo $eol . $iq . "" . $eol;
-            mysqli_query($conn, $iq);
-            return true;
-        }
-    }
+    //     exec($command);
 
-    try {
+    //     $text = file_get_contents($temp_txtfile . ".txt");
 
-        if ($lang != 'eng') $command = "tesseract " . $filepath . " " . $temp_txtfile . " -l " . $lang . "+eng > /dev/null 2>&1";
-        else $command = "tesseract " . $filepath . " " . $temp_txtfile . " -l eng > /dev/null 2>&1";
+    //     $matches = array();
+    //     preg_match_all('/\+91[0-9]{10}|[0]?[6-9][0-9]{4}[\s]?[-]?[0-9]{5}/', $text, $matches);
+    //     $matches = str_replace("+91", "", str_replace("\n", "", str_replace("-", "", str_replace(" ", "", $matches[0]))));
 
-        //$output = shell_exec('python3 /var/www/d78236gbe27823/marketing/Whatsapp/python.py' . ' ' . $filepath);
-        //$string = explode(',', trim($output));
-        //if ($string[0] != "classified")
-        //    return;
+    //     foreach ($matches as $match => $val) $matches[$match] = ltrim($val, "0");
 
-        exec($command);
-        $text = file_get_contents($temp_txtfile . ".txt");
-        //$text = $string[1];
+    //     $n = count($matches);
 
+    //     if ($n < 5) {
 
-        //$text = (new TesseractOCR($filepath))->lang($lang,'eng')->run();
+    //         echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. No numbers found" .  $eol;
+    //     } else {
 
-        $matches = array();
-        preg_match_all('/\+91[0-9]{10}|[0]?[6-9][0-9]{4}[\s]?[-]?[0-9]{5}/', $text, $matches);
-        $matches = str_replace("+91", "", str_replace("\n", "", str_replace("-", "", str_replace(" ", "", $matches[0]))));
-        foreach ($matches as $match => $val) $matches[$match] = ltrim($val, "0");
-        $n = count($matches);
+    //         echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. " . $n . " numbers found. File Saved" . $eol;
 
-        if ($n == 0) {
+    //         rename($temp_txtfile . ".txt", $txtfile);
 
-            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. No numbers found" .  $eol;
-        } else {
+    //         echo $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Starting to add in the database...";
 
-            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. " . $n . " numbers found. File Saved" . $eol;
+    //         $values = "";
+    //         $values_non_unique = "";
 
-            // $handle = fopen($txtfile,"w");
-            // fwrite($handle,$text);
-            // fclose($handle);
+    //         for ($i = 0; $i < $n; $i++) {
 
-            rename($temp_txtfile . ".txt", $txtfile);
-            //$file = fopen($temp_txtfile, "w+");
-            //fwrite($file, $text);
-            //fclose($file);
+    //             $blockcheck = "select * from Blocked_Numbers where Mobile_No = '" . $matches[$i] . "'";
+    //             $bcrs = mysqli_query($conn, $blockcheck);
+    //             if (!mysqli_num_rows($bcrs)) {
+    //                 $values .= "('" . $matches[$i] . "','" . $newspaper_name . "','" . $newspaper_region . "','" . $newspaper_date . "','" . $newspaper_lang . "','" . $Image_file_name . "','" . $newspaper_operator_name . "'),";
+    //                 $values_non_unique .= "('" . $matches[$i] . "','" . $newspaper_name . "','" . $newspaper_region . "','" . $newspaper_date . "','" . $newspaper_lang . "','" . $Image_file_name . "','" . $newspaper_operator_name . "'),";
+    //             } else echo "" . $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Skipping " . $matches[$i] . " found in blocked numbers";
+    //         }
 
-            echo $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Starting to add in the database...";
+    //         if (strlen($values) > 0) {
 
-            $values = "";
-            $values_non_unique = "";
+    //             $values = substr($values, 0, strlen($values) - 1) . " ON DUPLICATE KEY UPDATE Newspaper_Name = VALUES(Newspaper_Name), Newspaper_Region = VALUES(Newspaper_Region), Newspaper_Date = VALUES(Newspaper_Date), Newspaper_Lang = VALUES(Newspaper_Lang);";
 
-            for ($i = 0; $i < $n; $i++) {
+    //             $values_non_unique = substr($values_non_unique, 0, strlen($values_non_unique) - 1);
 
-                $blockcheck = "select * from Blocked_Numbers where Mobile_No = '" . $matches[$i] . "'";
-                $bcrs = mysqli_query($conn, $blockcheck);
-                if (!mysqli_num_rows($bcrs)) {
-                    $values .= "('" . $matches[$i] . "','" . $newspaper_name . "','" . $newspaper_region . "','" . $newspaper_date . "','" . $newspaper_lang . "','" . $Image_file_name . "','" . $newspaper_operator_name . "'),";
-                    $values_non_unique .= "('" . $matches[$i] . "','" . $newspaper_name . "','" . $newspaper_region . "','" . $newspaper_date . "','" . $newspaper_lang . "','" . $Image_file_name . "','" . $newspaper_operator_name . "'),";
-                } else echo "" . $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Skipping " . $matches[$i] . " found in blocked numbers";
-            }
+    //             echo $eol . "=================================" . $eol;
+    //             echo $q_non_unqiue = "insert into Mobile_Lists_NON_Unique (Mobile_Number,Newspaper_Name,Newspaper_Region,Newspaper_Date,Newspaper_Lang,Image_File_Name,Image_Operator) values " . $values_non_unique;
+    //             echo $eol;
+    //             echo $q = "insert into Mobile_Lists (Mobile_Number,Newspaper_Name,Newspaper_Region,Newspaper_Date,Newspaper_Lang,Image_File_Name,Image_Operator) values " . $values;
+    //             echo $eol . "=================================" . $eol;
 
-            if (strlen($values) > 0) {
+    //             if (!mysqli_query($conn, $q)) {
+    //                 echo  $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Error in insert query... ABORTING!" . $eol . $q . "" . $eol;
+    //                 die();
+    //             }
 
-                $values = substr($values, 0, strlen($values) - 1) . " ON DUPLICATE KEY UPDATE Newspaper_Name = VALUES(Newspaper_Name), Newspaper_Region = VALUES(Newspaper_Region), Newspaper_Date = VALUES(Newspaper_Date), Newspaper_Lang = VALUES(Newspaper_Lang);";
+    //             if (!mysqli_query($conn, $q_non_unqiue)) {
+    //                 echo  $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Error in insert query... ABORTING!" . $eol . $q_non_unqiue . "" . $eol . $eol . mysqli_error($conn);
+    //                 die();
+    //             }
 
-                $values_non_unique = substr($values_non_unique, 0, strlen($values_non_unique) - 1);
+    //             echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=> Running OpenCV to STOP Sending of messages on Non Classified Decisions FROM AI" .  $eol;
 
-                echo $eol . "=================================" . $eol;
-                echo $q_non_unqiue = "insert into Mobile_Lists_NON_Unique (Mobile_Number,Newspaper_Name,Newspaper_Region,Newspaper_Date,Newspaper_Lang,Image_File_Name,Image_Operator) values " . $values_non_unique;
-                echo $eol;
-                echo $q = "insert into Mobile_Lists (Mobile_Number,Newspaper_Name,Newspaper_Region,Newspaper_Date,Newspaper_Lang,Image_File_Name,Image_Operator) values " . $values;
-                echo $eol . "=================================" . $eol;
+    //             if (in_array($newspaper_name, $opencvPapers)) {
 
-                if (!mysqli_query($conn, $q)) {
-                    echo  $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Error in insert query... ABORTING!" . $eol . $q . "" . $eol;
-                    die();
-                }
+    //                 if (!runOpenCV($filepath, $conn)) {
+    //                     $b = explode("/", $filepath);
+    //                     $filename = $b[count($b) - 1];
+    //                     mysqli_query($conn, "UPDATE Mobile_Lists SET Sending_Approved='No' WHERE Image_File_Name = '" . $filename . "'");
+    //                     mysqli_query($conn, "UPDATE Mobile_Lists_NON_Unique SET Sending_Approved='No' WHERE Image_File_Name = '" . $filename . "'");
+    //                     echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>OpenCV Completed. " . $filepath . " is not a classified page. Stopped Sending on numbers from this image" .  $eol;
+    //                 }
+    //             }
+    //             echo  $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Insert query executed successfully......" . $eol;
+    //         } else echo  $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "No numbers left to insert";
+    //     }
 
-                if (!mysqli_query($conn, $q_non_unqiue)) {
-                    echo  $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Error in insert query... ABORTING!" . $eol . $q_non_unqiue . "" . $eol . $eol . mysqli_error($conn);
-                    die();
-                }
-                echo  $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Insert query executed successfully......" . $eol;
-            } else echo  $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "No numbers left to insert";
-        }
+    //     $iq = "INSERT IGNORE INTO Crawled_Pages (Papername,Papershortname,Paperdate,Edition,Page,Section,No_Of_Mobiles_Found,Start_Time) VALUES ('" . $epapername . "','" . $newspaper_name . "','" . $newspaper_date . "','" . $newspaper_region . "','" . $page . "','" . $section . "','" . count($matches) . "','" . $starttime . "')";
 
-        $iq = "INSERT IGNORE INTO Crawled_Pages (Papername,Papershortname,Paperdate,Edition,Page,Section,No_Of_Mobiles_Found,Start_Time) VALUES ('" . $epapername . "','" . $newspaper_name . "','" . $newspaper_date . "','" . $newspaper_region . "','" . $page . "','" . $section . "','" . count($matches) . "','" . $starttime . "')";
+    //     echo $eol . $iq . "" . $eol;
 
-        echo $eol . $iq . "" . $eol;
-
-        mysqli_query($conn, $iq);
-    } catch (Exception $e) {
-        echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Falied to run" . $eol;
-    }
+    //     mysqli_query($conn, $iq);
+    // } catch (Exception $e) {
+    //     echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Falied to run" . $eol;
+    // }
 }
 
 function getHBeditionlink($city, $dateforlinks, $citylink, $code)

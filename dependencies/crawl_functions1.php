@@ -2,7 +2,12 @@
 
 <?php
 
-header('Content-Type: text/html; charset=utf-8');
+use Symfony\Component\Panther\Client;
+use Facebook\WebDriver\WebDriverBy;
+use Facebook\WebDriver\WebDriverExpectedCondition;
+use Facebook\WebDriver\Exception\TimeoutException;
+use Facebook\WebDriver\WebDriverDimension;
+
 // require  '/var/www/d78236gbe27823/vendor/autoload.php';
 
 // use thiagoalessio\TesseractOCR\TesseractOCR;
@@ -15,8 +20,8 @@ function filenamedate($epapercode, $conn)
     // $finddateq = "Select * from Crawl_Record1 WHERE Papershortname='" . $epapercode . "' ORDER BY Paperdate DESC LIMIT 1";
     // $finddaters = mysqli_query($conn, $finddateq);
     // if (mysqli_num_rows($finddaters)) {
-    //     $finddaterow = mysqli_fetch_array($finddaters);
     //     $filedate = date('Y-m-d', strtotime($finddaterow['Paperdate']) + (24 * 3600));
+    //     $finddaterow = mysqli_fetch_array($finddaters);
     // } else
     $filedate = date('Y-m-d', strtotime("2023-06-27"));
 
@@ -326,6 +331,9 @@ function cityArray($epapercode)
         case "ESM":
             return array("Kolkata");
             break;
+        case "PBK":
+            return  array("RANCHI - City", "PATNA - City", "KOLKATA - City", "JAMSHEDPUR - City", "DHANBAD - City", "DEOGHAR - City", "MUZAFFARPUR - City", "SAMSTIPUR", "BHAGALPUR - City", "GAYA - City", "AURANGABAD", "BOKARO", "BHUBANESWAR");
+            break;
         default:
             return null;
     }
@@ -617,7 +625,6 @@ function crawltoi($cityarray, $dateForLinks, $epapercode, $citycode, $filenameda
             $imageFound = "No";
 
             if ($failedPageCount > 3) {
-                echo "Seems Pages over. Skipping... " . $page . "\n";
                 continue;
             }
             for ($section = 1; $section <= 50; $section++) {
@@ -695,4 +702,41 @@ function writeImageWithCurl($url, $path)
     fclose($handle);
     file_put_contents(dirname(__FILE__, 2) . "/test.txt", $data);
     curl_close($ch);
+}
+
+function setSize($client, $link)
+{
+    $window = $client->getWebDriver()->manage()->window();
+    $window->maximize(); // Maximize the window to ensure full page capture
+    $client->request('GET', $link);
+
+    $client->executeScript('window.scrollTo(0, document.body.scrollHeight);');
+    $client->executeScript('window.scrollTo(1000, 0);');
+    $window = $client->getWebDriver()->manage()->window();
+    $scrollWidth = $client->executeScript('return Math.max(document.documentElement.scrollWidth, document.body.scrollWidth);');
+    $scrollHeight = $client->executeScript('return Math.max(document.documentElement.scrollHeight, document.body.scrollHeight);');
+    $window->setSize(new WebDriverDimension($scrollWidth, $scrollHeight));
+}
+
+function getCroppedImage($client, $element, $screenshot)
+{
+    // Find required element
+    $dePageContainer = $client->findElement(WebDriverBy::id($element));
+
+    // Get the location and size of the de-page-container element
+    $location = $dePageContainer->getLocation();
+    $size = $dePageContainer->getSize();
+
+    // Calculate the coordinates for the screenshot
+    $x = $location->getX();
+    $y = $location->getY();
+    $width = $size->getWidth();
+    $height = $size->getHeight();
+
+    // Take a screenshot of the specified section
+
+    // $imageData = file_get_contents($screenshot);
+    $image = imagecreatefromstring($screenshot);
+    $croppedImage = imagecrop($image, ['x' => $x, 'y' => $y, 'width' => $width, 'height' => $height]);
+    return $croppedImage;
 }

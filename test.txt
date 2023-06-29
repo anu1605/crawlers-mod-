@@ -1,1 +1,1559 @@
-<!DOCTYPEhtml><html><head><metahttp-equiv="Content-Type"content="text/html;charset=UTF-8"><metahttp-equiv="X-UA-Compatible"content="IE=IE9,chrome=1"><!--<metaname="viewport"content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=Yes">--><metaname="viewport"content="width=device-width,initial-scale=1,user-scalable=yes"><linkrel="shortcuticon"href="https://epaper.navarashtra.com/favicon.ico?r=1"><title>NavarashtraMarathiEPaper|LatestNews|Today’sMarathiNews|TajyaMarathiBatmya-Navarashtra(नवराष्ट्र)</title><metaname="description"content="NavarashtraMarathiEPaper:Readlatestnewsinmarathi,today’smarathinews,tajyamarathibatmyaonlineononeofthepopularmarathidigitalnewspaperNavarashtra(नवराष्ट्र).Clickheretoreadthelatestmarathinewsheadlines."/><metaname="keywords"content="NavarashtraEPaper,OnlineNews,DigitalNews,LatestNews,latestnewsinmarathi,MarathiNewspaper,OnlineEpaperNavarashtra,latestmarathinewsheadlines,today’smarathinews,tajyamarathibatmya,marathidigitalnewspaperNavarashtra,नवराष्ट्र,नवराष्ट्रईपेपर,नवराष्ट्रमराठीबातम्याईपेपर"/><metaproperty="og:locale"content="mr"/><metaproperty="og:type"content="article"/><metaproperty="og:site_name"content="Navarashtra"/><metaproperty="og:url"content="https://epaper.navarashtra.com/article-27-Jun-2023-mumbai-edition/1-1/"/><metaproperty="og:title"content="NavarashtraMarathiEPaper|LatestNews|Today’sMarathiNews|TajyaMarathiBatmya-Navarashtra(नवराष्ट्र)"/><metaproperty="og:description"content="NavarashtraMarathiEPaper:Readlatestnewsinmarathi,today’smarathinews,tajyamarathibatmyaonlineononeofthepopularmarathidigitalnewspaperNavarashtra(नवराष्ट्र).Clickheretoreadthelatestmarathinewsheadlines."/><metaproperty="og:image"content="https://www.enewspapr.com/News/NAVARASHTR/MUM/2023/06/27/ArticleImages/1637B7A.jpg"/><metaproperty="og:image:width"content="1200"/><metaproperty="og:image:height"content="675"/><metaname="twitter:card"content="summary_large_image"/><metaname="twitter:site"content="@navarashtra"/><metaname="twitter:creator"content="@navarashtra"/><linkrel="stylesheet"type="text/css"href="https://epaper.navarashtra.com/includes/css/style-home_article.css?v=20200723.9"/><linkrel="stylesheet"type="text/css"href="https://epaper.navarashtra.com/includes/css/jquery-ui.min1.css"/><linktype="text/css"rel="stylesheet"href="https://epaper.navarashtra.com/includes/css/bootstrap.min.css"><linktype="text/css"rel="stylesheet"href="https://epaper.navarashtra.com/includes/css/font-awesome.min.css"><scripttype="text/javascript"src="https://epaper.navarashtra.com/includes/js/jquery.js"></script><scripttype="text/javascript"src="https://epaper.navarashtra.com/includes/js/bootstrap.min.js"></script><scripttype="text/javascript"src="https://epaper.navarashtra.com/includes/js/dom-to-image.min.js?v=1.1"></script><scripttype="text/javascript"src="https://epaper.navarashtra.com/includes/js/jquery-ui.min.js"></script><scriptsrc="//cjss.enewspapr.com/pudhari/includes/clipboard.min.js"></script>	<script>varpageUrl='https://epaper.navarashtra.com/article-27-Jun-2023-mumbai-edition/1-1/';console.log('pageUrl:'+pageUrl);</script><style>	.box{cursor:pointer;}</style><script>varselfUrl='https://epaper.navarashtra.com/';vartesturl='';</script><!--Globalsitetag(gtag.js)-GoogleAnalytics--><!--script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*newDate();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create','UA-174261489-1','auto');ga('send','pageview');ga('create','UA-61361690-1','auto','newTracker');ga('newTracker.send','pageview');</script--><!--GlobalSiteTag(gtag.js)-GoogleAnalytics--><scriptasyncsrc="https://www.googletagmanager.com/gtag/js?id=UA-174261489-1"></script><script>window.dataLayer=window.dataLayer||[];functiongtag(){dataLayer.push(arguments);}gtag('js',newDate());gtag('config','UA-174261489-1');</script></head><linkrel='stylesheet'id='nb_article-editor-styles-css'href='https://epaper.navarashtra.com/includes/css/nr_header_footer.css?v=20200723.9'media='all'/><body><style>	@mediascreenand(min-width:467px){		.mobile-bottom-popup-ad{			display:none;		}	}</style><divid="result"style="display:inline-block;"></div><divclass="blocker1"></div><inputid="article-id"name="artid"type="hidden"value=""/><inputid="article-width"name="width"type="hidden"value=""/><inputid="continue-id"name="artid"type="hidden"value=""/><inputid="cont-width"name="artid"type="hidden"value=""/><inputid="joint-id"name="width"type="hidden"value=""/><inputid="cx1"name="width"type="hidden"value=""/><inputid="cx2"name="width"type="hidden"value=""/><inputid="realwidth"name="width"type="hidden"value=""/><divclass="article-popup-viewarticlePopupView"id="Article_Main"style="cursor:pointer;z-index:999;"><!--<divclass="close_button"></div>-->	<!--<divid="previous-article"class="replica_arrowarrow_left"></div>	<divid="next-article"class="replica_arrowarrow_right"></div>-->	<divclass="article-main-container"style="overflow:auto;width:100%!important;">		<divclass="article-headernavbar-fixed-header-popup"style="background-color:white;border-bottom:2pxdashedrgb(221,221,221);">	<divclass="btn-groupbtn-group-justified"style="display:inline-block;">		<divclass="btn-groupfbshrlike">	<buttonstyle="background:white;"type="button"class="btnbtn-nav">			<aclass="fafa-facebookfa-btn-size"style="color:#3b599b!important;font-size:28px!important;onclick="PopupCenter(this.href,'NavarashtraNewsvianavarashtra',560,360,'issocial','https://epaper.navarashtra.com/article-27-Jun-2023-mumbai-edition/1-1/');returnfalse"href="https://facebook.com/sharer.php?u=https://epaper.navarashtra.com/article-27-Jun-2023-mumbai-edition/1-1/"title="ShareonFacebook"></a>	</button>	</div>		<divclass="btn-group">	<buttonstyle="background:white;"type="button"class="btnbtn-nav">		<aclass="fafa-twitterfa-btn-size"style="color:#4099ff!important;font-size:28px!important;"href="https://twitter.com/intent/tweet?url=https://epaper.navarashtra.com/article-27-Jun-2023-mumbai-edition/1-1/&text=NavarashtraNews&via=navarashtra"class="ispriteitwitter"title="Twitter"></a>		</button>	</div>		<divclass="btn-group"id="share_whtsup">	<buttonstyle="background:white;"type="button"class="btnbtn-navwhatsapp">			<aclass="fafa-whatsappfa-btn-size"style="color:#43d854!important;font-size:28px!important;"href="whatsapp://send?text=https://epaper.navarashtra.com/article-27-Jun-2023-mumbai-edition/1-1/"title="whatsapp"></a>		</button>	</div>		<divclass="btn-group">			<buttonstyle="background:white;"type="button"class="btnbtn-nav"onclick="shareEmail();">				<aclass="fafa-envelopefa-btn-size"style="color:#d34836!important;font-size:28px!important;"href="mailto:?subject=navarashtra.com%3A%20NavarashtraNews&body=From%20navarashtra.%20Navarashtra%20News%20%20Read%20more%20at%20https%3A%2F%2Fepaper.navarashtra.com%2Farticle-27-Jun-2023-mumbai-edition%2F1-1%2F"target="_blank"title="Email"aria-label="Email"style="background-position:-279px-89px;"></a>				</button>		</div>		<divclass="btn-group"id="PrintImg">			<buttonstyle="background:white;"type="button"class="btnbtn-nav"onclick="printImage();">				<spanclass="fafa-printfa-btn-size"style="color:#3b599b;font-size:28px!important;"></span>						</button>		</div>		<divclass="btn-group"onclick="shareLink();"id="share_link"data-clipboard-demodata-clipboard-action="copy"data-clipboard-text="">		<buttonstyle="background:white;"type="button"class="btnbtn-navlink">		<spanclass="fafa-linkfa-btn-size"style="color:#3b599b;font-size:28px!important;"></span>					</button>	</div>				<divclass="btn-group">					<buttonstyle="background:white;"type="button"onclick="downloadImage()"class="btnbtn-nav">						<a><spanclass="fafa-downloadfa-btn-size"style="color:#3b599b;font-size:28px!important;"></span></a>						</button>				</div>				<divclass="btn-group">		<buttonstyle="background:white;"type="button"class="btnbtn-navpopupcls"onclick="window.close();">		<spanclass="fafa-closefa-btn-size"style="color:#3b599b;font-size:28px!important;"></span>			</button>	</div>	</div>	</div>		<divclass="article-content"style="width:69%;text-align:center;float:left;margin:10px;margin-top:30px;">	<divid="status"style="display:none;"></div>	<divid="mydata1"style="min-height:300px;margin-right:-15px;">	<divid='img'><divid="watermark"class="watermark"style="text-align:center;background:#FFFFFF;padding:10px;margin:auto;width:353px"><imgsrc='https://epaper.navarashtra.com/includes/images/navarashtra_logo_162x40.png'/></div>		<div><imgid='ImageArticle'src="https://www.enewspapr.com/News/NAVARASHTR/MUM/2023/06/27/ArticleImages/1637B7A.jpg"style='color:#fff;cursor:-moz-zoom-in;cursor:-webkit-zoom-in;cursor:zoom-in;cursor:pointer;'/></div>		<divid="FooterWaterMark"class="FooterWaterMark"style='color:#000;background:#FFFFFF;font-family:monospace;padding:5px;font-size:12px;line-height:1.1;margin:auto;text-align:center;width:353px'>			<pstyle='margin:0;'>MumbaiEdition</p><pstyle='margin:0;'>27Jun2023PageNo.1</p>			<pstyle='margin:0;'><astyle='color:#000;'href='https://epaper.navarashtra.com/'target="_blank">epaper.navarashtra.com</a></p>		</div>		</div>		</div><script>(function(d,s,id){varjs,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8&appId=222192144872187";fjs.parentNode.insertBefore(js,fjs);}(document,'script','facebook-jssdk'));</script>			<divclass="bottom-popup-ad"style="width:100%;float:left;text-align:center;margin-top:19px;"><scriptasyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8618678329245343"crossorigin="anonymous"></script><!--epaper_navarashtra_ROS_D_728x90_Top--><insclass="adsbygoogle"style="display:inline-block;width:728px;height:90px"data-ad-client="ca-pub-8618678329245343"data-ad-slot="8520509616"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>		<!--CompositeStart-->		<divid="M581535ScriptRootC902542">		</div>		<scriptsrc="https://jsc.mgid.com/e/p/epaper.navarashtra.com.902542.js"async></script>		<!--CompositeEnd-->		</div>	</div>	<divclass="sidebar-ads"style="width:28%;margin-top:30px;float:right;text-align:center;border-left:2pxdashedrgb(221,221,221);background-color:#fff;margin-right:6px;">			<divstyle="width:100%;float:left;margin-top:16px;margin-bottom:10px;text-align:center;"><scriptasyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8618678329245343"crossorigin="anonymous"></script><!--epaper_navarashtra_ROS_D_330X250--><insclass="adsbygoogle"style="display:inline-block;width:330px;height:250px"data-ad-client="ca-pub-8618678329245343"data-ad-slot="9526469521"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div><divstyle="width:100%;float:left;margin-top:16px;margin-bottom:10px;">	<scriptasyncsrc="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8618678329245343"crossorigin="anonymous"></script><!--epaper_navarashtra_ROS_D_300x600--><insclass="adsbygoogle"style="display:inline-block;width:300px;height:600px"data-ad-client="ca-pub-8618678329245343"data-ad-slot="2318063349"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>	</div>				</div><footerclass="footer">	<divclass="container-fluidft-top"><divclass="containerbrand_social_wrap">			<divclass="brand-blk">			<atarget="_blank"href="https://www.navarashtra.com"class="brand_logo_alink"title="navarashtra"><imgsrc="https://epaper.navarashtra.com/includes/images/navarashtra_logo_162x40"alt="navarashtra"title="navarashtra"></a>			</div>			<divclass="bottom_isocial">				<aclass="ispriteifacebook"href="https://www.facebook.com/navarashtra"title="Facebook"target="_blank"></a>				<aclass="ispriteitwitter"href="https://twitter.com/navarashtra"title="Twitter"target="_blank"></a>				<aclass="ispriteiinstagram"href="https://www.instagram.com/navarashtra/"title="Instagram"target="_blank"></a>				<aclass="ispriteiyoutube"href="https://www.youtube.com/channel/UCPtN5w8e2MalWUHGZOyoWCw"title="YouTube"target="_blank"></a>				<aclass="ispriteilinkedin"href="https://www.linkedin.com/company/10095720/"title="LinkedIn"></a>				<aclass="ispriteipinterest"href="https://in.pinterest.com/navarashtraa/"title="Pinterest"target="_blank"></a>				<!--<aclass="ispriteimailto"href="info@navabharat.com"title="Email"></a>-->			</div>		</div>	</div>					<divclass="container-fluidft-bottom"><divclass="containerft-1">			<divclass="ft-leftw100">				<divclass="menulist-blk">					<divclass="footer-listcol_2">						<h3class="sec-name">एकनजरबातम्यांवर...</h3>						<ul>							<li><h6><atarget="_blank"href="https://www.navarashtra.com"class="mn-alink"title="मुखपृष्ठ">मुखपृष्ठ</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/india-news-marathi/"class="mn-alink"title="देश">देश</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/world-news-marathi/"class="mn-alink"title="विदेश">विदेश</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/state-news-marathi/"class="mn-alink"title="राज्य">राज्य</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/delhi-news-marathi/"class="mn-alink"title="दिल्ली">दिल्ली</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/maharashtra-news-marathi/"class="mn-alink"title="महाराष्ट्र">महाराष्ट्र</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/goa-news-marathi/"class="mn-alink"title="गोवा">गोवा</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/kokan-news-marathi/"class="mn-alink"title="कोकण">कोकण</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/paschim-maharashtra-news-marathi/"class="mn-alink"title="पश्चिममहाराष्ट्र">पश्चिममहाराष्ट्र</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/vidarbha-news-marathi/"class="mn-alink"title="विदर्भ">विदर्भ</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/khandesh-news-marathi/"class="mn-alink"title="खान्देश">खान्देश</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/marathwada-news-marathi/"class="mn-alink"title="मराठवाडा">मराठवाडा</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/other-states-news-marathi/"class="mn-alink"title="अन्यराज्य">अन्यराज्य</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/career-news-marathi/"class="mn-alink"title="करिअर">करिअर</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/education-news-marathi/"class="mn-alink"title="शिक्षण">शिक्षण</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/blogs/"class="mn-alink"title="ब्लॉग">ब्लॉग</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/editorial/"class="mn-alink"title="संपादकीय">संपादकीय</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/featured-stories/"class="mn-alink"title="विशेषलेख">विशेषलेख</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/special-coverage/"class="mn-alink"title="नवराष्ट्रविशेष">नवराष्ट्रविशेष</a></h6></li>													</ul>					</div>					<divclass="footer-listcol_2">						<h3class="sec-name">माझामहाराष्ट्र</h3>						<ul>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/akola-news-marathi/"class="mn-alink"title="अकोला">अकोला</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/amravati-news-marathi/"class="mn-alink"title="अमरावती">अमरावती</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/gadchiroli-news-marathi/"class="mn-alink"title="गड़चिरोली">गड़चिरोली</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/gondia-news-marathi/"class="mn-alink"title="गोंदिया">गोंदिया</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/chandrapur-news-marathi/"class="mn-alink"title="चंद्रपूर">चंद्रपूर</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/thane-news-marathi/"class="mn-alink"title="ठाणे">ठाणे</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/nagpur-news-marathi/"class="mn-alink"title="नागपूर">नागपूर</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/nashik-news-marathi/"class="mn-alink"title="नाशिक">नाशिक</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/aurangabad-news-marathi/"class="mn-alink"title="औरंगाबाद">औरंगाबाद</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/kolhapur-news-marathi/"class="mn-alink"title="कोल्हापूर">कोल्हापूर</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/jalgaon-news-marathi/"class="mn-alink"title="जळगांव">जळगांव</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/ahmednagar-news-marathi/"class="mn-alink"title="अहमदनगर">अहमदनगर</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/pune-news-marathi/"class="mn-alink"title="पुणे">पुणे</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/buldhana-news-marathi/"class="mn-alink"title="बुलढाना">बुलढाना</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/bhandara-news-marathi/"class="mn-alink"title="भंडारा">भंडारा</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/mumbai-news-marathi/"class="mn-alink"title="मुंबई">मुंबई</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/yavatmal-news-marathi/"class="mn-alink"title="यवतमाळ">यवतमाळ</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/wasim-news-marathi/"class="mn-alink"title="वाशिम">वाशिम</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/wardha-news-marathi/"class="mn-alink"title="वर्धा">वर्धा</a></h6></li>						</ul>					</div>					<divclass="footer-list">						<h3class="sec-name">क्रीडाबातम्या</h3>						<ul>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/sports-news-marathi/"class="mn-alink"title="क्रीडा">क्रीडा</a></h6></li>							<!--li><h6><atarget="_blank"href="https://www.navarashtra.com/other-games-news-marathi/"class="mn-alink"title="अन्यखेळ">अन्यखेळ</a></h6></li-->						</ul>					</div>					<divclass="footer-list">						<h3class="sec-name">व्यापारबातम्या</h3>						<ul>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/business-news-marathi/"class="mn-alink"title="व्यापार">व्यापार</a></h6></li>																</ul>					</div>					<divclass="footer-listcol_2">						<h3class="sec-name">मनोरंजनबातम्या</h3>						<ul>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/entertainment-news-marathi/"class="mn-alink"title="मनोरंजन">मनोरंजन</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/bollywood-news-marathi/"class="mn-alink"title="बॉलीवूड">बॉलीवूड</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/hollywood-news-marathi/"class="mn-alink"title="हॉलीवूड">हॉलीवूड</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/movie-reviews/"class="mn-alink"title="रिव्यूज़">रिव्यूज़</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/new-release-movies/"class="mn-alink"title="नवीनरिलीज">नवीनरिलीज</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/television-news-marathi/"class="mn-alink"title="टीव्ही">टीव्ही</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/marathi-cinema-news/"class="mn-alink"title="मराठीसिनेमा">मराठीसिनेमा</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/theatre/"class="mn-alink"title="रंगभूमी">रंगभूमी</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/literature/"class="mn-alink"title="साहित्य">साहित्य</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/arts/"class="mn-alink"title="कला">कला</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/other-entertainment-news-marathi/"class="mn-alink"title="इतरबातम्या">इतरबातम्या</a></h6></li>						</ul>					</div>					<divclass="footer-list">						<h3class="sec-name">लाइफस्टाइलबातम्या</h3>						<ul>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/lifestyle-news-marathi/"class="mn-alink"title="लाइफ़स्टाइल">लाइफ़स्टाइल</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/health-news-marathi/"class="mn-alink"title="हेल्थ">हेल्थ</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/fashion-beauty-news-marathi/"class="mn-alink"title="फॅशनब्युटी">फॅशनब्युटी</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/travel-news-marathi/"class="mn-alink"title="पर्यटन">पर्यटन</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/horoscope/"class="mn-alink"title="राशीभविष्य">राशीभविष्य</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/dinvishesh-news-marathi/"class="mn-alink"title="दिनविशेष">दिनविशेष</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/religion-news-marathi/"class="mn-alink"title="अध्यात्म">अध्यात्म</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/food-news-marathi/"class="mn-alink"title="फूड">फूड</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/relationships-news-marathi/"class="mn-alink"title="रिलेशनशीप">रिलेशनशीप</a></h6></li>						</ul>					</div>					<divclass="footer-list">						<h3class="sec-name">विज्ञान-तंत्रज्ञानबातम्या</h3>						<ul>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/science-technology-news-marathi/"class="mn-alink"title="विज्ञान-तंत्रज्ञान">विज्ञान-तंत्रज्ञान</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/gadgets-news-marathi/"class="mn-alink"title="गॅजेट्स">गॅजेट्स</a></h6></li>						</ul>					</div>					<divclass="footer-list">						<h3class="sec-name">गॅलरी</h3>						<ul>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/photo-gallery/"class="mn-alink"title="गॅलरी">गॅलरी</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/photo-gallery/"class="mn-alink"title="फोटो">फोटो</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/video-gallery/"class="mn-alink"title="व्हिडिओ">व्हिडिओ</a></h6></li>							<!--<li><h6><atarget="_blank"href=""class="mn-alink"title="ऑडियो">ऑडियो</a></h6></li>-->						</ul>					</div>					<divclass="footer-list">						<h3class="sec-name">ऑटोमोबाइलबातम्या</h3>						<ul>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/automobile-news-marathi/"class="mn-alink"title="ऑटोमोबाइल">ऑटोमोबाइल</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/cars-news-marathi/"class="mn-alink"title="कार">कार</a></h6></li>							<li><h6><atarget="_blank"href="https://www.navarashtra.com/bikes-news-marathi/"class="mn-alink"title="बाइक्स">बाइक्स</a></h6></li>													</ul>					</div>				</div>			</div>			</div>		<divclass="containerother_links">			<divclass="container">			</div>			<divclass="container">				<divclass="brand"><aclass="brand_alink"href="https://www.enavabharat.com"title="Navabharat"target="_blank"rel="nofollow"><imgsrc="https://epaper.navarashtra.com/includes/images/b_navabharat-logo.png"></a></div>				<divclass="brand"><aclass="brand_alink"href="https://www.navarashtra.com"title="Navarashtra"target="_blank"><imgsrc="https://epaper.navarashtra.com/includes/images/navarashtra_logo_162x40"></a></div>					<divclass="brand"><aclass="brand_alink"href="https://www.navabharatmedia.com"title="NavabharatMedia"target="_blank"rel="nofollow"><imgsrc="https://epaper.navarashtra.com/includes/images/b_navabharatmedia-logo.png"></a></div>					<divclass="brand"><aclass="brand_alink"href="https://epaper.enavabharat.com"title="Navabharatepaper"target="_blank"rel="nofollow"><imgsrc="https://epaper.navarashtra.com/includes/images/b_ePapar-logo.png"></a></div>				</div>		</div>		<divclass="containerft-2">			<divclass="footer-links"><atarget="_blank"href="https://www.navarashtra.com/privacy-policy/"class="ft-alink"title="Privacy">Privacy</a><atarget="_blank"href="https://www.navarashtra.com/terms-and-conditions/"class="ft-alink"title="Termsandcondition">Termsandcondition</a><atarget="_blank"href="https://www.navarashtra.com/feeds/"class="ft-alink"title="RSS">RSS</a><atarget="_blank"href="https://www.navarashtra.com/topics/"class="ft-alink"title="Topics">Topics</a><atarget="_blank"href="https://www.navarashtra.com/disclaimer/"class="ft-alink"title="Disclaimer">Disclaimer</a><atarget="_blank"href="https://www.navarashtra.com/about-us/"class="ft-alink"title="About">About</a><atarget="_blank"href="https://www.navarashtra.com/author/"class="ft-alink"title="OurAuthors">OurAuthors</a><!--atarget="_blank"href="#"class="ft-alink"title="SubmitNews">SubmitNews</a><atarget="_blank"href="#"class="ft-alink"title="FAQ">FAQ</a><atarget="_blank"href="/career/"class="ft-alink"title="Career">Career</a--><atarget="_blank"href="https://www.navarashtra.com/advertise-with-us/"class="ft-alink"title="AdvertiseWithUs">Advertise</a><atarget="_blank"href="https://www.navarashtra.com/feedback/"class="ft-alink"title="Feedback">Feedback</a><atarget="_blank"href="https://www.navarashtra.com/contact-us/"class="ft-alink"title="Contact">Contact</a></div>			<divclass="copyright-text">			<h3class="cc-txt">Copyright©NavarashtraPress2020.Allrightsreserved.</h3></div>		</div>	</div><!--EndFOOTER--></footer></div><scripttype="text/javascript">	functionshareLink(){		vararturl		='https://epaper.navarashtra.com/article-27-Jun-2023-mumbai-edition/1-1/';		$("#share_link").attr("data-clipboard-text",arturl);		varbtn		=document.getElementById('share_link');		varclipboard	=newClipboard(btn);		clipboard.on('success',function(e){			alert('WeblinkCopiedtoClipboard');		});		clipboard.on('error',function(e){			console.log(e);		});	}	functiondownloadImage1(){		varmyImage=document.getElementById('ImageArticle');		window.location.href="https://epaper.navarashtra.com/download.php?file="+myImage.src;	}	functiondownloadImage(){		varwidth='353';		varfv="";		fv=fv+"<divstyle='text-align:center;background:#ffffff;padding:10px;width:"+width+"px'><imgsrc='https://epaper.navarashtra.com/includes/images/navarashtra_logo_162x40.png'style='width:auto'/></div>";		fv=fv+"<divstyle='display:inline-block;width:"+width+"px'><imgsrc='https://www.enewspapr.com/News/NAVARASHTR/MUM/2023/06/27/ArticleImages/1637B7A.jpg'style='width:auto'></div>";		fv=fv+"<divstyle='color:#000;background:#ffffff;font-family:monospace;padding:5px;font-size:12px;line-height:1.1;text-align:center;width:"+width+"px'><pstyle='margin:0;'>MumbaiEdition</p><pstyle='margin:0;'>27Jun2023PageNo.1</p><pstyle='margin:0;'><astyle='color:#000;'href='https://epaper.navarashtra.com/'target='_blank'>epaper.navarashtra.com</a></p></div>";		$("#result").append(fv);		domtoimage.toJpeg(document.getElementById('result'),{quality:0.95})			.then(function(dataUrl){				varlink=document.createElement('a');				link.download='Navarashtra_mumbai_20230627_1-1.jpeg';				link.href=dataUrl;				document.body.appendChild(link);				link.click();				document.body.removeChild(link);				$("#result").replaceWith("");			});	}functionprintImage(){	varimagePath=document.getElementById('ImageArticle').src;	varwidth=$(window).width()*0.9;	varheight=$(window).height()*0.9;	varcontent='<!DOCTYPEhtml>'+		'<html>'+		'<head><title></title></head>'+		'<bodyonload="window.focus();window.print();window.close();">'+		'<divstyle="text-align:center;padding-bottom:10px;border-bottom:1pxsolidblack;"><imgalt="Navarashtra"src="https://epaper.navarashtra.com/includes/images/navarashtra_logo_162x40.png"align="center"alt="logo"style="width:30%;text-align:center;"></div><imgsrc="'+imagePath+'"style="color:#fff;width:100%;"alt="ENammaKannadaNaduepaper"/><divstyle="padding-top:10px;border-top:1pxsolidblack;text-align:center;"><pstyle="margin:0;text-align:center;font-size:10px;">MumbaiEdition</p><pstyle="margin:0;text-align:center;font-size:10px;">27Jun2023PageNo.</p><pstyle="margin:0;text-align:center;font-size:10px;">epaper.navarashtra.com</p></div>'+		'</body>'+		'</html>';	varoptions="toolbar=no,location=no,directories=no,menubar=no,scrollbars=yes,width="+width+",height="+height;	varprintWindow=window.open('','print',options);	printWindow.document.open();	printWindow.document.write(content);	printWindow.document.close();	printWindow.focus();}functionswitchVisible(option){	if(option=='SubEditions'){		document.getElementById('SplDiv').style.display='none';		document.getElementById('ImgDiv').style.display='block';	}elseif(option=='Supplements'){		document.getElementById('ImgDiv').style.display='none';		document.getElementById('SplDiv').style.display='block';	}}functionDownloadpdf(){		varissueimage=issueid.split("_");	vardate=issueimage[2];	varCurPg=$("#PgNo").val();	varselid=issueimage[0]+"_"+issueimage[1]+"_"+issueimage[2];	varbaseUrl="https://www.enewspapr.com//OutSourcingData.php?operation=getPdfOpen&issueid="+issueid+"&pageno="+CurPg;	//console.log(baseUrl);	$.ajax({url:baseUrl,success:function(result){		vardata=JSON.parse(result);		$("#pageId").html("");		$("#ImgNm").html("");		//htmlvalue="";		for(varobjindata){			varpageid=data[obj].pageid;			$("#pageId").val(pageid);			varimgname=data[obj].imagename;			$("#ImgNm").val(imgname);			varimage=imgname.replace(".jpg",".PDF");			//varpurl='http://enewspapr.com/News/';			varpurl='News/';			varPDFPath=purl+issueimage[0]+"/"+issueimage[1]+"/"+date.substr(0,4)+"/"+date.substr(4,2)+"/"+date.substr(6,2)+"/"+image;			alert(PDFPath);			window.open("download.php?file="+PDFPath);		}		//$("#mydata").append(htmlvalue);	}});}/*---PopupCenter-js---*/functionPopupCenter(url,title,w,h,id,currentUrl){	vardualScreenLeft=window.screenLeft!=undefined?window.screenLeft:screen.left;	vardualScreenTop=window.screenTop!=undefined?window.screenTop:screen.top;	width=window.innerWidth?window.innerWidth:document.documentElement.clientWidth?document.documentElement.clientWidth:screen.width;	height=window.innerHeight?window.innerHeight:document.documentElement.clientHeight?document.documentElement.clientHeight:screen.height;	varleft=((width/2)-(w/2))+dualScreenLeft;	vartop=((height/2)-(h/2))+dualScreenTop;	varchildWindow=window.open(url,title,'scrollbars=yes,width='+w+',height='+h+',top='+top+',left='+left+'');	if(window.focus){		childWindow.focus();	}	childWindow.onunload=function(){		setTimeout(get_shares,5000);	}}</script><scriptsrc="https://epaper.navarashtra.com/includes/js/jquery.mThumbnailScroller.js"></script><!--<scripttype="text/javascript"src="//cdn.ergadx.com/js/448/ads.js"></script>--></body>
+
+<!DOCTYPE html>
+<html xmlns:fb="http://ogp.me/ns/fb#">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="fb:admins" content="1524926084"/>
+    <meta property="fb:app_id" content="930382757020232" />
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1">
+          <title>Prabhat Khabar RANCHI - City, Thu, 29 Jun 23</title>
+      <meta name=description content="prabhatkhabar">
+        <meta name=keywords content="">
+    <link rel="shortcut icon" href="https://cache.epapr.in/favicon/logo_image_59c0ee90f24b0.png" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="Read the full newspaper online, on your smartphone and tablet" />
+    <meta property="og:title" content="Prabhat Khabar RANCHI - City epaper dated Thu, 29 Jun 23" />
+    <meta property="og:image" content="https://d2na0fb6srbte6.cloudfront.net/read/imageapi/coverforissue/3726073/newspaper/300" />
+    <meta name="twitter:card" content="summary_image">
+    <meta name="twitter:title" content="Prabhat Khabar RANCHI - City epaper dated Thu, 29 Jun 23">
+    <meta name="twitter:description" content="Read the full newspaper online, on your smartphone and tablet">
+    <meta name="twitter:image:src" content="https://d2na0fb6srbte6.cloudfront.net/read/imageapi/coverforissue/3726073/newspaper/300">
+      <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+<!--    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    -->
+    <!-- fb deeplink sharing -->
+          
+        <meta property="al:android:url" content="prabhat-khabar://r/6185">
+        <meta property="al:android:package" content="com.readwhere.whitelabel.prabhatkhabar">
+        <meta property="al:android:app_name" content="Prabhat Khabar"> 
+
+
+    
+    <!--  -->
+
+    <style type="text/css">
+     .tour-step-background {
+        background: transparent !important;
+        /*border-radius: 0 !important;*/
+      }
+      .tour-backdrop {
+        opacity:0.5 !important;
+      }
+      .tour-step-background, 
+      .tour-backdrop {
+          position: fixed !important;
+      }
+
+    .pck-btn {
+       display: none;
+     }
+
+    .pck-btn a {
+        background: #4CAF50;
+        color: #fff !important;
+        padding: 5px 16px;
+        border-radius: 5px;
+        display: inline-block;
+        font-size: 14px;
+        width: 99%;
+        font-weight: 500;
+     }
+
+      .digiloader{
+        position: absolute;
+        top:100px;
+        right:0px;
+        width:100%;
+        height:100%;
+        background-image:url('https://epaper.prabhatkhabar.com/styles/images/ajax-loader3.gif?v1');
+        background-size: 50px;
+        background-repeat:no-repeat;
+        background-position:center;
+        z-index:10000000;
+        opacity: 0.4;
+        filter: alpha(opacity=40);
+    }
+
+    .pricing-options table tr td:first-child {
+    width: 40%;
+    }
+    .pricing-options table tr td:nth-child(2) {
+        width: 40%;
+    }
+    .error{
+            color: #D8000C;
+            background-color: #FFBABA;
+            float: right;
+         }
+
+    </style>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" data-cfasync="false"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+    <script type="text/javascript" src="https://sf.readwhere.com/read/js/libs/detectmobilebrowser.js?v=1457076727"></script>
+    <script type="text/javascript">
+      //detect phone env
+      function is_iOS(){
+        return navigator.platform.match(/i(Phone|Pod|Pad)/i);
+      }
+
+      function is_MobileSafari(){
+        var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+        var mobile = $(window).width() <= 1024;
+        if (isSafari && mobile) {
+          return true;
+        }
+      }
+
+      function is_android(){
+        var ua = navigator.userAgent.toLowerCase();
+        return (ua.indexOf("android") > -1) ;
+      }
+
+      function is_free() {
+        return 1      }
+
+      if( $.browser.mobile || is_iOS() || is_android() || is_MobileSafari() ){
+
+        var url = "https://epaper.prabhatkhabar.com/".replace('http:', window.location.protocol);
+        window.location.href = window.location.href.replace(url,url+'m5/');
+      } /*else if( is_iOS() ){
+        
+        window.location.href = window.location.href.replace('https://epaper.prabhatkhabar.com/','https://epaper.prabhatkhabar.com/m/');
+      }*/
+      /*if( $.browser.mobile && is_android() ) {
+
+        window.location.href = window.location.href.replace('https://epaper.prabhatkhabar.com/','https://epaper.prabhatkhabar.com/m5/');
+
+      
+      } else if( $.browser.mobile || is_iOS() ){
+        window.location.href = window.location.href.replace('https://epaper.prabhatkhabar.com/','https://epaper.prabhatkhabar.com/m/');
+      }*/
+    </script>
+        <link rel=stylesheet href="https://sf.readwhere.com/read/styles/bootstrap3.min.css?v=1683050929"> <link rel=stylesheet href="https://sf.readwhere.com/read/styles/viewer-v4.css?v=1683050929"> <link rel=stylesheet href="https://sf.readwhere.com/read/styles/imgareaselect-default.css?v=1421216352"> <link rel=stylesheet href="https://sf.readwhere.com/read/styles/bootstrap-tour.css?v=1490759244">        <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style type="text/css">
+          .navbar-inverse .navbar-nav > li > a {
+          color: rgb(80,80,80);;
+      }
+      .navbar-inverse .navbar-nav > li > a:hover,
+      .navbar-inverse .navbar-nav > li > a:active,
+      .navbar-inverse .navbar-nav > li > a:focus {
+          color: rgb(0,0,0);;
+      }
+      .tagsnav, #top-level-nav {
+        background-color: rgb(255,255,255);
+      }
+      /*.non-searchable{
+        display: none;
+      }*/
+    </style>
+    <!-- IE styling -->
+
+    <!--[if lte IE 9]>
+      <style type="text/css">
+      .btn.clip{
+        display:none;
+      }
+      #clipping-nav{
+        display:none;
+      }
+      </style>
+    <![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- custom header-code --><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3076479851646180"
+     crossorigin="anonymous"></script>
+<!-- epaper.prabhatkhabar.com_top_728x90 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3076479851646180"
+     data-ad-slot="7614701919"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<!-- clip-page-header-code --><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128661502-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+ 
+  gtag('config', 'UA-128661502-1');
+</script><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PQMKDLZ');</script>
+<!-- End Google Tag Manager -->      <div id="enlarged-bottom-clip-ad" style="display:none;"> 
+        <div style="font-size: 12px;margin: 5px;color:#fff;"><span>Advertisement</span></div>         </div> 
+    <!--sticky-ads header --><!-- custom sticky-ads desktop-header -->
+    
+    
+    
+    <!-- Other Scripts Head Start-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128661502-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+ 
+  gtag('config', 'UA-128661502-1');
+</script><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PQMKDLZ');</script>
+<!-- End Google Tag Manager -->    <!-- Other Scripts Head End-->
+
+    
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','viewerAnalytics');
+
+      viewerAnalytics('create', ( window.location.host == 'www.readwhere.com' ) ? 'UA-30928125-1' : 'UA-30928125-20', 'auto');
+      viewerAnalytics('set', 'dimension1', '6185');
+      viewerAnalytics('send', 'pageview');
+
+            viewerAnalytics('create', "UA-67081902-1", 'auto', {'name':'custom'});
+      viewerAnalytics('custom.send', 'pageview');
+            
+      viewerAnalytics('create', 'UA-30928125-15', 'auto', {'name': 'page_view_tracker'});
+      //viewerAnalytics('send', 'event', 'content-read', 'newspaper', 'free');
+      //viewerAnalytics('send', 'event', 'volume-access', '2023', '06');
+    </script>
+    
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9KTL14ZRVG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9KTL14ZRVG');
+</script>
+
+    <script type="text/javascript">
+    function focusEmail(btn){
+      var email = $(btn).parent().find('input[type=email]');
+      if(!email.val()){
+        email.focus();
+        return false;
+      }
+      var emailAddress = email.val();
+      
+      $.post('https://epaper.prabhatkhabar.com/ajax/emailvalidation',
+      {
+        'emailaddress' :  emailAddress
+      },
+      function(response){
+        var emailValidationResponse = response;
+         console.log(emailValidationResponse);
+        if(emailValidationResponse == 'true'){
+          console.log(emailValidationResponse);
+          let form = document.getElementById("navbar-subscribe-form");
+            form.submit();
+        }else{
+          document.getElementById('errorname').style.display = 'block'; 
+
+          setTimeout( function() {
+            $('#errorname').fadeOut(4000);
+                        });
+        }
+        });
+      
+    }
+    </script>
+
+    <script type="text/javascript">
+      var isPageRenderFailed = false;
+      setTimeout(function(){
+
+        if ( document.getElementById("de-chunks-container").childElementCount == 0 ) {
+
+          isPageRenderFailed = true;
+          //viewerAnalytics('send', 'event', 'PageRenderFail', "12762", navigator.userAgent);
+        }
+      },10000);
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script type="text/javascript">
+      if ( window.location.host == 'www.readwhere.com' ) {
+
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-W32893F');
+      }
+    </script>
+    <!-- End Google Tag Manager -->
+      
+          
+       
+           
+          
+
+  </head>
+  <body class="viewer">
+    <div id="modal-bg" class="modal-close" style="display:none;background-color:rgba(0, 0, 0, 0.8);"></div>
+    <a id="modal-close-btn" class="modal-close" style="display:none;" href="javascript:"><i class="fa fa-times"></i></a>
+    
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=2654489988137262&version=v2.8";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="top-container" class="container-fluid" style="z-index:13;min-height:60px;">
+        <div id="top-level-nav" class="row header dark">
+            <div class="paper-logo" >
+              
+                              <a target="_top" href="https://epaper.prabhatkhabar.com/" title="RANCHI - City">
+                  <span style="background-position:center center;background-repeat:no-repeat;background-size:contain;margin:5px 0;display:block;height:50px;width:100%;background-image:url('https://cache.epapr.in/masthead/52b40407e6563.jpg')"></span>
+                </a>
+              
+            </div>
+            <nav class="tagsnav navbar navbar-inverse mainnav" role="navigation">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div>
+                <div class="collapse navbar-collapse" id="main-navbar-collapse" style="position:relative;">
+                <ul class="nav navbar-nav header_mainnavbar">
+                  <li>
+                                          <a target="_top" href="https://epaper.prabhatkhabar.com/" title="RANCHI - City">Home</a>
+                                      </li>
+                                      <li class="dropdown" style="position:static">
+                      <a class="dropdown-toggle collection" data-toggle="dropdown" role="button" href="#" id="drop1">
+                        RANCHI - City                        <span class="caret"></span>
+                      </a>
+                    </li>
+                                      <li id="calendar-menu" class="dropdown" style="position:static">
+                      <a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#" id="drop2">Thu, 29 Jun 23 <i class="fa fa-calendar"></i></a>
+                      <div class="dropdown-menu nav-dropdown full-dropdown">
+                        <div class="row">
+                          <div class="col-sm-4">
+                                                                                    <a target="_top" href="https://epaper.prabhatkhabar.com/r/3726073" class="list-group-item tagitem">Today's issue</a>
+                                                                                    <a target="_top" href="https://epaper.prabhatkhabar.com/r/3725594" class="list-group-item tagitem">Yesterday</a>
+                                                                                    <a target="_top" href="https://epaper.prabhatkhabar.com/r/3725090" class="list-group-item tagitem">Tuesday</a>
+                                                                                    <a target="_top" href="https://epaper.prabhatkhabar.com/r/3724621" class="list-group-item tagitem">Monday</a>
+                                                                                    <a target="_top" href="https://epaper.prabhatkhabar.com/r/3724141" class="list-group-item tagitem">Sunday</a>
+                                                                                    <a target="_top" href="https://epaper.prabhatkhabar.com/r/3723572" class="list-group-item tagitem">Saturday</a>
+                                                                                    <a target="_top" href="https://epaper.prabhatkhabar.com/r/3723143" class="list-group-item tagitem">Friday</a>
+                                                      </div>
+                          <div class="col-sm-4">
+                          <div class="responsive-calendar">
+                            <div class="controls form-inline">
+                                <a class="pull-left btn btn-default" onclick="DE.showCalendar('prev')"><i class="fa fa-arrow-left"></i></a>
+                                <select class="form-control" id="calendar-month-selector" onchange="DE.showCalendar()">
+                                                                                                      <option  value="01">Jan</option>
+                                                                                                      <option  value="02">Feb</option>
+                                                                                                      <option  value="03">Mar</option>
+                                                                                                      <option  value="04">Apr</option>
+                                                                                                      <option  value="05">May</option>
+                                                                                                      <option selected=selected value="06">Jun</option>
+                                                                                                      <option  value="07">Jul</option>
+                                                                                                      <option  value="08">Aug</option>
+                                                                                                      <option  value="09">Sep</option>
+                                                                                                      <option  value="10">Oct</option>
+                                                                                                      <option  value="11">Nov</option>
+                                                                                                      <option  value="12">Dec</option>
+                                                                  </select>
+                                <select class="form-control" id="calendar-year-selector" onchange="DE.showCalendar()">
+                                                                    <option  value="2012">2012</option>
+                                                                    <option  value="2013">2013</option>
+                                                                    <option  value="2014">2014</option>
+                                                                    <option  value="2015">2015</option>
+                                                                    <option  value="2016">2016</option>
+                                                                    <option  value="2017">2017</option>
+                                                                    <option  value="2018">2018</option>
+                                                                    <option  value="2019">2019</option>
+                                                                    <option  value="2020">2020</option>
+                                                                    <option  value="2021">2021</option>
+                                                                    <option  value="2022">2022</option>
+                                                                    <option selected=selected value="2023">2023</option>
+                                                                  </select>
+                                <a class="pull-right btn btn-default" onclick="DE.showCalendar('next')"><i class="fa fa-arrow-right"></i></a>
+                            </div><hr/>
+                            <div id="calendar-loader">
+                              <img src="https://cache.epapr.in/static/loader.gif" alt=""/>
+                            </div>
+                            <div class="day-headers">
+                              <div class="day header">Mon</div>
+                              <div class="day header">Tue</div>
+                              <div class="day header">Wed</div>
+                              <div class="day header">Thu</div>
+                              <div class="day header">Fri</div>
+                              <div class="day header">Sat</div>
+                              <div class="day header">Sun</div>
+                            </div>
+                            <div class="days" data-group="days">
+                              <!-- the place where days will be generated -->
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">                 
+                  <li class="social dropdown" style="margin:0 10px;">
+                    <a class="dropdown-toggle" data-hover="dropdown" data-delay="300" data-close-others="true" data-toggle="dropdown" role="button" href="#" id="drop2">
+                      <i class="fa fa-facebook"></i> <i class="fa fa-twitter"></i></a>
+                      <div class="dropdown-menu nav-dropdown">
+                         <div style="padding:5px;text-align:center;">
+                            <div style="margin:5px;" class="fb-like" data-href="https://epaper.prabhatkhabar.com/r/3726073" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+
+                            <div style="margin:5px;" class="fb-like" data-width="100%" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+                            <a href="https://twitter.com/share" class="twitter-share-button" data-text="" data-via="myreadwhere">Tweet</a>
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                        </div>
+                      </div>
+                  </li>
+
+                  <li id="navbar-subscribe">
+                    <form class="form-inline navbar-subscribe" id ="navbar-subscribe-form" role="form" method="post" action="https://epaper.prabhatkhabar.com/subscriber/validatesubscriber">
+                      <input type="hidden" name="newspaper" value="6185" />
+                      <input type="hidden" name="digest" value="on" />
+                      <div class="form-group">
+                          <label class="sr-only" for="subscribe-email">Email Address</label>
+                          <input type="email" class="form-control email-input" name="email" id="subscribe-email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+                          <script type="text/javascript">
+                            /*var subscribe_email = document.getElementById("subscribe-email");
+                            subscribe_email.oninvalid = function(event) {
+                                event.target.setCustomValidity('Enter valid email address');
+                            }*/
+                          </script>
+                          
+                      </div><button type="button" class="btn btn-default btn-lg " onclick="return focusEmail(this)" style="border:none;color:black;line-height:40px;border-radius:0;background-color:rgb(255,204,0)">Subscribe</button>
+                    </form>
+                  </li>
+                  
+
+                  <li id="user_login" style="display:none;">
+                    <!-- Removing subscribe from newspaper v4 and adding login / logout functionality -->
+                    <div class="rw-floatright" style="position:relative;">
+                      
+                      <a class="btn btn-default btn-lg user-login-subscribe" style="display:none;border:none;color:black;line-height:40px;border-radius:0;background-color:rgb(255,204,0)" href="https://www.readwhere.com/read/subscriber/dosubscribe/newspaper/6185">Subscribe</a>
+                      <a class="newspaper-rw-header-link login-link useroptns btn-lg newspaper_v4_login login-to-subscribe" style="" href="javascript:;">Login to Subscribe</a>
+                      <span class="profile rw-header-link dropdown close" style="display:none;float:right;">
+                        <ul class="v4_magviewer_logout">
+                          <li class="dropdown">
+                            <a href="#" class="dropdown-toggle rw-header-link loginonly useroptns mazine_v4_logout" style="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><!-- <i class="fa fa-user" style=""></i><span class="caret"></span> -->
+                              <span class="madv4_user_photo"> </span>
+                              <span class="madv4_user_name" style="color: rgb(80,80,80);;">  </span>
+                            </a>
+                            <ul class="dropdown-menu extra_topcls">
+                              <li><a target="_top" href="https://www.readwhere.com/shelf">Shelf</a></li>
+                              <!-- <li><a target="_top" href="https://www.readwhere.com/user/clips">Clips</a></li> -->
+                              <li><a target="_top" href="https://www.readwhere.com/mywallet">Wallet</a></li>
+                              <li role="separator" class="divider"></li>
+                              <li><a id="logout" target="_top" href="https://www.readwhere.com/user/logout?ru=r/3726073&domain=https://epaper.prabhatkhabar.com">Logout</a></li>
+                              <!-- <li><a id="logout" target="_top" href="https://www.readwhere.com/user/logout?ru=https://epaper.prabhatkhabar.com/r/3726073">Logout</a></li> -->
+                            </ul>
+                          </li>
+                        </ul>
+                      </span>
+                    </div>
+                  </li>
+
+                </ul>
+            </div>
+            </nav>
+            <b class="error" id="errorname" style="display: none;" >Please enter valid email address.</b>
+    </div>
+  
+</div>
+
+
+<div class="container-fluid" style="width: 100%;" >
+  <div class="row adunit hidden-xs" style="margin-top: 0;">
+
+                      <div style="height:90px;margin:10px auto 10px;">
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2931203390134969"
+     crossorigin="anonymous"></script>
+<!-- prabhatkhabar_ePaper_ads_dt_top_728x90 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-2931203390134969"
+     data-ad-slot="2693900348"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+          </div>
+                  
+       
+      
+
+  </div>
+</div>
+
+
+<div class="zoom_indicator">
+  <span class="zoom_level_span"> +1 </span>
+  <!-- <span class="zoom_text_span"> zoom </span> -->
+</div>
+    
+<div id="content-container" class="container-fluid" style="width: 100%;float: left;">
+    <div id="page-level-bar" class="flip-container">        
+      <div id="page-level-nav" class="front row" style="left:211px; width:65%;" > 
+                                        <div class="nav-group hidden-xs"> 
+              <input id="showhideclip" type="checkbox" data-toggle="toggle" checked data-on="<i class='fa fa-eye-slash'></i> Hide Clips" data-off="<i class='fa fa-eye'></i> Show Clips">
+            </div> 
+                    
+          <div class="nav-group hidden-xs clipbtn" style="">
+            <button id="createclip" class="btn btn-default clip" type="button"><i class="fa fa-scissors"></i> <span class="hidden-xs">Clip</span></button>
+          </div> 
+        
+        <div class="nav-group" style="max-width:362px">
+            <div class="input-group">
+              <span class="input-group-btn">
+                <button class="btn btn-default firstpage" type="button" id="firstpage"><i class="fa fa-fast-backward"></i></button>
+                <button class="btn btn-default prevpage" type="button" id="prev-page-link"><i class="fa fa-arrow-left"></i></button>
+                <button class="btn btn-default"style="color: #333;background-color: #fff;border-color: #ccc;cursor: default;" type="button">Page</button>
+              </span>
+              <input id="pagenum-input" class="form-control" aria-label="..." value="1" min="1" max="16">
+              <div class="input-group-btn">
+                <div id="page-headers-list" class="btn-group">
+                  <button id="pagecount-btn" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    of 16 <i class="fa fa-caret-down"></i>
+                  </button>
+                </div>
+                <button class="btn btn-default nextpage" type="button"><i class="fa fa-arrow-right"></i></button>
+                <button class="btn btn-default lastpage" type="button" id="lastpage"><i class="fa fa-fast-forward"></i></button>
+              </div><!-- /btn-group -->
+            </div><!-- /input-group -->
+        </div>
+        <div class="nav-group">
+            <div class="btn-group" role="group" aria-label="...">
+            <button class="btn btn-default zoomin" type="button">
+                <i class="fa fa-search-plus"></i> 
+                <span class="hidden-xs">Zoom</span>
+                <span style="margin: -1px 0px 0px 7px;">
+                  <i class="fa fa-circle zoom_indicator_v4_1"></i>
+                  <i class="fa fa-circle zoom_indicator_v4_2"></i>  
+                </span>
+            </button>
+            <button class="btn btn-default zoomout" type="button"><i class="fa fa-search-minus"></i></button>
+            </div>
+        </div>
+        <div class="nav-group">
+          <div class="btn-group" role="group" aria-label="..." id="pagemode">
+            <button title="Single page" class="btn btn-default singlepage" type="button" style="display: none;"><i class="fa fa-file-text"></i></button>
+            <button title="Dual page" class="btn btn-default dualpage" type="button" style="display: block;"> <i class="fa fa-columns"></i> </button>
+          </div>
+        </div>
+
+        
+        <div id="page-headers-dropdown" class="dropdown-menu">
+          <table id="page-headers-table" class="table table-striped"></table>
+        </div>
+      </div>
+    
+      <!-- Show user login status for free content -->
+        <div id="free_user_login" style="display:none;float:right;">
+          <a class="login-link-free useroptns login-link" style="padding: 5px 10px;" href="javascript:;">Login / Signup</a>
+          <span class="profile rw-header-link dropdown" style="display:none;float:left;">
+            <ul class="v4_magviewer_logout">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle rw-header-link loginonly useroptns mazine_v4_logout" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><!-- <i class="fa fa-user" style=""></i><span class="caret"></span> -->
+                  <span class="madv4_user_photo" style="margin-top: -9px;"> </span>
+                  <span class="madv4_user_name" style="padding: 1px 0 0 8px;">  </span>
+                </a>
+                <ul class="dropdown-menu extra_topcls">
+                  <!-- <li><a id="logout" target="_top" href="https://www.readwhere.com/user/logout?ru=https://epaper.prabhatkhabar.com/r/3726073">Logout</a></li> -->
+                  <li><a id="logout" target="_top" href="https://www.readwhere.com/user/logout?ru=r/3726073&domain=https://epaper.prabhatkhabar.com">Logout</a></li>
+                </ul>
+              </li>
+            </ul>
+          </span>
+        </div>         
+        
+
+    </div>
+
+    <div class="contentloader" style="text-align: center;width: 100%;display:none;"> <img src="https://sf.readwhere.com/read/theme/images/loader.gif">  </div>
+
+    <div class="" id="content-row">
+        <div id="page-left-panel" style="vertical-align:top;width:300px;display:table-cell;padding:0 10px;" class="hidden-xs hidden-sm">
+          <ul class="nav nav-tabs" style="max-width:300px;margin:0 auto;">                   <li id="left-panel-pages" role="presentation" class="tabs"><a href="javascript:;">Pages</a></li>                   <li id="left-panel-topclips" role="presentation" class="tabs"><a href="javascript:;">Page Clips</a></li>             
+
+
+
+          <!--               <li id="left-panel-sections" role="presentation" class="tabs"><a href="#"></a></li>
+                        <li id="left-panel-pages" role="presentation" class="tabs"><a href="javascript:;">Pages</a></li>
+            <li id="left-panel-topclips" role="presentation" class="tabs"><a href="javascript:;">Page Clips</a></li>
+           -->
+
+          </ul>
+          <div id="page-thumbs"></div>
+        </div>
+
+        <div id="page-div" style="vertical-align:top;display:table-cell;padding:0 10px;position:relative;" class="">
+          <a href="javascript:;" class="left_arrow_pgright btn_prev" style="text-decoration:none;" title="Previous" alt="Previous" > <span> <i class="fa fa-angle-left"></i> </span> </a>
+          <a href="javascript:;" class="right_arrow_pgright btn_next" style="text-decoration:none;" title="Next" alt="Next"> <span> <i class="fa fa-angle-right"></i> </span> </a>
+          <div id="de-page-container" class="page-size mainclips">
+            <div id="de-chunks-container" class="page-size"></div>
+          </div>
+        </div>
+
+        <div id="page-right-panel" style="vertical-align:top;width:320px;display:table-cell;padding:0 10px;" class="hidden-xs">
+          <div id="epaper-box">                 <button class="btn btn-default btn-sm feedback"><i class="fa fa-pencil"></i> Feedback</button> 
+                          <button class="btn btn-default btn-sm about"><img height="16" src="https://sf.readwhere.com/img/ver16_logo_icon.png" alt=""/> About</button>
+                      </div>
+
+                                        <div style="height:600px;margin:0 auto;">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2931203390134969"
+     crossorigin="anonymous"></script>
+<!-- prabhatkhabar_ePaper_ads_dt_sidebar_300x250 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-2931203390134969"
+     data-ad-slot="8073686705"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>                </div>
+                            
+                              
+                
+                    
+        </div>
+    </div>
+    <div id="page-bottom">
+                              <div style="min-height:250px;margin:10px auto;text-align:center;">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2931203390134969"
+     crossorigin="anonymous"></script>
+<!-- prabhatkhabar_ePaper_ads_dt_footer_300x600 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-2931203390134969"
+     data-ad-slot="1677984534"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>              </div>
+                             
+               
+
+      <div id="top-clips-box" class="clips topclips"> </div>
+
+      
+        <script type="text/javascript">
+          if(typeof colombia == 'undefined') {
+
+            var colombia = colombia || {};
+            colombia.fns = colombia.fns || [];
+
+            (function() {
+
+              var cads = document.createElement("script");
+              cads.async = true;
+              cads.type = "text/javascript";
+              cads.src = "//static.clmbtech.com/ctn/commons/js/colombia_v2.js";
+              var node = document.getElementsByTagName("script")[0];
+              node.parentNode.insertBefore(cads, node);
+            })();
+          }
+        </script>
+
+        <!-- EXT_READWHERE_WEB_AS_EOA_CTN_NAT,position=1-->
+        <div id="div-clmb-ctn-317717-1" style="float:left;min-height:2px;width:100%;" data-slot="317717" data-position="1" data-section="0" data-ua="d" class="colombia"></div>
+      
+    </div>
+  </div>
+
+    <div id="first-page-text" style="display: none;"></div>
+
+
+    <div class="modal fade text-center" id="showClipModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="clip-modal-content">
+        <div class="modal-content">
+            <div class="modal-header heding-m">
+                <button type="button" class="close" data-dismiss="modal">
+                   <span aria-hidden="true">&times;</span>
+                   <span class="sr-only">Close</span>
+                </button>
+            </div>
+            <div class="modal-body">
+              <div class="ad-box">
+              </div>
+              <div class="paper-img">
+                <img class="clip-img" src="">
+              </div>
+              
+              <div class="cont-btn-box">
+                <a href="" class="cont-btn continue-reading" style="display: none;"> Continue<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
+                <a href="" class="cont-btn back-reading" style="display: none;"><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i> Back </a>
+              </div>
+            </div>
+            <div class="modal-footer clipactions">
+              
+              <div class="share-box">
+                <a class="btn btn-default openinnew" target="_blank" href="" ><i class="fa fa-external-link"></i><span style="color:#333" class="label">Open</span></a>                   <a target="_top" class="btn btn-default download downloadclip" href="javascript:;" data-clip-key=""><i class="fa fa-cloud-download"></i><span style="color:#333" class="label">Download</span></a>                 <button type="button" class="btn btn-default fbshare" data-src=""><i class="fa fa-facebook"></i><span class="label">Facebook</span></button>
+                <button type="button" class="btn btn-default twshare" data-src=""><i class="fa fa-twitter"></i><span class="label">Tweet</span></button>
+                <button type="button" class="btn btn-default email" data-issueid="3726073" data-clipid="" data-clipkey=""><i class="fa fa-envelope"></i><span class="label">Email</span></button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+
+              <div id="clip-comments" class="cmnt-box">
+                  <div class="fb-comments" data-href="" data-width="100%" data-numposts="10" data-colorscheme="light"></div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="clipping-panel" class="row" style="display:none;">
+      <div id="suggested-clip-box">
+        <div class="suggested-clip-header" style="height: 37px">
+                   
+        </div>
+        <div id="suggested-clips">
+          <div class="loader">
+            <i class="fa fa-spin fa-cog" style="font-size:24px;text-align:center;"></i>
+            <h3><b>Validating clip...</b></h3>
+          </div>
+        </div>
+        <div class="create-new" style="display: none;" >
+          <button type="button" class="btn btn-primary cancel_validate_clip" data-dismiss="modal" style="float: left;text-align: center;">Cancel</button>
+          <div class="ignore-suggest-clip" style="float: right;"><a>Ignore</a></div>
+        </div>
+      </div> 
+
+      <div id="new_clip" style="display:none;">
+        <div class="clipbox">
+            <div class="loader">
+              <i class="fa fa-spin fa-cog" style="font-size:24px;text-align:center;"></i>
+              <h3><b>Creating clip...</b></h3>
+            </div>
+            <a class="link" href="">
+                <span class="clipimage" style=""></span>
+            </a>
+        </div>
+        <div class="form-group linktoclip" style="display:none">
+          <label for="clip-link"> <a id="cliplink">Link </a>to this clip</label>
+          <input type="text" class="form-control" id="clip-link" value="" readonly>
+        </div>
+        <form id="save-clip-form">
+          <div class="form-group">
+            <label for="type-of-clip">Type of clip (select one)</label>
+            <select multiple class="form-control" id="type-of-clip" placeholder="Select one">
+              <option value="news">News</option>
+              <option value="opinion">Opinion</option>
+              <option value="photo">Photograph</option>
+              <option value="notice">Notice</option>
+              <option value="advertisment">Advertisment</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </form>
+        <div class="clipactions save">
+          <button type="button" class="btn btn-primary btn-lg saveclipinfo">Save</button>
+        </div>
+        <div class="clipactions big share" style="display:none;">
+            <button type="button" class="btn btn-default fbshare"><i class="fa fa-facebook"></i><span class="label">Facebook</span></button>
+            <button type="button" class="btn btn-default twshare"><i class="fa fa-twitter"></i><span class="label">Tweet</span></button>
+            <button type="button" class="btn btn-default email"><i class="fa fa-envelope"></i><span class="label">Email</span></button>
+            <a class="btn btn-default download openinnew" target="_blank" style="margin-top:10px;" href="javascript:;"><i class="fa fa-external-link"></i><span style="font-weight: bold; font-size: 12px; line-height: 20px; margin: 0px 4px;">Open</span></a>
+            <!-- <a class="btn btn-default download openclip" style="margin-top:10px;" href="#"><i class="fa fa-cloud-download"></i> <span style="font-weight: bold; font-size: 12px; line-height: 20px; margin: 0px 4px;"> Download </span> </a> -->
+        </div>
+      </div>
+    </div>
+    <div id="feedback-panel" class="row" style="display:none">
+      <p class="title">Epaper Feedback</p>
+      <p class="help-block">Please use this for epaper related feedback only. For other messages, please write to the newspaper's editor.</p>
+      
+      <label for="feedback" class="form-label">How do we improve the epaper?</label>
+      <textarea placeholder="" class="form-control" name="feedback" id="feedback-box" rows="3" style="resize: none;"></textarea>
+      
+      <label for="fromemail" class="form-label">Your email address:</label>
+      <input type="text" name="fromemail" id="feedback-fromemail-input" class="form-control" placeholder="required"/>
+      <p class="feedback-message error" style="color: #f00; display:none;">Feedback can not be blank. Please enter your feedback.</p>
+      <p class="email error" style="color: #f00; display:none;">Please enter your valid email.</p>
+
+      <button id="feedback-send" class="btn btn-primary form-control" type="button" style="text-align:center">Send</button>
+    </div>
+    <div id="about-panel" class="row" style="display:none">
+      <div style="width: 150px;height: 40px;margin-left: 70px;margin-bottom: 10px;">
+        <img src="https://sf.readwhere.com/img/readwherelogo2.png" style="width: 150px;">
+      </div>
+      <p class="" style="text-align:center;">Epaper powered by Readwhere digital publishing platform</p>
+      <p style="text-align:center"><a target="_top" href="https://www.readwhere.com/">Learn more</a></p>
+      <p class="">Download Readwhere app to read on the go</p>
+      <div style="text-align:center"><a target="_top" class="btn btn-link" style="padding-right:0;" href="https://rdwh.re/iosapp"><img src="https://cache.epapr.in/static/mapp/img/appstore-btn.png" height="40" /></a>
+      <a target="_top" style="padding-left:0;" class="btn btn-link" href="https://rdwh.re/androidapp"><img src="https://cache.epapr.in/static/mapp/img/play-store.png" height="40" /></a>
+      </div>
+    </div>
+    <div id="whitelabel-about-panel" class="row" style="display:none">
+      <div style="width: 100%;text-align: center;margin: 10px auto;">
+          <img src="https://cache.epapr.in/logos/logo_image_52b28c2d420f6.jpg">
+      </div>
+      <p class="" style="text-align:center;">Neutral Publishing House Ltd. is India’s leading media and communications group, active in the states of Jharkhand, Bihar and West Bengal.
+
+Their flagship publication is Prabhat Khabar, which is India's leading Hindi Daily, which is published from Ranchi, Jamshedpur, Dhanbad, Deoghar, Patna, Muzaffarpur, Bhagalpur, Gaya, Kolkata & Siliguri.</p>
+    </div>
+    
+    <div id="archive-download-panel" class="row" style="display:none">
+      <p class="title">CITY  of RANCHI - City</p>
+        
+        <p style="font-weight: bold;text-align: center;">You are logged-in with following email:</p>
+        <p class="user_email" style="text-align: center;"></p>
+
+        <button class="btn btn-primary form-control confirm-btn" type="button" style="text-align:center">Download PDF</button>
+        <div class="sending-loader" style="text-align:center;display: none;"><i class="fa fa-spin fa-cog" style="font-size:24px;text-align:center;"></i></div>
+        <div class="download-success" style="text-align: center;display:none;">
+            <span style="color:green;">Downloaded Successfully.</span> <a href="https://epaper.prabhatkhabar.com/">Go to Home</a>
+        </div>
+    </div>
+
+    <div id="archive-read-confirmation-panel" class="row" style="display:none">
+      <p class="title">CITY  of RANCHI - City</p>
+              <div>  
+          <p class="help-block" style="text-align: center;">Please purchase this volume to read.</p>
+        </div>
+        
+        <p style="font-weight: bold;text-align: center;">You are logged-in with following email:</p>
+        <p class="user_email" style="text-align: center;"></p>
+
+        <!-- <button class="btn btn-primary form-control confirm-btn" type="button" style="text-align:center">Read online @ INR </button> -->
+        <button class="btn btn-primary form-control archive_download-btn " type="button" style="text-align:center;height: 50px;">Download PDF @ &#8377; 0.00<span style="font-size: 10px; "> +GST </span>
+          <br>Total Price at Checkout <strong>&#8377; 0.00</strong></button>
+        <div class="sending-loader" style="text-align:center;display: none;"><i class="fa fa-spin fa-cog" style="font-size:24px;text-align:center;"></i></div>
+        
+      <div class="acknowledgement">
+        <div class="success" style="display: none;">
+          <p style="text-align:center;">
+            <strong>We have sent the confirmation email</strong>
+            <br/>
+            You will receive the acknowledgement with link to read this volume in your email shortly.
+          </p>
+        </div>
+        <div class="error" style="display: none;">
+          <p class="email error" style="color: #f00;"></p>
+        </div>
+      </div>
+       <div style="text-align: center;">
+          <a href="https://epaper.prabhatkhabar.com/">Go to Home</a>
+        </div>
+
+    </div>
+
+    <div id="clip-ad" style="display: none;">
+                            <div style="height:90px;margin:10px auto 10px;">
+                        </div>
+                    </div>
+
+    <div id="tour_overlay" style="width: 100%; float: left; height: 100vh; z-index: 99; font-weight: bold; color: rgb(255, 255, 255) ! important; background: none repeat scroll 0px 0px rgba(0, 0, 0, 0.8); position: absolute; left:0; top:0; display:none;">
+
+      <div style="position: absolute; border: 2px solid rgb(255, 255, 255); padding: 5px; left: 239px; top: 1.6%;">     RANCHI - C...   </div>
+      <div style="position: absolute; padding: 5px; left: 222px; top: 25px;">
+        <img src="https://marketing.readwhere.com/10548.png" style="width: 100px;">  
+      </div>
+      <div style="position: absolute; color: rgb(0, 0, 0); padding: 5px 10px; cursor: pointer; background: none repeat scroll 0% 0% rgb(244, 194, 37); border: 2px solid rgb(255, 255, 255); top: 98px; left: 183px;">Switch Editions </div>
+
+      <div style="position: absolute; border: 2px solid rgb(255, 255, 255); padding: 5px 7px; top: 169px; right: 387px;"><i class="fa fa-file-text"></i> / <i class="fa fa-columns"></i></div>
+      <div style="position: absolute; padding: 5px; top: 154px; right: 428px;">
+        <img style="width: 100px;" src="https://marketing.readwhere.com/10548.3.png">  
+      </div>
+      <div style="position: absolute; color: rgb(0, 0, 0); padding: 5px 10px; cursor: default; background: none repeat scroll 0% 0% rgb(244, 194, 37); border: 2px solid rgb(255, 255, 255); top: 247px; right: 450px;">Single / Dual Page</div>
+
+      <div id="dual_dwnld" style="display:none;">
+        <div style="position: absolute; border: 2px solid rgb(255, 255, 255); padding: 5px 7px; top: 170px; right: 345px;"><i class="fa fa-cloud-download"></i> </div>
+        <div style="position: absolute; padding: 5px; top: 188px; right: 285px;">
+          <img src="https://marketing.readwhere.com/10548.2.png" style="width: 100px;">
+        </div>
+        <div style="position: absolute; color: rgb(0, 0, 0); padding: 5px 10px; cursor: default; background: none repeat scroll 0% 0% rgb(244, 194, 37); border: 2px solid rgb(255, 255, 255); top: 265px; right: 276px;">Download PDF</div>
+      </div>
+
+      <div style="position: absolute; border: 2px solid rgb(255, 255, 255); padding: 5px; top: 1.5%; left: 393px;">Thu, 29 Jun 23 <i class="fa fa-calendar"></i></div>
+      <div style="position: absolute; padding: 5px; top: 25px; left: 428px;">
+        <img src="https://marketing.readwhere.com/10548.2.png" style="width: 100px;">  
+      </div>
+      <div style="position: absolute; color: rgb(0, 0, 0); padding: 5px 10px; cursor: pointer; background: none repeat scroll 0% 0% rgb(244, 194, 37); border: 2px solid rgb(255, 255, 255); top: 98px; left: 500px;">Explore Archives</div>
+
+      <div id="single_dwnld">
+        <div style="position: absolute; border: 2px solid rgb(255, 255, 255); padding: 5px 7px; top: 213px; right: 203px;">Download</div>
+        <div style="position: absolute; padding: 5px; top: 200px; right: 272px;">
+          <img style="width: 100px;" src="https://marketing.readwhere.com/10548.3.png">  
+        </div>
+        <div style="position: absolute; color: rgb(0, 0, 0); padding: 5px 10px; cursor: pointer; background: none repeat scroll 0% 0% rgb(244, 194, 37); border: 2px solid rgb(255, 255, 255); top: 282px; right: 300px;">Download PDF</div>
+      </div>
+
+      <!-- <div style="position: absolute; border: 2px solid rgb(255, 255, 255); padding: 5px 7px; top: 218px; left: 94px;">Top Clips</div>
+      <div style="position: absolute; padding: 5px; left: 115px; top: 241px;">
+        <img style="width: 34px;" src="https://marketing.readwhere.com/10548.5.png">  
+      </div>
+      <div style="position: absolute; color: rgb(0, 0, 0); padding: 5px 10px; cursor: pointer; background: none repeat scroll 0% 0% rgb(244, 194, 37); border: 2px solid rgb(255, 255, 255); top: 311px; left: 87px;">View Clips</div> -->
+      
+      <!-- <div class="tour_section" style="position: absolute; border: 2px solid rgb(255, 255, 255); padding: 5px 7px; top: 218px; left: 186px;">Sections</div>
+      <div class="tour_section" style="position: absolute; padding: 5px; top: 213px; left: 252px;">
+        <img style="width: 71px;" src="https://marketing.readwhere.com/10548.6.png">  
+      </div>
+      <div class="tour_section" style="position: absolute; color: rgb(0, 0, 0); padding: 5px 10px; cursor: pointer; background: none repeat scroll 0% 0% rgb(244, 194, 37); border: 2px solid rgb(255, 255, 255); top: 218px; left: 324px;">View Sections</div> -->
+
+      
+      <div style="position: absolute; padding: 5px; right: 1%; top: 1%; color: rgb(255, 255, 255);cursor:pointer;" id="cancel_tour"> <i class="fa fa-times fa-2x"></i> </div>
+    </div>
+
+    <div class="modal fade" id="other-title-modal" tabindex="-1" role="dialog" aria-labelledby="otherTitleModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            
+            <div class="col-md-7 v4_padding_none">
+               <h4 class="modal-title" id="otherTitleModalLabel"> RANCHI - City </h4>
+            </div>
+
+            <div class="col-md-4 search_inheaderv4 searchbar">
+               <div class="input-group v4_defaultwd" id="theFormID">
+                  <input type="text" class="form-control" placeholder="Search Edition" id="txt_search">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default vs_searchbtn" type="button"> 
+                      <i class="fa fa-search"></i> 
+                    </button>
+                  </span>
+                </div>
+            </div>
+
+           
+          </div>
+          <div class="modal-body">
+            
+            <div class="col-md-12 vw_paddingnone vs_border-right">
+              
+              <!-- search bar -->
+              <!-- <div class="widthplus searchbar">
+                <div class="input-group" id="theFormID">
+                  <input type="text" class="form-control" placeholder="Search Edition" id="txt_search">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default vs_searchbtn" type="button"> 
+                      <i class="fa fa-search"></i> 
+                    </button>
+                  </span>
+                </div>
+              </div> -->
+
+              <!-- search result -->              
+              <div class="widthplus vs_border-top" id="vs_searchresults">
+                <div class="widthplus">
+                  <span class="vs_heading5 vs_fright ">
+                    Search results 
+                  </span>
+                </div>
+                <div class="widthplus vs_padding15 vs_tagscaptions">
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18620/latest">SAHIBGANJ </a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18630/latest">PURNIA</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18629/latest">MUNGER</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18628/latest">MADHEPURA</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18627/latest">LAKHISARAI</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18626/latest">KHAGARIA</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18625/latest">KATIHAR</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18623/latest">BANKA</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18622/latest">ARARIA</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18621/latest">GODDA</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18631/latest">SAHRSA</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18619/latest">JAMTARA</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18618/latest">DUMKA</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18617/latest">GIRIDIH</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18616/latest">BOKARO</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18614/latest">GHATSILA</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18613/latest">CHANDIL</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18612/latest">CHAIBASA</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18578/latest">SARAN</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18577/latest">JEHANABAD</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18658/latest">SASARAM</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/33089/latest">BHUBANESWAR</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/30166/latest">BALLIA</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/30159/latest">ROURKELA</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/25463/latest">PAKUR</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/23762/latest">KISHANGANJ</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/19402/latest">JAMUI</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18661/latest">SILPANCHAL</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18660/latest">NAWADA</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18659/latest">AURANGABAD</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18579/latest">SIWAN</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18657/latest">KAIMUR</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18640/latest">SAMSTIPUR</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18639/latest">SITAMARAHI</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18637/latest">MOTIHARI</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18636/latest">MADHUBANI</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18635/latest">DARBHANGA</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18633/latest">BETIAH</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18632/latest">SUPAUL</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18572/latest">GOPALGANJ</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/6185/latest">RANCHI - City</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/6192/latest">PATNA - City</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/6204/latest">GAYA - City</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/6211/latest">MUZAFFARPUR - City</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/6218/latest">BHAGALPUR - City</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/6228/latest">DEOGHAR - City</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/6232/latest">JAMSHEDPUR - City</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/6235/latest">SILIGURI - City</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/6236/latest">DHANBAD - City</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/6244/latest">KOLKATA - City</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18525/latest">Garhwa</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18526/latest">Hazaribagh  Chatra</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18527/latest">Gumla</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18532/latest">Lohardaga</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18576/latest">HAJIPUR</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18567/latest">BUXAR</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18560/latest">BIHARSHARIF</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18558/latest">BEGUSARAI</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18557/latest">ARRAH</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18538/latest">Silli</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18536/latest">Ramgarh</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18534/latest">Palamu</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18528/latest">Koderma</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18529/latest">Khalari </a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/18530/latest">Khunti</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/12615/latest">Surbhi</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/6173/latest">Awsar</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/27896/latest">ICC WORLD CUP 2019</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/27580/latest">LOKSABHA ELECTION 2019</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/17860/latest">Deepawali Visheshank</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/24504/latest">RAMAZAN</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/15329/latest">ROJGAR</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/23474/latest">Holi Visheshank</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/6276/latest">Raviwar</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/12091/latest">Jyotish Visheshank</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/7246/latest">Family</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/6240/latest">BAL-PRABHAT</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/6280/latest">Patna - Panchayatnama</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/6258/latest">Healthy Life</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/6267/latest"> RAVI RANG</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/6272/latest">Ranchi-Panchayatnama</a>
+                                      <a target="_top" href="https://epaper.prabhatkhabar.com/t/11849/latest">Sourya Gatha</a>
+                                  </div>
+              </div>
+
+              <div class="collection_hierarchy">
+              </div>
+
+              <!-- Editions -->
+              <div class="widthplus edition">
+                <div class="widthplus">
+                  <span class="vs_heading5">
+                    Editions
+                  </span>
+                 </div>
+                 <div class="widthplus publication">
+                 </div>
+              </div>
+
+              <div class="last_read">
+                <div class="widthplus">
+                  <span class="vs_heading5 vs_fright ">
+                    Recently Visited </i>
+                  </span>
+                </div>
+                <div class="widthplus vs_padding15 vs_tagscaptions publication">
+                </div>
+              </div>
+
+            </div>
+
+            <!-- <div class="col-md-3 vw_paddingnone last_read">
+              <div class="widthplus">
+                <span class="vs_heading5 vs_fright ">
+                  Recently Visited <i class="fa fa-chevron-down"></i>
+                </span>
+              </div>
+              <div class="publication">
+              </div>
+            </div> -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="search-query-modal" tabindex="-1" role="dialog" aria-labelledby="searchInTitleModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            
+            <div class="col-md-2 v4_padding_none">
+               <h4 class="modal-title" id="searchInTitleModal"> RANCHI - City </h4>
+            </div>
+
+            <div class="col-md-9 search_inheaderv4 searchbar" id="search_box">
+              <form id="search-form" method="get" accept-charset="UTF-8" action=""> 
+                <div class="input-group v4_defaultwd" id="theFormID">
+                  <input type="text" class="form-control" placeholder="Search for your keyword" id="de-searchbox">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default vs_searchbtn searchbtn" type="button"> 
+                      <i class="fa fa-search"></i> 
+                    </button>
+                  </span>
+                </div>
+              </form>
+            </div>
+
+          </div>
+          <div class="modal-body" style="max-height: 450px;overflow-y:scroll;">          
+            <div class="srchloader" style="display:none;text-align: center;">
+              <img class="loader" src="https://sf.readwhere.com/read/theme/images/loader.gif" /> 
+            </div>
+            <div class="col-md-12 vw_paddingnone vs_border-right">
+              <!-- Search Results -->
+              <div class="widthplus edition">
+                <div class="widthplus" id="search_head" style="display:none;">
+                  <span class="vs_heading5">
+                    Search Results
+                  </span>
+                </div>
+                <div class="widthplus searched_pages"> </div>
+                
+                <div id="search_navbar" style="display: none;">          
+                  <button class="btn nofloat" id="prev">
+                    <div><span class="label">&lt;</span></div>
+                  </button>
+                  <button class="btn pagenum nofloat">
+                    <div> <i class="fa fa-file-text" aria-hidden="true"></i> <span class="label" id="page_num"> </span> </div>
+                  </button>
+                  <button class="btn nofloat" id="next">
+                    <div><span class="label">&gt;</span></div>
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script type="text/javascript">
+      var DEConfig = {
+        'issueId': 3726073,
+        'titleId': 6185,
+        'publisherId': 12762,
+        'baseUrl': "https://epaper.prabhatkhabar.com/",
+        'rwBase': "http://www.readwhere.com/",
+        'rwBaseHttps': "https://www.readwhere.com/",
+        'cdnBase': 'https://cache.epapr.in/',
+        'numPages': 16,
+        'sections': [],
+        'left_tab': "pages",
+        'titleName': "RANCHI - City",
+        'publisherName': "",
+        'publishMonth':"2023-06",
+        'published':"2023-06-29 10:00:00",
+        'showpdf': 0,
+        'customAnalytics':true, 
+        'enablePlugins':true, 
+        'DEBUG': false,
+        'title_settings': [],
+        'collection': {"display_name":"Prabhat Khabar","titles":["6185","18525","18526","18527","18528","18529","18530","18532","18534","18536","18538","6192","18557","18558","18560","18567","18572","18576","18577","18578","18579","30166","6244","6235","18661","6232","18612","18614","18613","30159","33089","6236","18616","18617","6228","18619","18618","18621","18620","25463","6211","18633","18635","18636","18637","18639","18640","6218","23762","18622","18623","18625","18626","18627","19402","18628","18629","18630","18631","18632","6204","18657","18658","18659","18660","6280","6272","12615","6267","6258","6240","6173","6276","7246","11849","27896","12091","15329","23474","17860","24504"],"parent":null,"children":{"1417505232-newspapers":{"display_name":"Newspapers","titles":["6185","18525","18526","18527","18528","18529","18530","18532","18534","18536","18538","6192","18557","18558","18560","18567","18572","18576","18577","18578","18579","30166","6244","6235","6232","18661","18612","18614","18613","30159","33089","6236","18616","18617","6228","18619","18618","18621","18620","6211","18633","18635","18636","18637","18639","18640","6218","23762","18622","18623","18625","18626","18627","19402","18628","18629","18630","18631","18632","6204","18657","18658","18659","18660","6272"],"parent":"1388139073-prabhat-khabar","children":null,"deleted":0,"host":"epaper.prabhatkhabar.com","publisher_id":12762,"id":"1417505232-newspapers"},"1417505257-magazines":{"display_name":"Magazines","titles":["12615","6267","6258","6240","6173","27896","12091","15329","24504"],"parent":"1388139073-prabhat-khabar","children":null,"deleted":0,"host":"epaper.prabhatkhabar.com","publisher_id":12762,"id":"1417505257-magazines"}},"deleted":0,"host":"epaper.prabhatkhabar.com","type":"all","publisher_id":12762,"id":"1388139073-prabhat-khabar"},
+        'environment' : "PRODUCTION",
+        'favicon' : "http://cache.epapr.in/favicon/logo_image_59c0ee90f24b0.png",
+        'needsAuth': false,
+        'isPaid':false,
+        'isAuth': false,
+        'authBase': 'https://www.readwhere.com/',
+        'pType':'newspaper',
+        'language':'Hindi',
+        'loggedin' : false,
+        'webPEnabled': true,
+        'custom_user_profile': '',
+        'webPVersion': 1,
+        'refreshOnPageChange': true,
+        'requireAuth': false,
+        'enableLogin': false,
+        'appId': '1563518995',
+        'doublespread_pages' : [],
+        'wlDownload' : true,
+        'viewer_version': 'newspaper_v4',
+        'suggestedReads': {},
+        'action_page_view': true,
+        'enable_clipping': true,
+        'publisher_clip_behaviour': {"bg-color-hax":"BBDEFB","navigation":"new-window"},
+        'user_clip_behaviour': {"bg-color-hax":"F9ECD1","navigation":""},
+        'new_clip_popup': false,
+        'read_behind_login': false,
+        'partner_authentication_enable': false,
+        'archived': false,
+        'ad_display_intrestitial_page_change': false,
+        'nlimited': false,
+        'digicase_geolocation': false,
+        'digi_inr_cnt': false,
+        'digi_usd_cnt': false,
+        'plugins' : {"gallery-version":"v1","video-version":"v1","upload_video-version":"v1"},
+        'restore_payment_disable' : false,
+        'v2_downloader': -1,
+        'clip_downloader': 1,
+        'otherTitles': {"18620":{"name":"SAHIBGANJ ","slug":"SAHIBGANJ-PAKUR","id":"18620","type":"newspaper"},"18630":{"name":"PURNIA","slug":"PURNIA","id":"18630","type":"newspaper"},"18629":{"name":"MUNGER","slug":"MUNGER","id":"18629","type":"newspaper"},"18628":{"name":"MADHEPURA","slug":"MADHEPURA","id":"18628","type":"newspaper"},"18627":{"name":"LAKHISARAI","slug":"LAKHISARAI","id":"18627","type":"newspaper"},"18626":{"name":"KHAGARIA","slug":"KHAGARIA","id":"18626","type":"newspaper"},"18625":{"name":"KATIHAR","slug":"KATIHAR","id":"18625","type":"newspaper"},"18623":{"name":"BANKA","slug":"BANKA","id":"18623","type":"newspaper"},"18622":{"name":"ARARIA","slug":"ARARIA-KISHANGANJ","id":"18622","type":"newspaper"},"18621":{"name":"GODDA","slug":"GODDA","id":"18621","type":"newspaper"},"18631":{"name":"SAHRSA","slug":"SAHARSA","id":"18631","type":"newspaper"},"18619":{"name":"JAMTARA","slug":"JAMTARA","id":"18619","type":"newspaper"},"18618":{"name":"DUMKA","slug":"DUMKA","id":"18618","type":"newspaper"},"18617":{"name":"GIRIDIH","slug":"GIRIDIH","id":"18617","type":"newspaper"},"18616":{"name":"BOKARO","slug":"BOKARO","id":"18616","type":"newspaper"},"18614":{"name":"GHATSILA","slug":"GHATSILA","id":"18614","type":"newspaper"},"18613":{"name":"CHANDIL","slug":"CHANDIL","id":"18613","type":"newspaper"},"18612":{"name":"CHAIBASA","slug":"CHAIBASA","id":"18612","type":"newspaper"},"18578":{"name":"SARAN","slug":"SARAN","id":"18578","type":"newspaper"},"18577":{"name":"JEHANABAD","slug":"JEHANABAD","id":"18577","type":"newspaper"},"18658":{"name":"SASARAM","slug":"SASARAM","id":"18658","type":"newspaper"},"33089":{"name":"BHUBANESWAR","slug":"BHUBANESWAR","id":"33089","type":"newspaper"},"30166":{"name":"BALLIA","slug":"BALLIA","id":"30166","type":"newspaper"},"30159":{"name":"ROURKELA","slug":"ROURKELA","id":"30159","type":"newspaper"},"25463":{"name":"PAKUR","slug":"PAKUR","id":"25463","type":"newspaper"},"23762":{"name":"KISHANGANJ","slug":"KISHANGANJ","id":"23762","type":"newspaper"},"19402":{"name":"JAMUI","slug":"JAMUI","id":"19402","type":"newspaper"},"18661":{"name":"SILPANCHAL","slug":"SILPANCHAL","id":"18661","type":"newspaper"},"18660":{"name":"NAWADA","slug":"NAWADA","id":"18660","type":"newspaper"},"18659":{"name":"AURANGABAD","slug":"AURANGABAD","id":"18659","type":"newspaper"},"18579":{"name":"SIWAN","slug":"SIWAN","id":"18579","type":"newspaper"},"18657":{"name":"KAIMUR","slug":"KAIMUR","id":"18657","type":"newspaper"},"18640":{"name":"SAMSTIPUR","slug":"SAMSTIPUR","id":"18640","type":"newspaper"},"18639":{"name":"SITAMARAHI","slug":"SITAMARAHI","id":"18639","type":"newspaper"},"18637":{"name":"MOTIHARI","slug":"MOTIHARI","id":"18637","type":"newspaper"},"18636":{"name":"MADHUBANI","slug":"MADHUBANI","id":"18636","type":"newspaper"},"18635":{"name":"DARBHANGA","slug":"DARBHANGA","id":"18635","type":"newspaper"},"18633":{"name":"BETIAH","slug":"BETIAH","id":"18633","type":"newspaper"},"18632":{"name":"SUPAUL","slug":"SUPAUL","id":"18632","type":"newspaper"},"18572":{"name":"GOPALGANJ","slug":"GOPALGANJ","id":"18572","type":"newspaper"},"6185":{"name":"RANCHI - City","slug":"RANCHI-City","id":"6185","type":"newspaper"},"6192":{"name":"PATNA - City","slug":"PATNA-City","id":"6192","type":"newspaper"},"6204":{"name":"GAYA - City","slug":"GAYA-City","id":"6204","type":"newspaper"},"6211":{"name":"MUZAFFARPUR - City","slug":"MUZAFFARPUR-City","id":"6211","type":"newspaper"},"6218":{"name":"BHAGALPUR - City","slug":"BHAGALPUR-City","id":"6218","type":"newspaper"},"6228":{"name":"DEOGHAR - City","slug":"DEOGHAR-City","id":"6228","type":"newspaper"},"6232":{"name":"JAMSHEDPUR - City","slug":"JAMSHEDPUR-City","id":"6232","type":"newspaper"},"6235":{"name":"SILIGURI - City","slug":"SILIGURI-City","id":"6235","type":"newspaper"},"6236":{"name":"DHANBAD - City","slug":"DHANBAD-City","id":"6236","type":"newspaper"},"6244":{"name":"KOLKATA - City","slug":"KOLKATA-City","id":"6244","type":"newspaper"},"18525":{"name":"Garhwa","slug":"Garhwa","id":"18525","type":"newspaper"},"18526":{"name":"Hazaribagh  Chatra","slug":"Hazaribagh-Chatra","id":"18526","type":"newspaper"},"18527":{"name":"Gumla","slug":"Gumla","id":"18527","type":"newspaper"},"18532":{"name":"Lohardaga","slug":"Lohardaga","id":"18532","type":"newspaper"},"18576":{"name":"HAJIPUR","slug":"HAJIPUR","id":"18576","type":"newspaper"},"18567":{"name":"BUXAR","slug":"BUXAR","id":"18567","type":"newspaper"},"18560":{"name":"BIHARSHARIF","slug":"BIHARSHARIF","id":"18560","type":"newspaper"},"18558":{"name":"BEGUSARAI","slug":"BEGUSARAI","id":"18558","type":"newspaper"},"18557":{"name":"ARRAH","slug":"ARRAH","id":"18557","type":"newspaper"},"18538":{"name":"Silli","slug":"Silli","id":"18538","type":"newspaper"},"18536":{"name":"Ramgarh","slug":"Ramgarh","id":"18536","type":"newspaper"},"18534":{"name":"Palamu","slug":"Palamu","id":"18534","type":"newspaper"},"18528":{"name":"Koderma","slug":"Koderma","id":"18528","type":"newspaper"},"18529":{"name":"Khalari ","slug":"Khalari","id":"18529","type":"newspaper"},"18530":{"name":"Khunti","slug":"Khunti","id":"18530","type":"newspaper"},"12615":{"name":"Surbhi","slug":"Surbhi","id":"12615","type":"magazine"},"6173":{"name":"Awsar","slug":"Awsar","id":"6173","type":"magazine"},"27896":{"name":"ICC WORLD CUP 2019","slug":"ICC-WORLD-CUP-2019","id":"27896","type":"magazine"},"27580":{"name":"LOKSABHA ELECTION 2019","slug":"LOKSABHA-ELECTION-2019","id":"27580","type":"magazine"},"17860":{"name":"Deepawali Visheshank","slug":"Deepawali-Visheshank","id":"17860","type":"magazine"},"24504":{"name":"RAMAZAN","slug":"RAMAZAN","id":"24504","type":"magazine"},"15329":{"name":"ROJGAR","slug":"ROJGAR","id":"15329","type":"magazine"},"23474":{"name":"Holi Visheshank","slug":"Holi-Visheshank","id":"23474","type":"magazine"},"6276":{"name":"Raviwar","slug":"Raviwar","id":"6276","type":"magazine"},"12091":{"name":"Jyotish Visheshank","slug":"Jyotish-Visheshank","id":"12091","type":"magazine"},"7246":{"name":"Family","slug":"Family","id":"7246","type":"magazine"},"6240":{"name":"BAL-PRABHAT","slug":"BAL-PRABHAT","id":"6240","type":"magazine"},"6280":{"name":"Patna - Panchayatnama","slug":"Patna-Panchayatnama","id":"6280","type":"magazine"},"6258":{"name":"Healthy Life","slug":"Healthy-Life","id":"6258","type":"magazine"},"6267":{"name":" RAVI RANG","slug":"RANG","id":"6267","type":"magazine"},"6272":{"name":"Ranchi-Panchayatnama","slug":"Ranchi-Panchayatnama","id":"6272","type":"magazine"},"11849":{"name":"Sourya Gatha","slug":"Sourya-Gatha","id":"11849","type":"book"}}      };
+
+      var base_url_split = DEConfig.baseUrl.split('/');
+      DEConfig.baseUrl = DEConfig.baseUrl.replace(base_url_split[0],window.location.protocol);
+      
+      DEConfig.baseUrlLink = ("12762"=="2698") ? "http://epaper.sandesh.com/" : DEConfig.baseUrl;
+    </script>
+
+  <!-- Script for purchase / subscribe page--> 
+    <script type="text/html" id="de-subscribe-login-box-tmpl">
+    <div id="de-subscribe-login-box" class="rw-buy-box container" title="RANCHI - City" style="">
+      <img class="loader" src="https://sf.readwhere.com/read/theme/images/loader.gif" />
+
+      <button class="login_whitelabel login-required" style="background-color: rgb(255,255,255); font-size: 24px; font-weight: bold; text-transform: uppercase; border: none; width: 62%; margin: 14% 19%; padding: 10px 0; line-height: 48px; text-align: center; display: none; color: rgb(80,80,80);;"> 
+        <i class="glyphicon glyphicon-lock"></i> Login required to view content</button>
+
+      <div class="buy-box-info">
+        <div style="float:left;width:30%;">
+          <img src="https://d2na0fb6srbte6.cloudfront.net/read/imageapi/coverforissue/3726073/newspaper/300" height="514px" width="300px" alt="RANCHI - City" class="rw-thumb">
+          <button class="rw-de-btn-enabled preview-btn">Preview</button>
+          
+          <fieldset class="about-magazine">
+            <legend class="legend_prepage">In this issue</legend>
+                        <p class="rw-description" style="font-size:13px;">prabhatkhabar</p>
+            
+          </fieldset>
+          <fieldset class="about-magazine">
+            <legend class="legend_prepage">About RANCHI - City</legend>
+            <span class="rw-description" style="font-size:13px;display:block;margin-top:10px;margin-bottom:10px;">Leading newspaper of jharkhand.</span>
+          </fieldset>
+          
+        </div>
+        <div class="rw-details" style="float:left;width:70%;">
+            <span class="rw-title biggervolume_name">RANCHI - City</span>
+            <p class="info smallervolume_name" style="color: #999;width: 100%;float: left;margin: 0 0 5px 0;">CITY </p>
+            <p class="info smallervolume_name color_blueee">By Prabhat Khabar</p>                   
+                        <p class="info smallervolume_name" style="padding:10px 0 !important;"> <span style="color:#777;padding:0px;"> Available on - </span>  <a target="_top" class="apple" href="https://rdwh.re/iosapp" target="_blank"> <i class="fa fa-apple"></i> </a> <a target="_top" class="android" href="https://rdwh.re/androidapp"> <i class="fa fa-android "></i> </a></p>
+          
+                           
+            
+
+            
+            <div style="display: inline-block;line-height:1.8;text-align: center;width:100%;">
+                <fieldset class="pricing-options">
+                  <table width="100%">
+                    <tr class="first">
+                      <td> Single Issue </td>
+                      <td class="price">
+                        <span class="issue-price-btn rupees" style="font-size:20px;padding-left: 16px;">
+                          <i class="fa fa-inr"></i>                          0.00                        </span>
+                        <span class="login-only-btn" style="display:none;font-size:20px;padding-left: 16px;">Free</span>
+                      </td>
+                      <td>
+                        <a target="_top" class="rw-de-btn-enabled login-only-btn" style="display:none;" href="https://www.readwhere.com/user/login?ru=https://epaper.prabhatkhabar.com/r/3726073">Login to read</a>
+                        <a target="_top" class="issue-price-btn rw-de-btn-enabled" style="display:inline-block;" href="https://www.readwhere.com/read/cartcheckout/show/3726073/1?wl=&src=epaper.prabhatkhabar.com">Buy Issue</a>
+                      </td>
+                    </tr>
+
+                                      </table>
+                </fieldset>
+
+                 
+                            </div>
+
+          
+          <div id="digi_msg_alert" style="display:none;text-align:center;margin-top: 60px;width:100%;color:red">No digicase available at your location</div>
+
+        </div>
+
+        
+      </div>
+    </div>
+  </script> 
+
+  <script type="text/html" id="de-zero-pages-error-tmpl">
+    <div id="de-zero-pages-error" style="margin-top:8%;" title="Login to RANCHI - City" class="rw-buy-box container">
+      <div class="buy-box-info" style="display: block;">
+        <div style="float:left;width:30%;">
+          <img src="https://d2na0fb6srbte6.cloudfront.net/read/imageapi/coverforissue/3726073/newspaper/300" height="514px" width="300px" alt="RANCHI - City" alt="Good Housekeeping" class="rw-thumb">
+        </div>
+        <div class="rw-details" style="float:left;width:70%;">
+          <span class="rw-title biggervolume_name">RANCHI - City</span>
+          <p class="info subscription_info" style="font-size: 17px !important;width: 54%;padding-left: 0px !important">This volume has no pages </p>
+        </div>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/html" id="de-login-before-read-tmpl">
+    <div id="de-login-before-read" class="rw-buy-box container" title="RANCHI - City" style="margin-top: -60px;">
+      <img class="loader" src="https://sf.readwhere.com/read/theme/images/loader.gif" />
+
+      <div class="buy-box-info" style="display: block;">
+        <div style="float:left;width:30%;">
+          <img src="https://d2na0fb6srbte6.cloudfront.net/read/imageapi/coverforissue/3726073/newspaper/300" height="514px" width="300px" alt="RANCHI - City" class="rw-thumb">
+        </div>
+        <div class="rw-details" style="float:left;width:70%;">
+            <span class="rw-title biggervolume_name">RANCHI - City</span>
+            <p class="info smallervolume_name" style="color: #999;width: 100%;float: left;margin: 0 0 5px 0;">CITY </p>
+            <p class="info smallervolume_name color_blueee">By Prabhat Khabar</p>                   
+                        <p class="info smallervolume_name" style="padding:10px 0 !important;"> <span style="color:#777;padding:0px;"> Available on - </span>  <a target="_top" class="apple" href="https://rdwh.re/iosapp" target="_blank"> <i class="fa fa-apple"></i> </a> <a target="_top" class="android" href="https://rdwh.re/androidapp"> <i class="fa fa-android "></i> </a></p>
+          
+            <div style="display: inline-block;line-height:1.8;text-align: center;width:100%;">
+              <fieldset class="pricing-options" style="padding: 0px;">
+                <table width="28%%">
+                  <tr class="first">
+                    <td>
+                      <a target="_top" class="rw-de-btn-enabled login-only-btn login-required" style="display:block;" href="javascript:;">Please Login to Read</a>
+                    </td>
+                  </tr>
+                  
+                </table>
+              </fieldset>
+            </div>
+        </div>
+      </div>
+    </div>
+  </script> 
+  
+  
+    <script type="text/javascript">
+
+
+
+      function digicaseCheckout(digicase_id){
+        var source = window.location.hostname;
+        window.location.href = DEConfig.baseUrl+'digicasecheckout/show/'+digicase_id+'?source='+source;     
+        
+      }
+                
+      function digicaseSubscribe(digicase_id){
+        var source = window.location.hostname;
+        window.location.href = DEConfig.baseUrl+'digicasesubscribe/show/'+digicase_id+'?source='+source;  
+                 
+      }
+      ///
+      /**
+       * @preserve
+       * Project: Bootstrap Hover Dropdown
+       * Author: Cameron Spear
+       * Version: v2.0.11
+       * Contributors: Mattia Larentis
+       * Dependencies: Bootstrap's Dropdown plugin, jQuery
+       * Description: A simple plugin to enable Bootstrap dropdowns to active on hover and provide a nice user experience.
+       * License: MIT
+       * Homepage: http://cameronspear.com/blog/bootstrap-dropdown-on-hover-plugin/
+       */
+      (function(e,t,n){var r=e();e.fn.dropdownHover=function(n){if("ontouchstart"in document)return this;r=r.add(this.parent());return this.each(function(){function p(e){r.find(":focus").blur();if(l.instantlyCloseOthers===true)r.removeClass("open");t.clearTimeout(c);s.addClass("open");i.trigger(a)}var i=e(this),s=i.parent(),o={delay:500,instantlyCloseOthers:true},u={delay:e(this).data("delay"),instantlyCloseOthers:e(this).data("close-others")},a="show.bs.dropdown",f="hide.bs.dropdown",l=e.extend(true,{},o,n,u),c,h;s.hover(function(e){if(!s.hasClass("open")&&!i.is(e.target)){return true}h=t.setTimeout(function(){p(e)},300)},function(){t.clearTimeout(h);c=t.setTimeout(function(){s.removeClass("open");i.trigger(f)},l.delay)});i.hover(function(e){if(!s.hasClass("open")&&!s.is(e.target)){return true}p(e)});s.find(".dropdown-submenu").each(function(){var n=e(this);var r;n.hover(function(){t.clearTimeout(r);n.children(".dropdown-menu").show();n.siblings().children(".dropdown-menu").hide()},function(){var e=n.children(".dropdown-menu");r=t.setTimeout(function(){e.hide()},l.delay)})})})};e(document).ready(function(){e('[data-hover="dropdown"]').dropdownHover()})})(jQuery,this)
+      
+      ///
+      //prevent dropdown from closing when clicked inside
+      $('.full-dropdown').click(function(e){
+        e.stopPropagation();
+      });
+      ///
+      window.DE = (typeof(window.DE) == 'undefined') ? {} : window.DE;
+      DE.plugins = {};
+
+      
+    </script>
+    <script type="text/javascript">
+      //pathchange.js
+      (function(e){e.fn.pathchange=function(e){return e?this.bind("pathchange",e):this.trigger("pathchange")};var t=e.pathchange={options:{useHistory:false,useHashchange:true,pollingInterval:250,interceptLinks:false,disableHashLinks:true},init:function(n){var r;e.extend(t.options,n);if(t.options.useHistory&&t.detectHistorySupport()){e(window).bind("popstate",function(t){e(window).trigger("pathchange")})}if(t.options.useHashchange){e(window).bind("hashchange",function(t){e(window).trigger("pathchange")});if(!t.detectHashchangeSupport()){r=window.location.hash;setInterval(function(){if(r!==window.location.hash){e(window).trigger("hashchange");r=window.location.hash}},t.options.pollingInterval)}}if(t.options.interceptLinks){e("body").delegate("a[href^=/]","click",function(n){t.changeTo(e(this).attr("href"));n.preventDefault()})}if(t.options.disableHashLinks){e("body").delegate("a[href='#']","click",function(e){e.preventDefault()})}},changeTo:function(n){if(t.options.useHistory&&t.detectHistorySupport()){window.history.pushState(null,null,n);e(window).trigger("pathchange")}else{if(n.indexOf("#")<0){n+="#"}if(n.substr(0,10)!="javascript"){window.location.href=window.location.protocol+"//"+window.location.hostname+(window.location.port?":"+window.location.port:"")+n}}},detectHistorySupport:function(){return!!(window.history&&history.pushState)},detectHashchangeSupport:function(){if("onhashchange" in window){return true;}else{return false;}}}})(jQuery)
+
+    </script>
+    <script type="text/javascript" src="https://sf.readwhere.com/read/js/sweet-alert.js?v=1464340487"></script>    <link rel=stylesheet href="https://sf.readwhere.com/read/styles/sweet-alert.css?v=1464340482">    <script type="text/javascript">
+    /*
+     in-viewport v0.4.2 | github.com/vvo/in-viewport#license
+     lazyload v2.1.3 | github.com/vvo/lazyload#license
+    */
+    (function(e,g){function h(b,a,c){b.attachEvent?b.attachEvent("on"+a,c):b.addEventListener(a,c,!1)}function s(b){var a;return function(){var c=this,d=arguments;clearTimeout(a);a=setTimeout(function(){a=null;b.apply(c,d)},15)}}function t(b){function a(a,k,e){if(!d(g.documentElement,a)||!d(g.documentElement,b))return e?setTimeout(c(a,k,e),0):!1;var f=a.getBoundingClientRect(),l=b.getBoundingClientRect(),h=f.left,n=f.top,p=k,q=k;b===g.body?(p+=g.documentElement.clientWidth,q+=g.documentElement.clientHeight,
+    l={bottom:b.scrollHeight,top:0,left:0,right:b.scrollWidth}):(h-=l.left,n-=l.top,p+=b.clientWidth,q+=b.clientHeight);if(!(f.right<l.left||f.left>l.right||f.bottom<l.top||f.top>l.bottom)&&n<=q&&h<=p)if(e)r.splice(m.call(r,a),1),e(a);else return!0;else if(e)setTimeout(c(a,k,e),0);else return!1}function c(b,e,d){-1===m.call(r,b)&&r.push(b);return function(){k.push(function(){a(b,e,d)})}}var k=[],r=[],u=b===g.body?e:b,n=s(function(){for(var a;a=k.shift();)a()});h(u,"scroll",n);u===e&&h(e,"resize",n);"function"===
+    typeof window.MutationObserver&&f(r,b,n);return{b:b,a:a}}function m(b){for(var a=this.length;a--&&this[a]!==b;);return a}function f(b,a,c){function e(a){return-1!==m.call(b,a)}function d(a){return 0<g.call(a.addedNodes,e).length}var f=new MutationObserver(function(a){!0===a.some(d)&&setTimeout(c,0)}),g=Array.prototype.filter;f.observe(a,{childList:!0,subtree:!0})}var c=[];e.inViewport=function(b,a,e){var d=g.body;if(void 0===a||"function"===typeof a)e=a,a={};d=a.container||d;a=a.offset||0;for(var f=
+    0;f<c.length;f++)if(c[f].b===d)return c[f].a(b,a,e);return c[c.push(t(d))-1].a(b,a,e)};var d=document.documentElement.compareDocumentPosition?function(b,a){return!!(b.compareDocumentPosition(a)&16)}:document.documentElement.contains?function(b,a){return b!==a&&(b.contains?b.contains(a):!1)}:function(b,a){for(;a=a.parentNode;)if(a===b)return!0;return!1}})(window,document);
+    (function(e){function g(c){-1===m.call(f,c)&&f.push(c)}function h(c){function d(a){var d;if(d="function"===typeof c.src?c.src(a):a.getAttribute(c.src))a.src=d;a["data-lzled"]=!0;b[m.call(b,a)]=null}if(1<arguments.length)return inViewport.apply(void 0,arguments);c=t(c||{});"string"===typeof c.src&&g(c.src);var b=[];return function(a){a.onload=null;a.removeAttribute("onload");a.onerror=null;a.removeAttribute("onerror");-1===m.call(b,a)&&inViewport(a,c,d)}}function s(c){c="HTML"+c+"Element";if(!1!==
+    c in e){var d=e[c].prototype.getAttribute;e[c].prototype.getAttribute=function(b){if("src"===b){for(var a,c=0,e=f.length;c<e&&!(a=d.call(this,f[c]));c++);return a||d.call(this,b)}return d.call(this,b)}}}function t(c){var d={offset:333,src:"data-src",container:!1},b;for(b in d)void 0===c[b]&&(c[b]=d[b]);return c}function m(c){for(var d=this.length;d--&&this[d]!==c;);return d}var f=["data-src"];e.lazyload=h;e.lzld=h();s("Image");s("IFrame")})(window,document);
+
+    </script>
+    <!-- Firebase script for group chat -->
+    <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+ 
+        <script type="text/javascript" src="https://sf.readwhere.com/read/js/bootstrap3.min.js?v=1421216357"></script> <script type="text/javascript" src="https://sf.readwhere.com/read/js/responsive-calendar.js?v=1425128809"></script> <script type="text/javascript" src="https://sf.readwhere.com/read/js/libs/jquery.imgareaselect.min.js?v=1431831659"></script> <script type="text/javascript" src="https://sf.readwhere.com/read/js/bootstrap-tour.js?v=1490759249"></script>        <script type="text/javascript" src="https://sf.readwhere.com/read/js/n-limited-extractor.js?v=1572421570"></script> <script type="text/javascript" src="https://sf.readwhere.com/read/js/n-limited.js?v=1572421570"></script>        <script type="text/javascript" src="https://sf.readwhere.com/read/js/viewer-v4.js?v=1675916703"></script>    
+    <script type="text/javascript" src="https://sf.readwhere.com/read/js/viewer-navbar-v4.js?v=1564393725"></script>    
+        
+        
+    <link rel=stylesheet href="https://sf.readwhere.com/read/styles/smoothness/jquery-ui-1.10.4.custom.css?v=1421216352"><script type="text/javascript" src="https://sf.readwhere.com/read/js/libs/jquery-ui-1.10.4.custom.min.js?v=1413883999"></script> <script type="text/javascript" src="https://sf.readwhere.com/read/js/libs/modernizr-2.7.1.min.js?v=1413883999"></script> <script type="text/javascript" src="https://sf.readwhere.com/read/js/plugins-v3.js?v=1675916703"></script>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PQMKDLZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->           
+    <!-- ABC Tag -->
+<script type="text/javascript">
+(function () { var d = new Image(1,1);
+d.onerror = d.onload = function () { d.onerror = d.onload = null;};
+d.src = ["//secure-gl.imrworldwide.com/cgi-bin/m?ci=ent1236951067&am=3&ep=1&at=view&rt=banner&st=image&ca=cmp766812&cr=crv1236908&pc=plc24774620&r=", (new Date()).getTime()].join('');
+ })(); </script>
+<!-- End ABC Tag -->
+<!-- Affinity In-Footer Site Code Starts Here (Required) -->
+   <div id="af-display-unit" style="display:none">
+   <script type="text/javascript" language="javascript">
+   ;(function(){
+   var v = {}; 
+   v.pubid = 'lpo92';
+   v.aduid = '472';
+   v.phR= Math.floor(Math.random()*100*(new Date().getTime()/1000));v.u = location.href;
+   v.ru = document.referrer;v.scrRes = screen.width+'x'+screen.height;
+   var servar = function(obj){var str=[];for(var p in obj) str.push(p + "=" + encodeURIComponent(obj[p]));return str.join("&");}
+   var url = 'http://tbn.ph.affinity.com/init/i.js?'+servar(v);
+   document.write(unescape("%3Cscript src='") + url + unescape("' type='text/javascript'%3E%3C/script%3E")); })();
+   </script>
+   </div>
+   <!-- Affinity In-Footer Site Code Ends Here epapaerprabhat-->
+
+    <div style="z-index:10;position: fixed;background: transparent; bottom: 0px; left: 50%;
+    transform: translateX(-50%);">
+        <!--sticky-ads body --><!-- custom sticky-ads desktop-body --><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2931203390134969"
+     crossorigin="anonymous"></script>
+<!-- prabhatkhabar_ePaper_ads_dt_sticky_728x90 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-2931203390134969"
+     data-ad-slot="5427890802"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>    </div>
+
+    <div id="intrestitial-ads-panel" class="row" style="display:none; position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: 101;">
+        <div style="position: absolute;top: 50%; left: 50%;transform: translate(-50%,-50%);">
+                </div>
+    </div>
+
+
+<!-- Begin comScore Tag -->
+<script>
+  var _comscore = _comscore || [];
+  _comscore.push({ c1: "2", c2: "17503311" });
+      _comscore.push({ c1: "2", c2: "23243182" });
+        (function() {
+      var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+      s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+      el.parentNode.insertBefore(s, el);
+    })();
+   </script>
+<noscript>
+  <img src="http://b.scorecardresearch.com/p?c1=2&c2=17503311&cv=2.0&cj=1" />
+</noscript>
+<!-- End comScore Tag -->
+
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '884877674878910');
+fbq('track', "PageView");</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=884877674878910&ev=PageView&noscript=1"
+/></noscript>
+
+
+
+<!-- End Facebook Pixel Code -->
+
+
+  <div id="chatdiv" style="display:none;background:#fff;">
+    <img id="chatloader" src="https://www.okajewelry.com/templates/NewOKA/images/new/ProductImg_Loading.gif"> 
+    <iframe id="chatframe" src=""> </iframe>
+  </div> 
+
+  
+   
+  
+  <script type="text/javascript">
+    var pageNum = 1;
+    var hashStr = window.location.hash.substr(1)
+    if(hashStr) {
+      var hash = hashStr.split('/');  
+      if(hash) {
+        pageNum = hash[1];  
+      }
+    }
+
+    function afterSuggestedReads( json ) {
+      DEConfig.suggestedReads = json;
+    }
+  </script>
+  <script type="text/javascript">
+    if(pageNum == 1) {
+      var src_url = "https://www.readwhere.com/read/cookie/suggestedreads/6185/newspaper/Hindi";
+      add_script(src_url);
+    }
+    function add_script(src_url) {
+        var element = document.createElement("script");
+        element.src = src_url;
+        document.body.appendChild(element);        
+    }
+
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    
+  </script>
+
+    <script type="text/javascript">
+                    function buyDigicase(digicase_id) {
+                      var source = window.location.hostname;
+                      var _targetUrl = DEConfig.baseUrl+'digicasecheckout/show/'+digicase_id+'?source='+source ;
+                      //console.log(_targetUrl);
+                      window.location.href = _targetUrl;
+                    }
+
+                    $(window).load(function() {               
+                      $('.digicase_list').on('click', 'li', function () {
+                          var ulid = $(this).data('ulid');
+                          $("#"+ulid+" li.active").removeClass("active");
+                          // adding classname 'active' to current click li 
+                          $(this).addClass("active");
+                      });
+                    });
+                    
+
+                   
+   </script>
+   
+
+           <!-- GA4 event  -->
+        <script type='text/javascript'>
+        var publication_data = {};
+          publication_data['item_id'] = '3726073';
+          publication_data['item_name'] = 'CITY ';
+          publication_data['item_type'] = 'newspaper';
+          publication_data['publisher'] = 'Prabhat Khabar';
+          publication_data['publication_id'] = '6185';
+          publication_data['publication_name'] = 'RANCHI - City';
+                    publication_data['category'] = 'News';
+                              publication_data['language'] = 'Hindi';
+                              publication_data['tag_list'] = 'News,Hindi';
+                        console.log(publication_data);
+        </script>         
+  </body>
+</html><!-- page cached at 2023-06-29 10:14:13 -->
