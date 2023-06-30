@@ -1,11 +1,4 @@
 <?php
-require  '/var/www/d78236gbe27823/vendor/autoload.php';
-
-use Symfony\Component\Panther\Client;
-use Facebook\WebDriver\WebDriverBy;
-use Facebook\WebDriver\WebDriverExpectedCondition;
-use Facebook\WebDriver\Exception\TimeoutException;
-use Facebook\WebDriver\WebDriverDimension;
 
 error_reporting(E_ALL & ~E_WARNING & ~E_NOTICE);
 ini_set("display_errors", "1");
@@ -42,7 +35,7 @@ $no_of_sections_to_run_on_each_page = 100; // Production Value is 100
 include "/var/www/d78236gbe27823/includes/connect.php";
 include "/var/www/d78236gbe27823/marketing/Whatsapp/Crawlers/dependencies/crawl_functions.php";
 
-$epapers = array("GSM" => "Gujarat Samachar,guj", "NVR" => "Navrasthra,mar", "SOM" => "Star of Mysore,kan", "NHT" => "Nav Hind Times,eng", "OHO" => "O Heral O,eng", "AP" => "Anandabazar Patrika,ben", "ASP" => "Asomiya Pratidin,asm", "BS" => "Bombay Samachar,guj", "AU" => "Amar Ujala,hin", "DC" => "Deccan Chronicle,eng", "HB" => "Hari Bhumi,hin", "DJ" => "Danik Jagran,hin", "LM" => "Lokmat,mar", "MC" => "Mumbai Chaufer,mar", "NB" => "Navbharat,hin", "NBT" => "Navbharat Times,hin", "ND" => "Nai Dunia,hin", "RS" => "Rashtriya Sahara,hin", "YB" => "yashobhumi,hin", "PN" => "Punayanagri,mar", "TOI" => "Times of India,eng", "ET" => "Economic Times,eng", "MT" => "Maharashtra Times,eng", "Mirror" => "Mirror,eng", "ESM" => "EiSamay,ben", "DN" => "Dainik Navjyoti,hin", "DST" => "Dainik Savera times,hin", "DHM" => "Daily Hindi Milap,hin", "HTV" => "Hitavada,eng", "NGS" => "Nav Gujarat Samay,guj", "PBK" => "Prabhat Khabar,hin");
+$epapers = array("GSM" => "Gujarat Samachar,guj", "NVR" => "Navrasthra,mar", "SOM" => "Star of Mysore,kan", "NHT" => "Nav Hind Times,eng", "OHO" => "O Heral O,eng", "AP" => "Anandabazar Patrika,ben", "ASP" => "Asomiya Pratidin,asm", "BS" => "Bombay Samachar,guj", "AU" => "Amar Ujala,hin", "DC" => "Deccan Chronicle,eng", "HB" => "Hari Bhumi,hin", "DJ" => "Danik Jagran,hin", "LM" => "Lokmat,mar", "MC" => "Mumbai Chaufer,mar", "NB" => "Navbharat,hin", "NBT" => "Navbharat Times,hin", "ND" => "Nai Dunia,hin", "RS" => "Rashtriya Sahara,hin", "YB" => "yashobhumi,hin", "PN" => "Punayanagri,mar", "TOI" => "Times of India,eng", "ET" => "Economic Times,eng", "MT" => "Maharashtra Times,eng", "Mirror" => "Mirror,eng", "DN" => "Dainik Navjyoti,hin", "DST" => "Dainik Savera times,hin");
 
 $cities_of_interest = array("Delhi", "Jaipur", "Jodhpur", "Udaipur", "Kota", "Bhopal", "Ahmedabad", "Surat", "Vadodara", "Bhavnagar", "Rajkot", "Mumbai", "Pune", "Thane", "Nashik");
 
@@ -61,6 +54,19 @@ foreach ($epapers as $epapercode => $epaperArray) {
 
     $lang = explode(",", $epaperArray)[1];
     $epapername = explode(",", $epaperArray)[0];
+    $dateForLinks = dateForLinks($epapercode, $filenamedate);
+    $cityarray = cityArray($epapercode);
+    $citycode = cityCodeArray($epapercode);
+
+    if ($cityarray != null) {
+
+        if ($no_of_editions_to_run > 0 and $no_of_editions_to_run < count($cityarray)) $cityarray = array_slice($cityarray, 0, $no_of_editions_to_run);
+    }
+
+    $citylinkcode = cityCodeArray($epapercode);
+    $linkarray = cityCodeArray($epapercode);
+
+    $datecode = dateForLinks($epapercode, $filenamedate);
 
     if ($epapercode == "TOI" or $epapercode == "ET" or $epapercode == "MT" or $epapercode == "Mirror") include("TOIGROUP.php");
     else include($epapercode . ".php");

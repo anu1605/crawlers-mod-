@@ -5,21 +5,13 @@ use Symfony\Component\Panther\Client;
 use Symfony\Component\Panther\DomCrawler\Crawler;
 use Facebook\WebDriver\WebDriverDimension;
 
-$url = 'https://epaper.hindustantimes.com/delhi?eddate=29/06/2023&pageid=589623';
+$url = 'https://epaper-sakal-application.s3.ap-south-1.amazonaws.com/EpaperData/Sakal/Pune/2023/06/30/Main/Sakal_Pune_2023_06_30_Main_DA_001_PR.jpg';
 $outputFile = 'screenshot.png';
 
 $client = Client::createChromeClient();
 $client->start();
 $client->request('GET', $url);
 
-// $client->wait(10, 500)->until(function () use ($client) {
-//     $element1 = $client->getCrawler()->filter('#top-container')->first();
-//     $element2 = $client->getCrawler()->filter('#content-container')->first();
-//     return strpos($element1->attr('style'), 'width: 2250px;') !== false
-//         && strpos($element2->attr('style'), 'width: 2220px;') !== false;
-// });
-
-// $client->executeScript('document.getElementById("top-clips-box").style.display = "block";');
 sleep(1); // Wait for the top-clips-box to become visible
 
 $client->executeScript('window.scrollTo(0, document.body.scrollHeight);');

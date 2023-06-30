@@ -35,8 +35,11 @@ if ($epapercode == "RS") {
                 echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $cityarray[$edition] . " Page " . $page . " Completed" . $eol;
                 ob_flush();
                 flush();
-            } else break;
+            } else {
+                echo $eol . "Edition Not Available For " . $cityarray[$edition] . $eol;
+                break;
+            }
         }
-        echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $cityarray[$edition] . " Completed" . $eol;
+        echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $cityarray[$edition] . " Completed" . $eol . $eol;
     }
 }

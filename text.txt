@@ -14,7 +14,7 @@ PAP (hin) - purvanchal prahari(Done)
 PBK (hin) - prabhat khabar(pic and text seperate pic)
 PRM (ori) - Prameya(incomplete html content)
 PRJ (kan) - Prajavani
-PUD (mar) - pudhari(Done)
+PUD (mar) - pudhari(numbers different)
 SAK (tel) - sakshi(incomplete html content)
 SBP (ben) - sangbad pratidin(Done)
 SKE(eng) - sikkim express

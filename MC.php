@@ -38,7 +38,7 @@ if ($epapercode == "MC") {
             $sectionArray = array_slice($sectionArray, 1, $no_of_sections_to_run_on_each_page + 1);
         }
 
-        for ($section = 1; $section <= count($sectionArray); $section++) {
+        for ($section = 1; $section < count($sectionArray); $section++) {
             $imageId = explode('"', $sectionArray[$section])[0];
             if (trim($imageId) == '')
                 break;
@@ -53,7 +53,7 @@ if ($epapercode == "MC") {
 
             echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved" . $eol;
             runTesseract($epapername, "Mumbai", $page, $section, $conn, $getpath, $lang);
-            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Page " . $section . " Completed" . $eol;
+            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Section " . $section . " Completed" . $eol;
             ob_flush();
             flush();
         }

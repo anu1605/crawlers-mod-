@@ -23,7 +23,7 @@ if ($epapercode == "NVR") {
         for ($page = 1; $page <= $no_of_pages_to_run_on_each_edition; $page++) {
             echo "Page: " . $page . $eol . $eol;
 
-            echo $testurl = "https://epaper.navarashtra.com/article-" . $dateForLinks . "-" . $cityarray[$edition] . "-edition/" . $page . "-1/";
+            $testurl = "https://epaper.navarashtra.com/article-" . $dateForLinks . "-" . $cityarray[$edition] . "-edition/" . $page . "-1/";
 
             $testcontent = file_get_contents($testurl, false, stream_context_create($arrContextOptions));
 
@@ -37,7 +37,7 @@ if ($epapercode == "NVR") {
 
                 echo "Section: " . $section . $eol . $eol;
 
-                echo $link =   "https://epaper.navarashtra.com/article-" . $dateForLinks . "-" . $cityarray[$edition] . "-edition/" . $page . "-" . $section . "/";
+                $link =   "https://epaper.navarashtra.com/article-" . $dateForLinks . "-" . $cityarray[$edition] . "-edition/" . $page . "-" . $section . "/";
                 $content = file_get_contents($link, false, stream_context_create($arrContextOptions));
                 $imagelink = explode('"', explode("id='ImageArticle'  src=", $content)[1])[1];
                 $imageInfo = getimagesize($imagelink);

@@ -27,23 +27,25 @@ if ($epapercode == "HB") {
         // }
 
         $code = $datecode[$edition];
-        $link = getHBeditionlink($cityarray[$edition], $dateForLinks, $citylinkcode[$edition], $code);
+
+        $link = getHBeditionlink($cityarray[$edition], $dateForLinks, $citycode[$edition], $code);
+
 
         if (!file_get_contents($link . $code, false, stream_context_create($arrContextOptions))) {
-
             $newcode = $code;
 
             for ($i = 40; $i < 300; $i++) {
 
                 $newcode = $code + $i;
-                $link = getHBeditionlink($cityarray[$edition], $dateForLinks, $citylinkcode[$edition], $newcode);
+                $link = getHBeditionlink($cityarray[$edition], $dateForLinks, $citycode[$edition], $newcode);
 
                 if (file_get_contents($link . $newcode, false, stream_context_create($arrContextOptions))) {
 
                     $code = $newcode;
                     array_push($newdatecode, strval($code));
                     break;
-                } else continue;
+                } else
+                    continue;
             }
         }
 
@@ -54,7 +56,8 @@ if ($epapercode == "HB") {
 
         if ($no_of_pages_to_run_on_each_edition > 0 and $no_of_pages_to_run_on_each_edition < count($linkArray)) $linkArray = array_slice($linkArray, 1, $no_of_pages_to_run_on_each_edition + 1);
 
-        for ($page = 1; $page <= count($linkArray); $page++) {
+
+        for ($page = 1; $page < count($linkArray); $page++) {
             $imagelink =  explode('"', $linkArray[$page])[0];
 
             if (trim($imagelink) == '')

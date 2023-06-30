@@ -36,7 +36,7 @@ if ($epapercode == "SOM") {
 
     if ($no_of_pages_to_run_on_each_edition > 0 and $no_of_pages_to_run_on_each_edition < count($linkArray)) $linkArray = array_slice($linkArray, 0, $no_of_pages_to_run_on_each_edition + 1);
 
-    for ($page = 1; $page <= count($linkArray); $page++) {
+    for ($page = 1; $page < count($linkArray); $page++) {
 
         $imagelink = explode('"', explode('"><img src="', $content)[$page])[0];
 

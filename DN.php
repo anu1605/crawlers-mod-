@@ -46,7 +46,6 @@ if ($epapercode == "DN") {
             if (!getimagesize($imagelink))
                 break;
 
-            echo $imagelink . $eol;
             $getpath = explode("&", makefilepath($epapercode,  $city, $filenamedate, $pageforfile, $lang));
 
             if (alreadyDone($getpath[0], $conn) == "Yes") continue;

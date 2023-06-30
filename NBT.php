@@ -25,10 +25,14 @@ if ($epapercode == "NBT") {
         $section2 = explode('<div id="rsch"', $section1)[0];
         $pageArray = explode("<div class='imgd'><img src='", $section2);
 
+        if (!(count($pageArray) > 1)) {
+            echo $eol . "edition not available for " . $city . $eol;
+        }
+
         if ($no_of_pages_to_run_on_each_edition > 0 && $no_of_pages_to_run_on_each_edition < count($pageArray))
             $pageArray = array_slice($pageArray, 1, $no_of_pages_to_run_on_each_edition + 1);
 
-        for ($page = 1; $page <= count($pageArray); $page++) {
+        for ($page = 1; $page < count($pageArray); $page++) {
             $imagelink =  str_replace('ss', '', trim(explode("' class='pagethumb'", $pageArray[$page])[0]));
 
             if (trim($imagelink) == '')
@@ -47,6 +51,6 @@ if ($epapercode == "NBT") {
             ob_flush();
             flush();
         }
-        echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $cityarray[$edition] . " Completed" . $eol;
+        echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $cityarray[$edition] . " Completed" . $eol . $eol;
     }
 }

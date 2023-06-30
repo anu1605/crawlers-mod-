@@ -1,7 +1,7 @@
 <?php
 
 if ($epapercode == "DHM") {
-    $dateForLinks = date('Y/m/d', strtotime($filenamedate));
+    $dateForLinks = date('Ymd', strtotime($filenamedate));
 
     for ($page = 1; $page <= $no_of_pages_to_run_on_each_edition; $page++) {
         $testcontent = file_get_contents("http://webmilap.com/articlepage.php?articleid=HINDIMIL_HIN_" . $dateForLinks . "_" . $page . "_1", false, stream_context_create($arrContextOptions));

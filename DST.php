@@ -24,27 +24,27 @@ if ($epapercode == "DST") {
             echo "Page: " . $page . $eol . $eol;
 
 
-            echo $testurl = "https://epaper.dainiksaveratimes.in/articlepage.php?articleid=DSTIME_" . $citycode[$edition] . "_" . $dateForLinks . "_" . $page . "_1";
+            $testurl = "https://epaper.dainiksaveratimes.in/articlepage.php?articleid=DSTIME_" . $citycode[$edition] . "_" . $dateForLinks . "_" . $page . "_1";
 
             $testcontent = file_get_contents($testurl, false, stream_context_create($arrContextOptions));
 
             $testimagelink = explode('"', explode('id="artimg" src="', $testcontent)[1])[0];
             $imageInfo = getimagesize($testimagelink);
 
-            if (!$imageInfo)
+            if (!$imageInfo and $page > 20)
                 break;
 
             for ($section = 1; $section <= $no_of_sections_to_run_on_each_page; $section++) {
 
                 echo "Section: " . $section . $eol . $eol;
 
-                echo $link =   "https://epaper.dainiksaveratimes.in/articlepage.php?articleid=DSTIME_" . $citycode[$edition] . "_" . $dateForLinks . "_" . $page . "_" . $section;
+                $link =   "https://epaper.dainiksaveratimes.in/articlepage.php?articleid=DSTIME_" . $citycode[$edition] . "_" . $dateForLinks . "_" . $page . "_" . $section;
                 $content = file_get_contents($link, false, stream_context_create($arrContextOptions));
                 $imagelink = explode('"', explode('id="artimg" src="', $content)[1])[0];
                 $imageInfo = getimagesize($imagelink);
 
                 if (!$imageInfo)
-                    break;
+                    continue;
 
 
                 $getpath = explode("&", makefilepath($epapercode, ucwords($cityarray[$edition]), $filenamedate, $page . "00" . $section, $lang));

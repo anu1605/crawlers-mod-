@@ -618,10 +618,64 @@ function runOpenCV($filepath, $conn)
 // }
 function runTesseract($epapername, $edition, $page, $section, $conn, $patharray, $lang)
 {
+    global $eol;
+
+    $opencvPapers = array("SOM", "RS", "MC", "NVR", "OHO", "DST", "DC", "GSM", "LM", "NBT", "DJ", "ND", "NB", "AU", "BS", "DN", "ASP", "PN", "YB");
+
+    $filepath = $patharray[0];
+    $temp_txtfile = $patharray[1];
+    $txtfile = $patharray[2];
+    $newspaper_name = $patharray[3];
+    $newspaper_region = $patharray[4];
+    $newspaper_date = $patharray[5];
+    $newspaper_lang = $patharray[6];
+    $Image_file_name = $patharray[7];
+    $newspaper_operator_name = $patharray[8];
+    $starttime = date('Y-m-d H:i:s', time());
+
+    try {
+
+        if ($lang != 'eng') $command = "tesseract " . $filepath . " " . $temp_txtfile . " -l " . $lang . "+eng > /dev/null 2>&1";
+        else $command = "tesseract " . $filepath . " " . $temp_txtfile . " -l eng > /dev/null 2>&1";
+
+        exec($command);
+
+        // run mar.py
+        if ($newspaper_name == "SKL") {
+            $text = file_get_contents($temp_txtfile . ".txt");
+            $text = mb_convert_encoding($text, 'UTF-8', 'auto');
+
+            $translate = 'python3 ./dependencies/mar.py ' . escapeshellarg($temp_txtfile) . escapeshellarg('.txt en');
+            $output = shell_exec($translate);
+            $text = $output;
+        }
+
+
+        $matches = array();
+        preg_match_all('/\+91[0-9]{10}|[0]?[6-9][0-9]{4}[\s]?[-]?[0-9]{5}/', $text, $matches);
+        $matches = str_replace("+91", "", str_replace("\n", "", str_replace("-", "", str_replace(" ", "", $matches[0]))));
+
+        foreach ($matches as $match => $val) $matches[$match] = ltrim($val, "0");
+
+        $n = count($matches);
+
+        if ($n < 5) {
+
+            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. No numbers found" .  $eol;
+        } else {
+
+            echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Completed. " . $n . " numbers found. File Saved" . $eol;
+
+            rename($temp_txtfile . ".txt", $txtfile);
+        }
+    } catch (Exception $e) {
+        echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Tesseract Falied to run" . $eol;
+    }
 }
 function getHBeditionlink($city, $dateforlinks, $citylink, $code)
 {
     $link = "https://www.haribhoomi.com/full-page-pdf/epaper/pdf/" . $city . "-full-edition/" . $dateforlinks . "/" . $citylink . "/";
+
     if ($city == "raipur") {
         $link2 = "https://www.haribhoomi.com/full-page-pdf/epaper/pdf/" . $city . "-full-edition/" . $dateforlinks . "/" . $city . "-main/";
         if (file_get_contents($link2 . $code)) {

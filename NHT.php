@@ -17,7 +17,6 @@ if ($epapercode == "NHT") {
         $command = "convert -density $resolution $pdfUrl -background white -alpha remove -alpha off -quality 100 $filepath";
         exec($command, $output, $returnCode);
         if ($returnCode === 0) {
-            echo "PDF converted to images successfully.";
             echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved" . $eol;
             runTesseract($epapername, "Goa", $page, 0, $conn, $getpath, $lang);
             echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Page " . $page . " Completed" . $eol;
