@@ -10,7 +10,6 @@ if ($epapercode == "HB") {
     }
 
     $array = explode(',',  file_get_contents("./dependencies/hb.txt", false, stream_context_create($arrContextOptions)));
-
     $datecode = array();
     $newdatecode = array();
 

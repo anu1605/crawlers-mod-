@@ -1,1 +1,1 @@
-raipur=>82944,bilaspur=>82945,bhopal=>82940
+raipur=>84506,bilaspur=>84487,bhopal=>84491

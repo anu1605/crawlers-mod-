@@ -1,4 +1,12 @@
 <?php
+require_once 'vendor/autoload.php';
+
+use Symfony\Component\Panther\Client;
+use Facebook\WebDriver\WebDriverBy;
+use Facebook\WebDriver\WebDriverExpectedCondition;
+use Facebook\WebDriver\Exception\TimeoutException;
+use Facebook\WebDriver\WebDriverDimension;
+
 if ($epapercode == "PBK") {
     $cityarray = array("RANCHI - City", "PATNA - City", "KOLKATA - City", "JAMSHEDPUR - City", "DHANBAD - City", "DEOGHAR - City", "MUZAFFARPUR - City", "SAMSTIPUR", "BHAGALPUR - City", "GAYA - City", "AURANGABAD", "BOKARO", "BHUBANESWAR");
     $data = getdata("https://epaper.prabhatkhabar.com/");

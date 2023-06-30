@@ -1,4 +1,6 @@
 <?php
+
+
 if ($epapercode == "GSM") {
 
     $dateForLinks = date("d-m-Y", strtotime($filenamedate));
@@ -15,7 +17,10 @@ if ($epapercode == "GSM") {
         $response = file_get_contents("https://epaper.gujaratsamachar.com/" . $cityarray[$edition] . "/" . $dateForLinks . "/1", false, stream_context_create($arrContextOptions));
         $linkArray = explode('<imgclass="img-fluidd-inline-block"src="', str_replace(" ", "", str_replace("\n", "", $response)));
 
-        if ($no_of_pages_to_run_on_each_edition < 0 and $no_of_pages_to_run_on_each_edition > count($linkArray)) $linkArray = array_slice($linkArray, 1, $no_of_pages_to_run_on_each_edition + 1);
+
+        if ($no_of_pages_to_run_on_each_edition > 0 and $no_of_pages_to_run_on_each_edition < count($linkArray)) {
+            $linkArray = array_slice($linkArray, 1, $no_of_pages_to_run_on_each_edition + 1);
+        }
 
         for ($page = 1; $page <= count($linkArray); $page++) {
 

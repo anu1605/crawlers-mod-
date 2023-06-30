@@ -1,4 +1,11 @@
 <?php
+require  '/var/www/d78236gbe27823/vendor/autoload.php';
+
+use Symfony\Component\Panther\Client;
+use Facebook\WebDriver\WebDriverBy;
+use Facebook\WebDriver\WebDriverExpectedCondition;
+use Facebook\WebDriver\Exception\TimeoutException;
+use Facebook\WebDriver\WebDriverDimension;
 
 error_reporting(E_ALL & ~E_WARNING & ~E_NOTICE);
 ini_set("display_errors", "1");
@@ -54,20 +61,6 @@ foreach ($epapers as $epapercode => $epaperArray) {
 
     $lang = explode(",", $epaperArray)[1];
     $epapername = explode(",", $epaperArray)[0];
-
-    $dateForLinks = dateForLinks($epapercode, $filenamedate);
-    $cityarray = cityArray($epapercode);
-    $citycode = cityCodeArray($epapercode);
-
-    if ($cityarray != null) {
-
-        if ($no_of_editions_to_run > 0 and $no_of_editions_to_run < count($cityarray)) $cityarray = array_slice($cityarray, 0, $no_of_editions_to_run);
-    }
-
-    $citylinkcode = cityCodeArray($epapercode);
-    $linkarray = cityCodeArray($epapercode);
-
-    $datecode = dateForLinks($epapercode, $filenamedate);
 
     if ($epapercode == "TOI" or $epapercode == "ET" or $epapercode == "MT" or $epapercode == "Mirror") include("TOIGROUP.php");
     else include($epapercode . ".php");

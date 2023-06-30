@@ -1,6 +1,5 @@
 <?php
 if ($epapercode == "DC") {
-    $dateForLinks = dateForLinks($epapercode, $filenamedate);
     $cityarray = array("Hyderabad", "Vijayawada", "Karimnagar", "Nellore", "Ananthapur");
     $citycode = array("HYD", "VIJ", "KRM", "NEL", "ATP");
 

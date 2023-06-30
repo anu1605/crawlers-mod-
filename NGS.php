@@ -1,4 +1,12 @@
 <?php
+require_once 'vendor/autoload.php';
+
+use Symfony\Component\Panther\Client;
+use Facebook\WebDriver\WebDriverBy;
+use Facebook\WebDriver\WebDriverExpectedCondition;
+use Facebook\WebDriver\Exception\TimeoutException;
+use Facebook\WebDriver\WebDriverDimension;
+
 if ($epapercode == "NGS") {
     $dateForLinks = strtoupper(date("d-F-Y", time()));
 
