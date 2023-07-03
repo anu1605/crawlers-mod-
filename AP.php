@@ -1,7 +1,5 @@
 <?php
     if ($epapercode == "AP") {
-        $dateForLinks = date('dmY', strtotime($filenamedate));
-
         for ($page = 1; $page <= $no_of_pages_to_run_on_each_edition; $page++) {
             $imagelink = "https://epaper.anandabazar.com/epaperimages////" . $dateForLinks . "////" . $dateForLinks . "-md-hr-" . $page . "ll.png";
             if (!getimagesize($imagelink))
@@ -20,3 +18,4 @@
             flush();
         }
     }
+?>

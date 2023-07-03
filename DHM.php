@@ -1,12 +1,10 @@
 <?php
 
 if ($epapercode == "DHM") {
-    $dateForLinks = date('Ymd', strtotime($filenamedate));
-
     for ($page = 1; $page <= $no_of_pages_to_run_on_each_edition; $page++) {
         $testcontent = file_get_contents("http://webmilap.com/articlepage.php?articleid=HINDIMIL_HIN_" . $dateForLinks . "_" . $page . "_1", false, stream_context_create($arrContextOptions));
         $testimagelink = explode('"', explode('d="artimg" src="', $testcontent)[1])[0];
-        $testimageInfo = getimagesize($testimagelink);
+        if (!empty($testimagelink)) $testimageInfo = @getimagesize($testimagelink);
 
         if (!$testimageInfo and $page > 20)
             break;
@@ -15,7 +13,7 @@ if ($epapercode == "DHM") {
             $content = file_get_contents("http://webmilap.com/articlepage.php?articleid=HINDIMIL_HIN_" . $dateForLinks . "_" .  $page . "_" . $section, false, stream_context_create($arrContextOptions));
 
             $imagelink = explode('"', explode('d="artimg" src="', $content)[1])[0];
-            $imageInfo = getimagesize($imagelink);
+            if (!empty($imagelink)) $imageInfo = @getimagesize($imagelink);
 
             if (!$imageInfo)
                 continue;
