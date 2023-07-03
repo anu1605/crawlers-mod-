@@ -11,25 +11,25 @@ error_reporting(E_ALL & ~E_WARNING & ~E_NOTICE);
 ini_set("display_errors", "1");
 set_time_limit(0);
 
-$check_if_extract_running = shell_exec("ps aux | grep extractPhoneNumber.php");
-$extract_runtimes = explode("extractPhoneNumber.php", $check_if_extract_running);
-$extract_howmanyruns = count($extract_runtimes);
+// $check_if_extract_running = shell_exec("ps aux | grep extractPhoneNumber.php");
+// $extract_runtimes = explode("extractPhoneNumber.php", $check_if_extract_running);
+// $extract_howmanyruns = count($extract_runtimes);
 
-$check_if_crawl_running = shell_exec("ps aux | grep crawl.php");
-$crawl_runtimes = explode("crawl.php", $check_if_crawl_running);
-$howmanyruns_of_crawl = count($crawl_runtimes);
+// $check_if_crawl_running = shell_exec("ps aux | grep crawl.php");
+// $crawl_runtimes = explode("crawl.php", $check_if_crawl_running);
+// $howmanyruns_of_crawl = count($crawl_runtimes);
 
-if ($extract_howmanyruns > 3 or $howmanyruns_of_crawl > 5) die("Other related programmes are running");
+// if ($extract_howmanyruns > 3 or $howmanyruns_of_crawl > 5) die("Other related programmes are running");
 
-if (php_sapi_name() == "cli") $eol = "\n";
-else  $eol = "<br>";
+// if (php_sapi_name() == "cli") $eol = "\n";
+// else  $eol = "<br>";
 
-$arrContextOptions = array(
-    "ssl" => array(
-        "verify_peer" => false,
-        "verify_peer_name" => false,
-    ),
-);
+// $arrContextOptions = array(
+//     "ssl" => array(
+//         "verify_peer" => false,
+//         "verify_peer_name" => false,
+//     ),
+// );
 
 $static_date = ''; // Production Value is ''
 $no_of_papers_to_run = 0; // Production Value is 0
