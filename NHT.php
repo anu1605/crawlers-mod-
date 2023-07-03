@@ -1,5 +1,8 @@
 <?php
     if ($epapercode == "NHT") {
+
+        $dateForLinks = date('Y/m/d', strtotime($filenamedate));
+        
         $code = end(explode('/', explode('-md-ga', file_get_contents("https://epaper.navhindtimes.in/mainpage.aspx?pdate=" . $filenamedate, false, stream_context_create($arrContextOptions)))[0]));
 
         for ($page = 1; $page <= $no_of_pages_to_run_on_each_edition; $page++) {
@@ -27,4 +30,3 @@
             }
         };
     }
-?>

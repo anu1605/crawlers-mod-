@@ -441,7 +441,7 @@ function writeImage($url, $path)
             "verify_peer_name" => false,
         ),
     );
-    $image = file_get_contents($url, false, stream_context_create($arrContextOptions));
+    $image = @file_get_contents($url, false, stream_context_create($arrContextOptions));
     $handle = fopen($path, "w");
     fwrite($handle, $image);
     fclose($handle);
@@ -647,6 +647,8 @@ function runTesseract($epapername, $edition, $page, $section, $conn, $patharray,
         else $command = "tesseract " . $filepath . "  -l eng";
 
         exec($command);
+        $text = file_get_contents($temp_txtfile . ".txt");
+
         // RUN MAR.PY FOR MAC
         // if ($newspaper_name == "SKL") {
         //     $text = file_get_contents($temp_txtfile . ".txt");
@@ -666,7 +668,7 @@ function runTesseract($epapername, $edition, $page, $section, $conn, $patharray,
             $output = shell_exec($translate);
             $text = $output;
         }
-        die();
+
         $matches = array();
         preg_match_all('/\+91[0-9]{10}|[0]?[6-9][0-9]{4}[\s]?[-]?[0-9]{5}/', $text, $matches);
         $matches = str_replace("+91", "", str_replace("\n", "", str_replace("-", "", str_replace(" ", "", $matches[0]))));

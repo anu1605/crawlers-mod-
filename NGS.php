@@ -1,5 +1,8 @@
 <?php
 if ($epapercode == "NGS") {
+
+    $dateForLinks = strtoupper(date("d-F-Y", time()));
+
     $data = getdata("https://epaper.navgujaratsamay.com/");
 
     $datecode = explode('"', explode('"https://epaper.navgujaratsamay.com/r/', $data)[1])[0];

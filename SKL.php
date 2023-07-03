@@ -14,6 +14,10 @@ if ($cityarray != null) {
 for ($edition = 0; $edition < count($cityarray); $edition++) {
 
 
+    // if ($_REQUEST['city']) {
+    //     if (strtolower($cityarray[$edition]) != strtolower($_REQUEST['city'])) continue;
+    // }
+
     for ($page = 1; $page <= $no_of_pages_to_run_on_each_edition; $page++) {
         $imagelink = "https://epaper-sakal-application.s3.ap-south-1.amazonaws.com/EpaperData/Sakal/" . $cityarray[$edition] . "/" . $dateForLinks1 . "/Main/Sakal_" . $cityarray[$edition] . "_" . $dateForLinks2 . "_Main_DA_" . sprintf("%03d", $page) . "_PR.jpg";
 
