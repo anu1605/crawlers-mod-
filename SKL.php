@@ -1,4 +1,11 @@
 <?php
+require_once 'vendor/autoload.php';
+
+use Symfony\Component\Panther\Client;
+use Facebook\WebDriver\WebDriverBy;
+use Facebook\WebDriver\WebDriverExpectedCondition;
+use Facebook\WebDriver\Exception\TimeoutException;
+use Facebook\WebDriver\WebDriverDimension;
 
 $cityarray = array("Pune", "Aurangabad", "Mumbai", "Nashik", "Kolhapur", "Ratnagiri", "Nagpur");
 $dateForLinks1 = date("Y/m/d", strtotime($filenamedate));

@@ -1,9 +1,16 @@
 <?php
+require_once 'vendor/autoload.php';
+
+
+use Symfony\Component\Panther\Client;
+use Facebook\WebDriver\WebDriverBy;
+use Facebook\WebDriver\WebDriverExpectedCondition;
+use Facebook\WebDriver\Exception\TimeoutException;
+use Facebook\WebDriver\WebDriverDimension;
 
 if ($epapercode == "HTV") {
 
-    for ($page = 1; $page < $no_of_pages_to_run_on_each_edition; $page++) {
-
+    for ($page = 1; $page <= $no_of_pages_to_run_on_each_edition; $page++) {
         $url = 'https://www.ehitavada.com/index.php?edition=NCpage&date=' . $filenamedate . '&page=' . $page;
 
         $getpath = explode("&", makefilepath($epapercode, "Nagpur", $filenamedate, $page, $lang));
@@ -24,11 +31,21 @@ if ($epapercode == "HTV") {
 
             if ($client->getCrawler()->filter('.custom-popup')->count() > 0) {
                 $client->executeScript("document.querySelector('.custom-popup span').click()");
+                echo $eol . "popup1" . $eol;
             }
+            sleep(2);
 
             if ($client->getCrawler()->filter('#tour_popup_container')->count() > 0) {
-                $client->executeScript("document.querySelector('#tour_popup_container button').click()");
+                $client->wait(10, 500)->until(
+                    WebDriverExpectedCondition::presenceOfElementLocated(
+                        WebDriverBy::cssSelector('#tour_popup_container .btn.btn_wide.btn_black')
+                    )
+                );
+                $client->executeScript("document.querySelector('#tour_popup_container .btn.btn_wide.btn_black').click()");
+                echo $eol . "popup2" . $eol;
             }
+
+            sleep(2);
 
             $client->wait(10, 500)->until(
                 WebDriverExpectedCondition::presenceOfElementLocated(WebDriverBy::id('zoom_btn'))

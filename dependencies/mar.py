@@ -1,34 +1,19 @@
-
+import easyocr
 from googletrans import Translator
-import sys
 
-command = sys.argv[1].split(' ')
-filename = command[0]
-target_language = command[1]
+# Initialize EasyOCR reader
+reader = easyocr.Reader(['mr'])  # Set the language to Marathi ('mr')
 
-chunk_size = 1000  # Maximum chunk size allowed by Google Translate API
+# Read text from the image
+image_path = './nvme/SKL_Pune_2023-07-04_1_admin_mar.jpg'
+results = reader.readtext(image_path)
 
-with open(filename, 'r', encoding='utf-8') as file:
-    file_contents = file.read()
+# Extract the text from the results
+marathi_text = ' '.join([result[1] for result in results])
 
-# Replace newlines with commas
-file_contents = file_contents.replace('\n', ', ')
-
+# Translate the Marathi text to English
 translator = Translator()
+english_translation = translator.translate(marathi_text, dest='en').text
 
-# Split the text into smaller chunks
-chunks = [file_contents[i:i+chunk_size]
-          for i in range(0, len(file_contents), chunk_size)]
-
-# Translate each chunk and append the translations
-translated_chunks = []
-for chunk in chunks:
-    translation = translator.translate(chunk, dest=target_language)
-    translated_chunks.append(translation.text)
-
-# Join the translated chunks
-translated_text = ''.join(translated_chunks)
-
-with open(filename, 'w', encoding='utf-8') as file:
-    file.write(translated_text)
-print(translated_text)
+# Print the translated text
+print(english_translation)

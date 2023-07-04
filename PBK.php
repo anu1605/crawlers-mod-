@@ -1,6 +1,7 @@
 <?php
 require_once 'vendor/autoload.php';
 
+
 use Symfony\Component\Panther\Client;
 use Facebook\WebDriver\WebDriverBy;
 use Facebook\WebDriver\WebDriverExpectedCondition;
@@ -34,7 +35,7 @@ if ($epapercode == "PBK") {
         $link = "https://epaper.prabhatkhabar.com/" . $code . "/" . $city . "/CITY#page/1/3";
         $client = Client::createChromeClient();
         $client->start();
-        setSize($client, $link);
+        setsizefunction($client, $link);
 
         $response = getdata("https://epaper.prabhatkhabar.com/" . $code . "/" . $city . "/CITY#page/1/3");
 

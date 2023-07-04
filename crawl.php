@@ -60,9 +60,9 @@ foreach ($epapers as $epapercode => $epaperArray) {
 
     $lang = explode(",", $epaperArray)[1];
     $epapername = explode(",", $epaperArray)[0];
-    $dateForLinks = dateForLinks($epapercode, $filenamedate);
-    $cityarray = cityArray($epapercode);
-    $citycode = cityCodeArray($epapercode);
+    // $dateForLinks = dateForLinks($epapercode, $filenamedate);
+    // $cityarray = cityArray($epapercode);
+    // $citycode = cityCodeArray($epapercode);
 
     if ($cityarray != null) {
 

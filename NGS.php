@@ -1,4 +1,13 @@
 <?php
+require_once 'vendor/autoload.php';
+
+
+use Symfony\Component\Panther\Client;
+use Facebook\WebDriver\WebDriverBy;
+use Facebook\WebDriver\WebDriverExpectedCondition;
+use Facebook\WebDriver\Exception\TimeoutException;
+use Facebook\WebDriver\WebDriverDimension;
+
 if ($epapercode == "NGS") {
 
     $dateForLinks = strtoupper(date("d-F-Y", time()));
@@ -16,7 +25,7 @@ if ($epapercode == "NGS") {
 
     $client = Client::createChromeClient();
     $client->start();
-    setSize($client, $link);
+    setsizefunction($client, $link);
 
     for ($page = 1; $page <= $no_of_pages_to_run_on_each_edition; $page++) {
         $url = "https://epaper.navgujaratsamay.com/" . $datecode . "/Ahmedabad/" . $dateForLinks . "#page/" . $page . "/3";

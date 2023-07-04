@@ -2,10 +2,9 @@
 require_once 'vendor/autoload.php';
 
 use Symfony\Component\Panther\Client;
-use Symfony\Component\Panther\DomCrawler\Crawler;
 use Facebook\WebDriver\WebDriverDimension;
 
-$url = 'https://epaper-sakal-application.s3.ap-south-1.amazonaws.com/EpaperData/Sakal/Pune/2023/06/30/Main/Sakal_Pune_2023_06_30_Main_DA_001_PR.jpg';
+$url = 'https://epaper.udayavani.com/t/8039';
 $outputFile = 'screenshot.png';
 
 $client = Client::createChromeClient();

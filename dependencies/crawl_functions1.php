@@ -636,38 +636,12 @@ function runTesseract($epapername, $edition, $page, $section, $conn, $patharray,
 
     try {
 
-
-        // for windows
-
-        // $filepath = str_replace('./', '../', $filepath);
-        // $temp_txtfile = str_replace('./', '../', $temp_txtfile);
-        // $txtfile = str_replace('./', '../', $txtfile);
-
         if ($lang != 'eng') $command = "tesseract " . $filepath . " " . $temp_txtfile . " -l " . $lang . "+eng";
-        else $command = "tesseract " . $filepath . "  -l eng";
+        else $command = "tesseract " . $filepath . " " . $temp_txtfile . " -l eng";
 
         exec($command);
+
         $text = file_get_contents($temp_txtfile . ".txt");
-
-        // RUN MAR.PY FOR MAC
-        // if ($newspaper_name == "SKL") {
-        //     $text = file_get_contents($temp_txtfile . ".txt");
-        //     $text = mb_convert_encoding($text, 'UTF-8', 'auto');
-
-        //     $translate = 'python ./dependencies/mar.py ' . escapeshellarg($temp_txtfile) . escapeshellarg('.txt en');
-        //     $output = shell_exec($translate);
-        //     $text = $output;
-        // }
-
-        // RUN MAR.PY FOR WINDOWS
-        if ($newspaper_name == "SKL") {
-            $text = file_get_contents($temp_txtfile . ".txt");
-            $text = mb_convert_encoding($text, 'UTF-8', 'auto');
-
-            $translate = 'python ./dependencies/mar.py ' . escapeshellarg($temp_txtfile . ".txt en");
-            $output = shell_exec($translate);
-            $text = $output;
-        }
 
         $matches = array();
         preg_match_all('/\+91[0-9]{10}|[0]?[6-9][0-9]{4}[\s]?[-]?[0-9]{5}/', $text, $matches);
@@ -809,7 +783,7 @@ function writeImageWithCurl($url, $path)
     curl_close($ch);
 }
 
-function setSize($client, $link)
+function setsizefunction($client, $link)
 {
     $window = $client->getWebDriver()->manage()->window();
     $window->maximize(); // Maximize the window to ensure full page capture
