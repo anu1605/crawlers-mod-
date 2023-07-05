@@ -24,7 +24,7 @@ $arrContextOptions = array(
     ),
 );
 
-$static_date = '2023-07-02'; // Production Value is ''
+$static_date = ''; // Production Value is ''
 $no_of_papers_to_run = 0; // Production Value is 0
 $no_of_editions_to_run = 0; // Production Value is 0
 $no_of_pages_to_run_on_each_edition = 50; // Production Value is 50
@@ -37,7 +37,7 @@ include "/var/www/d78236gbe27823/marketing/Whatsapp/Crawlers/dependencies/crawl_
 
 //$epapers = array("SOM" => "Star of Mysore,kan", "AP" => "Anandabazar Patrika,ben", "ASP" => "Asomiya Pratidin,asm", "DC" => "Deccan Chronicle,eng");
 
-$epapers = array("GSM" => "Gujarat Samachar,guj", "NVR" => "Navrasthra,mar", "NHT" => "Nav Hind Times,eng", "OHO" => "O Heral O,eng", "BS" => "Bombay Samachar,guj", "AU" => "Amar Ujala,hin", "HB" => "Hari Bhumi,hin", "DJ" => "Danik Jagran,hin", "LM" => "Lokmat,mar", "MC" => "Mumbai Chaufer,mar", "NB" => "Navbharat,hin", "NBT" => "Navbharat Times,hin", "ND" => "Nai Dunia,hin", "RS" => "Rashtriya Sahara,hin", "YB" => "yashobhumi,hin", "PN" => "Punayanagri,mar", "TOI" => "Times of India,eng", "ET" => "Economic Times,eng", "MT" => "Maharashtra Times,eng", "Mirror" => "Mirror,eng", "DN" => "Dainik Navjyoti,hin", "DST" => "Dainik Savera times,hin", "HTV" => "Hitavada,eng", "NGS" => "Nav Gujarat Samay,guj", "PBK" => "Prabhat Khabar,hin");
+$epapers = array("GSM" => "Gujarat Samachar,guj", "NVR" => "Navrasthra,mar", "NHT" => "Nav Hind Times,eng", "OHO" => "O Heral O,eng", "BS" => "Bombay Samachar,guj", "AU" => "Amar Ujala,hin", "HB" => "Hari Bhumi,hin", "DJ" => "Danik Jagran,hin", "LM" => "Lokmat,mar", "MC" => "Mumbai Chaufer,mar", "NB" => "Navbharat,hin", "NBT" => "Navbharat Times,hin", "ND" => "Nai Dunia,hin", "RS" => "Rashtriya Sahara,hin", "YB" => "yashobhumi,hin", "PN" => "Punayanagri,mar", "TOI" => "Times of India,eng", "ET" => "Economic Times,eng", "MT" => "Maharashtra Times,eng", "Mirror" => "Mirror,eng", "DN" => "Dainik Navjyoti,hin", "DST" => "Dainik Savera times,hin");
 
 $cities_of_interest = array("Delhi", "Jaipur", "Jodhpur", "Udaipur", "Kota", "Bhopal", "Ahmedabad", "Surat", "Vadodara", "Bhavnagar", "Rajkot", "Mumbai", "Pune", "Thane", "Nashik");
 
@@ -46,8 +46,8 @@ if ($no_of_papers_to_run > 0 and $no_of_papers_to_run < count($epapers)) $epaper
 $counter = 0;
 foreach ($epapers as $epapercode => $epaperArray) {
 
-    if (isset($_REQUEST['epapercode'])) {
-        if ($epapercode != $_REQUEST['epapercode']) continue;
+    if(isset($_REQUEST['epapercode'])){
+        if($epapercode!=$_REQUEST['epapercode']) continue;
     }
 
     echo $eol . $epapercode . "=" . ++$counter . $eol;
@@ -60,9 +60,9 @@ foreach ($epapers as $epapercode => $epaperArray) {
 
     $lang = explode(",", $epaperArray)[1];
     $epapername = explode(",", $epaperArray)[0];
-    // $dateForLinks = dateForLinks($epapercode, $filenamedate);
-    // $cityarray = cityArray($epapercode);
-    // $citycode = cityCodeArray($epapercode);
+    $dateForLinks = dateForLinks($epapercode, $filenamedate);
+    $cityarray = cityArray($epapercode);
+    $citycode = cityCodeArray($epapercode);
 
     if ($cityarray != null) {
 
@@ -74,8 +74,9 @@ foreach ($epapers as $epapercode => $epaperArray) {
 
     $datecode = dateForLinks($epapercode, $filenamedate);
 
-    if ($epapercode == "TOI" or $epapercode == "ET" or $epapercode == "MT" or $epapercode == "Mirror") include("TOIGROUP.php");
-    else include($epapercode . ".php");
+    if($epapercode=="TOI" OR $epapercode=="ET" OR $epapercode=="MT" OR $epapercode=="Mirror") include("TOIGROUP.php");
+    else include($epapercode.".php");
 
     mysqli_query($conn, "INSERT IGNORE INTO Crawl_Record (Papername,Papershortname,Paperdate) VALUES ('" . $epapername . "','" . $epapercode . "','" . $filenamedate . "')");
+
 }
