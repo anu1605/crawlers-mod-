@@ -1,1409 +1,1474 @@
-
 <!DOCTYPE html>
-<html xmlns:fb="http://ogp.me/ns/fb#">
+<html lang="en" amp>
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta property="fb:admins" content="1524926084"/>
-    <meta property="fb:app_id" content="930382757020232" />
-    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1">
-          <title>Kannada Prabha DAVANAGERE, Tue, 4 Jul 23</title>
-      <meta name=description content="DAVANAGERE">
-        <meta name=keywords content="">
-    <link rel="shortcut icon" href="https://cache.epapr.in/favicon/logo_image_57711b3fad325.png.png" />
-    <meta property="og:type" content="article" />
-    <meta property="og:description" content="Read the full newspaper online, on your smartphone and tablet" />
-    <meta property="og:title" content="Kannada Prabha DAVANAGERE epaper dated Tue, 4 Jul 23" />
-    <meta property="og:image" content="https://d2na0fb6srbte6.cloudfront.net/read/imageapi/coverforissue/3728378/newspaper/300" />
-    <meta name="twitter:card" content="summary_image">
-    <meta name="twitter:title" content="Kannada Prabha DAVANAGERE epaper dated Tue, 4 Jul 23">
-    <meta name="twitter:description" content="Read the full newspaper online, on your smartphone and tablet">
-    <meta name="twitter:image:src" content="https://d2na0fb6srbte6.cloudfront.net/read/imageapi/coverforissue/3728378/newspaper/300">
-      <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
-<!--    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    -->
-    <!-- fb deeplink sharing -->
-    
-    <!--  -->
+    <link rel="canonical" href="https://epaper.thestatesman.com/"> 
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link rel='shortcut icon' href="https://www.thestatesman.com/wp-content/themes/statesmancms/images/favicon.ico">
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
-    <style type="text/css">
-     .tour-step-background {
-        background: transparent !important;
-        /*border-radius: 0 !important;*/
-      }
-      .tour-backdrop {
-        opacity:0.5 !important;
-      }
-      .tour-step-background, 
-      .tour-backdrop {
-          position: fixed !important;
-      }
 
-    .pck-btn {
-       display: none;
-     }
+    <script async="" src="https://cdn.ampproject.org/v0.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,700i,900" rel="stylesheet">
+    <title>Latest News, India, Bengal News, Breaking News, Opinion, Bollywood News, Cricket, Football - The Statesman</title>
+    <meta name="description" content="The Statesman is an Indian English-language broadsheet daily newspaper founded in 1875 and published simultaneously in Kolkata, New Delhi, Siliguri and Bhubaneswar. The Statesman is owned by The Statesman Ltd. Its headquarters are located at Statesman House, Chowringhee Square, Calcutta, and its national editorial office is in Statesman House, Connaught Place, New Delhi. It is a member of the Asia News Network."/>
+    <meta name="keywords" content="The Statesman, Bengal news, Opinion, India, Business, World, Bengal, Sports, latest news, today news, Statesman Newspaper, Siliguri, New Delhi, football, cricket, South Cinema, Awards 2017, Television news"/>
 
-    .pck-btn a {
-        background: #4CAF50;
-        color: #fff !important;
-        padding: 5px 16px;
-        border-radius: 5px;
-        display: inline-block;
-        font-size: 14px;
-        width: 99%;
-        font-weight: 500;
-     }
+    <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+    <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 
-      .digiloader{
-        position: absolute;
-        top:100px;
-        right:0px;
-        width:100%;
-        height:100%;
-        background-image:url('https://kpepaper.asianetnews.com/styles/images/ajax-loader3.gif?v1');
-        background-size: 50px;
-        background-repeat:no-repeat;
-        background-position:center;
-        z-index:10000000;
-        opacity: 0.4;
-        filter: alpha(opacity=40);
-    }
 
-    .pricing-options table tr td:first-child {
-    width: 40%;
-    }
-    .pricing-options table tr td:nth-child(2) {
-        width: 40%;
-    }
-    .error{
-            color: #D8000C;
-            background-color: #FFBABA;
-            float: right;
-         }
+    <style amp-custom>
 
-    </style>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" data-cfasync="false"></script>
-    <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
-    <script type="text/javascript" src="https://sf.readwhere.com/read/js/libs/detectmobilebrowser.js?v=1457076727"></script>
-    <script type="text/javascript">
-      //detect phone env
-      function is_iOS(){
-        return navigator.platform.match(/i(Phone|Pod|Pad)/i);
-      }
-
-      function is_MobileSafari(){
-        var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
-        var mobile = $(window).width() <= 1024;
-        if (isSafari && mobile) {
-          return true;
-        }
-      }
-
-      function is_android(){
-        var ua = navigator.userAgent.toLowerCase();
-        return (ua.indexOf("android") > -1) ;
-      }
-
-      function is_free() {
-        return 1      }
-
-      if( $.browser.mobile || is_iOS() || is_android() || is_MobileSafari() ){
-
-        var url = "https://kpepaper.asianetnews.com/".replace('http:', window.location.protocol);
-        window.location.href = window.location.href.replace(url,url+'m5/');
-      } /*else if( is_iOS() ){
-        
-        window.location.href = window.location.href.replace('https://kpepaper.asianetnews.com/','https://kpepaper.asianetnews.com/m/');
-      }*/
-      /*if( $.browser.mobile && is_android() ) {
-
-        window.location.href = window.location.href.replace('https://kpepaper.asianetnews.com/','https://kpepaper.asianetnews.com/m5/');
 
       
-      } else if( $.browser.mobile || is_iOS() ){
-        window.location.href = window.location.href.replace('https://kpepaper.asianetnews.com/','https://kpepaper.asianetnews.com/m/');
-      }*/
-    </script>
-        <link rel=stylesheet href="https://sf.readwhere.com/read/styles/bootstrap3.min.css?v=1683050929"> <link rel=stylesheet href="https://sf.readwhere.com/read/styles/viewer-v4.css?v=1683050929"> <link rel=stylesheet href="https://sf.readwhere.com/read/styles/imgareaselect-default.css?v=1421216352"> <link rel=stylesheet href="https://sf.readwhere.com/read/styles/bootstrap-tour.css?v=1490759244">        <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
-    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+ .col-1{
+          width:8.33333%;
+          float: left;
+      }
+      .col-2{
+          width:16.66667%;
+          float: left;
+      }
+      .col-3{
+          width:25%;
+          float: left;
+      }
+      .col-4{
+          width:33.33333%;
+          float: left;
+      }
+      .col-5{
+          width:41.66667%;
+          float: left;
+      }
+      .col-6{
+          width:50%;
+          float: left;
+      }
+      .col-7{
+          width:58.33333%;
+          float: left;
+      }
+      .col-8{
+          width:66.66667%;
+          float: left;
+      }
+      .col-9{
+          width:75%;
+          float: left;
+      }
+      .col-10{
+          width:83.33333%;
+          float: left;
+      }
+      .col-11{
+          width:91.66667%;
+          float: left;
+      }
+      .col-12{
+          width:100%
+      }
+      @media (min-width:40.06rem){
+          .sm-col{
+              float:left;
+              box-sizing:border-box
+          }
+          .sm-col-right{
+              float:right;
+              box-sizing:border-box
+          }
+          .sm-col-1{
+              width:8.33333%;
+          float: left;
+          }
+          .sm-col-2{
+              width:16.66667%;
+          float: left;
+          }
+          .sm-col-3{
+              width:25%;
+          float: left;
+          }
+          .sm-col-4{
+              width:33.33333%;
+          float: left;
+          }
+          .sm-col-5{
+              width:41.66667%;
+          float: left;
+          }
+          .sm-col-6{
+              width:50%;
+          float: left;
+          }
+          .sm-col-7{
+              width:58.33333%;
+          float: left;
+          }
+          .sm-col-8{
+              width:66.66667%;
+          float: left;
+          }
+          .sm-col-9{
+              width:75%;
+          float: left;
+          }
+          .sm-col-10{
+              width:83.33333%;
+          float: left;
+          }
+          .sm-col-11{
+              width:91.66667%;
+          float: left;
+          }
+          .sm-col-12{
+              width:100%;
+          float: left;
+          }
+      }
+      @media (min-width:52.06rem){
+          .md-col{
+              float:left;
+              box-sizing:border-box
+          }
+          .md-col-right{
+              float:right;
+              box-sizing:border-box
+          }
+          .md-col-1{
+              width:8.33333%;
+          float: left;
+          }
+          .md-col-2{
+              width:16.66667%;
+          float: left;
+          }
+          .md-col-3{
+              width:25%;
+          float: left;
+          }
+          .md-col-4{
+              width:33.33333%;
+          float: left;
+          }
+          .md-col-5{
+              width:41.66667%;
+          float: left;
+          }
+          .md-col-6{
+              width:50%;
+          float: left;
+          }
+          .md-col-7{
+              width:58.33333%;
+          float: left;
+          }
+          .md-col-8{
+              width:66.66667%;
+          float: left;
+          }
+          .md-col-9{
+              width:75%
+          }
+          .md-col-10{
+              width:83.33333%;
+          float: left;
+          }
+          .md-col-11{
+              width:91.66667%;
+          float: left;
+          }
+          .md-col-12{
+              width:100%;
+          float: left;
+          }
+      }
 
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <style type="text/css">
-          .navbar-inverse .navbar-nav > li > a {
-          color: rgb(80,80,80);;
-      }
-      .navbar-inverse .navbar-nav > li > a:hover,
-      .navbar-inverse .navbar-nav > li > a:active,
-      .navbar-inverse .navbar-nav > li > a:focus {
-          color: rgb(0,0,0);;
-      }
-      .tagsnav, #top-level-nav {
-        background-color: rgb(255,255,255);
-      }
-      /*.non-searchable{
+     .top-menu li:first-child a:after{
         display: none;
+      }
+      .container {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+      }
+      .card-box {
+          margin-bottom: 20px;
+          float: left;
+      }
+
+      .hide-mob{
+          display: block;
+        }
+      .show-mob{
+          display: none;
+        }
+
+       @media only screen and (width: 320px){
+      .sm-d2 {
+          display: inline-block;
+          width: 100%;
+          margin-left: -5px;
+          float: left;
+          margin-bottom: 20px;
+      }
+      .top-add{
+        margin-left: -5px;
+      }
+
+      }
+      /*@media only screen and (width: 360px){
+      .sm-d1 {
+          display: inline-block;
+          width: 100%;
+          margin-left: -20px;
+          float: left;
+          margin-bottom: 20px;
+      }
+      }
+      @media only screen and (width: 375px){
+      .sm-d1 {
+          display: inline-block;
+          width: 100%;
+          margin-left: -15px;
+          float: left;
+          margin-bottom: 20px;
+      }
       }*/
+
+
+      @media only screen and (min-width: 320px) and (max-width: 768px){
+
+        .add-top{
+          display: none;
+        }
+        .amp-logo-left {
+          float: left;
+          width: 100% ;
+          text-align: center;
+        }
+        .amp-logo-left a {
+            float: left;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 10px
+        }
+        .amp-logo-left amp-img {
+            margin: 8px 0px 1px;
+        }
+      }
+      @media (min-width: 1200px){
+        .container {
+            width: 1170px;
+        }
+
+      }
+
+      @media (min-width: 992px){
+        .container {
+            width: 970px;
+        }
+      }
+
+      @media (min-width: 768px){
+        .container {
+            width: 750px;
+        }
+        .lg-d{
+          display: block;
+        }
+        .sm-d{
+          display: none;
+        }
+      }
+      @media only screen and (min-width: 320px) and (max-width: 767px){
+
+        .show-mob{
+          display: block;
+        }
+        .hide-mob{
+          display: none;
+        }
+        .sm-d2 {
+          display: inline-block;
+          width: 100%;
+          float: left;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+
+        .lg-d{
+          display: none;
+        }
+        .sm-d{
+          display: block;
+        }
+        .date-box{
+          display: none;
+        }
+      }
+      /*--- header css --*/
+
+      /*--- header css --*/
+    
+      .row {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          margin-right: 15px;
+          margin-left: 15px;
+      }
+      .amp-section-box {
+          float: left;
+          width: 100%;
+      }
+      .date-area {
+          float: left;
+          width: 80%;
+          text-align: right;
+      }
+      .head-top {
+          background: #fff;
+          box-shadow: 0px 1px 12px #797979
+      }
+      a.web-link {
+    color: #333;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600
+}
+a.web-link:hover{
+  color: #f58634
+}
+a.web-link span {
+    background: #333436;
+}
+.amp-logo-left span {
+    font-size: 12px;
+    color: #333;
+    padding: 2px 9px;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.date-area span {
+    font-size: 12px;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.top-menu > li > a:hover {
+    color: #333;
+}
+      .amp-logo-right {
+          text-align: right;
+      }
+      .amp-logo-right amp-img {
+          margin-top: 7px;
+      }
+
+      .container-box {
+          width: 90%;
+          margin: 0px auto;
+          padding-right: 15px;
+          padding-left: 15px;
+      }
+
+      .top-header {
+    background: #414141;
+    padding: 5px 0px;
+    color: #cfcdcd;
+    font-family: 'Lato', sans-serif;
+    float: left;
+    width: 100%;
+    font-size: 12px;
+}
+  .other-link {
+    width: 70%;
+    float: left;
+    line-height: 10px;
+}
+.eppr-link{
+  width: 30%;
+  float: left;
+  text-align: right;
+}
+.other-link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 3px 10px;
+}
+.other-link span {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #e8cc02;
+}
+.eppr-link span {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #e8cc02;
+}
+.eppr-link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 3px 10px;
+}
+      /*--- menu bar start ---*/
+
+.add-top {
+    float: left;
+    width: 100%;
+    text-align: right;
+    padding: 10px 0px 3px;
+}
+.menu-bar {
+    background: #f35f09;
+    float: left;
+    width: 100%;
+    border-bottom: 5px solid #333;
+}
+.ampstart-btn{
+    display: none;
+  }
+  ul.menu-nav {
+    padding: 10px 0px;
+}
+
+.menu-nav li a {
+    color: #fff;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.col-3 {
+    width: 22.5%;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* display: flex; */
+}
+.papr-card {
+    width: 92%;
+    margin: 0px 4%;
+    float: left;
+    box-shadow: 0px 1px 6px #d5d1d1;
+    position: relative;
+}
+.papr-img {
+    width: 100%;
+    float: left;
+    position: relative;
+    height: 340px;
+    overflow: hidden;
+}
+.papr-card h3 {
+    text-align: center;
+    background: #eeeeee;
+    float: left;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    margin: 0px;
+    padding: 9px 10px;
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 0px;
+    border-bottom: 5px solid #f35f09;
+    font-weight: 600;
+}
+.top-menu > li a:first-child {
+    padding: 0px;
+}
+.epaper-area h2 {
+    font-size: 20px;
+    float: left;
+    width: 100%;
+    border-bottom: 3px solid #b64503;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.add-area {
+    margin-top: 20px;
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+.abe-nav-list:hover::before {
+    opacity: 1;
+}
+.abe-nav-list::before {
+    bottom: 0;
+    box-shadow: 0 0 40px 0 rgba(0,0,0,.1);
+    content: '';
+    left: -10px;
+    opacity: 0;
+    position: absolute;
+    right: -10px;
+    top: 10px;
+    transition: opacity .2s ease-out;
+}
+
+/*top header*/
+
+.indian-logo {
+    margin-top: 17px;
+}
+
+.date-section {
+    float: left;
+    text-align: left;
+    width: 20%;
+    margin-top: 3px;
+}
+.socl-btn {
+    width: 100%;
+    float: left;
+    text-align: right;
+    margin: 31px 0px;
+}
+.socl-btn a {
+    width: 38px;
+    height: 38px;
+    float: right;
+}
+a.fb-btn {
+    background-image: url(https://marketing.readwhere.com/fb-2.png);
+}
+a.fb-btn:hover {
+    /*background-image: url(https://marketing.readwhere.com/fb-1.png);*/
+    filter: grayscale(0.9);
+}
+a.twit-btn {
+    background-image: url(https://marketing.readwhere.com/twit-1.png);
+}
+a.twit-btn:hover {
+   filter: grayscale(0.9);
+}
+.date-section span {
+    font-size: 13px;
+    display: inherit;
+    color: #fff;
+}
+.date-area ul {
+    list-style-type: none;
+    padding-left: 0px;
+    margin: 0px;
+    margin-bottom: 4px;
+}
+.date-area ul li {
+    list-style-type: none;
+    padding-left: 0px;
+    display: inline-block;
+}
+
+.date-area ul li a {
+    color: #eee;
+    text-decoration: none;
+    font-size: 13px;
+    padding-right: 10px;
+    border-right: 1px solid #eee;
+    padding-left: 10px;
+}
+.date-area ul li a:hover {
+    color: #b7b7b7;
+}
+.date-area ul li:first-child a {
+    padding-left: 0px;
+}
+
+/*- manin menu start --*/
+
+.main-menu {
+    float: left;
+    width: 100%;
+    margin: 10px 0px;
+}
+.top-menu{
+  margin: 0px;
+  padding-left: 0px;
+}
+
+.top-menu li {
+    display: inline-block;
+    padding: 0px 7px;
+    border-right: 0px;
+    border-right:1px solid #b9540a
+}
+.top-menu > li > a {
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 11px;
+    margin-bottom: 3px;
+    font-weight: 800
+}
+.down-app a {
+    text-decoration: none;
+    display: inline-block;
+    color: #555;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.down-app {
+    float: left;
+    width: 100%;
+}
+.down-app h3 {
+    color: #893c04;
+    font-size: 17px;
+}
+.top-menu .dropdown-menu a {
+    display: block;
+    color: #333;
+}
+.top-menu .dropdown-menu a:hover {
+    background: #893c04;
+    text-decoration: none;
+    color: #fff
+}
+#sidebar-left ul li:nth-child(9) {
+    display: none;
+}
+
+.top-menu .dropdown{
+  position: relative;
+}
+.top-menu .dropdown .dropdown-menu {
+    display: none;
+}
+.top-menu .dropdown:hover .dropdown-menu{
+  display: block;
+}
+.top-menu .dropdown:hover .dropdown-menu {
+    display: inline-table;
+    position: absolute;
+    z-index: 1;
+}
+.top-menu .dropdown:hover .dropdown-menu {
+    display: inline-table;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 21px;
+    background: #414141;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+    width: 185px;
+}
+.top-menu li:nth-child(10) {
+    display: none;
+}
+.top-menu .dropdown:hover .dropdown-menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 12px;
+    font-size: 14px;
+     border-bottom:1px solid #bfbfbf;
+}
+
+.top-menu li:first-child .dropdown-menu a{
+  border-bottom: 1px solid #5054d8;
+}
+.main-menu{
+  display: block;
+}
+/*.top-menu li:nth-child(2) .dropdown-menu a:nth-child(2){
+  display: none;
+}
+.top-menu li:nth-child(2) .dropdown-menu a:nth-child(3){
+  display: none;
+}
+ul.sidebar_ul li:first-child .list-reset li:nth-child(2) {
+    display: none;
+}
+ul.sidebar_ul li:first-child .list-reset li:nth-child(3) {
+    display: none;
+}*/
+
+/*---- footer -------*/
+
+.foot-bg {
+    background: #0f0f0f;
+    color: #fff;
+}
+.copyright {
+    width: 50%;
+    float: left;
+}
+.power-by{
+   width: 50%;
+    float: left;
+}
+.foot-bg {
+    background: #0f0f0f;
+    color: #fff;
+    margin-top: 20px;
+}
+.copyright h3 {
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.power-by h3 {
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 10px;
+    text-align: right;
+    margin-bottom: 5px;
+}
+.power-by h3 a span {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    top: -4px;
+}
+span.span_color {
+    width: 32px;
+    height: 2px;
+    margin: 6px 0px;
+    float: left;
+    display: block;
+    background: #fff;
+}
+ul.sidebar_ul li header {
+    background: transparent;
+    color: #fff;
+    border: none;
+}
+
+ul.sidebar_ul li header:focus {
+    outline: none;
+}
+ul.sidebar_ul li section ul li a {
+    color: #a2a2a2;
+    text-decoration: none;
+    padding-left: 10px;
+    display: block;
+}
+.top-add {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+@media only screen and (max-width:424px){
+.copyright{
+  text-align: center;
+  width: 100%;
+}
+.power-by{
+  text-align: center;
+  width: 100%;
+}
+.power-by h3{
+  text-align: center;
+  margin-top: 0px;
+}
+}
+
+@media (width: 768px){
+  .add-area{
+    display: none;
+  }
+  .papr-img{
+    height: 261px ;
+  }
+}
+
+@media only screen and (max-width: 2000px){
+  .ampstart-btn{
+    display: grid;
+    background: transparent;
+    border: none;
+    padding: 5px 0px;
+  }
+
+#sidebar-left {
+    width: 240px;
+    background: #333;
+    color: #fff;
+}
+#sidebar-left ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+#sidebar-left ul li {
+    font-size: 14px;
+    font-weight: 400;
+    border-bottom: 1px solid #4a4a4a;
+    padding: 7px 0px;
+}
+}
+
+/*- menu- */
+
+amp-sidebar#sidebar-left {
+    width: 240px;
+    padding: 15px;
+}
+.menu-title:after {
+    display: inline-block;
+    content: "▾";
+    padding: 0 0 0 1.5rem;
+    color: #fff;
+    float: right;
+}
+#target-element-left {
+    margin-top: -23px;
+    margin-left: 53px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.menu_all_amp {
+    margin-bottom: 20px;
+}
+.menu-title {
+    background: transparent;
+    border: none;
+    font-weight: 100;
+    border-bottom: 1px solid #5f5f5f;
+    padding: 8px 0px;
+}
+.amp-menu-bar {
+    padding:0px;
+}
+.amp-menu-bar li {
+    padding: 5px 0px;
+}
+.amp-menu-bar li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 14px;
+    font-weight: 100;
+}
+.menu-title:focus {
+    outline: none;
+}
+
+
+ul.sidebar_ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.top-menu li .nav-link:after {
+    display: inline-block;
+    content: "▾";
+    padding: 0 0 0 6px;
+    color: #dcdcdc;
+    float: right;
+}
+.top-menu .dropdown:hover .dropdown-menu a:after {
+  display: none;
+}
+
+/*.top-menu li a:after {
+    display: inline-block;
+    content: "▾";
+    padding: 0 0 0 6px;
+    color: #dcdcdc;
+    float: right;
+}*/
+
+ul.sidebar_ul li header:after {
+    display: inline-block;
+    content: "▾";
+    padding: 0 0 0 6px;
+    color: #dcdcdc;
+    float: right;
+}
+
+.amp-logo-left {
+    margin-top: 10px;
+}
+/*--- page css ---*/
+
+@media only screen and (min-width:320px) and (max-width: 425px){
+
+  .d-n-s{
+  display: none;
+}
+.d-n-l{
+  display: block;
+}
+}
+
+@media only screen and (max-width:425px){
+  .socl-btn{
+    display: none;
+  }
+  .indian-logo{
+    display: none;
+  }
+  .logo-box {
+    width: 100%;
+}
+
+}
+@media only screen and (min-width:426px){
+.d-n-s{
+  display: block;
+}
+.d-n-l{
+  display: none;
+}
+
+}
+
+@media only screen and (min-width: 922px){
+
+  button.ampstart-btn {
+    display: none;
+}
+
+
+}
+
+@media only screen and (max-width: 921px){
+
+ .main-menu{
+  display: none;
+ }
+ .menu-bar{
+  padding-bottom: 5px
+}
+.top-header{
+  display: none;
+}
+.date-box {
+    text-align: center;
+}
+}
+
+@media only screen and (width: 1024px){
+  .dn-1024{
+    display: none;
+  }
+
+.papr-img {
+    height: 270px;
+}
+
+
+}
+
+      body{
+          margin: 0px;padding: 0px;
+          font-family: Lato, 'sans-serif';
+        }
+        .epapers_holder{
+          width: 100%;
+          float: left;
+        }
+
     </style>
-    <!-- IE styling -->
 
-    <!--[if lte IE 9]>
-      <style type="text/css">
-      .btn.clip{
-        display:none;
-      }
-      #clipping-nav{
-        display:none;
-      }
-      </style>
-    <![endif]-->
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- custom header-code --><script src='https://static.asianetnews.com/ad-header/kannada-epaper/dasktop-adheader-ros.js'></script>
-<script> window._izq = window._izq || []; window._izq.push(["init" ]); </script>
-<script src="https://cdn.izooto.com/scripts/dfa829c1baec731d36c7c14a3a56e51d1b57314d.js"></script>      <div id="enlarged-bottom-clip-ad" style="display:none;"> 
-        <div style="font-size: 12px;margin: 5px;color:#fff;"><span>Advertisement</span></div>         </div> 
-    
-    
-    
-    
-    <!-- Other Scripts Head Start-->
-        <!-- Other Scripts Head End-->
-
-    
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','viewerAnalytics');
-
-      viewerAnalytics('create', ( window.location.host == 'www.readwhere.com' ) ? 'UA-30928125-1' : 'UA-30928125-20', 'auto');
-      viewerAnalytics('set', 'dimension1', '26281');
-      viewerAnalytics('send', 'pageview');
-
-            viewerAnalytics('create', "UA-87702119-1", 'auto', {'name':'custom'});
-      viewerAnalytics('custom.send', 'pageview');
-            
-      viewerAnalytics('create', 'UA-30928125-15', 'auto', {'name': 'page_view_tracker'});
-      //viewerAnalytics('send', 'event', 'content-read', 'newspaper', 'free');
-      //viewerAnalytics('send', 'event', 'volume-access', '2023', '07');
-    </script>
-    
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9KTL14ZRVG"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-9KTL14ZRVG');
-</script>
-
-    <script type="text/javascript">
-    function focusEmail(btn){
-      var email = $(btn).parent().find('input[type=email]');
-      if(!email.val()){
-        email.focus();
-        return false;
-      }
-      var emailAddress = email.val();
-      
-      $.post('https://kpepaper.asianetnews.com/ajax/emailvalidation',
-      {
-        'emailaddress' :  emailAddress
-      },
-      function(response){
-        var emailValidationResponse = response;
-         console.log(emailValidationResponse);
-        if(emailValidationResponse == 'true'){
-          console.log(emailValidationResponse);
-          let form = document.getElementById("navbar-subscribe-form");
-            form.submit();
-        }else{
-          document.getElementById('errorname').style.display = 'block'; 
-
-          setTimeout( function() {
-            $('#errorname').fadeOut(4000);
-                        });
-        }
-        });
-      
-    }
-    </script>
-
-    <script type="text/javascript">
-      var isPageRenderFailed = false;
-      setTimeout(function(){
-
-        if ( document.getElementById("de-chunks-container").childElementCount == 0 ) {
-
-          isPageRenderFailed = true;
-          //viewerAnalytics('send', 'event', 'PageRenderFail', "32053", navigator.userAgent);
-        }
-      },10000);
-    </script>
-
-    <!-- Google Tag Manager -->
-    <script type="text/javascript">
-      if ( window.location.host == 'www.readwhere.com' ) {
-
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-W32893F');
-      }
-    </script>
-    <!-- End Google Tag Manager -->
-      
-          
-       
-           
-          
 
   </head>
-  <body class="viewer">
-    <div id="modal-bg" class="modal-close" style="display:none;background-color:rgba(0, 0, 0, 0.8);"></div>
-    <a id="modal-close-btn" class="modal-close" style="display:none;" href="javascript:"><i class="fa fa-times"></i></a>
+
+
+
+<body>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=2654489988137262&version=v2.8";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-
-<div id="top-container" class="container-fluid" style="z-index:13;min-height:60px;">
-        <div id="top-level-nav" class="row header dark">
-            <div class="paper-logo" >
-              
-                              <a target="_top" href="https://kpepaper.asianetnews.com/" title="DAVANAGERE">
-                  <span style="background-position:center center;background-repeat:no-repeat;background-size:contain;margin:5px 0;display:block;height:50px;width:100%;background-image:url('https://cache.epapr.in/masthead/5bfe5faf6b87f.png')"></span>
-                </a>
-              
-            </div>
-            <nav class="tagsnav navbar navbar-inverse mainnav" role="navigation">
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                </div>
-                <div class="collapse navbar-collapse" id="main-navbar-collapse" style="position:relative;">
-                <ul class="nav navbar-nav header_mainnavbar">
-                  <li>
-                                          <a target="_top" href="https://kpepaper.asianetnews.com/" title="DAVANAGERE">Home</a>
-                                      </li>
-                                      <li class="dropdown" style="position:static">
-                      <a class="dropdown-toggle collection" data-toggle="dropdown" role="button" href="#" id="drop1">
-                        DAVANAGERE                        <span class="caret"></span>
-                      </a>
-                    </li>
-                                      <li id="calendar-menu" class="dropdown" style="position:static">
-                      <a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#" id="drop2">Tue, 4 Jul 23 <i class="fa fa-calendar"></i></a>
-                      <div class="dropdown-menu nav-dropdown full-dropdown">
-                        <div class="row">
-                          <div class="col-sm-4">
-                                                                                    <a target="_top" href="https://kpepaper.asianetnews.com/r/3728378" class="list-group-item tagitem">Today's issue</a>
-                                                                                    <a target="_top" href="https://kpepaper.asianetnews.com/r/3727861" class="list-group-item tagitem">Yesterday</a>
-                                                                                    <a target="_top" href="https://kpepaper.asianetnews.com/r/3727437" class="list-group-item tagitem">Sunday</a>
-                                                                                    <a target="_top" href="https://kpepaper.asianetnews.com/r/3726918" class="list-group-item tagitem">Saturday</a>
-                                                                                    <a target="_top" href="https://kpepaper.asianetnews.com/r/3726388" class="list-group-item tagitem">Friday</a>
-                                                                                    <a target="_top" href="https://kpepaper.asianetnews.com/r/3725943" class="list-group-item tagitem">Thursday</a>
-                                                                                    <a target="_top" href="https://kpepaper.asianetnews.com/r/3725443" class="list-group-item tagitem">Wednesday</a>
-                                                      </div>
-                          <div class="col-sm-4">
-                          <div class="responsive-calendar">
-                            <div class="controls form-inline">
-                                <a class="pull-left btn btn-default" onclick="DE.showCalendar('prev')"><i class="fa fa-arrow-left"></i></a>
-                                <select class="form-control" id="calendar-month-selector" onchange="DE.showCalendar()">
-                                                                                                      <option  value="01">Jan</option>
-                                                                                                      <option  value="02">Feb</option>
-                                                                                                      <option  value="03">Mar</option>
-                                                                                                      <option  value="04">Apr</option>
-                                                                                                      <option  value="05">May</option>
-                                                                                                      <option  value="06">Jun</option>
-                                                                                                      <option selected=selected value="07">Jul</option>
-                                                                                                      <option  value="08">Aug</option>
-                                                                                                      <option  value="09">Sep</option>
-                                                                                                      <option  value="10">Oct</option>
-                                                                                                      <option  value="11">Nov</option>
-                                                                                                      <option  value="12">Dec</option>
-                                                                  </select>
-                                <select class="form-control" id="calendar-year-selector" onchange="DE.showCalendar()">
-                                                                    <option  value="2012">2012</option>
-                                                                    <option  value="2013">2013</option>
-                                                                    <option  value="2014">2014</option>
-                                                                    <option  value="2015">2015</option>
-                                                                    <option  value="2016">2016</option>
-                                                                    <option  value="2017">2017</option>
-                                                                    <option  value="2018">2018</option>
-                                                                    <option  value="2019">2019</option>
-                                                                    <option  value="2020">2020</option>
-                                                                    <option  value="2021">2021</option>
-                                                                    <option  value="2022">2022</option>
-                                                                    <option selected=selected value="2023">2023</option>
-                                                                  </select>
-                                <a class="pull-right btn btn-default" onclick="DE.showCalendar('next')"><i class="fa fa-arrow-right"></i></a>
-                            </div><hr/>
-                            <div id="calendar-loader">
-                              <img src="https://cache.epapr.in/static/loader.gif" alt=""/>
-                            </div>
-                            <div class="day-headers">
-                              <div class="day header">Mon</div>
-                              <div class="day header">Tue</div>
-                              <div class="day header">Wed</div>
-                              <div class="day header">Thu</div>
-                              <div class="day header">Fri</div>
-                              <div class="day header">Sat</div>
-                              <div class="day header">Sun</div>
-                            </div>
-                            <div class="days" data-group="days">
-                              <!-- the place where days will be generated -->
-                            </div>
-                          </div>
-                        </div>
-                        </div>
-                      </div>
-                    </li>
-
-                </ul>
-                <ul class="nav navbar-nav navbar-right">                 
-                  <li class="social dropdown" style="margin:0 10px;">
-                    <a class="dropdown-toggle" data-hover="dropdown" data-delay="300" data-close-others="true" data-toggle="dropdown" role="button" href="#" id="drop2">
-                      <i class="fa fa-facebook"></i> <i class="fa fa-twitter"></i></a>
-                      <div class="dropdown-menu nav-dropdown">
-                         <div style="padding:5px;text-align:center;">
-                            <div style="margin:5px;" class="fb-like" data-href="https://kpepaper.asianetnews.com/r/3728378" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
-
-                            <div style="margin:5px;" class="fb-like" data-width="100%" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
-                            <a href="https://twitter.com/share" class="twitter-share-button" data-text="" data-via="myreadwhere">Tweet</a>
-                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                        </div>
-                      </div>
-                  </li>
-
-                  <li id="navbar-subscribe">
-                    <form class="form-inline navbar-subscribe" id ="navbar-subscribe-form" role="form" method="post" action="https://kpepaper.asianetnews.com/subscriber/validatesubscriber">
-                      <input type="hidden" name="newspaper" value="26281" />
-                      <input type="hidden" name="digest" value="on" />
-                      <div class="form-group">
-                          <label class="sr-only" for="subscribe-email">Email Address</label>
-                          <input type="email" class="form-control email-input" name="email" id="subscribe-email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
-                          <script type="text/javascript">
-                            /*var subscribe_email = document.getElementById("subscribe-email");
-                            subscribe_email.oninvalid = function(event) {
-                                event.target.setCustomValidity('Enter valid email address');
-                            }*/
-                          </script>
-                          
-                      </div><button type="button" class="btn btn-default btn-lg " onclick="return focusEmail(this)" style="border:none;color:black;line-height:40px;border-radius:0;background-color:rgb(255,204,0)">Subscribe</button>
-                    </form>
-                  </li>
-                  
-
-                  <li id="user_login" style="display:none;">
-                    <!-- Removing subscribe from newspaper v4 and adding login / logout functionality -->
-                    <div class="rw-floatright" style="position:relative;">
-                      
-                      <a class="btn btn-default btn-lg user-login-subscribe" style="display:none;border:none;color:black;line-height:40px;border-radius:0;background-color:rgb(255,204,0)" href="https://www.readwhere.com/read/subscriber/dosubscribe/newspaper/26281">Subscribe</a>
-                      <a class="newspaper-rw-header-link login-link useroptns btn-lg newspaper_v4_login login-to-subscribe" style="" href="javascript:;">Login to Subscribe</a>
-                      <span class="profile rw-header-link dropdown close" style="display:none;float:right;">
-                        <ul class="v4_magviewer_logout">
-                          <li class="dropdown">
-                            <a href="#" class="dropdown-toggle rw-header-link loginonly useroptns mazine_v4_logout" style="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><!-- <i class="fa fa-user" style=""></i><span class="caret"></span> -->
-                              <span class="madv4_user_photo"> </span>
-                              <span class="madv4_user_name" style="color: rgb(80,80,80);;">  </span>
-                            </a>
-                            <ul class="dropdown-menu extra_topcls">
-                              <li><a target="_top" href="https://www.readwhere.com/shelf">Shelf</a></li>
-                              <!-- <li><a target="_top" href="https://www.readwhere.com/user/clips">Clips</a></li> -->
-                              <li><a target="_top" href="https://www.readwhere.com/mywallet">Wallet</a></li>
-                              <li role="separator" class="divider"></li>
-                              <li><a id="logout" target="_top" href="https://www.readwhere.com/user/logout?ru=r/3728378&domain=https://kpepaper.asianetnews.com">Logout</a></li>
-                              <!-- <li><a id="logout" target="_top" href="https://www.readwhere.com/user/logout?ru=https://kpepaper.asianetnews.com/r/3728378">Logout</a></li> -->
-                            </ul>
-                          </li>
-                        </ul>
-                      </span>
-                    </div>
-                  </li>
-
-                </ul>
-            </div>
-            </nav>
-            <b class="error" id="errorname" style="display: none;" >Please enter valid email address.</b>
-    </div>
-  
-</div>
-
-
-<div class="container-fluid" style="width: 100%;" >
-  <div class="row adunit hidden-xs" style="margin-top: 0;">
-
-                      <div style="height:90px;margin:10px auto 10px;">
-          <!-- /46138097/desktop_epaper_suvarna_ros_masthead -->
-<div id='div-gpt-ad-1518092757215-0'>
-<script>
-googletag.cmd.push(function() { googletag.display('div-gpt-ad-1518092757215-0'); });
-</script>
-</div>          </div>
-                  
-       
-      
-
-  </div>
-</div>
-
-
-<div class="zoom_indicator">
-  <span class="zoom_level_span"> +1 </span>
-  <!-- <span class="zoom_text_span"> zoom </span> -->
-</div>
-    
-<div id="content-container" class="container-fluid" style="width: 100%;float: left;">
-    <div id="page-level-bar" class="flip-container">        
-      <div id="page-level-nav" class="front row" style="left:211px; width:65%;" > 
-                                        <div class="nav-group hidden-xs"> 
-              <input id="showhideclip" type="checkbox" data-toggle="toggle" checked data-on="<i class='fa fa-eye-slash'></i> Hide Clips" data-off="<i class='fa fa-eye'></i> Show Clips">
-            </div> 
-                    
-          <div class="nav-group hidden-xs clipbtn" style="">
-            <button id="createclip" class="btn btn-default clip" type="button"><i class="fa fa-scissors"></i> <span class="hidden-xs">Clip</span></button>
-          </div> 
-        
-        <div class="nav-group" style="max-width:362px">
-            <div class="input-group">
-              <span class="input-group-btn">
-                <button class="btn btn-default firstpage" type="button" id="firstpage"><i class="fa fa-fast-backward"></i></button>
-                <button class="btn btn-default prevpage" type="button" id="prev-page-link"><i class="fa fa-arrow-left"></i></button>
-                <button class="btn btn-default"style="color: #333;background-color: #fff;border-color: #ccc;cursor: default;" type="button">Page</button>
-              </span>
-              <input id="pagenum-input" class="form-control" aria-label="..." value="1" min="1" max="3">
-              <div class="input-group-btn">
-                <div id="page-headers-list" class="btn-group">
-                  <button id="pagecount-btn" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    of 3 <i class="fa fa-caret-down"></i>
-                  </button>
-                </div>
-                <button class="btn btn-default nextpage" type="button"><i class="fa fa-arrow-right"></i></button>
-                <button class="btn btn-default lastpage" type="button" id="lastpage"><i class="fa fa-fast-forward"></i></button>
-              </div><!-- /btn-group -->
-            </div><!-- /input-group -->
-        </div>
-        <div class="nav-group">
-            <div class="btn-group" role="group" aria-label="...">
-            <button class="btn btn-default zoomin" type="button">
-                <i class="fa fa-search-plus"></i> 
-                <span class="hidden-xs">Zoom</span>
-                <span style="margin: -1px 0px 0px 7px;">
-                  <i class="fa fa-circle zoom_indicator_v4_1"></i>
-                  <i class="fa fa-circle zoom_indicator_v4_2"></i>  
-                </span>
-            </button>
-            <button class="btn btn-default zoomout" type="button"><i class="fa fa-search-minus"></i></button>
-            </div>
-        </div>
-        <div class="nav-group">
-          <div class="btn-group" role="group" aria-label="..." id="pagemode">
-            <button title="Single page" class="btn btn-default singlepage" type="button" style="display: none;"><i class="fa fa-file-text"></i></button>
-            <button title="Dual page" class="btn btn-default dualpage" type="button" style="display: block;"> <i class="fa fa-columns"></i> </button>
-          </div>
-        </div>
-
-                <div class="nav-group hidden-xs">
-          <a target="_top" id="download-icon" style="font-size: 14px;display:none;" title="download" class="btn btn-default btn-sm download-pdf" href="javascript:;">
-            <i class="fa fa-cloud-download"></i>
-          </a>
-        </div>
-        
-        <div id="page-headers-dropdown" class="dropdown-menu">
-          <table id="page-headers-table" class="table table-striped"></table>
-        </div>
-      </div>
-    
-      <!-- Show user login status for free content -->
-        <div id="free_user_login" style="display:none;float:right;">
-          <a class="login-link-free useroptns login-link" style="padding: 5px 10px;" href="javascript:;">Login / Signup</a>
-          <span class="profile rw-header-link dropdown" style="display:none;float:left;">
-            <ul class="v4_magviewer_logout">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle rw-header-link loginonly useroptns mazine_v4_logout" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><!-- <i class="fa fa-user" style=""></i><span class="caret"></span> -->
-                  <span class="madv4_user_photo" style="margin-top: -9px;"> </span>
-                  <span class="madv4_user_name" style="padding: 1px 0 0 8px;">  </span>
-                </a>
-                <ul class="dropdown-menu extra_topcls">
-                  <!-- <li><a id="logout" target="_top" href="https://www.readwhere.com/user/logout?ru=https://kpepaper.asianetnews.com/r/3728378">Logout</a></li> -->
-                  <li><a id="logout" target="_top" href="https://www.readwhere.com/user/logout?ru=r/3728378&domain=https://kpepaper.asianetnews.com">Logout</a></li>
-                </ul>
-              </li>
-            </ul>
-          </span>
-        </div>         
-        
-
-    </div>
-
-    <div class="contentloader" style="text-align: center;width: 100%;display:none;"> <img src="https://sf.readwhere.com/read/theme/images/loader.gif">  </div>
-
-    <div class="" id="content-row">
-        <div id="page-left-panel" style="vertical-align:top;width:300px;display:table-cell;padding:0 10px;" class="hidden-xs hidden-sm">
-          <ul class="nav nav-tabs" style="max-width:300px;margin:0 auto;">                   <li id="left-panel-pages" role="presentation" class="tabs"><a href="javascript:;">Pages</a></li>                   <li id="left-panel-topclips" role="presentation" class="tabs"><a href="javascript:;">Page Clips</a></li>             
-
-
-
-          <!--               <li id="left-panel-sections" role="presentation" class="tabs"><a href="#"></a></li>
-                        <li id="left-panel-pages" role="presentation" class="tabs"><a href="javascript:;">Pages</a></li>
-            <li id="left-panel-topclips" role="presentation" class="tabs"><a href="javascript:;">Page Clips</a></li>
-           -->
-
-          </ul>
-          <div id="page-thumbs"></div>
-        </div>
-
-        <div id="page-div" style="vertical-align:top;display:table-cell;padding:0 10px;position:relative;" class="">
-          <a href="javascript:;" class="left_arrow_pgright btn_prev" style="text-decoration:none;" title="Previous" alt="Previous" > <span> <i class="fa fa-angle-left"></i> </span> </a>
-          <a href="javascript:;" class="right_arrow_pgright btn_next" style="text-decoration:none;" title="Next" alt="Next"> <span> <i class="fa fa-angle-right"></i> </span> </a>
-          <div id="de-page-container" class="page-size mainclips">
-            <div id="de-chunks-container" class="page-size"></div>
-          </div>
-        </div>
-
-        <div id="page-right-panel" style="vertical-align:top;width:320px;display:table-cell;padding:0 10px;" class="hidden-xs">
-          <div id="epaper-box">                 <a target="_top" class="btn btn-default btn-sm download-pdf" href="javascript:;">
-                  <i class="fa fa-cloud-download"></i> Download
-                </a>                 <button class="btn btn-default btn-sm feedback"><i class="fa fa-pencil"></i> Feedback</button> 
-                          <button class="btn btn-default btn-sm about"><img height="16" src="https://sf.readwhere.com/img/ver16_logo_icon.png" alt=""/> About</button>
-                      </div>
-
-                                        <div style="height:600px;margin:0 auto;">
-                <!-- /46138097/desktop_epaper_suvarna_ros_top -->
-<div id='div-gpt-ad-1518092757215-1'>
-<script>
-googletag.cmd.push(function() { googletag.display('div-gpt-ad-1518092757215-1'); });
-</script>
-</div>                </div>
-                            
-                              
-                
-                    
-        </div>
-    </div>
-    <div id="page-bottom">
-                              <div style="min-height:250px;margin:10px auto;text-align:center;">
-                <!-- /46138097/desktop_epaper_suvarna_ros_bottom -->
-<div id='div-gpt-ad-1518092757215-2'>
-<script>
-googletag.cmd.push(function() { googletag.display('div-gpt-ad-1518092757215-2'); });
-</script>
-</div>
-              </div>
-                             
-               
-
-      <div id="top-clips-box" class="clips topclips"> </div>
-
-      
-    </div>
-  </div>
-
-    <div id="first-page-text" style="display: none;"></div>
-
-
-    <div class="modal fade text-center" id="showClipModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="clip-modal-content">
-        <div class="modal-content">
-            <div class="modal-header heding-m">
-                <button type="button" class="close" data-dismiss="modal">
-                   <span aria-hidden="true">&times;</span>
-                   <span class="sr-only">Close</span>
-                </button>
-            </div>
-            <div class="modal-body">
-              <div class="ad-box">
-              </div>
-              <div class="paper-img">
-                <img class="clip-img" src="">
-              </div>
-              
-              <div class="cont-btn-box">
-                <a href="" class="cont-btn continue-reading" style="display: none;"> Continue<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
-                <a href="" class="cont-btn back-reading" style="display: none;"><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i> Back </a>
-              </div>
-            </div>
-            <div class="modal-footer clipactions">
-              
-              <div class="share-box">
-                <a class="btn btn-default openinnew" target="_blank" href="" ><i class="fa fa-external-link"></i><span style="color:#333" class="label">Open</span></a>                   <a target="_top" class="btn btn-default download downloadclip" href="javascript:;" data-clip-key=""><i class="fa fa-cloud-download"></i><span style="color:#333" class="label">Download</span></a>                 <button type="button" class="btn btn-default fbshare" data-src=""><i class="fa fa-facebook"></i><span class="label">Facebook</span></button>
-                <button type="button" class="btn btn-default twshare" data-src=""><i class="fa fa-twitter"></i><span class="label">Tweet</span></button>
-                <button type="button" class="btn btn-default email" data-issueid="3728378" data-clipid="" data-clipkey=""><i class="fa fa-envelope"></i><span class="label">Email</span></button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
-
-              <div id="clip-comments" class="cmnt-box">
-                  <div class="fb-comments" data-href="" data-width="100%" data-numposts="10" data-colorscheme="light"></div>
-                </div>
-            </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div id="clipping-panel" class="row" style="display:none;">
-      <div id="suggested-clip-box">
-        <div class="suggested-clip-header" style="height: 37px">
-                   
-        </div>
-        <div id="suggested-clips">
-          <div class="loader">
-            <i class="fa fa-spin fa-cog" style="font-size:24px;text-align:center;"></i>
-            <h3><b>Validating clip...</b></h3>
-          </div>
-        </div>
-        <div class="create-new" style="display: none;" >
-          <button type="button" class="btn btn-primary cancel_validate_clip" data-dismiss="modal" style="float: left;text-align: center;">Cancel</button>
-          <div class="ignore-suggest-clip" style="float: right;"><a>Ignore</a></div>
-        </div>
-      </div> 
-
-      <div id="new_clip" style="display:none;">
-        <div class="clipbox">
-            <div class="loader">
-              <i class="fa fa-spin fa-cog" style="font-size:24px;text-align:center;"></i>
-              <h3><b>Creating clip...</b></h3>
-            </div>
-            <a class="link" href="">
-                <span class="clipimage" style=""></span>
-            </a>
-        </div>
-        <div class="form-group linktoclip" style="display:none">
-          <label for="clip-link"> <a id="cliplink">Link </a>to this clip</label>
-          <input type="text" class="form-control" id="clip-link" value="" readonly>
-        </div>
-        <form id="save-clip-form">
-          <div class="form-group">
-            <label for="type-of-clip">Type of clip (select one)</label>
-            <select multiple class="form-control" id="type-of-clip" placeholder="Select one">
-              <option value="news">News</option>
-              <option value="opinion">Opinion</option>
-              <option value="photo">Photograph</option>
-              <option value="notice">Notice</option>
-              <option value="advertisment">Advertisment</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-        </form>
-        <div class="clipactions save">
-          <button type="button" class="btn btn-primary btn-lg saveclipinfo">Save</button>
-        </div>
-        <div class="clipactions big share" style="display:none;">
-            <button type="button" class="btn btn-default fbshare"><i class="fa fa-facebook"></i><span class="label">Facebook</span></button>
-            <button type="button" class="btn btn-default twshare"><i class="fa fa-twitter"></i><span class="label">Tweet</span></button>
-            <button type="button" class="btn btn-default email"><i class="fa fa-envelope"></i><span class="label">Email</span></button>
-            <a class="btn btn-default download openinnew" target="_blank" style="margin-top:10px;" href="javascript:;"><i class="fa fa-external-link"></i><span style="font-weight: bold; font-size: 12px; line-height: 20px; margin: 0px 4px;">Open</span></a>
-            <!-- <a class="btn btn-default download openclip" style="margin-top:10px;" href="#"><i class="fa fa-cloud-download"></i> <span style="font-weight: bold; font-size: 12px; line-height: 20px; margin: 0px 4px;"> Download </span> </a> -->
-        </div>
-      </div>
-    </div>
-    <div id="feedback-panel" class="row" style="display:none">
-      <p class="title">Epaper Feedback</p>
-      <p class="help-block">Please use this for epaper related feedback only. For other messages, please write to the newspaper's editor.</p>
-      
-      <label for="feedback" class="form-label">How do we improve the epaper?</label>
-      <textarea placeholder="" class="form-control" name="feedback" id="feedback-box" rows="3" style="resize: none;"></textarea>
-      
-      <label for="fromemail" class="form-label">Your email address:</label>
-      <input type="text" name="fromemail" id="feedback-fromemail-input" class="form-control" placeholder="required"/>
-      <p class="feedback-message error" style="color: #f00; display:none;">Feedback can not be blank. Please enter your feedback.</p>
-      <p class="email error" style="color: #f00; display:none;">Please enter your valid email.</p>
-
-      <button id="feedback-send" class="btn btn-primary form-control" type="button" style="text-align:center">Send</button>
-    </div>
-    <div id="about-panel" class="row" style="display:none">
-      <div style="width: 150px;height: 40px;margin-left: 70px;margin-bottom: 10px;">
-        <img src="https://sf.readwhere.com/img/readwherelogo2.png" style="width: 150px;">
-      </div>
-      <p class="" style="text-align:center;">Epaper powered by Readwhere digital publishing platform</p>
-      <p style="text-align:center"><a target="_top" href="https://www.readwhere.com/">Learn more</a></p>
-      <p class="">Download Readwhere app to read on the go</p>
-      <div style="text-align:center"><a target="_top" class="btn btn-link" style="padding-right:0;" href="https://rdwh.re/iosapp"><img src="https://cache.epapr.in/static/mapp/img/appstore-btn.png" height="40" /></a>
-      <a target="_top" style="padding-left:0;" class="btn btn-link" href="https://rdwh.re/androidapp"><img src="https://cache.epapr.in/static/mapp/img/play-store.png" height="40" /></a>
-      </div>
-    </div>
-    <div id="whitelabel-about-panel" class="row" style="display:none">
-      <div style="width: 100%;text-align: center;margin: 10px auto;">
-          <img src="https://cache.epapr.in/logos/logo_image_598eaa81646bb.png">
-      </div>
-      <p class="" style="text-align:center;">kannadaprabha leading kannada daily in karnataka.</p>
-    </div>
-    
-    <div id="archive-download-panel" class="row" style="display:none">
-      <p class="title">DAVANAGERE of DAVANAGERE</p>
-        
-        <p style="font-weight: bold;text-align: center;">You are logged-in with following email:</p>
-        <p class="user_email" style="text-align: center;"></p>
-
-        <button class="btn btn-primary form-control confirm-btn" type="button" style="text-align:center">Download PDF</button>
-        <div class="sending-loader" style="text-align:center;display: none;"><i class="fa fa-spin fa-cog" style="font-size:24px;text-align:center;"></i></div>
-        <div class="download-success" style="text-align: center;display:none;">
-            <span style="color:green;">Downloaded Successfully.</span> <a href="https://kpepaper.asianetnews.com/">Go to Home</a>
-        </div>
-    </div>
-
-    <div id="archive-read-confirmation-panel" class="row" style="display:none">
-      <p class="title">DAVANAGERE of DAVANAGERE</p>
-              <div>  
-          <p class="help-block" style="text-align: center;">Please purchase this volume to read.</p>
-        </div>
-        
-        <p style="font-weight: bold;text-align: center;">You are logged-in with following email:</p>
-        <p class="user_email" style="text-align: center;"></p>
-
-        <!-- <button class="btn btn-primary form-control confirm-btn" type="button" style="text-align:center">Read online @ INR </button> -->
-        <button class="btn btn-primary form-control archive_download-btn " type="button" style="text-align:center;height: 50px;">Download PDF @ &#8377; 0.00<span style="font-size: 10px; "> +GST </span>
-          <br>Total Price at Checkout <strong>&#8377; 0.00</strong></button>
-        <div class="sending-loader" style="text-align:center;display: none;"><i class="fa fa-spin fa-cog" style="font-size:24px;text-align:center;"></i></div>
-        
-      <div class="acknowledgement">
-        <div class="success" style="display: none;">
-          <p style="text-align:center;">
-            <strong>We have sent the confirmation email</strong>
-            <br/>
-            You will receive the acknowledgement with link to read this volume in your email shortly.
-          </p>
-        </div>
-        <div class="error" style="display: none;">
-          <p class="email error" style="color: #f00;"></p>
-        </div>
-      </div>
-       <div style="text-align: center;">
-          <a href="https://kpepaper.asianetnews.com/">Go to Home</a>
-        </div>
-
-    </div>
-
-    <div id="clip-ad" style="display: none;">
-                            <div style="height:90px;margin:10px auto 10px;">
-                        </div>
-                    </div>
-
-    <div id="tour_overlay" style="width: 100%; float: left; height: 100vh; z-index: 99; font-weight: bold; color: rgb(255, 255, 255) ! important; background: none repeat scroll 0px 0px rgba(0, 0, 0, 0.8); position: absolute; left:0; top:0; display:none;">
-
-      <div style="position: absolute; border: 2px solid rgb(255, 255, 255); padding: 5px; left: 239px; top: 1.6%;">     DAVANAGERE   </div>
-      <div style="position: absolute; padding: 5px; left: 222px; top: 25px;">
-        <img src="https://marketing.readwhere.com/10548.png" style="width: 100px;">  
-      </div>
-      <div style="position: absolute; color: rgb(0, 0, 0); padding: 5px 10px; cursor: pointer; background: none repeat scroll 0% 0% rgb(244, 194, 37); border: 2px solid rgb(255, 255, 255); top: 98px; left: 183px;">Switch Editions </div>
-
-      <div style="position: absolute; border: 2px solid rgb(255, 255, 255); padding: 5px 7px; top: 169px; right: 387px;"><i class="fa fa-file-text"></i> / <i class="fa fa-columns"></i></div>
-      <div style="position: absolute; padding: 5px; top: 154px; right: 428px;">
-        <img style="width: 100px;" src="https://marketing.readwhere.com/10548.3.png">  
-      </div>
-      <div style="position: absolute; color: rgb(0, 0, 0); padding: 5px 10px; cursor: default; background: none repeat scroll 0% 0% rgb(244, 194, 37); border: 2px solid rgb(255, 255, 255); top: 247px; right: 450px;">Single / Dual Page</div>
-
-      <div id="dual_dwnld" style="display:none;">
-        <div style="position: absolute; border: 2px solid rgb(255, 255, 255); padding: 5px 7px; top: 170px; right: 345px;"><i class="fa fa-cloud-download"></i> </div>
-        <div style="position: absolute; padding: 5px; top: 188px; right: 285px;">
-          <img src="https://marketing.readwhere.com/10548.2.png" style="width: 100px;">
-        </div>
-        <div style="position: absolute; color: rgb(0, 0, 0); padding: 5px 10px; cursor: default; background: none repeat scroll 0% 0% rgb(244, 194, 37); border: 2px solid rgb(255, 255, 255); top: 265px; right: 276px;">Download PDF</div>
-      </div>
-
-      <div style="position: absolute; border: 2px solid rgb(255, 255, 255); padding: 5px; top: 1.5%; left: 393px;">Tue, 04 Jul 23 <i class="fa fa-calendar"></i></div>
-      <div style="position: absolute; padding: 5px; top: 25px; left: 428px;">
-        <img src="https://marketing.readwhere.com/10548.2.png" style="width: 100px;">  
-      </div>
-      <div style="position: absolute; color: rgb(0, 0, 0); padding: 5px 10px; cursor: pointer; background: none repeat scroll 0% 0% rgb(244, 194, 37); border: 2px solid rgb(255, 255, 255); top: 98px; left: 500px;">Explore Archives</div>
-
-      <div id="single_dwnld">
-        <div style="position: absolute; border: 2px solid rgb(255, 255, 255); padding: 5px 7px; top: 213px; right: 203px;">Download</div>
-        <div style="position: absolute; padding: 5px; top: 200px; right: 272px;">
-          <img style="width: 100px;" src="https://marketing.readwhere.com/10548.3.png">  
-        </div>
-        <div style="position: absolute; color: rgb(0, 0, 0); padding: 5px 10px; cursor: pointer; background: none repeat scroll 0% 0% rgb(244, 194, 37); border: 2px solid rgb(255, 255, 255); top: 282px; right: 300px;">Download PDF</div>
-      </div>
-
-      <!-- <div style="position: absolute; border: 2px solid rgb(255, 255, 255); padding: 5px 7px; top: 218px; left: 94px;">Top Clips</div>
-      <div style="position: absolute; padding: 5px; left: 115px; top: 241px;">
-        <img style="width: 34px;" src="https://marketing.readwhere.com/10548.5.png">  
-      </div>
-      <div style="position: absolute; color: rgb(0, 0, 0); padding: 5px 10px; cursor: pointer; background: none repeat scroll 0% 0% rgb(244, 194, 37); border: 2px solid rgb(255, 255, 255); top: 311px; left: 87px;">View Clips</div> -->
-      
-      <!-- <div class="tour_section" style="position: absolute; border: 2px solid rgb(255, 255, 255); padding: 5px 7px; top: 218px; left: 186px;">Sections</div>
-      <div class="tour_section" style="position: absolute; padding: 5px; top: 213px; left: 252px;">
-        <img style="width: 71px;" src="https://marketing.readwhere.com/10548.6.png">  
-      </div>
-      <div class="tour_section" style="position: absolute; color: rgb(0, 0, 0); padding: 5px 10px; cursor: pointer; background: none repeat scroll 0% 0% rgb(244, 194, 37); border: 2px solid rgb(255, 255, 255); top: 218px; left: 324px;">View Sections</div> -->
-
-      
-      <div style="position: absolute; padding: 5px; right: 1%; top: 1%; color: rgb(255, 255, 255);cursor:pointer;" id="cancel_tour"> <i class="fa fa-times fa-2x"></i> </div>
-    </div>
-
-    <div class="modal fade" id="other-title-modal" tabindex="-1" role="dialog" aria-labelledby="otherTitleModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            
-            <div class="col-md-7 v4_padding_none">
-               <h4 class="modal-title" id="otherTitleModalLabel"> DAVANAGERE </h4>
-            </div>
-
-            <div class="col-md-4 search_inheaderv4 searchbar">
-               <div class="input-group v4_defaultwd" id="theFormID">
-                  <input type="text" class="form-control" placeholder="Search Edition" id="txt_search">
-                  <span class="input-group-btn">
-                    <button class="btn btn-default vs_searchbtn" type="button"> 
-                      <i class="fa fa-search"></i> 
-                    </button>
-                  </span>
-                </div>
-            </div>
-
-           
-          </div>
-          <div class="modal-body">
-            
-            <div class="col-md-12 vw_paddingnone vs_border-right">
-              
-              <!-- search bar -->
-              <!-- <div class="widthplus searchbar">
-                <div class="input-group" id="theFormID">
-                  <input type="text" class="form-control" placeholder="Search Edition" id="txt_search">
-                  <span class="input-group-btn">
-                    <button class="btn btn-default vs_searchbtn" type="button"> 
-                      <i class="fa fa-search"></i> 
-                    </button>
-                  </span>
-                </div>
-              </div> -->
-
-              <!-- search result -->              
-              <div class="widthplus vs_border-top" id="vs_searchresults">
-                <div class="widthplus">
-                  <span class="vs_heading5 vs_fright ">
-                    Search results 
-                  </span>
-                </div>
-                <div class="widthplus vs_padding15 vs_tagscaptions">
-                                      <a target="_top" href="https://kpepaper.asianetnews.com/t/26251/latest">YADAGIRI</a>
-                                      <a target="_top" href="https://kpepaper.asianetnews.com/t/12222/latest">Bengaluru</a>
-                                      <a target="_top" href="https://kpepaper.asianetnews.com/t/26241/latest">HAVERI</a>
-                                      <a target="_top" href="https://kpepaper.asianetnews.com/t/26244/latest">KOPPAL</a>
-                                      <a target="_top" href="https://kpepaper.asianetnews.com/t/26245/latest">UTTARA KANNADA</a>
-                                      <a target="_top" href="https://kpepaper.asianetnews.com/t/26246/latest">BAGALKOTE</a>
-                                      <a target="_top" href="https://kpepaper.asianetnews.com/t/26247/latest">BELAGAVI RURAL</a>
-                                      <a target="_top" href="https://kpepaper.asianetnews.com/t/26249/latest">BIDAR</a>
-                                      <a target="_top" href="https://kpepaper.asianetnews.com/t/26250/latest">RAICHUR</a>
-                                      <a target="_top" href="https://kpepaper.asianetnews.com/t/26240/latest">GADAG</a>
-                                      <a target="_top" href="https://kpepaper.asianetnews.com/t/26252/latest">UDUPI</a>
-                                      <a target="_top" href="https://kpepaper.asianetnews.com/t/26253/latest">KODAGU</a>
-                                      <a target="_top" href="https://kpepaper.asianetnews.com/t/26280/latest">CHITRADURGA</a>
-                                      <a target="_top" href="https://kpepaper.asianetnews.com/t/26281/latest">DAVANAGERE</a>
-                                      <a target="_top" href="https://kpepaper.asianetnews.com/t/26282/latest">CHIKKAMAGALURU</a>
-                                      <a target="_top" href="https://kpepaper.asianetnews.com/t/26585/latest">Special Suplement</a>
-                                      <a target="_top" href="https://kpepaper.asianetnews.com/t/33453/latest">NRI EDITION</a>
-                                      <a target="_top" href="https://kpepaper.asianetnews.com/t/38078/latest">Bengaluru 2</a>
-                                      <a target="_top" href="https://kpepaper.asianetnews.com/t/26207/latest">BHANUPRABHA </a>
-                                      <a target="_top" href="https://kpepaper.asianetnews.com/t/20311/latest">Shivamogga</a>
-                                      <a target="_top" href="https://kpepaper.asianetnews.com/t/20312/latest">Mangaluru</a>
-                                      <a target="_top" href="https://kpepaper.asianetnews.com/t/20313/latest">Hubballi</a>
-                                      <a target="_top" href="https://kpepaper.asianetnews.com/t/20314/latest">Belagavi</a>
-                                      <a target="_top" href="https://kpepaper.asianetnews.com/t/20315/latest">Kalaburagi</a>
-                                      <a target="_top" href="https://kpepaper.asianetnews.com/t/26204/latest">VIJAYAPURA</a>
-                                      <a target="_top" href="https://kpepaper.asianetnews.com/t/26205/latest">INDINA SPECIAL</a>
-                                      <a target="_top" href="https://kpepaper.asianetnews.com/t/26239/latest">BALLARY</a>
-                                      <a target="_top" href="https://kpepaper.asianetnews.com/t/26208/latest">CHITRAPRABHA </a>
-                                      <a target="_top" href="https://kpepaper.asianetnews.com/t/26228/latest">BANGALORE RURAL</a>
-                                      <a target="_top" href="https://kpepaper.asianetnews.com/t/26229/latest">CHAMARAJANAGAR</a>
-                                      <a target="_top" href="https://kpepaper.asianetnews.com/t/26230/latest">HASSAN</a>
-                                      <a target="_top" href="https://kpepaper.asianetnews.com/t/26231/latest">KOLAR</a>
-                                      <a target="_top" href="https://kpepaper.asianetnews.com/t/26233/latest">MANDYA</a>
-                                      <a target="_top" href="https://kpepaper.asianetnews.com/t/26234/latest">MYSORE CITY</a>
-                                      <a target="_top" href="https://kpepaper.asianetnews.com/t/26235/latest">MYSORE RURAL</a>
-                                      <a target="_top" href="https://kpepaper.asianetnews.com/t/26236/latest">TUMKUR</a>
-                                      <a target="_top" href="https://kpepaper.asianetnews.com/t/33555/latest">DEEPAVALI</a>
-                                      <a target="_top" href="https://kpepaper.asianetnews.com/t/34871/latest">UGADI</a>
-                                  </div>
-              </div>
-
-              <div class="collection_hierarchy">
-              </div>
-
-              <!-- Editions -->
-              <div class="widthplus edition">
-                <div class="widthplus">
-                  <span class="vs_heading5">
-                    Editions
-                  </span>
-                 </div>
-                 <div class="widthplus publication">
-                 </div>
-              </div>
-
-              <div class="last_read">
-                <div class="widthplus">
-                  <span class="vs_heading5 vs_fright ">
-                    Recently Visited </i>
-                  </span>
-                </div>
-                <div class="widthplus vs_padding15 vs_tagscaptions publication">
-                </div>
-              </div>
-
-            </div>
-
-            <!-- <div class="col-md-3 vw_paddingnone last_read">
-              <div class="widthplus">
-                <span class="vs_heading5 vs_fright ">
-                  Recently Visited <i class="fa fa-chevron-down"></i>
-                </span>
-              </div>
-              <div class="publication">
-              </div>
-            </div> -->
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="modal fade" id="search-query-modal" tabindex="-1" role="dialog" aria-labelledby="searchInTitleModal">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            
-            <div class="col-md-2 v4_padding_none">
-               <h4 class="modal-title" id="searchInTitleModal"> DAVANAGERE </h4>
-            </div>
-
-            <div class="col-md-9 search_inheaderv4 searchbar" id="search_box">
-              <form id="search-form" method="get" accept-charset="UTF-8" action=""> 
-                <div class="input-group v4_defaultwd" id="theFormID">
-                  <input type="text" class="form-control" placeholder="Search for your keyword" id="de-searchbox">
-                  <span class="input-group-btn">
-                    <button class="btn btn-default vs_searchbtn searchbtn" type="button"> 
-                      <i class="fa fa-search"></i> 
-                    </button>
-                  </span>
-                </div>
-              </form>
-            </div>
-
-          </div>
-          <div class="modal-body" style="max-height: 450px;overflow-y:scroll;">          
-            <div class="srchloader" style="display:none;text-align: center;">
-              <img class="loader" src="https://sf.readwhere.com/read/theme/images/loader.gif" /> 
-            </div>
-            <div class="col-md-12 vw_paddingnone vs_border-right">
-              <!-- Search Results -->
-              <div class="widthplus edition">
-                <div class="widthplus" id="search_head" style="display:none;">
-                  <span class="vs_heading5">
-                    Search Results
-                  </span>
-                </div>
-                <div class="widthplus searched_pages"> </div>
-                
-                <div id="search_navbar" style="display: none;">          
-                  <button class="btn nofloat" id="prev">
-                    <div><span class="label">&lt;</span></div>
-                  </button>
-                  <button class="btn pagenum nofloat">
-                    <div> <i class="fa fa-file-text" aria-hidden="true"></i> <span class="label" id="page_num"> </span> </div>
-                  </button>
-                  <button class="btn nofloat" id="next">
-                    <div><span class="label">&gt;</span></div>
-                  </button>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <script type="text/javascript">
-      var DEConfig = {
-        'issueId': 3728378,
-        'titleId': 26281,
-        'publisherId': 32053,
-        'baseUrl': "https://kpepaper.asianetnews.com/",
-        'rwBase': "http://www.readwhere.com/",
-        'rwBaseHttps': "https://www.readwhere.com/",
-        'cdnBase': 'https://cache.epapr.in/',
-        'numPages': 3,
-        'sections': [],
-        'left_tab': "pages",
-        'titleName': "DAVANAGERE",
-        'publisherName': "Kannada Prabha",
-        'publishMonth':"2023-07",
-        'published':"2023-07-04 03:00:00",
-        'showpdf': 1,
-        'customAnalytics':true, 
-        'enablePlugins':true, 
-        'DEBUG': false,
-        'title_settings': [],
-        'collection': {"display_name":"kannadaprabha","type":"all","titles":["12222","34871","33555","33453","26585","20311","20313","20312","20314","20315","26282","26281","26280","26253","26252","26251","26250","26249","26247","26246","26245","26244","26241","26240","26239","26236","26235","26234","26233","26231","26230","26229","26228","26208","26207","26204"],"parent":null,"children":{"1543323789-bengaluru":{"display_name":"Bengaluru","titles":["12222","26236","26235","26234","26233","26231","26230","26229","26228"],"parent":"1543323771-kannadaprabha","children":null,"deleted":0,"publisher_id":32053,"id":"1543323789-bengaluru"},"1543323804-shivamogga":{"display_name":"Shivamogga","titles":["26282","26281","26280","20311"],"parent":"1543323771-kannadaprabha","children":null,"deleted":0,"publisher_id":"32053","id":"1543323804-shivamogga"},"1543323818-hubballi":{"display_name":"Hubballi","titles":["26245","26244","26241","26240","26239","20313"],"parent":"1543323771-kannadaprabha","children":null,"deleted":0,"publisher_id":"32053","id":"1543323818-hubballi"},"1543323840-mangaluru":{"display_name":"Mangaluru","titles":["26253","26252","20312"],"parent":"1543323771-kannadaprabha","children":null,"deleted":0,"publisher_id":"32053","id":"1543323840-mangaluru"},"1543323853-belagavi":{"display_name":"Belagavi","titles":["26248","26247","26246","26204","26203","26202","20314"],"parent":"1543323771-kannadaprabha","children":null,"deleted":0,"publisher_id":"32053","id":"1543323853-belagavi"},"1543323862-kalaburagi":{"display_name":"Kalaburagi","titles":["26251","26250","26249","20315"],"parent":"1543323771-kannadaprabha","children":null,"deleted":0,"publisher_id":"32053","id":"1543323862-kalaburagi"},"1543323980-supplements":{"display_name":"Supplements","titles":["26585","26208","26207","26205"],"parent":"1543323771-kannadaprabha","children":null,"deleted":0,"publisher_id":"32053","id":"1543323980-supplements"},"1604059958-nri-edition":{"display_name":"NRI EDITION","titles":["33453"],"parent":"1543323771-kannadaprabha","children":null,"deleted":0,"publisher_id":"32053","id":"1604059958-nri-edition"},"1605873264-deepavali":{"display_name":"MAGAZINE","titles":["34871","33555"],"parent":"1543323771-kannadaprabha","children":null,"deleted":0,"publisher_id":"32053","id":"1605873264-deepavali"}},"deleted":0,"publisher_id":32053,"id":"1543323771-kannadaprabha"},
-        'environment' : "PRODUCTION",
-        'favicon' : "http://cache.epapr.in/favicon/logo_image_57711b3fad325.png.png",
-        'needsAuth': false,
-        'isPaid':false,
-        'isAuth': false,
-        'authBase': 'https://www.readwhere.com/',
-        'pType':'newspaper',
-        'language':'Kannada',
-        'loggedin' : false,
-        'webPEnabled': true,
-        'custom_user_profile': '',
-        'webPVersion': 1,
-        'refreshOnPageChange': false,
-        'requireAuth': false,
-        'enableLogin': false,
-        'appId': '1613712732',
-        'doublespread_pages' : [],
-        'wlDownload' : true,
-        'viewer_version': 'newspaper_v4',
-        'suggestedReads': {},
-        'action_page_view': true,
-        'enable_clipping': true,
-        'publisher_clip_behaviour': {"bg-color-hax":"BBDEFB","navigation":"new-window"},
-        'user_clip_behaviour': {"bg-color-hax":"F9ECD1","navigation":""},
-        'new_clip_popup': false,
-        'read_behind_login': false,
-        'partner_authentication_enable': false,
-        'archived': false,
-        'ad_display_intrestitial_page_change': false,
-        'nlimited': false,
-        'digicase_geolocation': false,
-        'digi_inr_cnt': false,
-        'digi_usd_cnt': false,
-        'plugins' : {"gallery-version":"v1","video-version":"v1","upload_video-version":"v1"},
-        'restore_payment_disable' : false,
-        'v2_downloader': -1,
-        'clip_downloader': false,
-        'otherTitles': {"26251":{"name":"YADAGIRI","slug":"KANNADA-PRABHA","id":"26251","type":"newspaper"},"12222":{"name":"Bengaluru","slug":"Bengaluru","id":"12222","type":"newspaper"},"26241":{"name":"HAVERI","slug":"KANNADA-PRABHA","id":"26241","type":"newspaper"},"26244":{"name":"KOPPAL","slug":"KANNADA-PRABHA","id":"26244","type":"newspaper"},"26245":{"name":"UTTARA KANNADA","slug":"KANNADA-PRABHA","id":"26245","type":"newspaper"},"26246":{"name":"BAGALKOTE","slug":"KANNADA-PRABHA","id":"26246","type":"newspaper"},"26247":{"name":"BELAGAVI RURAL","slug":"KANNADA-PRABHA","id":"26247","type":"newspaper"},"26249":{"name":"BIDAR","slug":"KANNADA-PRABHA","id":"26249","type":"newspaper"},"26250":{"name":"RAICHUR","slug":"KANNADA-PRABHA","id":"26250","type":"newspaper"},"26240":{"name":"GADAG","slug":"KANNADA-PRABHA","id":"26240","type":"newspaper"},"26252":{"name":"UDUPI","slug":"KANNADA-PRABHA","id":"26252","type":"newspaper"},"26253":{"name":"KODAGU","slug":"KANNADA-PRABHA","id":"26253","type":"newspaper"},"26280":{"name":"CHITRADURGA","slug":"CHITRADURGA","id":"26280","type":"newspaper"},"26281":{"name":"DAVANAGERE","slug":"DAVANAGERE","id":"26281","type":"newspaper"},"26282":{"name":"CHIKKAMAGALURU","slug":"CHIKKAMAGALURU","id":"26282","type":"newspaper"},"26585":{"name":"Special Suplement","slug":"Special-Suplement","id":"26585","type":"newspaper"},"33453":{"name":"NRI EDITION","slug":"NRI-EDITION","id":"33453","type":"newspaper"},"38078":{"name":"Bengaluru 2","slug":"Bengaluru-2","id":"38078","type":"newspaper"},"26207":{"name":"BHANUPRABHA ","slug":"BHANUPRABHA-SUPPLEMENT","id":"26207","type":"newspaper"},"20311":{"name":"Shivamogga","slug":"Shivamogga","id":"20311","type":"newspaper"},"20312":{"name":"Mangaluru","slug":"Mangaluru","id":"20312","type":"newspaper"},"20313":{"name":"Hubballi","slug":"Hubballi","id":"20313","type":"newspaper"},"20314":{"name":"Belagavi","slug":"Belagavi","id":"20314","type":"newspaper"},"20315":{"name":"Kalaburagi","slug":"Kalaburagi","id":"20315","type":"newspaper"},"26204":{"name":"VIJAYAPURA","slug":"VIJAYAPURA","id":"26204","type":"newspaper"},"26205":{"name":"INDINA SPECIAL","slug":"SUPPLEMENT","id":"26205","type":"newspaper"},"26239":{"name":"BALLARY","slug":"KANNADA-PRABHA","id":"26239","type":"newspaper"},"26208":{"name":"CHITRAPRABHA ","slug":"CHITRAPRABHA-SUPPLEMENT","id":"26208","type":"newspaper"},"26228":{"name":"BANGALORE RURAL","slug":"KANNADA-PRABHA","id":"26228","type":"newspaper"},"26229":{"name":"CHAMARAJANAGAR","slug":"KANNADA-PRABHA","id":"26229","type":"newspaper"},"26230":{"name":"HASSAN","slug":"KANNADA-PRABHA","id":"26230","type":"newspaper"},"26231":{"name":"KOLAR","slug":"KANNADA-PRABHA-BNG","id":"26231","type":"newspaper"},"26233":{"name":"MANDYA","slug":"KANNADA-PRABHA","id":"26233","type":"newspaper"},"26234":{"name":"MYSORE CITY","slug":"KANNADA-PRABHA","id":"26234","type":"newspaper"},"26235":{"name":"MYSORE RURAL","slug":"MYSORE-RURAL","id":"26235","type":"newspaper"},"26236":{"name":"TUMKUR","slug":"KANNADA-PRABHA","id":"26236","type":"newspaper"},"33555":{"name":"DEEPAVALI","slug":"DEEPAVALI","id":"33555","type":"magazine"},"34871":{"name":"UGADI","slug":"UGADI","id":"34871","type":"magazine"}}      };
-
-      var base_url_split = DEConfig.baseUrl.split('/');
-      DEConfig.baseUrl = DEConfig.baseUrl.replace(base_url_split[0],window.location.protocol);
-      
-      DEConfig.baseUrlLink = ("32053"=="2698") ? "http://epaper.sandesh.com/" : DEConfig.baseUrl;
-    </script>
-
-  <!-- Script for purchase / subscribe page--> 
-    <script type="text/html" id="de-subscribe-login-box-tmpl">
-    <div id="de-subscribe-login-box" class="rw-buy-box container" title="DAVANAGERE" style="">
-      <img class="loader" src="https://sf.readwhere.com/read/theme/images/loader.gif" />
-
-      <button class="login_whitelabel login-required" style="background-color: rgb(255,255,255); font-size: 24px; font-weight: bold; text-transform: uppercase; border: none; width: 62%; margin: 14% 19%; padding: 10px 0; line-height: 48px; text-align: center; display: none; color: rgb(80,80,80);;"> 
-        <i class="glyphicon glyphicon-lock"></i> Login required to view content</button>
-
-      <div class="buy-box-info">
-        <div style="float:left;width:30%;">
-          <img src="https://d2na0fb6srbte6.cloudfront.net/read/imageapi/coverforissue/3728378/newspaper/300" height="514px" width="300px" alt="DAVANAGERE" class="rw-thumb">
-          <button class="rw-de-btn-enabled preview-btn">Preview</button>
-          
-          <fieldset class="about-magazine">
-            <legend class="legend_prepage">In this issue</legend>
-                        <p class="rw-description" style="font-size:13px;">DAVANAGERE</p>
-            
-          </fieldset>
-          <fieldset class="about-magazine">
-            <legend class="legend_prepage">About DAVANAGERE</legend>
-            <span class="rw-description" style="font-size:13px;display:block;margin-top:10px;margin-bottom:10px;">DAVANAGERE</span>
-          </fieldset>
-          
-        </div>
-        <div class="rw-details" style="float:left;width:70%;">
-            <span class="rw-title biggervolume_name">DAVANAGERE</span>
-            <p class="info smallervolume_name" style="color: #999;width: 100%;float: left;margin: 0 0 5px 0;">DAVANAGERE</p>
-            <p class="info smallervolume_name color_blueee">By Kannada Prabha</p>                   
-                        <p class="info smallervolume_name" style="padding:10px 0 !important;"> <span style="color:#777;padding:0px;"> Available on - </span>  <a target="_top" class="apple" href="https://rdwh.re/iosapp" target="_blank"> <i class="fa fa-apple"></i> </a> <a target="_top" class="android" href="https://rdwh.re/androidapp"> <i class="fa fa-android "></i> </a></p>
-          
-                           
-            
-
-            
-            <div style="display: inline-block;line-height:1.8;text-align: center;width:100%;">
-                <fieldset class="pricing-options">
-                  <table width="100%">
-                    <tr class="first">
-                      <td> Single Issue </td>
-                      <td class="price">
-                        <span class="issue-price-btn rupees" style="font-size:20px;padding-left: 16px;">
-                          <i class="fa fa-inr"></i>                          0.00                        </span>
-                        <span class="login-only-btn" style="display:none;font-size:20px;padding-left: 16px;">Free</span>
-                      </td>
-                      <td>
-                        <a target="_top" class="rw-de-btn-enabled login-only-btn" style="display:none;" href="https://www.readwhere.com/user/login?ru=https://kpepaper.asianetnews.com/r/3728378">Login to read</a>
-                        <a target="_top" class="issue-price-btn rw-de-btn-enabled" style="display:inline-block;" href="https://www.readwhere.com/read/cartcheckout/show/3728378/1?wl=&src=kpepaper.asianetnews.com">Buy Issue</a>
-                      </td>
-                    </tr>
-
-                                      </table>
-                </fieldset>
-
-                 
-                            </div>
-
-          
-          <div id="digi_msg_alert" style="display:none;text-align:center;margin-top: 60px;width:100%;color:red">No digicase available at your location</div>
-
-        </div>
-
-        
-      </div>
-    </div>
-  </script> 
-
-  <script type="text/html" id="de-zero-pages-error-tmpl">
-    <div id="de-zero-pages-error" style="margin-top:8%;" title="Login to DAVANAGERE" class="rw-buy-box container">
-      <div class="buy-box-info" style="display: block;">
-        <div style="float:left;width:30%;">
-          <img src="https://d2na0fb6srbte6.cloudfront.net/read/imageapi/coverforissue/3728378/newspaper/300" height="514px" width="300px" alt="DAVANAGERE" alt="Good Housekeeping" class="rw-thumb">
-        </div>
-        <div class="rw-details" style="float:left;width:70%;">
-          <span class="rw-title biggervolume_name">DAVANAGERE</span>
-          <p class="info subscription_info" style="font-size: 17px !important;width: 54%;padding-left: 0px !important">This volume has no pages </p>
-        </div>
-      </div>
-    </div>
-  </script>
-
-  <script type="text/html" id="de-login-before-read-tmpl">
-    <div id="de-login-before-read" class="rw-buy-box container" title="DAVANAGERE" style="margin-top: -60px;">
-      <img class="loader" src="https://sf.readwhere.com/read/theme/images/loader.gif" />
-
-      <div class="buy-box-info" style="display: block;">
-        <div style="float:left;width:30%;">
-          <img src="https://d2na0fb6srbte6.cloudfront.net/read/imageapi/coverforissue/3728378/newspaper/300" height="514px" width="300px" alt="DAVANAGERE" class="rw-thumb">
-        </div>
-        <div class="rw-details" style="float:left;width:70%;">
-            <span class="rw-title biggervolume_name">DAVANAGERE</span>
-            <p class="info smallervolume_name" style="color: #999;width: 100%;float: left;margin: 0 0 5px 0;">DAVANAGERE</p>
-            <p class="info smallervolume_name color_blueee">By Kannada Prabha</p>                   
-                        <p class="info smallervolume_name" style="padding:10px 0 !important;"> <span style="color:#777;padding:0px;"> Available on - </span>  <a target="_top" class="apple" href="https://rdwh.re/iosapp" target="_blank"> <i class="fa fa-apple"></i> </a> <a target="_top" class="android" href="https://rdwh.re/androidapp"> <i class="fa fa-android "></i> </a></p>
-          
-            <div style="display: inline-block;line-height:1.8;text-align: center;width:100%;">
-              <fieldset class="pricing-options" style="padding: 0px;">
-                <table width="28%%">
-                  <tr class="first">
-                    <td>
-                      <a target="_top" class="rw-de-btn-enabled login-only-btn login-required" style="display:block;" href="javascript:;">Please Login to Read</a>
-                    </td>
-                  </tr>
-                  
-                </table>
-              </fieldset>
-            </div>
-        </div>
-      </div>
-    </div>
-  </script> 
-  
-  
-    <script type="text/javascript">
-
-
-
-      function digicaseCheckout(digicase_id){
-        var source = window.location.hostname;
-        window.location.href = DEConfig.baseUrl+'digicasecheckout/show/'+digicase_id+'?source='+source;     
-        
-      }
-                
-      function digicaseSubscribe(digicase_id){
-        var source = window.location.hostname;
-        window.location.href = DEConfig.baseUrl+'digicasesubscribe/show/'+digicase_id+'?source='+source;  
-                 
-      }
-      ///
-      /**
-       * @preserve
-       * Project: Bootstrap Hover Dropdown
-       * Author: Cameron Spear
-       * Version: v2.0.11
-       * Contributors: Mattia Larentis
-       * Dependencies: Bootstrap's Dropdown plugin, jQuery
-       * Description: A simple plugin to enable Bootstrap dropdowns to active on hover and provide a nice user experience.
-       * License: MIT
-       * Homepage: http://cameronspear.com/blog/bootstrap-dropdown-on-hover-plugin/
-       */
-      (function(e,t,n){var r=e();e.fn.dropdownHover=function(n){if("ontouchstart"in document)return this;r=r.add(this.parent());return this.each(function(){function p(e){r.find(":focus").blur();if(l.instantlyCloseOthers===true)r.removeClass("open");t.clearTimeout(c);s.addClass("open");i.trigger(a)}var i=e(this),s=i.parent(),o={delay:500,instantlyCloseOthers:true},u={delay:e(this).data("delay"),instantlyCloseOthers:e(this).data("close-others")},a="show.bs.dropdown",f="hide.bs.dropdown",l=e.extend(true,{},o,n,u),c,h;s.hover(function(e){if(!s.hasClass("open")&&!i.is(e.target)){return true}h=t.setTimeout(function(){p(e)},300)},function(){t.clearTimeout(h);c=t.setTimeout(function(){s.removeClass("open");i.trigger(f)},l.delay)});i.hover(function(e){if(!s.hasClass("open")&&!s.is(e.target)){return true}p(e)});s.find(".dropdown-submenu").each(function(){var n=e(this);var r;n.hover(function(){t.clearTimeout(r);n.children(".dropdown-menu").show();n.siblings().children(".dropdown-menu").hide()},function(){var e=n.children(".dropdown-menu");r=t.setTimeout(function(){e.hide()},l.delay)})})})};e(document).ready(function(){e('[data-hover="dropdown"]').dropdownHover()})})(jQuery,this)
-      
-      ///
-      //prevent dropdown from closing when clicked inside
-      $('.full-dropdown').click(function(e){
-        e.stopPropagation();
-      });
-      ///
-      window.DE = (typeof(window.DE) == 'undefined') ? {} : window.DE;
-      DE.plugins = {};
-
-      
-    </script>
-    <script type="text/javascript">
-      //pathchange.js
-      (function(e){e.fn.pathchange=function(e){return e?this.bind("pathchange",e):this.trigger("pathchange")};var t=e.pathchange={options:{useHistory:false,useHashchange:true,pollingInterval:250,interceptLinks:false,disableHashLinks:true},init:function(n){var r;e.extend(t.options,n);if(t.options.useHistory&&t.detectHistorySupport()){e(window).bind("popstate",function(t){e(window).trigger("pathchange")})}if(t.options.useHashchange){e(window).bind("hashchange",function(t){e(window).trigger("pathchange")});if(!t.detectHashchangeSupport()){r=window.location.hash;setInterval(function(){if(r!==window.location.hash){e(window).trigger("hashchange");r=window.location.hash}},t.options.pollingInterval)}}if(t.options.interceptLinks){e("body").delegate("a[href^=/]","click",function(n){t.changeTo(e(this).attr("href"));n.preventDefault()})}if(t.options.disableHashLinks){e("body").delegate("a[href='#']","click",function(e){e.preventDefault()})}},changeTo:function(n){if(t.options.useHistory&&t.detectHistorySupport()){window.history.pushState(null,null,n);e(window).trigger("pathchange")}else{if(n.indexOf("#")<0){n+="#"}if(n.substr(0,10)!="javascript"){window.location.href=window.location.protocol+"//"+window.location.hostname+(window.location.port?":"+window.location.port:"")+n}}},detectHistorySupport:function(){return!!(window.history&&history.pushState)},detectHashchangeSupport:function(){if("onhashchange" in window){return true;}else{return false;}}}})(jQuery)
-
-    </script>
-    <script type="text/javascript" src="https://sf.readwhere.com/read/js/sweet-alert.js?v=1464340487"></script>    <link rel=stylesheet href="https://sf.readwhere.com/read/styles/sweet-alert.css?v=1464340482">    <script type="text/javascript">
-    /*
-     in-viewport v0.4.2 | github.com/vvo/in-viewport#license
-     lazyload v2.1.3 | github.com/vvo/lazyload#license
-    */
-    (function(e,g){function h(b,a,c){b.attachEvent?b.attachEvent("on"+a,c):b.addEventListener(a,c,!1)}function s(b){var a;return function(){var c=this,d=arguments;clearTimeout(a);a=setTimeout(function(){a=null;b.apply(c,d)},15)}}function t(b){function a(a,k,e){if(!d(g.documentElement,a)||!d(g.documentElement,b))return e?setTimeout(c(a,k,e),0):!1;var f=a.getBoundingClientRect(),l=b.getBoundingClientRect(),h=f.left,n=f.top,p=k,q=k;b===g.body?(p+=g.documentElement.clientWidth,q+=g.documentElement.clientHeight,
-    l={bottom:b.scrollHeight,top:0,left:0,right:b.scrollWidth}):(h-=l.left,n-=l.top,p+=b.clientWidth,q+=b.clientHeight);if(!(f.right<l.left||f.left>l.right||f.bottom<l.top||f.top>l.bottom)&&n<=q&&h<=p)if(e)r.splice(m.call(r,a),1),e(a);else return!0;else if(e)setTimeout(c(a,k,e),0);else return!1}function c(b,e,d){-1===m.call(r,b)&&r.push(b);return function(){k.push(function(){a(b,e,d)})}}var k=[],r=[],u=b===g.body?e:b,n=s(function(){for(var a;a=k.shift();)a()});h(u,"scroll",n);u===e&&h(e,"resize",n);"function"===
-    typeof window.MutationObserver&&f(r,b,n);return{b:b,a:a}}function m(b){for(var a=this.length;a--&&this[a]!==b;);return a}function f(b,a,c){function e(a){return-1!==m.call(b,a)}function d(a){return 0<g.call(a.addedNodes,e).length}var f=new MutationObserver(function(a){!0===a.some(d)&&setTimeout(c,0)}),g=Array.prototype.filter;f.observe(a,{childList:!0,subtree:!0})}var c=[];e.inViewport=function(b,a,e){var d=g.body;if(void 0===a||"function"===typeof a)e=a,a={};d=a.container||d;a=a.offset||0;for(var f=
-    0;f<c.length;f++)if(c[f].b===d)return c[f].a(b,a,e);return c[c.push(t(d))-1].a(b,a,e)};var d=document.documentElement.compareDocumentPosition?function(b,a){return!!(b.compareDocumentPosition(a)&16)}:document.documentElement.contains?function(b,a){return b!==a&&(b.contains?b.contains(a):!1)}:function(b,a){for(;a=a.parentNode;)if(a===b)return!0;return!1}})(window,document);
-    (function(e){function g(c){-1===m.call(f,c)&&f.push(c)}function h(c){function d(a){var d;if(d="function"===typeof c.src?c.src(a):a.getAttribute(c.src))a.src=d;a["data-lzled"]=!0;b[m.call(b,a)]=null}if(1<arguments.length)return inViewport.apply(void 0,arguments);c=t(c||{});"string"===typeof c.src&&g(c.src);var b=[];return function(a){a.onload=null;a.removeAttribute("onload");a.onerror=null;a.removeAttribute("onerror");-1===m.call(b,a)&&inViewport(a,c,d)}}function s(c){c="HTML"+c+"Element";if(!1!==
-    c in e){var d=e[c].prototype.getAttribute;e[c].prototype.getAttribute=function(b){if("src"===b){for(var a,c=0,e=f.length;c<e&&!(a=d.call(this,f[c]));c++);return a||d.call(this,b)}return d.call(this,b)}}}function t(c){var d={offset:333,src:"data-src",container:!1},b;for(b in d)void 0===c[b]&&(c[b]=d[b]);return c}function m(c){for(var d=this.length;d--&&this[d]!==c;);return d}var f=["data-src"];e.lazyload=h;e.lzld=h();s("Image");s("IFrame")})(window,document);
-
-    </script>
-    <!-- Firebase script for group chat -->
-    <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
- 
-        <script type="text/javascript" src="https://sf.readwhere.com/read/js/bootstrap3.min.js?v=1421216357"></script> <script type="text/javascript" src="https://sf.readwhere.com/read/js/responsive-calendar.js?v=1425128809"></script> <script type="text/javascript" src="https://sf.readwhere.com/read/js/libs/jquery.imgareaselect.min.js?v=1431831659"></script> <script type="text/javascript" src="https://sf.readwhere.com/read/js/bootstrap-tour.js?v=1490759249"></script>        <script type="text/javascript" src="https://sf.readwhere.com/read/js/n-limited-extractor.js?v=1572421570"></script> <script type="text/javascript" src="https://sf.readwhere.com/read/js/n-limited.js?v=1572421570"></script>        <script type="text/javascript" src="https://sf.readwhere.com/read/js/viewer-v4.js?v=1675916703"></script>    
-    <script type="text/javascript" src="https://sf.readwhere.com/read/js/viewer-navbar-v4.js?v=1564393725"></script>    
-        
-        
-    <link rel=stylesheet href="https://sf.readwhere.com/read/styles/smoothness/jquery-ui-1.10.4.custom.css?v=1421216352"><script type="text/javascript" src="https://sf.readwhere.com/read/js/libs/jquery-ui-1.10.4.custom.min.js?v=1413883999"></script> <script type="text/javascript" src="https://sf.readwhere.com/read/js/libs/modernizr-2.7.1.min.js?v=1413883999"></script> <script type="text/javascript" src="https://sf.readwhere.com/read/js/plugins-v3.js?v=1675916703"></script>
-               
-    
-    <div style="z-index:10;position: fixed;background: transparent; bottom: 0px; left: 50%;
-    transform: translateX(-50%);">
-            </div>
-
-    <div id="intrestitial-ads-panel" class="row" style="display:none; position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: 101;">
-        <div style="position: absolute;top: 50%; left: 50%;transform: translate(-50%,-50%);">
-                </div>
-    </div>
-
 
 <!-- Begin comScore Tag -->
-<script>
-  var _comscore = _comscore || [];
-  _comscore.push({ c1: "2", c2: "17503311" });
-        (function() {
-      var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
-      s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
-      el.parentNode.insertBefore(s, el);
-    })();
-   </script>
-<noscript>
-  <img src="http://b.scorecardresearch.com/p?c1=2&c2=17503311&cv=2.0&cj=1" />
-</noscript>
-<!-- End comScore Tag -->
 
+  <amp-analytics type="comscore">
+    <script type="application/json"> {"vars": { "c2": "22167523" }}</script>
+  </amp-analytics>
 
-<!-- Facebook Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','//connect.facebook.net/en_US/fbevents.js');
+<!-- End comScore Tag --> 
 
-fbq('init', '884877674878910');
-fbq('track', "PageView");</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=884877674878910&ev=PageView&noscript=1"
-/></noscript>
+    <amp-analytics type="googleanalytics">
+        <script type="application/json">
+        {
+          "vars": {
+            "account": "UA-62317116-1"
+          },
+          "triggers": {
+            "trackPageview": {
+              "on": "visible",
+              "request": "pageview"
+            }
+          }
+        }
+        </script>
+    </amp-analytics>
 
+        <amp-analytics type="googleanalytics">
+        <script type="application/json">
+        {
+          "vars": {
+            "account": "UA-30928125-14"
+          },
+          "triggers": {
+            "trackPageview": {
+              "on": "visible",
+              "request": "pageview"
+            }
+          }
+        }
+        </script>
+    </amp-analytics>
+  <!-- colection name -->
+    <!-- side menu start-->
+  <amp-sidebar id="sidebar-left" layout="nodisplay" side="left">        
+    <div class="menu_all_amp"> Menu </div>
+      <ul class="sidebar_ul">
 
+        <li class="menu_cls" id=""> 
+          <a href="https://epaper.thestatesman.com/">Home </a>
+        </li>
+        
+        <li class="menu_cls" id="">                  <a href="https://epaper.thestatesman.com/t/31575/?s= Bhubaneswar -The Statesman"> 
+              
+                
 
-<!-- End Facebook Pixel Code -->
+                      Bhubaneswar -The Statesman 
 
+                    </a> </li><li class="menu_cls" id="">                  <a href="https://epaper.thestatesman.com/t/9207/?s=Delhi - The Statesman"> 
+              
+                
 
-  <div id="chatdiv" style="display:none;background:#fff;">
-    <img id="chatloader" src="https://www.okajewelry.com/templates/NewOKA/images/new/ProductImg_Loading.gif"> 
-    <iframe id="chatframe" src=""> </iframe>
-  </div> 
+                     Delhi - The Statesman 
 
-  
-   
-  
-  <script type="text/javascript">
-    var pageNum = 1;
-    var hashStr = window.location.hash.substr(1)
-    if(hashStr) {
-      var hash = hashStr.split('/');  
-      if(hash) {
-        pageNum = hash[1];  
-      }
-    }
+                    </a> </li><li class="menu_cls" id="">                  <a href="https://epaper.thestatesman.com/t/9247/?s=Kolkata - The Statesman"> 
+              
+                
 
-    function afterSuggestedReads( json ) {
-      DEConfig.suggestedReads = json;
-    }
-  </script>
-  <script type="text/javascript">
-    if(pageNum == 1) {
-      var src_url = "https://www.readwhere.com/read/cookie/suggestedreads/26281/newspaper/Kannada";
-      add_script(src_url);
-    }
-    function add_script(src_url) {
-        var element = document.createElement("script");
-        element.src = src_url;
-        document.body.appendChild(element);        
-    }
+                     Kolkata - The Statesman 
 
-    document.addEventListener('contextmenu', event => event.preventDefault());
-    
-  </script>
+                    </a> </li><li class="menu_cls" id="">                  <a href="https://epaper.thestatesman.com/t/9248/?s=Siliguri - The Statesman"> 
+              
+                
 
-    <script type="text/javascript">
-                    function buyDigicase(digicase_id) {
-                      var source = window.location.hostname;
-                      var _targetUrl = DEConfig.baseUrl+'digicasecheckout/show/'+digicase_id+'?source='+source ;
-                      //console.log(_targetUrl);
-                      window.location.href = _targetUrl;
-                    }
+                     Siliguri - The Statesman 
 
-                    $(window).load(function() {               
-                      $('.digicase_list').on('click', 'li', function () {
-                          var ulid = $(this).data('ulid');
-                          $("#"+ulid+" li.active").removeClass("active");
-                          // adding classname 'active' to current click li 
-                          $(this).addClass("active");
-                      });
-                    });
-                    
+                    </a> </li><li class="menu_cls" id="">                  <a href="https://epaper.thestatesman.com/t/9256/?s=Dainik-Statesman"> 
+              
+                
 
-                   
-   </script>
-   
+                     Dainik-Statesman 
 
-           <!-- GA4 event  -->
-        <script type='text/javascript'>
-        var publication_data = {};
-          publication_data['item_id'] = '3728378';
-          publication_data['item_name'] = 'DAVANAGERE';
-          publication_data['item_type'] = 'newspaper';
-          publication_data['publisher'] = 'Kannada Prabha';
-          publication_data['publication_id'] = '26281';
-          publication_data['publication_name'] = 'DAVANAGERE';
-                    publication_data['category'] = 'News';
-                              publication_data['language'] = 'Kannada';
-                              publication_data['tag_list'] = 'News,Kannada';
-                        console.log(publication_data);
-        </script>         
-  </body>
-</html><!-- page cached at 2023-07-04 03:29:35 -->
+                    </a> </li>
+           <li class="menu_cls" id="">                  <a href="https://epaper.thestatesman.com/t/30431/?s=Binodan"> 
+              
+                
+
+                     Binodan 
+
+                    </a> </li><li class="menu_cls" id="">                  <a href="https://epaper.thestatesman.com/t/9253/?s=Marquee"> 
+              
+                
+
+                     Marquee 
+
+                    </a> </li><li class="menu_cls" id="">                  <a href="https://epaper.thestatesman.com/t/9251/?s=Evolve"> 
+              
+                
+
+                     Evolve 
+
+                    </a> </li><li class="menu_cls" id="">                  <a href="https://epaper.thestatesman.com/t/9250/?s=8th-Day"> 
+              
+                
+
+                     8th-Day 
+
+                    </a> </li><li class="menu_cls" id="">                  <a href="https://epaper.thestatesman.com/t/9252/?s=Voices"> 
+              
+                
+
+                     Voices 
+
+                    </a> </li><li class="menu_cls" id="">                  <a href="https://epaper.thestatesman.com/t/9274/?s=NB-Extra"> 
+              
+                
+
+                     NB-Extra 
+
+                    </a> </li><li class="menu_cls" id="">                  <a href="https://epaper.thestatesman.com/t/9255/?s=Bichitra"> 
+              
+                
+
+                     Bichitra 
+
+                    </a> </li>
+            
+      </ul>
+
+  </amp-sidebar>
+  <!-- header start -->
+  <header>
+    <div class="amp-section-box head-top">
+        <div class="top-header">
+            <div class="container-box">
+              <div class="date-box">
+                  <span>
+                    Wednesday, July 05, 2023 | 11:54 AM                  </span>
+                </div>
+            </div>  
+        </div>
+        <div class="col-12">
+          <div class="container-box">
+            <div class="md-col-4 col-12 logo-box">
+              <div class="amp-logo-left">
+                <a href="https://www.thestatesman.com/" class="d-n-s">
+                  <amp-img src="https://sf.readwhere.com/read/theme/statesman/images/statesman_logo.png?v=1427799596" alt="logo" height="72" width="340"></amp-img>
+                </a>
+                <a href="https://www.thestatesman.com/" class="d-n-l">
+                  <amp-img src="https://sf.readwhere.com/read/theme/statesman/images/statesman_logo.png?v=1427799596" alt="logo" height="58" width="276"></amp-img>
+                </a>
+                
+              </div>
+            </div>
+            <div class="md-col-8">
+              <div class="add-top">
+                <div class="lg-d dn-1024">
+                  <amp-ad
+                    width=728 height=90
+                    type="doubleclick"
+                    data-slot="/1009127/New-whitelabel-728x90">
+                  </amp-ad>
+                </div>
+              </div> 
+            </div>
+          </div>
+        </div>
+        <div class="menu-bar">
+          <div class="container-box">
+          <button on="tap:sidebar-left.toggle" class="ampstart-btn caps m2">
+            <span class="span_color">  </span>
+                    <span class="span_color">  </span>
+                    <span class="span_color">  </span>
+                    <div id="target-element-left">Editions</div>
+          </button>
+
+          <!-- main menu -->
+           <div class=" main-menu" >
+             <ul class="navbar-nav mr-auto top-menu">
+               
+                 <!-- main -->
+                 <li><a href="https://epaper.thestatesman.com/">
+                    <amp-img src="https://mcmscache.epapr.in/post_images/website_132/new_post_images/5ec26fbbb0fc3_home.png"
+                      width="20"
+                      height="20"
+                      alt="AMP">
+                    </amp-img>
+                  </a></li>
+                 
+                 
+
+                  <li class="menu_cls" id="">                          <a href="https://epaper.thestatesman.com/t/31575/?s= Bhubaneswar -The Statesman"> 
+                              Bhubaneswar -The Statesman 
+                            
+                            </a> </li><li class="menu_cls" id="">                          <a href="https://epaper.thestatesman.com/t/9207/?s=Delhi - The Statesman"> 
+                             Delhi 
+                            
+                            </a> </li><li class="menu_cls" id="">                          <a href="https://epaper.thestatesman.com/t/9247/?s=Kolkata - The Statesman"> 
+                             Kolkata 
+                            
+                            </a> </li><li class="menu_cls" id="">                          <a href="https://epaper.thestatesman.com/t/9248/?s=Siliguri - The Statesman"> 
+                             Siliguri 
+                            
+                            </a> </li><li class="menu_cls" id="">                          <a href="https://epaper.thestatesman.com/t/9256/?s=Dainik-Statesman"> 
+                             Dainik-Statesman 
+                            
+                            </a> </li>
+                     <li class="menu_cls" id="">                          <a href="https://epaper.thestatesman.com/t/30431/?s=Binodan"> 
+                             Binodan 
+                          </a> 
+                        
+                        </li><li class="menu_cls" id="">                          <a href="https://epaper.thestatesman.com/t/9253/?s=Marquee"> 
+                             Marquee 
+                          </a> 
+                        
+                        </li><li class="menu_cls" id="">                          <a href="https://epaper.thestatesman.com/t/9251/?s=Evolve"> 
+                             Evolve 
+                          </a> 
+                        
+                        </li><li class="menu_cls" id="">                          <a href="https://epaper.thestatesman.com/t/9250/?s=8th-Day"> 
+                             8th-Day 
+                          </a> 
+                        
+                        </li><li class="menu_cls" id="">                          <a href="https://epaper.thestatesman.com/t/9252/?s=Voices"> 
+                             Voices 
+                          </a> 
+                        
+                        </li><li class="menu_cls" id="">                          <a href="https://epaper.thestatesman.com/t/9274/?s=NB-Extra"> 
+                             NB-Extra 
+                          </a> 
+                        
+                        </li><li class="menu_cls" id="">                          <a href="https://epaper.thestatesman.com/t/9255/?s=Bichitra"> 
+                             Bichitra 
+                          </a> 
+                        
+                        </li> 
+
+                    <!-- menu magazine -->
+
+                </ul>
+          </div>
+
+          <!-- main menu end -->
+
+        </div>
+    </div> 
+  </header>
+  <!-- header end -->
+  <!-- conatiner start -->  
+  <div class="amp-section-box mt-10">
+    <div class="container-box">
+      <!-- container start -->
+      <div class="md-col-8 epaper-area">
+
+        <div class="top-add">  
+          <div class="sm-d">
+            <amp-ad
+              width=300 height=250
+              type="doubleclick"
+              data-slot="/1009127/New-White-Label-300x250">
+            </amp-ad>
+          </div>
+        </div>
+
+         
+                  <div class="epapers_holder">
+                   <h2 class="section_heading_amp"> Newspaper </h2> 
+                 <div class="col-12 sm-col-4 md-col-4 card-box">                      <a href="https://epaper.thestatesman.com/r/3728954">
+                        <div class="papr-card">
+                          <div class="papr-img">
+                            <amp-img src="https://cache.epapr.in/resourcethumb/e4f142c9456b9fc7-f5ceed97-7ed3d251-595f98cb-be4cda370c623d2f_600.jpg"
+                              width="300"
+                              height="479"
+                              layout="responsive"
+                              alt="AMP">
+                            </amp-img>
+                          </div>
+                          <h3> Bhubaneswar -The Statesman</h3> 
+                        </div>
+                      </a>
+                </div><div class="col-12 sm-col-4 md-col-4 card-box">                      <a href="https://epaper.thestatesman.com/r/3728854">
+                        <div class="papr-card">
+                          <div class="papr-img">
+                            <amp-img src="https://cache.epapr.in/resourcethumb/a2661609cde122c0-1c34e2b8-7b4b812e-247de6c6-f709596bd3d90ad6_600.jpg"
+                              width="300"
+                              height="479"
+                              layout="responsive"
+                              alt="AMP">
+                            </amp-img>
+                          </div>
+                          <h3>Delhi - The Statesman</h3> 
+                        </div>
+                      </a>
+                </div><div class="col-12 sm-col-4 md-col-4 card-box">                      <a href="https://epaper.thestatesman.com/r/3728845">
+                        <div class="papr-card">
+                          <div class="papr-img">
+                            <amp-img src="https://cache.epapr.in/resourcethumb/0cb7552f5c6d7736-caf9f27d-9b84d398-534a701c-725c3f856bd661cd_600.jpg"
+                              width="300"
+                              height="479"
+                              layout="responsive"
+                              alt="AMP">
+                            </amp-img>
+                          </div>
+                          <h3>Kolkata - The Statesman</h3> 
+                        </div>
+                      </a>
+                </div><div class="col-12 sm-col-4 md-col-4 card-box">                      <a href="https://epaper.thestatesman.com/r/3728856">
+                        <div class="papr-card">
+                          <div class="papr-img">
+                            <amp-img src="https://cache.epapr.in/resourcethumb/de6480b63c7650f3-3f6da12c-eda751f1-2779b249-68a6ae2f690f03d6_600.jpg"
+                              width="300"
+                              height="479"
+                              layout="responsive"
+                              alt="AMP">
+                            </amp-img>
+                          </div>
+                          <h3>Siliguri - The Statesman</h3> 
+                        </div>
+                      </a>
+                </div><div class="col-12 sm-col-4 md-col-4 card-box">                      <a href="https://epaper.thestatesman.com/r/3728843">
+                        <div class="papr-card">
+                          <div class="papr-img">
+                            <amp-img src="https://cache.epapr.in/resourcethumb/3983a2e308ee9c14-68e92375-6f154b2e-b18c2aa6-0c01500fabf8d62f_600.jpg"
+                              width="300"
+                              height="479"
+                              layout="responsive"
+                              alt="AMP">
+                            </amp-img>
+                          </div>
+                          <h3>Dainik-Statesman</h3> 
+                        </div>
+                      </a>
+                </div>
+          </div>
+
+         
+                  <div class="epapers_holder">
+                   <h2 class="section_heading_amp">Supplements </h2>
+                 <div class="col-12 sm-col-4 md-col-4 card-box">                      <a href="https://epaper.thestatesman.com/r/2603744">
+                        <div class="papr-card">
+                          <div class="papr-img">
+                            <amp-img src="https://cache.epapr.in/resourcethumb/bf378518ff402eab-3207ef1e-709c349e-a04f03db-90144584fb168f3c_600.jpg"
+                              width="350"
+                              height="559"
+                              layout="responsive"
+                              alt="AMP">
+                            </amp-img>
+                          </div>
+                          <h3>Binodan</h3> 
+                        </div>
+                      </a>
+                </div><div class="col-12 sm-col-4 md-col-4 card-box">                      <a href="https://epaper.thestatesman.com/r/2598117">
+                        <div class="papr-card">
+                          <div class="papr-img">
+                            <amp-img src="https://cache.epapr.in/resourcethumb/572fdf553e1ff9fb-57f690bc-1c33c58c-d253bba8-351d3e4d27af3c7a_600.jpg"
+                              width="350"
+                              height="559"
+                              layout="responsive"
+                              alt="AMP">
+                            </amp-img>
+                          </div>
+                          <h3>Marquee</h3> 
+                        </div>
+                      </a>
+                </div><div class="col-12 sm-col-4 md-col-4 card-box">                      <a href="https://epaper.thestatesman.com/r/2603748">
+                        <div class="papr-card">
+                          <div class="papr-img">
+                            <amp-img src="https://cache.epapr.in/resourcethumb/f5a4353f36a38a13-718479b5-795a5aee-3269d632-bbd32e541675d9cd_600.jpg"
+                              width="350"
+                              height="559"
+                              layout="responsive"
+                              alt="AMP">
+                            </amp-img>
+                          </div>
+                          <h3>Evolve</h3> 
+                        </div>
+                      </a>
+                </div><div class="col-12 sm-col-4 md-col-4 card-box">                      <a href="https://epaper.thestatesman.com/r/2599503">
+                        <div class="papr-card">
+                          <div class="papr-img">
+                            <amp-img src="https://cache.epapr.in/resourcethumb/b115731d44a63f14-a740ccdf-1103dbc7-f4bc688e-fc2e5099ed17912d_600.jpg"
+                              width="350"
+                              height="559"
+                              layout="responsive"
+                              alt="AMP">
+                            </amp-img>
+                          </div>
+                          <h3>8th-Day</h3> 
+                        </div>
+                      </a>
+                </div><div class="col-12 sm-col-4 md-col-4 card-box">                      <a href="https://epaper.thestatesman.com/r/2596715">
+                        <div class="papr-card">
+                          <div class="papr-img">
+                            <amp-img src="https://cache.epapr.in/resourcethumb/1ab0ffbbfbce5d74-375027ba-3da0e383-43b766ee-a1e4ce177cdbb9f4_600.jpg"
+                              width="350"
+                              height="559"
+                              layout="responsive"
+                              alt="AMP">
+                            </amp-img>
+                          </div>
+                          <h3>Voices</h3> 
+                        </div>
+                      </a>
+                </div><div class="col-12 sm-col-4 md-col-4 card-box">                      <a href="https://epaper.thestatesman.com/r/2598118">
+                        <div class="papr-card">
+                          <div class="papr-img">
+                            <amp-img src="https://cache.epapr.in/resourcethumb/c3e0cb9cfd84c0a6-fcb2dcb4-8c74adfb-20d11b42-045d8f6657507b60_600.jpg"
+                              width="350"
+                              height="559"
+                              layout="responsive"
+                              alt="AMP">
+                            </amp-img>
+                          </div>
+                          <h3>NB-Extra</h3> 
+                        </div>
+                      </a>
+                </div><div class="col-12 sm-col-4 md-col-4 card-box">                      <a href="https://epaper.thestatesman.com/r/2603747">
+                        <div class="papr-card">
+                          <div class="papr-img">
+                            <amp-img src="https://cache.epapr.in/resourcethumb/e541848be026e751-9dc560e1-58d798ce-ec787fac-7dce367f9d4fd4cc_600.jpg"
+                              width="350"
+                              height="559"
+                              layout="responsive"
+                              alt="AMP">
+                            </amp-img>
+                          </div>
+                          <h3>Bichitra</h3> 
+                        </div>
+                      </a>
+                </div>
+          </div>
+      </div>
+      <!-- container end -->
+      <!-- side bar start -->
+      <div class="md-col-4 side-widget">
+        <div class="add-area lg-d">
+          <div class="down-app">
+            <h3>Download Our App</h3>
+            <a href="https://play.google.com/store/apps/details?id=com.thestatesman.news"><amp-img src="https://cache.epapr.in/static/google_play_icon.png" width="124" height="44" alt="google play store"></amp-img></a>
+            <a href="https://itunes.apple.com/us/app/the-statesman-newspaper/id982172707?mt=8"><amp-img src="https://marketing.readwhere.com/apple_icon.png" width="130" height="46" alt="google play store"></amp-img></a>
+          </div>
+          <amp-ad
+            width=300 height=600
+            type="doubleclick"
+            data-slot="/1009127/New-White-Label-300x600">
+          </amp-ad>
+        </div>
+      </div>
+      <!-- side bar end -->
+    </div>
+  </div>
+  <!-- container end -->
+  <!-- footer start -->
+  <div class="amp-section-box foot-bg">
+    <div class="container-box">
+      <div class="copyright">
+        <h3>Copyrights © 2023. All Right Reserved.</h3>
+      </div>
+      <div class="power-by">
+        <h3><a href=""><span>Powered By</span> <amp-img src="https://www.readwhere.com/img/ver16_logo_white.png"
+            width="94"
+          height="21"
+            alt="AMP"></amp-img>
+          </a></h3>
+      </div>
+    </div>
+  </div>
+  <!-- footer end -->
+</body>
+</html><!-- page cached at 2023-07-05 11:54:13 -->

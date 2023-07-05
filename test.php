@@ -1,7 +1,7 @@
 <?php
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-curl_setopt($ch, CURLOPT_URL, "https://kpepaper.asianetnews.com/3728378/DAVANAGERE/DAVANAGERE#page/1/3");
+curl_setopt($ch, CURLOPT_URL, "https://epaper.thestatesman.com/");
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.A.B.C Safari/525.13");
 $data = curl_exec($ch);
