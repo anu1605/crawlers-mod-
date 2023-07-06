@@ -7,8 +7,11 @@ if ($epapercode == "MC") {
     $datecode = explode('/mc"', $datecodearray[1])[0];
     $reqiredDate = date("Y-m-d", strtotime($filenamedate));
     $datecode -= ((time() - strtotime($filenamedate)) / (24 * 3600));
+    $datecode = floor($datecode);
+    $datecode = intval($datecode);
     $content = file_get_contents("https://www.mumbaichoufer.com/view/" . $datecode . "/mc");
     $date = date("Y-m-d", strtotime(trim(explode("- Page 1", explode("Mumbaichoufer -", $content)[1])[0])));
+
     if ($date > $reqiredDate)
         $difference = -1;
     else if ($date < $reqiredDate)
@@ -38,7 +41,7 @@ if ($epapercode == "MC") {
             $sectionArray = array_slice($sectionArray, 1, $no_of_sections_to_run_on_each_page + 1);
         }
 
-        for ($section = 1; $section <= count($sectionArray); $section++) {
+        for ($section = 1; $section < count($sectionArray); $section++) {
             $imageId = explode('"', $sectionArray[$section])[0];
             if (trim($imageId) == '')
                 break;

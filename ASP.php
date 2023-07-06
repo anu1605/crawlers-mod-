@@ -7,6 +7,7 @@ if ($epapercode == "ASP") {
     $datecode = explode('/', $datecodearray[1])[0];
     $reqiredDate = date("Y-m-d", strtotime($filenamedate));
     $datecode -= ((time() - strtotime($filenamedate)) / (24 * 3600));
+    $datecode = floor($datecode);
     $content = file_get_contents("https://epaper.asomiyapratidin.in/edition/" . $datecode . "/%E0%A6%85%E0%A6%B8%E0%A6%AE%E0%A7%80%E0%A7%9F%E0%A6%BE-%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A4%E0%A6%BF%E0%A6%A6%E0%A6%BF%E0%A6%A8");
     $date = date("Y-m-d", strtotime(trim(explode('|', explode('Asomiya Pratidin ePaper :', $content)[1])[0])));
     if ($date > $reqiredDate)

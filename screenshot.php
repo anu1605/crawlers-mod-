@@ -4,7 +4,7 @@ require_once 'vendor/autoload.php';
 use Symfony\Component\Panther\Client;
 use Facebook\WebDriver\WebDriverDimension;
 
-$url = 'https://epaper.thestatesman.com/3727460/Bhubaneswar-The-Statesman/02nd-July-2023#page/4/3';
+$url = 'https://sandesh.com/epaper/ahmedabad';
 $outputFile = 'screenshot.png';
 
 $client = Client::createChromeClient();

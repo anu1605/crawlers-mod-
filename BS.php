@@ -9,19 +9,23 @@ if ($epapercode == "BS") {
     $datecode -= (time() - strtotime($filenamedate)) / (24 * 3600);
     $date = date("d-m-Y", strtotime($reqiredDate));
 
+    $datecode = floor($datecode);
+
 
     $datecodePlus = $datecode;
     $datecodeMinus = $datecode;
 
-    while (!getdata("https://epaper.bombaysamachar.com/view/" . $datecode . "/" . $date)) {
+    while (strpos(getdata("https://epaper.bombaysamachar.com/view/" . $datecode . "/" . $date), "Not Found (#404)")) {
         $datecodePlus += 1;
         $datecodeMinus -= 1;
 
-        if (getdata("https://epaper.bombaysamachar.com/view/" . $datecodePlus . "/" . $date)) {
+        $content = getdata("https://epaper.bombaysamachar.com/view/" . $datecodePlus . "/" . $date);
+        if ($content and !strpos($content, "Not Found (#404)")) {
             $datecode = $datecodePlus;
             break;
         }
-        if (getdata("https://epaper.bombaysamachar.com/view/" . $datecodeMinus . "/" . $date)) {
+        $content = getdata("https://epaper.bombaysamachar.com/view/" . $datecodeMinus . "/" . $date);
+        if ($content and !strpos($content, "Not Found (#404)")) {
             $datecode = $datecodeMinus;
             break;
         }
