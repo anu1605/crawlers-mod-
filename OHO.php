@@ -1,8 +1,6 @@
 <?php
     if ($epapercode == "OHO") {
 
-        $dateForLinks = date('Ymd', strtotime($filenamedate));
-        
         for ($page = 1; $page <= $no_of_pages_to_run_on_each_edition; $page++) {
             $testcontent = file_get_contents("http://epaper.heraldgoa.in/articlepage.php?articleid=OHERALDO_GOA_" . $dateForLinks . "_" . $page . "_1", false, stream_context_create($arrContextOptions));
 
@@ -36,3 +34,4 @@
             flush();
         }
     }
+?>

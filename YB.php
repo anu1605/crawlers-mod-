@@ -1,7 +1,15 @@
 <?php
+<<<<<<< HEAD
 if ($epapercode == "YB") {
 
     $dateForLinks = date('Ymd', strtotime($filenamedate));
+=======
+    if ($epapercode == "YB") {
+        for ($page = 1; $page <= $no_of_pages_to_run_on_each_edition; $page++) {
+            $testcontent = file_get_contents("http://yeshobhumi.com/articlepage.php?articleid=YBHUMI_MAI_" . $dateForLinks . "_" .  $page . "_1", false, stream_context_create($arrContextOptions));
+            $testimagelink = explode('"', explode('id="artimg"  src="', $testcontent)[1])[0];
+            if (!empty($testimagelink)) $testimageInfo = @getimagesize($testimagelink);
+>>>>>>> a375fd029458bf981af6fb38f61aca10f46dbe26
 
     for ($page = 1; $page <= $no_of_pages_to_run_on_each_edition; $page++) {
         $testcontent = file_get_contents("http://yeshobhumi.com/articlepage.php?articleid=YBHUMI_MAI_" . $dateForLinks . "_" .  $page . "_1", false, stream_context_create($arrContextOptions));
@@ -37,4 +45,8 @@ if ($epapercode == "YB") {
         }
         echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>"  . " Page " . $page . " Completed" . $eol;
     }
+<<<<<<< HEAD
 }
+=======
+?>
+>>>>>>> a375fd029458bf981af6fb38f61aca10f46dbe26
