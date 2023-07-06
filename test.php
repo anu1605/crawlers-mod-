@@ -11,7 +11,7 @@
 
 // file_put_contents(dirname(__FILE__) . "/test.txt",   $data);
 
-$url = "https://sandesh.com/epaper/ahmedabad";  // Replace with the URL of the website you want to download
+$url = "https://epaper.patrika.com/";  // Replace with the URL of the website you want to download
 $savePath = dirname(__FILE__) . "/test.txt";  // Replace with the desired save path and file name
 
 // Initialize cURL
@@ -40,7 +40,8 @@ if ($response === false) {
 }
 
 // Save the HTML content to a file
-file_put_contents($savePath, $response);
+// file_put_contents($savePath, $response);
+echo $response;
 
 // Close the cURL session
 curl_close($curl);

@@ -1,46 +1,1440 @@
-<!doctype html>
-<html lang="en">
-<head><title>Breaking, Latest News in Gujarati Provider on National, Gujarat, World, Sports, Technology, Entertainment | Sandesh</title><meta name="title" content="Breaking, Latest News in Gujarati Provider on National, Gujarat, World, Sports, Technology, Entertainment | Sandesh" /><meta name="description" content="Sandesh, one of the leading Gujarati News paper. Get all the latest and breaking news about National, World, Sports, Entertainment, Elections, ModiSarkar etc in Gujarati. અમે છીએ સત્ય ની સાથે, તમારી સાથે." /><link name="canonical" href="https://sandesh.com" />
-<meta charset="utf-8" />
-<link rel="icon" href="/favicon.png" />
-<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-<meta name="theme-color" content="#ae0a0b" />
-<meta name="HandheldFriendly" content="true" />
-<link rel="apple-touch-icon" href="/favicon.png" />
-<link rel="manifest" href="/manifest.json" />
-<meta property="fb:pages" content="285149225379" />
-<script src="/assets/jquery.slim.min.js"></script>
-<script src="/assets/bootstrap.bundle.min.js"></script>
-<script async="" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
-<script async src="https://cdn.unibotscdn.com/ubplayer/player.js"></script>
-<script>window._izq = window._izq || [], window._izq.push(["init"])</script>
-<script src="https://cdn.izooto.com/scripts/a8a7c57675bfaaef6c33489b775985b7947470f1.js"></script>
-<script async="async" src="https://cdn.unibots.in/headerbidding/adScriptSandesh_new.js"></script>
-<script type="text/javascript">window._taboola = window._taboola || [], _taboola.push({ homepage: "auto", article: "auto" }), function (e, o, t, a) { document.getElementById(a) || (e.async = 1, e.src = "//cdn.taboola.com/libtrc/sandeshdigital-sandesh/loader.js", e.id = a, o.parentNode.insertBefore(e, o)) }(document.createElement("script"), document.getElementsByTagName("script")[0], 0, "tb_loader_script"), window.performance && "function" == typeof window.performance.mark && window.performance.mark("tbl_ic")</script>
-<script defer="defer" src="/static/js/main.dbbaafba.js"></script>
-<link href="/static/css/main.e24ab57e.css" rel="stylesheet">
-<script>
-        window.googletag = window.googletag || {cmd: []};
-              googletag.cmd.push(function() {
-                googletag.defineSlot('/22678428348/Interstial_USUK_DW', [1, 1], 'div-gpt-ad-1679132541479-0').addService(googletag.pubads());
-                googletag.pubads().enableSingleRequest();
-                googletag.enableServices();
-              });      
-      </script>
-<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "40e15885880c440ab895b7cdbc122cec"}'></script>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=10">
+<title>Rajashthan Patrika ePaper:hindi</title>
+<meta property="og:title" content="Rajashthan Patrika ePaper:hindi" />
+<meta name="title" content="Rajashthan Patrika ePaper:hindi" />
+<meta name="keywords" content="Rajashthan Patrika ePaper -  Hindi Newspaper known for its Original and Fearless Journalism. Rajashthan Patrika ePaper: Hindi News Paper Rajashthan Patrika brings the Online Latest News in Hindi, Today Breaking News in Hindi from India and around the world. Click here to read daily Online ePaper now" />
+<meta name="news_keywords" content="Rajashthan Patrika ePaper -  Hindi Newspaper known for its Original and Fearless Journalism. Rajashthan Patrika ePaper: Hindi News Paper Rajashthan Patrika brings the Online Latest News in Hindi, Today Breaking News in Hindi from India and around the world. Click here to read daily Online ePaper now" />
+<meta property="og:image" content="https://epaper.patrika.com//img/sharelogo1.jpg" />
+<meta name="twitter:image" content="https://epaper.patrika.com//img/sharelogo1.jpg" />
+<meta itemprop="image" content="https://epaper.patrika.com//img/sharelogo1.jpg" />
+<meta name="twitter:description" content="epaper, Hindi news paper, Rajashthan Patrika epaper, hindi newspapers, newspaper online, hindi paper, hindi news epaper, hindi epaper, daily ePaper, online hindi newspaper, online ePaper, online hindi epaper, Rajashthan Patrika ePaper, Online ePaper, ePaper Online, Rajashthan Patrika Online ePaper, Today’s Epaper." />
+<meta name="description" content="Rajashthan Patrika ePaper -  Hindi Newspaper known for its Original and Fearless Journalism. Rajashthan Patrika ePaper: Hindi News Paper Rajashthan Patrika brings the Online Latest News in Hindi, Today Breaking News in Hindi from India and around the world. Click here to read daily Online ePaper now" />
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:type" content="website" />
+<meta name="twitter:title" content="Rajashthan Patrika ePaper" />
+<meta name="google-signin-client_id" content="870290111377-n85us7hfevlc6j7m7agmnaep1r7h0uko.apps.googleusercontent.com" />
+<link rel="manifest" href="/manifest.json">
+<link rel="icon shortcut icon" type="image/x-icon" href="https://epaper.patrika.com//img/logo/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="https://epaper.patrika.com//Content/summit-icon.css?v=251" />
+<link href="https://epaper.patrika.com//Content/css251" rel="stylesheet" />
+<link href="https://epaper.patrika.com//Content/Layoutcss251" rel="stylesheet" />
+<link href="https://epaper.patrika.com//Content/webfontscss251" rel="stylesheet" />
+<link href="https://epaper.patrika.com//Content/loader.css?v=251" rel=" stylesheet" />
+<link href="https://epaper.patrika.com//client/theme.css" rel="stylesheet" type="text/css">
+<link href="https://epaper.patrika.com//client/custom_style.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" type="7c82a3164a09f39da2c0c5f5-text/javascript">
+        //Global variables to be declared here to be used in .js files (razor variables)
+        var sam_APIBaseURL = '';
+        var IsTrackGA = '';
+        var PublicationNameConfig = 'Rajasthan Patrika';
+        var ClientCode = 'RP';
+        var EnableLazyLoad = 'false';
+        var GotoViewType = '2';
+        var CheckSubByPubId = 'true';
+        var UseDefaultLoginPage = 'true';
+        var ShouldUserSelectDefaultEdition = 'false';
+        var ShouldCheckForSubscriptionForStory = '';
+        var ShowLoginBeforePaywall = '';
+        var _isFree_paid = '1';
+    </script>
+<script src="https://epaper.patrika.com//bundles/jquery251" type="7c82a3164a09f39da2c0c5f5-text/javascript"></script>
+<script src="https://epaper.patrika.com//bundles/LayOutjs251" type="7c82a3164a09f39da2c0c5f5-text/javascript"></script>
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@400;500;700&display=swap" rel="stylesheet">
+
+<script src="/Js/SAM_base.js" type="7c82a3164a09f39da2c0c5f5-text/javascript"></script>
+<script type="7c82a3164a09f39da2c0c5f5-text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<script type="7c82a3164a09f39da2c0c5f5-text/javascript"> 
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-5213306-2', 'auto'); ga('set', 'hostname', 'epaper.patrika.com');
+ga('send', 'pageview');
+</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-H2C6VCJXH5" type="7c82a3164a09f39da2c0c5f5-text/javascript"></script><script type="7c82a3164a09f39da2c0c5f5-text/javascript">
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-H2C6VCJXH5');
+                </script>
+<script type="7c82a3164a09f39da2c0c5f5-text/javascript">
+    var _comscore = _comscore || [];
+    _comscore.push({ c1: "2", c2: "18075250" });
+    (function () {
+        var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+        s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+        el.parentNode.insertBefore(s, el);
+    })();
+  </script>
+<noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=18075250&cv=2.0&cj=1"/></noscript>
+<script type="7c82a3164a09f39da2c0c5f5-text/javascript">
+        const JSCONFIG = {
+            "base_url": "/",
+            "cdn_url": "https://epaper.patrika.com/",
+            "popup_edition_level":2,
+            "DefaultEdition": "20",
+            "loadPaywallPagesOnly": "false",
+            "Markup": 1,
+            "EnableArticleOnFullPage":1,
+            "IsPageImgArticle":0,
+            "EnabledViews": "1,2,3",
+            "Role": ""
+        }
+</script>
 </head>
-<body>
-<script type="text/javascript">window._taboola = window._taboola || [], _taboola.push({ flush: !0 })</script>
-<div id="root"></div>
-<div id="div-gpt-ad-1665494061570-0">
-<script>googletag.cmd.push((function () { googletag.display("div-gpt-ad-1665494061570-0") }))</script>
+<body app-theme=theme-blue-rp>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=xxxx"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div class="loader-overlay-bg" id="loader">
+<div class="overlay-content">
+<div class="cssload-jumping">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
 </div>
-<div id="div-gpt-ad-1679132541479-0">
-<script>googletag.cmd.push((function () { googletag.display("div-gpt-ad-1679132541479-0") }))</script>
+<span>Loading...</span>
 </div>
-<script>(function(){var js = "window['__CF$cv$params']={r:'7e26144b6d8a52bb',m:'k0VaUavzWVoPSFtc_7t530iG_Qi8A2Z1o5l0.2U.o34-1688627964-0-ASv/AgmK2znCHwIyBWHVkgWPXurQnLHiy/+yTneNsGUq'};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/invisible.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = '';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7e26144b6d8a52bb","version":"2023.4.0","b":1,"token":"40e15885880c440ab895b7cdbc122cec","si":100}' crossorigin="anonymous"></script>
-</body>
-<script src="/assets/firebase-app.js"></script>
-<script src="/assets/firebase-messaging.js"></script>
-<script>function updatetoken(e) { const t = new XMLHttpRequest; t.open("POST", "https://new-wapi.sandesh.com/api/v1/token"), t.setRequestHeader("Content-type", "application/json"), t.send(JSON.stringify({ type: "notification", token: e, likes: localStorage.getItem("SandeshLike") ? localStorage.getItem("SandeshLike") : "{}" })) } window.location.host.includes("sandesh.com") && "https:" != location.protocol && (location.href = "https:" + window.location.href.substring(window.location.protocol.length)), $(document).bind("copy", (function (e) { if (!$("body").hasClass("copied")) { var t = $("<textarea>"); $("body").append(t), t.val($("title").text() + "\r\n \r\n" + $("input.sharerMsg").val() + "\r\n \r\n" + window.location.href).select(), document.execCommand("copy"), setTimeout((function () { t.remove(), e.preventDefault() }), 10) } })), setInterval((function () { $("section.menu-page-mobile a").each((function () { $(this).removeClass("act"), window.location.pathname == $(this).attr("href") && $(this).addClass("act") })), $("section.menu .nav-item a").each((function () { $(this).removeClass("act"), window.location.pathname == $(this).attr("href") && $(this).addClass("act") })) }), 1e3), $(window).bind("load", (function () { window.location.href.includes("fonts=new") && $("body").addClass("newfonts"), setTimeout((function () { firebase.initializeApp({ apiKey: "AIzaSyA_SxxO258XU-cqipV78xn8PUdMR_5HROs", authDomain: "sandesh-website.firebaseapp.com", projectId: "sandesh-website", storageBucket: "sandesh-website.appspot.com", messagingSenderId: "471876083396", appId: "1:471876083396:web:2391ac2b77addb5ed0f391" }); const e = firebase.messaging(); e.requestPermission().then((function () { return e.getToken() })).then((function (e) { localStorage.setItem("SandeshToken", e), updatetoken(e), setInterval((function () { updatetoken(e) }), 6e4) })).catch((function (e) { })), e.onMessage((function (e) { try { new Audio("/assets/beep.mpeg").play() } catch (e) { } new Notification(e.notification.title, { icon: "/assets/notification.png", body: e.data.msg }).onclick = function () { window.open(e.data.url), this.close() } })) }), 2e3) })), "serviceWorker" in navigator && window.addEventListener("load", (() => { navigator.serviceWorker.register("/sw.js").then((e => console.log("Service worker registered"))).catch((e => console.error(`Service Worker Error: ${e}`))) }))</script>
+</div>
+
+<div id="gdpr">
+<div class="gdpr-inner">
+<div class="gdpr-container">
+<div class="gdpr-head">This website is using cookies. </div>
+<div class="gdpr-body">We use them to give you the best experience. If you continue using our website, we'll assume that you are happy to receive all cookies on this website.</div>
+<div class="gdpr-buttons">
+<a href="javascript:void(0);" id="gdprContinue" class="gdpr-button gdpr-button_1">Continue</a>
+<a target="_blank" href="https://epaper.patrika.com/privacy-policy" class="gdpr-button eupopup-button_2">
+view cookie policy
+</a>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+</div>
+ 
+<div id="ContentFeedbackPopup" style="display: none;text-align: center;">
+<textarea id="UserFeedbackMessage" name="feedback" rows="6" cols="50" placeholder="Your Message/Feedback" style="resize: none; width: 100%;"></textarea>
+<input id="btn_SendFeedback" type="button" value="Send">
+<img id="WaitLoader" style="height:24px;visibility:hidden;" src="https://epaper.patrika.com///img//wait-sending.gif" />
+</div>
+
+<div class="app_root theme-day listview   " id="MainBody">
+<div class="fadeIn animated site-overlay"></div>
+<div id="toggleNavigationLeft" class="tm tm_left">
+<div class="tm_header">
+<img onclick="if (!window.__cfRLUnblockHandlers) return false; goDefaultView();" class=" logo" src="https://epaper.patrika.com//img/logo.png" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<span class="close" id="close-btn-left">
+<i class="si si-cross"></i>
+</span>
+</div>
+<ul>
+<li>
+<a id="spanHomeId" href="javascript:void(0);">Home</a>
+</li>
+<li>
+<a id="ancrPopular" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; gotoActivity();" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">MOST POPULAR ARTICLES</a>
+</li>
+</ul>
+</div>
+<div id="toggleNavigationRight" class="tm tm_right my-account desktop">
+<div class="tm_header">
+<span class="close" id="close-btn-right">
+<i class="si si-cross"></i>
+</span>
+</div>
+<ul id="ul-right-menu">
+</ul>
+</div>
+<style>
+    @media only screen and (max-width: 1024px) {
+        .rp_date .heading {
+            display: none;
+        }
+    }
+
+
+    .app-cta {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .app-cta .action {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 18px;
+    }
+
+    .app-cta .action .cta {
+       display: block;
+     }
+
+     .app-cta .action .cta > img {
+                    /*width: 120px;
+           margin: 0 10px;*/
+         width: 110px;
+         margin-top: 5px;
+         margin-bottom: 5px;
+         margin-right: 62px;
+         margin-left: 62px;
+     }
+    @media only screen and (max-width: 1414px) {
+        .app-cta .action .cta > img {
+            margin-right: 30px;
+            margin-left: 30px;
+        }
+    }
+    @media only screen and (max-width: 1205px) {
+        .app-cta .action {
+            margin-top: 3px;
+        }
+        .app-cta .action .cta > img {
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom:3px;
+            margin-top:3px;
+            width: 90px;
+        }
+    }
+    @media only screen and (max-width:1024px) {
+        .rp_date {
+            top: 15px !important;
+            left: 10px !important;
+        }
+
+        .rp_date .heading {
+            font-size: 18px;
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        .app-cta .action .cta > img {
+            width: 70px;
+        }
+        .rp_date .heading {
+            font-size: 13px;
+        }
+    }
+</style>
+<header class="header">
+<div class="rp_date">
+<div class="heading">Thursday, Jul 06 2023 </div>
+</div>
+<div class="logo col-md-4 offset-md-4" onclick="if (!window.__cfRLUnblockHandlers) return false; goDefaultView();" style="cursor:pointer;" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<img src="https://epaper.patrika.com//img/logo/logo.png" />
+</div>
+<div class="ads_area_728X90">
+</div>
+</header>
+<style>
+                .app_root .header {
+                    display: flex;
+                }
+            </style>
+<input type="hidden" id="hdnViewType" value="1">
+<input type="hidden" id="acticleImgView" value="0">
+<input type="hidden" id="IsSubUser" value="1" />
+<script src="https://epaper.patrika.com//bundles/articlejs251" type="7c82a3164a09f39da2c0c5f5-text/javascript"></script>
+<script src="https://epaper.patrika.com//bundles/socialshare251" type="7c82a3164a09f39da2c0c5f5-text/javascript"></script>
+<style>
+    .notifyjs-bootstrap-error {
+        color: #468847 !important;
+        background-color: #DFF0D8 !important;
+        border-color: #D6E9C6 !important;
+        background-image: none !important;
+        
+        /*background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFW…yql0VLzcGAZbYSM5CCSZg1/9oc/nn7+i8N9p/8An4JMADxhH+xHfuiKwAAAABJRU5ErkJggg==) !important;*/
+    }
+
+    /*ul#Ulproducts {
+        overflow-x: hidden;
+        overflow-y: hidden;
+        padding-left: 15px;
+    }*/
+</style>
+<script type="7c82a3164a09f39da2c0c5f5-text/javascript">
+            var windowW_ = $(window).width();
+            var windowH_ = $(window).height();
+            var OSystem = platform.os;
+            if (OSystem.family == "OS X") {
+                if (windowH_ > windowW_) {
+                    var httpURL = '/' + "Home/Iindex";
+                      window.location = httpURL;
+                  }
+            }
+       </script>
+<div class="sitecover">
+<div class="nav_action_bar" id="main_menu">
+<span class="sitemenu" id="toggle-sidebar-left">
+<i class="si si-menu"></i>
+</span>
+<ul class="list_one">
+<li>
+<span id="spanHomeIdMenu" class="home_label home_action action">Home</span>
+<span class="logo_sm home_action action">
+<img src="https://epaper.patrika.com//img/logo/logo.png" />
+</span>
+</li>
+<li class="epaper-date">
+<div title="Change Date" id="calendar_date" class="action action_calender" onclick="if (!window.__cfRLUnblockHandlers) return false; ShowDatePopUp();" data-bs-toggle="tooltip" data-bs-placement="top" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<span id="spnDate"></span>&nbsp;
+<span>
+<i class="si si-calendar"></i>
+</span>
+</div>
+</li>
+<li class="issue-date">
+<div class="action action_calender">
+<select class="form-control" id="issueDates" onchange="if (!window.__cfRLUnblockHandlers) return false; getSelectedIssueData();" data-cf-modified-7c82a3164a09f39da2c0c5f5-=""></select>
+</div>
+</li>
+<li>
+<div class="action action_editions" title="Edition" id="liEdition" onclick="if (!window.__cfRLUnblockHandlers) return false; ShowEditionList();" data-bs-toggle="tooltip" data-bs-placement="top" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<span id="span_Edition"></span>
+<span id="span_Suplyment"></span>
+&nbsp;
+<span>
+<i class="si si-location"></i>
+</span>
+</div>
+</li>
+<li class="pagesdrop">
+<select class="action action_page selectpicker" title="Pages" id="ddl_Pages" data-bs-toggle="tooltip" data-bs-placement="top"></select>
+<span class="ic-pages">
+<i class="si si-pages"></i>
+</span>
+</li>
+<li>
+<span id="spn_cropbtn" class="ic ic_crop inactive" data-bs-toggle="tooltip" title="Crop and Share" data-bs-placement="top">
+<i class="si si-crop"></i>
+</span>
+</li>
+<li>
+<span class="action" id="span_Toggle" data-bs-toggle="tooltip" title="List All Pages" data-bs-placement="top">
+<span class="si si-menu-h"></span>
+</span>
+</li>
+<li>
+<div class="zoom_level_btn_box">
+<span class="action zoom_level" id="zoomLevel0" data-bs-toggle="tooltip" title="Zoom level zero" data-bs-placement="top">
+<span class="si si-zoomout"><sup>0</sup></span>
+</span>
+<span class="action zoom_level" id="zoomLevel1" data-bs-toggle="tooltip" title="Zoom level one" data-bs-placement="top">
+<span class="si si-zoomin"><sup>1</sup></span>
+</span>
+<span class="action zoom_level" id="zoomLevel2" data-bs-toggle="tooltip" title="Zoom level two" data-bs-placement="top">
+<span class="si si-zoomin"><sup>2</sup></span>
+ </span>
+</div>
+</li>
+</ul>
+<ul class="list_two">
+<li class="li_fullscreen">
+<div class="action">
+<a id="linkFullscreen" title="Fullscreen View" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; fullScreenToggle();" data-bs-toggle="tooltip" data-bs-placement="top" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<span class="ic ic_magazine">
+<img src="https://epaper.patrika.com//img/mag_fullview.png" width="16" />
+</span>
+</a>
+</div>
+</li>
+<li>
+<div class="action" onmouseover="if (!window.__cfRLUnblockHandlers) return false; PageView();" onmouseout="if (!window.__cfRLUnblockHandlers) return false; PageView();" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<a id="lnkhome" title="Page Thumb View" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; gotoIndex();" data-bs-toggle="tooltip" data-bs-placement="top" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<span class="ic ic_page_thumb_view">
+<i class="si si-thumbview"></i>
+</span>
+</a>
+</div>
+</li>
+<li>
+<div class="action" onmouseover="if (!window.__cfRLUnblockHandlers) return false; PageView();" onmouseout="if (!window.__cfRLUnblockHandlers) return false; PageView();" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<a id="lnkarticle" title="Page List View" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; gotoArticle();" data-bs-toggle="tooltip" data-bs-placement="top" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<span class="ic ic_page_list_view">
+<i class="si si-articleview"></i>
+</span>
+</a>
+</div>
+</li>
+<li>
+<div class="action" onmouseover="if (!window.__cfRLUnblockHandlers) return false; PageView();" onmouseout="if (!window.__cfRLUnblockHandlers) return false; PageView();" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<a id="lnkfullview" title="Full View" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; gotoFullPg();" style="padding-top:0px" data-bs-toggle="tooltip" data-bs-placement="top" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<span class="ic ic_page_list_view">
+<i class="si si-fullview"></i>
+</span>
+</a>
+</div>
+</li>
+</ul>
+<span class="usermenu" id="right-sidebar-login" style="display:none;">
+<span id="Sign_In">Sign In</span>
+<span class="ic ic_usermenu">
+<i class="si si-user"></i>
+</span>
+</span>
+</div>
+
+
+<ul class="mega-dropdown-menu" id="pageView" onmouseover="if (!window.__cfRLUnblockHandlers) return false; PageView();" onmouseout="if (!window.__cfRLUnblockHandlers) return false; PageView();" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<li>
+<div class="page_view_box">
+<div class="header">
+<span>
+<i class="si si-thumbview"></i>
+</span>
+</div>
+<div class="body">
+<a href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; gotoIndex();" data-cf-modified-7c82a3164a09f39da2c0c5f5-=""><img src="https://epaper.patrika.com//img/thumbnailview.jpg" id="imgthumview" /></a>
+<p id="toggleViewThumbViewText">The Thumb View</p>
+</div>
+</div>
+<div class="checkbox">
+<label>
+<input type="checkbox" id="chkthumview" /> <span id="chk"> Don't show me again</span>
+</label>
+</div>
+</li>
+<li>
+<div class="page_view_box">
+<div class="header">
+<span>
+<i class="si si-articleview"></i>
+</span>
+</div>
+<div class="body">
+<a href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; gotoArticle();" data-cf-modified-7c82a3164a09f39da2c0c5f5-=""><img src="https://epaper.patrika.com//img/listview.jpg" /></a>
+<p id="toggleViewPageListViewText">The Page List View</p>
+</div>
+</div>
+</li>
+<li>
+<div class="page_view_box">
+<div class="header">
+<span>
+ <i class="si si-fullview"></i>
+</span>
+</div>
+<div class="body">
+<a href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; gotoFullPg();" data-cf-modified-7c82a3164a09f39da2c0c5f5-=""><img src="https://epaper.patrika.com//img/fullview.jpg" /></a>
+<p id="toggleViewFullPageViewText">The Full Page View</p>
+</div>
+</div>
+</li>
+</ul>
+<button id="back-to-top" role="button" class="btn btn-info back-to-top" title="Click to return on the top page">
+<span class="si si-chevron-up"></span>
+</button>
+<div id="divPopUpDate" title="Select Date" class="popup_body">
+<div id="datepicker"></div>
+</div>
+<div id="divPopUpMessage" style="display:none;" class="popup_body">
+<h3><span>No Page Found </span></h3>
+</div>
+<div id="divPopUpNormalMessage" style="display:none;" title="Message" class="popup_body">
+<h3><span> </span></h3>
+<button type="button" name="button" class="btn_custom btn_primary btn_custom_sm btn_custom_center" style="padding:3px;" onclick="if (!window.__cfRLUnblockHandlers) return false; (function () { location.href = BaseUrl + &quot;home/subscription&quot;; })();" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+Subscribe now
+</button>
+</div>
+<div id="divSesssionPopUpMessage" title="Session" class="div-popup-message" style="display:none;">
+<h4><span id="span_sessionmessage">Session expired </span></h4>
+<div style="position: absolute;bottom: 0;right: 2px;"><span id="span_sessionErrorCode"></span></div>
+</div>
+<div id="divTrialPopUpMessage" class="popup_body" style="display:none;">
+</div>
+
+
+<div id="divTrialPopUpMessageC" class="popup_body" style="display:none;">
+</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://epaper.patrika.com//Content/popup_edition_level2.css?v=251" rel="stylesheet" />
+<div class="modal ap_edition_model fade" id="popupEditionLevel2" tabindex="-1" role="dialog" aria-bs-labelledby="largeModal" aria-bs-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+<h4 class="modal-title" id="myModalLabel">Select Editions</h4>
+</div>
+<div class="modal-body">
+<div class="edition_content">
+<div class="left_edition">
+<ul id="orgLocationsList">
+</ul>
+</div>
+<div class="right_edition" id="editionLocationPanel">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="divChangePwd" title="Change Password" class="popup_body" style="display:none;">
+<div id="divChangePwdmsg" class="alert alert-success">
+<strong></strong>
+</div>
+<div class="form-group">
+<input class="form-control" title="Enter Password" type="password" id="fPassword" placeholder="Enter Password" />
+</div>
+<div class="form-group">
+<input class="form-control" title="New Password" type="password" id="fnPassword" placeholder="New Password" />
+</div>
+<div class="form-group">
+<input class="form-control" title="Confirm Password" type="password" id="fncPassword" placeholder="Confirm Password" />
+</div>
+<button class="btn_custom btn_primary btn_custom_sm btn_custom_center" type="button" id="btnChangePwd" onclick="if (!window.__cfRLUnblockHandlers) return false; ChnagePassword();" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<span id="divChangeChangePasswordBtnTitle">Change Password</span>
+</button>
+</div>
+<div id="IndexPagePopUp" style="display:none" class="popup_body1"></div>
+<div id="pageCount" style="display:none;" class="popup_body">
+<div id="div_Message"></div>
+<button class="btn_custom btn_primary btn_custom_sm btn_custom_center" type="button" id="btnOk" onclick="if (!window.__cfRLUnblockHandlers) return false; okButtonClick();" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<span>Ok</span>
+</button>
+</div>
+<div id="divGiftCardMessagePopUp" title="GiftCardMessage" class="div-popup-message" style="display:none;">
+<iframe id="giftcardiframe" src="" height="200" width="600" title="Iframe GiftCard"></iframe>
+</div>
+<script async type="7c82a3164a09f39da2c0c5f5-text/javascript">
+    _isFree_paid = '1';
+    var publication = '1';
+    var Plan_Details = '1';
+    Publication = publication;
+    var StaticCdn = 'https://epaper.patrika.com/';
+    var TextView_ImageView = '0';
+    var Default_Edition = '20';
+    var Rss_interval;
+    let _pageCount = 0;
+    let _editionRedirectUrl = '';
+    var tokenStatus = null;
+    var subTokenStatus = false;
+    var adsFlag = '1';
+     var Enable_textview = '1';
+    var Enable_imageview = '1';
+    $('.ep-cross-pro').css('display', 'block');
+    $(document).ready(function () {
+        SetUrl('/');
+        SetCDNUrl('https://epaper.patrika.com/');
+        layoutPageLoad();
+        Rss_interval = '1000';
+        pageMenuLoad();
+
+        if ('0' == '1' || '0' == '2') {
+            setTimeout(function () {
+                GetRssFeed();
+                setInterval(GetRssFeed, minutetomilli(Rss_interval));
+            }, 1000);
+        }
+
+        if (Enable_textview == "1") {
+            $("#textview_a").closest("li").css("display", "");
+        }
+        else {
+            $("#textview_a").closest("li").css("display", "none");
+            $('#pictxtview_a').css("opacity", ".4");
+            $('#pictxtview_a').css('pointer-events', 'none')
+        }
+        if (Enable_imageview == "1") {
+            $("#pictxtview_a").closest("li").css("display", "");
+        }
+        else {
+            $("#pictxtview_a").closest("li").css("display", "none");
+            $('#textview_a').css("opacity", ".4");
+            $('#textview_a').css('pointer-events', 'none');
+        }
+
+        $("#span_Suplyment").empty();
+        //$('.ep-cross-pro').css('display','block');
+
+        $('.modal [data-bs-dismiss="modal"]').click(function () {
+            localStorage.setItem('HasUserSelectedEditionOnFirstLoad', "true");
+            //localStorage.setItem('UserSelectedEditionOnFirstLoad', 0);
+        });
+
+
+        function toggleChevron(e) {
+            //debugger;
+            $(e.target)
+                .prev('.panel-heading')
+                .find("i.indicator")
+                .toggleClass('si-minus si-plus');
+        }
+        $('#accordionEditions').on('hidden.bs.collapse', toggleChevron);
+        $('#accordionEditions').on('shown.bs.collapse', toggleChevron);
+
+    });
+</script>
+<div class="pagecontent">
+<div class="epaper-content listview_section hide_product_panel">
+
+<style>
+
+    ul#Ulproducts {
+        /* height: 900px; */
+        height: 1093px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding-left: 15px;
+        list-style: none;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+    #Ulproducts li {
+       display:inline-block;
+    }
+        #Ulproducts li img {
+            width: 100px;
+            height: auto;
+        }
+</style>
+<link href="https://epaper.patrika.com//Content/PageThumbSidebar251" rel="stylesheet" />
+<div class="col_sidebar page_thumb_panel">
+<span class="collapse_product_panel" onclick="if (!window.__cfRLUnblockHandlers) return false; pageThumbPanelCollapse();" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<img src="https://epaper.patrika.com//img/chevron_left.png" />
+</span>
+<div class="accordian" id="cssmenu">
+<ul id="UlPages"></ul>
+</div>
+</div>
+
+<div class="col_img">
+<div class="social_share_box_Container ">
+<div>
+ <a class="ssb share" title="Share Options" id="idShareOptions_pageShare" href="javascript:void(0);" valhref="" onclick="if (!window.__cfRLUnblockHandlers) return false; $('#id_page_social_share_box').slideToggle('slow');" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<i class="si si-share"></i>
+</a>
+</div>
+<div class="social_share_box" id="id_page_social_share_box">
+<a class="ssb fb" title="Share on facebook" id="idfacebook_pageShare" href="javascript:void(0);" valhref="" onclick="if (!window.__cfRLUnblockHandlers) return false; ShareWindowOpen('http://www.facebook.com/sharer.php?u='+encodeURIComponent(window.location.href), 'Facebook share', 'Success', 'Facebook Shared Successfully'); return false;" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<i class="si si-facebook"></i>
+</a>
+<a class="ssb twitter" title="Share on twitter" id="idtwittershare_pageShare" href="javascript:void(0);" valhref="" onclick="if (!window.__cfRLUnblockHandlers) return false; ShareWindowOpen('https://twitter.com/share?url='+encodeURIComponent(window.location.href), 'Twitter share', 'Success', 'Twitter Shared Successfully'); return false;" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<i class="si si-twitter"></i>
+</a>
+<a class="ssb copy-link" title="Copy and share link" id="link_url_pageShare" onclick="if (!window.__cfRLUnblockHandlers) return false; copyLink(window.location.href);" href="javascript:void(0);" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<i class="si si-copy"></i>
+</a>
+<a class="shb_btn" title="Share by e-mail" id="idemailshare_pageShare" onclick="if (!window.__cfRLUnblockHandlers) return false; showemailsharepopup();" href="javascript:void(0);" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+</a>
+<a class="ssb watsapp" title="Share on Whatsapp" id="idwatsappshare_pageShare" href="javascript:void(0);" valhref="" onclick="if (!window.__cfRLUnblockHandlers) return false; ShareWindowOpen('https://web.whatsapp.com/send?text='+encodeURIComponent(window.location.href), 'Whatsapp share', 'Success', 'Whatsapp Shared Successfully'); return false;" data-action="share/whatsapp/share" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<i class="si si-watsapp-o"></i>
+</a>
+</div>
+</div>
+<div class="prev not_visible" id="prevPage" onclick="if (!window.__cfRLUnblockHandlers) return false; PreviouPage()" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<i class="si si-chevron-left"></i>
+</div>
+<div class="next not_visible" id="nextPage" onclick="if (!window.__cfRLUnblockHandlers) return false; NextPage()" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<i class="si si-chevron-right"></i>
+</div>
+<div id="ImageContainer" class="image_container">
+<img id="imgmain1" />
+</div>
+</div>
+<div class="col_article_view">
+<div id="PageListViewToolbar" class="article_actions">
+<ul id="mainUl">
+<li>
+<div class="action">
+<span title="Image View" id="pictxtview_a">
+<i class="si si-image"></i>
+<label for="pictxtview" id="lblPicView">Image View</label>
+</span>
+</div>
+</li>
+<li>
+<div class="action">
+<span title="Text View" id="textview_a">
+<i class="si si-text"></i>
+<label for="textview" id="lblTxtView">Text View</label>
+</span>
+</div>
+</li>
+<li>
+<div class="action">
+<span title="Full View" id="share" href="" target="_blank" onclick="if (!window.__cfRLUnblockHandlers) return false; getOrgId();" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<i class="si si-expand"></i>
+<label for="fullView" id="lblFulView">Full View</label>
+</span>
+</div>
+</li>
+<li id="fontsizeLi">
+<div class="action">
+<span title="font-inc" id="btndecfont" onclick="if (!window.__cfRLUnblockHandlers) return false; OpenDivPopUpZoom();" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<i class="si si-font-plus"></i>
+<label for="fontInc" id="lblFontInc">Font Size</label>
+</span>
+</div>
+</li>
+</ul>
+</div>
+<div class="article_body" id="row_view">
+<div class="headline" id="divheadline"></div>
+<span id="byline" class="byline"> </span>
+<div id="articleBigimage" class="articleimage"></div>
+<div id="articleimg" class="articleimage"></div>
+<span id="DateLine" class="dateline"></span>
+<div id="body"></div>
+<div id="BigsubArticle" class="articleimage"></div>
+<div id="divlinkedstory" class="divlinkedstory"></div>
+</div>
+<div class="prev not_visible" id="Prev_story" onclick="if (!window.__cfRLUnblockHandlers) return false; PreviouArticle();" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<i class="si si-chevron-left"></i>
+</div>
+<div class="next not_visible" id="Next_story" onclick="if (!window.__cfRLUnblockHandlers) return false; NextStory();" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<i class="si si-chevron-right"></i>
+</div>
+
+<div class="social_share_box_Container">
+<div>
+<a class="ssb share" title="Share Options" id="idShareOptions_articleShare" href="javascript:void(0);" valhref="" onclick="if (!window.__cfRLUnblockHandlers) return false; $('#idsocial_share_box').slideToggle('slow');" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<i class="si si-share"></i>
+</a>
+</div>
+<div class="social_share_box" id="idsocial_share_box">
+<a class="ssb fb" title="Share on facebook" id="idfacebook" href="javascript:void(0);" valhref="" onclick="if (!window.__cfRLUnblockHandlers) return false; ShareWindowOpen(this.getAttribute('valhref'), 'Facebook share', 'Success', 'Facebook Shared Successfully'); return false;" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<i class="si si-facebook"></i>
+</a>
+<a class="ssb twitter" title="Share on twitter" id="idtwittershare" href="javascript:void(0);" valhref="" onclick="if (!window.__cfRLUnblockHandlers) return false; ShareWindowOpen(this.getAttribute('valhref'), 'Twitter share', 'Success', 'Twitter Shared Successfully'); return false;" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<i class="si si-twitter"></i>
+</a>
+<a class="ssb copy-link" title="Copy and share link" id="link_url" onclick="if (!window.__cfRLUnblockHandlers) return false; copyLink();" href="javascript:void(0);" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<i class="si si-copy"></i>
+</a>
+<a class="shb_btn" title="Share by e-mail" id="idemailshare" onclick="if (!window.__cfRLUnblockHandlers) return false; showemailsharepopup();" href="javascript:void(0);" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+</a>
+<a class="ssb watsapp" title="Share on Whatsapp" id="idwatsappshare" href="javascript:void(0);" valhref="" onclick="if (!window.__cfRLUnblockHandlers) return false; ShareWindowOpen(this.getAttribute('valhref'), 'Whatsapp share', 'Success', 'Whatsapp Shared Successfully'); return false;" data-action="share/whatsapp/share" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<i class="si si-watsapp-o"></i>
+</a>
+<a class="ssb copy-link" title="Print Article" id="link_url_print" onclick="if (!window.__cfRLUnblockHandlers) return false; openprintarticlepage();" href="javascript:void(0);" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<i class="si si-print"></i>
+ </a>
+</div>
+</div>
+</div>
+<div class="fullads">
+<div class="prev" onclick="if (!window.__cfRLUnblockHandlers) return false; PreviouPage();" data-cf-modified-7c82a3164a09f39da2c0c5f5-=""><img src="https://epaper.patrika.com//img/prev-64.png" /></div>
+<div class="next" onclick="if (!window.__cfRLUnblockHandlers) return false; NextPage();" data-cf-modified-7c82a3164a09f39da2c0c5f5-=""><img src="https://epaper.patrika.com//img/next-64.png" /></div>
+<div id="fullAdsContents">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="base user modal fade" id="Index_pg_popup" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-bs-dismiss="modal">
+<i class="si si-cross"></i>
+</button>
+<h4 class="modal-title" id="Index_pg_popup_head"></h4>
+</div>
+<div class="modal-body" id="Index_pg_popup_body">
+<div class="modal-footer">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="base fpwd modal fade" id="premiumPopup" role="dialog">
+<div class="modal-dialog modal-sm">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-bs-dismiss="modal">
+<i class="si si-cross"></i>
+</button>
+<h4 class="modal-title">Confirmation</h4>
+</div>
+<div class="modal-body">
+For an uninterrupted Ad free experience subscribe now.
+</div>
+<div class="modal-footer">
+<button type="button" id="btnSubscribe" onclick="if (!window.__cfRLUnblockHandlers) return false; gotoSubscriptionPart();" class="btn btn-primary btn_flat btn_submit" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">SUBSCRIBE NOW</button>
+</div>
+</div>
+</div>
+</div>
+<input type="hidden" id="ArticleView" value="0" />
+<input type="hidden" name="imageviewclick" id="hd_Click" value="0" />
+<div>
+</div>
+<footer id="footer_input" class="footer_input_class" style="margin-top:50px">
+<div class="footer_text">
+<p>&copy; 2023 All Rights Reserved. Powered by <a href="http://www.summitindia.com" target="_blank">Summit</a> </p>
+</div>
+</footer>
+<div id="txt_to_speech_body" style="display:none;"></div>
+<div>
+
+</div>
+<div id="divSubsExpiryRemind" class="div-popup-message" style="display:none;"></div>
+<div id="divLimitedPeriodRemind" title="Limited Period Offer" class="div-popup-message" style="display:none;">
+</div>
+<div id="TrialUserPopUpDownload" class="div-popup-message" style="display:none;">
+<h3><span>Please subscribe to download </span></h3>
+<a href="/Home/Subscription" class="btn btn-submit go_subs">Please subscribe now</a>
+</div>
+<div id="EmailShare" title="Email Share" style="color: #1c94c4; display: none">
+<div class="body-content">
+<div id="divEsharemessage" class="alert alert-success">
+<strong></strong>
+</div>
+<div class="form-group" id="divshareFromEmail">
+<label for="txtshareEmail">Your Name <sup style="top: 2px;font-size: 22px;color: #fb1010;">*</sup></label>
+<input type="text" name="FromEmail" id="txtshareFromEmail" class="form-control" aria-describedby="emailHelp" required maxlength="40">
+</div>
+<div class="form-group">
+<label class="form-label">Shared Email <sup style="top: 2px;font-size: 22px;color: #fb1010;">*</sup></label>
+<input class="form-control" type="text" name="Email" id="txtshareEmail" required>
+</div>
+<button type="button" class="btn btn-primary" onclick="if (!window.__cfRLUnblockHandlers) return false; ShareEmaillink($('#txtshareEmail').val());" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">Share</button>
+</div>
+</div>
+<div id="divSubscriptionPopUpMessage" class="div-popup-message" style="display:none;">
+<h3><span> </span></h3>
+<a href="/Home/Subscription" class="btn btn-submit go_subs">Please subscribe now</a>
+</div>
+<div id="TrialPopUpMessage" class="div-popup-message" style="display:none;">
+<h3><span> </span></h3>
+<a href="/Home/Subscription" class="btn btn-submit go_subs">Please subscribe now</a>
+</div>
+<div id="divPopUpZoom" style="display:none;" class="popup_body">
+<div class="content">
+<span class="font-minus" title="font-dec" onclick="if (!window.__cfRLUnblockHandlers) return false; zoomOut();" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<i class="si si-font-minus"></i>
+</span>
+<span class="font-plus" title="font-inc" onclick="if (!window.__cfRLUnblockHandlers) return false; zoomIn();" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<i class="si si-font-plus"></i>
+</span>
+<div id="zoomtxtpreview"></div>
+</div>
+</div>
+<div id="IndexPagePopUp" style="display:none;"></div>
+<div id="divPopUpMessageFromServer" class="modal fade modal-server-message" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<div class="message">
+<h3 id="lblNoEditionToday">No Edition Today</h3>
+<p id="errorMsg"></p>
+</div>
+<div class="action">
+<a class="btn btn-block btn-action" onclick="if (!window.__cfRLUnblockHandlers) return false; goDefaultViewMaxDate();" id="lblLatestEdition" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">Click Here For The Latest Edition</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="softMessagePopup" class="modal modal-server-message" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<div class="message">
+<p id="softMessage"></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<form>
+<input type="hidden" id="ArticleViewType" value="1" />
+</form>
+<script language="JavaScript" type="7c82a3164a09f39da2c0c5f5-text/javascript">
+        function redirectHttpToHttps() {
+
+            if ('true'.toLowerCase() == "true") {
+                if (window.location.protocol == "http:") {
+                    var httpURL = window.location.hostname + window.location.pathname + window.location.search;
+                    var httpsURL = "https://" + httpURL;
+                    window.location = httpsURL;
+                }
+            }
+        }
+        redirectHttpToHttps();
+
+    </script>
+<script type="7c82a3164a09f39da2c0c5f5-text/javascript">
+
+        //Get culture information for all pages using this layout
+        SetUrl('/');
+        var cta = "";
+        var CurPage = 0;
+        var g_AnalyticsId = 'UA-5213306-2';
+        var StaticCdn = 'https://epaper.patrika.com/';
+        var SubscriptionPlan = '';
+        var enableMaxDate = '100';
+        var adsFlag = '1';
+        var Publication = '1';
+        var SAM_Variables = {};
+        SAM_Variables.AddtoGA = '';
+        var IsLogin = '0';
+        var _CalenderMinDate = '05/06/2022';
+        var _ArchiveDays = '30';
+        var ShowProductPanel = 'false';
+        var bodyClass = 'listview';
+          var Enable_textview = '1';
+         var Enable_imageview = '1';
+        var Gpageid;
+        //Culture related
+        var globalCultureDB = {};
+            getAndApplyCurrentCultureShared();
+
+
+
+        if (ShowProductPanel == "true") {
+
+            var IS_PRODUCT_PANEL = $.cookie("IS_PRODUCT_PANEL");
+            if (typeof IS_PRODUCT_PANEL === "undefined" || IS_PRODUCT_PANEL == "true") {
+                $(".epaper-content").removeClass("product_panel_collapse");
+                setcookies_long("IS_PRODUCT_PANEL", true);
+                } else {
+                $(".epaper-content").addClass("product_panel_collapse");
+                setcookies_long("IS_PRODUCT_PANEL", false);
+            }
+
+            var IS_PAGE_THUMB_PANEL = $.cookie("IS_PAGE_THUMB_PANEL");
+            if (typeof IS_PAGE_THUMB_PANEL === "undefined" || IS_PAGE_THUMB_PANEL == "true") {
+                $(".epaper-content").removeClass("page_thumb_panel_collapse");
+                setcookies_long("IS_PAGE_THUMB_PANEL", true);
+            } else {
+                $(".epaper-content").addClass("page_thumb_panel_collapse");
+                setcookies_long("IS_PAGE_THUMB_PANEL", false);
+            }
+        }
+
+
+
+        $(document).ready(function () {
+
+            $.cookie.defaults = { path: '/' };
+            SetCDNUrl('https://epaper.patrika.com/');
+            // SAM calling
+            SAM_PageFirstLoad();
+            SAM_Pageload();
+            $('[data-bs-toggle="tooltip"]').tooltip();
+            $("meta[name='theme-color']").attr('content', '#f5931d');
+            $('.server-message-close').click(function () {
+				var currentMessage=$("#sub-message").text();
+                if (currentMessage == "Session Expired, please login again.") {
+                    window.location.href = "https://epaper.patrika.com//Login/LandingPage";
+                }
+            })
+            var popupwidth = $(window).width();
+            if (popupwidth > 767)
+                popupwidth = 600;
+            else
+                popupwidth = 300;
+            $("#ContentFeedbackPopup").dialog({
+                title: "Email ", // //Write to Editor , changed by assigned task
+                autoOpen: false,
+                width: popupwidth,
+                height: "auto",
+                position: { my: 'top', at: 'top+150' },
+                modal: true,
+                resizable: false,
+                minHeight: 120,
+                fluid: true,
+                dialogClass: 'base_theme landing_page_popup',
+                open: function (event, ui) {
+                    $('.ui-dialog').css('z-index', 1050);
+                    $('.ui-widget-overlay').css({ 'z-index': 1040, 'background-color': '#000', 'opacity': '0.5' });
+                    $('.ui-dialog .ui-dialog-titlebar-close').css({ 'width': '25px', 'height': '25px', 'top': '44%' });
+                    $('#UserFeedbackMessage').focus();
+                },
+                close: function (event, ui) {
+                }
+            });
+
+            function ContentFeedback_Callback(data) {
+                result = data;
+                if (result != undefined) {
+                    if (result.status == true || result.status == 'true') {
+                        alert('Your feedback has been submitted successfully.');
+                        $('#WaitLoader').css('visibility', 'hidden');
+                        $('#btn_SendFeedback').attr("disabled", false);
+                        $('#UserFeedbackMessage').attr("disabled", false);
+                        $("#ContentFeedbackPopup").dialog("close");
+                    }
+                    else {
+                        alert('some error in sending feedback');
+                        $('#WaitLoader').css('visibility', 'hidden');
+                        $('#btn_SendFeedback').attr("disabled", false);
+                        $('#UserFeedbackMessage').attr("disabled", false);
+                    }
+                }
+            }
+
+            $("#btn_SendFeedback").click(function (event) {
+                event.preventDefault();
+                var contentUrl = $("#link_WriteToEditor").attr('sharelink');
+                if (contentUrl != null || contentUrl != undefined) {
+                    var UserMessage = $('#UserFeedbackMessage').val();
+                    if (UserMessage != "") {
+                        $('#WaitLoader').css('visibility', 'visible');
+                        $('#btn_SendFeedback').attr("disabled", true);
+                        $('#UserFeedbackMessage').attr("disabled", true);
+                        var storyid = $("#link_WriteToEditor").attr('ContentId');
+                        var storyTitle = '';
+                        var contentType = $("#link_WriteToEditor").attr('ContentType');
+                        if (contentType == 1) {
+                            if ($('#row_view').attr('story_id') == storyid) {
+                                storyTitle = $('#row_view > #divheadline').text();
+                            }
+                        }
+                        var title = storyTitle;
+                        if (title != '') {
+                            title = 'Story-Title : ' + title;
+                        }
+                        var url = BaseUrl + "User/contentFeedback";
+                        var param = { 'contenturl': contentUrl, 'contentId': storyid, 'contentType': contentType, 'feedback': UserMessage, 'feedbackTitle': title };
+                        param = JSON.stringify(param);
+                        //var result = getResultPost(url, param);
+                        var result = getResultPostAsync(url, param, ContentFeedback_Callback);
+                    }
+                    else {
+                        alert('Please input your message/feedback');
+                        $('#UserFeedbackMessage').focus();
+                    }
+                }
+                else {
+                    alert('Select a story first');
+                }
+            });
+
+            if (cta == "downloadEpaper") {
+                setTimeout(function () {
+                    $("#downloadEditiontoolbar").trigger("click");
+                }, 1000);
+            }
+
+            if (Enable_textview == "1") {
+                $("#textview_a").closest("li").css("display", "");
+            }
+            else {
+                $("#textview_a").closest("li").css("display", "none");
+                $('#pictxtview_a').css("opacity", ".4");
+                $('#pictxtview_a').css('pointer-events', 'none')
+            }
+            if (Enable_imageview == "1") {
+                $("#pictxtview_a").closest("li").css("display", "");
+            }
+            else {
+                $("#pictxtview_a").closest("li").css("display", "none");
+                $('#textview_a').css("opacity", ".4");
+                $('#textview_a').css('pointer-events', 'none');
+            }
+
+            //$(window).scroll(function () {
+            //    try {
+            //        var sequence = $("#ddl_Pages option[value='" + Gpageid + "']").attr('sequence');
+            //        var pageNo = $("#ddl_Pages option[value='" + Gpageid + "']").attr('pgno');
+            //        _pgCount = $("#ddl_Pages option[value='" + Gpageid + "']").attr('paywallpage');
+            //        if (showSignInWall(sequence, pageNo)) {
+            //              signInWallOnPageLoad();
+            //          }
+            //    } catch (error) { }
+            //});
+
+            $("#divPopUpMessageFromServer").on('hidden.bs.modal', function () {
+                return goDefaultViewMaxDate();
+            });
+
+        });
+
+        function WriteToEditor() {
+            $('#btn_SendFeedback').attr("disabled", false);
+            $('#UserFeedbackMessage').val('');
+            $('#WaitLoader').css('visibility', 'hidden');
+            SAM_Variables.eventname = "Write to Editor";
+            SAM_View(SAM_Variables);
+            $("#ContentFeedbackPopup").dialog("open");
+        }
+
+        function SAM_PageFirstLoad() {
+            try {
+            
+                var firstTime = sessionStorage.getItem("first_time"); //to detect first load
+                if (!firstTime) {
+                    // first time loaded!
+                    sessionStorage.setItem("first_time", "1");
+                    var session = "slpcl1xjkg2ru2izhf2v12x1";
+                    var emailid = null;
+                    var userid = null;
+                    var userdefaultedition = null;
+                    var userAccountType = null;
+                    var userCreationDate = null;
+                    var userenabled = null;
+                    var userAge_Group = null;
+                    var userRegPubId = null;
+                    var userRegPubName = null;
+                    var userCountry_Name = null;
+                    var userCity_Name = null;
+                    var userState_Name = null;
+                    var Login_mode = null;
+
+                    var webpage = window.location.href;
+                    SAM_Variables.webpage = webpage;
+                    if (IsLogin != "1") {
+                        SAM_Variables.sessionid = session;
+                        SAM_Variables.emailid = "guestuser@gmail.com";
+                        SAM_Variables.Login_mode = "NA";
+                        SAM_Variables.eventname = "GuestVisit";
+                        HomeInitiateSamApi();
+                    }
+                    else {
+                        SAM_Variables.sessionid = session;
+                        SAM_Variables.emailid = emailid;
+                        SAM_Variables.userid = userid;
+                        SAM_Variables.Login_mode = Login_mode;
+                        SAM_Variables.default_edition = userdefaultedition;
+                        SAM_Variables.eventname = null;
+
+                        if (userAccountType == "0") {
+                            SAM_Variables.reg_mode = "Normal Registration";
+                            SAM_Variables.user_type = "Normal";
+                        }
+                        else if (userAccountType == "1") {
+                            SAM_Variables.reg_mode = "Ported";
+                            SAM_Variables.user_type = "Ported";
+                        }
+                        else if (userAccountType == "2") {
+                            SAM_Variables.reg_mode = "Bulk";
+                            SAM_Variables.user_type = "Bulk";
+                        }
+                        else if (userAccountType == "3") {
+                            SAM_Variables.reg_mode = "Manual";
+                            SAM_Variables.user_type = "Manual Sub";
+                        }
+                        else if (userAccountType == "5") {
+                            SAM_Variables.reg_mode = "Special";
+                            SAM_Variables.user_type = "Special";
+                        }
+                        else if (userAccountType == "10") {
+                            SAM_Variables.reg_mode = "Normal Registration";
+                            SAM_Variables.user_type = "Normal";
+                        }
+                        else if (userAccountType == "11") {
+                            SAM_Variables.reg_mode = "Social Media";
+                            SAM_Variables.user_type = "Social Media";
+                        }
+                        else if(userAccountType == "21"){
+                            SAM_Variables.reg_mode = "Direct Subscription";
+                            SAM_Variables.user_type = "Direct";
+                        }
+
+                        SAM_Variables.reg_date = userCreationDate;
+
+                        if (userenabled == "0") {
+                            SAM_Variables.registration_status = "activated";
+                        }
+                        else {
+                            SAM_Variables.registration_status = "not activated";
+                        }
+
+                        SAM_Variables.age_group = userAge_Group;
+                        SAM_Variables.profile_country = userCountry_Name;
+                        SAM_Variables.profile_state = userState_Name;
+                        SAM_Variables.profile_city = userCity_Name;
+                        SAM_Variables.default_edition = userdefaultedition;
+                        SAM_Variables.reg_publication = userRegPubName;
+
+                        //Session storage variables that need to be present throughout the session
+                        sessionStorage.setItem("Login_mode", SAM_Variables.Login_mode);
+                        sessionStorage.setItem("reg_mode", SAM_Variables.reg_mode);
+                        sessionStorage.setItem("user_type", SAM_Variables.user_type);
+                        sessionStorage.setItem("reg_date", SAM_Variables.reg_date);
+                        sessionStorage.setItem("registration_status", SAM_Variables.registration_status);
+                        sessionStorage.setItem("age_group", SAM_Variables.age_group);
+                        sessionStorage.setItem("profile_country", SAM_Variables.profile_country);
+                        sessionStorage.setItem("profile_state", SAM_Variables.profile_state);
+                        sessionStorage.setItem("profile_city", SAM_Variables.profile_city);
+                        sessionStorage.setItem("default_edition", SAM_Variables.default_edition);
+                        sessionStorage.setItem("reg_publication", SAM_Variables.reg_publication);
+                        sessionStorage.setItem("PublicationNameConfig", PublicationNameConfig);
+                        sessionStorage.setItem("session", session);
+                        sessionStorage.setItem("emailid", emailid);
+                        sessionStorage.setItem("userid", userid);
+                        SAM_Login("Login", "success", "", webpage, emailid, Login_mode, session, userid);
+                    }
+                    SAM_View(SAM_Variables);
+                } else {
+                    //alert("not first load");
+                }
+            }
+            catch (err) {
+                console.log("Error while calling SAM_PageFirstLoad at Layout: "+err);
+            }
+        }
+
+         function HomeInitiateSamApi() {
+            var APIKey =  null;
+            var session = "slpcl1xjkg2ru2izhf2v12x1";
+            var emailid = null;
+            var userid = null;
+            var userdefaultedition = null;
+            var userAccountType = null;
+            var userCreationDate = null;
+            var userenabled = null;
+            var userAge_Group = null;
+            var userRegPubId = null;
+            var userCountry_Name = null;
+            var userCity_Name = null;
+            var userState_Name = null;
+            var currentip;
+            //Get required data from server to be tracked
+            currentip ="49.36.178.246";
+            sessionStorage.setItem("APIKey", APIKey);
+            sessionStorage.setItem("currentip", currentip);
+            sessionStorage.setItem("baseAPIUrl", sam_APIBaseURL);
+            sessionStorage.setItem("session", session);
+            sessionStorage.setItem("emailid", emailid);
+            sessionStorage.setItem("userid", userid);
+
+           // SAM_Variables.eventname = "Landing Page Visited";
+            SAM_Variables.status = "Success";
+            SAM_Variables.ip = currentip;
+            SAM_Variables.webpage = window.location.href;
+            SAM_Variables.APIKey = APIKey;
+            SAM_Variables.sessionid = session;
+            SAM_Variables.emailid = emailid;
+            SAM_Variables.userid = userid;
+            SAM_Variables.default_edition = userdefaultedition;
+            SAM_Variables.eventname = null;
+            if(userAccountType == "11"){
+                SAM_Variables.reg_mode = "Social Media";
+            }
+            else if(userAccountType == "21"){
+                SAM_Variables.reg_mode = "Direct Subscription";
+            }
+            else if(userAccountType == "10"){
+                SAM_Variables.reg_mode = "Normal Registration";
+            }
+
+            SAM_Variables.reg_date = userCreationDate;
+
+            if (userenabled == "0") {
+                SAM_Variables.registration_status = "activated";
+            }
+            else {
+                SAM_Variables.registration_status = "not activated";
+            }
+
+            SAM_Variables.age_group = userAge_Group;
+            SAM_Variables.profile_country = userCountry_Name;
+            SAM_Variables.profile_state = userState_Name;
+            SAM_Variables.profile_city = userCity_Name;
+            SAM_Variables.default_edition = userdefaultedition;
+            SAM_Variables.reg_publication = userRegPubId;
+            //Send to our function for processing for a unknown visitor
+           processInsertDataRequest(SAM_Variables)
+         }
+        var NthPageCount = '';
+    </script>
+<script type="7c82a3164a09f39da2c0c5f5-text/javascript">
+        var HasUserChosenPlan = localStorage.getItem('HasUserChosenPlan');
+        if (HasUserChosenPlan == "true") {
+            localStorage.removeItem("HasUserChosenPlan");
+            window.location.href = '/Home/Validate';
+        }
+        pgLst_thumnail = '1';
+        var _login = '0';
+        var DesktopPgAds_Popup = '0';
+        var DesktopPgAds_Interval = '101';
+        var EnableLazyLoad = 'false';
+        var LastTrailSubscriptionMsg = '';
+        const paragraphads = '3';
+        ads = '101';
+        setcookies("ViewType_", 2);
+        //$("#row_view").css("min-height", $(window).height() - 235);
+
+        function CheckUserTrialSubscription() {
+            var param = {};
+            var url = BaseUrl + 'Home/isFirstVisitAfterTrialSubscription';
+            result = getResult(url, param);
+            return result;
+        }
+
+        function UpdateUserFirstVisit() {
+            var param = {};
+            var url = BaseUrl + 'Home/UpdateUserFirstVisit';
+            result = getResult(url, param);
+            return result;
+        }
+
+        function CheckFirstVisitAfterFreeTrial() {
+            var TrialUsrResult = CheckUserTrialSubscription();
+            if (TrialUsrResult.IsFirstVisit == "1") {
+                $('#email_popup .email_content>p').text("Your free trial is successfully applied.");
+                $('#email_popup').show();
+                $('#email_popup a').click(function () {
+                    UpdateUserFirstVisit();
+                });
+            }
+        }
+
+        $(document).ready(function () {
+            $("#lnkarticle").css("opacity", "0.2");
+            articlePageLoad();
+            if (LastTrailSubscriptionMsg != '') {
+                $('#email_popup .email_content>p').text(LastTrailSubscriptionMsg);
+                $('#email_popup').show();
+                $('#email_popup a').click(function () {
+                    UpdateUserFirstVisit();
+                });
+            }
+            else
+                CheckFirstVisitAfterFreeTrial();
+            // $().articulate('setVoice', 'language', 'hi');
+
+            $("#prevPage").removeClass("not_visible");
+            $("#nextPage").removeClass("not_visible");
+            $("#Prev_story").removeClass("not_visible");
+            $("#Next_story").removeClass("not_visible");
+        });
+
+        if (EnableLazyLoad == "true") {
+            $(window).on('load', function () {
+                setTimeout(function () {
+                    lozad('.lozad', {
+                        load: function (el) {
+                            el.src = el.dataset.src;
+                        }
+                    }).observe()
+                }, 1000);
+
+            })
+        }
+        socialShareInit();
+    </script>
+<script type="7c82a3164a09f39da2c0c5f5-text/javascript">
+        //Try with Polly Now
+        var player = document.getElementById('player');
+        var playButton = document.getElementById("startSpeaking");
+        var pauseButton = document.getElementById("stopSpeaking");
+        var audioUrl = [];
+        let audioLstCount = 0;
+
+        function playAudio1(_url) {
+            var url = _url;
+            if (player.getAttribute("src") == null) {
+                player.setAttribute("src", url);
+
+            }
+            else if (player.getAttribute("src") == "") {
+                player.setAttribute("src", url);
+
+            }
+            else if (player.getAttribute("src") == "unknown") {
+                player.setAttribute("src", url);
+
+            }
+
+            player.play();
+            playButton.style.display = "none";
+            pauseButton.style.display = "block";
+
+            player.onended = function () {
+
+                playButton.style.display = "block";
+                pauseButton.style.display = "none";
+                player.setAttribute('src', '');
+                player.load();
+                audioLstCount++;
+                if (audioUrl.length > audioLstCount) {
+                    playAudio1(audioUrl[audioLstCount]);
+                }
+
+            };
+        }
+
+        function playTtsAudio() {
+
+            var currentstoryid = $("#row_view").attr("story_Id");
+            var currentaudiomp3;
+            $('#lblListen').text(globalCultureDB['StartingListenText']);
+            $.ajax({
+                url: "/Home/getMp3Url",
+                type: "GET",
+                async: true,
+                data: { Storyid: currentstoryid },
+                success: function (data) {
+                    $('#lblListen').text(globalCultureDB['PlayingListenText']);
+                    if (data != "") {
+                        currentaudiomp3 = data;
+                        audioUrl = [];
+                        let _url = currentaudiomp3.split(",");
+
+                        if (_url.length > 1) {
+                            for (let i = 0; i < _url.length; i++) {
+                                audioUrl.push(_url[i]);
+                                if (i == 0) {
+                                    playAudio1(_url[0]);
+                                }
+                            }
+                        } else {
+                            playAudio1(currentaudiomp3);
+                        }
+                    } else {
+                        alert(globalCultureDB['TechnicalErrorText']);
+                    }
+                },
+                error: function (error) {
+                    console.log(error);
+                    $('#lblListen').text(globalCultureDB['PlayingListenText']);
+                },
+            });
+            SAM_Variables.eventname = "Listen (TTS)";
+            SAM_View(SAM_Variables);
+        }
+
+        function editXML() {
+            var OrgId = $("#row_view").attr('pic_org');
+            var link = '/Home/EditXML'+'?OrgId='+OrgId
+            window.open(
+                link,
+                '_blank'
+            );
+        }
+
+        function editImage() {
+            var PageId = $("#imgmain1").attr('pageid');
+            var currentDate = $("#datepicker").val();
+            //var link = '/Home/EditXML?OrgId=-1&amp;PageId=-2';
+            var link = '/Home/UnlinkedImages' + '?PageId=' + PageId + '&EdDate=' + currentDate
+            window.open(
+                link,
+                '_blank'
+            );
+        }
+
+        function editContent() {
+            var PageId = $("#imgmain1").attr('pageid');
+            var currentDate = $("#datepicker").val();
+            var link = '/Home/EditContent' + '?PageId=' + PageId + '&EdDate=' + currentDate
+            window.open(
+                link,
+                '_blank'
+            );
+        }
+    </script>
+
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="7c82a3164a09f39da2c0c5f5-|49" defer=""></script></body>
 </html>

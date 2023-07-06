@@ -27,7 +27,7 @@ $arrContextOptions = array(
 $static_date = ''; // Production Value is ''
 $no_of_papers_to_run = 0; // Production Value is 0
 $no_of_editions_to_run = 0; // Production Value is 0
-$no_of_pages_to_run_on_each_edition = 50; // Production Value is 50
+$no_of_pages_to_run_on_each_edition = 1; // Production Value is 50
 $no_of_sections_to_run_on_each_page = 100; // Production Value is 100
 
 //// code starts below ///
