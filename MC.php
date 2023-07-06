@@ -6,7 +6,7 @@ if ($epapercode == "MC") {
     $originaldatecode = explode('/mc"', $datecodearray[1])[0];
     $datecode = explode('/mc"', $datecodearray[1])[0];
     $reqiredDate = date("Y-m-d", strtotime($filenamedate));
-    $datecode -= intval((time() - strtotime($filenamedate)) / (24 * 3600));
+    $datecode -= ((time() - strtotime($filenamedate)) / (24 * 3600));
     $content = file_get_contents("https://www.mumbaichoufer.com/view/" . $datecode . "/mc");
     $date = date("Y-m-d", strtotime(trim(explode("- Page 1", explode("Mumbaichoufer -", $content)[1])[0])));
     if ($date > $reqiredDate)

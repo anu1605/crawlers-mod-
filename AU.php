@@ -31,7 +31,6 @@ if ($epapercode == "AU") {
         for ($page = 1; $page <= $no_of_pages_to_run_on_each_edition; $page++) {
             $imagelink = str_replace("/01/hdimage.jpg", "/" . sprintf('%02d', $page) . "/hdimage.jpg", $imageLinkPage1);
 
-
             if (!empty($imagelink)) $imageInfo = @getimagesize($imagelink);
 
             if (!$imageInfo)

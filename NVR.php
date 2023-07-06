@@ -30,7 +30,6 @@ if ($epapercode == "NVR") {
 
             $testcontent = getdata($testurl);
 
-
             $testimagelink = explode('"', explode("id='ImageArticle'  src=", $testcontent)[1])[1];
 
             if (!empty($testimagelink)) $imageInfo = @getimagesize($testimagelink);

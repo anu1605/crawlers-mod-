@@ -24,7 +24,7 @@ $arrContextOptions = array(
     ),
 );
 
-$static_date = '2023-07-02'; // Production Value is ''
+$static_date = ''; // Production Value is ''
 $no_of_papers_to_run = 0; // Production Value is 0
 $no_of_editions_to_run = 0; // Production Value is 0
 $no_of_pages_to_run_on_each_edition = 50; // Production Value is 50
@@ -69,10 +69,10 @@ foreach ($epapers as $epapercode => $epaperArray) {
         if ($no_of_editions_to_run > 0 and $no_of_editions_to_run < count($cityarray)) $cityarray = array_slice($cityarray, 0, $no_of_editions_to_run);
     }
 
-    $citylinkcode = cityCodeArray($epapercode);
-    $linkarray = cityCodeArray($epapercode);
+    // $citylinkcode = cityCodeArray($epapercode);
+    // $linkarray = cityCodeArray($epapercode);
 
-    $datecode = dateForLinks($epapercode, $filenamedate);
+    // $datecode = dateForLinks($epapercode, $filenamedate);
 
     if ($epapercode == "TOI" or $epapercode == "ET" or $epapercode == "MT" or $epapercode == "Mirror") include("TOIGROUP.php");
     else include($epapercode . ".php");

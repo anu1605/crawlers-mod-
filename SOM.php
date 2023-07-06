@@ -13,7 +13,7 @@ if ($epapercode == "SOM") {
         $reqiredDate = $date;
         $filenamedate = $reqiredDate;
     }
-    $datecode -= intval((time() - strtotime($filenamedate)) / (24 * 3600));
+    $datecode -= ((time() - strtotime($filenamedate)) / (24 * 3600));
     $content = file_get_contents("https://epaper.starofmysore.com/epaper/edition/" . $datecode . "/star-mysore");
     $date = date("Y-m-d", strtotime(explode('"', explode('value="', $content)[1])[0]));
 

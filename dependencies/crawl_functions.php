@@ -467,9 +467,10 @@ function runOpenCV($filepath, $conn)
     $papershortname = $a[0];
     $ImagesBaseDir = '/var/www/d78236gbe27823/nvme';
     $smallImageDir = $ImagesBaseDir . "/" . $papershortname;
+
     $largeImagePath = $ImagesBaseDir . "/" . $filepath;
 
-    $q = "INSERT INTO opencv (Large_Image) VALUES ('" . $filepath . "') ON DUPLICATE KEY UPDATE Large_Image = VALUES(Large_Image)";
+    $q = "INSERT INTO opencv (Large_Image, Accuracy) VALUES ('" . $filepath . "', 0) ON DUPLICATE KEY UPDATE Large_Image = VALUES(Large_Image)";
     mysqli_query($conn, $q);
 
     $found = false;
@@ -477,6 +478,10 @@ function runOpenCV($filepath, $conn)
     $iteration = 0;
 
     $prevaccuracy = 0;
+
+    if (!is_dir($smallImageDir)) {
+        return false;
+    }
 
     $smallImages = glob("$smallImageDir/*.{jpeg,jpg,png}", GLOB_BRACE);
 
@@ -515,7 +520,7 @@ function runTesseract($epapername, $edition, $page, $section, $conn, $patharray,
 {
     global $eol;
 
-    $opencvPapers = array("SOM", "RS", "MC", "NVR", "OHO", "DST", "DC", "GSM", "LM", "NBT", "DJ", "ND", "NB", "AU", "BS", "DN", "ASP", "PN", "YB");
+    // $opencvPapers = array("SOM", "RS", "MC", "NVR", "OHO", "DST", "DC", "GSM", "LM", "NBT", "DJ", "ND", "NB", "AU", "BS", "DN", "ASP", "PN", "YB");
 
     $filepath = $patharray[0];
     $temp_txtfile = $patharray[1];
@@ -543,6 +548,8 @@ function runTesseract($epapername, $edition, $page, $section, $conn, $patharray,
 
         if ($lang != 'eng') $command = "tesseract " . $filepath . " " . $temp_txtfile . " -l " . $lang . "+eng > /dev/null 2>&1";
         else $command = "tesseract " . $filepath . " " . $temp_txtfile . " -l eng > /dev/null 2>&1";
+
+        echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>Starting Tesseract for " . $filepath .  $eol;
 
         exec($command);
 
@@ -604,15 +611,12 @@ function runTesseract($epapername, $edition, $page, $section, $conn, $patharray,
 
                 echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=> Running OpenCV to STOP Sending of messages on Non Classified Decisions FROM AI" .  $eol;
 
-                if (in_array($newspaper_name, $opencvPapers)) {
-
-                    if (!runOpenCV($filepath, $conn)) {
-                        $b = explode("/", $filepath);
-                        $filename = $b[count($b) - 1];
-                        mysqli_query($conn, "UPDATE Mobile_Lists SET Sending_Approved='No' WHERE Image_File_Name = '" . $filename . "'");
-                        mysqli_query($conn, "UPDATE Mobile_Lists_NON_Unique SET Sending_Approved='No' WHERE Image_File_Name = '" . $filename . "'");
-                        echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>OpenCV Completed. " . $filepath . " is not a classified page. Stopped Sending on numbers from this image" .  $eol;
-                    }
+                if (!runOpenCV($filepath, $conn)) {
+                    $b = explode("/", $filepath);
+                    $filename = $b[count($b) - 1];
+                    mysqli_query($conn, "UPDATE Mobile_Lists SET Sending_Approved='No' WHERE Image_File_Name = '" . $filename . "'");
+                    mysqli_query($conn, "UPDATE Mobile_Lists_NON_Unique SET Sending_Approved='No' WHERE Image_File_Name = '" . $filename . "'");
+                    echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>OpenCV Completed. " . $filepath . " is not a classified page. Stopped Sending on numbers from this image" .  $eol;
                 }
                 echo  $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "Insert query executed successfully......" . $eol;
             } else echo  $eol . date('Y-m-d H:i:s', (time() + (5.5 * 3600))) . "==> " . "No numbers left to insert";

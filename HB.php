@@ -31,7 +31,7 @@ if ($epapercode == "HB") {
         // }
 
         $code = $datecode[$edition];
-        $link = getHBeditionlink($cityarray[$edition], $dateForLinks, $citylinkcode[$edition], $code);
+        $link = getHBeditionlink($cityarray[$edition], $dateForLinks, $citycode[$edition], $code);
 
         if (!file_get_contents($link . $code, false, stream_context_create($arrContextOptions))) {
 
@@ -40,7 +40,7 @@ if ($epapercode == "HB") {
             for ($i = 40; $i < 300; $i++) {
 
                 $newcode = $code + $i;
-                $link = getHBeditionlink($cityarray[$edition], $dateForLinks, $citylinkcode[$edition], $newcode);
+                $link = getHBeditionlink($cityarray[$edition], $dateForLinks, $citycode[$edition], $newcode);
 
                 if (file_get_contents($link . $newcode, false, stream_context_create($arrContextOptions))) {
 

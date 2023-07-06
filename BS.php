@@ -6,7 +6,7 @@ if ($epapercode == "BS") {
     $originaldatecode = explode('/', $datecodearray[1])[0];
     $datecode = explode('/', $datecodearray[1])[0];
     $reqiredDate = date("Y-m-d", strtotime($filenamedate));
-    $datecode -= intval((time() - strtotime($filenamedate)) / (24 * 3600));
+    $datecode -= (time() - strtotime($filenamedate)) / (24 * 3600);
     $date = date("d-m-Y", strtotime($reqiredDate));
 
 
