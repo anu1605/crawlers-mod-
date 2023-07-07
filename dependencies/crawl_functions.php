@@ -740,17 +740,31 @@ function getdata($link)
 
 function writeImageWithCurl($url, $path)
 {
+    if (empty($url))
+        return;
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
     curl_setopt($ch, CURLOPT_URL, $url);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows;U;Windows NT 5.1;en-US) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.A.B.C Safari/525.13");
-    $data = curl_exec($ch);
-    if (strpos($data, "404 - File or directory not found."))
+    $image = curl_exec($ch);
+    if (strpos($image, "404 - File or directory not found."))
         return true;
 
+    if ($image === false) {
+        echo "Failed to get contents from URL: $url";
+        return;
+    }
+
     $handle = fopen($path, "w");
-    fwrite($handle, $data);
+
+    // If the fopen function fails, it returns FALSE
+    if ($handle === false) {
+        echo "Failed to open file at path: $path";
+        return;
+    }
+
+    fwrite($handle, $image);
     fclose($handle);
     curl_close($ch);
 }

@@ -11,39 +11,7 @@
 
 // file_put_contents(dirname(__FILE__) . "/test.txt",   $data);
 
-$url = "https://epaper.patrika.com/";  // Replace with the URL of the website you want to download
-$savePath = dirname(__FILE__) . "/test.txt";  // Replace with the desired save path and file name
+$cityarray = array("Bhind", "Bhopal", "Gwalior City", "Indore City", "jabalpur", "Ujjain", "Ajmer City", "Chittorgarh", "Jaipur City", "Jodhpur City", "Kota", "Udaipur City", "Bilaspur", "Raigarh", "Raipur City", "Ahmedabad", "Bangalore", "Chennai", "Coimbatore", "Hubli", "Kolkata", "New Delhi", "Surat", "Uttar Pradesh");
 
-// Initialize cURL
-$curl = curl_init();
-
-curl_setopt($curl, CURLOPT_TIMEOUT, 60);  // Set timeout to 60 seconds
-curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
-curl_setopt($curl, CURLOPT_USERAGENT, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.9999.99 Safari/537.36');
-curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, true);
-curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, 2);
-
-
-// Set the URL to fetch
-curl_setopt($curl, CURLOPT_URL, $url);
-
-// Set the option to return the response instead of outputting it directly
-curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-
-// Execute the cURL request
-$response = curl_exec($curl);
-
-// Check if the request was successful
-if ($response === false) {
-    echo 'Error: ' . curl_error($curl);
-    exit;
-}
-
-// Save the HTML content to a file
-// file_put_contents($savePath, $response);
-echo $response;
-
-// Close the cURL session
-curl_close($curl);
-
-echo 'HTML file downloaded and saved successfully.';
+$citycode = array("77", "64", "78", "85", "123", "95", "3", "14", "20", "23", "26", "52", "100", "105", "109", "55", "56", "58", "139", "57", "135", "59", "60", "117");
+echo "cityarray count=" . count($cityarray) . "  citycode count=" . count($citycode);

@@ -1,104 +1,9 @@
-
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=10">
-<title>Rajashthan Patrika ePaper:hindi</title>
-<meta property="og:title" content="Rajashthan Patrika ePaper:hindi" />
-<meta name="title" content="Rajashthan Patrika ePaper:hindi" />
-<meta name="keywords" content="Rajashthan Patrika ePaper -  Hindi Newspaper known for its Original and Fearless Journalism. Rajashthan Patrika ePaper: Hindi News Paper Rajashthan Patrika brings the Online Latest News in Hindi, Today Breaking News in Hindi from India and around the world. Click here to read daily Online ePaper now" />
-<meta name="news_keywords" content="Rajashthan Patrika ePaper -  Hindi Newspaper known for its Original and Fearless Journalism. Rajashthan Patrika ePaper: Hindi News Paper Rajashthan Patrika brings the Online Latest News in Hindi, Today Breaking News in Hindi from India and around the world. Click here to read daily Online ePaper now" />
-<meta property="og:image" content="https://epaper.patrika.com//img/sharelogo1.jpg" />
-<meta name="twitter:image" content="https://epaper.patrika.com//img/sharelogo1.jpg" />
-<meta itemprop="image" content="https://epaper.patrika.com//img/sharelogo1.jpg" />
-<meta name="twitter:description" content="epaper, Hindi news paper, Rajashthan Patrika epaper, hindi newspapers, newspaper online, hindi paper, hindi news epaper, hindi epaper, daily ePaper, online hindi newspaper, online ePaper, online hindi epaper, Rajashthan Patrika ePaper, Online ePaper, ePaper Online, Rajashthan Patrika Online ePaper, Today’s Epaper." />
-<meta name="description" content="Rajashthan Patrika ePaper -  Hindi Newspaper known for its Original and Fearless Journalism. Rajashthan Patrika ePaper: Hindi News Paper Rajashthan Patrika brings the Online Latest News in Hindi, Today Breaking News in Hindi from India and around the world. Click here to read daily Online ePaper now" />
-<meta name="twitter:card" content="summary_large_image">
-<meta property="og:type" content="website" />
-<meta name="twitter:title" content="Rajashthan Patrika ePaper" />
-<meta name="google-signin-client_id" content="870290111377-n85us7hfevlc6j7m7agmnaep1r7h0uko.apps.googleusercontent.com" />
-<link rel="manifest" href="/manifest.json">
-<link rel="icon shortcut icon" type="image/x-icon" href="https://epaper.patrika.com//img/logo/favicon.ico" />
-<link rel="stylesheet" type="text/css" href="https://epaper.patrika.com//Content/summit-icon.css?v=251" />
-<link href="https://epaper.patrika.com//Content/css251" rel="stylesheet" />
-<link href="https://epaper.patrika.com//Content/Layoutcss251" rel="stylesheet" />
-<link href="https://epaper.patrika.com//Content/webfontscss251" rel="stylesheet" />
-<link href="https://epaper.patrika.com//Content/loader.css?v=251" rel=" stylesheet" />
-<link href="https://epaper.patrika.com//client/theme.css" rel="stylesheet" type="text/css">
-<link href="https://epaper.patrika.com//client/custom_style.css" rel="stylesheet" type="text/css">
-<script language="JavaScript" type="7c82a3164a09f39da2c0c5f5-text/javascript">
-        //Global variables to be declared here to be used in .js files (razor variables)
-        var sam_APIBaseURL = '';
-        var IsTrackGA = '';
-        var PublicationNameConfig = 'Rajasthan Patrika';
-        var ClientCode = 'RP';
-        var EnableLazyLoad = 'false';
-        var GotoViewType = '2';
-        var CheckSubByPubId = 'true';
-        var UseDefaultLoginPage = 'true';
-        var ShouldUserSelectDefaultEdition = 'false';
-        var ShouldCheckForSubscriptionForStory = '';
-        var ShowLoginBeforePaywall = '';
-        var _isFree_paid = '1';
-    </script>
-<script src="https://epaper.patrika.com//bundles/jquery251" type="7c82a3164a09f39da2c0c5f5-text/javascript"></script>
-<script src="https://epaper.patrika.com//bundles/LayOutjs251" type="7c82a3164a09f39da2c0c5f5-text/javascript"></script>
-<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@400;500;700&display=swap" rel="stylesheet">
-
-<script src="/Js/SAM_base.js" type="7c82a3164a09f39da2c0c5f5-text/javascript"></script>
-<script type="7c82a3164a09f39da2c0c5f5-text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
-<link rel="manifest" href="/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
-<script type="7c82a3164a09f39da2c0c5f5-text/javascript"> 
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-ga('create', 'UA-5213306-2', 'auto'); ga('set', 'hostname', 'epaper.patrika.com');
-ga('send', 'pageview');
-</script>
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-H2C6VCJXH5" type="7c82a3164a09f39da2c0c5f5-text/javascript"></script><script type="7c82a3164a09f39da2c0c5f5-text/javascript">
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', 'G-H2C6VCJXH5');
-                </script>
-<script type="7c82a3164a09f39da2c0c5f5-text/javascript">
-    var _comscore = _comscore || [];
-    _comscore.push({ c1: "2", c2: "18075250" });
-    (function () {
-        var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
-        s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
-        el.parentNode.insertBefore(s, el);
-    })();
-  </script>
-<noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=18075250&cv=2.0&cj=1"/></noscript>
-<script type="7c82a3164a09f39da2c0c5f5-text/javascript">
-        const JSCONFIG = {
-            "base_url": "/",
-            "cdn_url": "https://epaper.patrika.com/",
-            "popup_edition_level":2,
-            "DefaultEdition": "20",
-            "loadPaywallPagesOnly": "false",
-            "Markup": 1,
-            "EnableArticleOnFullPage":1,
-            "IsPageImgArticle":0,
-            "EnabledViews": "1,2,3",
-            "Role": ""
-        }
-</script>
-</head>
-<body app-theme=theme-blue-rp>
+<body app-theme="theme-blue-rp">
 
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=xxxx"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-<div class="loader-overlay-bg" id="loader">
+<div class="loader-overlay-bg" id="loader" style="display: none;">
 <div class="overlay-content">
 <div class="cssload-jumping">
 <span></span>
@@ -110,7 +15,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 </div>
 
-<div id="gdpr">
+<div id="gdpr" style="display: none;">
 <div class="gdpr-inner">
 <div class="gdpr-container">
 <div class="gdpr-head">This website is using cookies. </div>
@@ -125,28 +30,24 @@ view cookie policy
 </div>
 </div>
 </div>
- 
-<div id="ContentFeedbackPopup" style="display: none;text-align: center;">
-<textarea id="UserFeedbackMessage" name="feedback" rows="6" cols="50" placeholder="Your Message/Feedback" style="resize: none; width: 100%;"></textarea>
-<input id="btn_SendFeedback" type="button" value="Send">
-<img id="WaitLoader" style="height:24px;visibility:hidden;" src="https://epaper.patrika.com///img//wait-sending.gif" />
-</div>
 
-<div class="app_root theme-day listview   " id="MainBody">
+
+
+<div class="app_root theme-day fullview" id="MainBody">
 <div class="fadeIn animated site-overlay"></div>
 <div id="toggleNavigationLeft" class="tm tm_left">
 <div class="tm_header">
-<img onclick="if (!window.__cfRLUnblockHandlers) return false; goDefaultView();" class=" logo" src="https://epaper.patrika.com//img/logo.png" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<img onclick="if (!window.__cfRLUnblockHandlers) return false; goDefaultView();" class=" logo" src="https://epaper.patrika.com//img/logo.png">
 <span class="close" id="close-btn-left">
 <i class="si si-cross"></i>
 </span>
 </div>
 <ul>
 <li>
-<a id="spanHomeId" href="javascript:void(0);">Home</a>
+<a id="spanHomeId" href="javascript:void(0);">HOME</a>
 </li>
 <li>
-<a id="ancrPopular" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; gotoActivity();" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">MOST POPULAR ARTICLES</a>
+<a id="ancrPopular" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; gotoActivity();">MOST POPULAR ARTICLE</a>
 </li>
 </ul>
 </div>
@@ -233,8 +134,8 @@ view cookie policy
 <div class="rp_date">
 <div class="heading">Thursday, Jul 06 2023 </div>
 </div>
-<div class="logo col-md-4 offset-md-4" onclick="if (!window.__cfRLUnblockHandlers) return false; goDefaultView();" style="cursor:pointer;" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
-<img src="https://epaper.patrika.com//img/logo/logo.png" />
+<div class="logo col-md-4 offset-md-4" onclick="if (!window.__cfRLUnblockHandlers) return false; goDefaultView();" style="cursor:pointer;">
+<img src="https://epaper.patrika.com//img/logo/logo.png">
 </div>
 <div class="ads_area_728X90">
 </div>
@@ -246,51 +147,30 @@ view cookie policy
             </style>
 <input type="hidden" id="hdnViewType" value="1">
 <input type="hidden" id="acticleImgView" value="0">
-<input type="hidden" id="IsSubUser" value="1" />
-<script src="https://epaper.patrika.com//bundles/articlejs251" type="7c82a3164a09f39da2c0c5f5-text/javascript"></script>
-<script src="https://epaper.patrika.com//bundles/socialshare251" type="7c82a3164a09f39da2c0c5f5-text/javascript"></script>
-<style>
-    .notifyjs-bootstrap-error {
-        color: #468847 !important;
-        background-color: #DFF0D8 !important;
-        border-color: #D6E9C6 !important;
-        background-image: none !important;
-        
-        /*background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFW…yql0VLzcGAZbYSM5CCSZg1/9oc/nn7+i8N9p/8An4JMADxhH+xHfuiKwAAAABJRU5ErkJggg==) !important;*/
-    }
-
-    /*ul#Ulproducts {
-        overflow-x: hidden;
-        overflow-y: hidden;
-        padding-left: 15px;
-    }*/
-</style>
-<script type="7c82a3164a09f39da2c0c5f5-text/javascript">
-            var windowW_ = $(window).width();
-            var windowH_ = $(window).height();
-            var OSystem = platform.os;
-            if (OSystem.family == "OS X") {
-                if (windowH_ > windowW_) {
-                    var httpURL = '/' + "Home/Iindex";
-                      window.location = httpURL;
-                  }
-            }
-       </script>
-<div class="sitecover">
+<input type="hidden" id="IsSubUser" value="1">
+<script src="https://epaper.patrika.com//Js/fullView.js?v=251" type="text/javascript"></script>
+<script src="https://epaper.patrika.com//Scripts/dragscroll.js" type="text/javascript"></script>
+<script src="https://epaper.patrika.com//Js/ShareArticle.js?v=251" type="text/javascript"></script>
+<script src="https://epaper.patrika.com//Scripts/owl.carousel.js" type="text/javascript"></script>
+<script src="https://epaper.patrika.com//Scripts/platform.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://epaper.patrika.com//bundles/imagecropJs-251"></script>
+<link href="https://epaper.patrika.com//Content/imagecropCss-251" rel="stylesheet">
+<link href="https://epaper.patrika.com//Content/CarouselCss-251" rel="stylesheet">
+<div class="sitecover right_verticle_ads" style="height: auto !important;">
 <div class="nav_action_bar" id="main_menu">
 <span class="sitemenu" id="toggle-sidebar-left">
 <i class="si si-menu"></i>
 </span>
 <ul class="list_one">
 <li>
-<span id="spanHomeIdMenu" class="home_label home_action action">Home</span>
+<span id="spanHomeIdMenu" class="home_label home_action action">HOME</span>
 <span class="logo_sm home_action action">
-<img src="https://epaper.patrika.com//img/logo/logo.png" />
+<img src="https://epaper.patrika.com//img/logo/logo.png">
 </span>
 </li>
 <li class="epaper-date">
-<div title="Change Date" id="calendar_date" class="action action_calender" onclick="if (!window.__cfRLUnblockHandlers) return false; ShowDatePopUp();" data-bs-toggle="tooltip" data-bs-placement="top" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
-<span id="spnDate"></span>&nbsp;
+<div id="calendar_date" class="action action_calender" onclick="if (!window.__cfRLUnblockHandlers) return false; ShowDatePopUp();" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Change Date">
+<span id="spnDate">July 06, 2023</span>&nbsp;
 <span>
 <i class="si si-calendar"></i>
 </span>
@@ -298,12 +178,12 @@ view cookie policy
 </li>
 <li class="issue-date">
 <div class="action action_calender">
-<select class="form-control" id="issueDates" onchange="if (!window.__cfRLUnblockHandlers) return false; getSelectedIssueData();" data-cf-modified-7c82a3164a09f39da2c0c5f5-=""></select>
+<select class="form-control" id="issueDates" onchange="if (!window.__cfRLUnblockHandlers) return false; getSelectedIssueData();"></select>
 </div>
 </li>
 <li>
-<div class="action action_editions" title="Edition" id="liEdition" onclick="if (!window.__cfRLUnblockHandlers) return false; ShowEditionList();" data-bs-toggle="tooltip" data-bs-placement="top" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
-<span id="span_Edition"></span>
+<div class="action action_editions" id="liEdition" onclick="if (!window.__cfRLUnblockHandlers) return false; ShowEditionList();" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Edition" data-bs-original-title="Edition">
+<span id="span_Edition">Bilaspur</span>
 <span id="span_Suplyment"></span>
 &nbsp;
 <span>
@@ -312,48 +192,48 @@ view cookie policy
 </div>
 </li>
 <li class="pagesdrop">
-<select class="action action_page selectpicker" title="Pages" id="ddl_Pages" data-bs-toggle="tooltip" data-bs-placement="top"></select>
+<select class="action action_page selectpicker" id="ddl_Pages" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Pages" data-bs-original-title="Pages"><optgroup label="Bilaspur"> </optgroup><option supplimentulitemname="Bilaspur" value="1035699" paywallpage="5" pic_org="8d4202b0" pub_id="1" highres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_01/54058ea9_01_mr.jpg" xhighres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_01/54058ea95924b8ce_01_hr.jpg" edid="100" edname="Bilaspur" pheight="1559" pwidth="992" serialno="0" sequence="5" pgno="1" data-bs-toggle="tooltip">1: PAGE</option><option supplimentulitemname="Bilaspur" value="1035692" paywallpage="5" pic_org="552cc0d1" pub_id="1" highres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_02/b5f65e7a_02_mr.jpg" xhighres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_02/b5f65e7a026dbfad_02_hr.jpg" edid="100" edname="Bilaspur" pheight="1559" pwidth="992" serialno="1" sequence="5" pgno="2" data-bs-toggle="tooltip">2: PAGE</option><option supplimentulitemname="Bilaspur" value="1035700" paywallpage="5" pic_org="75b974cc" pub_id="1" highres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_03/1cc4a06c_03_mr.jpg" xhighres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_03/1cc4a06c6bcfb485_03_hr.jpg" edid="100" edname="Bilaspur" pheight="1559" pwidth="992" serialno="2" sequence="5" pgno="3" data-bs-toggle="tooltip">3: PAGE</option><option supplimentulitemname="Bilaspur" value="1035693" paywallpage="5" pic_org="479f4c45" pub_id="1" highres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_04/fb3393e5_04_mr.jpg" xhighres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_04/fb3393e5c53fb503_04_hr.jpg" edid="100" edname="Bilaspur" pheight="1559" pwidth="992" serialno="3" sequence="5" pgno="4" data-bs-toggle="tooltip">4: PAGE</option><option supplimentulitemname="Bilaspur" value="1035694" paywallpage="5" pic_org="0241b78e" pub_id="1" highres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_05/f467f435_05_mr.jpg" xhighres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_05/f467f4355644da19_05_hr.jpg" edid="100" edname="Bilaspur" pheight="1559" pwidth="992" serialno="4" sequence="5" pgno="5" data-bs-toggle="tooltip">5: PAGE</option><option supplimentulitemname="Bilaspur" value="1035697" paywallpage="5" pic_org="8e1a883e" pub_id="1" highres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_06/c4737bf0_06_mr.jpg" xhighres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_06/c4737bf078b9fc50_06_hr.jpg" edid="100" edname="Bilaspur" pheight="1559" pwidth="992" serialno="5" sequence="5" pgno="6" data-bs-toggle="tooltip">6: PAGE</option><option supplimentulitemname="Bilaspur" value="1035696" paywallpage="5" pic_org="c2000ea3" pub_id="1" highres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_07/6e595536_07_mr.jpg" xhighres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_07/6e595536e51a44b5_07_hr.jpg" edid="100" edname="Bilaspur" pheight="1559" pwidth="992" serialno="6" sequence="5" pgno="7" data-bs-toggle="tooltip">7: PAGE</option><option supplimentulitemname="Bilaspur" value="1035695" paywallpage="5" pic_org="fec61fc9" pub_id="1" highres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_08/1a9ce4b8_08_mr.jpg" xhighres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_08/1a9ce4b83f947122_08_hr.jpg" edid="100" edname="Bilaspur" pheight="1559" pwidth="992" serialno="7" sequence="5" pgno="8" data-bs-toggle="tooltip">8: PAGE</option><option supplimentulitemname="Bilaspur" value="1035703" paywallpage="5" pic_org="a4d71a25" pub_id="1" highres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_09/a28365e8_09_mr.jpg" xhighres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_09/a28365e85f711914_09_hr.jpg" edid="100" edname="Bilaspur" pheight="1559" pwidth="992" serialno="8" sequence="5" pgno="9" data-bs-toggle="tooltip">9: PAGE</option><option supplimentulitemname="Bilaspur" value="1035704" paywallpage="5" pic_org="6e1c2691" pub_id="1" highres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_10/44929e48_10_mr.jpg" xhighres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_10/44929e48ad65c2d0_10_hr.jpg" edid="100" edname="Bilaspur" pheight="1559" pwidth="992" serialno="9" sequence="5" pgno="10" data-bs-toggle="tooltip">10: PAGE</option><option supplimentulitemname="Bilaspur" value="1035698" paywallpage="5" pic_org="ed9c2e5e" pub_id="1" highres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_11/96553f03_11_mr.jpg" xhighres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_11/96553f03f0147065_11_hr.jpg" edid="100" edname="Bilaspur" pheight="1559" pwidth="992" serialno="10" sequence="5" pgno="11" data-bs-toggle="tooltip">11: PAGE</option><option supplimentulitemname="Bilaspur" value="1035701" paywallpage="5" pic_org="2ef1c235" pub_id="1" highres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_12/2981a70d_12_mr.jpg" xhighres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_12/2981a70d7c654e09_12_hr.jpg" edid="100" edname="Bilaspur" pheight="1559" pwidth="992" serialno="11" sequence="5" pgno="12" data-bs-toggle="tooltip">12: PAGE</option><option supplimentulitemname="Bilaspur" value="1036144" paywallpage="5" pic_org="7ce01f94" pub_id="1" highres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_13/18a52385_13_mr.jpg" xhighres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_13/18a52385eab10424_13_hr.jpg" edid="100" edname="Bilaspur" pheight="1559" pwidth="992" serialno="12" sequence="5" pgno="13" data-bs-toggle="tooltip">13: PAGE</option><option supplimentulitemname="Bilaspur" value="1035702" paywallpage="5" pic_org="135f1581" pub_id="1" highres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_14/ffccee99_14_mr.jpg" xhighres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_14/ffccee9976832d65_14_hr.jpg" edid="100" edname="Bilaspur" pheight="1559" pwidth="992" serialno="13" sequence="5" pgno="14" data-bs-toggle="tooltip">14: PAGE</option></select>
 <span class="ic-pages">
 <i class="si si-pages"></i>
 </span>
 </li>
 <li>
-<span id="spn_cropbtn" class="ic ic_crop inactive" data-bs-toggle="tooltip" title="Crop and Share" data-bs-placement="top">
+<span id="spn_cropbtn" class="ic ic_crop inactive" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Crop and Share" data-bs-original-title="Crop and Share">
 <i class="si si-crop"></i>
 </span>
 </li>
 <li>
-<span class="action" id="span_Toggle" data-bs-toggle="tooltip" title="List All Pages" data-bs-placement="top">
+<span class="action" id="span_Toggle" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="List All Pages" data-bs-original-title="List All Pages">
 <span class="si si-menu-h"></span>
 </span>
 </li>
 <li>
-<div class="zoom_level_btn_box">
-<span class="action zoom_level" id="zoomLevel0" data-bs-toggle="tooltip" title="Zoom level zero" data-bs-placement="top">
+<div class="zoom_level_btn_box" style="display: flex;">
+<span class="action zoom_level" id="zoomLevel0" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Zoom level zero">
 <span class="si si-zoomout"><sup>0</sup></span>
 </span>
-<span class="action zoom_level" id="zoomLevel1" data-bs-toggle="tooltip" title="Zoom level one" data-bs-placement="top">
+<span class="action zoom_level" id="zoomLevel1" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Zoom level one">
 <span class="si si-zoomin"><sup>1</sup></span>
 </span>
-<span class="action zoom_level" id="zoomLevel2" data-bs-toggle="tooltip" title="Zoom level two" data-bs-placement="top">
+<span class="action zoom_level" id="zoomLevel2" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Zoom level two">
 <span class="si si-zoomin"><sup>2</sup></span>
- </span>
+</span>
 </div>
 </li>
 </ul>
 <ul class="list_two">
 <li class="li_fullscreen">
 <div class="action">
-<a id="linkFullscreen" title="Fullscreen View" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; fullScreenToggle();" data-bs-toggle="tooltip" data-bs-placement="top" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<a id="linkFullscreen" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; fullScreenToggle();" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Fullscreen View" data-bs-original-title="Fullscreen View">
 <span class="ic ic_magazine">
-<img src="https://epaper.patrika.com//img/mag_fullview.png" width="16" />
+<img src="https://epaper.patrika.com//img/mag_fullview.png" width="16">
 </span>
 </a>
 </div>
 </li>
 <li>
-<div class="action" onmouseover="if (!window.__cfRLUnblockHandlers) return false; PageView();" onmouseout="if (!window.__cfRLUnblockHandlers) return false; PageView();" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
-<a id="lnkhome" title="Page Thumb View" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; gotoIndex();" data-bs-toggle="tooltip" data-bs-placement="top" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<div class="action" onmouseover="if (!window.__cfRLUnblockHandlers) return false; PageView();" onmouseout="if (!window.__cfRLUnblockHandlers) return false; PageView();">
+<a id="lnkhome" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; gotoIndex();" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Page Thumb View" data-bs-original-title="Page Thumb View">
 <span class="ic ic_page_thumb_view">
 <i class="si si-thumbview"></i>
 </span>
@@ -361,8 +241,8 @@ view cookie policy
 </div>
 </li>
 <li>
-<div class="action" onmouseover="if (!window.__cfRLUnblockHandlers) return false; PageView();" onmouseout="if (!window.__cfRLUnblockHandlers) return false; PageView();" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
-<a id="lnkarticle" title="Page List View" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; gotoArticle();" data-bs-toggle="tooltip" data-bs-placement="top" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<div class="action" onmouseover="if (!window.__cfRLUnblockHandlers) return false; PageView();" onmouseout="if (!window.__cfRLUnblockHandlers) return false; PageView();">
+<a id="lnkarticle" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; gotoArticle();" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Page List View" data-bs-original-title="Page List View">
 <span class="ic ic_page_list_view">
 <i class="si si-articleview"></i>
 </span>
@@ -370,8 +250,8 @@ view cookie policy
 </div>
 </li>
 <li>
-<div class="action" onmouseover="if (!window.__cfRLUnblockHandlers) return false; PageView();" onmouseout="if (!window.__cfRLUnblockHandlers) return false; PageView();" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
-<a id="lnkfullview" title="Full View" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; gotoFullPg();" style="padding-top:0px" data-bs-toggle="tooltip" data-bs-placement="top" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<div class="action" onmouseover="if (!window.__cfRLUnblockHandlers) return false; PageView();" onmouseout="if (!window.__cfRLUnblockHandlers) return false; PageView();">
+<a id="lnkfullview" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; gotoFullPg();" style="padding-top: 0px; opacity: 0.2;" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Full View" data-bs-original-title="Full View">
 <span class="ic ic_page_list_view">
 <i class="si si-fullview"></i>
 </span>
@@ -388,7 +268,7 @@ view cookie policy
 </div>
 
 
-<ul class="mega-dropdown-menu" id="pageView" onmouseover="if (!window.__cfRLUnblockHandlers) return false; PageView();" onmouseout="if (!window.__cfRLUnblockHandlers) return false; PageView();" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<ul class="mega-dropdown-menu" id="pageView" onmouseover="if (!window.__cfRLUnblockHandlers) return false; PageView();" onmouseout="if (!window.__cfRLUnblockHandlers) return false; PageView();">
 <li>
 <div class="page_view_box">
 <div class="header">
@@ -397,13 +277,13 @@ view cookie policy
 </span>
 </div>
 <div class="body">
-<a href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; gotoIndex();" data-cf-modified-7c82a3164a09f39da2c0c5f5-=""><img src="https://epaper.patrika.com//img/thumbnailview.jpg" id="imgthumview" /></a>
-<p id="toggleViewThumbViewText">The Thumb View</p>
+<a href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; gotoIndex();"><img src="https://epaper.patrika.com//img/thumbnailview.jpg" id="imgthumview"></a>
+<p id="toggleViewThumbViewText">The Thumb View </p>
 </div>
 </div>
 <div class="checkbox">
 <label>
-<input type="checkbox" id="chkthumview" /> <span id="chk"> Don't show me again</span>
+<input type="checkbox" id="chkthumview"> <span id="chk">Dont show me again </span>
 </label>
 </div>
 </li>
@@ -415,8 +295,8 @@ view cookie policy
 </span>
 </div>
 <div class="body">
-<a href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; gotoArticle();" data-cf-modified-7c82a3164a09f39da2c0c5f5-=""><img src="https://epaper.patrika.com//img/listview.jpg" /></a>
-<p id="toggleViewPageListViewText">The Page List View</p>
+<a href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; gotoArticle();"><img src="https://epaper.patrika.com//img/listview.jpg"></a>
+<p id="toggleViewPageListViewText">The Page List View </p>
 </div>
 </div>
 </li>
@@ -424,94 +304,55 @@ view cookie policy
 <div class="page_view_box">
 <div class="header">
 <span>
- <i class="si si-fullview"></i>
+<i class="si si-fullview"></i>
 </span>
 </div>
 <div class="body">
-<a href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; gotoFullPg();" data-cf-modified-7c82a3164a09f39da2c0c5f5-=""><img src="https://epaper.patrika.com//img/fullview.jpg" /></a>
-<p id="toggleViewFullPageViewText">The Full Page View</p>
+<a href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; gotoFullPg();"><img src="https://epaper.patrika.com//img/fullview.jpg"></a>
+<p id="toggleViewFullPageViewText">The Full Page View </p>
 </div>
 </div>
 </li>
 </ul>
-<button id="back-to-top" role="button" class="btn btn-info back-to-top" title="Click to return on the top page">
+<button id="back-to-top" role="button" class="btn btn-info back-to-top" title="Click to return on the top page ">
 <span class="si si-chevron-up"></span>
 </button>
-<div id="divPopUpDate" title="Select Date" class="popup_body">
-<div id="datepicker"></div>
-</div>
-<div id="divPopUpMessage" style="display:none;" class="popup_body">
-<h3><span>No Page Found </span></h3>
-</div>
-<div id="divPopUpNormalMessage" style="display:none;" title="Message" class="popup_body">
-<h3><span> </span></h3>
-<button type="button" name="button" class="btn_custom btn_primary btn_custom_sm btn_custom_center" style="padding:3px;" onclick="if (!window.__cfRLUnblockHandlers) return false; (function () { location.href = BaseUrl + &quot;home/subscription&quot;; })();" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
-Subscribe now
-</button>
-</div>
-<div id="divSesssionPopUpMessage" title="Session" class="div-popup-message" style="display:none;">
-<h4><span id="span_sessionmessage">Session expired </span></h4>
-<div style="position: absolute;bottom: 0;right: 2px;"><span id="span_sessionErrorCode"></span></div>
-</div>
-<div id="divTrialPopUpMessage" class="popup_body" style="display:none;">
-</div>
 
 
-<div id="divTrialPopUpMessageC" class="popup_body" style="display:none;">
-</div>
+
+
+
+
+
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-<link href="https://epaper.patrika.com//Content/popup_edition_level2.css?v=251" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
+<link href="https://epaper.patrika.com//Content/popup_edition_level2.css?v=251" rel="stylesheet">
 <div class="modal ap_edition_model fade" id="popupEditionLevel2" tabindex="-1" role="dialog" aria-bs-labelledby="largeModal" aria-bs-hidden="true">
 <div class="modal-dialog modal-lg">
 <div class="modal-content">
 <div class="modal-header">
-<button type="button" class="close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+<button type="button" class="close" data-bs-dismiss="modal" aria-hidden="true">×</button>
 <h4 class="modal-title" id="myModalLabel">Select Editions</h4>
 </div>
 <div class="modal-body">
 <div class="edition_content">
 <div class="left_edition">
-<ul id="orgLocationsList">
-</ul>
+<ul id="orgLocationsList"><li><a href="javascript:void(0);" org-location="Madhya Pradesh">Madhya Pradesh</a></li><li><a href="javascript:void(0);" org-location="Rajasthan">Rajasthan</a></li><li class="active"><a href="javascript:void(0);" org-location="Chhatisgarh">Chhatisgarh</a></li><li><a href="javascript:void(0);" org-location="Metro City">Metro City</a></li><li><a href="javascript:void(0);" org-location="State Edition">State Edition</a></li><li><a href="javascript:void(0);" org-location="Magazine/Feature">Magazine/Feature</a></li></ul>
 </div>
-<div class="right_edition" id="editionLocationPanel">
-</div>
+<div class="right_edition" id="editionLocationPanel"><div class="pannel" org-location="Madhya Pradesh"><ul><li><a href="javascript:void(0)" edition-id="62" edition-name="Ashoknagar" publication-id="1">Ashoknagar</a></li><li><a href="javascript:void(0)" edition-id="84" edition-name="Badwani" publication-id="1">Badwani</a></li><li><a href="javascript:void(0)" edition-id="125" edition-name="Balaghat" publication-id="1">Balaghat</a></li><li><a href="javascript:void(0)" edition-id="69" edition-name="Betul" publication-id="1">Betul</a></li><li><a href="javascript:void(0)" edition-id="77" edition-name="Bhind" publication-id="1">Bhind</a></li><li><a href="javascript:void(0)" edition-id="64" edition-name="Bhopal" publication-id="1">Bhopal</a></li><li><a href="javascript:void(0)" edition-id="72" edition-name="Bina" publication-id="1">Bina</a></li><li><a href="javascript:void(0)" edition-id="118" edition-name="burahanpur" publication-id="1">burahanpur</a></li><li><a href="javascript:void(0)" edition-id="73" edition-name="Chhatarpur" publication-id="1">Chhatarpur</a></li><li><a href="javascript:void(0)" edition-id="126" edition-name="Chhindwara" publication-id="1">Chhindwara</a></li><li><a href="javascript:void(0)" edition-id="79" edition-name="Dabra" publication-id="1">Dabra</a></li><li><a href="javascript:void(0)" edition-id="75" edition-name="Damoh and Dak" publication-id="1">Damoh and Dak</a></li><li><a href="javascript:void(0)" edition-id="80" edition-name="Datia" publication-id="1">Datia</a></li><li><a href="javascript:void(0)" edition-id="87" edition-name="Dewas" publication-id="1">Dewas</a></li><li><a href="javascript:void(0)" edition-id="86" edition-name="Dhar" publication-id="1">Dhar</a></li><li><a href="javascript:void(0)" edition-id="65" edition-name="Guna" publication-id="1">Guna</a></li><li><a href="javascript:void(0)" edition-id="78" edition-name="Gwalior City" publication-id="1">Gwalior City</a></li><li><a href="javascript:void(0)" edition-id="71" edition-name="Harda" publication-id="1">Harda</a></li><li><a href="javascript:void(0)" edition-id="85" edition-name="Indore City" publication-id="1">Indore City</a></li><li><a href="javascript:void(0)" edition-id="161" edition-name="Itarsi" publication-id="1">Itarsi</a></li><li><a href="javascript:void(0)" edition-id="123" edition-name="jabalpur" publication-id="1">jabalpur</a></li><li><a href="javascript:void(0)" edition-id="88" edition-name="Jhabua, Alirajpur" publication-id="1">Jhabua, Alirajpur</a></li><li><a href="javascript:void(0)" edition-id="124" edition-name="katni" publication-id="1">katni</a></li><li><a href="javascript:void(0)" edition-id="119" edition-name="khandwa" publication-id="1">khandwa</a></li><li><a href="javascript:void(0)" edition-id="120" edition-name="khargon" publication-id="1">khargon</a></li><li><a href="javascript:void(0)" edition-id="131" edition-name="Mandla" publication-id="1">Mandla</a></li><li><a href="javascript:void(0)" edition-id="90" edition-name="Mandsaur" publication-id="1">Mandsaur</a></li><li><a href="javascript:void(0)" edition-id="89" edition-name="Mhow, Peethampur" publication-id="1">Mhow, Peethampur</a></li><li><a href="javascript:void(0)" edition-id="81" edition-name="Morena" publication-id="1">Morena</a></li><li><a href="javascript:void(0)" edition-id="91" edition-name="Nagda" publication-id="1">Nagda</a></li><li><a href="javascript:void(0)" edition-id="70" edition-name="Narmadapuram (Hosangabad)" publication-id="1">Narmadapuram (Hosangabad)</a></li><li><a href="javascript:void(0)" edition-id="132" edition-name="Narsinghpur" publication-id="1">Narsinghpur</a></li><li><a href="javascript:void(0)" edition-id="92" edition-name="Neemuch" publication-id="1">Neemuch</a></li><li><a href="javascript:void(0)" edition-id="133" edition-name="Panna" publication-id="1">Panna</a></li><li><a href="javascript:void(0)" edition-id="66" edition-name="Raisen" publication-id="1">Raisen</a></li><li><a href="javascript:void(0)" edition-id="63" edition-name="Rajgad" publication-id="1">Rajgad</a></li><li><a href="javascript:void(0)" edition-id="93" edition-name="Ratlam" publication-id="1">Ratlam</a></li><li><a href="javascript:void(0)" edition-id="129" edition-name="Rewa" publication-id="1">Rewa</a></li><li><a href="javascript:void(0)" edition-id="74" edition-name="Sagar City" publication-id="1">Sagar City</a></li><li><a href="javascript:void(0)" edition-id="128" edition-name="Satna" publication-id="1">Satna</a></li><li><a href="javascript:void(0)" edition-id="67" edition-name="Sehore" publication-id="1">Sehore</a></li><li><a href="javascript:void(0)" edition-id="155" edition-name="Seoni" publication-id="1">Seoni</a></li><li><a href="javascript:void(0)" edition-id="127" edition-name="Shahdol" publication-id="1">Shahdol</a></li><li><a href="javascript:void(0)" edition-id="94" edition-name="Shajapur" publication-id="1">Shajapur</a></li><li><a href="javascript:void(0)" edition-id="83" edition-name="Sheopur" publication-id="1">Sheopur</a></li><li><a href="javascript:void(0)" edition-id="82" edition-name="Shivpuri" publication-id="1">Shivpuri</a></li><li><a href="javascript:void(0)" edition-id="130" edition-name="Sidhisingrauli" publication-id="1">Sidhisingrauli</a></li><li><a href="javascript:void(0)" edition-id="162" edition-name="Singrauli" publication-id="1">Singrauli</a></li><li><a href="javascript:void(0)" edition-id="76" edition-name="Tikamgarh" publication-id="1">Tikamgarh</a></li><li><a href="javascript:void(0)" edition-id="95" edition-name="Ujjain" publication-id="1">Ujjain</a></li><li><a href="javascript:void(0)" edition-id="68" edition-name="Vidisha" publication-id="1">Vidisha</a></li></ul></div><div class="pannel" org-location="Rajasthan"><ul><li><a href="javascript:void(0)" edition-id="31" edition-name="Aburoad" publication-id="1">Aburoad</a></li><li><a href="javascript:void(0)" edition-id="3" edition-name="Ajmer City" publication-id="1">Ajmer City</a></li><li><a href="javascript:void(0)" edition-id="136" edition-name="Alwar" publication-id="1">Alwar</a></li><li><a href="javascript:void(0)" edition-id="137" edition-name="Alwar Zila" publication-id="1">Alwar Zila</a></li><li><a href="javascript:void(0)" edition-id="10" edition-name="Balotra" publication-id="1">Balotra</a></li><li><a href="javascript:void(0)" edition-id="6" edition-name="Banswara" publication-id="1">Banswara</a></li><li><a href="javascript:void(0)" edition-id="11" edition-name="Barmer City" publication-id="1">Barmer City</a></li><li><a href="javascript:void(0)" edition-id="27" edition-name="Barna" publication-id="1">Barna</a></li><li><a href="javascript:void(0)" edition-id="46" edition-name="Bassi" publication-id="1">Bassi</a></li><li><a href="javascript:void(0)" edition-id="2" edition-name="Beawer" publication-id="1">Beawer</a></li><li><a href="javascript:void(0)" edition-id="159" edition-name="Bhartpur City" publication-id="1">Bhartpur City</a></li><li><a href="javascript:void(0)" edition-id="138" edition-name="Bhartpur Zila" publication-id="1">Bhartpur Zila</a></li><li><a href="javascript:void(0)" edition-id="13" edition-name="Bhilwara" publication-id="1">Bhilwara</a></li><li><a href="javascript:void(0)" edition-id="141" edition-name="Bhiwadi" publication-id="1">Bhiwadi</a></li><li><a href="javascript:void(0)" edition-id="17" edition-name="Bikaner City" publication-id="1">Bikaner City</a></li><li><a href="javascript:void(0)" edition-id="18" edition-name="Bikaner Zila" publication-id="1">Bikaner Zila</a></li><li><a href="javascript:void(0)" edition-id="28" edition-name="Bundi" publication-id="1">Bundi</a></li><li><a href="javascript:void(0)" edition-id="14" edition-name="Chittorgarh" publication-id="1">Chittorgarh</a></li><li><a href="javascript:void(0)" edition-id="47" edition-name="Chomu" publication-id="1">Chomu</a></li><li><a href="javascript:void(0)" edition-id="43" edition-name="Churu" publication-id="1">Churu</a></li><li><a href="javascript:void(0)" edition-id="48" edition-name="Dausa" publication-id="1">Dausa</a></li><li><a href="javascript:void(0)" edition-id="142" edition-name="Dholpur" publication-id="1">Dholpur</a></li><li><a href="javascript:void(0)" edition-id="49" edition-name="Dudu" publication-id="1">Dudu</a></li><li><a href="javascript:void(0)" edition-id="8" edition-name="Dungarpur" publication-id="1">Dungarpur</a></li><li><a href="javascript:void(0)" edition-id="7" edition-name="Gangapur City" publication-id="1">Gangapur City</a></li><li><a href="javascript:void(0)" edition-id="41" edition-name="Hanumangarh City" publication-id="1">Hanumangarh City</a></li><li><a href="javascript:void(0)" edition-id="42" edition-name="Hanumangarh Zila" publication-id="1">Hanumangarh Zila</a></li><li><a href="javascript:void(0)" edition-id="20" edition-name="Jaipur City" publication-id="1">Jaipur City</a></li><li><a href="javascript:void(0)" edition-id="12" edition-name="Jaisalmer" publication-id="1">Jaisalmer</a></li><li><a href="javascript:void(0)" edition-id="34" edition-name="Jalore" publication-id="1">Jalore</a></li><li><a href="javascript:void(0)" edition-id="29" edition-name="Jhalawar" publication-id="1">Jhalawar</a></li><li><a href="javascript:void(0)" edition-id="45" edition-name="Jhunjhunu" publication-id="1">Jhunjhunu</a></li><li><a href="javascript:void(0)" edition-id="156" edition-name="Jhunjhunu City" publication-id="1">Jhunjhunu City</a></li><li><a href="javascript:void(0)" edition-id="24" edition-name="Jodhana" publication-id="1">Jodhana</a></li><li><a href="javascript:void(0)" edition-id="23" edition-name="Jodhpur City" publication-id="1">Jodhpur City</a></li><li><a href="javascript:void(0)" edition-id="122" edition-name="Karoli" publication-id="1">Karoli</a></li><li><a href="javascript:void(0)" edition-id="4" edition-name="Kishangarh" publication-id="1">Kishangarh</a></li><li><a href="javascript:void(0)" edition-id="26" edition-name="Kota" publication-id="1">Kota</a></li><li><a href="javascript:void(0)" edition-id="30" edition-name="Kota Gramin" publication-id="1">Kota Gramin</a></li><li><a href="javascript:void(0)" edition-id="50" edition-name="Kotputli" publication-id="1">Kotputli</a></li><li><a href="javascript:void(0)" edition-id="5" edition-name="Kuchaman" publication-id="1">Kuchaman</a></li><li><a href="javascript:void(0)" edition-id="154" edition-name="Merta " publication-id="1">Merta </a></li><li><a href="javascript:void(0)" edition-id="25" edition-name="Nagaur" publication-id="1">Nagaur</a></li><li><a href="javascript:void(0)" edition-id="157" edition-name="Neemrana Behror" publication-id="1">Neemrana Behror</a></li><li><a href="javascript:void(0)" edition-id="36" edition-name="Pali City" publication-id="1">Pali City</a></li><li><a href="javascript:void(0)" edition-id="35" edition-name="Pali Gramin" publication-id="1">Pali Gramin</a></li><li><a href="javascript:void(0)" edition-id="15" edition-name="Partapgarh" publication-id="1">Partapgarh</a></li><li><a href="javascript:void(0)" edition-id="54" edition-name="Rajsamand" publication-id="1">Rajsamand</a></li><li><a href="javascript:void(0)" edition-id="121" edition-name="Sawaimadhopur" publication-id="1">Sawaimadhopur</a></li><li><a href="javascript:void(0)" edition-id="40" edition-name="Shri Ganganagar City" publication-id="1">Shri Ganganagar City</a></li><li><a href="javascript:void(0)" edition-id="39" edition-name="Shri Ganganagar Zila" publication-id="1">Shri Ganganagar Zila</a></li><li><a href="javascript:void(0)" edition-id="44" edition-name="Sikar City" publication-id="1">Sikar City</a></li><li><a href="javascript:void(0)" edition-id="160" edition-name="Sikar ZIla" publication-id="1">Sikar ZIla</a></li><li><a href="javascript:void(0)" edition-id="37" edition-name="Sirohi" publication-id="1">Sirohi</a></li><li><a href="javascript:void(0)" edition-id="33" edition-name="Sumerpur-Shivgang" publication-id="1">Sumerpur-Shivgang</a></li><li><a href="javascript:void(0)" edition-id="51" edition-name="Tonk" publication-id="1">Tonk</a></li><li><a href="javascript:void(0)" edition-id="52" edition-name="Udaipur City" publication-id="1">Udaipur City</a></li><li><a href="javascript:void(0)" edition-id="53" edition-name="Udaipur Zila" publication-id="1">Udaipur Zila</a></li></ul></div><div class="pannel active" org-location="Chhatisgarh"><ul><li><a href="javascript:void(0)" edition-id="99" edition-name="Ambikapur" publication-id="1">Ambikapur</a></li><li><a href="javascript:void(0)" edition-id="106" edition-name="Baloda" publication-id="1">Baloda</a></li><li><a href="javascript:void(0)" edition-id="108" edition-name="Bemetara" publication-id="1">Bemetara</a></li><li><a href="javascript:void(0)" edition-id="107" edition-name="Bhilai" publication-id="1">Bhilai</a></li><li><a href="javascript:void(0)" edition-id="100" edition-name="Bilaspur" publication-id="1" class="active">Bilaspur</a></li><li><a href="javascript:void(0)" edition-id="97" edition-name="Dantewada" publication-id="1">Dantewada</a></li><li><a href="javascript:void(0)" edition-id="111" edition-name="Dhamtari" publication-id="1">Dhamtari</a></li><li><a href="javascript:void(0)" edition-id="112" edition-name="Durg" publication-id="1">Durg</a></li><li><a href="javascript:void(0)" edition-id="96" edition-name="Jagdalpur" publication-id="1">Jagdalpur</a></li><li><a href="javascript:void(0)" edition-id="101" edition-name="Janjgir-Champa" publication-id="1">Janjgir-Champa</a></li><li><a href="javascript:void(0)" edition-id="102" edition-name="Jashpur" publication-id="1">Jashpur</a></li><li><a href="javascript:void(0)" edition-id="113" edition-name="Kanker" publication-id="1">Kanker</a></li><li><a href="javascript:void(0)" edition-id="114" edition-name="Kawardha" publication-id="1">Kawardha</a></li><li><a href="javascript:void(0)" edition-id="98" edition-name="Kondagaon" publication-id="1">Kondagaon</a></li><li><a href="javascript:void(0)" edition-id="104" edition-name="Korba" publication-id="1">Korba</a></li><li><a href="javascript:void(0)" edition-id="103" edition-name="Koriya" publication-id="1">Koriya</a></li><li><a href="javascript:void(0)" edition-id="115" edition-name="Mahasamund" publication-id="1">Mahasamund</a></li><li><a href="javascript:void(0)" edition-id="105" edition-name="Raigarh" publication-id="1">Raigarh</a></li><li><a href="javascript:void(0)" edition-id="109" edition-name="Raipur City" publication-id="1">Raipur City</a></li><li><a href="javascript:void(0)" edition-id="110" edition-name="Raipur Zila" publication-id="1">Raipur Zila</a></li><li><a href="javascript:void(0)" edition-id="116" edition-name="Rajnandgaon" publication-id="1">Rajnandgaon</a></li></ul></div><div class="pannel" org-location="Metro City"><ul><li><a href="javascript:void(0)" edition-id="55" edition-name="Ahmedabad" publication-id="1">Ahmedabad</a></li><li><a href="javascript:void(0)" edition-id="56" edition-name="Bangalore" publication-id="1">Bangalore</a></li><li><a href="javascript:void(0)" edition-id="58" edition-name="Chennai" publication-id="1">Chennai</a></li><li><a href="javascript:void(0)" edition-id="139" edition-name="Coimbatore" publication-id="1">Coimbatore</a></li><li><a href="javascript:void(0)" edition-id="57" edition-name="Hubli" publication-id="1">Hubli</a></li><li><a href="javascript:void(0)" edition-id="135" edition-name="Kolkata" publication-id="1">Kolkata</a></li><li><a href="javascript:void(0)" edition-id="59" edition-name="New Delhi" publication-id="1">New Delhi</a></li><li><a href="javascript:void(0)" edition-id="60" edition-name="Surat" publication-id="1">Surat</a></li><li><a href="javascript:void(0)" edition-id="140" edition-name="Vapi" publication-id="1">Vapi</a></li></ul></div><div class="pannel" org-location="State Edition"><ul><li><a href="javascript:void(0)" edition-id="61" edition-name="Madhya Pradesh+Chhattisgarh" publication-id="1">Madhya Pradesh+Chhattisgarh</a></li><li><a href="javascript:void(0)" edition-id="38" edition-name="Rajasthan" publication-id="1">Rajasthan</a></li><li><a href="javascript:void(0)" edition-id="117" edition-name="Uttar Pradesh" publication-id="1">Uttar Pradesh</a></li></ul></div><div class="pannel" org-location="Magazine/Feature"><ul><li><a href="javascript:void(0)" edition-id="152" edition-name="Brain Power" publication-id="1">Brain Power</a></li><li><a href="javascript:void(0)" edition-id="158" edition-name="CineWeb" publication-id="1">CineWeb</a></li><li><a href="javascript:void(0)" edition-id="149" edition-name="Health" publication-id="1">Health</a></li><li><a href="javascript:void(0)" edition-id="150" edition-name="MeNext" publication-id="1">MeNext</a></li><li><a href="javascript:void(0)" edition-id="147" edition-name="Pariwar" publication-id="1">Pariwar</a></li><li><a href="javascript:void(0)" edition-id="153" edition-name="She News Digital Edition" publication-id="1">She News Digital Edition</a></li></ul></div></div>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div id="divChangePwd" title="Change Password" class="popup_body" style="display:none;">
-<div id="divChangePwdmsg" class="alert alert-success">
-<strong></strong>
-</div>
-<div class="form-group">
-<input class="form-control" title="Enter Password" type="password" id="fPassword" placeholder="Enter Password" />
-</div>
-<div class="form-group">
-<input class="form-control" title="New Password" type="password" id="fnPassword" placeholder="New Password" />
-</div>
-<div class="form-group">
-<input class="form-control" title="Confirm Password" type="password" id="fncPassword" placeholder="Confirm Password" />
-</div>
-<button class="btn_custom btn_primary btn_custom_sm btn_custom_center" type="button" id="btnChangePwd" onclick="if (!window.__cfRLUnblockHandlers) return false; ChnagePassword();" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
-<span id="divChangeChangePasswordBtnTitle">Change Password</span>
-</button>
-</div>
-<div id="IndexPagePopUp" style="display:none" class="popup_body1"></div>
-<div id="pageCount" style="display:none;" class="popup_body">
-<div id="div_Message"></div>
-<button class="btn_custom btn_primary btn_custom_sm btn_custom_center" type="button" id="btnOk" onclick="if (!window.__cfRLUnblockHandlers) return false; okButtonClick();" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
-<span>Ok</span>
-</button>
-</div>
-<div id="divGiftCardMessagePopUp" title="GiftCardMessage" class="div-popup-message" style="display:none;">
-<iframe id="giftcardiframe" src="" height="200" width="600" title="Iframe GiftCard"></iframe>
-</div>
-<script async type="7c82a3164a09f39da2c0c5f5-text/javascript">
+
+
+
+
+<script async="" type="text/javascript">
     _isFree_paid = '1';
     var publication = '1';
     var Plan_Details = '1';
@@ -580,263 +421,118 @@ Subscribe now
 
     });
 </script>
+<div class="ep_pg_thumbnails" id="fullPagemenu">
+<div id="owlCarouselThumb" class="owlcarousel_thumb_bx">
+<div id="div_owlclose" class="close_thumb_icon"><span class="ic ic_close"><i class="si si-cross clr-white"></i></span></div>
+<div class="menu_pages">
+<ul id="SupplimentUl" class="nav nav-tabs">
+<li class="nav-item active"><a class="nav-link" data-toggle="tab" href="#Suppliment_Bilaspur">Bilaspur</a></li></ul>
+</div>
+<div class="tab-content" id="PagelistTab"><div class="tab-pane active" id="Suppliment_Bilaspur"><div class="owlcarousel_thumb_bx"><div class="owl-carousel owl-theme Pagelist owl-loaded"><div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 420px;"><div class="owl-item active" style="width: auto; margin-right: 15px;"><div class="item selected"><span class="item_pg_no"><span>1</span></span><img highres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_01/54058ea9_01_mr.jpg" xhighres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_01/54058ea95924b8ce_01_hr.jpg" src="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_01/54058ea9_01_tn.jpg" page_id="1035699" pheight="1559" pwidth="992" pageimageheight="2000" pageimagewidth="1273" pageno="0" realpage_no="1" pagename="PAGE" doublepage="0" locationid="0" parentsupplimentid="#Suppliment_Bilaspur" style="opacity: 1;"><p class="imgTitleBelow">1: PAGE</p></div></div><div class="owl-item" style="width: auto; margin-right: 15px;"><div class="item"><span class="item_pg_no"><span>2</span></span><img highres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_02/b5f65e7a_02_mr.jpg" xhighres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_02/b5f65e7a026dbfad_02_hr.jpg" src="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_02/b5f65e7a_02_tn.jpg" page_id="1035692" pheight="1559" pwidth="992" pageimageheight="2000" pageimagewidth="1273" pageno="1" realpage_no="2" pagename="PAGE" doublepage="0" locationid="0" parentsupplimentid="#Suppliment_Bilaspur" style="opacity: 1;"><p class="imgTitleBelow">2: PAGE</p></div></div><div class="owl-item" style="width: auto; margin-right: 15px;"><div class="item"><span class="item_pg_no"><span>3</span></span><img highres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_03/1cc4a06c_03_mr.jpg" xhighres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_03/1cc4a06c6bcfb485_03_hr.jpg" src="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_03/1cc4a06c_03_tn.jpg" page_id="1035700" pheight="1559" pwidth="992" pageimageheight="2000" pageimagewidth="1273" pageno="2" realpage_no="3" pagename="PAGE" doublepage="0" locationid="0" parentsupplimentid="#Suppliment_Bilaspur" style="opacity: 1;"><p class="imgTitleBelow">3: PAGE</p></div></div><div class="owl-item" style="width: auto; margin-right: 15px;"><div class="item"><span class="item_pg_no"><span>4</span></span><img highres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_04/fb3393e5_04_mr.jpg" xhighres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_04/fb3393e5c53fb503_04_hr.jpg" src="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_04/fb3393e5_04_tn.jpg" page_id="1035693" pheight="1559" pwidth="992" pageimageheight="2000" pageimagewidth="1273" pageno="3" realpage_no="4" pagename="PAGE" doublepage="0" locationid="0" parentsupplimentid="#Suppliment_Bilaspur" style="opacity: 1;"><p class="imgTitleBelow">4: PAGE</p></div></div><div class="owl-item" style="width: auto; margin-right: 15px;"><div class="item"><span class="item_pg_no"><span>5</span></span><img highres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_05/f467f435_05_mr.jpg" xhighres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_05/f467f4355644da19_05_hr.jpg" src="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_05/f467f435_05_tn.jpg" page_id="1035694" pheight="1559" pwidth="992" pageimageheight="2000" pageimagewidth="1273" pageno="4" realpage_no="5" pagename="PAGE" doublepage="0" locationid="0" parentsupplimentid="#Suppliment_Bilaspur" style="opacity: 1;"><p class="imgTitleBelow">5: PAGE</p></div></div><div class="owl-item" style="width: auto; margin-right: 15px;"><div class="item"><span class="item_pg_no"><span>6</span></span><img highres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_06/c4737bf0_06_mr.jpg" xhighres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_06/c4737bf078b9fc50_06_hr.jpg" src="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_06/c4737bf0_06_tn.jpg" page_id="1035697" pheight="1559" pwidth="992" pageimageheight="2000" pageimagewidth="1273" pageno="5" realpage_no="6" pagename="PAGE" doublepage="0" locationid="0" parentsupplimentid="#Suppliment_Bilaspur" style="opacity: 1;"><p class="imgTitleBelow">6: PAGE</p></div></div><div class="owl-item" style="width: auto; margin-right: 15px;"><div class="item"><span class="item_pg_no"><span>7</span></span><img highres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_07/6e595536_07_mr.jpg" xhighres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_07/6e595536e51a44b5_07_hr.jpg" src="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_07/6e595536_07_tn.jpg" page_id="1035696" pheight="1559" pwidth="992" pageimageheight="2000" pageimagewidth="1273" pageno="6" realpage_no="7" pagename="PAGE" doublepage="0" locationid="0" parentsupplimentid="#Suppliment_Bilaspur" style="opacity: 1;"><p class="imgTitleBelow">7: PAGE</p></div></div><div class="owl-item" style="width: auto; margin-right: 15px;"><div class="item"><span class="item_pg_no"><span>8</span></span><img highres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_08/1a9ce4b8_08_mr.jpg" xhighres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_08/1a9ce4b83f947122_08_hr.jpg" src="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_08/1a9ce4b8_08_tn.jpg" page_id="1035695" pheight="1559" pwidth="992" pageimageheight="2000" pageimagewidth="1273" pageno="7" realpage_no="8" pagename="PAGE" doublepage="0" locationid="0" parentsupplimentid="#Suppliment_Bilaspur" style="opacity: 1;"><p class="imgTitleBelow">8: PAGE</p></div></div><div class="owl-item" style="width: auto; margin-right: 15px;"><div class="item"><span class="item_pg_no"><span>9</span></span><img highres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_09/a28365e8_09_mr.jpg" xhighres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_09/a28365e85f711914_09_hr.jpg" src="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_09/a28365e8_09_tn.jpg" page_id="1035703" pheight="1559" pwidth="992" pageimageheight="2000" pageimagewidth="1273" pageno="8" realpage_no="9" pagename="PAGE" doublepage="0" locationid="0" parentsupplimentid="#Suppliment_Bilaspur" style="opacity: 1;"><p class="imgTitleBelow">9: PAGE</p></div></div><div class="owl-item" style="width: auto; margin-right: 15px;"><div class="item"><span class="item_pg_no"><span>10</span></span><img highres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_10/44929e48_10_mr.jpg" xhighres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_10/44929e48ad65c2d0_10_hr.jpg" src="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_10/44929e48_10_tn.jpg" page_id="1035704" pheight="1559" pwidth="992" pageimageheight="2000" pageimagewidth="1273" pageno="9" realpage_no="10" pagename="PAGE" doublepage="0" locationid="0" parentsupplimentid="#Suppliment_Bilaspur" style="opacity: 1;"><p class="imgTitleBelow">10: PAGE</p></div></div><div class="owl-item" style="width: auto; margin-right: 15px;"><div class="item"><span class="item_pg_no"><span>11</span></span><img highres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_11/96553f03_11_mr.jpg" xhighres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_11/96553f03f0147065_11_hr.jpg" src="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_11/96553f03_11_tn.jpg" page_id="1035698" pheight="1559" pwidth="992" pageimageheight="2000" pageimagewidth="1273" pageno="10" realpage_no="11" pagename="PAGE" doublepage="0" locationid="0" parentsupplimentid="#Suppliment_Bilaspur" style="opacity: 1;"><p class="imgTitleBelow">11: PAGE</p></div></div><div class="owl-item" style="width: auto; margin-right: 15px;"><div class="item"><span class="item_pg_no"><span>12</span></span><img highres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_12/2981a70d_12_mr.jpg" xhighres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_12/2981a70d7c654e09_12_hr.jpg" src="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_12/2981a70d_12_tn.jpg" page_id="1035701" pheight="1559" pwidth="992" pageimageheight="2000" pageimagewidth="1273" pageno="11" realpage_no="12" pagename="PAGE" doublepage="0" locationid="0" parentsupplimentid="#Suppliment_Bilaspur" style="opacity: 1;"><p class="imgTitleBelow">12: PAGE</p></div></div><div class="owl-item" style="width: auto; margin-right: 15px;"><div class="item"><span class="item_pg_no"><span>13</span></span><img highres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_13/18a52385_13_mr.jpg" xhighres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_13/18a52385eab10424_13_hr.jpg" src="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_13/18a52385_13_tn.jpg" page_id="1036144" pheight="1559" pwidth="992" pageimageheight="2000" pageimagewidth="1273" pageno="12" realpage_no="13" pagename="PAGE" doublepage="0" locationid="0" parentsupplimentid="#Suppliment_Bilaspur" style="opacity: 1;"><p class="imgTitleBelow">13: PAGE</p></div></div><div class="owl-item" style="width: auto; margin-right: 15px;"><div class="item"><span class="item_pg_no"><span>14</span></span><img highres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_14/ffccee99_14_mr.jpg" xhighres="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_14/ffccee9976832d65_14_hr.jpg" src="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_14/ffccee99_14_tn.jpg" page_id="1035702" pheight="1559" pwidth="992" pageimageheight="2000" pageimagewidth="1273" pageno="13" realpage_no="14" pagename="PAGE" doublepage="0" locationid="0" parentsupplimentid="#Suppliment_Bilaspur" style="opacity: 1;"><p class="imgTitleBelow">14: PAGE</p></div></div></div></div><div class="owl-nav"><div class="owl-prev disabled"><span class="ic ic_oc_prev"><i class="si si-arrow-left clr-white"></i></span></div><div class="owl-next"><span class="ic ic_oc_next"><i class="si si-arrow-right clr-white"></i></span></div></div><div class="owl-dots disabled"></div></div></div></div></div>
+</div>
+</div>
+<input type="hidden" id="leftside_ads" value="0">
 <div class="pagecontent">
-<div class="epaper-content listview_section hide_product_panel">
-
-<style>
-
-    ul#Ulproducts {
-        /* height: 900px; */
-        height: 1093px;
-        overflow-x: hidden;
-        overflow-y: auto;
-        padding-left: 15px;
-        list-style: none;
-        margin-top: 5px;
-        margin-bottom: 0;
-    }
-    #Ulproducts li {
-       display:inline-block;
-    }
-        #Ulproducts li img {
-            width: 100px;
-            height: auto;
-        }
-</style>
-<link href="https://epaper.patrika.com//Content/PageThumbSidebar251" rel="stylesheet" />
-<div class="col_sidebar page_thumb_panel">
-<span class="collapse_product_panel" onclick="if (!window.__cfRLUnblockHandlers) return false; pageThumbPanelCollapse();" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
-<img src="https://epaper.patrika.com//img/chevron_left.png" />
-</span>
-<div class="accordian" id="cssmenu">
-<ul id="UlPages"></ul>
+<div class="prev" id="Prev_Page" onclick="if (!window.__cfRLUnblockHandlers) return false; PreviouPage();" style="display: none;">
+<i class="si si-chevron-left"></i>
 </div>
+<div class="next" id="Next_Page" onclick="if (!window.__cfRLUnblockHandlers) return false; NextPage();">
+<i class="si si-chevron-right"></i>
 </div>
-
-<div class="col_img">
-<div class="social_share_box_Container ">
+<div id="ImageContainer" class="fullpage_img_bx zoomin" title="Double click to zoom level 1" w="1329" h="2088.6199596774195" style="width: 1329px; height: 2088.62px;">
+<div class="cnt_img_bx image_layer dragscroll" id="ImageContainerDiv">
+<img class="img_jpg" id="imgmain1" pic_org="135f1581" src="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_01/54058ea9_01.jpg" style="display: block;">
+<img class="img_png" id="imgmain2">
+<img id="my-cropped-image" src="" clipid="" pic_org="" style="display:none">
+<div curstory="0" pageid="1035699" objtype="2" contenttype="0" storyid="10469930" orgid="67250840ea" class="pagerectangle" autozoom="false" autorotate="false" onmouseover="mouseOver(event,this)" onmouseout="mouseOut(event,this)" style="top: 79px; left: 56px; width: 1198px; height: 545px; cursor: pointer; z-index: 5; background-color: rgba(255, 0, 0, 0);"></div><div curstory="1" pageid="1035699" objtype="2" contenttype="0" storyid="10469931" orgid="67389d4667" class="pagerectangle" autozoom="false" autorotate="false" onmouseover="mouseOver(event,this)" onmouseout="mouseOut(event,this)" style="top: 1595px; left: 56px; width: 894px; height: 355px; cursor: pointer; z-index: 6;"></div><div curstory="2" pageid="1035699" objtype="2" contenttype="0" storyid="10469932" orgid="67c9bc1093" class="pagerectangle" autozoom="false" autorotate="false" onmouseover="mouseOver(event,this)" onmouseout="mouseOut(event,this)" style="top: 1242px; left: 963px; width: 291px; height: 696px; cursor: pointer; z-index: 7;"></div><div curstory="3" pageid="1035699" objtype="2" contenttype="0" storyid="10469933" orgid="67fd1bfa6b" class="pagerectangle" autozoom="false" autorotate="false" onmouseover="mouseOver(event,this)" onmouseout="mouseOut(event,this)" style="top: 932px; left: 509px; width: 593px; height: 302px; cursor: pointer; z-index: 8;"></div><div curstory="4" pageid="1035699" objtype="2" contenttype="0" storyid="10469934" orgid="67f254d6c4" class="pagerectangle" autozoom="false" autorotate="false" onmouseover="mouseOver(event,this)" onmouseout="mouseOut(event,this)" style="top: 926px; left: 56px; width: 429px; height: 296px; cursor: pointer; z-index: 9;"></div><div curstory="5" pageid="1035699" objtype="2" contenttype="0" storyid="10469935" orgid="67c8f0630a" class="pagerectangle" autozoom="false" autorotate="false" onmouseover="mouseOver(event,this)" onmouseout="mouseOut(event,this)" style="top: 1262px; left: 56px; width: 429px; height: 295px; cursor: pointer; z-index: 10;"></div><div curstory="6" pageid="1035699" objtype="2" contenttype="0" storyid="10469920" orgid="67d2bb855a" class="pagerectangle" autozoom="false" autorotate="false" onmouseover="mouseOver(event,this)" onmouseout="mouseOut(event,this)" style="top: 1242px; left: 509px; width: 291px; height: 320px; cursor: pointer; z-index: 11;"></div><div curstory="7" pageid="1035699" objtype="2" contenttype="0" storyid="10469921" orgid="6731e6036b" class="pagerectangle" autozoom="false" autorotate="false" onmouseover="mouseOver(event,this)" onmouseout="mouseOut(event,this)" style="top: 629px; left: 978px; width: 276px; height: 297px; cursor: pointer; z-index: 12;"></div><div curstory="8" pageid="1035699" objtype="2" contenttype="0" storyid="10469922" orgid="676180fbe5" class="pagerectangle" autozoom="false" autorotate="false" onmouseover="mouseOver(event,this)" onmouseout="mouseOut(event,this)" style="top: 500px; left: 813px; width: 137px; height: 415px; cursor: pointer; z-index: 13;"></div><div curstory="9" pageid="1035699" objtype="2" contenttype="0" storyid="10469923" orgid="67f47422e0" class="pagerectangle" autozoom="false" autorotate="false" onmouseover="mouseOver(event,this)" onmouseout="mouseOut(event,this)" style="top: 755px; left: 509px; width: 291px; height: 155px; cursor: pointer; z-index: 14;"></div><div curstory="10" pageid="1035699" objtype="2" contenttype="0" storyid="10469924" orgid="677d11d91c" class="pagerectangle" autozoom="false" autorotate="false" onmouseover="mouseOver(event,this)" onmouseout="mouseOut(event,this)" style="top: 1243px; left: 813px; width: 140px; height: 319px; cursor: pointer; z-index: 15;"></div><div curstory="11" pageid="1035699" objtype="2" contenttype="0" storyid="10469925" orgid="67336a1331" class="pagerectangle" autozoom="false" autorotate="false" onmouseover="mouseOver(event,this)" onmouseout="mouseOut(event,this)" style="top: 758px; left: 207px; width: 289px; height: 152px; cursor: pointer; z-index: 16;"></div><div curstory="12" pageid="1035699" objtype="2" contenttype="0" storyid="10469928" orgid="674624283a" class="pagerectangle" autozoom="false" autorotate="false" onmouseover="mouseOver(event,this)" onmouseout="mouseOut(event,this)" style="top: 500px; left: 207px; width: 142px; height: 264px; cursor: pointer; z-index: 17;"></div><div curstory="13" pageid="1035699" objtype="2" contenttype="0" storyid="10469926" orgid="678d031048" class="pagerectangle" autozoom="false" autorotate="false" onmouseover="mouseOver(event,this)" onmouseout="mouseOut(event,this)" style="top: 931px; left: 1115px; width: 139px; height: 153px; cursor: pointer; z-index: 18;"></div><div curstory="14" pageid="1035699" objtype="2" contenttype="0" storyid="10469927" orgid="6791b304f4" class="pagerectangle" autozoom="false" autorotate="false" onmouseover="mouseOver(event,this)" onmouseout="mouseOut(event,this)" style="top: 1081px; left: 1115px; width: 138px; height: 153px; cursor: pointer; z-index: 19;"></div><div curstory="15" pageid="1035699" objtype="2" contenttype="0" storyid="10469929" orgid="67bbef1d42" class="pagerectangle" autozoom="false" autorotate="false" onmouseover="mouseOver(event,this)" onmouseout="mouseOut(event,this)" style="top: 1959px; left: 56px; width: 1197px; height: 16px; cursor: pointer; z-index: 20;"></div><div curstory="16" pageid="1035699" objtype="2" contenttype="0" storyid="10469919" orgid="67e8a1c11f" class="pagerectangle" autozoom="false" autorotate="false" onmouseover="mouseOver(event,this)" onmouseout="mouseOut(event,this)" style="top: 553px; left: 751px; width: 49px; height: 196px; cursor: pointer; z-index: 21;"></div><div curstory="17" pageid="1035699" objtype="4" contenttype="0" storyid="17634066" orgid="6796208d0a" class="pagerectangle" autozoom="false" autorotate="false" onmouseover="mouseOver(event,this)" onmouseout="mouseOut(event,this)" style="top: 975px; left: 149px; width: 336px; height: 241px; cursor: pointer; z-index: 22;"></div><div curstory="18" pageid="1035699" objtype="4" contenttype="0" storyid="17634061" orgid="676b4334ab" class="pagerectangle" autozoom="false" autorotate="false" onmouseover="mouseOver(event,this)" onmouseout="mouseOut(event,this)" style="top: 537px; left: 365px; width: 373px; height: 212px; cursor: pointer; z-index: 23;"></div><div curstory="19" pageid="1035699" objtype="4" contenttype="0" storyid="17634067" orgid="67de2e58b5" class="pagerectangle" autozoom="false" autorotate="false" onmouseover="mouseOver(event,this)" onmouseout="mouseOut(event,this)" style="top: 1428px; left: 978px; width: 260px; height: 223px; cursor: pointer; z-index: 24;"></div><div curstory="20" pageid="1035699" objtype="4" contenttype="0" storyid="17634062" orgid="671a288997" class="pagerectangle" autozoom="false" autorotate="false" onmouseover="mouseOver(event,this)" onmouseout="mouseOut(event,this)" style="top: 463px; left: 978px; width: 276px; height: 161px; cursor: pointer; z-index: 25;"></div><div curstory="21" pageid="1035699" objtype="4" contenttype="0" storyid="17634058" orgid="6760f78861" class="pagerectangle" autozoom="false" autorotate="false" onmouseover="mouseOver(event,this)" onmouseout="mouseOut(event,this)" style="top: 242px; left: 58px; width: 1195px; height: 32px; cursor: pointer; z-index: 26; background-color: rgba(255, 0, 0, 0);"></div><div curstory="22" pageid="1035699" objtype="4" contenttype="0" storyid="17634057" orgid="671d061a8d" class="pagerectangle" autozoom="false" autorotate="false" onmouseover="mouseOver(event,this)" onmouseout="mouseOut(event,this)" style="top: 279px; left: 207px; width: 756px; height: 49px; cursor: pointer; z-index: 27;"></div><div curstory="23" pageid="1035699" objtype="4" contenttype="0" storyid="17634054" orgid="67a8449654" class="pagerectangle" autozoom="false" autorotate="false" onmouseover="mouseOver(event,this)" onmouseout="mouseOut(event,this)" style="top: 56px; left: 56px; width: 1198px; height: 28px; cursor: pointer; z-index: 28; background-color: rgba(255, 0, 0, 0);"></div><div curstory="24" pageid="1035699" objtype="4" contenttype="0" storyid="17634068" orgid="675b4033d5" class="pagerectangle" autozoom="false" autorotate="false" onmouseover="mouseOver(event,this)" onmouseout="mouseOut(event,this)" style="top: 1317px; left: 345px; width: 139px; height: 219px; cursor: pointer; z-index: 29;"></div><div curstory="25" pageid="1035699" objtype="4" contenttype="0" storyid="17634055" orgid="67dd7ba2ef" class="pagerectangle" autozoom="false" autorotate="false" onmouseover="mouseOver(event,this)" onmouseout="mouseOut(event,this)" style="top: 1566px; left: 56px; width: 893px; height: 28px; cursor: pointer; z-index: 30;"></div><div curstory="26" pageid="1035699" objtype="4" contenttype="0" storyid="17634070" orgid="673686054f" class="pagerectangle" autozoom="false" autorotate="false" onmouseover="mouseOver(event,this)" onmouseout="mouseOut(event,this)" style="top: 1640px; left: 199px; width: 153px; height: 161px; cursor: pointer; z-index: 31;"></div><div curstory="27" pageid="1035699" objtype="4" contenttype="0" storyid="17634069" orgid="6755dbcca6" class="pagerectangle" autozoom="false" autorotate="false" onmouseover="mouseOver(event,this)" onmouseout="mouseOut(event,this)" style="top: 747px; left: 56px; width: 138px; height: 175px; cursor: pointer; z-index: 32;"></div><div curstory="28" pageid="1035699" objtype="4" contenttype="0" storyid="17634072" orgid="67d5c91207" class="pagerectangle" autozoom="false" autorotate="false" onmouseover="mouseOver(event,this)" onmouseout="mouseOut(event,this)" style="top: 569px; left: 56px; width: 138px; height: 175px; cursor: pointer; z-index: 33;"></div><div curstory="29" pageid="1035699" objtype="4" contenttype="0" storyid="17634056" orgid="673da58229" class="pagerectangle" autozoom="false" autorotate="false" onmouseover="mouseOver(event,this)" onmouseout="mouseOut(event,this)" style="top: 1226px; left: 56px; width: 440px; height: 31px; cursor: pointer; z-index: 34;"></div><div curstory="30" pageid="1035699" objtype="4" contenttype="0" storyid="17634059" orgid="67ec5c9a37" class="pagerectangle" autozoom="false" autorotate="false" onmouseover="mouseOver(event,this)" onmouseout="mouseOut(event,this)" style="top: 138px; left: 163px; width: 114px; height: 114px; cursor: pointer; z-index: 35;"></div><div curstory="31" pageid="1035699" objtype="4" contenttype="0" storyid="17634053" orgid="67775a1f58" class="pagerectangle" autozoom="false" autorotate="false" onmouseover="mouseOver(event,this)" onmouseout="mouseOut(event,this)" style="top: 138px; left: 1035px; width: 112px; height: 114px; cursor: pointer; z-index: 36; background-color: rgba(255, 0, 0, 0);"></div><div curstory="32" pageid="1035699" objtype="4" contenttype="0" storyid="17634052" orgid="671959c3df" class="pagerectangle" autozoom="false" autorotate="false" onmouseover="mouseOver(event,this)" onmouseout="mouseOut(event,this)" style="top: 354px; left: 56px; width: 124px; height: 79px; cursor: pointer; z-index: 37;"></div><div curstory="33" pageid="1035699" objtype="4" contenttype="0" storyid="17634071" orgid="677e2bdf6e" class="pagerectangle" autozoom="false" autorotate="false" onmouseover="mouseOver(event,this)" onmouseout="mouseOut(event,this)" style="top: 1655px; left: 56px; width: 138px; height: 60px; cursor: pointer; z-index: 38;"></div><div curstory="34" pageid="1035699" objtype="4" contenttype="0" storyid="17634060" orgid="67542403e5" class="pagerectangle" autozoom="false" autorotate="false" onmouseover="mouseOver(event,this)" onmouseout="mouseOut(event,this)" style="top: 1002px; left: 938px; width: 103px; height: 73px; cursor: pointer; z-index: 39;"></div><div curstory="35" pageid="1035699" objtype="4" contenttype="0" storyid="17634063" orgid="67d052e638" class="pagerectangle" autozoom="false" autorotate="false" onmouseover="mouseOver(event,this)" onmouseout="mouseOut(event,this)" style="top: 1863px; left: 661px; width: 57px; height: 75px; cursor: pointer; z-index: 40;"></div><div curstory="36" pageid="1035699" objtype="4" contenttype="0" storyid="17634064" orgid="675fc6b499" class="pagerectangle" autozoom="false" autorotate="false" onmouseover="mouseOver(event,this)" onmouseout="mouseOut(event,this)" style="top: 1713px; left: 661px; width: 57px; height: 75px; cursor: pointer; z-index: 41;"></div><div curstory="37" pageid="1035699" objtype="4" contenttype="0" storyid="17634065" orgid="67c632546e" class="pagerectangle" autozoom="false" autorotate="false" onmouseover="mouseOver(event,this)" onmouseout="mouseOut(event,this)" style="top: 1713px; left: 813px; width: 55px; height: 75px; cursor: pointer; z-index: 42;"></div></div>
+</div>
+<div class="social_share_box_Container" style="right:185px">
 <div>
- <a class="ssb share" title="Share Options" id="idShareOptions_pageShare" href="javascript:void(0);" valhref="" onclick="if (!window.__cfRLUnblockHandlers) return false; $('#id_page_social_share_box').slideToggle('slow');" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<a class="ssb share" title="Share Options Page " id="idShareOptions_pageShare" href="javascript:void(0);" valhref="" onclick="if (!window.__cfRLUnblockHandlers) return false; $('#id_page_social_share_box').slideToggle('slow');">
 <i class="si si-share"></i>
 </a>
 </div>
-<div class="social_share_box" id="id_page_social_share_box">
-<a class="ssb fb" title="Share on facebook" id="idfacebook_pageShare" href="javascript:void(0);" valhref="" onclick="if (!window.__cfRLUnblockHandlers) return false; ShareWindowOpen('http://www.facebook.com/sharer.php?u='+encodeURIComponent(window.location.href), 'Facebook share', 'Success', 'Facebook Shared Successfully'); return false;" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<div class="social_share_box social_share_box_page" id="id_page_social_share_box">
+<a class="ssb fb" title="Share page on facebook " id="idfacebook_pageShare" href="javascript:void(0);" valhref="" onclick="if (!window.__cfRLUnblockHandlers) return false; ShareWindowOpen('http://www.facebook.com/sharer.php?u='+encodeURIComponent(window.location.href), 'Facebook share', 'Success', 'Facebook Shared Successfully'); return false;">
 <i class="si si-facebook"></i>
 </a>
-<a class="ssb twitter" title="Share on twitter" id="idtwittershare_pageShare" href="javascript:void(0);" valhref="" onclick="if (!window.__cfRLUnblockHandlers) return false; ShareWindowOpen('https://twitter.com/share?url='+encodeURIComponent(window.location.href), 'Twitter share', 'Success', 'Twitter Shared Successfully'); return false;" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<a class="ssb twitter" title="Share page on twitter " id="idtwittershare_pageShare" href="javascript:void(0);" valhref="" onclick="if (!window.__cfRLUnblockHandlers) return false; ShareWindowOpen('https://twitter.com/share?url='+encodeURIComponent(window.location.href), 'Twitter share', 'Success', 'Twitter Shared Successfully'); return false;">
 <i class="si si-twitter"></i>
 </a>
-<a class="ssb copy-link" title="Copy and share link" id="link_url_pageShare" onclick="if (!window.__cfRLUnblockHandlers) return false; copyLink(window.location.href);" href="javascript:void(0);" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<a class="ssb copy-link" title="Copy and share link page " id="link_url_pageShare" onclick="if (!window.__cfRLUnblockHandlers) return false; copyLinkToClipboard(window.location.href);" href="javascript:void(0);">
 <i class="si si-copy"></i>
 </a>
-<a class="shb_btn" title="Share by e-mail" id="idemailshare_pageShare" onclick="if (!window.__cfRLUnblockHandlers) return false; showemailsharepopup();" href="javascript:void(0);" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<a class="shb_btn" title="Share page by e-mail " id="idemailshare_pageShare" onclick="if (!window.__cfRLUnblockHandlers) return false; showemailsharepopup();" href="javascript:void(0);">
 </a>
-<a class="ssb watsapp" title="Share on Whatsapp" id="idwatsappshare_pageShare" href="javascript:void(0);" valhref="" onclick="if (!window.__cfRLUnblockHandlers) return false; ShareWindowOpen('https://web.whatsapp.com/send?text='+encodeURIComponent(window.location.href), 'Whatsapp share', 'Success', 'Whatsapp Shared Successfully'); return false;" data-action="share/whatsapp/share" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
+<a class="ssb watsapp" title="Share page on Whatsapp " id="idwatsappshare_pageShare" href="javascript:void(0);" valhref="" onclick="if (!window.__cfRLUnblockHandlers) return false; ShareWindowOpen('https://web.whatsapp.com/send?text='+encodeURIComponent(window.location.href), 'Whatsapp share', 'Success', 'Whatsapp Shared Successfully'); return false;" data-action="share/whatsapp/share">
 <i class="si si-watsapp-o"></i>
 </a>
 </div>
 </div>
-<div class="prev not_visible" id="prevPage" onclick="if (!window.__cfRLUnblockHandlers) return false; PreviouPage()" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
-<i class="si si-chevron-left"></i>
+<div class="articles-list" id="articlesList" style="display: flex;"><ul><li><div class="article_box active" story_id="10469930" org_id="67250840ea" link="/Home/ShareArticle?OrgId=67250840ea&amp;imageview=1"><div class="thumb"><img src="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_01/54058ea9_1035699_P_1_tn.jpg"></div><span class="title">पीएम मोदी छत्तीसगढ़ को देंगे 7500 करोड़ की सौगात</span><span class="summary">पत्रिका
+सब्जियों की ऊंची कीमतों से सस्त...</span></div></li><li><div class="article_box" story_id="10469931" org_id="67389d4667" link="/Home/ShareArticle?OrgId=67389d4667&amp;imageview=1"><div class="thumb"><img src="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_01/54058ea9_1035699_P_12_tn.jpg"></div><span class="title">अब मैंटल हैल्थ जैसी समस्याओं से ज्यादा जूझ रहे लोग</span><span class="summary">ये नहीं कहा जा सकता कि कोरोना का सीधे दि...</span></div></li><li><div class="article_box" story_id="10469932" org_id="67c9bc1093" link="/Home/ShareArticle?OrgId=67c9bc1093&amp;imageview=1"><div class="thumb"><img src="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_01/54058ea9_1035699_P_16_tn.jpg"></div><span class="title">फोर्स में हुए भर्ती तो आया नक्सली फरमान, तीन परिवारों ने छोड़ा घरबार</span><span class="summary">पत्रिका ब्यूरो
+
+patrika.com
+बीजापुर. क...</span></div></li><li><div class="article_box" story_id="10469933" org_id="67fd1bfa6b" link="/Home/ShareArticle?OrgId=67fd1bfa6b&amp;imageview=1"><div class="thumb"><img src="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_01/54058ea9_1035699_P_9_tn.jpg"></div><span class="title">हैदराबाद के लिए इंडिगो की 12 से नई फ्लाइट </span><span class="summary">पत्रिका ब्यूरो @ रायपुर . स्वामी विवेकान...</span></div></li><li><div class="article_box" story_id="10469935" org_id="67c8f0630a" link="/Home/ShareArticle?OrgId=67c8f0630a&amp;imageview=1"><div class="thumb"><img src="https://rpfs.patrika.com/RP/2023/07/06/PTBspCity/5_01/54058ea9_1035699_P_17_tn.jpg"></div><span class="title">पिकअप पेड़ से टकराई, 12 गंभीर </span><span class="summary">पत्रिका ब्यूरो @ जांजगीर. शिवरीनारायण था...</span></div></li><li><div class="article_box" story_id="10469920" org_id="67d2bb855a" link="/Home/ShareArticle?OrgId=67d2bb855a&amp;imageview=1"><div class="thumb"><img src="https://epaper.patrika.com//img/missing-image-logo.jpg"></div><span class="title">4900 से ज्यादा जाली जीएसटी पंजीकरण रद्द</span><span class="summary">नई दिल्ली @ पत्रिका. जीएसटी अधिकारियों न...</span></div></li><li><div class="article_box" story_id="10469921" org_id="6731e6036b" link="/Home/ShareArticle?OrgId=6731e6036b&amp;imageview=1"><div class="thumb"><img src="https://epaper.patrika.com//img/missing-image-logo.jpg"></div><span class="title">पत्रिका ब्यूरो @ भिलाई. ईडी के फर्जी अधिकारी बनकर अपहरण, एक्सटॉर्शन कर 2 करोड़ की ठगी के मामले में एक महिला समेत 9 आरोपियों को पुलिस ने मुंबई के मुंब्रा से गिरफ्तार किया है। पुलिस का कहना है कि इस क्षेत्र में कई अंडरवर्ल्ड के रिश्तेदार रहते हैं। जहां मुंबई की पुलिस जाने से भी कतराती है, उस क्षेत्र से दुर्ग पुलिस ने आरोपियों को गिरफ्तार किया है। पुलिस को संदेह है आरोपियों का कनेक्शन अंडरवर्ल्ड से हो सकता है। पुलिस ने आरोपियों को 10 दिन की रिमांड पर लिया है। उनसे अंडरवर्ल्ड कनेक्शन को लेकर भी पूछताछ की जाएगी। पुलिस ने आरोपियों के कब्जे से 1 करोड़ 25 लाख रुपए नगद, सोने की ज्वेलरी और दो कार बरामद की है।  शेष @ पेज 4</span><span class="summary">महिला...
+
+पुलिस फरार आरोपियों की तलाश क...</span></div></li><li><div class="article_box" story_id="10469922" org_id="676180fbe5" link="/Home/ShareArticle?OrgId=676180fbe5&amp;imageview=1"><div class="thumb"><img src="https://epaper.patrika.com//img/missing-image-logo.jpg"></div><span class="title">पीएम इनका करेंगे लोकार्पण-शिलान्यास
+</span><span class="summary">एनएच-130 के बिलासपुर-अंबिकापुर खंड के 53...</span></div></li><li><div class="article_box" story_id="10469923" org_id="67f47422e0" link="/Home/ShareArticle?OrgId=67f47422e0&amp;imageview=1"><div class="thumb"><img src="https://epaper.patrika.com//img/missing-image-logo.jpg"></div><span class="title">राज्य पुलिस के 2000 जवान रहेंगे तैनात</span><span class="summary">प्रधानमंत्री नरेन्द्र मोदी के प्रवास के ...</span></div></li><li><div class="article_box" story_id="10469924" org_id="677d11d91c" link="/Home/ShareArticle?OrgId=677d11d91c&amp;imageview=1"><div class="thumb"><img src="https://epaper.patrika.com//img/missing-image-logo.jpg"></div><span class="title">वन्दे भारत स्लीपर ट्रेन अगले साल की शुरुआत में </span><span class="summary">चेन्नई @ पत्रिका. रेल यात्रियों को वन्दे...</span></div></li><li><div class="article_box" story_id="10469925" org_id="67336a1331" link="/Home/ShareArticle?OrgId=67336a1331&amp;imageview=1"><div class="thumb"><img src="https://epaper.patrika.com//img/missing-image-logo.jpg"></div><span class="title">ऐसा होगा पीएम का मिनट टू मिनट कार्यक्रम</span><span class="summary">प्रधानमंत्री 7 जुलाई को सुबह 10:10 बजे र...</span></div></li><li><div class="article_box" story_id="10469928" org_id="674624283a" link="/Home/ShareArticle?OrgId=674624283a&amp;imageview=1"><div class="thumb"><img src="https://epaper.patrika.com//img/missing-image-logo.jpg"></div><span class="title">पत्रिका ब्यूरो
+</span><span class="summary">patrika.com
+रायपुर. प्रधानमंत्री नरेन्द...</span></div></li><li><div class="article_box" story_id="10469926" org_id="678d031048" link="/Home/ShareArticle?OrgId=678d031048&amp;imageview=1"><div class="thumb"><img src="https://epaper.patrika.com//img/missing-image-logo.jpg"></div><span class="title">‘तांडव’ पर अर्जियों की सुनवाई स्थगित</span><span class="summary">नई दिल्ली@ पत्रिका. सुप्रीम कोर्ट ने वेब...</span></div></li><li><div class="article_box" story_id="10469927" org_id="6791b304f4" link="/Home/ShareArticle?OrgId=6791b304f4&amp;imageview=1"><div class="thumb"><img src="https://epaper.patrika.com//img/missing-image-logo.jpg"></div><span class="title">कनाडा में भारतीय युवक झील में डूबा</span><span class="summary">मछलीपट्टनम@ पत्रिका. आंध्र प्रदेश के एक ...</span></div></li><li><div class="article_box" story_id="10469929" org_id="67bbef1d42" link="/Home/ShareArticle?OrgId=67bbef1d42&amp;imageview=1"><div class="thumb"><img src="https://epaper.patrika.com//img/missing-image-logo.jpg"></div><span class="title">8 राज्य,  37 संस्करण  ..... </span><span class="summary">8 राज्य,  37 संस्करण  | अजमेर श् अलवर ं ...</span></div></li><li><div class="article_box" story_id="10469919" org_id="67e8a1c11f" link="/Home/ShareArticle?OrgId=67e8a1c11f&amp;imageview=1"><div class="thumb"><img src="https://epaper.patrika.com//img/missing-image-logo.jpg"></div><span class="title">रायपुर. ..... </span><span class="summary">रायपुर. प्रधानमंत्री मोदी की सुरक्षा व्य...</span></div></li></ul></div>
 </div>
-<div class="next not_visible" id="nextPage" onclick="if (!window.__cfRLUnblockHandlers) return false; NextPage()" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
-<i class="si si-chevron-right"></i>
-</div>
-<div id="ImageContainer" class="image_container">
-<img id="imgmain1" />
-</div>
-</div>
-<div class="col_article_view">
-<div id="PageListViewToolbar" class="article_actions">
-<ul id="mainUl">
-<li>
-<div class="action">
-<span title="Image View" id="pictxtview_a">
-<i class="si si-image"></i>
-<label for="pictxtview" id="lblPicView">Image View</label>
-</span>
-</div>
-</li>
-<li>
-<div class="action">
-<span title="Text View" id="textview_a">
-<i class="si si-text"></i>
-<label for="textview" id="lblTxtView">Text View</label>
-</span>
-</div>
-</li>
-<li>
-<div class="action">
-<span title="Full View" id="share" href="" target="_blank" onclick="if (!window.__cfRLUnblockHandlers) return false; getOrgId();" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
-<i class="si si-expand"></i>
-<label for="fullView" id="lblFulView">Full View</label>
-</span>
-</div>
-</li>
-<li id="fontsizeLi">
-<div class="action">
-<span title="font-inc" id="btndecfont" onclick="if (!window.__cfRLUnblockHandlers) return false; OpenDivPopUpZoom();" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
-<i class="si si-font-plus"></i>
-<label for="fontInc" id="lblFontInc">Font Size</label>
-</span>
-</div>
-</li>
+<div class="clip_nav" style="display:none">
+<ul>
+<li><span id="spnAllClip">Show Clips</span></li>
+<li><span id="spn_addclip"><i class="fas fa-plus-circle"></i>Add Clip</span></li>
+<li><span id="spn_make_saveclip">Save Clip</span></li>
 </ul>
 </div>
-<div class="article_body" id="row_view">
-<div class="headline" id="divheadline"></div>
-<span id="byline" class="byline"> </span>
-<div id="articleBigimage" class="articleimage"></div>
-<div id="articleimg" class="articleimage"></div>
-<span id="DateLine" class="dateline"></span>
-<div id="body"></div>
-<div id="BigsubArticle" class="articleimage"></div>
-<div id="divlinkedstory" class="divlinkedstory"></div>
-</div>
-<div class="prev not_visible" id="Prev_story" onclick="if (!window.__cfRLUnblockHandlers) return false; PreviouArticle();" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
-<i class="si si-chevron-left"></i>
-</div>
-<div class="next not_visible" id="Next_story" onclick="if (!window.__cfRLUnblockHandlers) return false; NextStory();" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
-<i class="si si-chevron-right"></i>
-</div>
+<input type="hidden" id="ArticleView" value="0">
+<div class="rightside_ads_area" style="height: auto !important;">
+<div class="ads_160X600">
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" type="text/javascript"></script>
 
-<div class="social_share_box_Container">
-<div>
-<a class="ssb share" title="Share Options" id="idShareOptions_articleShare" href="javascript:void(0);" valhref="" onclick="if (!window.__cfRLUnblockHandlers) return false; $('#idsocial_share_box').slideToggle('slow');" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
-<i class="si si-share"></i>
-</a>
-</div>
-<div class="social_share_box" id="idsocial_share_box">
-<a class="ssb fb" title="Share on facebook" id="idfacebook" href="javascript:void(0);" valhref="" onclick="if (!window.__cfRLUnblockHandlers) return false; ShareWindowOpen(this.getAttribute('valhref'), 'Facebook share', 'Success', 'Facebook Shared Successfully'); return false;" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
-<i class="si si-facebook"></i>
-</a>
-<a class="ssb twitter" title="Share on twitter" id="idtwittershare" href="javascript:void(0);" valhref="" onclick="if (!window.__cfRLUnblockHandlers) return false; ShareWindowOpen(this.getAttribute('valhref'), 'Twitter share', 'Success', 'Twitter Shared Successfully'); return false;" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
-<i class="si si-twitter"></i>
-</a>
-<a class="ssb copy-link" title="Copy and share link" id="link_url" onclick="if (!window.__cfRLUnblockHandlers) return false; copyLink();" href="javascript:void(0);" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
-<i class="si si-copy"></i>
-</a>
-<a class="shb_btn" title="Share by e-mail" id="idemailshare" onclick="if (!window.__cfRLUnblockHandlers) return false; showemailsharepopup();" href="javascript:void(0);" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
-</a>
-<a class="ssb watsapp" title="Share on Whatsapp" id="idwatsappshare" href="javascript:void(0);" valhref="" onclick="if (!window.__cfRLUnblockHandlers) return false; ShareWindowOpen(this.getAttribute('valhref'), 'Whatsapp share', 'Success', 'Whatsapp Shared Successfully'); return false;" data-action="share/whatsapp/share" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
-<i class="si si-watsapp-o"></i>
-</a>
-<a class="ssb copy-link" title="Print Article" id="link_url_print" onclick="if (!window.__cfRLUnblockHandlers) return false; openprintarticlepage();" href="javascript:void(0);" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
-<i class="si si-print"></i>
- </a>
+<ins class="adsbygoogle" style="display: block; height: 600px;" data-ad-client="ca-pub-2574666985739337" data-ad-slot="2449081208" data-ad-format="auto" data-full-width-responsive="true" data-adsbygoogle-status="done" data-ad-status="unfilled"><div id="aswift_0_host" style="border: none; height: 600px; width: 160px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: visible;" tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:160px;height:600px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="160" height="600" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-2574666985739337&amp;output=html&amp;h=600&amp;slotname=2449081208&amp;adk=2473820720&amp;adf=3335755323&amp;pi=t.ma~as.2449081208&amp;w=160&amp;fwrn=4&amp;fwrnh=100&amp;lmt=1688648683&amp;rafmt=1&amp;format=160x600&amp;url=https%3A%2F%2Fepaper.patrika.com%2FHome%2FFullPage%3Feid%3D100%26edate%3D06%2F07%2F2023%26pgid%3D1035699&amp;fwr=0&amp;fwrattr=true&amp;rpe=1&amp;resp_fmts=4&amp;wgl=1&amp;uach=WyJXaW5kb3dzIiwiMTQuMC4wIiwieDg2IiwiIiwiMTE0LjAuNTczNS4xOTkiLFtdLDAsbnVsbCwiNjQiLFtbIk5vdC5BL0JyYW5kIiwiOC4wLjAuMCJdLFsiQ2hyb21pdW0iLCIxMTQuMC41NzM1LjE5OSJdLFsiR29vZ2xlIENocm9tZSIsIjExNC4wLjU3MzUuMTk5Il1dLDBd&amp;dt=1688648680818&amp;bpp=3&amp;bdt=699&amp;idt=2703&amp;shv=r20230628&amp;mjsv=m202306280101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3Da03976f39dcbe075-2283db38b1b4002d%3AT%3D1688534427%3ART%3D1688647805%3AS%3DALNI_MYjZA-ioA06-B5nfmF6Q0fYlbr09g&amp;gpic=UID%3D00000c968f018813%3AT%3D1688534427%3ART%3D1688647805%3AS%3DALNI_MaIXUCg2yDS3BEHYr-m0HlEtE0u4A&amp;correlator=1312676778643&amp;frm=20&amp;pv=2&amp;ga_vid=229973263.1688534390&amp;ga_sid=1688648684&amp;ga_hid=1547391752&amp;ga_fc=1&amp;u_tz=330&amp;u_his=6&amp;u_h=864&amp;u_w=1536&amp;u_ah=816&amp;u_aw=1536&amp;u_cd=24&amp;u_sd=1.25&amp;dmc=8&amp;adx=1344&amp;ady=170&amp;biw=1519&amp;bih=446&amp;scr_x=0&amp;scr_y=0&amp;eid=42532280%2C44759875%2C44759926%2C44759837%2C42532278%2C31075642%2C31075757%2C42532316%2C44788441%2C44796478%2C44788470&amp;oid=2&amp;pvsid=1945605469211702&amp;tmod=378301876&amp;uas=3&amp;nvt=2&amp;fc=896&amp;brdim=0%2C0%2C0%2C0%2C1536%2C0%2C1536%2C816%2C1536%2C446&amp;vis=1&amp;rsz=%7C%7CpeE%7C&amp;abl=CS&amp;pfx=0&amp;fu=128&amp;bc=31&amp;ifi=1&amp;uci=a!1&amp;fsb=1&amp;xpc=Xzh96CawX2&amp;p=https%3A//epaper.patrika.com&amp;dtd=2711" data-google-container-id="a!1" data-load-complete="true"></iframe></div></ins>
+<script type="text/javascript">
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<input type="hidden" id="rightside_ads" value="1">
 </div>
 </div>
 </div>
-<div class="fullads">
-<div class="prev" onclick="if (!window.__cfRLUnblockHandlers) return false; PreviouPage();" data-cf-modified-7c82a3164a09f39da2c0c5f5-=""><img src="https://epaper.patrika.com//img/prev-64.png" /></div>
-<div class="next" onclick="if (!window.__cfRLUnblockHandlers) return false; NextPage();" data-cf-modified-7c82a3164a09f39da2c0c5f5-=""><img src="https://epaper.patrika.com//img/next-64.png" /></div>
-<div id="fullAdsContents">
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="base user modal fade" id="Index_pg_popup" role="dialog">
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-header">
-<button type="button" class="close" data-bs-dismiss="modal">
-<i class="si si-cross"></i>
-</button>
-<h4 class="modal-title" id="Index_pg_popup_head"></h4>
-</div>
-<div class="modal-body" id="Index_pg_popup_body">
-<div class="modal-footer">
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="base fpwd modal fade" id="premiumPopup" role="dialog">
-<div class="modal-dialog modal-sm">
-<div class="modal-content">
-<div class="modal-header">
-<button type="button" class="close" data-bs-dismiss="modal">
-<i class="si si-cross"></i>
-</button>
-<h4 class="modal-title">Confirmation</h4>
-</div>
-<div class="modal-body">
-For an uninterrupted Ad free experience subscribe now.
-</div>
-<div class="modal-footer">
-<button type="button" id="btnSubscribe" onclick="if (!window.__cfRLUnblockHandlers) return false; gotoSubscriptionPart();" class="btn btn-primary btn_flat btn_submit" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">SUBSCRIBE NOW</button>
-</div>
-</div>
-</div>
-</div>
-<input type="hidden" id="ArticleView" value="0" />
-<input type="hidden" name="imageviewclick" id="hd_Click" value="0" />
 <div>
 </div>
 <footer id="footer_input" class="footer_input_class" style="margin-top:50px">
 <div class="footer_text">
-<p>&copy; 2023 All Rights Reserved. Powered by <a href="http://www.summitindia.com" target="_blank">Summit</a> </p>
+<p>© 2023 All Rights Reserved. Powered by <a href="http://www.summitindia.com" target="_blank">Summit</a> </p>
 </div>
 </footer>
 <div id="txt_to_speech_body" style="display:none;"></div>
 <div>
 
 </div>
-<div id="divSubsExpiryRemind" class="div-popup-message" style="display:none;"></div>
+
 <div id="divLimitedPeriodRemind" title="Limited Period Offer" class="div-popup-message" style="display:none;">
 </div>
-<div id="TrialUserPopUpDownload" class="div-popup-message" style="display:none;">
-<h3><span>Please subscribe to download </span></h3>
-<a href="/Home/Subscription" class="btn btn-submit go_subs">Please subscribe now</a>
-</div>
-<div id="EmailShare" title="Email Share" style="color: #1c94c4; display: none">
-<div class="body-content">
-<div id="divEsharemessage" class="alert alert-success">
-<strong></strong>
-</div>
-<div class="form-group" id="divshareFromEmail">
-<label for="txtshareEmail">Your Name <sup style="top: 2px;font-size: 22px;color: #fb1010;">*</sup></label>
-<input type="text" name="FromEmail" id="txtshareFromEmail" class="form-control" aria-describedby="emailHelp" required maxlength="40">
-</div>
-<div class="form-group">
-<label class="form-label">Shared Email <sup style="top: 2px;font-size: 22px;color: #fb1010;">*</sup></label>
-<input class="form-control" type="text" name="Email" id="txtshareEmail" required>
-</div>
-<button type="button" class="btn btn-primary" onclick="if (!window.__cfRLUnblockHandlers) return false; ShareEmaillink($('#txtshareEmail').val());" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">Share</button>
-</div>
-</div>
-<div id="divSubscriptionPopUpMessage" class="div-popup-message" style="display:none;">
-<h3><span> </span></h3>
-<a href="/Home/Subscription" class="btn btn-submit go_subs">Please subscribe now</a>
-</div>
+
+
+
 <div id="TrialPopUpMessage" class="div-popup-message" style="display:none;">
 <h3><span> </span></h3>
 <a href="/Home/Subscription" class="btn btn-submit go_subs">Please subscribe now</a>
 </div>
-<div id="divPopUpZoom" style="display:none;" class="popup_body">
-<div class="content">
-<span class="font-minus" title="font-dec" onclick="if (!window.__cfRLUnblockHandlers) return false; zoomOut();" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
-<i class="si si-font-minus"></i>
-</span>
-<span class="font-plus" title="font-inc" onclick="if (!window.__cfRLUnblockHandlers) return false; zoomIn();" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">
-<i class="si si-font-plus"></i>
-</span>
-<div id="zoomtxtpreview"></div>
-</div>
-</div>
+
 <div id="IndexPagePopUp" style="display:none;"></div>
 <div id="divPopUpMessageFromServer" class="modal fade modal-server-message" role="dialog">
 <div class="modal-dialog">
 <div class="modal-content">
 <div class="modal-body">
 <div class="message">
-<h3 id="lblNoEditionToday">No Edition Today</h3>
+<h3 id="lblNoEditionToday">No Edition Today </h3>
 <p id="errorMsg"></p>
 </div>
 <div class="action">
-<a class="btn btn-block btn-action" onclick="if (!window.__cfRLUnblockHandlers) return false; goDefaultViewMaxDate();" id="lblLatestEdition" data-cf-modified-7c82a3164a09f39da2c0c5f5-="">Click Here For The Latest Edition</a>
+<a class="btn btn-block btn-action" onclick="if (!window.__cfRLUnblockHandlers) return false; goDefaultViewMaxDate();" id="lblLatestEdition">Click Here For The Latest Edition </a>
 </div>
 </div>
 </div>
@@ -847,7 +543,7 @@ For an uninterrupted Ad free experience subscribe now.
 <div class="modal-content">
 <div class="modal-body">
 <div class="message">
-<p id="softMessage"></p>
+<p id="softMessage">Pages for selected date not found.<br>Showing Edition for date: #date</p>
 </div>
 </div>
 </div>
@@ -855,9 +551,9 @@ For an uninterrupted Ad free experience subscribe now.
 </div>
 </div>
 <form>
-<input type="hidden" id="ArticleViewType" value="1" />
+<input type="hidden" id="ArticleViewType" value="1">
 </form>
-<script language="JavaScript" type="7c82a3164a09f39da2c0c5f5-text/javascript">
+<script language="JavaScript" type="text/javascript">
         function redirectHttpToHttps() {
 
             if ('true'.toLowerCase() == "true") {
@@ -871,7 +567,7 @@ For an uninterrupted Ad free experience subscribe now.
         redirectHttpToHttps();
 
     </script>
-<script type="7c82a3164a09f39da2c0c5f5-text/javascript">
+<script type="text/javascript">
 
         //Get culture information for all pages using this layout
         SetUrl('/');
@@ -889,7 +585,7 @@ For an uninterrupted Ad free experience subscribe now.
         var _CalenderMinDate = '05/06/2022';
         var _ArchiveDays = '30';
         var ShowProductPanel = 'false';
-        var bodyClass = 'listview';
+        var bodyClass = 'fullview';
           var Enable_textview = '1';
          var Enable_imageview = '1';
         var Gpageid;
@@ -1075,7 +771,7 @@ For an uninterrupted Ad free experience subscribe now.
                 if (!firstTime) {
                     // first time loaded!
                     sessionStorage.setItem("first_time", "1");
-                    var session = "slpcl1xjkg2ru2izhf2v12x1";
+                    var session = "svvxl4xelmozuzzle3w5m4lg";
                     var emailid = null;
                     var userid = null;
                     var userdefaultedition = null;
@@ -1186,7 +882,7 @@ For an uninterrupted Ad free experience subscribe now.
 
          function HomeInitiateSamApi() {
             var APIKey =  null;
-            var session = "slpcl1xjkg2ru2izhf2v12x1";
+            var session = "svvxl4xelmozuzzle3w5m4lg";
             var emailid = null;
             var userid = null;
             var userdefaultedition = null;
@@ -1200,7 +896,7 @@ For an uninterrupted Ad free experience subscribe now.
             var userState_Name = null;
             var currentip;
             //Get required data from server to be tracked
-            currentip ="49.36.178.246";
+            currentip ="122.180.247.127";
             sessionStorage.setItem("APIKey", APIKey);
             sessionStorage.setItem("currentip", currentip);
             sessionStorage.setItem("baseAPIUrl", sam_APIBaseURL);
@@ -1248,193 +944,150 @@ For an uninterrupted Ad free experience subscribe now.
          }
         var NthPageCount = '';
     </script>
-<script type="7c82a3164a09f39da2c0c5f5-text/javascript">
-        var HasUserChosenPlan = localStorage.getItem('HasUserChosenPlan');
-        if (HasUserChosenPlan == "true") {
-            localStorage.removeItem("HasUserChosenPlan");
-            window.location.href = '/Home/Validate';
+<script type="text/javascript">
+        var leftAds = "False";
+        var rightAds = "True";
+        //redirection in case of iPad 12+ versions, as it is treated as a desktop.
+        //var OSystem = platform.os;
+        //if (/*OSystem.family == "OS X" ||*/ platform.product == "iPad") {
+        if (navigator.userAgent.match(/Mac/) && navigator.maxTouchPoints && navigator.maxTouchPoints > 2) {
+            var eid = localStorage.getItem('LandingPageEditionId');
+            var eddate = localStorage.getItem('LandingPageEditionDate');
+            if (eid != null && eddate != null) {
+                window.location.href = '/' + "Home/Mindex?eid=" + eid + "&edate=" + eddate;
+            }
+            else {
+                window.location.href = '/' + "Home/Mindex" + location.search;
+            }
         }
-        pgLst_thumnail = '1';
+
+        var jcrop_api = "";
+        var Maximumcroparea = 50;
+        function ZoomIn0_WithOutMarkup() {
+            if($('#ImageContainer').hasClass('zoomout'))
+            {
+                $('#ImageContainer').trigger('click');
+            }
+        }
+
         var _login = '0';
-        var DesktopPgAds_Popup = '0';
-        var DesktopPgAds_Interval = '101';
-        var EnableLazyLoad = 'false';
-        var LastTrailSubscriptionMsg = '';
-        const paragraphads = '3';
-        ads = '101';
-        setcookies("ViewType_", 2);
-        //$("#row_view").css("min-height", $(window).height() - 235);
+        var _IsImageCropping = '1';
+       _Jpg_PngJpg = '0';
+        setcookies("ViewType_", 3);
+        var FullPageThumbnailAutoSelectOnSuplementClick = '0';
+       $(document).ready(function () {
+           fullViewPagaload();
+           setup();
+           GetBaseURL(BaseUrl);
+           if ('1' == '1')
+           {
+               imgCropPageLoad();
+               //remove crop before any menu item click
+               $('#main_menu > ul.list_one > li > span').add('#main_menu > ul.list_one > li > div').add('#main_menu > ul.list_one > li > select').not($('#spn_cropbtn')).click(function (e) {
+                   Removecropnew();
+                   $("#spn_cropbtn").removeClass("active");
+                   $("#spn_cropbtn").addClass("inactive");
+               });
+           }
 
-        function CheckUserTrialSubscription() {
-            var param = {};
-            var url = BaseUrl + 'Home/isFirstVisitAfterTrialSubscription';
-            result = getResult(url, param);
-            return result;
-        }
+           $(window).bind('keydown', function (e) {
+               if (e.keyCode == 37) {
+                   e.preventDefault()
+                   $("#Prev_Page").click();
+               }
+               else if (e.keyCode == 39) {
+                   e.preventDefault()
+                   $("#Next_Page").click();
+               }
+           });
 
-        function UpdateUserFirstVisit() {
-            var param = {};
-            var url = BaseUrl + 'Home/UpdateUserFirstVisit';
-            result = getResult(url, param);
-            return result;
-        }
+           if (FullPageThumbnailAutoSelectOnSuplementClick == "1") {
+               $(document).on('shown.bs.tab', '#SupplimentUl a[data-toggle="tab"]', function (event) {
+                   var href = $(event.target).attr("href");
+                   if($("#PagelistTab .owl-item div.selected img").attr('parentSupplimentId') != href)
+                        $(href).find(".owl-item:first-child .item img").trigger("click");
+               });
+           }
 
-        function CheckFirstVisitAfterFreeTrial() {
-            var TrialUsrResult = CheckUserTrialSubscription();
-            if (TrialUsrResult.IsFirstVisit == "1") {
-                $('#email_popup .email_content>p').text("Your free trial is successfully applied.");
-                $('#email_popup').show();
-                $('#email_popup a').click(function () {
-                    UpdateUserFirstVisit();
-                });
-            }
-        }
+           if (leftAds == "True" && rightAds == "True") {
+               $("#zoomLevel0").hide();
+               $("#zoomLevel1").trigger("click");
 
-        $(document).ready(function () {
-            $("#lnkarticle").css("opacity", "0.2");
-            articlePageLoad();
-            if (LastTrailSubscriptionMsg != '') {
-                $('#email_popup .email_content>p').text(LastTrailSubscriptionMsg);
-                $('#email_popup').show();
-                $('#email_popup a').click(function () {
-                    UpdateUserFirstVisit();
-                });
-            }
-            else
-                CheckFirstVisitAfterFreeTrial();
-            // $().articulate('setVoice', 'language', 'hi');
-
-            $("#prevPage").removeClass("not_visible");
-            $("#nextPage").removeClass("not_visible");
-            $("#Prev_story").removeClass("not_visible");
-            $("#Next_story").removeClass("not_visible");
-        });
-
-        if (EnableLazyLoad == "true") {
-            $(window).on('load', function () {
-                setTimeout(function () {
-                    lozad('.lozad', {
-                        load: function (el) {
-                            el.src = el.dataset.src;
-                        }
-                    }).observe()
-                }, 1000);
-
-            })
-        }
-        socialShareInit();
-    </script>
-<script type="7c82a3164a09f39da2c0c5f5-text/javascript">
-        //Try with Polly Now
-        var player = document.getElementById('player');
-        var playButton = document.getElementById("startSpeaking");
-        var pauseButton = document.getElementById("stopSpeaking");
-        var audioUrl = [];
-        let audioLstCount = 0;
-
-        function playAudio1(_url) {
-            var url = _url;
-            if (player.getAttribute("src") == null) {
-                player.setAttribute("src", url);
-
-            }
-            else if (player.getAttribute("src") == "") {
-                player.setAttribute("src", url);
-
-            }
-            else if (player.getAttribute("src") == "unknown") {
-                player.setAttribute("src", url);
-
-            }
-
-            player.play();
-            playButton.style.display = "none";
-            pauseButton.style.display = "block";
-
-            player.onended = function () {
-
-                playButton.style.display = "block";
-                pauseButton.style.display = "none";
-                player.setAttribute('src', '');
-                player.load();
-                audioLstCount++;
-                if (audioUrl.length > audioLstCount) {
-                    playAudio1(audioUrl[audioLstCount]);
-                }
-
-            };
-        }
-
-        function playTtsAudio() {
-
-            var currentstoryid = $("#row_view").attr("story_Id");
-            var currentaudiomp3;
-            $('#lblListen').text(globalCultureDB['StartingListenText']);
-            $.ajax({
-                url: "/Home/getMp3Url",
-                type: "GET",
-                async: true,
-                data: { Storyid: currentstoryid },
-                success: function (data) {
-                    $('#lblListen').text(globalCultureDB['PlayingListenText']);
-                    if (data != "") {
-                        currentaudiomp3 = data;
-                        audioUrl = [];
-                        let _url = currentaudiomp3.split(",");
-
-                        if (_url.length > 1) {
-                            for (let i = 0; i < _url.length; i++) {
-                                audioUrl.push(_url[i]);
-                                if (i == 0) {
-                                    playAudio1(_url[0]);
-                                }
-                            }
-                        } else {
-                            playAudio1(currentaudiomp3);
-                        }
-                    } else {
-                        alert(globalCultureDB['TechnicalErrorText']);
-                    }
-                },
-                error: function (error) {
-                    console.log(error);
-                    $('#lblListen').text(globalCultureDB['PlayingListenText']);
-                },
-            });
-            SAM_Variables.eventname = "Listen (TTS)";
-            SAM_View(SAM_Variables);
-        }
-
-        function editXML() {
-            var OrgId = $("#row_view").attr('pic_org');
-            var link = '/Home/EditXML'+'?OrgId='+OrgId
-            window.open(
-                link,
-                '_blank'
-            );
-        }
-
-        function editImage() {
-            var PageId = $("#imgmain1").attr('pageid');
-            var currentDate = $("#datepicker").val();
-            //var link = '/Home/EditXML?OrgId=-1&amp;PageId=-2';
-            var link = '/Home/UnlinkedImages' + '?PageId=' + PageId + '&EdDate=' + currentDate
-            window.open(
-                link,
-                '_blank'
-            );
-        }
-
-        function editContent() {
-            var PageId = $("#imgmain1").attr('pageid');
-            var currentDate = $("#datepicker").val();
-            var link = '/Home/EditContent' + '?PageId=' + PageId + '&EdDate=' + currentDate
-            window.open(
-                link,
-                '_blank'
-            );
-        }
+           }
+       });
     </script>
 
-<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="7c82a3164a09f39da2c0c5f5-|49" defer=""></script></body>
-</html>
+
+<ins class="adsbygoogle adsbygoogle-noablate" style="display: none !important;" data-adsbygoogle-status="done" data-ad-status="unfilled"><div id="aswift_1_host" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;" tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-2574666985739337&amp;output=html&amp;adk=1812271804&amp;adf=3025194257&amp;lmt=1688648683&amp;plat=1%3A1024%2C2%3A1024%2C3%3A2097152%2C4%3A2097152%2C9%3A32776%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1081344%2C32%3A32%2C41%3A32%2C42%3A32&amp;format=0x0&amp;url=https%3A%2F%2Fepaper.patrika.com%2FHome%2FFullPage%3Feid%3D100%26edate%3D06%2F07%2F2023%26pgid%3D1035699&amp;ea=0&amp;pra=7&amp;wgl=1&amp;easpi=1&amp;asntpc=1000&amp;asro=0&amp;asdrc=0&amp;easppi=1&amp;aslmt=0.4&amp;asamt=-1&amp;uach=WyJXaW5kb3dzIiwiMTQuMC4wIiwieDg2IiwiIiwiMTE0LjAuNTczNS4xOTkiLFtdLDAsbnVsbCwiNjQiLFtbIk5vdC5BL0JyYW5kIiwiOC4wLjAuMCJdLFsiQ2hyb21pdW0iLCIxMTQuMC41NzM1LjE5OSJdLFsiR29vZ2xlIENocm9tZSIsIjExNC4wLjU3MzUuMTk5Il1dLDBd&amp;dt=1688648680822&amp;bpp=2&amp;bdt=703&amp;idt=2726&amp;shv=r20230628&amp;mjsv=m202306280101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3Da03976f39dcbe075-2283db38b1b4002d%3AT%3D1688534427%3ART%3D1688647805%3AS%3DALNI_MYjZA-ioA06-B5nfmF6Q0fYlbr09g&amp;gpic=UID%3D00000c968f018813%3AT%3D1688534427%3ART%3D1688647805%3AS%3DALNI_MaIXUCg2yDS3BEHYr-m0HlEtE0u4A&amp;prev_fmts=160x600&amp;nras=1&amp;correlator=1312676778643&amp;frm=20&amp;pv=1&amp;ga_vid=229973263.1688534390&amp;ga_sid=1688648684&amp;ga_hid=1547391752&amp;ga_fc=1&amp;u_tz=330&amp;u_his=6&amp;u_h=864&amp;u_w=1536&amp;u_ah=816&amp;u_aw=1536&amp;u_cd=24&amp;u_sd=1.25&amp;dmc=8&amp;adx=-12245933&amp;ady=-12245933&amp;biw=1519&amp;bih=446&amp;scr_x=0&amp;scr_y=0&amp;eid=42532280%2C44759875%2C44759926%2C44759837%2C42532278%2C31075642%2C31075757%2C42532316%2C44788441%2C44796478%2C44788470&amp;oid=2&amp;pvsid=1945605469211702&amp;tmod=378301876&amp;uas=3&amp;nvt=2&amp;fc=896&amp;brdim=0%2C0%2C0%2C0%2C1536%2C0%2C1536%2C816%2C1536%2C446&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=32768&amp;bc=31&amp;ifi=2&amp;uci=a!2&amp;fsb=1&amp;dtd=2732" data-google-container-id="a!2" data-load-complete="true"></iframe></div></ins><div tabindex="-1" role="dialog" style="display: none;" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ui-draggable" aria-describedby="divTrialPopUpMessage" aria-labelledby="ui-id-1"><div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span id="ui-id-1" class="ui-dialog-title">&nbsp;</span><button type="button" class="ui-dialog-titlebar-close"></button></div><div id="divTrialPopUpMessage" class="popup_body ui-dialog-content ui-widget-content" style="">
+</div></div><div tabindex="-1" role="dialog" style="display: none;" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ui-draggable" aria-describedby="divTrialPopUpMessageC" aria-labelledby="ui-id-2"><div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span id="ui-id-2" class="ui-dialog-title">&nbsp;</span><button type="button" class="ui-dialog-titlebar-close"></button></div><div id="divTrialPopUpMessageC" class="popup_body ui-dialog-content ui-widget-content" style="">
+</div></div><div tabindex="-1" role="dialog" style="display: none;" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ui-draggable" aria-describedby="divSubsExpiryRemind" aria-labelledby="ui-id-3"><div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span id="ui-id-3" class="ui-dialog-title">&nbsp;</span><button type="button" class="ui-dialog-titlebar-close"></button></div><div id="divSubsExpiryRemind" class="div-popup-message ui-dialog-content ui-widget-content" style=""></div></div><div tabindex="-1" role="dialog" style="display: none;" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front base_theme ep_datepicker ui-draggable" aria-describedby="divPopUpDate" aria-labelledby="ui-id-4"><div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span id="ui-id-4" class="ui-dialog-title">Select Date </span><button type="button" class="ui-dialog-titlebar-close"></button></div><div id="divPopUpDate" class="popup_body ui-dialog-content ui-widget-content">
+<div id="datepicker" class="hasDatepicker"><div class="ui-datepicker-inline ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" style="display: block;"><div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"><a class="ui-datepicker-prev ui-corner-all" data-handler="prev" data-event="click" title="Prev"><span class="ui-icon ui-icon-circle-triangle-w">Prev</span></a><a class="ui-datepicker-next ui-corner-all ui-state-disabled" title="Next"><span class="ui-icon ui-icon-circle-triangle-e">Next</span></a><div class="ui-datepicker-title"><select class="ui-datepicker-month" data-handler="selectMonth" data-event="change"><option value="0">Jan</option><option value="1">Feb</option><option value="2">Mar</option><option value="3">Apr</option><option value="4">May</option><option value="5">Jun</option><option value="6" selected="selected">Jul</option></select><select class="ui-datepicker-year" data-handler="selectYear" data-event="change"><option value="2022">2022</option><option value="2023" selected="selected">2023</option></select></div></div><table class="ui-datepicker-calendar"><thead><tr><th scope="col" class="ui-datepicker-week-end"><span title="Sunday">Su</span></th><th scope="col"><span title="Monday">Mo</span></th><th scope="col"><span title="Tuesday">Tu</span></th><th scope="col"><span title="Wednesday">We</span></th><th scope="col"><span title="Thursday">Th</span></th><th scope="col"><span title="Friday">Fr</span></th><th scope="col" class="ui-datepicker-week-end"><span title="Saturday">Sa</span></th></tr></thead><tbody><tr><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="6" data-year="2023"><a class="ui-state-default" href="#">1</a></td></tr><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="6" data-year="2023"><a class="ui-state-default" href="#">2</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2023"><a class="ui-state-default" href="#">3</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2023"><a class="ui-state-default" href="#">4</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2023"><a class="ui-state-default" href="#">5</a></td><td class=" ui-datepicker-days-cell-over  ui-datepicker-current-day ui-datepicker-today" data-handler="selectDay" data-event="click" data-month="6" data-year="2023"><a class="ui-state-default ui-state-highlight ui-state-active ui-state-hover" href="#">6</a></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">7</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">8</span></td></tr><tr><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">9</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">10</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">11</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">12</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">13</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">14</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">15</span></td></tr><tr><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">16</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">17</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">18</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">19</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">20</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">21</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">22</span></td></tr><tr><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">23</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">24</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">25</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">26</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">27</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">28</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">29</span></td></tr><tr><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">30</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">31</span></td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td></tr></tbody></table></div></div>
+</div></div><div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div><div tabindex="-1" role="dialog" style="display: none;" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ui-draggable" aria-describedby="TrialUserPopUpDownload" aria-labelledby="ui-id-5"><div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span id="ui-id-5" class="ui-dialog-title">&nbsp;</span><button type="button" class="ui-dialog-titlebar-close"></button></div><div id="TrialUserPopUpDownload" class="div-popup-message ui-dialog-content ui-widget-content" style="">
+<h3><span>Please subscribe to download </span></h3>
+<a href="/Home/Subscription" class="btn btn-submit go_subs">Please subscribe now</a>
+</div></div><div tabindex="-1" role="dialog" style="display: none;" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ui-draggable" aria-describedby="divSubscriptionPopUpMessage" aria-labelledby="ui-id-6"><div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span id="ui-id-6" class="ui-dialog-title">&nbsp;</span><button type="button" class="ui-dialog-titlebar-close"></button></div><div id="divSubscriptionPopUpMessage" class="div-popup-message ui-dialog-content ui-widget-content" style="">
+<h3><span> </span></h3>
+<a href="/Home/Subscription" class="btn btn-submit go_subs">Please subscribe now</a>
+</div></div><div tabindex="-1" role="dialog" style="display: none;" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front base_theme email_share_dialog ui-draggable" aria-labelledby="ui-id-7"><div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span id="ui-id-7" class="ui-dialog-title">Email Share</span><button type="button" class="ui-dialog-titlebar-close"></button></div><div id="EmailShare" style="color: rgb(28, 148, 196);" class="ui-dialog-content ui-widget-content">
+<div class="body-content">
+<div id="divEsharemessage" class="alert alert-success">
+<strong></strong>
+</div>
+<div class="form-group" id="divshareFromEmail">
+<label for="txtshareEmail">Your Name <sup style="top: 2px;font-size: 22px;color: #fb1010;">*</sup></label>
+<input type="text" name="FromEmail" id="txtshareFromEmail" class="form-control" aria-describedby="emailHelp" required="" maxlength="40">
+</div>
+<div class="form-group">
+<label class="form-label">Shared Email <sup style="top: 2px;font-size: 22px;color: #fb1010;">*</sup></label>
+<input class="form-control" type="text" name="Email" id="txtshareEmail" required="">
+</div>
+<button type="button" class="btn btn-primary" onclick="if (!window.__cfRLUnblockHandlers) return false; ShareEmaillink($('#txtshareEmail').val());">Share</button>
+</div>
+</div></div><div tabindex="-1" role="dialog" style="display: none; position: absolute;" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front base_theme popup_session ui-draggable ui-resizable" aria-describedby="divSesssionPopUpMessage" aria-labelledby="ui-id-8"><div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span id="ui-id-8" class="ui-dialog-title">Session</span><button type="button" class="ui-dialog-titlebar-close"></button></div><div id="divSesssionPopUpMessage" class="div-popup-message ui-dialog-content ui-widget-content" style="">
+<h4><span id="span_sessionmessage">Session expired , please login again. </span></h4>
+<div style="position: absolute;bottom: 0;right: 2px;"><span id="span_sessionErrorCode"></span></div>
+</div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div><div tabindex="-1" role="dialog" style="display: none; position: absolute;" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front base_theme popup_session ui-draggable ui-resizable" aria-describedby="divGiftCardMessagePopUp" aria-labelledby="ui-id-9"><div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span id="ui-id-9" class="ui-dialog-title">GiftCardMessage</span><button type="button" class="ui-dialog-titlebar-close"></button></div><div id="divGiftCardMessagePopUp" class="div-popup-message ui-dialog-content ui-widget-content" style="">
+<iframe id="giftcardiframe" src="" height="200" width="600" title="Iframe GiftCard"></iframe>
+</div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div><div tabindex="-1" role="dialog" style="display: none; position: absolute;" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front base_theme popup_change_pwd ui-draggable ui-resizable" aria-describedby="divChangePwd" aria-labelledby="ui-id-10"><div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span id="ui-id-10" class="ui-dialog-title">Change Password </span><button type="button" class="ui-dialog-titlebar-close"></button></div><div id="divChangePwd" class="popup_body ui-dialog-content ui-widget-content" style="">
+<div id="divChangePwdmsg" class="alert alert-success" style="display: none;">
+<strong></strong>
+</div>
+<div class="form-group">
+<input class="form-control" title="Enter Password " type="password" id="fPassword" placeholder="Enter Password ">
+</div>
+<div class="form-group">
+<input class="form-control" title="New Password " type="password" id="fnPassword" placeholder="New Password ">
+</div>
+<div class="form-group">
+<input class="form-control" title="Confirm Password " type="password" id="fncPassword" placeholder="Confirm Password ">
+</div>
+<button class="btn_custom btn_primary btn_custom_sm btn_custom_center" type="button" id="btnChangePwd" onclick="if (!window.__cfRLUnblockHandlers) return false; ChnagePassword();" value="Change Password ">
+<span id="divChangeChangePasswordBtnTitle">Change Password </span>
+</button>
+</div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div><div tabindex="-1" role="dialog" style="display: none; position: absolute;" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front base_theme popup_change_pwd ui-draggable ui-resizable" aria-describedby="pageCount" aria-labelledby="ui-id-11"><div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span id="ui-id-11" class="ui-dialog-title">&nbsp;</span><button type="button" class="ui-dialog-titlebar-close"></button></div><div id="pageCount" style="" class="popup_body ui-dialog-content ui-widget-content">
+<div id="div_Message"></div>
+<button class="btn_custom btn_primary btn_custom_sm btn_custom_center" type="button" id="btnOk" onclick="if (!window.__cfRLUnblockHandlers) return false; okButtonClick();">
+<span>Ok</span>
+</button>
+</div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div><div tabindex="-1" role="dialog" style="display: none; position: absolute;" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front base_theme popup_message ui-draggable ui-resizable" aria-describedby="divPopUpMessage" aria-labelledby="ui-id-12"><div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span id="ui-id-12" class="ui-dialog-title">&nbsp;</span><button type="button" class="ui-dialog-titlebar-close"></button></div><div id="divPopUpMessage" style="" class="popup_body ui-dialog-content ui-widget-content">
+<h3><span>No Page Found </span></h3>
+</div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div><div tabindex="-1" role="dialog" style="display: none; position: absolute;" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front base_theme popup_message ui-draggable ui-resizable" aria-describedby="divPopUpNormalMessage" aria-labelledby="ui-id-13"><div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span id="ui-id-13" class="ui-dialog-title">Message</span><button type="button" class="ui-dialog-titlebar-close"></button></div><div id="divPopUpNormalMessage" style="" class="popup_body ui-dialog-content ui-widget-content">
+<h3><span> </span></h3>
+<button type="button" name="button" class="btn_custom btn_primary btn_custom_sm btn_custom_center" style="padding:3px;" onclick="if (!window.__cfRLUnblockHandlers) return false; (function () { location.href = BaseUrl + &quot;home/subscription&quot;; })();">
+Subscribe now
+</button>
+</div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div><div tabindex="-1" role="dialog" style="display: none;" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front base_theme popup_text_resize ui-draggable" aria-describedby="divPopUpZoom" aria-labelledby="ui-id-14"><div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span id="ui-id-14" class="ui-dialog-title">&nbsp;</span><button type="button" class="ui-dialog-titlebar-close"></button></div><div id="divPopUpZoom" style="" class="popup_body ui-dialog-content ui-widget-content">
+<div class="content">
+<span class="font-minus" title="font-dec" onclick="if (!window.__cfRLUnblockHandlers) return false; zoomOut();">
+<i class="si si-font-minus"></i>
+</span>
+<span class="font-plus" title="font-inc" onclick="if (!window.__cfRLUnblockHandlers) return false; zoomIn();">
+<i class="si si-font-plus"></i>
+</span>
+<div id="zoomtxtpreview"></div>
+</div>
+</div></div><div tabindex="-1" role="dialog" style="display: none;" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front base_theme landing_page_popup ui-draggable" aria-describedby="IndexPagePopUp" aria-labelledby="ui-id-15"><div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span id="ui-id-15" class="ui-dialog-title">&nbsp;</span><button type="button" class="ui-dialog-titlebar-close"></button></div><div id="IndexPagePopUp" style="" class="popup_body1 ui-dialog-content ui-widget-content"></div></div><div tabindex="-1" role="dialog" style="display: none;" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front base_theme landing_page_popup ui-draggable" aria-describedby="ContentFeedbackPopup" aria-labelledby="ui-id-16"><div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span id="ui-id-16" class="ui-dialog-title">Email </span><button type="button" class="ui-dialog-titlebar-close"></button></div><div id="ContentFeedbackPopup" style="text-align: center;" class="ui-dialog-content ui-widget-content">
+<textarea id="UserFeedbackMessage" name="feedback" rows="6" cols="50" placeholder="Your Message/Feedback" style="resize: none; width: 100%;"></textarea>
+<input id="btn_SendFeedback" type="button" value="Send">
+<img id="WaitLoader" style="height:24px;visibility:hidden;" src="https://epaper.patrika.com///img//wait-sending.gif">
+</div></div><iframe src="https://www.google.com/recaptcha/api2/aframe" width="0" height="0" style="display: none;"></iframe></body>
