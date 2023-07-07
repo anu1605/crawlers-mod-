@@ -43,7 +43,8 @@ if ($epapercode == "NVR") {
 
                 echo $link =   "https://epaper.navarashtra.com/article-" . $dateForLinks . "-" . $cityarray[$edition] . "-edition/" . $page . "-" . $section . "/";
                 $content = getdata($link);
-                $imagelink = explode('"', explode("id='ImageArticle'  src=", $content)[1])[1];
+                // $imagelink = explode('"', explode("id='ImageArticle'  src=", $content)[1])[1];
+                $imagelink = explode('"', explode('src="', explode("ImageArticle", $content)[1])[1])[0];
 
                 if (!empty($imagelink)) $imageInfo = @getimagesize($imagelink);
 
