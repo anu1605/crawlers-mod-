@@ -27,17 +27,18 @@ $arrContextOptions = array(
 $static_date = ''; // Production Value is ''
 $no_of_papers_to_run = 0; // Production Value is 0
 $no_of_editions_to_run = 0; // Production Value is 0
-$no_of_pages_to_run_on_each_edition = 1; // Production Value is 50
+$no_of_pages_to_run_on_each_edition = 50; // Production Value is 50
 $no_of_sections_to_run_on_each_page = 100; // Production Value is 100
 
 //// code starts below ///
 
 include "/var/www/d78236gbe27823/includes/connect.php";
 include "/var/www/d78236gbe27823/marketing/Whatsapp/Crawlers/dependencies/crawl_functions.php";
+// include "/var/www/d78236gbe27823/marketing/Whatsapp/Crawlers/dependencies/hb.txt";
 
-//$epapers = array("SOM" => "Star of Mysore,kan", "AP" => "Anandabazar Patrika,ben", "ASP" => "Asomiya Pratidin,asm", "DC" => "Deccan Chronicle,eng");
+//$epapers = array("SOM" => "Star of Mysore,kan", "AP" => "Anandabazar Patrika,ben", "ASP" => "Asomiya Pratidin,asm", "DC" => "Deccan Chronicle,eng","HB" => "Hari Bhumi,hin");
 
-$epapers = array("GSM" => "Gujarat Samachar,guj", "NVR" => "Navrasthra,mar", "NHT" => "Nav Hind Times,eng", "OHO" => "O Heral O,eng", "BS" => "Bombay Samachar,guj", "AU" => "Amar Ujala,hin", "HB" => "Hari Bhumi,hin", "DJ" => "Danik Jagran,hin", "LM" => "Lokmat,mar", "MC" => "Mumbai Chaufer,mar", "NB" => "Navbharat,hin", "NBT" => "Navbharat Times,hin", "ND" => "Nai Dunia,hin", "RS" => "Rashtriya Sahara,hin", "YB" => "yashobhumi,hin", "PN" => "Punayanagri,mar", "TOI" => "Times of India,eng", "ET" => "Economic Times,eng", "MT" => "Maharashtra Times,eng", "Mirror" => "Mirror,eng", "DN" => "Dainik Navjyoti,hin", "DST" => "Dainik Savera times,hin", "HTV" => "Hitavada,eng", "NGS" => "Nav Gujarat Samay,guj", "PBK" => "Prabhat Khabar,hin");
+$epapers = array("GSM" => "Gujarat Samachar,guj", "NVR" => "Navrasthra,mar", "NHT" => "Nav Hind Times,eng", "OHO" => "O Heral O,eng", "BS" => "Bombay Samachar,guj", "AU" => "Amar Ujala,hin",  "DJ" => "Danik Jagran,hin", "LM" => "Lokmat,mar", "MC" => "Mumbai Chaufer,mar", "NB" => "Navbharat,hin", "NBT" => "Navbharat Times,hin", "ND" => "Nai Dunia,hin", "RS" => "Rashtriya Sahara,hin", "YB" => "yashobhumi,hin", "PN" => "Punayanagri,mar", "TOI" => "Times of India,eng", "ET" => "Economic Times,eng", "MT" => "Maharashtra Times,eng", "Mirror" => "Mirror,eng", "DN" => "Dainik Navjyoti,hin", "DST" => "Dainik Savera times,hin", "HTV" => "Hitavada,eng", "NGS" => "Nav Gujarat Samay,guj", "PBK" => "Prabhat Khabar,hin");
 
 $cities_of_interest = array("Delhi", "Jaipur", "Jodhpur", "Udaipur", "Kota", "Bhopal", "Ahmedabad", "Surat", "Vadodara", "Bhavnagar", "Rajkot", "Mumbai", "Pune", "Thane", "Nashik");
 

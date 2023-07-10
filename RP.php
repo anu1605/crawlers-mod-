@@ -6,9 +6,11 @@ use Symfony\Component\Panther\DomCrawler\Crawler;
 use Facebook\WebDriver\WebDriverBy;
 
 
-$cityarray = array("Bhind", "Bhopal", "Gwalior City", "Indore City", "jabalpur", "Ujjain", "Ajmer City", "Chittorgarh", "Jaipur City", "Jodhpur City", "Kota", "Udaipur City", "Bilaspur", "Raigarh", "Raipur City", "Ahmedabad", "Bangalore", "Chennai", "Coimbatore", "Hubli", "Kolkata", "New Delhi", "Surat", "Uttar Pradesh");
+$cityarray = array("Bhind", "Bhopal", "Gwalior City", "Indore City", "jabalpur", "Ujjain", "Ajmer City", "Chittorgarh", "Jaipur City", "Jodhpur City", "Kota", "Udaipur City", "Bilaspur", "Raigarh", "Raipur City", "Ahmedabad", "Bangalore", "Chennai", "Coimbatore", "Hubli", "Kolkata", "New Delhi", "Surat");
 
-$citycode = array("77", "64", "78", "85", "123", "95", "3", "14", "20", "23", "26", "52", "100", "105", "109", "55", "56", "58", "139", "57", "135", "59", "60", "117");
+$cityforfilepath = array("Bhind", "Bhopal", "Gwalior", "Indore", "Jabalpur", "Ujjain", "Ajmer", "Chittorgarh", "Jaipur", "Jodhpur", "Kota", "Udaipur", "Bilaspur", "Raigarh", "Raipur", "Ahmedabad", "Bangalore", "Chennai", "Coimbatore", "Hubli", "Kolkata", "Delhi", "Surat");
+
+$citycode = array("77", "64", "78", "85", "123", "95", "3", "14", "20", "23", "26", "52", "100", "105", "109", "55", "56", "58", "139", "57", "135", "59", "60");
 $dateforlinks = date("d/m/Y", strtotime($filenamedate));
 
 if ($cityarray != null) {
@@ -17,26 +19,49 @@ if ($cityarray != null) {
 }
 
 for ($edition = 0; $edition < count($cityarray); $edition++) {
-    $url = 'https://epaper.patrika.com/Home/ArticleView?eid=20&edate=06/07/2023';
-    $outputFile = 'screenshot.png';
+    $url = 'https://epaper.patrika.com/Home/ArticleView?eid=' . $citycode[$edition] . '&edate=' . $dateforlinks;
 
     $client = Client::createChromeClient();
     $client->start();
     $client->request('GET', $url);
 
-    // Find the select element and count its options
     $options = $client->getCrawler()->filter('#ddl_Pages option');
 
     $optionsCount = $options->count();
-    echo 'Number of options: ' . $optionsCount . PHP_EOL;
 
-    // Echo highres attribute for each option
-    $options->each(function ($option) {
-        $highres = $option->attr('highres');
-        echo 'Highres: ' . $highres . PHP_EOL;
+    $imagelinkarray = [];
+
+    $options->each(function ($option) use (&$imagelinkarray) {
+        $imagelink = $option->attr('highres');
+        $modifiedHighres = str_replace('_mr', '', $imagelink);
+        $imagelinkarray[] = $modifiedHighres;
     });
 
-    // Rest of your code...
+    $page = 1;
+    foreach ($imagelinkarray as $imagelink) {
+        if (!empty($imagelink)) $imageInfo = @getimagesize($imagelink);
+
+        if (!$imageInfo)
+            break;
+
+        $getpath = explode("&", makefilepath($epapercode, $cityforfilepath[$edition], $filenamedate, $page, $lang));
+
+        if (alreadyDone($getpath[0], $conn) == "Yes") continue;
+
+        writeImage($imagelink, $getpath[0]);
+
+        echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved" . $eol;
+        runTesseract($epapername, $cityarray[$edition], $page, 0, $conn, $getpath, $lang);
+        echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $cityarray[$edition] . " Page " . $page . " Completed" . $eol;
+        ob_flush();
+        flush();
+
+        if ($page == $no_of_pages_to_run_on_each_edition)
+            break;
+
+        $page++;
+    }
+    echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $cityarray[$edition] . " Completed" . $eol;
 
     $client->quit();
 }

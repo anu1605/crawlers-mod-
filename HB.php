@@ -10,7 +10,11 @@ if ($epapercode == "HB") {
         if ($no_of_editions_to_run > 0 and $no_of_editions_to_run < count($cityarray)) $cityarray = array_slice($cityarray, 0, $no_of_editions_to_run);
     }
 
-    $array = explode(',',  file_get_contents("./dependencies/hb.txt", false, stream_context_create($arrContextOptions)));
+    $array = explode(',',  file_get_contents("./dependencies/hb.txt"));
+
+    print_r($array);
+    echo $eol;
+
 
     $datecode = array();
     $newdatecode = array();
@@ -40,11 +44,15 @@ if ($epapercode == "HB") {
             for ($i = 40; $i < 300; $i++) {
 
                 $newcode = $code + $i;
+                echo $cityarray[$edition] . ' => code : ' . $newcode . PHP_EOL;
+                die();
+
                 $link = getHBeditionlink($cityarray[$edition], $dateForLinks, $citycode[$edition], $newcode);
 
                 if (file_get_contents($link . $newcode, false, stream_context_create($arrContextOptions))) {
 
                     $code = $newcode;
+                    echo $link . $code . PHP_EOL;
                     array_push($newdatecode, strval($code));
                     break;
                 } else continue;
