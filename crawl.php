@@ -45,6 +45,7 @@ $cities_of_interest = array("Delhi", "Jaipur", "Jodhpur", "Udaipur", "Kota", "Bh
 if ($no_of_papers_to_run > 0 and $no_of_papers_to_run < count($epapers)) $epapers = array_slice($epapers, 0, $no_of_papers_to_run);
 
 $counter = 0;
+
 foreach ($epapers as $epapercode => $epaperArray) {
 
     if (isset($_REQUEST['epapercode'])) {

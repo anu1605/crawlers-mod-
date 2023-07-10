@@ -1,7 +1,6 @@
 <?php
 require  '/var/www/d78236gbe27823/vendor/autoload.php';
 
-
 use Symfony\Component\Panther\Client;
 use Facebook\WebDriver\WebDriverBy;
 use Facebook\WebDriver\WebDriverExpectedCondition;
@@ -17,7 +16,13 @@ if ($epapercode == "HTV") {
 
         $outputFile = $getpath[0];
 
-        $client = Client::createChromeClient();
+        //$client = Client::createChromeClient();
+
+        $client = \Symfony\Component\Panther\Client::createChromeClient(null, [
+            '--headless',
+            '--no-sandbox',
+            '--disable-dev-shm-usage',
+        ]);
 
         try {
             $client->start();
