@@ -5,12 +5,12 @@ use Symfony\Component\Panther\Client;
 use Symfony\Component\Panther\DomCrawler\Crawler;
 use Facebook\WebDriver\WebDriverBy;
 
-if ($epapercode == "RP") {
-    $cityarray = array("Bhind", "Bhopal", "Gwalior City", "Indore City", "jabalpur", "Ujjain", "Ajmer City", "Chittorgarh", "Jaipur City", "Jodhpur City", "Kota", "Udaipur City", "Bilaspur", "Raigarh", "Raipur City", "Ahmedabad", "Bangalore", "Chennai", "Coimbatore", "Hubli", "Kolkata", "New Delhi", "Surat");
+if ($epapercode == "SAK") {
+    $cityarray = array("Ananthapur", "East Godavari", "Kurnool", "SPSR Nellore", "West Godavari", "YSR Kadapa", "Tirupati", "Vijayawada", "Visakhapatnam", "Adilabad", "Greater Warangal", "Mahabubabad", "Hyderabad", "Karimnagar", "Mahabubnagar", "Nalgonda", "Warangal", "Hanamakonda", "Jangaon", "Kamareddy", "Nagarkurnool", "Sangareddy", "Siddipet", "Suryapet");
 
-    $cityforfilepath = array("Bhind", "Bhopal", "Gwalior", "Indore", "Jabalpur", "Ujjain", "Ajmer", "Chittorgarh", "Jaipur", "Jodhpur", "Kota", "Udaipur", "Bilaspur", "Raigarh", "Raipur", "Ahmedabad", "Bangalore", "Chennai", "Coimbatore", "Hubli", "Kolkata", "Delhi", "Surat");
+    $cityforfilepath = array("Ananthapur", "EGodavari", "Kurnool", "Nellore", "WGodavari", "Kadapa", "Tirupati", "Vijayawada", "Visakhapatnam", "Adilabad", "Warangal", "Mahabubabad", "Hyderabad", "Karimnagar", "Mahabubnagar", "Nalgonda", "Warangal", "Hanamakonda", "Jangaon", "Kamareddy", "Nagarkurnool", "Sangareddy", "Siddipet", "Suryapet");
 
-    $citycode = array("77", "64", "78", "85", "123", "95", "3", "14", "20", "23", "26", "52", "100", "105", "109", "55", "56", "58", "139", "57", "135", "59", "60");
+    $citycode = array("6", "23", "52", "77", "114", "119", "89", "97", "104", "192", "157", "180", "122", "171", "183", "190", "210", "158", "162", "168", "189", "142", "144", "206");
 
     $dateforlinks = date("d/m/Y", strtotime($filenamedate));
 
@@ -20,7 +20,7 @@ if ($epapercode == "RP") {
     }
 
     for ($edition = 0; $edition < count($cityarray); $edition++) {
-        $url = 'https://epaper.patrika.com/Home/ArticleView?eid=' . $citycode[$edition] . '&edate=' . $dateforlinks;
+        $url = 'https://epaper.sakshi.com/Home/ArticleView?eid=' . $citycode[$edition] . '&edate=' . $dateforlinks;
 
         // $client = Client::createChromeClient();
         $client = \Symfony\Component\Panther\Client::createChromeClient(null, [

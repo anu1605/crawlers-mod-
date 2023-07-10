@@ -18,7 +18,12 @@ if ($epapercode == "LS") {
     for ($edition = 0; $edition < count($cityarray); $edition++) {
         $url = $linkarray[$edition];
 
-        $client = Client::createChromeClient();
+        // $client = Client::createChromeClient();
+        $client = \Symfony\Component\Panther\Client::createChromeClient(null, [
+            '--headless',
+            '--no-sandbox',
+            '--disable-dev-shm-usage',
+        ]);
         $client->start();
 
         $client->request('GET', $url);
@@ -50,7 +55,7 @@ if ($epapercode == "LS") {
 
         if ($desiredItem !== null) {
             $url = str_replace('r/', '', $desiredItem['href'] . "/loksatta-mumbai/" . date("d-m-Y", strtotime($filenamedate)) . "#page/1/3");
-            setsizefunction($client, $url);
+            setSize($client, $url);
 
             for ($page = 1; $page <= $no_of_pages_to_run_on_each_edition; $page++) {
                 $url = str_replace('r/', '', $desiredItem['href'] . "/loksatta-mumbai/" . date("d-m-Y", strtotime($filenamedate)) . "#page/" . $page . "/3");
