@@ -10,11 +10,7 @@ if ($epapercode == "HB") {
         if ($no_of_editions_to_run > 0 and $no_of_editions_to_run < count($cityarray)) $cityarray = array_slice($cityarray, 0, $no_of_editions_to_run);
     }
 
-    $array = explode(',',  file_get_contents("./dependencies/hb.txt"));
-
-    print_r($array);
-    echo $eol;
-
+    $array = explode(',',  file_get_contents("/var/www/d78236gbe27823/marketing/Whatsapp/Crawlers/dependencies/hb.txt"));
 
     $datecode = array();
     $newdatecode = array();

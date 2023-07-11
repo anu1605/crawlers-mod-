@@ -23,14 +23,16 @@ if ($epapercode == "NGS") {
 
     if (!($no_of_pages_to_run_on_each_edition > 0 and $no_of_pages_to_run_on_each_edition < $totalPages)) $no_of_pages_to_run_on_each_edition = $totalPages;
 
-    // $client = Client::createChromeClient();
+    //$client = Client::createChromeClient();
+
     $client = \Symfony\Component\Panther\Client::createChromeClient(null, [
         '--headless',
         '--no-sandbox',
         '--disable-dev-shm-usage',
     ]);
+
     $client->start();
-    setsizefunction($client, $link);
+    setSize($client, $link);
 
     for ($page = 1; $page <= $no_of_pages_to_run_on_each_edition; $page++) {
         $url = "https://epaper.navgujaratsamay.com/" . $datecode . "/Ahmedabad/" . $dateForLinks . "#page/" . $page . "/3";

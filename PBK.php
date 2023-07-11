@@ -32,9 +32,17 @@ if ($epapercode == "PBK") {
 
         $filenamedate = date("Y-m-d", time());
         $link = "https://epaper.prabhatkhabar.com/" . $code . "/" . $city . "/CITY#page/1/3";
-        $client = Client::createChromeClient();
+
+        //$client = Client::createChromeClient();
+
+        $client = \Symfony\Component\Panther\Client::createChromeClient(null, [
+            '--headless',
+            '--no-sandbox',
+            '--disable-dev-shm-usage',
+        ]);
+
         $client->start();
-        setsizefunction($client, $link);
+        setSize($client, $link);
 
         $response = getdata("https://epaper.prabhatkhabar.com/" . $code . "/" . $city . "/CITY#page/1/3");
 
