@@ -49,7 +49,8 @@ if ($epapercode == "NB") {
 
                 if (alreadyDone($getpath[0], $conn) == "Yes") continue;
 
-                writeImage($imagelink, $getpath[0]);
+                writeImageWithCurl($imagelink, $getpath[0]);
+                // writeImage($imagelink, $getpath[0]);
 
                 echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved" . $eol;
                 runTesseract($epapername, $cityarray[$edition], $page, $section, $conn, $getpath, $lang);

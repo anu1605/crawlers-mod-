@@ -12,8 +12,6 @@ use Facebook\WebDriver\WebDriverDimension;
 if (php_sapi_name() == "cli") $eol = "\n";
 else  $eol = "<br>";
 
-
-
 function filenamedate($epapercode, $conn)
 {
     $finddateq = "Select * from Crawl_Record WHERE Papershortname='" . $epapercode . "' ORDER BY Paperdate DESC LIMIT 1";
@@ -431,6 +429,8 @@ function alreadyDone($filepath, $conn)
 }
 function writeImage($url, $path)
 {
+    if (empty($url))
+        return;
     $arrContextOptions = array(
         "ssl" => array(
             "verify_peer" => false,
@@ -458,10 +458,8 @@ function writeImage($url, $path)
     fclose($handle);
 }
 
-
 function runOpenCV($filepath, $conn)
 {
-
     $b = explode("/", $filepath);
     $filepath = $b[count($b) - 1];
 
@@ -772,7 +770,6 @@ function writeImageWithCurl($url, $path)
     fclose($handle);
     curl_close($ch);
 }
-
 
 function setSize($client, $link)
 {

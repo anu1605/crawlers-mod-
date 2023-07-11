@@ -1,22 +1,23 @@
 <?php
+
 require_once 'vendor/autoload.php';
 
-use Symfony\Component\Panther\Client;
-use Symfony\Component\Panther\DomCrawler\Crawler;
+use Symfony\Component\HttpClient\HttpClient;
 
-$url = 'https://epaper.hindustantimes.com/delhi?eddate=09/07/2023';
-$outputFile = 'screenshot.png';
+$url = 'https://epaper.thehindu.com/ccidist-ws/th//?json=true&fromDate=2023-07-10&toDate=2023-07-10&skipSections=true&os=web&includePublications=th_Delhi';
 
-$client = \Symfony\Component\Panther\Client::createChromeClient(null, [
-    '--headless',
-    '--no-sandbox',
-    '--disable-dev-shm-usage',
-]);
-$client->start();
-$client->request('GET', $url);
+$client = HttpClient::create();
+$response = $client->request('GET', $url);
 
-$crawler = $client->waitFor('.img_pagename');
-$crawler->filter('.img_pagename')->each(function ($node) {
-    $highres = str_replace('_mr', '', $node->attr('highres'));
-    echo $highres . PHP_EOL;
-});
+if ($response->getStatusCode() === 200) {
+    $content = $response->getContent();
+    $data = json_decode($content, true);
+
+    if (isset($data['publications'][0]['issues']['web'][0]['readerUrl'])) {
+        echo 'Reader URL: ' . $data['publications'][0]['issues']['web'][0]['readerUrl'];
+    } else {
+        echo 'Reader URL not found in the JSON response';
+    }
+} else {
+    echo 'Request failed with status code: ' . $response->getStatusCode();
+}

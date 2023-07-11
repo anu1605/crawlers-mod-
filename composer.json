@@ -2,6 +2,7 @@
     "require": {
         "symfony/panther": "^2.1",
         "fabpot/goutte": "^4.0",
-        "stichoza/google-translate-php": "^5.1"
+        "stichoza/google-translate-php": "^5.1",
+        "guzzlehttp/guzzle": "^7.7"
     }
 }
