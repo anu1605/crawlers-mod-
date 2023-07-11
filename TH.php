@@ -5,7 +5,7 @@ use Symfony\Component\HttpClient\HttpClient;
 if ($epapercode == "TH") {
     $cityarray = array("Bangalore", "Chennai", "Coimbatore", "Delhi", "Erode", "Hyderabad", "Kochi", "Kolkata", "Kozhikode", "Madurai", "Mangalore", "Mumbai", "Thiruvananthapuram", "Tiruchirapalli", "Vijayawada", "Visakhapatnam");
 
-    $dateforlinks = date("d/m/Y", strtotime($filenamedate));
+    $dateforlinks = date("Y-m-d", strtotime($filenamedate));
 
     if ($cityarray != null) {
 
@@ -14,9 +14,8 @@ if ($epapercode == "TH") {
 
 
     for ($edition = 0; $edition < count($cityarray); $edition++) {
-        $url = 'https://epaper.livehindustan.com/' . $cityarray[$edition] . '?eddate=' . $dateforlinks . '&Pageview=list';
+        $url = 'https://epaper.thehindu.com/ccidist-ws/th//?json=true&fromDate=' . $dateforlinks . '&toDate=' . $dateforlinks . '&skipSections=true&os=web&includePublications=th_' . $cityarray[$edition];
 
-        // $client = Client::createChromeClient();
         $client = \Symfony\Component\Panther\Client::createChromeClient(null, [
             '--headless',
             '--no-sandbox',
@@ -26,20 +25,16 @@ if ($epapercode == "TH") {
         $client->start();
         $client->request('GET', $url);
 
-        $options = $client->getCrawler()->filter('#ddl_Pages option');
+        $jsonContent = $client->waitFor('body')->getText();
+        $data = json_decode($jsonContent, true);
 
-        $optionsCount = $options->count();
+        if (isset($data['publications'][0]['issues']['web'][0]['readerUrl'])) {
+            $mainurl = $data['publications'][0]['issues']['web'][0]['readerUrl'];
+        } else {
+            echo 'Reader URL not found in the JSON response';
+        }
 
-        $imagelinkarray = [];
-
-        $options->each(function ($option) use (&$imagelinkarray) {
-            $imagelink = $option->attr('highres');
-            $modifiedHighres = str_replace('_mr', '', $imagelink);
-            $imagelinkarray[] = $modifiedHighres;
-        });
-
-        $page = 1;
-        foreach ($imagelinkarray as $imagelink) {
+        foreach ($page) {
             if (!empty($imagelink)) $imageInfo = @getimagesize($imagelink);
 
             if (!$imageInfo)
