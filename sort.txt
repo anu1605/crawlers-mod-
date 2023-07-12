@@ -1,0 +1,58 @@
+"461"
+editionname="ANANTAPUR">ANANTAPUR</a></li>
+"462"
+editionname="GUNTUR">GUNTUR</a></li>
+"481"
+editionname="GUNTUR RURAL">GUNTUR RURAL</a></li>
+"451"
+editionname="KADAPA">KADAPA</a></li>
+"458"
+editionname="KARNATAKA">KARNATAKA</a></li>
+"479"
+editionname="KRISHNA">KRISHNA</a></li>
+"452"
+editionname="KURNOOL">KURNOOL</a></li>
+"486"
+editionname="ODISHA ">ODISHA </a></li>
+"454"
+editionname="ONGOLE">ONGOLE</a></li>
+"463"
+editionname="RAJAMAHENDRAVARAM">RAJAMAHENDRAVARAM</a></li>
+"453"
+editionname="SRI POTTI SRIRAMULU NELLORE">SRI POTTI SRIRAMULU NELLORE</a></li>
+"455"
+editionname="SRIKAKULAM">SRIKAKULAM</a></li>
+"460"
+editionname="TADEPALLIGUDEM">TADEPALLIGUDEM</a></li>
+"459"
+editionname="TAMILNADU">TAMILNADU</a></li>
+"456"
+editionname="TIRUPATI">TIRUPATI</a></li>
+"464"
+editionname="VIJAYAWADA" class="mainSubEdition">VIJAYAWADA</a></li>
+"457"
+editionname="VISAKHAPATNAM">VISAKHAPATNAM</a></li>
+"482"
+editionname="VISAKHAPATNAM RURAL">VISAKHAPATNAM RURAL</a></li>
+"480"
+editionname="VIZIANAGARAM">VIZIANAGARAM</a></li></ul></li><li class="has-sub"><a edid="3"
+editionname="GREATER HYDERABAD"><span>GREATER HYDERABAD</span></a><img src="../img/icon_plus.png"><ul></ul></li><li class="has-sub"><a edid="1"
+editionname="TELANGANA"><span>TELANGANA</span></a><img src="../img/icon_plus.png"><ul>
+"483"
+editionname="ADILABAD">ADILABAD</a></li>
+"446"
+editionname="KARIMNAGAR" class="mainSubEdition">KARIMNAGAR</a></li>
+"447"
+editionname="KHAMMAM">KHAMMAM</a></li>
+"448"
+editionname="MAHABUBNAGAR">MAHABUBNAGAR</a></li>
+"484"
+editionname="MEDAK">MEDAK</a></li>
+"449"
+editionname="NIZAMABAD">NIZAMABAD</a></li>
+"248"
+editionname="SURYAPET">SURYAPET</a></li>
+"485"
+editionname="VIKARABAD">VIKARABAD</a></li>
+"450"
+editionname="WARANGAL">WARANGAL</a></li></ul></li></ul>

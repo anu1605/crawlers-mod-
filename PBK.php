@@ -39,6 +39,7 @@ if ($epapercode == "PBK") {
             '--headless',
             '--no-sandbox',
             '--disable-dev-shm-usage',
+            '--user-data-dir=/tmp',
         ]);
 
         $client->start();
