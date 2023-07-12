@@ -1,31 +1,32 @@
 <?php
-
 require_once 'vendor/autoload.php';
 
 use Symfony\Component\Panther\Client;
 
-$url = 'https://epaper.thehindu.com/ccidist-ws/th//?json=true&fromDate=2023-07-10&toDate=2023-07-10&skipSections=true&os=web&includePublications=th_Delhi';
+$url = 'https://epaper.andhrajyothy.com/Home/FullPage?eid=34&edate=12/07/2023';
 
-$client = Client::createChromeClient();
+$client = Client::createChromeClient(null, [
+    '--headless',
+    '--no-sandbox',
+    '--disable-dev-shm-usage',
+    '--disable-javascript', // Disable JavaScript execution
+]);
+
 $client->start();
 $client->request('GET', $url);
 
-$jsonContent = $client->waitFor('body')->getText();
-$data = json_decode($jsonContent, true);
+$options = $client->getCrawler()->filter('.list-group-item > span');
 
-if (isset($data['publications'][0]['issues']['web'][0]['readerUrl'])) {
-    $mainURL = $data['publications'][0]['issues']['web'][0]['readerUrl'];
-} else {
-    echo 'Reader URL not found in the JSON response';
-}
+// $optionsCount = $options->count();
 
-for ($page = 1; $page < 50; $page++) {
-    $nextbtn = $client->waitFor('next-page-button[display=none]');
-    $mainURL = str_replace('page=1', 'page=' . $page, $mainURL);
-    $client->request('GET', $mainURL);
-    $images = $client->getCrawler()->filter('img.page-left-bitmap');
-    $imageCount = count($images);
-    $src = $images->attr('src');
-    echo 'Image src: ' . $src . PHP_EOL;
-}
-$client->quit();
+$imagelinkarray = [];
+
+$options->each(function ($option) use (&$imagelinkarray) {
+    $location = $option->attr('edition-location');
+    $id = $option->attr('edition-id');
+    // $modifiedHighres = str_replace('_mr', '', $imagelink);
+    // $imagelinkarray[] = $modifiedHighres;
+    echo "Edition: " . $location . " id: " . $id . PHP_EOL;
+});
+
+print_r($imagelinkarray);

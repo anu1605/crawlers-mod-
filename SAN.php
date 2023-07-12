@@ -1,6 +1,5 @@
 <?php
-require_once 'vendor/autoload.php';
-// require_once '/var/www/d78236gbe27823/vendor/autoload.php';
+require_once '/var/www/d78236gbe27823/vendor/autoload.php';
 
 use Symfony\Component\Panther\Client;
 use Facebook\WebDriver\WebDriverBy;
@@ -22,6 +21,7 @@ if ($epapercode == "SAN") {
             '--headless',
             '--no-sandbox',
             '--disable-dev-shm-usage',
+            '--user-data-dir=/tmp',
         ]);
 
         $client->start();

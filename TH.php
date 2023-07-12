@@ -34,31 +34,47 @@ if ($epapercode == "TH") {
             echo 'Reader URL not found in the JSON response';
         }
 
-        foreach ($page) {
-            if (!empty($imagelink)) $imageInfo = @getimagesize($imagelink);
 
-            if (!$imageInfo)
+        for ($page = 1; $page < $no_of_sections_to_run_on_each_page; $page++) {
+            $mainurl = str_replace('page=1', 'page=' . $page, $mainurl);
+            $client->request('GET', $mainurl);
+            sleep(3);
+            $images = $client->getCrawler()->filter('img.page-left-bitmap');
+            $imagelink = explode('?rev', $images->attr('src'))[0];
+            echo $imagelink;
+
+            $nextButton = $client->waitFor('#next-page-button');
+
+            $nextButtonStyle = $client->executeScript('return document.getElementById("next-page-button").style.display');
+            if ($nextButtonStyle == 'none') {
                 break;
-
-            $getpath = explode("&", makefilepath($epapercode, $cityforfilepath[$edition], $filenamedate, $page, $lang));
+            }
+            $getpath = explode("&", makefilepath($epapercode, $cityarray[$edition], $filenamedate, $page, $lang));
 
             if (alreadyDone($getpath[0], $conn) == "Yes") continue;
 
-            writeImage($imagelink, $getpath[0]);
+            // writeImageWithCurl($imagelink, $getpath[0]);
+            writeimageusingstring($imagelink, $getpath[0]);
+            die();
 
             echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>File " . $getpath[0] . " Saved" . $eol;
             runTesseract($epapername, $cityarray[$edition], $page, 0, $conn, $getpath, $lang);
             echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $cityarray[$edition] . " Page " . $page . " Completed" . $eol;
             ob_flush();
             flush();
-
-            if ($page == $no_of_pages_to_run_on_each_edition)
-                break;
-
-            $page++;
         }
         echo date('Y-m-d H:i:s', time() + (5.5 * 3600)) . "=>" . $cityarray[$edition] . " Completed" . $eol;
 
         $client->quit();
     }
+}
+
+function writeimageusingstring($imagelink, $path)
+{
+    $im = imagecreatefromstring(file_get_contents($imagelink));
+
+    if (empty($im))
+        return;
+
+    imagepng($im, $path);
 }

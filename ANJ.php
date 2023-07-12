@@ -5,12 +5,10 @@ use Symfony\Component\Panther\Client;
 use Symfony\Component\Panther\DomCrawler\Crawler;
 use Facebook\WebDriver\WebDriverBy;
 
-if ($epapercode == "NT") {
-    $cityarray = array("Adilabad", "Bhadradri Kothagudem", "Hanumakonda", "Hyderabad", "Jangaon", "Kamareddy", "Karimnagar", "Mahaboobnagar", "Mahabubabad", "Nagarkurnool", "Nalgonda", "Rangareddy", "Siddipet", "Suryapet", "Warangal");
+if ($epapercode == "ANJ") {
+    $cityarray = array("Hyderabad", "Ananthapuram", "EGodavari", "Eluru", "Guntur", "Kadapa", "Kakinada", "Kurnool", "Nellore", "NTR VIJAYAWADA", "TIRUPATI", "Visakhapatnam", "West Godavari", "Adilabad", "Karimnagar", "Mahabubnagar", "Nalgonda", "Rangareddy", "Siddipet", "Warangal", "Karnataka", "Tamil Nadu");
 
-    $cityforfilepath = array("Adilabad", "Kothagudem", "Hanumakonda", "Hyderabad", "Jangaon", "Kamareddy", "Karimnagar", "Mahaboobnagar", "Mahabubabad", "Nagarkurnool", "Nalgonda", "Rangareddy", "Siddipet", "Suryapet", "Warangal");
-
-    $citycode = array("6", "7", "32", "35", "48", "11", "12", "15", "16", "20", "21", "26", "28", "29", "33");
+    $citycode = array("34", "26", "85", "178", "1", "22", "204", "24", "19", "182", "198", "7", "89", "46", "41", "68", "64", "128", "40", "57", "74", "76");
 
     $dateforlinks = date("d/m/Y", strtotime($filenamedate));
 
@@ -20,7 +18,7 @@ if ($epapercode == "NT") {
     }
 
     for ($edition = 0; $edition < count($cityarray); $edition++) {
-        $url = 'https://epaper.ntnews.com/Home/ArticleView?eid=' . $citycode[$edition] . '&edate=' . $dateforlinks;
+        $url = 'https://epaper.andhrajyothy.com/Home/FullPage?eid=' . $citycode[$edition] . '&edate=' . $dateforlinks;
 
         // $client = Client::createChromeClient();
         $client = \Symfony\Component\Panther\Client::createChromeClient(null, [
@@ -52,7 +50,7 @@ if ($epapercode == "NT") {
             if (!$imageInfo)
                 break;
 
-            $getpath = explode("&", makefilepath($epapercode, $cityforfilepath[$edition], $filenamedate, $page, $lang));
+            $getpath = explode("&", makefilepath($epapercode, $cityarray[$edition], $filenamedate, $page, $lang));
 
             if (alreadyDone($getpath[0], $conn) == "Yes") continue;
 

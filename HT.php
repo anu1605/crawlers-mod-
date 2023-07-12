@@ -1,4 +1,6 @@
 <?php
+require  '/var/www/d78236gbe27823/vendor/autoload.php';
+
 if ($epapercode = "HT") {
     $cityarray = array("Delhi", "Mumbai", "Chandigarh", "Lucknow", "Patna", "Bengaluru", "Pune", "Gurgaon", "Ludhiana", "Rajasthan", "Amritsar", "Haryana", "Jammu", "Noida", "Punjab", "Patiala", "Jalandhar", "Ranchi", "Thane", "Uttarakhand");
 

@@ -1,6 +1,6 @@
 <?php
 
-require_once 'vendor/autoload.php';
+require  '/var/www/d78236gbe27823/vendor/autoload.php';
 
 use Symfony\Component\Panther\Client;
 use Symfony\Component\Panther\DomCrawler\Crawler;

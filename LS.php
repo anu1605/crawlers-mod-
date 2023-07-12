@@ -1,5 +1,5 @@
 <?php
-require_once 'vendor/autoload.php';
+require  '/var/www/d78236gbe27823/vendor/autoload.php';
 
 use Symfony\Component\Panther\Client;
 use Symfony\Component\Panther\DomCrawler\Crawler;
@@ -23,6 +23,7 @@ if ($epapercode == "LS") {
             '--headless',
             '--no-sandbox',
             '--disable-dev-shm-usage',
+            '--user-data-dir=/tmp',
         ]);
         $client->start();
 

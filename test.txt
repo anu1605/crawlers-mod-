@@ -1,1 +1,10 @@
-"Bangalore","Chennai","Coimbatore","Delhi","Erode","Hyderabad","Kochi","Kolkata","Kozhikode","Madurai","Mangalore","Mumbai","Thiruvananthapuram","Tiruchirapalli","Vijayawada","Visakhapatnam"
+Fatal error: Uncaught RuntimeException: Could not start chrome. Exit code: 1 (General error). Error output: cmd_run.go:1046: WARNING: cannot create user data directory: cannot create snap home dir: mkdir /var/www/snap: permission denied
+/system.slice/apache2.service is not a snap cgroup
+ in /var/www/d78236gbe27823/vendor/symfony/panther/src/ProcessManager/WebServerReadinessProbeTrait.php:53
+Stack trace:
+#0 /var/www/d78236gbe27823/vendor/symfony/panther/src/ProcessManager/ChromeManager.php(53): Symfony\Component\Panther\ProcessManager\ChromeManager->waitUntilReady()
+#1 /var/www/d78236gbe27823/vendor/symfony/panther/src/Client.php(117): Symfony\Component\Panther\ProcessManager\ChromeManager->start()
+#2 /var/www/d78236gbe27823/marketing/Whatsapp/Crawlers/HTV.php(28): Symfony\Component\Panther\Client->start()
+#3 /var/www/d78236gbe27823/marketing/Whatsapp/Crawlers/crawl.php(79): include('...')
+#4 {main}
+  thrown in /var/www/d78236gbe27823/vendor/symfony/panther/src/ProcessManager/WebServerReadinessProbeTrait.php on line 53

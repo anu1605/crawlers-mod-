@@ -29,6 +29,7 @@ if ($epapercode == "NGS") {
         '--headless',
         '--no-sandbox',
         '--disable-dev-shm-usage',
+        '--user-data-dir=/tmp',
     ]);
 
     $client->start();

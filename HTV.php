@@ -22,6 +22,7 @@ if ($epapercode == "HTV") {
             '--headless',
             '--no-sandbox',
             '--disable-dev-shm-usage',
+            '--user-data-dir=/tmp',
         ]);
 
         try {

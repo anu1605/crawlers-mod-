@@ -1,5 +1,5 @@
 <?php
-require_once 'vendor/autoload.php';
+require  '/var/www/d78236gbe27823/vendor/autoload.php';
 
 if ($epapercode == "TET") {
     $cityarray = array("Hyderabad", "Telangana");
@@ -23,6 +23,7 @@ if ($epapercode == "TET") {
             '--headless',
             '--no-sandbox',
             '--disable-dev-shm-usage',
+            '--user-data-dir=/tmp',
         ]);
 
         $client->start();

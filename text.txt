@@ -1,8 +1,8 @@
 DC (eng) - deccan chronicles (Done)
 HB (hin) - hari bhumi (Done)
-HT (eng) - hindustan times(no html content,paid)
+HT (eng) - hindustan times(Done)
 KM (kan) - karnataka malla (Done)
-LH (hin) - live hindustan(incomplete html content , paid)
+LH (hin) - live hindustan(Done)
 MC (mar) - mumbai chaufer (Done)
 MM (kan) - Mysuru Mithra (Done,doesn't work in server but works in localhost , kan)
 NBT (hin) - nav bharat times (Done)
@@ -44,7 +44,7 @@ Siasat Daily(urd) - (incomplete html content , blank images)
 Statesman(mostly obituary ads) - seperate pic and text images , incomplete html content
 Suryaa - no ads
 Telangana Today - (Done)
-Telegraph - single edition , Kolkata
+Telegraph - (Done)
 Tripura Observer - (incomplete html content , northeast , no ads)
 The Pioneer - pdf epaper {C}
 vaartha - (no ads)
