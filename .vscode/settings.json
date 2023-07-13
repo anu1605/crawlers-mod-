@@ -1,27 +1,27 @@
-{
-  "editor.formatOnSave": true,
-  "git.confirmSync": false,
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
-  "php.validate.executablePath": "/Applications/XAMPP/xamppfiles/bin/php/php.exe",
-  "phpserver.phpPath": "/Applications/XAMPP/xamppfiles/bin/php",
-  "intelephense.files.associations": [
-    "*.php",
-    "*.phtml"
-  ],
-  "window.zoomLevel": 1,
-  "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
-  "[python]": {
-    "editor.formatOnType": true,
-    "editor.defaultFormatter": "ms-python.autopep8"
-  },
-  "python.defaultInterpreterPath": "/usr/local/bin/python3",
-  "python.analysis.addImport.exactMatchOnly": true,
-  "python.analysis.typeCheckingMode": "basic",
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  }
-}
+// {
+//   "editor.formatOnSave": true,
+//   "git.confirmSync": false,
+//   "[html]": {
+//     "editor.defaultFormatter": "vscode.html-language-features"
+//   },
+//   "php.validate.executablePath": "/Applications/XAMPP/xamppfiles/bin/php/php.exe",
+//   "phpserver.phpPath": "/Applications/XAMPP/xamppfiles/bin/php",
+//   "intelephense.files.associations": [
+//     "*.php",
+//     "*.phtml"
+//   ],
+//   "window.zoomLevel": 1,
+//   "[javascript]": {
+//     "editor.defaultFormatter": "vscode.typescript-language-features"
+//   },
+//   "[python]": {
+//     "editor.formatOnType": true,
+//     "editor.defaultFormatter": "ms-python.autopep8"
+//   },
+//   "python.defaultInterpreterPath": "/usr/local/bin/python3",
+//   "python.analysis.addImport.exactMatchOnly": true,
+//   "python.analysis.typeCheckingMode": "basic",
+//   "[jsonc]": {
+//     "editor.defaultFormatter": "vscode.json-language-features"
+//   }
+// }

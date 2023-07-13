@@ -432,7 +432,7 @@ function writeImageWithCurl($url, $path)
     curl_close($ch);
 }
 
-function setsizefunction($client, $link)
+function SetSize($client, $link)
 {
     $window = $client->getWebDriver()->manage()->window();
     $window->maximize(); // Maximize the window to ensure full page capture

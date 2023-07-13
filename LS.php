@@ -1,5 +1,6 @@
 <?php
 require  '/var/www/d78236gbe27823/vendor/autoload.php';
+// require  'vendor/autoload.php';
 
 use Symfony\Component\Panther\Client;
 use Symfony\Component\Panther\DomCrawler\Crawler;
@@ -42,9 +43,6 @@ if ($epapercode == "LS") {
             ];
         });
 
-
-
-        // Find the href and date for the desired date
         $desiredItem = null;
         foreach ($data as $item) {
             $formattedDate = date('Y-m-d', strtotime($item['date']));
@@ -56,9 +54,20 @@ if ($epapercode == "LS") {
 
         if ($desiredItem !== null) {
             $url = str_replace('r/', '', $desiredItem['href'] . "/loksatta-mumbai/" . date("d-m-Y", strtotime($filenamedate)) . "#page/1/3");
+
+            $client->request('GET', $url);
+            $button = $client->getCrawler()->filter('#pagecount-btn');
+            if ($button->count() > 0) {
+                $text = $button->text();
+                $totalpages =  trim(explode('of', $text)[1]);
+            }
             setSize($client, $url);
 
-            for ($page = 1; $page <= $no_of_pages_to_run_on_each_edition; $page++) {
+            if ($no_of_pages_to_run_on_each_edition > 0 and $no_of_pages_to_run_on_each_edition < $totalpages) {
+                $totalpages =  $no_of_pages_to_run_on_each_edition;
+            }
+
+            for ($page = 1; $page <= $totalpages; $page++) {
                 $url = str_replace('r/', '', $desiredItem['href'] . "/loksatta-mumbai/" . date("d-m-Y", strtotime($filenamedate)) . "#page/" . $page . "/3");
                 $getpath = explode("&", makefilepath($epapercode, $cityarray[$edition], $filenamedate, $page, $lang));
                 $outputFile = $getpath[0];
@@ -70,6 +79,19 @@ if ($epapercode == "LS") {
                 sleep(3);
 
                 if (alreadyDone($getpath[0], $conn) == "Yes") continue;
+
+
+
+                $client->executeScript('var element = document.getElementById("epaperSDK");
+                                                        if (element) {
+                                                            while (element.firstChild) {
+                                                                element.firstChild.remove();
+                                                                }
+                                                            element.remove();
+                                                            }');
+
+                $modifiedHtml = $client->getCrawler()->html();
+
                 $screenshot = $client->takeScreenshot($outputFile);
 
                 $croppedImage = getCroppedImage($client, 'page-div', $screenshot);
