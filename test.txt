@@ -1,1 +1,625 @@
-,"Adilabad" ,"Bhadradri Kothagudem" ,"Hanumakonda" ,"Hyderabad" ,"Jagtial" ,"Kamareddy" ,"Karimnagar" ,"Mahabubabad" ,"Mahabubnagar" ,"Nagarkurnool" ,"Nalgonda" ,"Sangareddy" ,"Secunderabad" ,"Siddipet" ,"Warangal" 
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-95RWNVT3B6"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-95RWNVT3B6');
+		</script>
+	    <script data-ad-client="ca-pub-2783997325549705" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+		<title>E-Preview | Gujaratmitra</title>
+
+		<!-- Google font -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CLato:300,400" rel="stylesheet"> 
+		
+		<!-- Bootstrap -->
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+
+		<!-- Owl Carousel -->
+		<link type="text/css" rel="stylesheet" href="css/owl.carousel.css" />
+		<link type="text/css" rel="stylesheet" href="css/owl.theme.default.css" />
+        
+        <!-- Custom styles for this template -->
+        <link href="simple-sidebar.css" rel="stylesheet">
+        <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		
+		<!-- Font Awesome Icon -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+
+		<!-- Custom stlylesheet -->
+		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+		
+		<link href="z/lightgallery.css" rel="stylesheet">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		
+		<script data-ad-client="ca-pub-2783997325549705" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		
+		<!-- Global site tag (gtag.js) - Google Analytics 
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117642746-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'UA-117642746-1');
+        </script>
+		-->
+		<script>
+            function startTime() {
+                var today = new Date();
+                var hr = today.getHours();
+                var min = today.getMinutes();
+                var sec = today.getSeconds();
+                ap = (hr < 12) ? "<span>AM</span>" : "<span>PM</span>";
+                hr = (hr == 0) ? 12 : hr;
+                hr = (hr > 12) ? hr - 12 : hr;
+                //Add a zero in front of numbers<10
+                hr = checkTime(hr);
+                min = checkTime(min);
+                sec = checkTime(sec);
+                document.getElementById("time").innerHTML = hr + ":" + min + ":" + sec + " " + ap;
+
+                var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
+                var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+                var curWeekDay = days[today.getDay()];
+                var curDay = today.getDate();
+                var curMonth = months[today.getMonth()];
+                var curYear = today.getFullYear();
+                var date = curWeekDay+", "+curDay+" "+curMonth+" "+curYear;
+                document.getElementById("date").innerHTML = date;
+
+                var time = setTimeout(function(){ startTime() }, 500);
+            }
+            function checkTime(i) {
+                if (i < 10) {
+                    i = "0" + i;
+                }
+                return i;
+            }
+        </script>
+        
+        <!-- Taboola Ad Head Code -->
+		<script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({article:'auto'});
+  !function (e, f, u, i) {
+    if (!document.getElementById(i)){
+      e.async = 1;
+      e.src = u;
+      e.id = i;
+      f.parentNode.insertBefore(e, f);
+    }
+  }(document.createElement('script'),
+  document.getElementsByTagName('script')[0],
+  '//cdn.taboola.com/libtrc/gujaratmitra-epaper/loader.js',
+  'tb_loader_script');
+  if(window.performance && typeof window.performance.mark == 'function')
+    {window.performance.mark('tbl_ic');}
+</script>
+
+        
+        <link href="zoom/dist/css/jquery.pan.css" rel="stylesheet" type="text/css"/>
+
+<style>
+div.sticky {
+  position: -webkit-sticky;
+  position: fixed;
+  top: 485px;
+  background-color: transparent;
+  padding: 50px;
+  margin-left: 20%;
+  font-size: 20px;
+}
+</style>
+
+
+    </head>
+	<body onload="startTime()">
+	
+		<!-- Header -->
+		<header id="header">
+			<!-- Top Header -->
+			<form action="search.php" method="post">
+			<div id="top-header">
+				<div class="container">
+					<div class="header-links">
+						<ul>
+							
+							<li>
+								<a href="#" class="date-time"> <span id="date"></span>&nbsp;&nbsp;
+
+							<span id="time"></span></a>
+							</li>
+							<li>
+								<li><a href="#"><i></i>mail@gujaratmitra.in</a></li>
+							</li>
+															<li>
+									<input class="input" name="searchdate" value="" class="form-control" style="color: white; height: 28px;  padding-bottom: 3px; border-width: 2px 2px 2px 2px; border-radius: 10px 10px 10px 10px;" type="date" placeholder="Search">
+								</li>
+								<li>
+									<button class="input-btn" style="border-radius: 10px 10px 10px 10px;"  type="submit" name="submit">Search</button>
+								</li>
+							</form>
+							
+						</ul>
+					</div>
+					
+					
+					<div class="header-social">
+						<ul>
+							
+							
+							<li><a href="https://www.facebook.com/gujaratmitralive"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://twitter.com/gujaratmitr"><i class="fa fa-twitter"></i></a></li>
+							
+							<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+
+						</ul>
+					</div>
+					
+					
+				</div>
+			</div>
+			<!-- /Top Header -->
+		</form>
+			
+			<!-- Center Header -->
+			<div id="center-header">
+				<div class="container">
+					<div class="header-logo">
+						<a href="index.php" class="logo"><img src="./img/gmlogo.png" style="width: 300px;" alt=""></a>
+					</div>
+					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2783997325549705"
+     crossorigin="anonymous"></script>
+<!-- Leader Board -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-2783997325549705"
+     data-ad-slot="6959839024"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+		
+		
+		
+		
+		
+		
+		
+					
+				</div>
+			</div>
+			<!-- /Center Header -->
+<!-- Nav Header -->
+			
+			<!-- /Nav Header -->
+		</header>
+		<!-- /Header -->
+		
+<style>
+.btn {
+  background: #EF233C;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.7rem 2rem;
+}
+
+</style>
+
+<script src= 
+"https://code.jquery.com/jquery-1.12.4.min.js"> </script> 
+<!-- SECTION - EDITION -->
+		<div class="section">
+			<!-- CONTAINER -->
+			<div class="container">
+				<!-- ROW -->
+				<div class="row">
+					<!-- Main Column -->
+					<div class="col-md-12">
+						<!-- section title -->
+						<div class="section-title">
+							<h2 class="title"><a href="index.php" style="color:white; font-weight:bold;">Back To Editions </a></h2>&nbsp;&nbsp; <br>
+							
+							
+						</div>
+						<!-- AD SECTION -->
+    
+                        <center>
+                            <div id = "v-gujaratmitra-in-v1"></div><script>(function(v,d,o,ai){ai=d.createElement('script');ai.defer=true;ai.async=true;ai.src=v.location.protocol+o;d.head.appendChild(ai);})(window, document, '//a.vdo.ai/core/v-gujaratmitra-in-v1/vdo.ai.js');</script>
+							<br>
+                              <!-- /AD SECTION -->
+                        </center>
+                      <!-- /AD SECTION --><br/>
+                    			
+					</div>
+					
+						
+						<div class="d-flex col-md-8" id="wrapper" style="padding: 0px 0px 0px 25px;">
+                            <!-- Sidebar -->
+                            <div class="bg-light border-right hidden-xs" id="sidebar-wrapper" style="height:540px; border-radius:5px 5px 5px 5px; border-color: black; border-style: solid; border-color: rgba(0, 0, 0, 0.1); ">
+                              
+
+                              <div class="list-group list-group-flush" style="overflow-y:scroll; height:550px; background-color:#ef233c;">
+                                  
+                                <a href="preview1.php?d=2023-07-14&b=Surat&p=1" class="list-group-item list-group-item-action bg-light" height="585px" style="background-color:#ffffff!important;">
+                                    <img src="./FLS/ED/2023-07-14/ST1.jpg" style="width:110px;"/>
+                                </a>
+                                
+                                <b><p style="float:left;  color:white; margin-left:48px; margin-top:10px; font-size:12px; font-weight:bold;">Page 1</p></b>
+                                  
+                                <a href="preview1.php?d=2023-07-14&b=Surat&p=2" class="list-group-item list-group-item-action bg-light" height="585px" style="background-color:#ffffff!important;">
+                                    <img src="./FLS/ED/2023-07-14/ST2.jpg" style="width:110px;"/>
+                                </a>
+                                
+                                <b><p style="float:left;  color:white; margin-left:48px; margin-top:10px; font-size:12px; font-weight:bold;">Page 2</p></b>
+                                  
+                                <a href="preview1.php?d=2023-07-14&b=Surat&p=3" class="list-group-item list-group-item-action bg-light" height="585px" style="background-color:#ffffff!important;">
+                                    <img src="./FLS/ED/2023-07-14/ST3.jpg" style="width:110px;"/>
+                                </a>
+                                
+                                <b><p style="float:left;  color:white; margin-left:48px; margin-top:10px; font-size:12px; font-weight:bold;">Page 3</p></b>
+                                  
+                                <a href="preview1.php?d=2023-07-14&b=Surat&p=4" class="list-group-item list-group-item-action bg-light" height="585px" style="background-color:#ffffff!important;">
+                                    <img src="./FLS/ED/2023-07-14/ST4.jpg" style="width:110px;"/>
+                                </a>
+                                
+                                <b><p style="float:left;  color:white; margin-left:48px; margin-top:10px; font-size:12px; font-weight:bold;">Page 4</p></b>
+                                  
+                                <a href="preview1.php?d=2023-07-14&b=Surat&p=5" class="list-group-item list-group-item-action bg-light" height="585px" style="background-color:#ffffff!important;">
+                                    <img src="./FLS/ED/2023-07-14/ST5.jpg" style="width:110px;"/>
+                                </a>
+                                
+                                <b><p style="float:left;  color:white; margin-left:48px; margin-top:10px; font-size:12px; font-weight:bold;">Page 5</p></b>
+                                  
+                                <a href="preview1.php?d=2023-07-14&b=Surat&p=6" class="list-group-item list-group-item-action bg-light" height="585px" style="background-color:#ffffff!important;">
+                                    <img src="./FLS/ED/2023-07-14/ST6.jpg" style="width:110px;"/>
+                                </a>
+                                
+                                <b><p style="float:left;  color:white; margin-left:48px; margin-top:10px; font-size:12px; font-weight:bold;">Page 6</p></b>
+                                  
+                                <a href="preview1.php?d=2023-07-14&b=Surat&p=7" class="list-group-item list-group-item-action bg-light" height="585px" style="background-color:#ffffff!important;">
+                                    <img src="./FLS/ED/2023-07-14/ST7.jpg" style="width:110px;"/>
+                                </a>
+                                
+                                <b><p style="float:left;  color:white; margin-left:48px; margin-top:10px; font-size:12px; font-weight:bold;">Page 7</p></b>
+                                  
+                                <a href="preview1.php?d=2023-07-14&b=Surat&p=8" class="list-group-item list-group-item-action bg-light" height="585px" style="background-color:#ffffff!important;">
+                                    <img src="./FLS/ED/2023-07-14/ST8.jpg" style="width:110px;"/>
+                                </a>
+                                
+                                <b><p style="float:left;  color:white; margin-left:48px; margin-top:10px; font-size:12px; font-weight:bold;">Page 8</p></b>
+                                  
+                                <a href="preview1.php?d=2023-07-14&b=Surat&p=9" class="list-group-item list-group-item-action bg-light" height="585px" style="background-color:#ffffff!important;">
+                                    <img src="./FLS/ED/2023-07-14/ST9.jpg" style="width:110px;"/>
+                                </a>
+                                
+                                <b><p style="float:left;  color:white; margin-left:48px; margin-top:10px; font-size:12px; font-weight:bold;">Page 9</p></b>
+                                  
+                                <a href="preview1.php?d=2023-07-14&b=Surat&p=10" class="list-group-item list-group-item-action bg-light" height="585px" style="background-color:#ffffff!important;">
+                                    <img src="./FLS/ED/2023-07-14/ST10.jpg" style="width:110px;"/>
+                                </a>
+                                
+                                <b><p style="float:left;  color:white; margin-left:48px; margin-top:10px; font-size:12px; font-weight:bold;">Page 10</p></b>
+                                  
+                                <a href="preview1.php?d=2023-07-14&b=Surat&p=11" class="list-group-item list-group-item-action bg-light" height="585px" style="background-color:#ffffff!important;">
+                                    <img src="./FLS/ED/2023-07-14/ST11.jpg" style="width:110px;"/>
+                                </a>
+                                
+                                <b><p style="float:left;  color:white; margin-left:48px; margin-top:10px; font-size:12px; font-weight:bold;">Page 11</p></b>
+                                  
+                                <a href="preview1.php?d=2023-07-14&b=Surat&p=12" class="list-group-item list-group-item-action bg-light" height="585px" style="background-color:#ffffff!important;">
+                                    <img src="./FLS/ED/2023-07-14/ST12.jpg" style="width:110px;"/>
+                                </a>
+                                
+                                <b><p style="float:left;  color:white; margin-left:48px; margin-top:10px; font-size:12px; font-weight:bold;">Page 12</p></b>
+                                  
+                                <a href="preview1.php?d=2023-07-14&b=Surat&p=13" class="list-group-item list-group-item-action bg-light" height="585px" style="background-color:#ffffff!important;">
+                                    <img src="./FLS/ED/2023-07-14/ST13.jpg" style="width:110px;"/>
+                                </a>
+                                
+                                <b><p style="float:left;  color:white; margin-left:48px; margin-top:10px; font-size:12px; font-weight:bold;">Page 13</p></b>
+                                  
+                                <a href="preview1.php?d=2023-07-14&b=Surat&p=14" class="list-group-item list-group-item-action bg-light" height="585px" style="background-color:#ffffff!important;">
+                                    <img src="./FLS/ED/2023-07-14/ST14.jpg" style="width:110px;"/>
+                                </a>
+                                
+                                <b><p style="float:left;  color:white; margin-left:48px; margin-top:10px; font-size:12px; font-weight:bold;">Page 14</p></b>
+                                  
+                                <a href="preview1.php?d=2023-07-14&b=Surat&p=15" class="list-group-item list-group-item-action bg-light" height="585px" style="background-color:#ffffff!important;">
+                                    <img src="./FLS/ED/2023-07-14/ST15.jpg" style="width:110px;"/>
+                                </a>
+                                
+                                <b><p style="float:left;  color:white; margin-left:48px; margin-top:10px; font-size:12px; font-weight:bold;">Page 15</p></b>
+                                  
+                                <a href="preview1.php?d=2023-07-14&b=Surat&p=16" class="list-group-item list-group-item-action bg-light" height="585px" style="background-color:#ffffff!important;">
+                                    <img src="./FLS/ED/2023-07-14/ST16.jpg" style="width:110px;"/>
+                                </a>
+                                
+                                <b><p style="float:left;  color:white; margin-left:48px; margin-top:10px; font-size:12px; font-weight:bold;">Page 16</p></b>
+                                                              </div>
+                            </div>
+                            <!-- /#sidebar-wrapper -->
+                            <!-- Page Content -->
+                            <div id="page-content-wrapper" style="padding: 0px 0px 0px 10px;">
+                              <!-- PAGING START -->
+                                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom img-responsive" style="width: auto; left: 0px; font-weight: bold; color: #EF233C; font-size: 13px; margin-bottom: 8px;" >
+                                    <div class='pagination' style='margin-top: 0px;margin-bottom: 0px;'>Page - 1&nbsp;&nbsp;of&nbsp;&nbsp;16&nbsp;&nbsp;&nbsp;</div>            
+                                </nav>
+                              <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom img-responsive" style="width: auto; left: 0px; font-weight: bold; color: #EF233C; font-size: 10px; margin-bottom: 8px;">
+                                <!-- <button class="btn btn-primary" id="menu-toggle"><<</button>&nbsp;&nbsp; -->
+                                <!-- <a href="index.php"><button class="btn btn-primary">HOME</button></a>&nbsp;&nbsp;&nbsp; -->
+                                <center><ul class='pagination pagination-sm pagination-lg img-responsive ' style='display:block;margin-top: 0px;'><li class='page-item disabled'><a class='page-link ' style='font-size:14px; font-weight:bold;'  href='javascript:void(0);'>Previous</a></li><li class='page-item'><a class='page-link' style='font-size:14px; font-weight:bold;' href='preview1.php?d=2023-07-14&b=Surat&p=1'>1</a></li><li class='page-item'><a class='page-link' style='font-size:14px; font-weight:bold;' href='preview1.php?d=2023-07-14&b=Surat&p=2'>2</a></li><li class='page-item'><a class='page-link' style='font-size:14px; font-weight:bold;' href='preview1.php?d=2023-07-14&b=Surat&p=3'>3</a></li><li class='page-item'><a class='page-link' style='font-size:14px; font-weight:bold;' href='preview1.php?d=2023-07-14&b=Surat&p=4'>4</a></li><li class='page-item'><a class='page-link' style='font-size:14px; font-weight:bold;' href='preview1.php?d=2023-07-14&b=Surat&p=5'>5</a></li><li class='page-item'><a class='page-link' style='font-size:14px; font-weight:bold;' href='preview1.php?d=2023-07-14&b=Surat&p=6'>6</a></li><li class='page-item'><a class='page-link' style='font-size:14px; font-weight:bold;' href='preview1.php?d=2023-07-14&b=Surat&p=7'>7</a></li><li class='page-item'><a class='page-link' style='font-size:14px; font-weight:bold;' href='preview1.php?d=2023-07-14&b=Surat&p=8'>8</a></li><li class='page-item'><a class='page-link' style='font-size:14px; font-weight:bold;' href='preview1.php?d=2023-07-14&b=Surat&p=9'>9</a></li><li class='page-item'><a class='page-link' style='font-size:14px; font-weight:bold;' href='preview1.php?d=2023-07-14&b=Surat&p=10'>10</a></li><li class='page-item'><a class='page-link' style='font-size:14px; font-weight:bold;' href='preview1.php?d=2023-07-14&b=Surat&p=11'>11</a></li><li class='page-item'><a class='page-link' style='font-size:14px; font-weight:bold;' href='preview1.php?d=2023-07-14&b=Surat&p=12'>12</a></li><li class='page-item'><a class='page-link' style='font-size:14px; font-weight:bold;' href='preview1.php?d=2023-07-14&b=Surat&p=13'>13</a></li><li class='page-item'><a class='page-link' style='font-size:14px; font-weight:bold;' href='preview1.php?d=2023-07-14&b=Surat&p=14'>14</a></li><li class='page-item'><a class='page-link' style='font-size:14px; font-weight:bold;' href='preview1.php?d=2023-07-14&b=Surat&p=15'>15</a></li><li class='page-item'><a class='page-link' style='font-size:14px; font-weight:bold;' href='preview1.php?d=2023-07-14&b=Surat&p=16'>16</a></li><li class='page-item enabled''><a class='page-link' style='font-size:14px; font-weight:bold;' href='preview1.php?d=2023-07-14&b=Surat&p=2'>Next</a></li></ul></center>                                  &nbsp;&nbsp;&nbsp;
+                                 </nav>
+
+                                 <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom" style="width: 100%; left: 0px;" >
+
+
+                                                                          
+                                  <!-- DOWNLOAD BUTTON -->
+                                  <a  href="./FLS/ED/2023-07-14/ST1.pdf" download>
+                                                                          <button class="btn btn-primary">DOWNLOAD</button>
+                                  </a>
+
+                              </nav>
+                              <ul id="lightgallery" class="list-unstyled row hidden-xs visible-lg" style="overflow: hidden; height: 860px;" >
+                                
+
+                              <li style="overflow: hidden;" data-src="./FLS/ED/2023-07-14/ST1.jpg">
+                                <a href=""><center><p class="btn btn-primary hidden-xs">[+] ZOOM</p></a></center>
+                                  <a href="">
+                                    <img class="img-responsive hidden-xs" width="100%" height="100%" src="./FLS/ED/2023-07-14/ST1.jpg" />
+                                  </a>
+  
+                             </li>
+                                                      </ul>  
+                             
+                        <div class="container-fluid img-responsive" style="overflow: hidden; height: 860px;" >
+                              
+                                    
+                                    <!-- <p id="slidepage">1</p> -->
+                                   
+                                      <img class="img-responsive hidden-lg" width="100%" height="100%" src="./FLS/ED/2023-07-14/ST1.jpg"/>
+
+                                    
+                                    
+                               
+                    </div>
+                      
+                                       
+                                    
+                            </div>
+                            <!-- /#page-content-wrapper -->
+                        </div>
+                        <!-- /#wrapper -->
+                        <!-- Aside Column -->
+                          <div class="col-md-4">
+                            <!-- Ad widget -->
+                            
+                            <div class="widget center-block ">
+                                
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2783997325549705"
+     crossorigin="anonymous"></script>
+<!-- Vertical Responsive -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2783997325549705"
+     data-ad-slot="2936833533"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script><br>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2783997325549705"
+     crossorigin="anonymous"></script>
+<!-- Vertical Responsive -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2783997325549705"
+     data-ad-slot="2936833533"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!--                            
+<div id="taboola-below-article-thumbnails"></div>
+<script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({
+    mode: 'alternating-thumbnails-a',
+    container: 'taboola-below-article-thumbnails',
+    placement: 'Below Article Thumbnails',
+    target_type: 'mix'
+  });
+</script>
+-->
+                            
+                            </div>
+                            <!-- /Ad widget -->
+                
+                           
+                            <!-- /Ad widget -->
+                
+                            
+                          </div>
+                          <!-- /Aside Column -->
+								
+					
+				</div>
+				<!-- /ROW -->
+			</div>
+			<!-- /CONTAINER -->
+			<br/>
+              <!-- AD SECTION -->
+                <div class="visible-lg visible-md visible-xs img-responsive">
+                  <!--<img class="center-block img-responsive" src="./img/ad-3.jpg" alt="">-->
+                  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- Horizontal Responsive -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-2783997325549705"
+                         data-ad-slot="8057298279"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+              <!-- /AD SECTION -->
+		</div>
+		<!-- /SECTION -->
+
+		<script type="text/javascript"> 
+        var currentZoom = 1.0;
+        function zoomin() { 
+            /*var GFG = document.getElementById("pdf"); 
+            var currWidth = GFG.clientWidth; 
+            GFG.style.width = (currWidth + 100) + "px"; */
+
+            var myImg = document.getElementById("pdf");
+        var currWidth = myImg.clientWidth;
+        myImg.style.width = (currWidth + 100) + "px";
+
+            
+        } 
+          
+        function zoomout() { 
+            var GFG = document.getElementById("pdf"); 
+            var currWidth = GFG.clientWidth; 
+            GFG.style.width = (currWidth - 100) + "px"; 
+        } 
+    </script> 
+
+
+		
+		
+ 
+<!-- Composite Start -->
+<!--<div id="M652238ScriptRootC1027237">
+</div>
+<script src="https://jsc.mgid.com/e/p/epaper.gujaratmitra.in.1027237.js" async></script>-->
+<!-- Composite End -->
+
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2783997325549705"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-2783997325549705"
+     data-ad-slot="6567663492"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+	<!-- FOOTER -->
+		<footer id="footer">
+		
+			<!-- Bottom Footer -->
+			<div id="bottom-footer" class="section">
+				<!-- CONTAINER -->
+				<div class="container">
+					<!-- ROW -->
+					<div class="row">
+						<!-- footer links -->
+						<div class="col-md-6 col-md-push-6">
+							
+						</div>
+						<!-- /footer links -->
+						
+						<!-- footer copyright -->
+						<div class="col-md-6 col-md-pull-6">
+							<div class="footer-copyright">
+								<span>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="#" target="_blank">Gujaratmitra</a>
+</span>
+							</div>
+						</div>
+						<!-- /footer copyright -->
+					</div>
+					<!-- /ROW -->
+				</div>
+				<!-- /CONTAINER -->
+			</div>
+			<!-- /Bottom Footer -->
+		</footer>
+		<!-- /FOOTER -->
+		<center>
+			<div class="sticky center-block">
+				<div class="header-ads">
+					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- Leader Board -->
+                    <ins class="adsbygoogle"
+                         style="display:inline-block;width:728px;height:90px"
+                         data-ad-client="ca-pub-2783997325549705"
+                         data-ad-slot="6959839024"></ins>
+                    <script>
+                         (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+					</div>
+			</div>
+		</center>
+		<!-- Back to top -->
+		<div id="back-to-top"></div>
+		<!-- Back to top -->
+		
+		<!-- jQuery Plugins -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/main.js"></script>
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="zoom/src/js/jquery.pan.js"></script>
+		<!--<script type="text/javascript">
+
+		  $(function(){
+		    $(".pan").pan().each(function() {
+		        $(this).attr('title', 'CLICK TO ZOOM');
+		    });
+		})
+		</script>-->
+		
+		<script src="z/jquery.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('#lightgallery').lightGallery();
+            pager: true
+        });
+        </script>
+        <!-- <script src="z/lightgallery.js"></script> -->
+        
+        <script src="z/lightgallery-all.min.js"></script>
+       	<script src="z/jquery.mousewheel.min.js"></script>
+
+<!-- Taboola Ad End body code -->
+<script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({flush: true});
+</script>
+<script type="text/javascript">
+var infolinks_pid = 3318026;
+var infolinks_wsid = 0;
+</script>
+<script type="text/javascript" src="//resources.infolinks.com/js/infolinks_main.js"></script>
+
+	
+
+
+	</body>
+</html>

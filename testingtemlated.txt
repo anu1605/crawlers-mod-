@@ -1,0 +1,57 @@
+1. Text , English, < 30 words
+    This is classified ad testing.This is classified ad testing.This is classified ad testing.This is classified ad testing.This is classified ad testing.This is classified ad testing.
+
+    [Success]
+
+2. Text , English, < 30 words , paid
+    This is classified ad testing.This is classified ad testing.This is classified ad testing.This is classified ad testing.This is classified ad testing.This is classified ad testing.
+
+    [Success]
+
+3. for miscellaneus Added details -> clicked preview -> went back
+    This is classified ad testing.This is classified ad testing.This is classified ad testing.This is classified ad testing.This is classified ad testing.This is classified ad testing
+
+    miscellaneus , no sub-category found
+      
+    Assam , Abhyapuri
+
+   -> after going back(discarded)
+        issues - City changed back to delhi , North east delhi (location i chose in Review Your Preferences)
+                "select-sub category" doesn't appear even after clicking options from "Select Primary Category" 
+	    
+4. Text , English, > 30 words , paid
+    This is classified ad testing.This is classified ad testing.This is classified ad testing.This is classified ad testing.This is classified ad testing.This is classified ad testing.This is classified ad testing.This is classified ad testing.This is classified ad testing.This is classified ad testing.This is classified ad testing.This is classified ad testing.
+
+    Business , Construction Material
+
+    Assam , Abhyapuri
+
+    Added Broucher - EPaper-Bangalore_05-07-2023_1.pdf
+
+    [Success]
+
+5. Text , English, > 30 words , paid
+    This is classified ad testing.This is classified ad testing.This is classified ad testing.This is classified ad testing.This is classified ad testing.This is classified ad testing.This is classified ad testing.This is classified ad testing.This is classified ad testing.This is classified ad testing.This is classified ad testing.This is classified ad testing
+
+    Education , Admission
+
+    Assam , Abhyapuri
+
+    pin your ad at the top
+
+    [Success]
+
+6. Text , English, > 30 words , paid
+    This is classified ad testing.This is classified ad testing.This is classified ad testing.This is classified ad testing.This is classified ad testing.This is classified ad testing.This is classified ad testing.This is classified ad testing.This is classified ad testing.This is classified ad testing.This is classified ad testing.This is classified ad testing
+
+    Personal , Appeal
+
+    Assam , Abhyapuri
+
+    Added Broucher - EPaper-Bangalore_05-07-2023_1.pdf
+
+    pin your ad at the top
+
+    [Success]
+
+7. 
